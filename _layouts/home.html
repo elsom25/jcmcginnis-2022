@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% include heading.html heading=page.heading %}
+
+<main class="py-6">
+  <section>
+    <h1>Jesse McGinnis.</h1>
+    <p>I'm driven by solving impactful and complex problems. My favourite challenges intersect software, people, and communication.</p>
+    <p>Come work with me at <a href="https://www.shopify.ca/careers/" rel="external" target="_blank">Shopify</a> in beautiful <a href="http://whywaterloo.ca/" rel="external" target="_blank">Waterloo</a>. I've got code on <a href="https://github.com/elsom25" rel="external" target="_blank">GitHub</a> and will always respond to an <a href="mailto:jesse@jcmcginnis.com?subject=Hey%20friend">email</a>.</p><p>If you want details, <a href="https://www.linkedin.com/in/jcmcginnis" rel="external" target="_blank">LinkedIn</a> is the place.</p>
+  </section>
+  <div class="mb-12">
+    {% assign post = site.posts.first %}
+    {% include summary.html post=post %}
+  </div>
+</main>

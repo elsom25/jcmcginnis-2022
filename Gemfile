@@ -2,10 +2,11 @@
 
 source('https://rubygems.org')
 
-group(:jekyll_plugins) do
-  gem('github-pages')
-  gem('jekyll-feed', '~> 0.12')
-end
+gem('jekyll', '~> 4.1')
+gem('jekyll-environment-variables')
+gem('jekyll-postcss', '~> 0.5.0')
+gem('jekyll-paginate')
+gem('jekyll-feed', '~> 0.12')
 
 platforms(:mingw, :x64_mingw, :mswin) do
   gem('tzinfo', '~> 1.2')
