@@ -5,10 +5,25 @@ description: >-
   Solving impactful and complex software problems.
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/jcmcginnis-2022"
+baseurl: ""
 permalink: pretty
 
-google_analytics_id: false # replace with "UA-XXXX"
+logo:
+  logo_desktop_image: assets/images/logo/logo.svg
+  logo_desktop_text: "Jesse <strong>McGinnis</strong>"
+  logo_mobile_image: assets/images/logo/logo-mobile.svg
+  logo_mobile_text: ""
+  logo_desktop_height: "36px"
+  logo_desktop_width: "36px"
+  logo_mobile_height: "36px"
+  logo_mobile_width: "36px"
+
+seo:
+  meta_twitter_site: "@elsom25"
+  meta_twitter_creator: "@elsom25"
+  # meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
+
+google_analytics_id: "UA-8016020-1"
 
 # Build settings
 markdown: kramdown

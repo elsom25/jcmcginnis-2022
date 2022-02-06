@@ -1,3 +1,7 @@
 <header class="flex items-center justify-between py-6">
   {% include logo.html %}
+
+  {% for item in site.data.menu.main %}
+  <a class="py-2" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+  {% endfor %}
 </header>

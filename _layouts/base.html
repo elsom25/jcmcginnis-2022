@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-ca" class="bg-solarized-100 text-solarized-700 selection:bg-solarized-200 selection:text-rose-700 dark:bg-solarized-800 dark:text-solarized-200 dark:selection:bg-solarized-700 dark:selection:text-rose-300 font-mono">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    {% include meta.html %}
+
+    <link rel="icon" href="{{ '/favicon.png' | relative_url }}">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400" rel="stylesheet">
+    <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+  </head>
+  <body class="page {{page.bodyClass}}">
+    {{ content }}
+    {% include google-analytics.html %}
+  </body>
+</html>

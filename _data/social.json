@@ -8,5 +8,10 @@
     "name": "Twitter",
     "link": "https://twitter.com/elsom25",
     "image": "https://simpleicons.org/icons/twitter.svg"
+  },
+  {
+    "name": "LinkedIn",
+    "link": "https://www.linkedin.com/in/jcmcginnis",
+    "image": "https://simpleicons.org/icons/linkedin.svg"
   }
 ]
