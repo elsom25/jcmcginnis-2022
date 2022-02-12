@@ -1,7 +1,11 @@
-<header class="flex items-center justify-between py-6">
-  {% include logo.html %}
+<header class="py-4 border-t-4 border-t-pink-700 dark:border-t-pink-200">
+  <nav class="container mx-auto flex justify-between">
+    {% include logo.html %}
 
-  {% for item in site.data.menu.main %}
-  <a class="py-2" href="{{ item.url | relative_url }}">{{ item.name }}</a>
-  {% endfor %}
+    <ol>
+      {% for item in site.data.menu.main %}
+      <li class="inline-block"><a class="p-2 hover:underline" href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </div>
+  </nav>
 </header>

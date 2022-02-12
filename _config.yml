@@ -4,8 +4,8 @@ description: >-
   Jesse McGinnis in Waterloo, Canada.
   Solving impactful and complex software problems.
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: ""
+url: "https://jcmcginnis.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/"
 permalink: pretty
 
 logo:
