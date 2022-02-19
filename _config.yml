@@ -32,10 +32,6 @@ plugins:
   - jekyll-environment-variables
   - jekyll-feed
   - jekyll-postcss
-  - jekyll-paginate
-
-paginate: 3
-paginate_path: /blog/page:num/
 
 collections:
   posts:
