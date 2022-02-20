@@ -11,9 +11,10 @@
 
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400" rel="stylesheet">
     <link href="{{ '/assets/css/style.css' | relative_url }}" rel="stylesheet">
+
+    {% include google-analytics.html %}
   </head>
   <body class="page {{page.bodyClass}}" id="page-top">
     {{ content }}
-    {% include google-analytics.html %}
   </body>
 </html>
