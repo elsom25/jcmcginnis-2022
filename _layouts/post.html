@@ -2,57 +2,18 @@
 layout: default
 ---
 
-{% include heading.html heading=page.title description=page.description align="center" date=page.date %}
+<header class="py-6 md:py-12 lg:w-10/12 md:text-center mx-auto">
+  <div class="text-lg font-medium">{{ page.date | date: "%B %e, %Y" }}</div>
+  <h1 class="heading text-4xl md:text-6xl font-bold font-sans md:leading-tight">
+    {{ page.title }}
+  </h1>
+  {% if page.description %}
+    <h2 class="text-xl mt-2">{{ page.description }}</h2>
+  {% endif %}
+</header>
 
-{% if page.authors %}
-  <div class="flex flex-col pb-3 md:hidden">
-    {% for author in page.authors %}
-      {% include author-large.html
-        author=author
-      %}
-    {% endfor %}
-  </div>
-{% endif %}
+<img width="1600" height="900" src="{{ page.image }}" />
 
-<img width="1600" height="900" src="{{ page.image }}"/>
-
-<div class="flex flex-col md:flex-row py-6 md:py-12">
-
-  <div class="w-full md:w-3/12 pr-3">
-    {% if page.authors %}
-      <div class="flex flex-col hidden md:flex mb-3 md:mb-6">
-        {% for author in page.authors %}
-          {% include author-large.html
-        author=author
-        %}
-        {% endfor %}
-      </div>
-    {% endif %}
-
-    {% if page.categories %}
-      <div class="hidden md:block">
-        {% for category in page.categories %}
-          {% include category-badge.html %}
-        {% endfor %}
-      </div>
-    {% endif %}
-  </div>
-
-  <div class="w-full md:w-9/12">
-    <div class="prose md:prose-lg lg:prose-xl prose-stone dark:prose-invert">
-      {{ content }}
-    </div>
-  </div>
-
-</div>
-
-{% if page.categories %}
-  <div class="py-6 mt-6 border-t-2 block md:hidden">
-    <h3 class="text-sm font-medium mb-1">Categories</h3>
-    <div>
-      {% for category in page.categories %}
-        {% include category-badge.html %}
-      {% endfor %}
-    </div>
-  </div>
-{% endif %}
+<main class="mx-auto my-10 md:my-16 max-w-prose prose md:prose-lg lg:prose-xl prose-neutral dark:prose-invert">
+  {{ content }}
+</main>

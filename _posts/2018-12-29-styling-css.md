@@ -2,7 +2,6 @@
 layout: post
 title: "Styling CSS"
 date: 2018-12-29T10:26:40+10:00
-authors: ["Jesse McGinnis"]
 categories: ["Development", "Javascript"]
 description: Learn how to use Markdown to write blog posts. Understand front-matter and how it is used in templates.
 thumbnail: "https://source.unsplash.com/INHtWKpBTsA/640x360"

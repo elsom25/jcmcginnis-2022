@@ -2,7 +2,6 @@
 title: "Designing Your Brand"
 date: 2022-02-06 10:26:40 -0500
 layout: post
-authors: ["Jesse McGinnis"]
 categories: Branding Test
 description: Branding is an intrinsic part of your companies success, learn why your brand matters.
 thumbnail: "https://source.unsplash.com/YmQ0-nmWcV0/640x360"
