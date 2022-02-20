@@ -23,8 +23,6 @@ seo:
   meta_twitter_creator: "@elsom25"
   # meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
 
-google_analytics_id: "G-P0NF7D6TS6"
-
 # Build settings
 markdown: kramdown
 highlighter: rouge
