@@ -69,3 +69,5 @@ exclude:
   - .liquidrc
   - postcss.config.js
   - tailwind.config.js
+  - bin/jekyll
+  - bin/serve
