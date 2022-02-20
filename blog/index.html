@@ -4,15 +4,12 @@ title: Blog
 heading: Blog
 ---
 
-<main class="my-10">
-  <!-- <h1 class="text-2xl md:text-4xl font-bold font-sans md:leading-tight">
-    {{ page.heading }}
-  </h1> -->
+<main class="my-10 md:my-16">
   {% for post in site.posts %}
     {% assign currentdate = post.date | date: "%Y" %}
     {% if currentdate != date %}
       {% unless forloop.first %}</ul></div>{% endunless %}
-      <div class="md:flex my-10">
+      <div class="md:flex mb-10">
         <h2 class="flex-none w-24 text-neutral-400 dark:text-neutral-500" id="y-{{currentdate}}">{{ currentdate }}</h2>
         <ul class="grow md:grid grid-cols-2 gap-y-4">
         {% assign date = currentdate %}
@@ -21,10 +18,10 @@ heading: Blog
       <a href="{{ post.url }}" class="text-sm font-light text-neutral-600 dark:text-neutral-400">{{ post.date | date: "%B %e" }}</a>
       {% if post.categories %}
         {% for category in post.categories %}
-          <a class="text-sm font-light text-rose-700 hover:text-rose-900" href="{{ " /category/" | relative_url }}{{ category | slugify }}">{{ category }}</a>
+          <a class="text-sm font-light text-rose-700 hover:text-rose-800 dark:text-rose-500" href="{{ '/category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
         {% endfor %}
       {% endif %}
-      <h3 class="text-lg font-semibold"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="text-lg font-semibold"><a class="hover:text-rose-800" href="{{ post.url }}">{{ post.title }}</a></h3>
     </li>
     {% if forloop.last %}</ul></div>{% endif %}
   {% endfor %}

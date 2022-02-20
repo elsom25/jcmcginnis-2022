@@ -3,11 +3,24 @@ layout: default
 body_classes: page-category
 ---
 
-{% include heading.html heading=page.title description=page.description %}
+{% assign category = page.title %}
 
-<main class="pb-6 md:pb-12">
-  {% assign category = page.title %}
-  {% for post in site.categories[category] %}
-    {% include summary-category.html post=post %}
-  {% endfor %}
+<main class="my-10 md:my-16">
+  <header class="mb-6 flex flex-col md:flex-row align-center items-center w-full lg:w-10/12">
+    <h1 class="text-2xl md:text-4xl font-light text-rose-700 font-sans md:leading-tight">{{ category }}</h1>
+    {% if page.description %}
+    <h2 class="text-lg italic font-light mt-2">{{ description }}</h2>
+    {% endif %}
+  </header>
+
+  <ol class="mb-10">
+    {% for post in site.categories[category] %}
+      <li class="mb-4 flex flex-col md:flex-row align-center items-center w-full lg:w-10/12">
+        <h3 class="md:text-lg font-semibold mr-4">
+          <a href="{{ post.url | relative_url }}" class="hover:text-rose-800">{{ post.title }}</a>
+        </h3>
+        <span class="md:text-lg font-light text-neutral-600 dark:text-neutral-400">{{ post.date | date: "%B %e, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ol>
 </main>
