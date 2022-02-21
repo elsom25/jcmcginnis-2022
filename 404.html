@@ -1,24 +1,30 @@
 ---
-layout: default
+layout: base
+permalink: /404.html
 ---
 
-<style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
+<main class="flex justify-center items-center h-screen w-screen">
+  <div class="text-center">
+    <h1 class="text-4xl md:text-6xl font-bold font-mono">404</h1>
+    <p class="font-mono">Page not found :(</p>
 
-<div class="container">
-  <h1>404</h1>
+    <div class="flex items-center my-6 md:my-10 w-3/4 mx-auto" aria-hidden="true">
+      <span aria-hidden="true" class="flex-grow bg-neutral-600 dark:bg-neutral-300 rounded h-0.5"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="inline fill-neutral-700 dark:fill-neutral-200 h-5 w-5 mx-3"
+        viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd"
+          d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+          clip-rule="evenodd" />
+      </svg>
+      <span aria-hidden="true" class="flex-grow bg-neutral-600 dark:bg-neutral-300 rounded h-0.5"></span>
+    </div>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+    <p>The requested page could not be found.</p>
+    <p>
+      Try
+      <a class="underline transition-colors hover:text-rose-800" href="{{ '/' | relative_url }}">About</a>
+      or the
+      <a class="underline transition-colors hover:text-rose-800" href="{{ '/blog' | relative_url }}">Blog</a>.
+    </p>
+  </div>
+</main>
