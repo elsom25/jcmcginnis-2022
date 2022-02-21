@@ -6,7 +6,7 @@ description: >-
 
 url: "https://jcmcginnis.com" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/"
-permalink: pretty
+permalink: none
 
 logo:
   logo_desktop_image: assets/images/logo/logo.svg
@@ -34,7 +34,7 @@ plugins:
 collections:
   posts:
     output: true
-    permalink: /blog/:path/
+    permalink: /blog/:title/
 
 defaults:
   - scope:
