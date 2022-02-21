@@ -4,15 +4,15 @@ title: Blog
 heading: Blog
 ---
 
-<main class="my-10 md:my-16">
+<div class="my-10 md:my-16">
   {% for post in site.posts %}
-    {% assign currentdate = post.date | date: "%Y" %}
-    {% if currentdate != date %}
+    {% assign current_date = post.date | date: "%Y" %}
+    {% if current_date != date %}
       {% unless forloop.first %}</ul></div>{% endunless %}
-      <div class="md:flex mb-10">
-        <h2 class="flex-none w-24 text-neutral-400 dark:text-neutral-500" id="y-{{currentdate}}">{{ currentdate }}</h2>
+      <div class="md:flex mb-10" id="year-{{ current_date }}">
+        <h2 class="flex-none w-24 text-neutral-400 dark:text-neutral-500" id="y-{{current_date}}">{{ current_date }}</h2>
         <ul class="grow md:grid grid-cols-2 gap-y-4">
-        {% assign date = currentdate %}
+        {% assign date = current_date %}
     {% endif %}
     <li class="mb-4">
       <a href="{{ post.url }}" class="text-sm font-light text-neutral-600 dark:text-neutral-400">{{ post.date | date: "%B %e" }}</a>
@@ -25,4 +25,4 @@ heading: Blog
     </li>
     {% if forloop.last %}</ul></div>{% endif %}
   {% endfor %}
-</main>
+</div>
