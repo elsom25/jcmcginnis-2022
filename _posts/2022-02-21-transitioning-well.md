@@ -34,7 +34,7 @@ Do you know the domain? Do you know the organization? Do you know the history? D
 
 Start by reading: documentation, tech designs, blog posts, product briefs, a little code. Everything you can get your hands on. You need to put in the work. You need to show that you care.
 
-Now that you've read, it's time to connect with your new humans. Be upfront that you don't know much yet. This'll go a long way to building trust _and_ getting you good answers. Ask you team, ask past leaders, and ask skip-levels. Seek their perspective. Ask every question you can think of. Ask them what they think you should know. Be a sponge.
+Now that you've read, it's time to connect with your new humans. Be upfront that you don't know much yet. This'll go a long way to building trust _and_ getting you good answers. Ask your team, ask past leaders, and ask skip-levels. Seek their perspective. Ask every question you can think of. Ask them what they think you should know. Be a sponge.
 
 ### Clear and authentic communication
 
