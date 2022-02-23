@@ -8,7 +8,11 @@
     {% include meta.html %}
 
     {% assign cacheBust = site.time | date:'?v=%s' %}
+    <meta name="theme-color" content="#be195c">
     <link rel="icon" href="{{ '/favicon.svg' | relative_url | append: cacheBust }}">
+    <link rel=”mask-icon” href="{{ '/favicon.svg' | relative_url | append: cacheBust }}" color=”#be195c">
+    <link rel=”apple-touch-icon” href="{{ '/apple-touch-icon' | relative_url | append: cacheBust }}">
+    <link rel=”manifest” href="{{ '/manifest.json' | relative_url | append: cacheBust }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
