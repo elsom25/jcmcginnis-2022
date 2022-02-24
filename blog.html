@@ -12,7 +12,7 @@ permalink: /blog/
       {% unless forloop.first %}</ul></div>{% endunless %}
       <div class="md:flex mb-10" id="year-{{ current_date }}">
         <h2 class="flex-none w-24 text-neutral-400 dark:text-neutral-500" id="y-{{current_date}}">{{ current_date }}</h2>
-        <ul class="grow md:grid grid-cols-2 gap-y-4">
+        <ul class="grow md:grid grid-cols-2 gap-x-4 md:gap-x-8">
         {% assign date = current_date %}
     {% endif %}
     <li class="mb-4">
@@ -22,7 +22,8 @@ permalink: /blog/
           <a class="text-sm font-light text-rose-700 hover:text-rose-800 dark:text-rose-500" href="{{ '/category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
         {% endfor %}
       {% endif %}
-      <h3 class="text-lg font-semibold"><a class="hover:text-rose-800" href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="text-lg font-semibold"><a class="hover:text-rose-800" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <h4><a href="{{ post.url | relative_url }}">{{ post.description }}</a></h4>
     </li>
     {% if forloop.last %}</ul></div>{% endif %}
   {% endfor %}
