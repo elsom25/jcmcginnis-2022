@@ -3,7 +3,6 @@ layout: post
 
 title:     Transitioning Well
 permalink: /blog/transitioning-well/
-date:      2022-02-20 15:00:00 -0500
 
 categories:  ["Leadership"]
 description: Transitioning to a new team is hard, doubly so as a leader.
