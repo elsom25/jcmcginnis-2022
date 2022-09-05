@@ -2,6 +2,7 @@
 
 # NPM
 node_modules
+.yarn/
 
 # Jekyll
 _site
