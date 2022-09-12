@@ -1,14 +1,11 @@
 ---
-layout: post
-
-title:     Transitioning Well
-permalink: /blog/transitioning-well/
+title:       Transitioning Well
+permalink:   /blog/transitioning-well/
 
 categories:  ["Leadership"]
 description: Transitioning to a new team is hard, doubly so as a leader.
 
-image:     "https://source.unsplash.com/Dz5bJq_nEng/1600x900"
-thumbnail: "https://source.unsplash.com/Dz5bJq_nEng/640x360"
+image:       "/assets/img/transitioning-well.jpg"
 ---
 
 Transitioning teams is hard. Transitioning teams as a leader has a whole swath of extra challenges. Whether it be a new job or a new role within your current company, there's plenty to figure out each time&hellip;

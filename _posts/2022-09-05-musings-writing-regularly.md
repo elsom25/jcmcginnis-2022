@@ -1,14 +1,11 @@
 ---
-layout: post
-
-title:     Writing Regularly
-permalink: /blog/musings-writing-regularly/
+title:       Writing Regularly
+permalink:   /blog/musings-writing-regularly/
 
 categories:  ["Musings"]
 description: The act of capturing your thoughts, consistently.
 
-image:     "https://source.unsplash.com/505eectW54k/1600x900"
-thumbnail: "https://source.unsplash.com/505eectW54k/640x360"
+image:       "/assets/img/musings-writing-regularly.jpg"
 ---
 
 I want to write more, but I don't want to have to write _proper articles_ for everything on my mind&hellip;
