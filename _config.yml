@@ -1,27 +1,29 @@
 title: Jesse McGinnis
 email: jesse@jcmcginnis.com
+tagline: Solving impactful and complex software problems.
 description: >-
   Jesse McGinnis in Waterloo, Canada.
   Solving impactful and complex software problems.
 
-url: "https://jcmcginnis.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://jcmcginnis.com # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/"
 permalink: none
+locale: en_CA
 
-logo:
-  logo_desktop_image: assets/images/logo/logo.svg
-  logo_desktop_text: "Jesse <strong>McGinnis</strong>"
-  logo_mobile_image: assets/images/logo/logo-mobile.svg
-  logo_mobile_text: ""
-  logo_desktop_height: "36px"
-  logo_desktop_width: "36px"
-  logo_mobile_height: "36px"
-  logo_mobile_width: "36px"
+logo: /favicon.svg
 
-seo:
-  meta_twitter_site: "@elsom25"
-  meta_twitter_creator: "@elsom25"
-  # meta_og_image: "https://www.zerostatic.io/theme/jekyll-atlantic/jekyll-atlantic-screenshot.png"
+author:
+  name: Jesse McGinnis
+  twitter: elsom25
+  url: https://jcmcginnis.com
+
+social:
+  name: Jesse McGinnis
+  links:
+    - https://twitter.com/elsom25
+    - https://github.com/elsom25
+    - https://www.linkedin.com/in/jcmcginnis
+    - https://www.facebook.com/jcmcginnis
 
 # Build settings
 markdown: kramdown
@@ -30,6 +32,7 @@ plugins:
   - jekyll-environment-variables
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-seo-tag
 
 collections:
   posts:

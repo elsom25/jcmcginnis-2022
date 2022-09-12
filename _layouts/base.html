@@ -5,8 +5,6 @@
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    {% include meta.html %}
-
     {% unless jekyll.environment == "development" %}
       {% assign cacheBust = site.time | date:'?v=%s' %}
     {% endunless %}
@@ -28,6 +26,9 @@
       rel="stylesheet">
 
     <link href="{{ '/assets/css/style.css' | relative_url | append: cacheBust }}" rel="stylesheet">
+
+    {% seo %}
+    {% feed_meta %}
   </head>
   <body class="page {{page.bodyClass}} bg-neutral-100 text-neutral-700 selection:bg-neutral-200 selection:text-rose-700 dark:bg-neutral-800 dark:text-neutral-200 dark:selection:bg-neutral-600 dark:selection:text-rose-300" id="page-top">
     {{ content }}
