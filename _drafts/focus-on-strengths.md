@@ -5,6 +5,6 @@ permalink:   /blog/focus-on-strengths/
 categories:  ["Leadership"]
 description: TKTKTK.
 
-image:       "/assets/img/work-life-harmony.jpg"
+image:       "/assets/img/focus-on-strengths.jpg"
 ---
 
