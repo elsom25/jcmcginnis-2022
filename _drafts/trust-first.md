@@ -74,8 +74,6 @@ By building trust in these three layers, leaders can create a strong foundation 
 
 ## Conclusion
 
-In conclusion, trust is the foundation of any team or organization, and is essential for building a high-performing team. When team members trust their leader and their team, they are more likely to be aligned with the goals and vision of the team, more engaged in their work, and more productive overall. Trust takes time to gain, yet can be easily lost; it is something that must be continuously nurtured and maintained to build strong, healthy relationships.
+Ultimately, trust is the foundation of any high-performing team or organization. When team members trust their team and leaders, they are more likely to be aligned with the goals and vision of the team, more engaged in their work, and more productive overall. Trust takes time to gain, yet can be easily lost. To build trust within a team, leaders should create opportunities for fun, facilitate deep and honest conversations, and create space for team members to be their full, vulnerable selves.
 
-To build trust within a team, leaders can create opportunities for fun, facilitate deep and honest conversations, and create space for team members to be their full, vulnerable selves. By using these tactics, leaders can create a strong foundation for high-performing teams.
-
-As a leader, it is essential to prioritize trust in all of your interactions with your team and to consistently demonstrate your commitment to honesty, transparency, and integrity. By leading with _trust first_, you can create a positive and supportive team culture that promotes collaboration, innovation, and success. Building trust is an ongoing process that requires intentionality and effort, but the benefits of a trusting team are well worth it.
+As a leader, it is essential to prioritize trust in all of your interactions with your team. Building trust is an ongoing process that requires intentionality and effort, but the benefits of a trusting team, and leading with _trust first_, are well worth it.
