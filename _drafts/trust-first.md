@@ -10,7 +10,11 @@ description: Leading with trust first is the best way to build a team that is al
 image:     "/assets/img/transitioning-well.jpg"
 ---
 
-Trust is the foundation of any team or organization, and is essential for building a high-performing team. When team members trust their leader, they are more likely to be aligned with the goals and vision of the team, more engaged in their work, and more productive overall. Trust takes time to gain, yet can be easily lost; it is something that must be continuously nurtured and maintained in order to build strong, healthy relationships. As a leader, it is essential to prioritize trust in all of your interactions with your team and to consistently demonstrate your commitment to honesty, transparency, and integrity. By leading with _trust first_, you can create a positive and supportive team culture that promotes collaboration, innovation, and success.
+Trust is the foundation of every high-performing team or organization.
+
+When team members trust their teams (and their leaders!), they are more aligned with the goals and vision of the team, more engaged in their work, and more productive overall. Trust takes time to gain, yet can be easily lost; it is something that must be continuously nurtured and maintained in order to build strong, healthy relationships.
+
+As a leader, it is essential to prioritize trust in all of your interactions with your team. By leading with _trust first_, you too can create a positive and supportive team culture.
 
 ## Trust matters
 
