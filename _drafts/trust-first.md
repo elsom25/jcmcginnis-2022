@@ -66,7 +66,7 @@ The full human is about creating space for team members to be their full, vulner
 
 The life graph is a simple and straightforward way to share your story with the team. Everyone is given 15 minutes to draw a graph of their life, which will unlock lots of rarely told stories and memories, while also ensuring everyone has autonomy to only share what they are comfortable with. After that, get folks together (recommending groups of 4–5) and give each person 5–10 minutes to "present" their life. This is a beautiful way to share your story, a powerful way to start deeper conversations, and is cathartic in ways that surprises most people. This deeply personal and humanizing experiences helps everyone on the team see the _full human_ we all are.
 
-By building trust in these three layers, leaders can create a strong foundation for high-performing teams. Using all of these techniques in concert keep a healthy balance between light- and heavy-conversation, ensuring this remains a suite of activities you can run for the long-term. By focusing on having fun, enabling real talk, and creating space for vulnerability, leaders can create a positive and supportive team culture that promotes collaboration, innovation, and success.
+By building trust in these three layers, leaders can create a strong foundation for high-performing teams. Using all of these techniques in concert keep a healthy balance between light- and heavy-conversation, ensuring this remains a suite of activities you can run for the long-term. By focusing on having fun, enabling real talk, and creating space for vulnerability, leaders can create a positive and supportive team culture.
 
 ## Conclusion
 
