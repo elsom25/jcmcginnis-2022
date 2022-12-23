@@ -14,21 +14,21 @@ When team members trust their teams and leaders, they will be more aligned, more
 
 ## Trust matters
 
-As I've said, trust is the foundation of high-performing teams. It allows for open and honest communication. It simplifies conflict resolution. It drives decision making. It fosters accountability. All of which, together, creates alignment.
+Trust is the foundation of high-performing teams. It allows for open and honest communication. It simplifies conflict resolution. It propels decision making. It fosters accountability. All of which, together, simplifies alignment.
 
-Trust drives bold engagement within team: building necessary motivation and productivity. It facilitates safe failure and experimentation; crucial elements to learn and grow.
+Trust drives engagement within teams: building necessary motivation and productivity. It facilitates safe failure and experimentation; crucial elements to learn and grow.
 
-By building trust within teams, leaders will drive world-class performance.
+By building trust within teams, leaders will enjoy world-class performance.
 
 ### Trust simplifies alignment
 
-Trust allows team members to be their authentic selves, which frees up energy to focus on the work at hand. When team members feel safe to express their ideas and opinions, they will be present and engaged. This authenticity frees folks to speak openly and honestly without fear of reprisal or judgment. Frees folks to be present and to challenge and question what's unclear. Frees folks to give and receive feedback.
+Trust allows team members to be their authentic selves, which frees up energy to focus on the work at hand. When team members feel safe to express their ideas and opinions, they're invited to be present and engaged. This authenticity frees folks to speak openly and honestly without fear of reprisal or judgment. Frees folks to be genuine and to challenge and question what's unclear. Frees folks to give and receive feedback.
 
-And critically, this candid authenticity facilitates real and productive conflict. When team members feel comfortable  —  encouraged  even —  to share their opinions and ideas, even when they disagree with each other or you, it facilitates open and honest dialogue. This will lead to better decision making and improved outcomes.
+And critically, this candid authenticity facilitates real and productive conflict. When team members feel comfortable — encouraged even — to share their opinions and ideas, even when they disagree with each other or you, it facilitates open and honest dialogue. This will lead to better decision making and improved outcomes.
 
 This will lead to alignment. A team working towards a common goal with minimal communication overhead and coordination. A common goal that motivates and excites. A common goal, built together.
 
-### Trust builds engagement
+### Trust drives engagement
 
  We are social creatures and seek connection. When we trust each other, when we trust where we're going, and when we trust _how we engage_, we'll feel a part of something bigger.
 
@@ -52,7 +52,7 @@ Now that we have our initial connections established, we can go deeper. "Real ta
 
 As we move into "real conversations," it's critical to facilitate carefully. You need to establish ground-rules of engagement and make a space that is safe, inviting, and open for folks to share increasingly personal details. Facilitation is a whole other topic and skill I'll dive deep into in a future post — but for now: be present, fair, and kind.
 
-I recommend the [36 Questions That Lead to Love](https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html) and [The Ungame](https://en.wikipedia.org/wiki/The_Ungame). These are  great tools to help drive these conversations with excellent prompts. Plan for 30-60 minutes with a few rounds of questions and a debrief to reflect on the experience.
+I recommend the [36 Questions That Lead to Love](https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html) and [The Ungame](https://en.wikipedia.org/wiki/The_Ungame). These are great tools to help drive these conversations with excellent prompts. Plan for 30-60 minutes with a few rounds of questions and a debrief to reflect on the experience.
 
 All of this is about creating space to allow team members to have more vulnerable and authentic conversations. Conversations which will build trust and create a deeper understanding of each fully realized human.
 
