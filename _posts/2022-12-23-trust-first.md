@@ -24,27 +24,27 @@ By building trust within teams, leaders will enjoy world-class performance.
 
 Trust allows team members to be their authentic selves, which frees up energy to focus on the work at hand. When team members feel safe to express their ideas and opinions, they're invited to be present and engaged. This authenticity frees folks to speak openly and honestly without fear of reprisal or judgment. Frees folks to be genuine and to challenge and question what's unclear. Frees folks to give and receive feedback.
 
-And critically, this candid authenticity facilitates real and productive conflict. When team members feel comfortable — encouraged even — to share their opinions and ideas, even when they disagree with each other or you, it facilitates open and honest dialogue. This will lead to better decision making and improved outcomes.
+And critically, this candid authenticity facilitates real and productive conflict. When team members feel comfortable — encouraged even — to share their opinions and ideas, even when they disagree with each other or you, it facilitates open and honest dialogue. You'll see better decision making and improved outcomes.
 
-This will lead to alignment. A team working towards a common goal with minimal communication overhead and coordination. A common goal that motivates and excites. A common goal, built together.
+All of this supports alignment. A team working towards a common goal with minimal communication overhead and coordination. A common goal that motivates and excites. A common goal, built together.
 
 ### Trust drives engagement
 
- We are social creatures and seek connection. When we trust each other, when we trust where we're going, and when we trust _how we engage_, we'll feel a part of something bigger.
+ We are social creatures and seek connection. When we trust each other, when we trust where we're going, and when we trust _how we engage_, we'll feel a part of something bigger. This bigger picture, with deeper purpose and connection, supports deep connection and honest engagement. Engagement that'll appear in surprising ways and facilitate so many different micro- and macro-refinements to how your team shows up day to day.
 
-This bigger picture, with deeper purpose and connection, invites fun. Fun which keeps work light. Fun which creates space for decompression and offers everyone room to make mistakes.
+This shared purpose also invites _fun_. Fun which keeps work light. Fun which humanizes. Fun which creates space for decompression and offers everyone room to make mistakes; critical for the team to continue learning and growing over the long term.
 
-All of these elements are necessary to sustain the environment of a high-performing team. One that can be kick-ass, and keep being kick-ass for the long term. But how do we get to this necessary trust?
+All of these help sustain the environment of a high-performing team. One that can be kick-ass, and keep being kick-ass for a long time. But how do we get to this necessary trust?
 
 ## Tactics to build trust
 
-Building trust is hard. Doubly so in a digital-first world. This is where a focus on _trust first_ comes into play. With a focus on three layers of depth, we can create space for uniquely human conversation. Human conversations that'll establish real long-term trust.
+Building trust is hard. Doubly so in a digital-first world. This is where a focus on _trust first_ comes into play. With three layers of depth, we can create space for uniquely human conversation. Human conversations that'll establish real long-term trust.
 
 ### Layer 1: Have fun
 
 To build trust within a team, start by making space for fun. Focus on activities that are light-hearted, easy to take part in, and intentionally social. This is our baseline — it'll be surface level, but it creates the initial connections we need. Connections that we will build on.
 
-These activities should be recurring and variable, and should be led by different team members to keep things fresh. Examples include happy hours, coffee chats, and games. You should also add something "bigger" in every once in a while, like a digital escape room or a virtual zoo visit. The key here is to keep it fresh and exciting, so you can continuously nurture and invite folks to have fun together.
+These activities should be recurring and variable, and should be led by different team members to keep things fresh. Examples include happy hours, coffee chats, and games. You should also add something "bigger" in every once in a while, like a digital escape room or a virtual zoo visit. The key here is to keep it novel and exciting, so you can continuously nurture and invite folks to have fun together.
 
 ### Layer 2: Enable real talk
 
