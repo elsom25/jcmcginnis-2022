@@ -2,17 +2,18 @@
 layout: base
 ---
 
-{% assign now = 'now' | date: '%s' %}
-{% assign one_month_ago = now | minus: 2629743 %}
 {% assign recent_post = site.posts.first %}
 
-{% assign recent_post_date = recent_post.date | date: '%s' %}
-{% if recent_post_date >= one_month_ago %}
+{% assign recent_post_epoch = recent_post.date | date: '%s' | plus: 0 %}
+{% assign four_weeks_ago_epoch = 'now' | date: '%s' | minus: 2419200 %}
+
+{% if recent_post_epoch >= four_weeks_ago_epoch %}
   {% assign relevant_post = recent_post %}
 {% else %}
-  {% assign today = 'now' | date: '%j' %}
+  {% assign today = 'now' | date: '%j' | plus: 0 %}
   {% assign posts_count = site.posts | size %}
   {% assign random = today | modulo: posts_count %}
+
   {% assign relevant_post = site.posts[random] %}
 {% endif %}
 
