@@ -2,25 +2,37 @@
 layout: base
 ---
 
+{% assign now = 'now' | date: '%s' %}
+{% assign one_month_ago = now | minus: 2629743 %}
 {% assign recent_post = site.posts.first %}
+
+{% assign recent_post_date = recent_post.date | date: '%s' %}
+{% if recent_post_date >= one_month_ago %}
+  {% assign relevant_post = recent_post %}
+{% else %}
+  {% assign today = 'now' | date: '%j' %}
+  {% assign posts_count = site.posts | size %}
+  {% assign random = today | modulo: posts_count %}
+  {% assign relevant_post = site.posts[random] %}
+{% endif %}
 
 <main class="max-w-prose md:text-lg text-lg lg:text-xl border-l-4 border-l-pink-700 py-2 pr-1 pl-5 my-8 mx-4 sm:py-3 sm:pr-3 sm:pl-7 md:py-4 md:pr-4 md:pl-9 sm:mt-[10vh] sm:ml-[5.5vw] md:mt-[18vh] md:ml-[10vw]">
   <h1 class="mb-5 mt-0 font-mono font-bold uppercase text-3xl md:text-4xl lg:text-5xl">
     Jesse McGinnis.
   </h1>
   <p class="my-4">
-    I'm fueled by solving complex and impactful problems on a global scale, steering high-performing RnD teams to deliver extraordinary results.
+    I'm fueled by solving impactful and complex problems on a global scale, steering high-performing RnD teams to deliver extraordinary results.
     My mission? Empower humans to conquer heights they never thought possible.
   </p>
   <p class="my-4">
-    {% if recent_post %}
+    {% if relevant_post %}
     I chronicle my experiences and insights as an engineering leader
     <a class="underline font-semibold transition-colors hover:text-rose-800" href="{{ '/blog' | relative_url }}">through my writing</a>,
     directly from the tech hub of
     <a class="underline font-semibold transition-colors hover:text-rose-800" href="http://whywaterloo.ca/" rel="external" target="_blank">Waterloo</a>.
 
     Dive into my post,
-    <a class="underline font-semibold transition-colors hover:text-rose-800" href="{{ recent_post.url | relative_url }}">Trust First</a>,
+    <a class="underline font-semibold transition-colors hover:text-rose-800" href="{{ relevant_post.url | relative_url }}">Trust First</a>,
     for a taste of my thought process.
     {% endif %}
 
