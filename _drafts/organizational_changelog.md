@@ -5,46 +5,44 @@ title:     Organizational Changelog
 permalink: /blog/org-changelog/
 
 categories:  ["Leadership"]
-description: For better change, remember where you came from and how you got to today.
+description: Change is always coming, so you better be ready for it.
 
 image:     "/assets/img/org-changelog.webp"
 ---
 
-Building teams and organizations adaptable to change is a critical skill for leaders. Yet, how do you monitor progress? How do you ensure your adjustments make the intended impact?
+Leaders must build teams and organizations that are not just receptive to change, but thrive on it. Yet change is hard. It's hard to track, hard to understand, and hard to manage. But it doesn't have to be.
 
-## Why care about the past?
+## The importance of remembering
 
 > “Those who cannot remember the past are condemned to repeat it.”
 >
 > – George Santayana, The Life of Reason, 1905.
 
-Recalling your origins is crucial, and it's so easy to overlook or forget. Humans generally don't remember the past well; near universally colouring it by our current moods and losing critical details.
+Forgetting our origins is a common human oversight. Our memory is selective, often influenced by current circumstances, which leads to a loss of valuable insights gained through experience. And how can we know we're moving forward if we don't know where we've been?
 
 But remembering is not just important — it's essential. It's how we can see the incredible progress we've made, learn from our mistakes, and build on our wins. Its how we can see the forrest from the trees; remaining grounded so we can focus on what truly matters.
 
-## Treating your organization like a product
+## Your organization is a living product
 
 Consider your organization a living **product** — one that grows, changes, and adapts, with its own history, present, and future. It has a personality, culture, and purpose; it is not static but dynamic.
 
 And how do we track changes to a product? **Version numbers** and **changelogs** that go hand-in-hand.
 
-### Organization versioning
+### Mechanics of organization versioning
 
-Whatever format works for you is the right choice. But I'm a fan of [Semantic Versioning](https://semver.org/) as a base. It's simple, clear, and easy to understand. And it's a great way to communicate the scale of changes. Some tunes to make it fit better for humans:
+Whatever format works for you is the right choice. But I'm a fan of [Semantic Versioning](https://semver.org/) as a base. It's simple, clear, and easy to understand. It communicates magnitude clearly. And it's easy to adapt to orgs:
 
-- **Major** aka fundamental adjustments. These are the big shifts that change the way you work with wide-reaching impact. Think significant reorgs, pivots in purpose, or overhauls in operations.
-- **Minor** aka additions. These are meaningful additions to how you work, but don't dramatically change what already exists. Think new teams, new product bet, or an emergent operating default.
-- **Patch** aka tune ups. These are minor tune-ups and really about staying honest on change. I don't use this often, but it's there when you need it.
+- **Major versions** signal fundamental change. These are the big shifts that change the way you work with wide-reaching impact. Think significant reorgs, pivots in purpose, or overhauls in operations.
+- **Minor version** signal non-disruptive additions. These are meaningful additions to how you work, but don't dramatically change what already exists. Think new teams, new product bet, or an emergent operating default.
+- **Patches** are for tune ups. Not often necessary, but available when it helps.
 
-### Changelog
+### Role of a changelog
 
-A changelog is a record of changes made to a system. It's a way to track what's been done, why it was done, and what the impact was. It's a way to remember where you came from and how you got to today.
+Consider a changelog your organizational memoir — a tool to chronicle adjustments, rationalize decisions, and underscore impacts. It’s a testament to your growth journey, meant to be both user-friendly and simple to maintain. A straightforward, easily accessible record ensures that this practice enhances transparency and collective memory.
 
-For an organization, value both ease-of-consumption and ease-of-maintenance. If this is hard to keep up, it won't be kept up. And if it's hard to read, it won't be read. Start simple: a bullet-point list in a shared document is a great start.
+Start simple: a bullet-point list in a shared document. Keep it alive, changing as you go. And make it a tool for you too (not just for your org). Think historical bookmarks, context for new hires, or consolidation of other docs.
 
-Make sure it's a tool for you too, not just for your org. Think historical bookmarks (there's so little we do that is truly novel), context for new hires, or consolidation of other docs.
-
-## What to include?
+## What's this look like?
 
 In documenting your organization's "versions," focus on:
 
@@ -76,9 +74,13 @@ How we work day-to-day to get our work done.
 
 Your defaults to make things work well and your cultural anchors that fill in the gaps. The systems and programs that keep your systems up, tech debt down, and people energized. And everything in-between.
 
-## The store of CodeCraft
+### Example: CodeCraft's changelog
 
-Let's look at (the made up) CodeCraft's changelog, where we can see the story of the company unfold between the bets made, the cultural tone, and the lessons gained along the way.
+Examining the fictional changelog for CodeCraft let's us pull this all together and see how this could actually work. Looking at their their changelog, you can see how CodeCraft just went through a major pivot…
+
+<details>
+  <summary class="cursor-pointer">Checkout CodeCraft's changelog</summary>
+{{ "
 
 ```markdown
 # CodeCraft Changelog
@@ -87,13 +89,13 @@ _Living document capturing key organizational changes of CodeCraft. Helps us rem
 
 ## v3.0.0 - 2023-10-17
 
-Announced at the company-wide Town Hall ([slides](#), [recording](#)). Pivoting our aim to AI-driven education for the next generation. We're flattening our structure, but keeping many of our practices the same. Adding our first written "Who we are" document as well.
+Announced at the company-wide Town Hall ([slides](#), [recording](#)). Pivoting our aim to AI-driven education for the next generation. We're flattening our structure, but keeping many of our practices the same. Adding our first written 'Who we are' document as well.
 
 **_Key docs: [v3.0 Org chart](#), [v3.0 Roadmap](#), [v2.1 Operational defaults](#), [v1.0 Who we are](#)_**
 
 1. **Organizational aims**
   - **[MAJOR]** Completely new mandate: AI-driven education for the next generation.
-  - **[MAJOR]** [v2.2 Roadmap](#) → [v3.0 Roadmap](#): With the focus on AI now, we're dropped our VR projects. Though we've kept our blockchain projects as they're still relevant; just slated for later.
+  - **[MAJOR]** [v2.2 Roadmap](#) → [v3.0 Roadmap](#): With the focus on AI now, we're dropped our VR projects (that bet didn't pan out). Though we've kept our blockchain projects as they're still relevant; just slated for later.
 2. **Organizational structure**
   - **[MAJOR]** [v2.2 Org chart](#) → [v3.0 Org chart](#): Our biggest structural change so far! We've rebalanced skills, tenure, and subdisiplines and are now organized around our new aim.
   - We've also adjusted titles to match the new formalized company title system (Tech Lead → Staff Engineer OR Manager).
@@ -107,20 +109,23 @@ Shared as a video recording ([link](#)) in Slack. The team and product have been
 
 **_Key docs: [v2.2 Org chart](#), [v2.0 Operational defaults](#)_**
 
-1. **Organizational aims**
-  - no-op
+1. **Organizational aims**: N/A
 2. **Organizational structure**
-  - **[MINOR]** [v2.1 Org chart](#) → [v2.2 Org chart](#): We've added a new VR team to double down on the tailwinds we're seeing in the market. We've also added a new "floating" team to help with cross-team coordination.
+  - **[MINOR]** [v2.1 Org chart](#) → [v2.2 Org chart](#): We've added a new VR team to double down on the tailwinds we're seeing in the market. We've also added a new 'floating' team to help with cross-team coordination.
 3. **Operational defaults and practices**
-  - **[MAJOR]** [v1.5 How to scrum](#) → [v2.0 Operational defaults](#): We do a whole lot more than "scrum" (and it's so far from scrum at this point), so we've expanded this to cover the full suite of how we operate. Give it a read if you're new or need a refresher.
+  - **[MAJOR]** [v1.5 How to scrum](#) → [v2.0 Operational defaults](#): We do a whole lot more than 'scrum' (and it's so far from scrum at this point), so we've expanded this to cover the full suite of how we operate. Give it a read if you're new or need a refresher.
 
 ## v1.5.0 - 2023-01-23
 
 ... and so on ...
 ```
+" | markdownify }}
+</details>
 
-## All together
+## Smart evolution through understanding
 
-In perpetuating a culture of adaptability and accountability, treating organizational development like product versioning isn’t merely about keeping records. By explicitly marking the evolution, we empower everyone within the organization to understand their contribution to the broader narrative.
+Building an organizational changelog is more than just a record of changes.
 
-It's a practical way to be experimental and adaptive. It instills an ethos of growth and change. It’s a step towards fostering resilience and proactive adaptation. It's how you can always be ready for the next version the future has in store.
+It's a strategic approach that equips every team member with a deep understanding of our collective progress. It's a practical way to be experimental and adaptive, instilling an ethos of constant growth and change. It’s a pathway towards resilience and proactive adaptation, by making change itself a part of your organization's DNA.
+
+It's being ready for change, because change always comes.
