@@ -70,6 +70,10 @@ What is a release but a new version? There are dozens of ways to approach this, 
 - **Minor version** signal non-disruptive additions. These are meaningful additions to how you work, but don't dramatically change what already exists. Think new teams, a new product bet, or an emergent operating default.
 - **Patches** are for tune-ups. Not often necessary, but available when it helps.
 
+Major versions are rare, but they're the big moments that define your organization. Minor versions are more common, but they're the steady drumbeat of progress. Patches are the small tweaks that keep everything running smoothly, rarely with no visible commentary.
+
+And your choice of version is itself an incredibly powerful tool — broadcasting intent and magnitude. Sometimes a major version is not much on paper, but is instead a clear message about the moment. Likewise, sometimes a minor version involves many changes, but stays minor because it's all part of the same story.
+
 ## A "real" example
 
 There's a lot here! Let's pull this all together and see how this works by reviewing a changelog for the fictional "CodeCraft Inc."
