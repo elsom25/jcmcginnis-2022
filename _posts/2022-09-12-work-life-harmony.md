@@ -33,11 +33,11 @@ Lastly, you should pay attention to what gives you energy, in both work and life
 
 There's lots of definitions out there, but two standout to me:
 
-> an interweaving of different accounts into a single narrative
+> “an interweaving of different accounts into a single narrative”
 
 and
 
-> pleasing arrangement of parts
+> “pleasing arrangement of parts”
 
 Finding work-life harmony implies a unification of these _life arrangements_ into something more pleasing than the sum of its parts.
 
