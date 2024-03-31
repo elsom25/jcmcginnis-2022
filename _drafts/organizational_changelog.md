@@ -10,7 +10,7 @@ description: Change is coming; I hope you're ready.
 image:     "/assets/img/org-changelog.webp"
 ---
 
-Leaders must build teams and organizations that are not just receptive to change, but thrive on it. Yet change is hard. It's hard to track, hard to understand, and hard to manage. But it doesn't have to be.
+Leaders must build teams and organizations that are not just receptive to change but thrive on it. Yet change is hard. It's hard to track, hard to understand, and hard to manage. But it doesn't have to be.
 
 ## Remember the past
 
@@ -18,65 +18,63 @@ Leaders must build teams and organizations that are not just receptive to change
 >
 > – George Santayana, The Life of Reason, 1905.
 
-Forgetting our origins is a common human oversight. Our memory is selective, often influenced by current circumstances, which leads to a loss of valuable insights gained through experience. And how can we know we're moving forward if we don't know where we've been?
+We all forget the past. Our memory is selective and overly influenced by the current moment; the memories themselves change over time. Without safekeeping, we'll lose key insights and lessons learned through our experiences. We'll forget the why behind our decisions and the context that shaped them, and only have the outcomes that followed.
 
-But remembering is not just important — it's essential. It's how we can see the incredible progress we've made, learn from our mistakes, and build on our wins. Its how we can see the forrest from the trees; remaining grounded so we can focus on what truly matters.
+But remembering our past is not just important — it's essential. It's how we see the incredible progress we've made, learn from our mistakes, and build on our wins. It's how we see the forest from the trees and remain grounded. The past gives us the context to understand the present and the foresight to shape the future.
 
 ## Treat your organization like a product
 
-Your organization is a **living product** — one that grows, changes, and adapts, with its own rich history. It has personality: your culture and purpose. And if you plan to be successful, it will be dynamic and ever-evolving.
+Your organization is truly a product in its own right. It has an incredibly rich history full of change and reaction. It has a deep personality, coming from not just the people but what they do together every day. It exists to _do something_ in this world. And if you plan to be successful, it will be dynamic and ever-evolving, growing, changing, and constantly adapting.
 
-There's a lot of ways to think about your organization as a product, but one of the easiest first steps is to think about it in terms of **releases**. Just like a product, your organization will go through changes, updates, and improvements. And if you package these together _just right_ you can tell a powerful story on how your organization continues to evolve. It becomes a testament to your growth journey.
-
-And in tracking those stories — collective bets across strategy, structure, and practices — you'll get better at each future bet you have to make here; equipped with knowledge and clear-eyed insights.
+There are many ways to think about your organization as a product, but an excellent starting place is to think about its changes as **releases**. As your product goes through changes, updates, and improvements, you can package these together to tell a powerful story. And in tracking those stories — collective bets across strategy, structure, and defaults — you'll get better at each future bet you have to make here; equipped with knowledge and clear-eyed insights.
 
 ## Crafting releases
 
 So what goes into a great release? It's a mix of the big and small, the strategic and the tactical. It's the big bets and the small tweaks. It's the changes that matter, always with the context and perspective to remember _why_. It's the story of your organization, told through the lens of change.
 
-As you build this, **start simple**. A bullet-point list in a shared document. Ensure its both user-friendly but simple to maintain. A straightforward, easily accessible record ensures that this practice enhances transparency and collective memory.
-
-With each release, track the changes _that matter_. After doing this actively for the past couple years, I've found these 3 buckets, when packaged together with _the why_ to be sufficient:
+As you build this, it can become overwhelming fast. **Keep it simple**: A bullet-point list in a shared document. With each release, track the changes _that matter_, which I find boils down to 3 simple things:
 
 1. Aims and strategy
 2. Structure and teams
 3. Defaults and programs
 
+By keeping this simple it ends up being easy to maintain and user-friendly. There's enough richness here to grow your collective memory and begin making better bets. And you'll be pleasantly surprised by how quickly things improve from the intention and awareness that naturally arises from tracking changes.
+
 ### 1. Aims and strategy
 
 **The why and what**. The reason this organization exists.
 
-This space can be huge and often _over invested in_. Let's focus on just vision, motivating metrics, and roadmap:
+You can do more, but I focus on just vision, motivating metrics, and roadmap:
 
 - Your **clear and succinct vision** captures why you exist. 1–2 sentences at most. Stable, but that makes all changes meaningful.
-- Your **motivating metrics** bring cold-reality to your vision. Think star guides over a map, expect these to be easier to look back against and only be clear on long-term time horizons.
-- Your **short-term roadmap or tactics** highlight the real work ahead. This is what we're actually doing day-to-day to make that pithy vision and motivating metrics _happen_.
+- Your **motivating metrics** bring cold reality to your vision. Think star guides over Google Maps; you won't see your movement immediately, but you'll know you're going in the right direction.
+- Your **short-term roadmap** highlights the real work ahead. This is what your teams do day-to-day and ultimately, makes the vision and metrics _happen_.
 
 ### 2. Structure and teams
 
 **The who**. How we assemble ourselves to get things done.
 
-Reporting lines are what everyone cares about, but think wider. Who-reports-to-who _is important_ to track, but you can give power to your other structures by naming and tracking them. Your cross-functional teams, working groups, squads, etc. are how you actually do things at the end of the day. So give them the weight they often lack.
+Reporting lines are what everyone cares about, so track that while also thinking wider. Your other structures, from cross-functional teams to working groups, are often the drivers of progress. So give them the power they deserve by naming and tracking them with the same rigor as your reporting structures.
 
 ### 3. Defaults and programs
 
 **The how**. Your defaults on how teams work day-to-day.
 
-Capture the defaults you've adopted. And remember: **we are what we do** ultimately — think about your culture here too. The systems and programs that keep your systems up, tech debt down, and people energized. The social and everything in-between. Everything that meaningfully makes your organization _work_. You'll be surprised how quickly this gets better with the intention and awareness that come from tracking it.
+Capture the defaults you've adopted. And remember: **we are what we do** ultimately — so think about your culture here too. The systems and programs that keep your systems up, tech debt down, and people energized. The socials and everything in between. Everything that meaningfully makes your organization _work_. All of those end up describing _who you collectively are_.
 
 ### Releases and versioning
 
-What is a release but a new version, ultimately. There's dozens of ways to approach this, but I'm a fan of [Semantic Versioning](https://semver.org/) as a base. It's simple, clear, and easy to understand. And it communicates magnitude clearly. I think through every change with this lens:
+What is a release but a new version? There are dozens of ways to approach this, but I'm a fan of [Semantic Versioning](https://semver.org/) as a base. It's simple, clear, and easy to understand. And it easily communicates magnitude. I think through every change with this lens:
 
-- **Major versions** signal fundamental change. These are the big shifts that change the way you work with wide-reaching impact. Think significant reorgs, pivots in purpose, or overhauls in operations.
-- **Minor version** signal non-disruptive additions. These are meaningful additions to how you work, but don't dramatically change what already exists. Think new teams, new product bet, or an emergent operating default.
-- **Patches** are for tune ups. Not often necessary, but available when it helps.
+- **Major versions** signal fundamental change. These are the big shifts that change the way you work with a wide-reaching impact. Think of significant reorgs, pivots in purpose, or overhauls in operations.
+- **Minor version** signal non-disruptive additions. These are meaningful additions to how you work, but don't dramatically change what already exists. Think new teams, a new product bet, or an emergent operating default.
+- **Patches** are for tune-ups. Not often necessary, but available when it helps.
 
 ## A "real" example
 
-There's a lot here! Let's us pull this all together and see how this could actually work. We'll review a changelog for the fictional "CodeCraft Inc."
+There's a lot here! Let's pull this all together and see how this works by reviewing a changelog for the fictional "CodeCraft Inc."
 
-Looking at their their changelog, you gain quite a bit! A sense of culture (from this existing through how it's written). What they care about (from what is tracked through where changes happen). And you can see the story of this company is reacting and evolving as it goes…
+Even this short snippet shares surprising insight into the company! You get a sense of culture from the changelog simply existing, but also in how it's written. You see what they care about, from what is tracked through where changes happen. And more! The story of this company is reacting and evolving as it goes…
 
 <details>
   <summary class="cursor-pointer">Checkout CodeCraft's changelog</summary>
