@@ -10,35 +10,21 @@ description: Change is coming; I hope you're ready.
 image:     "/assets/img/org-changelog.webp"
 ---
 
-Leaders must build teams and organizations that are not just receptive to change but thrive on it. Yet change is hard. It's hard to track, hard to understand, and hard to manage. But it doesn't have to be.
+Leaders must build teams and organizations that thrive on change, not just survive it. Yet change is hard. It's uncomfortable. It's often surprising. It's hard to understand, hard to manage, and surprisingly hard to track. But it doesn't have to be.
 
-## Remember the past
+An **organizational changelog** will help. It's a simple, powerful tool that helps you track, understand, and manage the changes happening in your organization. It's a living document that captures the key changes. And when done well, it's a way to remember your past, understand your present, and shape your future.
 
-> “Those who cannot remember the past are condemned to repeat it.”
->
-> – George Santayana, The Life of Reason, 1905.
+## What goes into a great changelog?
 
-We all forget the past. Our memory is selective and overly influenced by the current moment; the memories themselves change over time. Without safekeeping, we'll lose key insights and lessons learned through our experiences. We'll forget the why behind our decisions and the context that shaped them, and only have the outcomes that followed.
+I see the changelog and each of its releases as the story of my organization, told through its change and evolution. And like any good autobiography, it has uncomfortable (and real!) truths. So don't shy away from uncomfortable moments, and like any good story, lean into the many different beats you'll live through. Practically: think strategy but also tactics. Think big bets with small tweaks. Think large structural shifts. Ultimately, it's the changes that many notice mixed with important ones that only a few see; always with the context and perspective to remember _why_.
 
-But remembering our past is not just important — it's essential. It's how we see the incredible progress we've made, learn from our mistakes, and build on our wins. It's how we see the forest from the trees and remain grounded. The past gives us the context to understand the present and the foresight to shape the future.
-
-## Treat your organization like a product
-
-Your organization is truly a product in its own right. It has an incredibly rich history full of change and reaction. It has a deep personality, coming from not just the people but what they do together every day. It exists to _do something_ in this world. And if you plan to be successful, it will be dynamic and ever-evolving, growing, changing, and constantly adapting.
-
-There are many ways to think about your organization as a product, but an excellent starting place is to think about its changes as **releases**. As your product goes through changes, updates, and improvements, you can package these together to tell a powerful story. And in tracking those stories — collective bets across strategy, structure, and defaults — you'll get better at each future bet you have to make here; equipped with knowledge and clear-eyed insights.
-
-## Crafting releases
-
-So what goes into a great release? It's a mix of the big and small, the strategic and the tactical. It's the big bets and the small tweaks. It's the changes that matter, always with the context and perspective to remember _why_. It's the story of your organization, told through the lens of change.
-
-As you build this, it can become overwhelming fast. **Keep it simple**: A bullet-point list in a shared document. With each release, track the changes _that matter_, which I find boils down to 3 simple things:
+Now, that's a lot and you want this to be easy to build and maintain. And it turns out telling a great story about your organization doesn't actually take too much. So **keep it simple**: A bullet-point list in a shared document. With each release, track the changes _that matter_, which I find boils down to 3 simple buckets:
 
 1. Aims and strategy
 2. Structure and teams
 3. Defaults and programs
 
-By keeping this simple it ends up being easy to maintain and user-friendly. There's enough richness here to grow your collective memory and begin making better bets. And you'll be pleasantly surprised by how quickly things improve from the intention and awareness that naturally arises from tracking changes.
+By keeping this simple it ends up being easy to maintain for you, but also easy to consume for your org! There's enough richness here to grow your collective memory and begin making better bets. And you'll be pleasantly surprised by how quickly things improve from the intention and awareness that comes with tracking changes. Let's dive in.
 
 ### 1. Aims and strategy
 
@@ -62,9 +48,11 @@ Reporting lines are what everyone cares about, so track that while also thinking
 
 Capture the defaults you've adopted. And remember: **we are what we do** ultimately — so think about your culture here too. The systems and programs that keep your systems up, tech debt down, and people energized. The socials and everything in between. Everything that meaningfully makes your organization _work_. All of those end up describing _who you collectively are_.
 
-### Releases and versioning
+## Packaging a change together as a release and version
 
-What is a release but a new version? There are dozens of ways to approach this, but I'm a fan of [Semantic Versioning](https://semver.org/) as a base. It's simple, clear, and easy to understand. And it easily communicates magnitude. I think through every change with this lens:
+Everything we just talked about is really about a given notable change; a release. And a changelog is ultimately a collection of releases, each with their own version.
+
+There are dozens of ways to approach "versioning", but I'm a fan of [Semantic Versioning](https://semver.org/) as a base. It's simple, clear, and easy to understand. And it easily communicates magnitude. I think through every notable change with this lens:
 
 - **Major versions** signal fundamental change. These are the big shifts that change the way you work with a wide-reaching impact. Think of significant reorgs, pivots in purpose, or overhauls in operations.
 - **Minor version** signal non-disruptive additions. These are meaningful additions to how you work, but don't dramatically change what already exists. Think new teams, a new product bet, or an emergent operating default.
@@ -74,14 +62,34 @@ Major versions are rare, but they're the big moments that define your organizati
 
 And your choice of version is itself an incredibly powerful tool — broadcasting intent and magnitude. Sometimes a major version is not much on paper, but is instead a clear message about the moment. Likewise, sometimes a minor version involves many changes, but stays minor because it's all part of the same story.
 
-## A "real" example
+And all together, these versions tell the story of your organization. They're the chapters in your autobiography, each building on the last and setting the stage for the next. But there's more to it than simply "tracking changes." It's about remembering the past.
+
+## Grow from your past
+
+We track these changes to know what bets we've made _and why_; to learn from ourselves. Because, as the saying goes:
+
+> “Those who cannot remember the past are condemned to repeat it.”
+>
+> – George Santayana, The Life of Reason.
+
+We all forget the past. Our memory is selective and overly influenced by our current moment. And even worse, our memories change every time we remember them (look it up, it's mildly terrifying). Without safekeeping, we'll lose key insights and lessons learned through our experiences. We'll forget the why behind our decisions and the context that shaped them, and only have the outcomes that followed. And that's a dangerous place to be.
+
+Safekeeping our past is how we will learn from our mistakes and build on our wins. It's how we see the forest from the trees and remain grounded. It's how we see the incredible progress we've made. The past gives us the context to understand the present and the foresight to shape the future. This is one power of a changelog; but there's another.
+
+## Take a step to treating your organization like a product
+
+It might feel weird at first, but your organization is truly a product in its own right. It has an incredibly rich history full of change and reaction. It has a deep personality, coming from both the people but also what they do together every day. It exists to _do something_ in this world. And if you plan to be successful, it will be dynamic and ever-evolving, growing, changing, and constantly adapting.
+
+There are many ways to think about your organization as a product, but a changelog is a powerful starting place. As your ~~product~~ organization goes through changes, updates, and improvements, you are packaging these together to tell a powerful story. And in tracking those stories — collective bets across strategy, structure, and defaults — you'll get better at each future bet you have to make; equipped with knowledge and clear-eyed insights. You'll also start seeing more and more and more of the organization as a product, and that's where the real magic happens.
+
+## Let's ground all of this with an example
 
 There's a lot here! Let's pull this all together and see how this works by reviewing a changelog for the fictional "CodeCraft Inc."
 
-Even this short snippet shares surprising insight into the company! You get a sense of culture from the changelog simply existing, but also in how it's written. You see what they care about, from what is tracked through where changes happen. And more! The story of this company is reacting and evolving as it goes…
+Even this short snippet shares surprising insight into the company. You get a sense of culture from the changelog simply existing, but also in how it's written. You see what they care about, from what is tracked through where changes happen. And more! The story of this company is reacting and evolving as it goes…
 
 <details>
-  <summary class="cursor-pointer">Checkout CodeCraft's changelog</summary>
+  <summary class="cursor-pointer">Expand to review a changelog for "CodeCraft Inc."</summary>
 {{ "
 
 ```markdown
@@ -125,7 +133,7 @@ Shared as a video recording ([link](#)) in Slack. The team and product have been
 " | markdownify }}
 </details>
 
-## Smart(er) evolution with a changelog
+## Smart evolution with a changelog
 
 Building an organizational changelog is more than just a record of changes.
 
