@@ -1,6 +1,7 @@
 ---
 title:       Work-life Harmony
 permalink:   /blog/work-life-harmony/
+home:        true
 
 categories:  ["Musings"]
 description: Life deserves more than simple balance.

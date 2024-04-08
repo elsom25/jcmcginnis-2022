@@ -1,6 +1,7 @@
 ---
 title:       Transitioning Well
 permalink:   /blog/transitioning-well/
+home:        true
 
 categories:  ["Leadership"]
 description: Transitioning to a new team is hard, doubly so as a leader.

@@ -1,6 +1,7 @@
 ---
 title:       Writing Regularly
 permalink:   /blog/musings-writing-regularly/
+home:        false
 
 categories:  ["Musings"]
 description: The act of capturing your thoughts, consistently.

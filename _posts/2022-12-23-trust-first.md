@@ -1,6 +1,7 @@
 ---
 title:       Trust First
 permalink:   /blog/trust-first/
+home:        true
 
 categories:  ["Leadership"]
 description: Leading with trust first is the best way to build a team that is aligned, engaged, and productive.
