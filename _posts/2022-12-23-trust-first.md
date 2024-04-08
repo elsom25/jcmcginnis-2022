@@ -15,7 +15,7 @@ When team members trust their teams and leaders, they will be more aligned, more
 
 ## Trust matters
 
-Trust is the foundation of high-performing teams. It allows for open and honest communication. It simplifies conflict resolution. It propels decision making. It fosters accountability. All of which, together, simplifies alignment.
+Trust is the foundation of high-performing teams. It allows for open and honest communication. It simplifies conflict resolution. It propels decision-making. It fosters accountability. All of which, together, simplifies alignment.
 
 Trust drives engagement within teams: building necessary motivation and productivity. It facilitates safe failure and experimentation; crucial elements to learn and grow.
 
@@ -25,7 +25,7 @@ By building trust within teams, leaders will enjoy world-class performance.
 
 Trust allows team members to be their authentic selves, which frees up energy to focus on the work at hand. When team members feel safe to express their ideas and opinions, they're invited to be present and engaged. This authenticity frees folks to speak openly and honestly without fear of reprisal or judgment. Frees folks to be genuine and to challenge and question what's unclear. Frees folks to give and receive feedback.
 
-And critically, this candid authenticity facilitates real and productive conflict. When team members feel comfortable — encouraged even — to share their opinions and ideas, even when they disagree with each other or you, it facilitates open and honest dialogue. You'll see better decision making and improved outcomes.
+Critically, this candid authenticity facilitates real and productive conflict. When team members feel comfortable — encouraged even — to share their opinions and ideas, even when they disagree with each other or you, it facilitates open and honest dialogue. You'll see better decision-making and improved outcomes.
 
 All of this supports alignment. A team working towards a common goal with minimal communication overhead and coordination. A common goal that motivates and excites. A common goal, built together.
 
@@ -43,27 +43,27 @@ Building trust is hard. Doubly so in a digital-first world. This is where a focu
 
 ### Layer 1: Have fun
 
-To build trust within a team, start by making space for fun. Focus on activities that are light-hearted, easy to take part in, and intentionally social. This is our baseline — it'll be surface level, but it creates the initial connections we need. Connections that we will build on.
+To build trust within a team, start by making space for fun. Focus on activities that are light-hearted, easy to take part in, and intentionally social. This is our baseline — it'll be surface-level, but it creates the initial connections we need. Connections that we will build on.
 
-These activities should be recurring and variable, and should be led by different team members to keep things fresh. Examples include happy hours, coffee chats, and games. You should also add something "bigger" in every once in a while, like a digital escape room or a virtual zoo visit. The key here is to keep it novel and exciting, so you can continuously nurture and invite folks to have fun together.
+These activities should be recurring and variable, and should be led by different team members to keep things fresh. Examples include happy hours, coffee chats, and games. You should also add something "bigger" every once in a while, like a digital escape room or a virtual zoo visit. The key here is to keep it novel and exciting, so you can continuously nurture and invite folks to have fun together.
 
 ### Layer 2: Enable real talk
 
 Now that we have our initial connections established, we can go deeper. "Real talk" activities are more intentional and establish deeper trust, but require more facilitation. These activities are designed to help team members get to know each other better, and to share more about themselves through deep, honest, and vulnerable conversations.
 
-As we move into "real conversations," it's critical to facilitate carefully. You need to establish ground-rules of engagement and make a space that is safe, inviting, and open for folks to share increasingly personal details. Facilitation is a whole other topic and skill I'll dive deep into in a future post — but for now: be present, fair, and kind.
+As we move into "real conversations," it's critical to facilitate carefully. You need to establish ground rules of engagement and make the space safe, inviting, and open for folks to share increasingly personal details. Facilitation is a whole other topic and skill I'll dive deep into in a future post — but for now: be present, fair, and kind.
 
 I recommend the [36 Questions That Lead to Love](https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html) and [The Ungame](https://en.wikipedia.org/wiki/The_Ungame). These are great tools to help drive these conversations with excellent prompts. Plan for 30-60 minutes with a few rounds of questions and a debrief to reflect on the experience.
 
-All of this is about creating space to allow team members to have more vulnerable and authentic conversations. Conversations which will build trust and create a deeper understanding of each fully realized human.
+All of this is about creating space to allow team members to have more vulnerable and authentic conversations. Conversations that will build trust and create a deeper understanding of each fully realized human.
 
 ### Layer 3: The full human
 
 The previous step is one you can stop at, but if you really want to create deep, long-lived human trust, you occasionally need to go deeper.
 
-The full human is about creating space for team members to be their full, vulnerable selves. We have so few opportunities to share our stories and be vulnerable, and doing so can be cathartic on a personal level and help to build trust on a team level. Tools like the life graph or targeted, hard-hitting questions can be helpful for facilitating these conversations.
+The full human is about creating space for team members to be their full, vulnerable selves. We have so few opportunities to share our stories and be vulnerable, and doing so can be cathartic on a personal level and help to build trust on a team level. Tools like the life graph or targeted, hard-hitting questions facilitate these conversations.
 
-The life graph is a simple and straightforward way to share your story with the team. Everyone is given 15 minutes to draw a graph of their life, which will unlock lots of rarely told stories and memories, while also ensuring everyone has autonomy to only share what they are comfortable with. After that, get folks together (recommending groups of 4–5) and give each person 5–10 minutes to "present" their life. This is a beautiful way to share your story, a powerful way to start deeper conversations, and is cathartic in ways that surprises most people. This deeply personal and humanizing experiences helps everyone on the team see the _full human_ we all are.
+The life graph is a simple and straightforward way to share your story with the team. Everyone is given 15 minutes to draw a graph of their life, which will unlock lots of rarely told stories and memories, while also ensuring everyone has autonomy to only share what they are comfortable with. After that, get folks together (recommending groups of 4–5) and give each person 5–10 minutes to "present" their life. This is a beautiful way to share your story, a powerful way to start deeper conversations, and is cathartic in ways that surprise most people. This deeply personal and humanizing experience helps everyone on the team see the _full human_ we all are.
 
 By building trust in these three layers, leaders can create a strong foundation for high-performing teams. Using all of these techniques in concert keep a healthy balance between light- and heavy-conversation, ensuring this remains a suite of activities you can run for the long-term. By focusing on having fun, enabling real talk, and creating space for vulnerability, leaders can create a positive and supportive team culture.
 
