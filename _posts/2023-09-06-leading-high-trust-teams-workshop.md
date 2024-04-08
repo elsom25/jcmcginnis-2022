@@ -1,12 +1,12 @@
 ---
-title:       "Leading High-trust Teams: Workshop @ Uplimit"
+title:       "Leading High-trust Teams: Workshop"
 permalink:   /blog/leading-high-trust-teams-uplimit/
 
 categories:  ["Talks & Workshops"]
-description: Workshop in 2023 on how to better lead (remote) teams.
+description: Workshop in 2023 on how to better lead teams, both in-person and remotely.
 ---
 
-A 4-hour deep dive into being better leaders and how to build high-trust in your (remote) teams.
+A 4-hour deep dive into being better leaders and how to build high-trust in your teams. Inspired by remote leadership, but all applicable to in-person teams too.
 
 The course is designed to help you reflect and refine the way you show up as a leader, the type of culture you build, and ultimately, help you help your team reach a new level of performance. Expect to leave with a new perspective on leadership and a set of tools to help you get there. If you ever want to dig deep here, I'd love to learn about what you're trying to achieve.
 
