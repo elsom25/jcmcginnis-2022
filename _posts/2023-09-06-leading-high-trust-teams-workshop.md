@@ -1,6 +1,7 @@
 ---
 title:       "Leading High-trust Teams: Workshop"
 permalink:   /blog/leading-high-trust-teams-uplimit/
+home:        false
 
 categories:  ["Talks & Workshops"]
 description: Workshop in 2023 on how to better lead teams, both in-person and remotely.

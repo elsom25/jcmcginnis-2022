@@ -1,6 +1,7 @@
 ---
 title:       Writing Regularly
 permalink:   /blog/musings-writing-regularly/
+home:        false
 
 categories:  ["Musings"]
 description: The act of capturing your thoughts, consistently.
@@ -12,13 +13,13 @@ I want to write more, but I don't want to have to write _proper articles_ for ev
 
 ## Musings for the soul
 
-Why even write something like this? While I hope these occasional, short, and brief thoughts end up useful for all, I'm most doing this *for me*. Regular and active writing helps me process my thoughts.
+Why even write something like this? While I hope these occasional, short, and brief thoughts end up useful for all, I'm mostly doing this *for me*. Regular and active writing helps me process my thoughts.
 
-I've been experimenting with writing weekly, _internally to Shopify_, for about 2 months now and have  thoroughly loved it. So now I'm going to extend that experiment to writing weekly _externally_ as well.
+I've been experimenting with writing weekly, _internally to Shopify_, for about 2 months now and have thoroughly loved it. So now I'm going to extend that experiment to writing weekly _externally_ as well.
 
-I genuinely believe the practice of regular writing and reflection to be impactful in how you show up as a leader. This practice presents an opportunity to process and digest what you've learned. Further, the space and time you make to do this is itself a rare moment of thoughtful work in most leaders wall-to-wall calendars. Finally, this is an excellent way to capture some core elements of a [Brag Doc](https://jvns.ca/blog/brag-documents/).
+I genuinely believe the practice of regular writing and reflection to be impactful in how you show up as a leader. This practice presents an opportunity to process and digest what you've learned. Further, the space and time you make to do this is itself a rare moment of thoughtful work in most leaders' wall-to-wall calendars. Finally, this is an excellent way to capture some core elements of a [Brag Doc](https://jvns.ca/blog/brag-documents/).
 
-While these weekly musings won't always be something to brag about, they come from what's happening in your life week-over-week. It'll form a rough map of the problems you run into, or the growth you are currently focused on. While not a replacement for a Brag doc outright, it's a good first-step and augmentation.
+While these weekly musings won't always be something to brag about, they come from what's happening in your life week-over-week. It'll form a rough map of the problems you run into or the growth you are currently focused on. While not a replacement for a Brag doc outright, it's a good first step and augmentation.
 
 So welcome to my first weekly musing, a musing on musing itself.
 

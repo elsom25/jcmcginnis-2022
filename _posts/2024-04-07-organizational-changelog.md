@@ -1,8 +1,7 @@
 ---
-layout: post
-
 title:     Organizational Changelog
 permalink: /blog/org-changelog/
+home:        true
 
 categories:  ["Leadership"]
 description: Change is coming; I hope you're ready.

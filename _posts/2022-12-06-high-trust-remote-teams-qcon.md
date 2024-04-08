@@ -1,6 +1,7 @@
 ---
 title:       "High-trust Teams in a Remote World: Talk @ QCon"
 permalink:   /blog/high-trust-remote-teams-qcon-2022/
+home:        false
 
 categories:  ["Talks & Workshops"]
 description: Talk at QCon on building high-trust remote teams.
