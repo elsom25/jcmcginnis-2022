@@ -34,6 +34,7 @@ plugins:
   - jekyll-feed
   - jekyll-postcss
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 collections:
   posts:
