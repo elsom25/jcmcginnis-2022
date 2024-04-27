@@ -1,7 +1,10 @@
 main:
-  - name: "About"
+  - name: "Home"
     url: "/"
     weight: 1
+  - name: "README"
+    url: "/readme/"
+    weight: 2
   - name: "Blog"
     url: "/blog/"
-    weight: 2
+    weight: 3
