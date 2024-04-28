@@ -1,38 +1,67 @@
 <header class="py-4 border-t-4 border-t-rose-700">
-  <nav class="max-w-screen-lg mx-auto px-10 md:px-16 flex justify-end">
-    <ol>
-      {% for item in site.data.menu.main %}
-      <li class="inline-block">
+  <div class="max-w-screen-lg mx-auto px-10 md:px-16">
+    <div class="relative flex gap-4">
+      <div class="flex flex-1">
         <a
-          class="px-2 transition-colors hover:text-rose-800"
-          href="{{ item.url | relative_url }}"
-          >{{ item.name }}</a
-        >
-      </li>
-      {% endfor %}
-      <li class="inline-block">
-        <a
-          class="px-2 transition-colors hover:text-rose-800"
-          href="{{ '/feed.xml' | relative_url }}"
+          aria-label="Home"
+          class="flex items-center hover:bg-zinc-100 dark:hover:bg-black py-1 px-3 rounded-full"
+          href="/"
         >
           <svg
-            class="inline stroke-neutral-700 dark:stroke-neutral-200 hover:stroke-rose-800 h-5 w-5"
-            title="RSS"
-            role="img"
             xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            fill="none"
+            aria-hidden="true"
+            class="fill-rose-800 h-3 mr-2"
+            viewBox="0 0 20 20"
+            fill="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"
+              fill-rule="evenodd"
+              d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+              clip-rule="evenodd"
             />
           </svg>
+          <div class="font-mono tracking-wider">Jesse McGinnis</div>
         </a>
-      </li>
-    </ol>
-  </nav>
+      </div>
+      <div class="flex flex-1 justify-end">
+        <nav class="flex items-center justify-end">
+          <ol>
+            {% for item in site.data.menu.main %}
+              <li class="inline-block">
+                <a
+                  class="hover:bg-zinc-100 dark:hover:bg-black py-1 px-3 rounded-full"
+                  href="{{ item.url | relative_url }}"
+                >
+                  {{- item.name -}}
+                </a>
+              </li>
+            {% endfor %}
+            <li class="inline-block">
+              <a
+                class="hover:bg-zinc-100 dark:hover:bg-black py-1 px-3 rounded-full align-text-bottom"
+                href="{{ '/feed.xml' | relative_url }}"
+              >
+                <svg
+                  class="inline stroke-neutral-700 dark:stroke-neutral-200 hover:stroke-rose-800 h-4"
+                  title="RSS"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  fill="none"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>
