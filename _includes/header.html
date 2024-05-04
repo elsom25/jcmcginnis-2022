@@ -2,9 +2,9 @@
   <div class="h-1 bg-gradient-to-r from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%"></div>
   <div class="sm:px-8">
     <div class="mx-auto w-full max-w-screen-lg lg:px-8">
-      <div class="relative px-4 sm:px-8 lg:px-12 py-1 bg-white dark:bg-black">
-        <div class="flex gap-4 font-mono">
-          <div class="flex flex-1">
+      <div class="relative px-4 sm:px-8 lg:px-12 pt-1 bg-white dark:bg-zinc-900">
+        <div class="flex flex-wrap sm:flex-nowrap pb-2 sm:pb-1 gap-4 font-mono border-b border-zinc-100 dark:border-zinc-300/20">
+          <div class="flex flex-1 justify-center sm:justify-normal">
             <a
               aria-label="Home"
               class="group/item flex items-center transition py-2 px-4 rounded-md hover:bg-zinc-50 dark:hover:bg-black"
@@ -26,9 +26,9 @@
               <div class="font-mono tracking-widest group-hover/item:font-extrabold group-hover/item:text-transparent bg-clip-text bg-gradient-to-tr from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%">Jesse McGinnis</div>
             </a>
           </div>
-          <div class="flex flex-1 justify-end">
+          <div class="flex flex-1 justify-center sm:justify-end">
             <nav class="flex items-center justify-end">
-              <ol class="flex gap-2 text-zinc-800">
+              <ol class="flex gap-2">
                 {% for item in site.data.menu.main %}
                   <li>
                     <a
