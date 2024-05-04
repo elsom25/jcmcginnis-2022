@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-ca" class="scroll-smooth">
+<html lang="en-ca" class="scroll-smooth h-full antialiased light">
   <head>
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
@@ -15,15 +15,8 @@
     <link rel=”apple-touch-icon” href="{{ '/apple-touch-icon' | relative_url | append: cacheBust }}">
     <link rel=”manifest” href="{{ '/manifest.json' | relative_url | append: cacheBust }}">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;700&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
-      rel="stylesheet">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <link href="{{ '/assets/css/style.css' | relative_url | append: cacheBust }}" rel="stylesheet">
     <link href="{{ '/assets/css/syntax.css' | relative_url | append: cacheBust }}" rel="stylesheet">
@@ -31,7 +24,9 @@
     {% seo %}
     {% feed_meta %}
   </head>
-  <body class="page {{page.bodyClass}} bg-neutral-100 text-neutral-700 selection:bg-neutral-200 selection:text-rose-700 dark:bg-neutral-800 dark:text-neutral-200 dark:selection:bg-neutral-600 dark:selection:text-rose-300" id="page-top">
-    {{ content }}
+  <body class="page {{page.bodyClass}} flex h-full bg-zinc-50 text-zinc-700 selection:bg-zinc-100 selection:text-indigo-700 dark:bg-black dark:text-zinc-200 dark:selection:bg-zinc-700 dark:selection:text-indigo-200" id="page-top">
+    <div class="flex w-full">
+      {{ content }}
+    </div>
   </body>
 </html>

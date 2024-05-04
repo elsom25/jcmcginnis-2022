@@ -1,28 +1,77 @@
-<header class="py-4 border-t-4 border-t-rose-700">
-  <nav class="max-w-screen-lg mx-auto px-10 md:px-16 flex justify-end">
-    <ol>
-      {% for item in site.data.menu.main %}
-      <li class="inline-block">
-        <a class="px-2 transition-colors hover:text-rose-800" href="{{ item.url | relative_url }}">{{ item.name }}</a>
-      </li>
-      {% endfor %}
-      <li class="inline-block">
-        <a class="px-2 transition-colors hover:text-rose-800" href="{{ '/feed.xml' | relative_url }}">
-          <svg class="inline stroke-neutral-700 dark:stroke-neutral-200 hover:stroke-rose-800 h-5 w-5" title="RSS" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
-          </svg>
-        </a>
-      </li>
-      <li class="inline-block">
-        <a class="px-2 transition-colors hover:text-rose-800" href="https://twitter.com/elsom25">
-          <svg class="inline fill-neutral-700 dark:fill-neutral-200 hover:fill-rose-800 h-4 w-4" title="Twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <title>Twitter</title>
-            <path
-              d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-          </svg>
-        </a>
-      </li>
-    </ol>
-  </nav>
+<header class="fixed top-0 left-0 right-0 z-50">
+  <div class="h-1 bg-gradient-to-r from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%"></div>
+  <div class="sm:px-8">
+    <div class="mx-auto w-full max-w-screen-lg lg:px-8">
+      <div class="relative px-4 sm:px-8 lg:px-12 pt-1 bg-white dark:bg-zinc-900">
+        <div class="flex flex-wrap sm:flex-nowrap pb-2 sm:pb-1 gap-4 font-mono font-normal border-b border-zinc-100 dark:border-zinc-300/20">
+          <div class="flex flex-1 justify-center sm:justify-normal">
+            <a
+              aria-label="Home"
+              class="group/item flex items-center transition py-2 px-4 rounded-md hover:bg-zinc-50 dark:hover:bg-black"
+              href="/"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true"
+                class="fill-rose-800 h-3 mr-2"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <div class="font-mono tracking-widest group-hover/item:font-extrabold group-hover/item:text-transparent bg-clip-text bg-gradient-to-tr from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%">Jesse McGinnis</div>
+            </a>
+          </div>
+          <div class="flex flex-1 justify-center sm:justify-end">
+            <nav class="flex items-center justify-end">
+              <ol class="flex gap-2">
+                {% for item in site.data.menu.main %}
+                  <li>
+                    <a
+                      class="group/item transition py-2 px-4 rounded-md hover:bg-zinc-100 dark:hover:bg-black {% if item.url == page.url %}bg-zinc-50 dark:bg-zinc-950 {% endif %}"
+                      href="{{ item.url | relative_url }}"
+                    >
+                      {% if item.url == page.url %}
+                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%">{{- item.name -}}</span>
+                      {% else %}
+                        <span class="group-hover/item:font-extrabold group-hover/item:text-transparent bg-clip-text bg-gradient-to-tr from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%">{{- item.name -}}</span>
+                      {% endif %}
+
+                    </a>
+                  </li>
+                {% endfor %}
+                <li class="inline-block">
+                  <a
+                    class="group/item align-text-bottom transition py-2 px-4 rounded-md hover:bg-zinc-50 dark:hover:bg-black"
+                    href="{{ '/feed.xml' | relative_url }}"
+                  >
+                    <svg
+                      class="inline stroke-black dark:stroke-zinc-50 group-hover/item:stroke-sky-600 dark:group-hover/item:stroke-sky-400 h-4"
+                      title="RSS"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      fill="none"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>

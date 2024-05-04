@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<header class="pt-10 md:pt-16 mb-10 md:mb-16 mx-auto lg:w-10/12 md:text-center">
+<header class="mb-10 md:mb-16 mx-auto lg:w-10/12 md:text-center">
   <div class="text-lg">
     {{ page.date | date: "%B %e, %Y" }}
     {% for category in page.categories %}
@@ -22,16 +22,16 @@ layout: default
   <img width="1080" height="608" src="{{ page.image }}" alt="" />
 {% else %}
   <div class="flex items-center w-1/4 mx-auto" aria-hidden="true">
-    <span aria-hidden="true" class="flex-grow bg-neutral-300 dark:bg-neutral-600 rounded h-0.5"></span>
-    <svg xmlns="http://www.w3.org/2000/svg" class="inline fill-neutral-400 dark:fill-neutral-500 h-5 w-5 mx-3" viewBox="0 0 20 20" fill="currentColor">
+    <span aria-hidden="true" class="flex-grow bg-zinc-300 dark:bg-zinc-600 rounded h-0.5"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="inline fill-zinc-400 dark:fill-zinc-500 h-5 w-5 mx-3" viewBox="0 0 20 20" fill="currentColor">
       <path fill-rule="evenodd"
         d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
         clip-rule="evenodd" />
     </svg>
-    <span aria-hidden="true" class="flex-grow bg-neutral-300 dark:bg-neutral-600 rounded h-0.5"></span>
+    <span aria-hidden="true" class="flex-grow bg-zinc-300 dark:bg-zinc-600 rounded h-0.5"></span>
   </div>
 {% endif %}
 
-<article class="my-10 md:my-16 mx-auto prose prose-quoteless prose-neutral prose-a:underline hover:prose-a:text-rose-800 md:prose-lg lg:prose-xl dark:prose-invert">
+<article class="my-10 md:my-16 mx-auto prose prose-quoteless prose-zinc prose-a:underline hover:prose-a:text-rose-800 md:prose-lg lg:prose-xl dark:prose-invert">
   {{ content }}
 </article>

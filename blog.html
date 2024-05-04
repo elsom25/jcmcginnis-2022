@@ -11,12 +11,12 @@ permalink: /blog/
     {% if current_date != date %}
       {% unless forloop.first %}</ul></div>{% endunless %}
       <div class="md:flex mb-10" id="year-{{ current_date }}">
-        <h2 class="flex-none w-24 text-neutral-400 dark:text-neutral-500" id="y-{{current_date}}">{{ current_date }}</h2>
+        <h2 class="flex-none w-24 text-zinc-400 dark:text-zinc-500" id="y-{{current_date}}">{{ current_date }}</h2>
         <ul class="grow md:grid grid-cols-2 gap-x-4 md:gap-x-8">
         {% assign date = current_date %}
     {% endif %}
     <li class="mb-4">
-      <a href="{{ post.url }}" class="text-sm font-light text-neutral-600 dark:text-neutral-400">{{ post.date | date: "%B %e" }}</a>
+      <a href="{{ post.url }}" class="text-sm font-light text-zinc-600 dark:text-zinc-400">{{ post.date | date: "%B %e" }}</a>
       {% if post.categories %}
         {% for category in post.categories %}
           <a class="text-sm font-light text-rose-700 hover:text-rose-800 dark:text-rose-500" href="{{ '/category/' | relative_url }}{{ category | slugify }}">{{ category }}</a>
