@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://jcmcginnis.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://jcmcginnis.com/" rel="alternate" type="text/html" /><updated>2024-05-04T15:18:54-05:00</updated><id>https://jcmcginnis.com/feed.xml</id><title type="html">Jesse McGinnis</title><subtitle>Jesse McGinnis in Waterloo, Canada. Solving impactful and complex problems on a global scale. Empowering humans to conquer heights they never thought possible.</subtitle><author><name>Jesse McGinnis</name></author><entry><title type="html">Organizational Changelog</title><link href="https://jcmcginnis.com/blog/org-changelog/" rel="alternate" type="text/html" title="Organizational Changelog" /><published>2024-04-07T00:00:00-05:00</published><updated>2024-04-07T00:00:00-05:00</updated><id>https://jcmcginnis.com/blog/organizational-changelog</id><content type="html" xml:base="https://jcmcginnis.com/blog/org-changelog/"><![CDATA[<p>Leaders must build teams and organizations that thrive on change, not just survive it. Yet change is hard. It’s uncomfortable. It’s often surprising. It’s hard to understand, hard to manage, and surprisingly hard to track. But it doesn’t have to be.</p>
+
+<p>An <strong>organizational changelog</strong> can help: the simple practice of explicitly tracking change in your organization. By remembering your past, you’ll come to understand your present and shape your future.</p>
+
+<h2 id="what-goes-into-a-great-changelog">What goes into a great changelog?</h2>
+
+<p>I see the changelog as the story of an organization, told through its change and evolution. Practically, you want to track key changes with the context and perspective that help you remember <em>why they happened</em>. Think strategy and your big bets, but also the tactics that underly them. Think of your large structural shifts and your inner-team refinements. Think of operating defaults that impact everyone as well as those that only leadership relies on. Like any good autobiography, don’t shy away from the uncomfortable (yet real!) truths; lean into each and every moment you live through.</p>
+
+<p>While that’s a lot of space to cover, we don’t shift our organizations dramatically all that often. <strong>Keep it simple</strong>: A bullet-point list in a shared document. You’ll be surprised how quickly this comes together by simply tracking change across 3 buckets:</p>
+
+<ol>
+  <li>Aims and strategy</li>
+  <li>Structure and teams</li>
+  <li>Defaults and programs</li>
+</ol>
+
+<p>There’s enough richness in these buckets to grow your collective memory and make better bets. Similarly, they keep your changelog straightforward, ensuring it’s easy to maintain and easy for your org to consume! Let’s dive in.</p>
+
+<h3 id="1-aims-and-strategy">1. Aims and strategy</h3>
+
+<p><strong>The why and what</strong>. The reason this organization exists:</p>
+<ul>
+  <li>Your <strong>clear and succinct vision</strong> captures why you exist. 1–2 sentences at most. Stable, but that makes all changes meaningful.</li>
+  <li>Your <strong>motivating metrics</strong> bring cold reality to your vision. Think star guides over Google Maps; you won’t see your movement immediately, but you’ll know you’re going in the right direction.</li>
+  <li>Your <strong>short-term roadmap</strong> highlights the real work ahead (often linked out). What your teams do day-in and day-out.</li>
+</ul>
+
+<h3 id="2-structure-and-teams">2. Structure and teams</h3>
+
+<p><strong>The who</strong>. How we assemble ourselves to get things done.</p>
+
+<p>Reporting lines are what everyone cares about, so track that while also thinking wider. Identify your other structures, from cross-functional teams to working groups, as these are often the drivers of progress. Give them the power they deserve by naming and tracking them with the same rigor as your reporting structures.</p>
+
+<h3 id="3-defaults-and-programs">3. Defaults and programs</h3>
+
+<p><strong>The how</strong>. Your defaults on how teams work day-to-day.</p>
+
+<p>Capture the defaults you’ve adopted. Remember: <strong>we are what we do</strong> — so think about your culture here too. Identify and track the systems and programs that keep your product running, tech debt down, and people energized. Elaborate on your socials, <em>how you work</em>, and everything in between. Altogether these describe <em>who you are collectively</em> far more than many realize.</p>
+
+<h2 id="packaging-this-all-together">Packaging this all together</h2>
+
+<p>Everything we just covered, when brought together, forms an excellent “release” for your organization. But beyond the changes themself, we can also signal intent through the use of <strong>versioning</strong>. Let’s build off <a href="https://semver.org/">Semantic Versioning</a>: It’s simple, clear, and easy to understand. And it easily <em>communicates magnitude</em>, which is a powerful tool in itself.</p>
+
+<p>The framework’s <code class="language-plaintext highlighter-rouge">MAJOR.MINOR.PATCH</code> approach works surprisingly well, but these terms require tuning to match an organization:</p>
+
+<ul>
+  <li>MAJOR signals <strong>fundamental change</strong>. These are the big shifts that change the way you work with a wide-reaching impact. Think of significant reorgs, pivots in purpose, or overhauls in operations.</li>
+  <li>MINOR signals <strong>non-disruptive additions</strong>. These are meaningful additions to how you work, but don’t dramatically change what already exists. Think new teams, a new product bet, or an emergent operating default.</li>
+  <li>PATCH is for <strong>tune-ups</strong>. These are simply the little refinements that happen regularly. Your use of PATCH will vary based on org maturity and size; don’t be surprised if this isn’t used as much.</li>
+</ul>
+
+<p>Major versions are rare, but they’re the big moments that define your organization. Minor versions are more common, but they’re the steady drumbeat of progress. Patches are the small tweaks that keep everything running smoothly, often made with no commentary.</p>
+
+<p>Given that you’re using this on an organization full of humans, don’t feel beholden to “the spec.” Sometimes a major version is not much on paper, but is instead a clear message about the moment. Sometimes a minor version involves wide-reaching changes, but you’re still charting the same course. Your choice of version can have as much impact as the changes themselves — they broadcast intent and magnitude.</p>
+
+<p>Altogether these versions tell the story of your organization. They’re the chapters in your autobiography, each building on the last and setting the stage for the next.</p>
+
+<h3 id="lets-ground-all-of-this-with-an-example">Let’s ground all of this with an example</h3>
+
+<p>There’s a lot here, but it’s all quite simple. Let’s review the fictional <em>CodeCraft Inc.</em> changelog.</p>
+
+<p>Even this short snippet shares surprising insight into the company. You get a sense of culture from the changelog simply existing, but also in how it’s written. You see what they care about from what is tracked and where change happens. And so much more! The story of this company is reacting and evolving as it goes…</p>
+
+<details>
+  <summary class="cursor-pointer">Expand to review a changelog for "CodeCraft Inc."</summary>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># CodeCraft Changelog</span>
+
+<span class="ge">_Living document capturing key organizational changes of CodeCraft. Helps us remember where we came from and how we got to where we are today. Part of _</span>treating our human organization more like_ a product itself._
+
+<span class="gu">## v3.0.0 - 2023-10-17</span>
+
+Announced at the company-wide Town Hall (<span class="p">[</span><span class="nv">slides</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>, <span class="p">[</span><span class="nv">recording</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>). Pivoting our aim to AI-driven education for the next generation. We're flattening our structure, but keeping many of our practices the same. Adding our first written 'Who we are' document as well.
+
+<span class="gs">**_Key docs: [v3.0 Org chart](#), [v3.0 Roadmap](#), [v2.1 Operational defaults](#), [v1.0 Who we are](#)_**</span>
+<span class="p">
+1.</span> <span class="gs">**Aims &amp; strategy**</span>
+<span class="p">  -</span> <span class="gs">**[MAJOR]**</span> Mandate got extended: <span class="gs">**AI-driven**</span> education for the next generation.
+<span class="p">    -</span> Even with this, our motivating metrics remain the same: increase the total of college-equivalent expertise; while decreasing total education spend.
+<span class="p">  -</span> <span class="gs">**[MAJOR]**</span> <span class="p">[</span><span class="nv">v3.0 Roadmap</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span> <span class="p">(</span><span class="sx">from</span> <span class="p">[</span><span class="ss">v2.2 Roadmap</span><span class="p">]</span>(#)): With the focus on AI now, we've dropped our VR projects (that bet didn't pan out).
+<span class="p">2.</span> <span class="gs">**Structure and teams**</span>
+<span class="p">  -</span> <span class="gs">**[MAJOR]**</span> <span class="p">[</span><span class="nv">v3.0 Org chart</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span> <span class="p">(</span><span class="sx">from</span> <span class="p">[</span><span class="ss">v2.2 Org chart</span><span class="p">]</span>(#)): Our biggest structural change so far! A lot of folks are in new teams with new managers. We've been hearing everyone's feedback and have finally rebalanced skills and tenure. We also made sure teams line-up to the new roadmaps.
+<span class="p">  -</span> We've also adjusted titles to match the new formalized company title system (Tech Lead → Staff Engineer OR Manager).
+<span class="p">3.</span> <span class="gs">**Defaults and programs**</span>
+<span class="p">  -</span> <span class="gs">**[MINOR]**</span> <span class="p">[</span><span class="nv">v2.1 Operational defaults</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span> <span class="p">(</span><span class="sx">from</span> <span class="p">[</span><span class="ss">v2.0 Operational defaults</span><span class="p">]</span>(#)): Mostly the same, but clarified some of the emergent norms around remote work and Fantastic Fridays.
+<span class="p">  -</span> <span class="gs">**[NEW]**</span> <span class="p">[</span><span class="nv">v1.0 Who we are</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>: Finally capturing a more detailed take on _who we are_, and what will help you be successful here. This is a place for high-agency actors through and through.
+
+<span class="gu">## v2.2.0 - 2023-04-08</span>
+
+Shared as a video recording (<span class="p">[</span><span class="nv">link</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span>) in Slack. The team and product have been crushing it! We're codifying the dynamic structure we've been using for a while now, and we're adding a new VR team to double down on the tailwinds.
+
+<span class="gs">**_Key docs: [v2.2 Org chart](#), [v2.0 Operational defaults](#)_**</span>
+<span class="p">
+1.</span> <span class="gs">**Aims &amp; strategy**</span>: N/A
+<span class="p">2.</span> <span class="gs">**Structure and teams**</span>
+<span class="p">  -</span> <span class="gs">**[MINOR]**</span> <span class="p">[</span><span class="nv">v2.2 Org chart</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span> <span class="p">(</span><span class="sx">from</span> <span class="p">[</span><span class="ss">v2.1 Org chart</span><span class="p">]</span>(#)): We've added a new VR team to double down on the tailwinds we're seeing in the market. We've also added a new 'floating' team to help with cross-team coordination.
+<span class="p">3.</span> <span class="gs">**Defaults and programs**</span>
+<span class="p">  -</span> <span class="gs">**[MAJOR]**</span> <span class="p">[</span><span class="nv">v2.0 Operational defaults</span><span class="p">](</span><span class="sx">#</span><span class="p">)</span> <span class="p">(</span><span class="sx">from</span> <span class="p">[</span><span class="ss">v1.5 How to scrum</span><span class="p">]</span>(#)): We do a whole lot more than 'scrum' (and we're so far from scrum at this point why keep calling it that). So introducing the revamped _Operational defaults_, spanning the full suite of how we operate. Give it a read if you're new or want a refresher.
+
+<span class="gu">## v2.1.3 - 2023-01-23</span>
+
+... and so on ...
+</code></pre></div></div>
+
+</details>
+
+<h2 id="the-power-of-an-organizational-changelog">The power of an organizational changelog</h2>
+
+<p>There’s more to it than simply “tracking changes.” While it’s an incredibly powerful way to communicate change, an organizational changelog is so much more than that.</p>
+
+<h3 id="shaping-what-comes-next">Shaping what comes next</h3>
+
+<p>It’s too easy to forget the past. Our memory is selective and overly influenced by our current moment and mood. Without safekeeping, we lose key insights and lessons learned through our experiences. We forget “the why” behind our decisions. We forget the context that drove our choices, left only with the outcomes that followed. That’s a dangerous place to be. As the saying goes:</p>
+
+<blockquote>
+  <p>“Those who cannot remember the past are condemned to repeat it.”</p>
+
+  <p>— George Santayana, The Life of Reason.</p>
+</blockquote>
+
+<p>A changelog protects our past from our unreliable memory. It lets us learn from our mistakes and build on our wins. It clearly shows the bets we’ve made, so we can judge their success. It shows the story of our growth and the incredible progress we’ve made. Most importantly, the past gives us the context to understand the present and the foresight to shape the future. This is the most obvious upside of a changelog, but there’s another important one.</p>
+
+<h3 id="your-organization-as-a-product">Your organization as a product</h3>
+
+<p>It might feel weird at first, but your organization is a product in its own right. It has an incredibly rich history full of change and reaction. It has a deep personality, coming from both the people but also what they do together each day. It exists to <em>do something</em> in this world.</p>
+
+<p>There are many ways to think about your organization as a product, but a changelog is a powerful starting place. As your <del>product</del> organization goes through changes, updates, and improvements, you are packaging these together to tell a powerful story. By tracking these stories — collective bets across strategy, structure, and defaults — you’ll get better at future bets you have to make. By tracking these changes, you’ll see more opportunities to shape your organization like a product.</p>
+
+<p>So what are you waiting for? <strong>Embrace change</strong> and build your organization’s changelog. Capture your rich past; bringing a deep understanding of your collective progress. Drive successful bet-making; instilling an ethos of constant growth and change. And take the first step to treating your organization like the product it truly is.</p>]]></content><author><name>Jesse McGinnis</name></author><category term="Leadership" /><summary type="html"><![CDATA[Change is coming; I hope you're ready.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jcmcginnis.com/assets/img/org-changelog.webp" /><media:content medium="image" url="https://jcmcginnis.com/assets/img/org-changelog.webp" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Leading High-trust Teams: Workshop</title><link href="https://jcmcginnis.com/blog/leading-high-trust-teams-uplimit/" rel="alternate" type="text/html" title="Leading High-trust Teams: Workshop" /><published>2023-09-06T00:00:00-05:00</published><updated>2023-09-06T00:00:00-05:00</updated><id>https://jcmcginnis.com/blog/leading-high-trust-teams-workshop</id><content type="html" xml:base="https://jcmcginnis.com/blog/leading-high-trust-teams-uplimit/"><![CDATA[<p>A 4-hour deep dive into being better leaders and how to build high-trust in your teams. Inspired by remote leadership, but all applicable to in-person teams too.</p>
+
+<p>The course is designed to help you reflect and refine the way you show up as a leader, the type of culture you build, and ultimately, help you help your team reach a new level of performance. Expect to leave with a new perspective on leadership and a set of tools to help you get there. If you ever want to dig deep here, I’d love to learn about what you’re trying to achieve.</p>
+
+<p>Slides for each session:</p>
+<ol>
+  <li><a href="https://docs.google.com/presentation/d/16orOKWzwX1edV1u07g_v568i_KbrZ6TeVYFrh2qMm84/edit">Trust, its flavours, and its importance</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1aywBCNjIF-qJ0R-EuiTAzjxcduzwcH9c4ccNzXir3RI/edit#slide=id.g2410bc30df0_0_249">Authenticity and tools for deep trust</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1tC0YYPOUKnt7_0Yf11tSY58obTamww-ZC4bmuieDBQY/edit#slide=id.g2410fd39ef6_0_166">Facilitation and space-making</a></li>
+  <li><a href="https://docs.google.com/presentation/d/1ak3QNOP7Zd3KBzkw5E3ugttOClyaXYrrRuz75JqYMZU/edit#slide=id.g27af695b3e8_0_172">Defaults, conflict, and solving problems</a></li>
+</ol>]]></content><author><name>Jesse McGinnis</name></author><category term="Talks &amp; Workshops" /><summary type="html"><![CDATA[Workshop in 2023 on how to better lead teams, both in-person and remotely.]]></summary></entry><entry><title type="html">High-trust Teams: Talk @ Gartner</title><link href="https://jcmcginnis.com/blog/high-trust-remote-teams-gartner-2023/" rel="alternate" type="text/html" title="High-trust Teams: Talk @ Gartner" /><published>2023-05-23T00:00:00-05:00</published><updated>2023-05-23T00:00:00-05:00</updated><id>https://jcmcginnis.com/blog/high-trust-remote-teams-gartner</id><content type="html" xml:base="https://jcmcginnis.com/blog/high-trust-remote-teams-gartner-2023/"><![CDATA[<p>I had the pleasure of being one of a few external speakers at Gartner’s Application Innovation Summit, Vegas in May 2023, to share a 30-minute dive into <strong>building high-trust teams</strong>. Inspired by my <a href="/blog/high-trust-remote-teams-qcon-2022/">QCon talk</a>, but condensed and adjusted to apply to in-person teams more clearly. No video, unfortunately, but the slides are available:</p>
+
+<ul>
+  <li><a href="https://www.icloud.com/keynote/09bfNHjmimqOFriVhnYso99oQ#2023Q2_-_Gartner_-_High-Trust_Teams">Slides (keynote)</a></li>
+</ul>]]></content><author><name>Jesse McGinnis</name></author><category term="Talks &amp; Workshops" /><summary type="html"><![CDATA[Talk at Gartner on how to build high-trust teams.]]></summary></entry><entry><title type="html">Trust First</title><link href="https://jcmcginnis.com/blog/trust-first/" rel="alternate" type="text/html" title="Trust First" /><published>2022-12-23T00:00:00-06:00</published><updated>2022-12-23T00:00:00-06:00</updated><id>https://jcmcginnis.com/blog/trust-first</id><content type="html" xml:base="https://jcmcginnis.com/blog/trust-first/"><![CDATA[<p>Trust is the foundation of every great team.</p>
+
+<p>When team members trust their teams and leaders, they will be more aligned, more engaged, and more productive. Trust is slow to gain and quick to lose; requiring consistent care. But, it’s worth it. Leading with <em>trust first</em> is your path to a positive and high-performing team.</p>
+
+<h2 id="trust-matters">Trust matters</h2>
+
+<p>Trust is the foundation of high-performing teams. It allows for open and honest communication. It simplifies conflict resolution. It propels decision-making. It fosters accountability. All of which, together, simplifies alignment.</p>
+
+<p>Trust drives engagement within teams: building necessary motivation and productivity. It facilitates safe failure and experimentation; crucial elements to learn and grow.</p>
+
+<p>By building trust within teams, leaders will enjoy world-class performance.</p>
+
+<h3 id="trust-simplifies-alignment">Trust simplifies alignment</h3>
+
+<p>Trust allows team members to be their authentic selves, which frees up energy to focus on the work at hand. When team members feel safe to express their ideas and opinions, they’re invited to be present and engaged. This authenticity frees folks to speak openly and honestly without fear of reprisal or judgment. Frees folks to be genuine and to challenge and question what’s unclear. Frees folks to give and receive feedback.</p>
+
+<p>Critically, this candid authenticity facilitates real and productive conflict. When team members feel comfortable — encouraged even — to share their opinions and ideas, even when they disagree with each other or you, it facilitates open and honest dialogue. You’ll see better decision-making and improved outcomes.</p>
+
+<p>All of this supports alignment. A team working towards a common goal with minimal communication overhead and coordination. A common goal that motivates and excites. A common goal, built together.</p>
+
+<h3 id="trust-drives-engagement">Trust drives engagement</h3>
+
+<p>We are social creatures and seek connection. When we trust each other, when we trust where we’re going, and when we trust <em>how we engage</em>, we’ll feel a part of something bigger. This bigger picture, with deeper purpose and connection, supports deep connection and honest engagement. Engagement that’ll appear in surprising ways and facilitate so many different micro- and macro-refinements to how your team shows up day to day.</p>
+
+<p>This shared purpose also invites <em>fun</em>. Fun which keeps work light. Fun which humanizes. Fun which creates space for decompression and offers everyone room to make mistakes; critical for the team to continue learning and growing over the long term.</p>
+
+<p>All of these help sustain the environment of a high-performing team. One that can be kick-ass, and keep being kick-ass for a long time. But how do we get to this necessary trust?</p>
+
+<h2 id="tactics-to-build-trust">Tactics to build trust</h2>
+
+<p>Building trust is hard. Doubly so in a digital-first world. This is where a focus on <em>trust first</em> comes into play. With three layers of depth, we can create space for uniquely human conversation. Human conversations that’ll establish real long-term trust.</p>
+
+<h3 id="layer-1-have-fun">Layer 1: Have fun</h3>
+
+<p>To build trust within a team, start by making space for fun. Focus on activities that are light-hearted, easy to take part in, and intentionally social. This is our baseline — it’ll be surface-level, but it creates the initial connections we need. Connections that we will build on.</p>
+
+<p>These activities should be recurring and variable, and should be led by different team members to keep things fresh. Examples include happy hours, coffee chats, and games. You should also add something “bigger” every once in a while, like a digital escape room or a virtual zoo visit. The key here is to keep it novel and exciting, so you can continuously nurture and invite folks to have fun together.</p>
+
+<h3 id="layer-2-enable-real-talk">Layer 2: Enable real talk</h3>
+
+<p>Now that we have our initial connections established, we can go deeper. “Real talk” activities are more intentional and establish deeper trust, but require more facilitation. These activities are designed to help team members get to know each other better, and to share more about themselves through deep, honest, and vulnerable conversations.</p>
+
+<p>As we move into “real conversations,” it’s critical to facilitate carefully. You need to establish ground rules of engagement and make the space safe, inviting, and open for folks to share increasingly personal details. Facilitation is a whole other topic and skill I’ll dive deep into in a future post — but for now: be present, fair, and kind.</p>
+
+<p>I recommend the <a href="https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html">36 Questions That Lead to Love</a> and <a href="https://en.wikipedia.org/wiki/The_Ungame">The Ungame</a>. These are great tools to help drive these conversations with excellent prompts. Plan for 30-60 minutes with a few rounds of questions and a debrief to reflect on the experience.</p>
+
+<p>All of this is about creating space to allow team members to have more vulnerable and authentic conversations. Conversations that will build trust and create a deeper understanding of each fully realized human.</p>
+
+<h3 id="layer-3-the-full-human">Layer 3: The full human</h3>
+
+<p>The previous step is one you can stop at, but if you really want to create deep, long-lived human trust, you occasionally need to go deeper.</p>
+
+<p>The full human is about creating space for team members to be their full, vulnerable selves. We have so few opportunities to share our stories and be vulnerable, and doing so can be cathartic on a personal level and help to build trust on a team level. Tools like the life graph or targeted, hard-hitting questions facilitate these conversations.</p>
+
+<p>The life graph is a simple and straightforward way to share your story with the team. Everyone is given 15 minutes to draw a graph of their life, which will unlock lots of rarely told stories and memories, while also ensuring everyone has autonomy to only share what they are comfortable with. After that, get folks together (recommending groups of 4–5) and give each person 5–10 minutes to “present” their life. This is a beautiful way to share your story, a powerful way to start deeper conversations, and is cathartic in ways that surprise most people. This deeply personal and humanizing experience helps everyone on the team see the <em>full human</em> we all are.</p>
+
+<p>By building trust in these three layers, leaders can create a strong foundation for high-performing teams. Using all of these techniques in concert keep a healthy balance between light- and heavy-conversation, ensuring this remains a suite of activities you can run for the long-term. By focusing on having fun, enabling real talk, and creating space for vulnerability, leaders can create a positive and supportive team culture.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Ultimately, trust is the foundation of any high-performing team or organization. When team members trust their team and leaders, they are more likely to be aligned with the goals and vision of the team, more engaged in their work, and more productive overall. Trust takes time to gain, yet can be easily lost. To build trust within a team, leaders should create opportunities for fun, facilitate deep and honest conversations, and create space for team members to be their full, vulnerable selves.</p>
+
+<p>As a leader, it is essential to prioritize trust in all of your interactions with your team. Building trust is an ongoing process that requires intentionality and effort, but the benefits of a trusting team, and leading with <em>trust first</em>, are well worth it.</p>]]></content><author><name>Jesse McGinnis</name></author><category term="Leadership" /><summary type="html"><![CDATA[Leading with trust first is the best way to build a team that is aligned, engaged, and productive.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jcmcginnis.com/assets/img/trust-first.jpg" /><media:content medium="image" url="https://jcmcginnis.com/assets/img/trust-first.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">High-trust Teams in a Remote World: Talk @ QCon</title><link href="https://jcmcginnis.com/blog/high-trust-remote-teams-qcon-2022/" rel="alternate" type="text/html" title="High-trust Teams in a Remote World: Talk @ QCon" /><published>2022-12-06T00:00:00-06:00</published><updated>2022-12-06T00:00:00-06:00</updated><id>https://jcmcginnis.com/blog/high-trust-remote-teams-qcon</id><content type="html" xml:base="https://jcmcginnis.com/blog/high-trust-remote-teams-qcon-2022/"><![CDATA[<p>I was honoured to be part of the <a href="https://plus.qconferences.com/track/nov2022/after-hybrid-work-strategies">Hybrid Work Strategies</a> track at QCon, San Francisco in November 2022, on <strong>how to build high-trust remote teams</strong>. Here’s the video and transcript of my talk.</p>
+
+<ul>
+  <li><a href="https://plus.qconferences.com/presentation/nov2022/building-high-trust-and-high-performing-teams-shopify-remote-world">Overview</a></li>
+  <li><a href="https://www.infoq.com/presentations/digital-hybrid-shopify/">Video</a></li>
+  <li><a href="https://www.icloud.com/keynote/01bvCxQakQDnXcCc34u3n0jxg#2022Q4_-_QCon_-_Building_High-Trust_and_High-Performing_Teams_at_Shopify_in_a_Remote_World">Slides (keynote)</a></li>
+</ul>]]></content><author><name>Jesse McGinnis</name></author><category term="Talks &amp; Workshops" /><summary type="html"><![CDATA[Talk at QCon on building high-trust remote teams.]]></summary></entry><entry><title type="html">Work-life Harmony</title><link href="https://jcmcginnis.com/blog/work-life-harmony/" rel="alternate" type="text/html" title="Work-life Harmony" /><published>2022-09-12T00:00:00-05:00</published><updated>2022-09-12T00:00:00-05:00</updated><id>https://jcmcginnis.com/blog/work-life-harmony</id><content type="html" xml:base="https://jcmcginnis.com/blog/work-life-harmony/"><![CDATA[<p>The last few years of the pandemic have led to much-needed discussion around work and life. But the focus on <em><strong>balance</strong></em> is the wrong framing: we serve ourselves better with <em><strong>harmony</strong></em>.</p>
+
+<h2 id="the-trappings-of-balance">The trappings of “balance”</h2>
+
+<p>It is true that work and life have a connection. It is true that we need to be intentional in where we spend our time. It is true we must reflect on how to lead a more satisfied life. But, <em>balance</em> is not the way there.</p>
+
+<p>Balance implies a correct divide between work- and life-time. This creates an unhelpful pressure to pursue the “right” equilibrium. <strong>If you’re not “balanced,” you’re doing it wrong.</strong></p>
+
+<p>But life is so much more than something you can divide cleanly. First of all, <strong>work itself is part of life</strong>, and treating it as a separate entity is an unhealthy frame. Work doesn’t need to be your life’s passion, but you should get something from it:</p>
+
+<ul>
+  <li>personal or professional growth;</li>
+  <li>a sense of purpose;</li>
+  <li>new relationships;</li>
+  <li>a change you want to create in the world; or</li>
+  <li>something else entirely.</li>
+</ul>
+
+<p>Further, balance, with its “correctness” creates space for self-judgement. I’m pretty critical of myself, and many of the excellent humans I’ve led and helped grow over the years are too. We don’t need <em>another</em> thing to win or lose at, so let’s find a framing that takes it completely out of the equation of our “success.”</p>
+
+<p>Lastly, you should pay attention to what gives you energy, in both work and life. The framing of balance can push you away from leaning into work when it can be a wonderful source. Should work be your only source of energy? No, of course not, but it can certainly be a big contributor. Lean into where you can draw excitement.</p>
+
+<h3 id="enter-harmony">Enter “harmony”</h3>
+
+<p>There are lots of definitions out there, but two stand out to me:</p>
+
+<blockquote>
+  <p>“an interweaving of different accounts into a single narrative”</p>
+</blockquote>
+
+<p>and</p>
+
+<blockquote>
+  <p>“pleasing arrangement of parts”</p>
+</blockquote>
+
+<p>Finding work-life harmony implies a unification of these <em>life arrangements</em> into something more pleasing than the sum of its parts.</p>
+
+<p>Harmony embraces that work is not truly distinct; that there is no singular correct division. Harmony removes the sense of “finding the answer” of balance and leaning into the current lived experience. Harmony frees you to be present with what’s happening now, and consistently “follow your energy.”</p>
+
+<p>It’s a subtle change, but profound nonetheless.</p>]]></content><author><name>Jesse McGinnis</name></author><category term="Musings" /><summary type="html"><![CDATA[Life deserves more than simple balance.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jcmcginnis.com/assets/img/work-life-harmony.jpg" /><media:content medium="image" url="https://jcmcginnis.com/assets/img/work-life-harmony.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Writing Regularly</title><link href="https://jcmcginnis.com/blog/musings-writing-regularly/" rel="alternate" type="text/html" title="Writing Regularly" /><published>2022-09-05T00:00:00-05:00</published><updated>2022-09-05T00:00:00-05:00</updated><id>https://jcmcginnis.com/blog/musings-writing-regularly</id><content type="html" xml:base="https://jcmcginnis.com/blog/musings-writing-regularly/"><![CDATA[<p>I want to write more, but I don’t want to have to write <em>proper articles</em> for everything on my mind…</p>
+
+<h2 id="musings-for-the-soul">Musings for the soul</h2>
+
+<p>Why even write something like this? While I hope these occasional, short, and brief thoughts end up useful for all, I’m mostly doing this <em>for me</em>. Regular and active writing helps me process my thoughts.</p>
+
+<p>I’ve been experimenting with writing weekly, <em>internally to Shopify</em>, for about 2 months now and have thoroughly loved it. So now I’m going to extend that experiment to writing weekly <em>externally</em> as well.</p>
+
+<p>I genuinely believe the practice of regular writing and reflection to be impactful in how you show up as a leader. This practice presents an opportunity to process and digest what you’ve learned. Further, the space and time you make to do this is itself a rare moment of thoughtful work in most leaders’ wall-to-wall calendars. Finally, this is an excellent way to capture some core elements of a <a href="https://jvns.ca/blog/brag-documents/">Brag Doc</a>.</p>
+
+<p>While these weekly musings won’t always be something to brag about, they come from what’s happening in your life week-over-week. It’ll form a rough map of the problems you run into or the growth you are currently focused on. While not a replacement for a Brag doc outright, it’s a good first step and augmentation.</p>
+
+<p>So welcome to my first weekly musing, a musing on musing itself.</p>
+
+<h3 id="small-technical-note">Small technical note…</h3>
+
+<p>All my short writings, or <em>musings</em>, will be in the <a href="/category/musings">Musings</a> category, so you can know what you’re in for. As I mentioned, this is mostly for me, and many of these will be early previews of long-form articles to come. When inspiration (and mood) strike, I’ll transform many of these into their final full-length form.</p>]]></content><author><name>Jesse McGinnis</name></author><category term="Musings" /><summary type="html"><![CDATA[The act of capturing your thoughts, consistently.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jcmcginnis.com/assets/img/musings-writing-regularly.jpg" /><media:content medium="image" url="https://jcmcginnis.com/assets/img/musings-writing-regularly.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Transitioning Well</title><link href="https://jcmcginnis.com/blog/transitioning-well/" rel="alternate" type="text/html" title="Transitioning Well" /><published>2022-02-21T00:00:00-06:00</published><updated>2022-02-21T00:00:00-06:00</updated><id>https://jcmcginnis.com/blog/transitioning-well</id><content type="html" xml:base="https://jcmcginnis.com/blog/transitioning-well/"><![CDATA[<p>Transitioning teams is hard. Transitioning teams as a leader has a whole swath of extra challenges. Whether it be a new job or a new role within your current company, there’s plenty to figure out each time…</p>
+
+<h2 id="my-most-recent-transition">My most recent transition</h2>
+
+<p>I moved to a new area in Shopify about 6 months ago to form a new organization. I didn’t have a clear mandate. I didn’t know which teams I could pull in. I didn’t know who I’d even be working with to pull this off.</p>
+
+<p>No matter how many times I’ve made a change, each time a swarm of emotions floods my senses:</p>
+
+<ul>
+  <li>Trepidation — Can I build great relationships with all the new humans?</li>
+  <li>Worry — Can I find a shared purpose for each of these teams? Can I add value?</li>
+  <li>Fear — What’s going to happen? Am I capable of pulling this off?</li>
+</ul>
+
+<p>Imposter syndrome always finds its way to the forefront. Why does this always surface? I don’t know. Not a psychologist. Just another human. Trying to figure out a little bit each time. But reflection, intentionality, and <em>naming things</em> make each change easier.</p>
+
+<p>We face this discomfort with a plan centered on one idea: trust.</p>
+
+<h3 id="context-gathering">Context gathering</h3>
+
+<p>Do you know the domain? Do you know the organization? Do you know the history? Do you know the people? Figure it out, fast. Context is necessary to succeed. Context is necessary to ensure each challenge faced can be learned from.</p>
+
+<p>Start by reading: documentation, tech designs, blog posts, product briefs, and a little code. Everything you can get your hands on. You need to put in the work. You need to show that you care.</p>
+
+<p>Now that you’ve read, it’s time to connect with your new humans. Be upfront that you don’t know much yet. This’ll go a long way to building trust <em>and</em> getting you good answers. Ask your team, ask past leaders, and ask skip-levels. Seek their perspective. Ask every question you can think of. Ask them what they think you should know. Be a sponge.</p>
+
+<h3 id="clear-and-authentic-communication">Clear and authentic communication</h3>
+
+<p>While gathering context, you’ll get ample time with your new team. Be honest, authentic, and clear. Another opportunity to build trust.</p>
+
+<p>You came to this org/team/company for a reason. What is it? Share that. You may not have a lot of context yet, but you’ve (hopefully) got passion. Share your ambition and excitement. Share your goals and where you’ll focus. Share the opportunities you see ahead and the challenges you’ll learn from. Share tidbits of your background that are relevant and show you’re capable. Share who you are, as a human, and who you are in this company.</p>
+
+<p>And while you’re sharing, be brutally honest on what you don’t know. Start asking for feedback <em>feverishly</em>. Set the stage for how you’ll be showing up.</p>
+
+<p>And even more important than sharing: <em>listening</em>. Ask your new team what they expect from you. What they need from you.</p>
+
+<h3 id="deep-care-and-trust">Deep care and trust</h3>
+
+<p>And that open curiosity will provide the chance to care deeply.</p>
+
+<p>Don’t discount how important care and trust is at this stage. While you’re nervous about this transition, your new team is doubly so. Focus on building deep and caring relationships. Focus on being human with your humans. Once again, more opportunity to build trust.</p>
+
+<p>Set up 1:1’s with everyone in your new team. <em>Everyone</em>. Spend time sharing history. Spend time sharing ambition. Spend time sharing concerns. Spend time being human, together. But also, dig a little. Ask what can be better. Ask what should stay the same. Ask what challenges they’re facing. And begin helping.</p>
+
+<p>I also love setting up intentional time to go deep. Think of playing <a href="https://en.wikipedia.org/wiki/The_Ungame">The Ungame</a>](https://en.wikipedia.org/wiki/The_Ungame) or <a href="https://www.nytimes.com/2015/01/09/style/no-37-big-wedding-or-small.html">36 Questions That Lead to Love</a> (which I know sounds strange, but these are excellent). Focused time to move past small talk will accelerate trust and empathy on a whole other level.</p>
+
+<h2 id="all-together">All together</h2>
+
+<p>These three approaches lean on and complement each other. And importantly, they all drive <em>trust</em> with your new team. While you gather context to understand what you’ve walked into, you can be vulnerable. While sharing clearly why you joined, you can listen. In all these conversations, you can focus on deep human connection. Building deep deep care and trust for each human in your new team.</p>
+
+<p>There’ll be new challenges (and old ones). There’ll be surprises. There’ll be ample mistakes. But, with this foundation of trust, you (and the team!) will be ready to weather them with grace and anti-fragility.</p>]]></content><author><name>Jesse McGinnis</name></author><category term="Leadership" /><summary type="html"><![CDATA[Transitioning to a new team is hard, doubly so as a leader.]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://jcmcginnis.com/assets/img/transitioning-well.jpg" /><media:content medium="image" url="https://jcmcginnis.com/assets/img/transitioning-well.jpg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
