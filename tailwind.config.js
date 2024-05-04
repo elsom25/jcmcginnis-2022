@@ -12,7 +12,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        mono: ["Source Code Pro", ...defaultTheme.fontFamily.mono],
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
       typography: {

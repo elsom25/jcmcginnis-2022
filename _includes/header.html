@@ -32,7 +32,7 @@
                 {% for item in site.data.menu.main %}
                   <li>
                     <a
-                      class="group/item transition py-2 px-4 rounded-md hover:bg-zinc-50 dark:hover:bg-black {% if item.url == page.url %}bg-zinc-50 dark:bg-black{% endif %}"
+                      class="group/item transition py-2 px-4 rounded-md hover:bg-zinc-100 dark:hover:bg-black {% if item.url == page.url %}bg-zinc-50 dark:bg-zinc-950 {% endif %}"
                       href="{{ item.url | relative_url }}"
                     >
                       {% if item.url == page.url %}
