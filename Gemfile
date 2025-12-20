@@ -1,14 +1,13 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-# Ruby 3.4+ bundled gems (now need explicit declaration)
-gem 'base64'
-gem 'bigdecimal'
-gem 'csv'
+gem "bridgetown", "~> 2.0"
+gem "bridgetown-feed", "~> 4.0"
+gem "bridgetown-seo-tag", "~> 7.0"
+gem "puma", "~> 6.4" # Puma is the recommended web server for Bridgetown
 
-gem 'jekyll', '~> 4.3'
-gem 'jekyll-environment-variables'
-gem 'jekyll-feed', '~> 0.17'
-gem 'jekyll-redirect-from', '~> 0.16'
-gem 'jekyll-seo-tag', '~> 2.8'
+group :development do
+  gem "erb_lint", require: false
+  gem "foreman"
+end

@@ -1,10 +1,14 @@
 {
   "name": "jcmcginnis-2022",
+  "type": "module",
   "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "^1.4.4",
     "@tailwindcss/cli": "^4.1.0",
     "@tailwindcss/typography": "^0.5.16",
-    "prettier": "3.2.5",
+    "prettier": "^3.4.2",
     "tailwindcss": "^4.1.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   }
 }

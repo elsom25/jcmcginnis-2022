@@ -1,3 +1,11 @@
 {
-  "plugins": ["@shopify/prettier-plugin-liquid"]
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": {
+        "printWidth": 100
+      }
+    }
+  ]
 }

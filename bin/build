@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
+set -euo pipefail
 
-# Build CSS
-npx @tailwindcss/cli -i src/css/style.css -o assets/css/style.css --minify
+echo "==> Building CSS with Tailwind..."
+npx @tailwindcss/cli -i frontend/styles/index.css -o src/assets/css/style.css --minify
 
-# Build Jekyll
-JEKYLL_ENV=production bundle exec jekyll build
+echo "==> Building site..."
+BRIDGETOWN_ENV=production bin/bridgetown build
+
+echo "==> Build complete!"
 

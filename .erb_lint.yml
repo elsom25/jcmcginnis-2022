@@ -1,0 +1,49 @@
+---
+EnableDefaultLinters: true
+glob: "src/**/*.erb"
+
+linters:
+  # Check for trailing whitespace
+  TrailingWhitespace:
+    enabled: true
+
+  # Check for missing newlines at end of file
+  FinalNewline:
+    enabled: true
+    present: true
+
+  # Don't require self-closing tags (HTML5 style)
+  SelfClosingTag:
+    enabled: false
+
+  # Check for extra newlines
+  ExtraNewline:
+    enabled: true
+
+  # Check for spaces around erb tags
+  SpaceAroundErbTag:
+    enabled: true
+
+  # Disable RuboCop integration (we don't have rubocop configured)
+  Rubocop:
+    enabled: false
+
+  # Disable ErbSafety (requires better_html config)
+  ErbSafety:
+    enabled: false
+
+  # Check for closing erb tag indent
+  ClosingErbTagIndent:
+    enabled: true
+
+  # Require using `-` to strip newlines in ERB tags where appropriate
+  NoJavascriptTagHelper:
+    enabled: false
+
+  # Require correct nesting/indentation in ERB
+  RequireInputAutocomplete:
+    enabled: false
+
+  # Require correct syntax
+  RightTrim:
+    enabled: true

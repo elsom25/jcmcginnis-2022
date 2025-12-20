@@ -4,9 +4,16 @@
 node_modules
 .yarn/
 
-# Jekyll
-_site
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Bridgetown
+output/
+tmp/
+.bridgetown-cache/
+.bridgetown-metadata
+.bridgetown-webpack/
+
+# Generated CSS (built by Tailwind during deploy)
+src/assets/css/style.css
+
+# Ruby
+.bundle/
+vendor/

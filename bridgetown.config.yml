@@ -1,0 +1,28 @@
+url: "https://jcmcginnis.com"
+timezone: America/Toronto
+permalink: pretty
+
+# Social links for JSON-LD structured data (used by bridgetown-seo-tag)
+social:
+  name: Jesse McGinnis
+  links:
+    - https://twitter.com/elsom25
+    - https://github.com/elsom25
+    - https://www.linkedin.com/in/jcmcginnis
+    - https://www.facebook.com/jcmcginnis
+
+pagination:
+  enabled: true
+
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+defaults:
+  - scope:
+      collection: posts
+    values:
+      layout: post
+
+template_engine: erb
