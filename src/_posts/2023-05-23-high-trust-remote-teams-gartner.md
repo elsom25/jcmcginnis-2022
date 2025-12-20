@@ -3,7 +3,7 @@ title:       "High-trust Teams: Talk @ Gartner"
 permalink:   /blog/high-trust-remote-teams-gartner-2023/
 home:        false
 
-categories:  ["Talks & Workshops"]
+categories:  ["Talks"]
 description: Talk at Gartner on how to build high-trust teams.
 ---
 

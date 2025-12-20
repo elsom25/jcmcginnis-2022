@@ -1,5 +1,10 @@
 ---
 layout: default
+title: ":prototype-term-titleize"
+permalink: /category/:term/
+prototype:
+  collection: posts
+  term: categories
 ---
 <main class="my-10 md:my-16">
   <header class="mb-6 flex flex-col md:flex-row align-center items-center w-full lg:w-10/12">
@@ -7,7 +12,7 @@ layout: default
   </header>
 
   <ol class="mb-10">
-    <% collections.posts.resources.select { |p| p.data.categories&.include?(resource.data.title) }.each do |post| %>
+    <% paginator.resources.each do |post| %>
       <li class="mb-4 flex flex-col md:flex-row align-center items-center w-full lg:w-10/12">
         <h3 class="md:text-lg font-semibold mr-4">
           <a href="<%= post.relative_url %>" class="hover:text-rose-800"><%= post.data.title %></a>
