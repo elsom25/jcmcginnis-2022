@@ -47,4 +47,3 @@ linters:
   # Require correct syntax
   RightTrim:
     enabled: true
-
