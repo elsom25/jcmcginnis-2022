@@ -66,14 +66,13 @@ There's a lot here, but it's all quite simple. Let's review the fictional _CodeC
 
 Even this short snippet shares surprising insight into the company. You get a sense of culture from the changelog simply existing, but also in how it's written. You see what they care about from what is tracked and where change happens. And so much more! The story of this company is reacting and evolving as it goes…
 
-<details>
-  <summary class="cursor-pointer">Expand to review a changelog for "CodeCraft Inc."</summary>
-{{ "
+<details markdown="1">
+<summary class="cursor-pointer">Expand to review a changelog for "CodeCraft Inc."</summary>
 
 ```markdown
 # CodeCraft Changelog
 
-_Living document capturing key organizational changes of CodeCraft. Helps us remember where we came from and how we got to where we are today. Part of _treating our human organization more like_ a product itself._
+_Living document capturing key organizational changes of CodeCraft. Helps us remember where we came from and how we got to where we are today. Part of treating our human organization more like a product itself._
 
 ## v3.0.0 - 2023-10-17
 
@@ -108,7 +107,7 @@ Shared as a video recording ([link](#)) in Slack. The team and product have been
 
 ... and so on ...
 ```
-" | markdownify }}
+
 </details>
 
 ## The power of an organizational changelog

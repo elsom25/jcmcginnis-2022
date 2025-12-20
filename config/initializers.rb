@@ -25,7 +25,6 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
   end
 
   def category_url(category_name)
-    page = site.collections.pages.resources.find { |p| p.data.title == category_name }
-    page&.relative_url || "/category/#{category_name.downcase.gsub(/\s+/, '-')}/"
+    "/category/#{category_name.downcase.gsub(/\s+/, '-')}/"
   end
 end
