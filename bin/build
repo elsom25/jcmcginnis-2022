@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "==> Building CSS with Tailwind..."
+npx @tailwindcss/cli -i frontend/styles/index.css -o src/assets/css/style.css --minify
+
+echo "==> Building site..."
+BRIDGETOWN_ENV=production bin/bridgetown build
+
+echo "==> Build complete!"
+

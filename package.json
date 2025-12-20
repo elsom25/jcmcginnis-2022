@@ -1,10 +1,6 @@
 {
   "name": "jcmcginnis-2022",
   "type": "module",
-  "scripts": {
-    "start": "bin/bridgetown start",
-    "build": "bin/bridgetown deploy"
-  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.0",
     "@tailwindcss/typography": "^0.5.16",
