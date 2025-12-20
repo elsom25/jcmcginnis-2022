@@ -1,0 +1,29 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Content sources for Tailwind to scan */
+@source "../../_drafts/**/*.{md,html}";
+@source "../../_includes/**/*.html";
+@source "../../_layouts/**/*.html";
+@source "../../_posts/*.{md,html}";
+@source "../../*.{md,html}";
+
+/* Theme configuration */
+@theme {
+  /* Font family - Inter variable font */
+  --font-sans: "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+/* Custom typography variant for removing blockquote decorations */
+@utility prose-quoteless {
+  & :where(blockquote p:first-of-type)::before {
+    content: none;
+  }
+  & :where(blockquote p:first-of-type)::after {
+    content: none;
+  }
+}
+
+.highlight {
+  @apply whitespace-pre-wrap font-mono;
+}

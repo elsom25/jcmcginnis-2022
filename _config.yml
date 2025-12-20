@@ -32,7 +32,6 @@ highlighter: rouge
 plugins:
   - jekyll-environment-variables
   - jekyll-feed
-  - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-redirect-from
 
@@ -71,7 +70,7 @@ exclude:
   - .vscode
   - .gitignore
   - .liquidrc
-  - postcss.config.js
-  - tailwind.config.js
+  - src
   - bin/jekyll
   - bin/serve
+  - bin/build
