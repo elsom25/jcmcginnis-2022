@@ -1,0 +1,31 @@
+# Build outputs
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Dependencies
+node_modules/
+vendor/
+.yarn/
+
+# Editor/IDE
+.vscode/
+
+# Package manager locks (reference only, don't need indexing)
+Gemfile.lock
+package-lock.json
+yarn.lock
+
+# Binary assets (images are useful for reference but not for code search)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+*.svg
+
+# Generated files
+feed.xml
+
