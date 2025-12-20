@@ -6,7 +6,7 @@ layout: default
     <%= resource.date.strftime("%B %e, %Y") %>
     <% resource.data.categories&.each do |category| %>
       <a class="text-sm font-light text-rose-700 hover:text-rose-800 dark:text-rose-500"
-        href="<%= relative_url "/category/#{category.downcase.gsub(' ', '-').gsub('&', '')}" %>"><%= category %></a>
+        href="<%= category_url(category) %>"><%= category %></a>
     <% end %>
   </div>
   <h1 class="heading text-4xl md:text-6xl font-bold font-sans md:leading-tight">

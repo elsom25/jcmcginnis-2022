@@ -24,6 +24,9 @@ social:
 
 permalink: pretty
 
+pagination:
+  enabled: true
+
 collections:
   posts:
     output: true

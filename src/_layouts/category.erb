@@ -1,21 +1,13 @@
 ---
 layout: default
 ---
-<%
-category = resource.data.title
-category_posts = collections.posts.resources.select { |p| p.data.categories&.include?(category) }
-%>
-
 <main class="my-10 md:my-16">
   <header class="mb-6 flex flex-col md:flex-row align-center items-center w-full lg:w-10/12">
-    <h1 class="text-2xl md:text-4xl font-light text-rose-700 md:leading-tight"><%= category %></h1>
-    <% if resource.data.description %>
-      <h2 class="text-lg italic font-light mt-2"><%= resource.data.description %></h2>
-    <% end %>
+    <h1 class="text-2xl md:text-4xl font-light text-rose-700 md:leading-tight"><%= resource.data.title %></h1>
   </header>
 
   <ol class="mb-10">
-    <% category_posts.each do |post| %>
+    <% collections.posts.resources.select { |p| p.data.categories&.include?(resource.data.title) }.each do |post| %>
       <li class="mb-4 flex flex-col md:flex-row align-center items-center w-full lg:w-10/12">
         <h3 class="md:text-lg font-semibold mr-4">
           <a href="<%= post.relative_url %>" class="hover:text-rose-800"><%= post.data.title %></a>

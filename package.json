@@ -3,13 +3,11 @@
   "type": "module",
   "scripts": {
     "start": "bin/bridgetown start",
-    "build": "bin/bridgetown deploy",
-    "esbuild": "node esbuild.config.js"
+    "build": "bin/bridgetown deploy"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.1.0",
     "@tailwindcss/typography": "^0.5.16",
-    "esbuild": "^0.24.0",
-    "glob": "^11.0.0",
     "tailwindcss": "^4.1.0"
   }
 }

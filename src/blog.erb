@@ -14,7 +14,7 @@ permalink: /blog/
           <li class="mb-4">
             <a href="<%= post.relative_url %>" class="text-sm font-light text-zinc-600 dark:text-zinc-400"><%= post.date.strftime("%B %e") %></a>
             <% post.data.categories&.each do |category| %>
-              <a class="text-sm font-light text-rose-700 hover:text-rose-800 dark:text-rose-500" href="<%= relative_url "/category/#{category.downcase.gsub(' ', '-').gsub('&', '')}" %>"><%= category %></a>
+              <a class="text-sm font-light text-rose-700 hover:text-rose-800 dark:text-rose-500" href="<%= category_url(category) %>"><%= category %></a>
             <% end %>
             <h3 class="text-lg font-semibold"><a class="hover:text-rose-800" href="<%= post.relative_url %>"><%= post.data.title %></a></h3>
             <h4><a href="<%= post.relative_url %>"><%= post.data.description %></a></h4>

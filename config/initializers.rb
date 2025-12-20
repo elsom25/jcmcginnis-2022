@@ -25,4 +25,9 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
   def posts_by_year
     site.collections.posts.resources.group_by { |p| p.date.year }.sort.reverse.to_h
   end
+
+  # Look up category page by title and return its URL (single source of truth)
+  def category_url(category_name)
+    site.collections.pages.resources.find { |p| p.data.title == category_name }&.relative_url
+  end
 end

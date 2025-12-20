@@ -12,7 +12,6 @@ Personal website and blog for Jesse McGinnis, built with Bridgetown 2.0 and Tail
 - **CSS Framework:** Tailwind CSS 4 with @tailwindcss/typography plugin
 - **Templating:** ERB templates with Ruby helpers
 - **Fonts:** Inter variable font (loaded from rsms.me CDN)
-- **Frontend Build:** esbuild
 
 ## Development Commands
 
@@ -35,10 +34,8 @@ Dev server runs at `http://localhost:4000`
 bridgetown.config.yml  # Site configuration
 config/initializers.rb # Plugin initialization and custom helpers
 Gemfile               # Ruby dependencies
-package.json          # Node dependencies
-esbuild.config.js     # Frontend build configuration
+package.json          # Node dependencies (Tailwind CLI)
 frontend/
-  javascript/         # JS entry point
   styles/             # Tailwind CSS source
 src/
   _layouts/           # ERB templates: base.erb → default.erb → post.erb
@@ -47,8 +44,7 @@ src/
   _data/              # Structured data (menu.yml, site_metadata.yml)
   assets/             # Built CSS and images
   category/           # Category landing pages
-plugins/              # Bridgetown plugins (if any)
-output/               # Build output
+output/               # Build output (gitignored)
 ```
 
 ## Template Conventions

@@ -6,10 +6,10 @@ Personal website and blog for Jesse McGinnis, built with [Bridgetown 2.0](https:
 
 ## Tech Stack
 
-- **Static Site Generator:** Bridgetown 2.0
-- **CSS Framework:** Tailwind CSS 4 with @tailwindcss/typography
-- **Templating:** ERB with Ruby helpers
-- **Fonts:** Inter variable font
+- **Static Site Generator:** [Bridgetown 2.0](https://www.bridgetownrb.com/)
+- **CSS Framework:** [Tailwind CSS 4](https://tailwindcss.com/) with @tailwindcss/typography
+- **Templating:** ERB with custom Ruby helpers
+- **Fonts:** [Inter](https://rsms.me/inter/) variable font
 - **Deployment:** GitHub Pages via GitHub Actions
 
 ## Quick Start
@@ -33,16 +33,14 @@ BRIDGETOWN_ENV=production bin/bridgetown build
 ├── bridgetown.config.yml    # Site configuration
 ├── config/initializers.rb   # Plugin init & custom helpers
 ├── frontend/
-│   ├── javascript/          # JS entry point
 │   └── styles/index.css     # Tailwind CSS source
 ├── src/
 │   ├── _layouts/            # ERB templates (base → default → post)
-│   ├── _partials/           # Reusable components
+│   ├── _partials/           # Reusable components (header, footer)
 │   ├── _posts/              # Blog posts in Markdown
 │   ├── _data/               # Structured data (menu, site_metadata)
-│   ├── assets/              # Built CSS and images
+│   ├── assets/              # Built CSS, syntax highlighting, images
 │   └── category/            # Category landing pages
-├── plugins/                 # Custom Bridgetown plugins
 └── output/                  # Build output (gitignored)
 ```
 

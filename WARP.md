@@ -48,8 +48,7 @@ npx prettier --write .
 ### Build System
 The site uses **Bridgetown 2.0** with:
 - **ERB templates** for layouts and partials (full Ruby support)
-- **Tailwind CSS 4** with the new CSS-based configuration
-- **esbuild** for JavaScript bundling (configured but minimal JS used)
+- **Tailwind CSS 4** with CSS-native configuration (built via `@tailwindcss/cli`)
 
 ### Content Structure
 - `src/_posts/`: Blog posts in Markdown with YAML frontmatter

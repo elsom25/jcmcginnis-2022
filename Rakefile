@@ -6,9 +6,16 @@ task default: :deploy
 
 desc "Build the Bridgetown site for deployment"
 task :deploy do
-  # Build CSS
+  ENV["BRIDGETOWN_ENV"] = "production"
+
+  # Build CSS with Tailwind
   sh "npx @tailwindcss/cli -i frontend/styles/index.css -o src/assets/css/style.css --minify"
 
   # Build the site
-  Bridgetown::Commands::Build.start
+  sh "bin/bridgetown build"
+end
+
+desc "Start the development server"
+task :start do
+  sh "bin/bridgetown start"
 end
