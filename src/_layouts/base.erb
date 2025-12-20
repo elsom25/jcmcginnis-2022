@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-ca" class="scroll-smooth h-full antialiased light">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <meta name="theme-color" content="#be195c">
+    <link rel="icon" href="<%= relative_url '/favicon.svg' %>">
+    <link rel="mask-icon" href="<%= relative_url '/favicon.svg' %>" color="#be195c">
+    <link rel="apple-touch-icon" href="<%= relative_url '/apple-touch-icon' %>">
+    <link rel="manifest" href="<%= relative_url '/manifest.json' %>">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
+    <%= live_reload_dev_js %>
+    <%= render "head", metadata: site.metadata %>
+
+    <%= seo %>
+    <%= feed_meta %>
+  </head>
+  <body class="page flex h-full bg-zinc-50 text-zinc-700 selection:bg-zinc-100 selection:text-indigo-700 dark:bg-black dark:text-zinc-200 dark:selection:bg-zinc-700 dark:selection:text-indigo-200" id="page-top">
+    <div class="flex w-full">
+      <%= yield %>
+    </div>
+  </body>
+</html>
+

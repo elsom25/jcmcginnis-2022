@@ -4,9 +4,13 @@
 node_modules
 .yarn/
 
-# Jekyll
-_site
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+# Bridgetown
+output/
+tmp/
+.bridgetown-cache/
+.bridgetown-metadata
+.bridgetown-webpack/
+
+# Ruby
+.bundle/
+vendor/
