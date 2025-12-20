@@ -27,7 +27,9 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
   end
 
   # Look up category page by title and return its URL (single source of truth)
+  # Falls back to a slugified URL if no matching page is found
   def category_url(category_name)
-    site.collections.pages.resources.find { |p| p.data.title == category_name }&.relative_url
+    page = site.collections.pages.resources.find { |p| p.data.title == category_name }
+    page&.relative_url || "/category/#{category_name.downcase.gsub(/\s+/, '-')}/"
   end
 end

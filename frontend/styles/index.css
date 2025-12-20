@@ -2,12 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 /* Content sources for Tailwind to scan */
-@source "../../src/_layouts/**/*.erb";
-@source "../../src/_partials/**/*.erb";
-@source "../../src/_posts/*.md";
-@source "../../src/*.erb";
-@source "../../src/**/*.erb";
-@source "../../src/category/*.md";
+@source "../../src/**/*.{erb,md}";
 
 /* Theme configuration */
 @theme {

@@ -1,19 +1,8 @@
 url: "https://jcmcginnis.com"
 timezone: America/Toronto
+permalink: pretty
 
-title: Jesse McGinnis
-tagline: Solving impactful and complex problems on a global scale.
-description: >-
-  Jesse McGinnis in Waterloo, Canada.
-  Solving impactful and complex problems on a global scale.
-  Empowering humans to conquer heights they never thought possible.
-
-author:
-  name: Jesse McGinnis
-  email: jesse@jcmcginnis.com
-  twitter: elsom25
-  url: https://jcmcginnis.com
-
+# Social links for JSON-LD structured data (used by bridgetown-seo-tag)
 social:
   name: Jesse McGinnis
   links:
@@ -21,8 +10,6 @@ social:
     - https://github.com/elsom25
     - https://www.linkedin.com/in/jcmcginnis
     - https://www.facebook.com/jcmcginnis
-
-permalink: pretty
 
 pagination:
   enabled: true
