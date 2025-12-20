@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -e
+
+echo "Formatting with Prettier (JS, CSS, JSON, Markdown, YAML)..."
+npm run format
+
+echo ""
+echo "Fixing ERB files with erb_lint..."
+bundle exec erb_lint --lint-all --autocorrect
+
+echo ""
+echo "✨ All files formatted!"
+

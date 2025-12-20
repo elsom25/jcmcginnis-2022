@@ -16,7 +16,6 @@ layout: default
     <h2 class="text-xl mt-2"><%= resource.data.description %></h2>
   <% end %>
 </header>
-
 <% if resource.data.image %>
   <img width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" />
 <% else %>
@@ -30,8 +29,6 @@ layout: default
     <span aria-hidden="true" class="flex-grow bg-zinc-300 dark:bg-zinc-600 rounded h-0.5"></span>
   </div>
 <% end %>
-
 <article class="my-10 md:my-16 mx-auto prose prose-quoteless prose-zinc prose-a:underline hover:prose-a:text-rose-800 md:prose-lg lg:prose-xl dark:prose-invert">
   <%= yield %>
 </article>
-

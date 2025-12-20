@@ -7,7 +7,9 @@
 /* Theme configuration */
 @theme {
   /* Font family - Inter variable font */
-  --font-sans: "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Custom typography variant for removing blockquote decorations */
@@ -23,4 +25,3 @@
 .highlight {
   @apply whitespace-pre-wrap font-mono;
 }
-

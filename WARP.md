@@ -4,16 +4,19 @@ This file provides guidance to WARP (warp.dev) when working with code in this re
 
 ## Project Overview
 
-Personal website and blog built with Bridgetown 2.0 and styled with Tailwind CSS 4. The site is deployed to GitHub Pages via GitHub Actions.
+Personal website and blog built with Bridgetown 2.0 and styled with Tailwind CSS 4. The site is
+deployed to GitHub Pages via GitHub Actions.
 
 ## Development Commands
 
 ### Setup
+
 ```bash
 bin/setup
 ```
 
 ### Local Development
+
 ```bash
 bin/dev
 ```
@@ -23,6 +26,7 @@ The development server runs on `http://localhost:4000` by default.
 `bin/dev` uses foreman to run both Bridgetown and Tailwind CLI in parallel (see `Procfile.dev`).
 
 ### Build
+
 ```bash
 bin/build
 ```
@@ -32,12 +36,15 @@ bin/build
 ## Architecture
 
 ### Build System
+
 The site uses **Bridgetown 2.0** with:
+
 - **ERB templates** for layouts and partials (full Ruby support)
 - **Tailwind CSS 4** with CSS-native configuration (built via `@tailwindcss/cli`)
 - **Foreman** for coordinating dev processes (`Procfile.dev`)
 
 ### Content Structure
+
 - `src/_posts/`: Blog posts in Markdown with YAML frontmatter
   - Frontmatter fields: `title`, `permalink`, `description`, `image`, `home`, `categories`
   - Posts output to `/blog/:title/` URLs
@@ -56,7 +63,10 @@ The site uses **Bridgetown 2.0** with:
 - `src/category/talks-workshops/`: Redirect from old URL to `/category/talks/`
 
 ### Categories (Prototype Pages)
-Categories use Bridgetown's prototype pages feature. The single `src/category.erb` file automatically generates archive pages for each unique category found in posts:
+
+Categories use Bridgetown's prototype pages feature. The single `src/category.erb` file
+automatically generates archive pages for each unique category found in posts:
+
 - `/category/leadership/`
 - `/category/musings/`
 - `/category/talks/`
@@ -64,11 +74,14 @@ Categories use Bridgetown's prototype pages feature. The single `src/category.er
 Adding a new category to any post's frontmatter creates its archive page automatically.
 
 ### Custom Helpers
+
 Defined in `config/initializers.rb`:
+
 - `featured_post`: Returns featured post for homepage (recent within 4 weeks, or daily rotation)
 - `posts_by_year`: Groups posts by year for blog index page
 
 ### Styling
+
 - Tailwind CSS 4 config in `frontend/styles/index.css` using CSS-native configuration:
   - `@theme` for custom font family (Inter var)
   - `@utility` for custom `prose-quoteless` variant
@@ -78,12 +91,16 @@ Defined in `config/initializers.rb`:
 - Generated CSS (`src/assets/css/style.css`) is gitignored
 
 ### Plugins
+
 Configured in `config/initializers.rb`:
+
 - `bridgetown-feed`: RSS feed generation at `/feed.xml`
 - `bridgetown-seo-tag`: SEO meta tags via `<%= seo %>` helper
 
 ### Deployment
+
 GitHub Actions workflow (`.github/workflows/bridgetown.yml`):
+
 1. Sets up Ruby and Node
 2. Installs npm and bundle dependencies
 3. Runs `bin/build` (builds CSS then site)
@@ -95,6 +112,7 @@ Triggered on pushes to `main` branch or manual workflow dispatch.
 ## Template Syntax
 
 ### ERB Basics
+
 ```erb
 <%# This is a comment %>
 <%= output_value %>
@@ -117,6 +135,7 @@ Triggered on pushes to `main` branch or manual workflow dispatch.
 ```
 
 ### Available Helpers
+
 ```erb
 <%# URL helpers %>
 <%= relative_url "/path" %>
@@ -143,11 +162,13 @@ bin/build  # Production build (CSS + site)
 ## File Formatting Standards
 
 Follow `.editorconfig` settings:
+
 - LF line endings
 - Final newline required
 - UTF-8 encoding
 - 2-space indentation for JavaScript, JSON, YAML, ERB
 
 ## Ruby and Node Versions
+
 - Ruby: 3.4.7 (specified in `.ruby-version`)
 - Node: Specified in `.nvmrc`

@@ -1,0 +1,19 @@
+# Build output
+output/
+
+# Dependencies
+node_modules/
+
+# Generated CSS
+src/assets/css/style.css
+
+# Cache
+.bridgetown-cache/
+tmp/
+
+# ERB templates (no good Prettier support)
+*.erb
+
+# Git
+.git/
+
