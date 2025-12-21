@@ -1,18 +1,18 @@
 <header class="sticky top-0 left-0 right-0 z-50">
-  <div class="h-1 bg-gradient-to-r from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%"></div>
+  <div class="h-1 bg-gradient-to-r from-amber-500 via-rose-600 to-violet-600"></div>
   <div class="sm:px-8">
     <div class="mx-auto w-full max-w-screen-lg lg:px-8">
-      <div class="relative px-4 sm:px-8 lg:px-12 pt-1 bg-white dark:bg-zinc-900">
-        <div class="flex flex-wrap sm:flex-nowrap pb-2 sm:pb-1 gap-4 font-mono font-normal border-b border-zinc-100 dark:border-zinc-300/20">
+      <div class="relative px-4 sm:px-8 lg:px-12 pt-1 bg-white dark:bg-[#1c1917]">
+        <div class="flex flex-wrap sm:flex-nowrap pb-2 sm:pb-1 gap-4 font-mono font-normal border-b border-stone-200/50 dark:border-stone-700/30">
           <div class="flex flex-1 justify-center sm:justify-normal">
             <a
               aria-label="Home"
-              class="group/item flex items-center transition py-2 px-4 rounded-md hover:bg-zinc-50 dark:hover:bg-black"
+              class="logo-link group/item flex items-center py-2 px-4 rounded-md hover:bg-stone-100 dark:hover:bg-stone-900"
               href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 aria-hidden="true"
-                class="fill-rose-800 h-3 mr-2"
+                class="fill-rose-700 h-3 mr-2"
                 viewBox="0 0 20 20"
                 fill="currentColor">
                 <path
@@ -20,31 +20,31 @@
                   d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
                   clip-rule="evenodd" />
               </svg>
-              <div class="font-mono tracking-widest group-hover/item:font-extrabold group-hover/item:text-transparent bg-clip-text bg-gradient-to-tr from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%">Jesse McGinnis</div>
+              <div class="font-mono tracking-widest group-hover/item:font-extrabold group-hover/item:text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-rose-600 to-violet-600">Jesse McGinnis</div>
             </a>
           </div>
           <div class="flex flex-1 justify-center sm:justify-end">
-            <nav class="flex items-center justify-end">
+            <nav class="flex items-center justify-end gap-2">
               <ol class="flex gap-2">
                 <% menu.main.each do |item| %>
                   <li>
                     <a
-                      class="group/item transition py-2 px-4 rounded-md hover:bg-zinc-100 dark:hover:bg-black <%= 'bg-zinc-50 dark:bg-zinc-950' if item.url == page.relative_url %>"
+                      class="group/item transition py-2 px-4 rounded-md hover:bg-stone-100 dark:hover:bg-stone-900 <%= 'bg-stone-100 dark:bg-stone-800' if item.url == page.relative_url %>"
                       href="<%= relative_url item.url %>">
                       <% if item.url == page.relative_url %>
-                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-tr from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%"><%= item.name %></span>
+                        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-rose-600 to-violet-600"><%= item.name %></span>
                       <% else %>
-                        <span class="group-hover/item:font-extrabold group-hover/item:text-transparent bg-clip-text bg-gradient-to-tr from-sky-500 from-10% via-indigo-500 via-30% to-rose-500 to-90%"><%= item.name %></span>
+                        <span class="group-hover/item:font-extrabold group-hover/item:text-transparent bg-clip-text bg-gradient-to-r from-amber-500 via-rose-600 to-violet-600"><%= item.name %></span>
                       <% end %>
                     </a>
                   </li>
                 <% end %>
                 <li class="inline-block">
                   <a
-                    class="group/item align-text-bottom transition py-2 px-4 rounded-md hover:bg-zinc-50 dark:hover:bg-black"
+                    class="group/item align-text-bottom transition py-2 px-4 rounded-md hover:bg-stone-100 dark:hover:bg-stone-900"
                     href="<%= relative_url '/feed.xml' %>">
                     <svg
-                      class="inline stroke-black dark:stroke-zinc-50 group-hover/item:stroke-sky-600 dark:group-hover/item:stroke-sky-400 h-4"
+                      class="inline stroke-stone-800 dark:stroke-stone-200 group-hover/item:stroke-amber-600 h-4"
                       title="RSS"
                       role="img"
                       xmlns="http://www.w3.org/2000/svg"
@@ -60,6 +60,83 @@
                   </a>
                 </li>
               </ol>
+              <!-- Theme Toggle -->
+              <div class="theme-toggle" role="radiogroup" aria-label="Theme selection">
+                <button
+                  type="button"
+                  class="theme-toggle-btn"
+                  data-theme="light"
+                  aria-label="Light mode"
+                  title="Light mode">
+                  <svg class="w-4 h-4 stroke-stone-600 dark:stroke-stone-400" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="theme-toggle-btn"
+                  data-theme="system"
+                  aria-label="System theme"
+                  title="System theme">
+                  <svg class="w-4 h-4 stroke-stone-600 dark:stroke-stone-400" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </button>
+                <button
+                  type="button"
+                  class="theme-toggle-btn"
+                  data-theme="dark"
+                  aria-label="Dark mode"
+                  title="Dark mode">
+                  <svg class="w-4 h-4 stroke-stone-600 dark:stroke-stone-400" fill="none" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                  </svg>
+                </button>
+              </div>
+              <script>
+                (function() {
+                  const buttons = document.querySelectorAll('.theme-toggle-btn');
+                  const html = document.documentElement;
+
+                  function getTheme() {
+                    return localStorage.getItem('theme') || 'system';
+                  }
+
+                  function setTheme(theme) {
+                    localStorage.setItem('theme', theme);
+                    updateTheme();
+                    updateButtons();
+                  }
+
+                  function updateTheme() {
+                    const theme = getTheme();
+                    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+                    if (theme === 'dark' || (theme === 'system' && prefersDark)) {
+                      html.classList.add('dark');
+                    } else {
+                      html.classList.remove('dark');
+                    }
+                  }
+
+                  function updateButtons() {
+                    const current = getTheme();
+                    buttons.forEach(btn => {
+                      btn.dataset.active = btn.dataset.theme === current;
+                    });
+                  }
+
+                  buttons.forEach(btn => {
+                    btn.addEventListener('click', () => setTheme(btn.dataset.theme));
+                  });
+
+                  // Listen for system theme changes
+                  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme);
+
+                  // Initialize
+                  updateButtons();
+                })();
+              </script>
             </nav>
           </div>
         </div>
