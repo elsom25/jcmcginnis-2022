@@ -15,14 +15,6 @@
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif:
     "Newsreader", "Georgia", "Cambria", "Times New Roman", serif;
-
-  /* Warm color palette - Light mode */
-  --color-surface-light: #faf9f7;
-  --color-surface-light-elevated: #ffffff;
-
-  /* Warm color palette - Dark mode */
-  --color-surface-dark: #0c0a09;
-  --color-surface-dark-elevated: #1c1917;
 }
 
 /* View Transitions API - Native page navigation animations */
@@ -31,11 +23,11 @@
 }
 
 ::view-transition-old(root) {
-  animation: vt-fade-out 200ms ease-out;
+  animation: vt-fade-out 180ms ease-out;
 }
 
 ::view-transition-new(root) {
-  animation: vt-fade-in 200ms ease-in;
+  animation: vt-fade-in 180ms ease-in;
 }
 
 @keyframes vt-fade-out {
@@ -50,7 +42,7 @@
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(4px);
   }
   to {
     opacity: 1;
@@ -60,40 +52,23 @@
 
 /* Staggered animation utility classes */
 @utility animate-fade-in {
-  animation: fadeIn 300ms ease-out both;
+  animation: fadeIn 350ms ease-out both;
 }
 
 @utility animate-delay-1 {
-  animation-delay: 50ms;
+  animation-delay: 60ms;
 }
 
 @utility animate-delay-2 {
-  animation-delay: 100ms;
+  animation-delay: 120ms;
 }
 
 @utility animate-delay-3 {
-  animation-delay: 150ms;
+  animation-delay: 180ms;
 }
 
 @utility animate-delay-4 {
-  animation-delay: 200ms;
-}
-
-/* Blog card stagger delays */
-@utility animate-delay-5 {
   animation-delay: 240ms;
-}
-
-@utility animate-delay-6 {
-  animation-delay: 280ms;
-}
-
-@utility animate-delay-7 {
-  animation-delay: 320ms;
-}
-
-@utility animate-delay-8 {
-  animation-delay: 360ms;
 }
 
 /* Custom typography variant for removing blockquote decorations */
@@ -110,67 +85,497 @@
   @apply whitespace-pre-wrap font-mono;
 }
 
-/* Subtle noise texture overlay */
-.page::before {
+/* ============================================
+   BASE PAGE STYLES - Depth & Atmosphere
+   ============================================ */
+
+/* Subtle background gradient for depth - Light mode */
+body {
+  background: linear-gradient(
+    180deg,
+    #faf9f7 0%,
+    #f5f4f1 100%
+  );
+  min-height: 100vh;
+}
+
+.dark body {
+  background: linear-gradient(
+    180deg,
+    #0c0a09 0%,
+    #171412 100%
+  );
+}
+
+/* Very subtle noise texture - barely perceptible */
+.page::after {
   content: "";
   position: fixed;
   inset: 0;
   pointer-events: none;
   z-index: 9999;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-  opacity: 0.012;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  mix-blend-mode: overlay;
 }
 
-.dark .page::before {
-  opacity: 0.018;
+.dark .page::after {
+  opacity: 0.025;
 }
 
 /* Main content animation */
 main {
-  animation: fadeIn 300ms ease-out;
+  animation: fadeIn 350ms ease-out;
 }
 
-/* Header logo hover - refined */
+/* ============================================
+   HEADER - Frosted Glass & Refined
+   ============================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background: rgba(250, 249, 247, 0.85);
+  border-bottom: 1px solid rgba(120, 113, 108, 0.08);
+}
+
+.dark .site-header {
+  background: rgba(12, 10, 9, 0.85);
+  border-bottom-color: rgba(168, 162, 158, 0.06);
+}
+
+/* Top accent line - more refined */
+.header-accent {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #f59e0b 0%,
+    #e11d48 40%,
+    #7c3aed 100%
+  );
+  opacity: 0.9;
+}
+
+/* Logo hover - subtle warmth */
 .logo-link {
-  transition: transform 150ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .logo-link:hover {
-  transform: scale(1.01);
-}
-
-/* Blog post card styles */
-.post-card {
-  transition: transform 150ms ease-out, box-shadow 150ms ease-out;
-}
-
-.post-card:hover {
   transform: translateY(-1px);
 }
 
-/* Light mode: subtle shadow on hover */
-.post-card:hover {
-  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, 0.08);
+/* Nav link styles - clean and purposeful */
+.nav-link {
+  position: relative;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9375rem;
+  color: #57534e;
+  transition: color 200ms ease-out;
 }
 
-/* Dark mode: subtle glow on hover */
-.dark .post-card:hover {
-  box-shadow: 0 2px 8px -2px rgba(255, 255, 255, 0.04);
+.dark .nav-link {
+  color: #a8a29e;
 }
 
-/* Theme toggle styles */
+.nav-link:hover {
+  color: #1c1917;
+}
+
+.dark .nav-link:hover {
+  color: #fafaf9;
+}
+
+/* Active nav indicator - subtle underline */
+.nav-link-active {
+  color: #1c1917;
+}
+
+.dark .nav-link-active {
+  color: #fafaf9;
+}
+
+.nav-link-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0.75rem;
+  right: 0.75rem;
+  height: 2px;
+  background: linear-gradient(90deg, #f59e0b, #e11d48);
+  border-radius: 1px;
+}
+
+/* Theme toggle - refined */
 .theme-toggle {
-  @apply flex items-center gap-1 p-1 rounded-md bg-zinc-100 dark:bg-zinc-800;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border-radius: 8px;
+  background: rgba(120, 113, 108, 0.08);
+}
+
+.dark .theme-toggle {
+  background: rgba(168, 162, 158, 0.1);
 }
 
 .theme-toggle-btn {
-  @apply p-1.5 rounded transition-colors;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 150ms ease-out;
+  color: #78716c;
+}
+
+.dark .theme-toggle-btn {
+  color: #a8a29e;
 }
 
 .theme-toggle-btn:hover {
-  @apply bg-zinc-200 dark:bg-zinc-700;
+  background: rgba(120, 113, 108, 0.1);
+  color: #44403c;
+}
+
+.dark .theme-toggle-btn:hover {
+  background: rgba(168, 162, 158, 0.15);
+  color: #d6d3d1;
 }
 
 .theme-toggle-btn[data-active="true"] {
-  @apply bg-white dark:bg-zinc-900 shadow-sm;
+  background: white;
+  color: #1c1917;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.dark .theme-toggle-btn[data-active="true"] {
+  background: #292524;
+  color: #fafaf9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   CONTENT SURFACE - Elevated Card Feel
+   ============================================ */
+
+.content-surface {
+  background: white;
+  border-radius: 16px;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.03),
+    0 1px 2px rgba(0, 0, 0, 0.02),
+    0 4px 16px rgba(0, 0, 0, 0.04);
+}
+
+.dark .content-surface {
+  background: #1c1917;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.03),
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   PROSE LINK STYLES - Refined Interactions
+   ============================================ */
+
+/* Links in prose - elegant underline treatment */
+.prose a {
+  color: inherit;
+  text-decoration: none;
+  background-image: linear-gradient(
+    transparent calc(100% - 1px),
+    currentColor 1px
+  );
+  background-size: 100% 100%;
+  background-position: 0 100%;
+  transition: all 200ms ease-out;
+}
+
+.prose a:hover {
+  color: #be123c;
+  background-image: linear-gradient(
+    transparent calc(100% - 2px),
+    #be123c 2px
+  );
+}
+
+.dark .prose a:hover {
+  color: #fb7185;
+  background-image: linear-gradient(
+    transparent calc(100% - 2px),
+    #fb7185 2px
+  );
+}
+
+/* External links - subtle indicator */
+.prose a[rel*="external"]::after {
+  content: " ↗";
+  font-size: 0.75em;
+  opacity: 0.5;
+  transition: opacity 150ms ease-out;
+}
+
+.prose a[rel*="external"]:hover::after {
+  opacity: 0.8;
+}
+
+/* ============================================
+   BLOG LIST STYLES - Clean & Purposeful
+   ============================================ */
+
+/* Year headers in blog list */
+.blog-year {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #a8a29e;
+  letter-spacing: 0.025em;
+}
+
+.dark .blog-year {
+  color: #57534e;
+}
+
+/* Blog post items - link-specific hover only */
+.blog-post-title {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1c1917;
+  transition: color 150ms ease-out;
+}
+
+.dark .blog-post-title {
+  color: #fafaf9;
+}
+
+.blog-post-title:hover {
+  color: #be123c;
+}
+
+.dark .blog-post-title:hover {
+  color: #fb7185;
+}
+
+/* Blog post description - muted, no hover effect */
+.blog-post-desc {
+  color: #78716c;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.dark .blog-post-desc {
+  color: #a8a29e;
+}
+
+/* Category tags */
+.category-tag {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #e11d48;
+  transition: color 150ms ease-out;
+}
+
+.dark .category-tag {
+  color: #fb7185;
+}
+
+.category-tag:hover {
+  color: #be123c;
+}
+
+.dark .category-tag:hover {
+  color: #fda4af;
+}
+
+/* Date display */
+.post-date {
+  font-size: 0.875rem;
+  color: #a8a29e;
+}
+
+.dark .post-date {
+  color: #78716c;
+}
+
+/* ============================================
+   ARTICLE STYLES - Reading Experience
+   ============================================ */
+
+/* Article header */
+.article-header {
+  text-align: center;
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.article-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: #1c1917;
+}
+
+.dark .article-title {
+  color: #fafaf9;
+}
+
+.article-subtitle {
+  margin-top: 1rem;
+  font-size: 1.125rem;
+  color: #57534e;
+  line-height: 1.6;
+}
+
+.dark .article-subtitle {
+  color: #a8a29e;
+}
+
+/* Article body - optimal reading width */
+.article-body {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+/* Article image */
+.article-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.05),
+    0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.dark .article-image {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================================
+   HOMEPAGE HERO - Refined Typography
+   ============================================ */
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.75rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.hero-highlight {
+  font-weight: 600;
+  background: linear-gradient(135deg, #f59e0b 0%, #e11d48 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-body {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #57534e;
+}
+
+.dark .hero-body {
+  color: #a8a29e;
+}
+
+/* Hero links - sophisticated treatment */
+.hero-link {
+  font-weight: 600;
+  color: #1c1917;
+  text-decoration: none;
+  background-image: linear-gradient(
+    transparent calc(100% - 2px),
+    #e11d48 2px
+  );
+  background-size: 0% 100%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: all 250ms ease-out;
+}
+
+.dark .hero-link {
+  color: #fafaf9;
+  background-image: linear-gradient(
+    transparent calc(100% - 2px),
+    #fb7185 2px
+  );
+}
+
+.hero-link:hover {
+  background-size: 100% 100%;
+}
+
+/* Social icons - refined */
+.social-icon {
+  color: #78716c;
+  transition: all 200ms ease-out;
+}
+
+.dark .social-icon {
+  color: #a8a29e;
+}
+
+.social-icon:hover {
+  color: #1c1917;
+  transform: translateY(-2px);
+}
+
+.dark .social-icon:hover {
+  color: #fafaf9;
+}
+
+/* ============================================
+   FOOTER - Minimal & Elegant
+   ============================================ */
+
+.site-footer {
+  padding: 3rem 0 2rem;
+  text-align: center;
+  color: #a8a29e;
+  font-size: 0.875rem;
+}
+
+.dark .site-footer {
+  color: #57534e;
+}
+
+.footer-divider {
+  width: 3rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #d6d3d1, transparent);
+  margin: 0 auto 1.5rem;
+}
+
+.dark .footer-divider {
+  background: linear-gradient(90deg, transparent, #44403c, transparent);
+}
+
+.footer-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  color: #78716c;
+  transition: color 200ms ease-out;
+}
+
+.dark .footer-cta {
+  color: #78716c;
+}
+
+.footer-cta:hover {
+  color: #44403c;
+}
+
+.dark .footer-cta:hover {
+  color: #a8a29e;
 }

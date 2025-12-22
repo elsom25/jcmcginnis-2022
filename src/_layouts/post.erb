@@ -1,34 +1,33 @@
 ---
 layout: default
 ---
-<header class="mb-10 md:mb-16 mx-auto lg:w-10/12 md:text-center animate-fade-in">
-  <div class="text-lg text-stone-500 dark:text-stone-400">
-    <%= resource.date.strftime("%B %e, %Y") %>
+<header class="article-header mb-12 animate-fade-in">
+  <div class="flex items-center justify-center gap-3 mb-4">
+    <span class="post-date"><%= resource.date.strftime("%B %e, %Y") %></span>
     <% resource.data.categories&.each do |category| %>
-      <a class="text-sm font-light text-rose-600 hover:text-rose-700 dark:text-rose-400 dark:hover:text-rose-300 transition-colors"
-        href="<%= category_url(category) %>"><%= category %></a>
+      <a class="category-tag" href="<%= category_url(category) %>"><%= category %></a>
     <% end %>
   </div>
-  <h1 class="heading text-4xl md:text-6xl font-semibold font-serif md:leading-tight">
-    <%= resource.data.title %>
-  </h1>
+  <h1 class="article-title"><%= resource.data.title %></h1>
   <% if resource.data.description %>
-    <h2 class="text-xl mt-2 text-stone-600 dark:text-stone-400"><%= resource.data.description %></h2>
+    <p class="article-subtitle"><%= resource.data.description %></p>
   <% end %>
 </header>
+
 <% if resource.data.image %>
-  <img class="animate-fade-in animate-delay-1" width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" />
+  <figure class="article-image mb-12 animate-fade-in animate-delay-1">
+    <img width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" class="w-full" />
+  </figure>
 <% else %>
-  <div class="flex items-center w-1/4 mx-auto animate-fade-in animate-delay-1" aria-hidden="true">
-    <span aria-hidden="true" class="flex-grow bg-stone-300 dark:bg-stone-600 rounded h-0.5"></span>
-    <svg xmlns="http://www.w3.org/2000/svg" class="inline fill-stone-400 dark:fill-stone-500 h-5 w-5 mx-3" viewBox="0 0 20 20" fill="currentColor">
-      <path fill-rule="evenodd"
-        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-        clip-rule="evenodd" />
+  <div class="flex items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-1" aria-hidden="true">
+    <span class="flex-grow max-w-16 h-px bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-700"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-stone-400 dark:fill-stone-600" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
     </svg>
-    <span aria-hidden="true" class="flex-grow bg-stone-300 dark:bg-stone-600 rounded h-0.5"></span>
+    <span class="flex-grow max-w-16 h-px bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-700"></span>
   </div>
 <% end %>
-<article class="my-10 md:my-16 mx-auto prose prose-quoteless prose-stone prose-a:underline hover:prose-a:text-rose-700 dark:hover:prose-a:text-rose-400 prose-headings:font-serif md:prose-lg lg:prose-xl dark:prose-invert">
+
+<article class="article-body prose prose-quoteless prose-stone prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight prose-p:leading-relaxed prose-a:font-medium prose-a:no-underline prose-blockquote:border-l-rose-500 prose-blockquote:font-serif prose-blockquote:not-italic md:prose-lg dark:prose-invert animate-fade-in animate-delay-2">
   <%= yield %>
 </article>
