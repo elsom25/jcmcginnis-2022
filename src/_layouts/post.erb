@@ -1,33 +1,35 @@
 ---
 layout: default
 ---
-<header class="article-header mb-12 animate-fade-in">
-  <div class="flex items-center justify-center gap-3 mb-4">
-    <span class="post-date"><%= resource.date.strftime("%B %e, %Y") %></span>
-    <% resource.data.categories&.each do |category| %>
-      <a class="category-tag" href="<%= category_url(category) %>"><%= category %></a>
+<div class="max-w-3xl mx-auto">
+  <header class="text-center mb-10 animate-fade-in">
+    <div class="flex items-center justify-center gap-3 mb-4">
+      <span class="text-sm text-stone-400 dark:text-stone-600"><%= resource.date.strftime("%B %e, %Y") %></span>
+      <% resource.data.categories&.each do |category| %>
+        <a class="text-sm font-medium text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="<%= category_url(category) %>"><%= category %></a>
+      <% end %>
+    </div>
+    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight"><%= resource.data.title %></h1>
+    <% if resource.data.description %>
+      <p class="mt-4 text-lg text-stone-600 dark:text-stone-400"><%= resource.data.description %></p>
     <% end %>
-  </div>
-  <h1 class="article-title"><%= resource.data.title %></h1>
-  <% if resource.data.description %>
-    <p class="article-subtitle"><%= resource.data.description %></p>
+  </header>
+
+  <% if resource.data.image %>
+    <figure class="mb-12 rounded-xl overflow-hidden shadow-lg animate-fade-in animate-delay-1">
+      <img width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" class="w-full" />
+    </figure>
+  <% else %>
+    <div class="flex items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-1" aria-hidden="true">
+      <span class="flex-grow max-w-16 h-px bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-700"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-stone-400 dark:fill-stone-600" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+      </svg>
+      <span class="flex-grow max-w-16 h-px bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-700"></span>
+    </div>
   <% end %>
-</header>
 
-<% if resource.data.image %>
-  <figure class="article-image mb-12 animate-fade-in animate-delay-1">
-    <img width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" class="w-full" />
-  </figure>
-<% else %>
-  <div class="flex items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-1" aria-hidden="true">
-    <span class="flex-grow max-w-16 h-px bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-700"></span>
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-stone-400 dark:fill-stone-600" viewBox="0 0 20 20" fill="currentColor">
-      <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
-    </svg>
-    <span class="flex-grow max-w-16 h-px bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-700"></span>
-  </div>
-<% end %>
-
-<article class="article-body prose prose-quoteless prose-stone prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight prose-p:leading-relaxed prose-a:font-medium prose-a:no-underline prose-blockquote:border-l-rose-500 prose-blockquote:font-serif prose-blockquote:not-italic md:prose-lg dark:prose-invert animate-fade-in animate-delay-2">
-  <%= yield %>
-</article>
+  <article class="max-w-2xl mx-auto prose prose-quoteless prose-stone prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight prose-p:leading-relaxed prose-a:font-medium prose-blockquote:border-l-rose-500 prose-blockquote:font-serif prose-blockquote:not-italic md:prose-lg dark:prose-invert animate-fade-in animate-delay-2">
+    <%= yield %>
+  </article>
+</div>

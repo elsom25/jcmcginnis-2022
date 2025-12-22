@@ -1,12 +1,14 @@
 ---
 layout: base
 ---
-<div class="min-h-screen flex flex-col">
+<div class="min-h-screen flex flex-col w-full">
   <%= render "header", page: resource, menu: site.data.menu %>
   <main class="flex-auto">
-    <div class="px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
-      <div class="mx-auto max-w-3xl"><%= yield %></div>
-    </div>
+    <%= render "container" do %>
+      <div class="py-12 sm:py-16 md:py-20">
+        <%= yield %>
+      </div>
+    <% end %>
   </main>
   <% unless resource.data.skip_footer %>
     <%= render "footer" %>

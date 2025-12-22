@@ -13,14 +13,14 @@ prototype:
 <div class="space-y-6">
   <% paginator.resources.each_with_index do |post, index| %>
     <article class="animate-fade-in" style="animation-delay: <%= (index + 1) * 50 %>ms">
-      <div class="flex items-baseline gap-3 mb-1">
-        <span class="post-date"><%= post.date.strftime("%B %e, %Y") %></span>
+      <div class="mb-1">
+        <span class="text-sm text-stone-400 dark:text-stone-600"><%= post.date.strftime("%B %e, %Y") %></span>
       </div>
       <h3>
-        <a href="<%= post.relative_url %>" class="blog-post-title"><%= post.data.title %></a>
+        <a href="<%= post.relative_url %>" class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 hover:text-rose-700 dark:hover:text-rose-400 transition-colors"><%= post.data.title %></a>
       </h3>
       <% if post.data.description %>
-        <p class="blog-post-desc mt-1"><%= post.data.description %></p>
+        <p class="mt-1 text-stone-600 dark:text-stone-400 text-sm leading-relaxed"><%= post.data.description %></p>
       <% end %>
     </article>
   <% end %>
