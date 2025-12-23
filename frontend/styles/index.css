@@ -14,36 +14,70 @@ html {
 
 /* Theme configuration */
 @theme {
-  --font-sans: "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-serif: "Newsreader", "Georgia", "Cambria", "Times New Roman", serif;
 }
 
 /* View Transitions */
-@view-transition { navigation: auto; }
-::view-transition-old(root) { animation: vt-fade 180ms ease-out; }
-::view-transition-new(root) { animation: vt-fade 180ms ease-in reverse; }
-@keyframes vt-fade { to { opacity: 0; } }
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: vt-fade 180ms ease-out;
+}
+::view-transition-new(root) {
+  animation: vt-fade 180ms ease-in reverse;
+}
+@keyframes vt-fade {
+  to {
+    opacity: 0;
+  }
+}
 
 /* Fade-in animation utilities */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@utility animate-fade-in { animation: fadeIn 350ms ease-out both; }
-@utility animate-delay-1 { animation-delay: 60ms; }
-@utility animate-delay-2 { animation-delay: 120ms; }
-@utility animate-delay-3 { animation-delay: 180ms; }
-@utility animate-delay-4 { animation-delay: 240ms; }
+@utility animate-fade-in {
+  animation: fadeIn 350ms ease-out both;
+}
+@utility animate-delay-1 {
+  animation-delay: 60ms;
+}
+@utility animate-delay-2 {
+  animation-delay: 120ms;
+}
+@utility animate-delay-3 {
+  animation-delay: 180ms;
+}
+@utility animate-delay-4 {
+  animation-delay: 240ms;
+}
 
 /* Prose quoteless - removes blockquote decorations */
 @utility prose-quoteless {
-  & :where(blockquote p:first-of-type)::before { content: none; }
-  & :where(blockquote p:first-of-type)::after { content: none; }
+  & :where(blockquote p:first-of-type)::before {
+    content: none;
+  }
+  & :where(blockquote p:first-of-type)::after {
+    content: none;
+  }
 }
 
 /* Code highlighting */
-.highlight { @apply whitespace-pre-wrap font-mono; }
+.highlight {
+  @apply whitespace-pre-wrap font-mono;
+}
 
 /* Gradient text utility */
 @utility text-gradient {
@@ -78,7 +112,10 @@ html {
 /* Prose link styles - these need custom CSS for the gradient underline effect */
 .prose a {
   @apply text-inherit no-underline transition-colors duration-200;
-  background-image: linear-gradient(transparent calc(100% - 1px), currentColor 1px);
+  background-image: linear-gradient(
+    transparent calc(100% - 1px),
+    currentColor 1px
+  );
   background-size: 100% 100%;
   background-position: 0 100%;
 }
