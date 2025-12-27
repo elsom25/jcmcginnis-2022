@@ -1,5 +1,16 @@
-# Career timeline for homepage and about page
-# Ordered most recent first - this tells a STORY of growth and belief
+# Career data - Inflection Points model
+# Tells the story of how high-agency leadership is forged
+
+opening:
+  headline: "Chaos isn't the enemy. Comfort is."
+  subhead:
+    "Most leaders optimize for stability. I optimize for high-agency. Here's how
+    I learned why."
+
+closing:
+  synthesis:
+    "High-agency trumps everything. Trust unlocks it. Directed chaos forges it.
+    As a leader, your job is to cultivate it in others."
 
 current:
   company: GrowthLoop
@@ -11,57 +22,55 @@ current:
     powered by enterprise cloud data.
   url: https://www.growthloop.com
 
+inflections:
+  - number: "01"
+    lesson: "Build a lot. Most of it won't matter. That's the point."
+    context: Boltmade
+    period: "2013–2016"
+    story: |
+      Dozens of projects. Every language, framework, industry imaginable. What emerged: there's a common core to building software, but the magic is in going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop worrying about learning the "right" thing. Be curious. Chase what excites you.
+
+  - number: "02"
+    lesson: "Move fast to explore. Move slow to commit."
+    context: Shopify
+    period: "Years 1–2"
+    story: |
+      Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took the time to find THE right answer, knowing how hard it would be to change later. Short-term speed and long-term speed are different games.
+
+  - number: "03"
+    lesson: "The best thing you can build is a team that doesn't need you"
+    context: Shopify
+    period: "The Shift"
+    story: |
+      I found myself doing less building and more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Especially this: most people deeply underestimate themselves. Holding them to a bar they thought was impossible, then watching them clear it. People are the hardest problem. I've always chased the hardest problems.
+
+  - number: "04"
+    lesson: "Delegation isn't distance"
+    context: Shopify
+    period: "Scaling"
+    story: |
+      The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work WITH them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and it sets the stage for everything else.
+
+  - number: "05"
+    lesson: "Chaos is good... if directed"
+    context: Shopify
+    period: "Through Turbulence"
+    story: |
+      Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was building teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
+
+  - number: "06"
+    lesson: "The only real test: can you do it again, faster?"
+    context: GrowthLoop
+    period: "Now"
+    in_progress: true
+    story: |
+      Taking everything and proving one thing—how fast can I transform a place with everything I've learned? While learning entirely new things. This chapter is still being written.
+
 journey:
   - company: Shopify
     years: "2016–2025"
-    duration: 8+ years
-    headline: From IC to Director, scaling teams and systems
-    chapters:
-      - role: Director of Engineering
-        period: "2024–2025"
-        focus:
-          Metafields, Metaobjects, CDN, Media Management, Taxonomy, and early
-          Global Catalogue work.
-        highlight:
-          Led the evolution of custom data tools into platforms that
-          fundamentally changed how merchants tell their stories.
-      - role: Senior Development Manager
-        period: "2022–2024"
-        focus:
-          Built and led a high-performing org of 50+ engineers (80+ R&D-wide).
-        highlight:
-          Cultivated an ownership-first culture and pioneered systems-first
-          management to scale efficiently.
-      - role: Development Manager
-        period: "2019–2022"
-        focus:
-          Shopify Shipping, Multi-currency, and laying groundwork for Shopify
-          Markets.
-        highlight:
-          Grew from managing 4 to 25+ engineers while shipping products that
-          redefined global commerce.
-      - role: Senior Developer → Lead
-        period: "2016–2019"
-        focus: Online Store, Themes, Liquid, and eventually leading teams.
-        highlight:
-          Transitioned from IC to leadership, learning that great teams beat
-          great individuals every time.
-    story: |
-      Eight years, four roles, one belief: trust first. I joined to build products and discovered
-      I could build something more valuable—teams that ship, grow, and thrive. From writing Liquid
-      templates to leading 50+ engineers, every chapter reinforced that high-trust teams are unstoppable.
-
-  - company: Boltmade
-    years: "2013–2016"
-    duration: 3 years
-    headline: First non-founding employee → Acquired by Shopify
-    story: |
-      Joined as employee #1 at a consulting shop and learned to build everything from scratch—products,
-      processes, client relationships. Shipped software for startups and Fortune 500s alike. When Shopify
-      acquired us, I brought that scrappy builder mentality to a rocket ship.
-    highlight:
-      Built the foundation of my craft working across wildly different domains
-      and constraints.
+    headline: "From IC to Director, scaling teams and systems"
+    duration: "8+ years"
 
 book:
   title: Embracing Uncertainty

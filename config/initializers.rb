@@ -1,8 +1,16 @@
 # frozen_string_literal: true
 
-Bridgetown.configure do |_config|
+Bridgetown.configure do
   init :"bridgetown-feed"
   init :"bridgetown-seo-tag"
+
+  # Custom collections (Ruby DSL is preferred in Bridgetown 2.0)
+  collections do
+    talks do
+      output true
+      permalink "/speaking/:slug/"
+    end
+  end
 end
 
 Bridgetown::RubyTemplateView::Helpers.class_eval do
@@ -26,12 +34,5 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
 
   def category_url(category_name)
     "/category/#{category_name.downcase.gsub(/\s+/, "-")}/"
-  end
-
-  # Filter posts to exclude talks
-  def writing_posts
-    site.collections.posts.resources.reject do |p|
-      p.data.categories&.include?("Talks") || p.data.categories&.include?("Talks & Workshops")
-    end
   end
 end

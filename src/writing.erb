@@ -35,15 +35,12 @@ skip_footer: false
     </section>
 
     <%
-      # Filter out talks from writing - they belong on the Speaking page
-      writing_posts = collections.posts.resources.reject { |p|
-        p.data.categories&.include?("Talks") || p.data.categories&.include?("Talks & Workshops")
-      }
+      writing_posts = collections.posts.resources
       featured_posts = writing_posts.select { |p| p.data.home || p.data.featured }
     %>
     <!-- Featured Post -->
     <% if featured_posts.any? %>
-      <% featured = featured_posts.first %>
+      <% featured = featured_posts.sample %>
       <section class="py-16 md:py-24 bg-stone-900 dark:bg-stone-950">
         <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
           <div class="flex items-center gap-4 mb-10">
