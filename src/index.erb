@@ -6,236 +6,379 @@ skip_footer: false
   <%= render "header", page: resource, menu: site.data.menu %>
 
   <main class="flex-auto">
-    <!-- Hero Section - Bold statement -->
-    <section class="relative min-h-[85vh] flex items-center overflow-hidden">
-      <!-- Subtle background texture -->
-      <div class="absolute inset-0 bg-grain pointer-events-none"></div>
+    <!-- Hero Section - BOLD opening -->
+    <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+      <!-- Decorative background elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-gradient-to-br from-brand-200/30 to-transparent rounded-full blur-3xl dark:from-brand-900/20"></div>
+        <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-gradient-to-tr from-accent-200/20 to-transparent rounded-full blur-3xl dark:from-accent-900/10"></div>
+      </div>
 
-      <div class="w-full max-w-[72rem] mx-auto px-6 py-16 md:py-24">
-        <div class="max-w-4xl">
-          <!-- Main headline -->
-          <h1 class="text-display animate-fade-in-up">
-            <span class="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-stone-900 dark:text-stone-100 mb-2">
-              I build teams
-            </span>
-            <span class="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gradient bg-gradient-to-r from-brand-600 via-brand-500 to-accent-500 mb-2">
-              that trust each other.
-            </span>
-            <span class="block text-2xl sm:text-3xl md:text-4xl text-stone-500 dark:text-stone-400 font-serif italic font-normal mt-4">
+      <!-- Decorative shapes -->
+      <div class="absolute top-20 right-[15%] w-24 h-24 border-2 border-brand-300/30 dark:border-brand-700/30 rotate-12 animate-float hidden lg:block"></div>
+      <div class="absolute bottom-32 right-[25%] w-16 h-16 bg-accent-400/20 dark:bg-accent-600/10 rounded-full animate-float-delayed hidden lg:block"></div>
+      <div class="absolute top-1/3 left-[8%] w-3 h-3 bg-brand-500 rounded-full animate-pulse hidden lg:block"></div>
+
+      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12 py-20 md:py-32">
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+          <!-- Main content -->
+          <div class="lg:col-span-8">
+            <!-- Eyebrow -->
+            <div class="flex items-center gap-3 mb-8 animate-fade-in">
+              <div class="w-12 h-0.5 bg-brand-500"></div>
+              <span class="text-sm font-mono uppercase tracking-widest text-brand-600 dark:text-brand-400">Engineering Leader & Author</span>
+            </div>
+
+            <!-- Main headline - MASSIVE -->
+            <h1 class="animate-fade-in-up">
+              <span class="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-semibold text-stone-900 dark:text-stone-100 leading-[0.9] tracking-tight">
+                I build teams
+              </span>
+              <span class="block text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-serif font-semibold leading-[0.9] tracking-tight mt-2">
+                <span class="text-gradient bg-gradient-to-r from-brand-600 via-brand-500 to-accent-500">that trust.</span>
+              </span>
+            </h1>
+
+            <!-- Subhead -->
+            <p class="mt-8 md:mt-12 text-xl md:text-2xl lg:text-3xl font-serif italic text-stone-500 dark:text-stone-400 max-w-2xl animate-fade-in animate-delay-2">
               Then I get out of their way.
-            </span>
-          </h1>
-
-          <!-- Brief intro -->
-          <div class="mt-12 md:mt-16 max-w-2xl animate-fade-in animate-delay-2">
-            <p class="text-lg md:text-xl text-stone-600 dark:text-stone-400 leading-relaxed">
-              I'm <strong class="text-stone-900 dark:text-stone-100">Jesse McGinnis</strong> — an engineering leader, author, and speaker based in Waterloo, Canada.
-              I've spent a decade building high-performing teams at scale, most recently at
-              <a href="https://www.shopify.com" class="link-accent" rel="external" target="_blank">Shopify</a> and now
-              <a href="https://www.growthloop.com" class="link-accent" rel="external" target="_blank">GrowthLoop</a>.
             </p>
           </div>
 
-          <!-- CTA buttons -->
-          <div class="flex flex-wrap gap-4 mt-10 animate-fade-in animate-delay-3">
-            <a href="/writing/" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-600 hover:bg-brand-700 text-white font-medium rounded-lg transition-colors">
-              Read my writing
-              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </a>
-            <a href="/readme/" class="inline-flex items-center gap-2 px-6 py-3 bg-stone-200 hover:bg-stone-300 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-900 dark:text-stone-100 font-medium rounded-lg transition-colors">
-              About me
-            </a>
+          <!-- Side accent -->
+          <div class="lg:col-span-4 hidden lg:flex flex-col items-end justify-center animate-fade-in animate-delay-3">
+            <div class="relative">
+              <div class="absolute -inset-4 bg-gradient-to-br from-brand-100 to-accent-100 dark:from-brand-900/30 dark:to-accent-900/30 rounded-2xl rotate-3"></div>
+              <div class="relative bg-white dark:bg-stone-900 rounded-xl p-6 shadow-xl">
+                <p class="text-sm font-mono text-stone-500 dark:text-stone-500 mb-2">Currently</p>
+                <p class="font-semibold text-stone-900 dark:text-stone-100">VP Product Engineering</p>
+                <p class="text-brand-600 dark:text-brand-400">@ GrowthLoop</p>
+                <div class="mt-4 pt-4 border-t border-stone-200 dark:border-stone-800">
+                  <p class="text-sm text-stone-500 dark:text-stone-500">Previously 8+ years @ Shopify</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom section -->
+        <div class="mt-16 md:mt-24 grid md:grid-cols-2 gap-8 md:gap-16 items-end animate-fade-in animate-delay-4">
+          <!-- Intro text -->
+          <div class="max-w-xl">
+            <p class="text-lg md:text-xl text-stone-600 dark:text-stone-400 leading-relaxed">
+              I'm <strong class="text-stone-900 dark:text-stone-100">Jesse McGinnis</strong> — I've spent a decade building high-performing teams at scale. I wrote
+              <a href="<%= site.data.career.book.url %>" class="link-accent" rel="external" target="_blank">a book</a>,
+              speak at <a href="/speaking/" class="link-accent">conferences</a>, and believe trust is everything.
+            </p>
           </div>
 
-          <!-- Social links -->
-          <div class="flex gap-2 mt-10 animate-fade-in animate-delay-4">
-            <a class="flex items-center justify-center w-10 h-10 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="Follow on X" href="https://twitter.com/elsom25" rel="external" target="_blank">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-                <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"></path>
-              </svg>
-            </a>
-            <a class="flex items-center justify-center w-10 h-10 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="Follow on GitHub" href="https://github.com/elsom25" rel="external" target="_blank">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.588 2 12.253c0 4.537 2.862 8.369 6.838 9.727.5.09.687-.218.687-.487 0-.243-.013-1.05-.013-1.91C7 20.059 6.35 18.957 6.15 18.38c-.113-.295-.6-1.205-1.025-1.448-.35-.192-.85-.667-.013-.68.788-.012 1.35.744 1.538 1.051.9 1.551 2.338 1.116 2.912.846.088-.666.35-1.115.638-1.371-2.225-.256-4.55-1.14-4.55-5.062 0-1.115.387-2.038 1.025-2.756-.1-.256-.45-1.307.1-2.717 0 0 .837-.269 2.75 1.051.8-.23 1.65-.346 2.5-.346.85 0 1.7.115 2.5.346 1.912-1.333 2.75-1.05 2.75-1.05.55 1.409.2 2.46.1 2.716.637.718 1.025 1.628 1.025 2.756 0 3.934-2.337 4.806-4.562 5.062.362.32.675.936.675 1.897 0 1.371-.013 2.473-.013 2.82 0 .268.188.589.688.486a10.039 10.039 0 0 0 4.932-3.74A10.447 10.447 0 0 0 22 12.253C22 6.588 17.525 2 12 2Z"></path>
-              </svg>
-            </a>
-            <a class="flex items-center justify-center w-10 h-10 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="Follow on LinkedIn" href="https://www.linkedin.com/in/jcmcginnis" rel="external" target="_blank">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-                <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"></path>
-              </svg>
-            </a>
-            <a class="flex items-center justify-center w-10 h-10 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="Email Jesse" href="mailto:jesse@jcmcginnis.com">
-              <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-                <path fill-rule="evenodd" d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"></path>
-              </svg>
-            </a>
+          <!-- CTAs and social -->
+          <div class="flex flex-col md:items-end gap-6">
+            <div class="flex flex-wrap gap-4">
+              <a href="/writing/" class="group inline-flex items-center gap-2 px-8 py-4 bg-stone-900 dark:bg-stone-100 hover:bg-brand-600 dark:hover:bg-brand-500 text-white dark:text-stone-900 dark:hover:text-white font-semibold rounded-full transition-all hover:scale-105">
+                Read my writing
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <a href="/readme/" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-stone-300 dark:border-stone-700 hover:border-brand-500 dark:hover:border-brand-500 text-stone-900 dark:text-stone-100 font-semibold rounded-full transition-all hover:scale-105">
+                README.md
+              </a>
+            </div>
+
+            <div class="flex gap-1">
+              <a class="flex items-center justify-center w-12 h-12 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-stone-100 dark:hover:bg-stone-800 rounded-full transition-all" aria-label="Follow on X" href="https://twitter.com/elsom25" rel="external" target="_blank">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
+                  <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"></path>
+                </svg>
+              </a>
+              <a class="flex items-center justify-center w-12 h-12 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-stone-100 dark:hover:bg-stone-800 rounded-full transition-all" aria-label="Follow on GitHub" href="https://github.com/elsom25" rel="external" target="_blank">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.588 2 12.253c0 4.537 2.862 8.369 6.838 9.727.5.09.687-.218.687-.487 0-.243-.013-1.05-.013-1.91C7 20.059 6.35 18.957 6.15 18.38c-.113-.295-.6-1.205-1.025-1.448-.35-.192-.85-.667-.013-.68.788-.012 1.35.744 1.538 1.051.9 1.551 2.338 1.116 2.912.846.088-.666.35-1.115.638-1.371-2.225-.256-4.55-1.14-4.55-5.062 0-1.115.387-2.038 1.025-2.756-.1-.256-.45-1.307.1-2.717 0 0 .837-.269 2.75 1.051.8-.23 1.65-.346 2.5-.346.85 0 1.7.115 2.5.346 1.912-1.333 2.75-1.05 2.75-1.05.55 1.409.2 2.46.1 2.716.637.718 1.025 1.628 1.025 2.756 0 3.934-2.337 4.806-4.562 5.062.362.32.675.936.675 1.897 0 1.371-.013 2.473-.013 2.82 0 .268.188.589.688.486a10.039 10.039 0 0 0 4.932-3.74A10.447 10.447 0 0 0 22 12.253C22 6.588 17.525 2 12 2Z"></path>
+                </svg>
+              </a>
+              <a class="flex items-center justify-center w-12 h-12 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-stone-100 dark:hover:bg-stone-800 rounded-full transition-all" aria-label="Follow on LinkedIn" href="https://www.linkedin.com/in/jcmcginnis" rel="external" target="_blank">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
+                  <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"></path>
+                </svg>
+              </a>
+              <a class="flex items-center justify-center w-12 h-12 text-stone-400 hover:text-brand-600 dark:hover:text-brand-400 hover:bg-stone-100 dark:hover:bg-stone-800 rounded-full transition-all" aria-label="Email Jesse" href="mailto:jesse@jcmcginnis.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
+                  <path fill-rule="evenodd" d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"></path>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Pull Quote Section -->
-    <section class="py-16 md:py-24 bg-stone-100 dark:bg-bg-dark-elevated">
-      <div class="w-full max-w-[72rem] mx-auto px-6">
-        <blockquote class="max-w-3xl mx-auto text-center">
-          <p class="pull-quote">
-            "Trust is the foundation of every great team. When team members trust their teams and leaders,
-            they will be more aligned, more engaged, and more productive."
-          </p>
-          <footer class="mt-6 text-sm text-stone-500 dark:text-stone-500">
-            — from <a href="/blog/trust-first/" class="link-accent">Trust First</a>
-          </footer>
-        </blockquote>
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-stone-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
       </div>
     </section>
 
-    <!-- Three Pillars Section -->
-    <section class="py-16 md:py-24">
-      <div class="w-full max-w-[72rem] mx-auto px-6">
-        <div class="grid md:grid-cols-3 gap-8 md:gap-12">
+    <!-- Manifesto Quote Section - DRAMATIC -->
+    <section class="relative py-32 md:py-48 overflow-hidden">
+      <!-- Bold background -->
+      <div class="absolute inset-0 bg-stone-900 dark:bg-stone-950">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.03%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-50"></div>
+      </div>
+
+      <!-- Decorative elements -->
+      <div class="absolute top-12 left-12 text-[200px] font-serif text-white/5 leading-none select-none hidden lg:block">"</div>
+      <div class="absolute bottom-12 right-12 text-[200px] font-serif text-white/5 leading-none select-none rotate-180 hidden lg:block">"</div>
+
+      <div class="relative w-full max-w-[72rem] mx-auto px-6 md:px-12 text-center">
+        <blockquote>
+          <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif text-white leading-tight md:leading-tight tracking-tight">
+            Trust is the foundation of <em class="text-brand-400">every great team</em>.
+            <br class="hidden md:block" />
+            When team members trust each other,
+            <br class="hidden md:block" />
+            they become <em class="text-accent-400">unstoppable</em>.
+          </p>
+        </blockquote>
+        <footer class="mt-10 md:mt-16">
+          <a href="/blog/trust-first/" class="inline-flex items-center gap-3 text-stone-400 hover:text-white transition-colors group">
+            <span class="w-8 h-px bg-stone-600 group-hover:w-12 group-hover:bg-brand-500 transition-all"></span>
+            <span class="text-sm uppercase tracking-widest">Read the full essay</span>
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Three Pillars - BOLDER CARDS -->
+    <section class="py-24 md:py-32">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <!-- Section header -->
+        <div class="flex items-center gap-4 mb-16">
+          <div class="w-16 h-0.5 bg-brand-500"></div>
+          <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">What I Do</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6 md:gap-8">
           <!-- Writing -->
-          <a href="/writing/" class="group block p-8 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800 card-hover">
-            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 mb-6">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-              </svg>
+          <a href="/writing/" class="group relative block p-8 md:p-10 bg-white dark:bg-stone-900 rounded-3xl border border-stone-200 dark:border-stone-800 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
+            <!-- Hover gradient -->
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+            <div class="relative">
+              <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 mb-8 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                </svg>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-4">Writing</h3>
+              <p class="text-stone-600 dark:text-stone-400 leading-relaxed text-lg">
+                Essays on leadership, trust, and the craft of building teams that ship.
+              </p>
+              <div class="mt-8 flex items-center gap-2 text-brand-600 dark:text-brand-400 font-semibold group-hover:gap-4 transition-all">
+                <span>Explore</span>
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">Writing</h3>
-            <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
-              Thoughts on leading humans, building high-trust teams, and the craft of engineering management.
-            </p>
           </a>
 
           <!-- Speaking -->
-          <a href="/speaking/" class="group block p-8 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800 card-hover">
-            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-accent-100 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400 mb-6">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
-              </svg>
+          <a href="/speaking/" class="group relative block p-8 md:p-10 bg-white dark:bg-stone-900 rounded-3xl border border-stone-200 dark:border-stone-800 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-accent-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+            <div class="relative">
+              <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-accent-100 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400 mb-8 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                </svg>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-4">Speaking</h3>
+              <p class="text-stone-600 dark:text-stone-400 leading-relaxed text-lg">
+                QCon, Gartner, and workshops on remote teams and high-trust culture.
+              </p>
+              <div class="mt-8 flex items-center gap-2 text-accent-600 dark:text-accent-400 font-semibold group-hover:gap-4 transition-all">
+                <span>Watch talks</span>
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">Speaking</h3>
-            <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
-              Talks at QCon, Gartner, and workshops on building high-trust remote teams.
-            </p>
           </a>
 
           <!-- Book -->
-          <a href="<%= site.data.career.book.url %>" class="group block p-8 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800 card-hover" rel="external" target="_blank">
-            <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-400 mb-6">
-              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-              </svg>
+          <a href="<%= site.data.career.book.url %>" class="group relative block p-8 md:p-10 bg-gradient-to-br from-stone-900 to-stone-800 dark:from-stone-800 dark:to-stone-900 rounded-3xl border border-stone-700 overflow-hidden transition-all hover:shadow-2xl hover:-translate-y-2" rel="external" target="_blank">
+            <div class="absolute inset-0 bg-gradient-to-br from-brand-600/20 to-accent-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+
+            <div class="relative">
+              <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-white/10 text-white mb-8 group-hover:scale-110 transition-transform">
+                <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                </svg>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl font-semibold text-white mb-4">
+                The Book
+                <svg class="inline w-5 h-5 ml-2 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </h3>
+              <p class="text-stone-300 leading-relaxed text-lg">
+                <em class="text-brand-400"><%= site.data.career.book.title %></em> — <%= site.data.career.book.tagline.downcase %>
+              </p>
+              <div class="mt-8 flex items-center gap-2 text-white font-semibold group-hover:gap-4 transition-all">
+                <span>Get the book</span>
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
             </div>
-            <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2 group-hover:text-stone-600 dark:group-hover:text-stone-300 transition-colors">
-              <%= site.data.career.book.title %>
-              <svg class="inline w-4 h-4 ml-1 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-              </svg>
-            </h3>
-            <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
-              <%= site.data.career.book.tagline %>
-            </p>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- Career Highlights Section -->
-    <section class="py-16 md:py-24 bg-stone-100 dark:bg-bg-dark-elevated">
-      <div class="w-full max-w-[72rem] mx-auto px-6">
-        <h2 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-12">
-          Career Journey
-        </h2>
-
-        <div class="space-y-8">
-          <!-- Current Role -->
-          <div class="flex gap-6 md:gap-8">
-            <div class="flex-shrink-0 w-2 bg-gradient-to-b from-brand-500 to-brand-300 rounded-full"></div>
-            <div>
-              <div class="flex items-baseline gap-3 mb-1">
-                <span class="text-sm font-medium text-brand-600 dark:text-brand-400">Now</span>
+    <!-- Career Timeline - ASYMMETRIC -->
+    <section class="py-24 md:py-32 bg-stone-100/50 dark:bg-stone-900/50">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-24">
+          <!-- Header -->
+          <div class="lg:col-span-4">
+            <div class="lg:sticky lg:top-32">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-16 h-0.5 bg-brand-500"></div>
+                <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">Journey</h2>
               </div>
-              <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100">
-                <%= site.data.career.current.role %> at <%= site.data.career.current.company %>
+              <h3 class="font-serif text-4xl md:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight">
+                A decade of building teams at scale
               </h3>
-              <p class="mt-2 text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl">
-                <%= site.data.career.current.summary %>
-              </p>
             </div>
           </div>
 
-          <% site.data.career.highlights.each do |job| %>
-            <div class="flex gap-6 md:gap-8">
-              <div class="flex-shrink-0 w-2 bg-stone-300 dark:bg-stone-700 rounded-full"></div>
-              <div>
-                <div class="flex items-baseline gap-3 mb-1">
-                  <span class="text-sm text-stone-500 dark:text-stone-500"><%= job.years %></span>
-                  <% if job.note %>
-                    <span class="text-xs px-2 py-0.5 bg-stone-200 dark:bg-stone-800 text-stone-600 dark:text-stone-400 rounded-full"><%= job.note %></span>
-                  <% end %>
+          <!-- Timeline -->
+          <div class="lg:col-span-8">
+            <div class="space-y-12">
+              <!-- Current Role -->
+              <div class="relative pl-8 border-l-2 border-brand-500">
+                <div class="absolute -left-3 top-0 w-6 h-6 bg-brand-500 rounded-full flex items-center justify-center">
+                  <div class="w-2 h-2 bg-white rounded-full"></div>
                 </div>
-                <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100">
-                  <%= job.role %> at <%= job.company %>
-                </h3>
-                <p class="mt-2 text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl">
-                  <%= job.summary %>
-                </p>
+                <div class="pb-8">
+                  <span class="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 rounded-full mb-4">Now</span>
+                  <h4 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-2">
+                    <%= site.data.career.current.role %>
+                  </h4>
+                  <p class="text-lg text-brand-600 dark:text-brand-400 font-medium mb-4"><%= site.data.career.current.company %></p>
+                  <p class="text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl">
+                    <%= site.data.career.current.summary %>
+                  </p>
+                </div>
               </div>
+
+              <% site.data.career.highlights.each_with_index do |job, i| %>
+                <div class="relative pl-8 border-l-2 border-stone-300 dark:border-stone-700">
+                  <div class="absolute -left-2 top-0 w-4 h-4 bg-stone-300 dark:bg-stone-700 rounded-full"></div>
+                  <div class="<%= i < site.data.career.highlights.length - 1 ? 'pb-8' : '' %>">
+                    <span class="text-sm font-mono text-stone-400 dark:text-stone-600 mb-4 block"><%= job.years %></span>
+                    <h4 class="font-serif text-xl md:text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-2">
+                      <%= job.role %>
+                      <% if job.note %>
+                        <span class="ml-2 text-sm font-normal text-stone-500">(<%= job.note %>)</span>
+                      <% end %>
+                    </h4>
+                    <p class="text-lg text-stone-600 dark:text-stone-400 font-medium mb-4"><%= job.company %></p>
+                    <p class="text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl">
+                      <%= job.summary %>
+                    </p>
+                  </div>
+                </div>
+              <% end %>
             </div>
-          <% end %>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Featured Writing Section -->
-    <section class="py-16 md:py-24">
-      <div class="w-full max-w-[72rem] mx-auto px-6">
-        <div class="flex items-baseline justify-between mb-12">
-          <h2 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100">
-            Featured Writing
-          </h2>
-          <a href="/writing/" class="text-sm text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 font-medium transition-colors">
-            View all →
+    <!-- Featured Writing - MAGAZINE STYLE -->
+    <section class="py-24 md:py-32">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
+          <div>
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-16 h-0.5 bg-brand-500"></div>
+              <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">Latest</h2>
+            </div>
+            <h3 class="font-serif text-4xl md:text-5xl font-semibold text-stone-900 dark:text-stone-100">
+              Featured Writing
+            </h3>
+          </div>
+          <a href="/writing/" class="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 hover:gap-4 font-semibold transition-all">
+            View all essays
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
           </a>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-          <% collections.posts.resources.select { |p| p.data.home || p.data.featured }.first(2).each do |post| %>
-            <article class="group">
-              <div class="flex items-baseline gap-3 mb-2">
-                <span class="text-sm text-stone-400 dark:text-stone-600"><%= post.date.strftime("%B %Y") %></span>
-                <% post.data.categories&.each do |category| %>
-                  <span class="text-sm text-brand-600 dark:text-brand-400"><%= category %></span>
-                <% end %>
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+          <% collections.posts.resources.select { |p| p.data.home || p.data.featured }.first(2).each_with_index do |post, i| %>
+            <article class="group relative">
+              <!-- Large number decoration -->
+              <div class="absolute -left-4 -top-8 text-[120px] font-serif font-bold text-stone-100 dark:text-stone-900 leading-none select-none -z-10">
+                0<%= i + 1 %>
               </div>
-              <h3 class="font-serif text-xl md:text-2xl font-semibold text-stone-900 dark:text-stone-100 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
-                <a href="<%= post.relative_url %>"><%= post.data.title %></a>
-              </h3>
-              <% if post.data.description %>
-                <p class="mt-2 text-stone-600 dark:text-stone-400 leading-relaxed">
-                  <%= post.data.description %>
-                </p>
-              <% end %>
-              <a href="<%= post.relative_url %>" class="inline-block mt-4 text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors">
-                Read more →
-              </a>
+
+              <div class="relative bg-white dark:bg-stone-900 rounded-2xl p-8 md:p-10 border border-stone-200 dark:border-stone-800 transition-all group-hover:shadow-xl group-hover:-translate-y-1">
+                <div class="flex items-center gap-4 mb-6">
+                  <span class="text-sm text-stone-400 dark:text-stone-600"><%= post.date.strftime("%B %Y") %></span>
+                  <% post.data.categories&.each do |category| %>
+                    <span class="text-sm font-medium text-brand-600 dark:text-brand-400"><%= category %></span>
+                  <% end %>
+                </div>
+                <h4 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-4 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                  <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+                </h4>
+                <% if post.data.description %>
+                  <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                    <%= post.data.description %>
+                  </p>
+                <% end %>
+                <a href="<%= post.relative_url %>" class="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 font-semibold group-hover:gap-4 transition-all">
+                  Read essay
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
             </article>
           <% end %>
         </div>
       </div>
     </section>
 
-    <!-- Connect Section -->
-    <section class="py-16 md:py-24 bg-stone-900 dark:bg-stone-950 text-white">
-      <div class="w-full max-w-[72rem] mx-auto px-6 text-center">
-        <h2 class="font-serif text-2xl md:text-3xl font-semibold mb-4">Let's connect</h2>
-        <p class="text-stone-400 max-w-lg mx-auto mb-8">
-          I'm always interested in conversations about leadership, team building, and the craft of engineering. Reach out anytime.
+    <!-- Connect Section - BOLD CTA -->
+    <section class="relative py-32 md:py-48 overflow-hidden">
+      <!-- Gradient background -->
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-600 via-brand-700 to-stone-900">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30"></div>
+      </div>
+
+      <!-- Decorative circles -->
+      <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl"></div>
+
+      <div class="relative w-full max-w-[72rem] mx-auto px-6 md:px-12 text-center">
+        <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-6">
+          Let's build something<br class="hidden sm:block" /> <em class="text-accent-300">extraordinary</em>
+        </h2>
+        <p class="text-xl text-white/70 max-w-2xl mx-auto mb-12">
+          I'm always interested in conversations about leadership, team building, and the craft of engineering. Don't be a stranger.
         </p>
-        <a href="mailto:jesse@jcmcginnis.com" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-600 hover:bg-brand-500 text-white font-medium rounded-lg transition-colors">
-          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <a href="mailto:jesse@jcmcginnis.com" class="inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
           jesse@jcmcginnis.com
