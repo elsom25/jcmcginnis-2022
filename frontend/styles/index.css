@@ -79,12 +79,10 @@ html {
   @apply whitespace-pre-wrap font-mono;
 }
 
-/* Gradient text utility - editorial style */
+/* Gradient text utility - adds webkit prefix that Tailwind 4 doesn't include */
 @utility text-gradient {
-  background: linear-gradient(to top right, #f59e0b 10%, #e11d48 30%, #7c3aed 90%);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
 }
 
 /* Header accent bar gradient */
@@ -128,7 +126,9 @@ html {
 .mobile-drawer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 200ms ease-out, opacity 200ms ease-out;
+  transition:
+    max-height 200ms ease-out,
+    opacity 200ms ease-out;
   opacity: 0;
 }
 
