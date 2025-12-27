@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-bin/bridgetown start
+foreman start -f Procfile.dev

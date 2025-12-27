@@ -1,0 +1,2 @@
+web: bin/bridgetown start
+css: npx @tailwindcss/cli -i src/assets/css/tailwind.css -o output/assets/css/style.css --watch

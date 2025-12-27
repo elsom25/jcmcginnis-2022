@@ -26,3 +26,7 @@ defaults:
       layout: post
 
 template_engine: erb
+
+# Exclude Tailwind source from static file copying (it gets compiled to output/)
+exclude:
+  - assets/css/tailwind.css

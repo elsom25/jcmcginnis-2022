@@ -115,6 +115,8 @@ GEM
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
+    foreman (0.90.0)
+      thor (~> 1.4)
     hash_with_dot_access (2.2.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -260,6 +262,7 @@ DEPENDENCIES
   bridgetown-feed (~> 4.0)
   bridgetown-seo-tag (~> 7.0)
   erb_lint
+  foreman
   puma (~> 6.4)
 
 BUNDLED WITH
