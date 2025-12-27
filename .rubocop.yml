@@ -1,0 +1,62 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+AllCops:
+  SuggestExtensions: false
+
+# Overwrite or add rules to create your own house style
+
+# Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: no_space
+
+# Enforce modern Ruby 3.1+ hash shorthand syntax: `{ key: }` instead of `{ key: key }`
+Style/HashSyntax:
+  EnforcedShorthandSyntax: always
+
+# High-Impact Lint Cops (disabled by default)
+Lint/AmbiguousAssignment:
+  Enabled: true
+  # Catches ambiguous assignments (common bug)
+
+Lint/BooleanSymbol:
+  Enabled: true
+  # Prevents boolean symbols (common mistake)
+
+Lint/DuplicateCaseCondition:
+  Enabled: true
+  # Catches duplicate case conditions
+
+Lint/DuplicateElsifCondition:
+  Enabled: true
+  # Catches duplicate elsif conditions
+
+Lint/DuplicateRequire:
+  Enabled: true
+  # Catches duplicate requires
+
+# High-Impact Style Cops (disabled by default)
+Style/CollectionMethods:
+  Enabled: true
+  # Enforces collection method usage (map vs collect, etc.)
+
+Style/CollectionQuerying:
+  Enabled: true
+  # Enforces collection querying methods
+
+Style/CombinableLoops:
+  Enabled: true
+  # Combines combinable loops for performance
+
+Style/ArrayCoercion:
+  Enabled: true
+  # Prefers Array() over explicit array conversion
+
+Style/Attr:
+  Enabled: true
+  # Prefers attr_reader/writer over attr
+
+Style/EndlessMethod:
+  Enabled: true
+  EnforcedStyle: allow_always
+  # Prefers endless method syntax for simple one-liners (Ruby 3.0+)

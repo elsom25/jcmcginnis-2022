@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+#MISE description="Lint and format the codebase"
+
+AUTOCORRECT=false
+if [ "${1:-}" = "-a" ] || [ "${1:-}" = "--autocorrect" ]; then
+  AUTOCORRECT=true
+fi
+
+if [ "$AUTOCORRECT" = true ]; then
+  echo "==> Formatting with Prettier..."
+  npm run format
+
+  echo ""
+  echo "==> Fixing ERB files with erb_lint..."
+  bundle exec erb_lint --lint-all --autocorrect
+else
+  echo "==> Checking Prettier formatting..."
+  npm run format:check
+
+  echo ""
+  echo "==> Checking ERB files with erb_lint..."
+  bundle exec erb_lint --lint-all
+fi
+
+echo ""
+echo "✨ Lint complete!"

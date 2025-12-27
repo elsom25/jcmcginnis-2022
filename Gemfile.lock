@@ -221,6 +221,8 @@ GEM
     rubocop-ast (1.48.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
+    rubocop-shopify (2.18.0)
+      rubocop (~> 1.62)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
     serbea (2.4.1)
@@ -250,7 +252,6 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
-  ruby
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
@@ -264,6 +265,7 @@ DEPENDENCIES
   erb_lint
   foreman
   puma (~> 6.4)
+  rubocop-shopify
 
 BUNDLED WITH
    2.6.9
