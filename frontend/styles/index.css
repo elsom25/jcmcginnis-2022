@@ -79,19 +79,12 @@ html {
   @apply whitespace-pre-wrap font-mono;
 }
 
-/* Gradient text utility with glow */
+/* Gradient text utility - editorial style */
 @utility text-gradient {
   background: linear-gradient(135deg, #f59e0b 0%, #e11d48 50%, #7c3aed 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(225, 29, 72, 0.25));
-}
-
-/* Enhanced glow in dark mode */
-:where(.dark) .text-gradient {
-  filter: drop-shadow(0 2px 12px rgba(225, 29, 72, 0.4))
-    drop-shadow(0 4px 20px rgba(245, 158, 11, 0.2));
 }
 
 /* Header accent bar gradient */
