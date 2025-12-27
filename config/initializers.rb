@@ -8,7 +8,7 @@ end
 Bridgetown::RubyTemplateView::Helpers.class_eval do
   def featured_post
     home_posts = site.collections.posts.resources.select { |p| p.data.home }
-    return nil if home_posts.empty?
+    return if home_posts.empty?
 
     recent = home_posts.first
 
@@ -25,6 +25,13 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
   end
 
   def category_url(category_name)
-    "/category/#{category_name.downcase.gsub(/\s+/, '-')}/"
+    "/category/#{category_name.downcase.gsub(/\s+/, "-")}/"
+  end
+
+  # Filter posts to exclude talks
+  def writing_posts
+    site.collections.posts.resources.reject do |p|
+      p.data.categories&.include?("Talks") || p.data.categories&.include?("Talks & Workshops")
+    end
   end
 end

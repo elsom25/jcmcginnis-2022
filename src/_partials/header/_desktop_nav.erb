@@ -1,16 +1,32 @@
 <nav class="hidden md:flex items-center gap-1">
   <% menu.main.each do |item| %>
+    <%
+      current_url = page.relative_url
+      is_active = current_url == item.url || (item.url != "/" && current_url.start_with?(item.url))
+
+      # Writing is active for non-talk blog posts and non-talk categories
+      if item.url == "/writing/" && !is_active
+        is_active = (current_url.start_with?("/blog/") && !current_url.include?("qcon") && !current_url.include?("gartner") && !current_url.include?("uplimit")) ||
+                    (current_url.start_with?("/category/") && !current_url.include?("talks"))
+      end
+
+      # Speaking is active for talk-related blog posts
+      if item.url == "/speaking/" && !is_active
+        is_active = current_url.include?("qcon") || current_url.include?("gartner") || current_url.include?("uplimit") || current_url.include?("/category/talks")
+      end
+    %>
     <a href="<%= relative_url item.url %>"
-       class="relative px-3 py-2 text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all after:absolute after:bottom-1 after:left-3 after:right-3 after:h-0.5 after:bg-gradient-to-r after:from-brand-500 after:to-accent-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left after:rounded-full <%= 'text-stone-900 dark:text-stone-100 after:scale-x-100' if item.url == '/' ? page.relative_url == '/' : page.relative_url.start_with?(item.url) %>">
+       class="relative px-3 py-2 text-sm font-medium transition-colors <%= is_active ? 'text-stone-900 dark:text-stone-100' : 'text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100' %>">
       <%= item.name %>
+      <span class="absolute bottom-1.5 left-3 right-3 h-[2px] bg-brand-500 rounded-full transition-transform origin-left <%= is_active ? 'scale-x-100' : 'scale-x-0 hover:scale-x-100' %>"></span>
     </a>
   <% end %>
-  <a href="<%= relative_url '/feed.xml' %>" class="px-3 py-2 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" aria-label="RSS Feed">
-    <svg class="w-4 h-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+
+  <a href="<%= relative_url '/feed.xml' %>" class="p-2 text-stone-400 dark:text-stone-500 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" aria-label="RSS Feed">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
     </svg>
   </a>
-  <div class="ml-2">
-    <%= render "header/theme_toggle" %>
-  </div>
+
+  <%= render "header/theme_toggle" %>
 </nav>

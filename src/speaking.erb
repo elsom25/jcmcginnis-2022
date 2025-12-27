@@ -1,152 +1,223 @@
 ---
 title: Speaking
 permalink: /speaking/
-layout: default
+layout: base
+skip_footer: false
 ---
-<div class="max-w-3xl mx-auto">
-  <!-- Header -->
-  <header class="mb-12 animate-fade-in">
-    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight mb-4">
-      Speaking
-    </h1>
-    <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
-      I speak about building high-trust teams, remote leadership, and engineering culture at scale.
-      My talks draw from years of experience leading teams at Shopify and building organizations that thrive.
-    </p>
-  </header>
+<div class="min-h-screen flex flex-col w-full">
+  <%= render "header", page: resource, menu: site.data.menu %>
 
-  <!-- Featured Talk -->
-  <% featured = site.data.talks.conference_talks.find { |t| t.featured } %>
-  <% if featured %>
-    <section class="mb-16 animate-fade-in animate-delay-1">
-      <h2 class="text-sm font-medium uppercase tracking-wider text-stone-500 dark:text-stone-500 mb-6">Featured Talk</h2>
+  <main class="flex-auto">
+    <!-- Hero -->
+    <section class="relative py-20 md:py-32 overflow-hidden">
+      <!-- Background elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-accent-200/20 to-transparent rounded-full blur-3xl dark:from-accent-900/10"></div>
+      </div>
 
-      <div class="bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800 overflow-hidden">
-        <!-- Video embed -->
-        <% if featured.video_url %>
-          <div class="aspect-video bg-stone-100 dark:bg-stone-800">
-            <iframe
-              src="https://www.youtube.com/embed/<%= featured.video_url.split('/').last.split('?').first rescue '' %>"
-              class="w-full h-full"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="<%= featured.title %>"></iframe>
+      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-3 mb-8 animate-fade-in">
+            <div class="w-12 h-0.5 bg-accent-500"></div>
+            <span class="text-sm font-mono uppercase tracking-widest text-accent-600 dark:text-accent-400">Speaking & Workshops</span>
           </div>
-        <% end %>
 
-        <div class="p-6 md:p-8">
-          <div class="flex items-baseline gap-3 mb-2">
-            <span class="text-sm font-medium text-brand-600 dark:text-brand-400"><%= featured.event %></span>
-            <span class="text-sm text-stone-400 dark:text-stone-600"><%= featured.year %></span>
-          </div>
-          <h3 class="font-serif text-xl md:text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-3">
-            <%= featured.title %>
-          </h3>
-          <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-4">
-            <%= featured.description %>
+          <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-8 animate-fade-in-up">
+            Building high-trust teams<br class="hidden md:block" />
+            <span class="text-accent-600 dark:text-accent-400">in a remote world</span>
+          </h1>
+
+          <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl animate-fade-in animate-delay-2">
+            I speak at conferences and lead workshops about what I've learned building teams at scale.
+            My talks draw from years of practice, not just theory.
           </p>
-          <div class="flex flex-wrap gap-3">
-            <% if featured.video_url %>
-              <a href="<%= featured.video_url %>" class="inline-flex items-center gap-2 text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors" target="_blank" rel="external">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Watch video
-              </a>
-            <% end %>
-            <% if featured.slides_url %>
-              <a href="<%= featured.slides_url %>" class="inline-flex items-center gap-2 text-sm font-medium text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors" target="_blank" rel="external">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                View slides
-              </a>
-            <% end %>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Talk -->
+    <% featured = site.data.talks.conference_talks.find { |t| t.featured } %>
+    <% if featured %>
+      <section class="py-16 md:py-24 bg-stone-900 dark:bg-stone-950">
+        <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+          <div class="flex items-center gap-4 mb-10">
+            <div class="w-16 h-0.5 bg-accent-500"></div>
+            <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500">Featured Talk</h2>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Video embed -->
+            <div class="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
+              <iframe
+                class="absolute inset-0 w-full h-full"
+                src="https://www.youtube-nocookie.com/embed/k-tw3F7X6z8"
+                title="<%= featured.title %>"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+
+            <!-- Talk info -->
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-accent-500/20 text-accent-300 rounded-full"><%= featured.event %></span>
+                <span class="text-stone-500"><%= featured.year %></span>
+              </div>
+
+              <h3 class="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-6 leading-tight">
+                <%= featured.title %>
+              </h3>
+
+              <p class="text-lg text-stone-400 leading-relaxed mb-8">
+                <%= featured.description %>
+              </p>
+
+              <div class="flex flex-wrap gap-4">
+                <% if featured.video_url %>
+                  <a href="<%= featured.video_url %>" class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-stone-100 text-stone-900 font-semibold rounded-full transition-all hover:scale-105" rel="external" target="_blank">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Watch full talk
+                  </a>
+                <% end %>
+                <% if featured.slides_url %>
+                  <a href="<%= featured.slides_url %>" class="inline-flex items-center gap-2 px-6 py-3 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-full transition-all" rel="external" target="_blank">
+                    View slides
+                  </a>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <% end %>
+
+    <!-- Other Talks -->
+    <section class="py-24 md:py-32">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="flex items-center gap-4 mb-16">
+          <div class="w-16 h-0.5 bg-brand-500"></div>
+          <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">Conference Talks</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <% site.data.talks.conference_talks.reject { |t| t.featured }.each_with_index do |talk, i| %>
+            <article class="group relative">
+              <div class="absolute -left-4 -top-6 text-[80px] font-serif font-bold text-stone-100 dark:text-stone-900 leading-none select-none -z-10">
+                0<%= i + 2 %>
+              </div>
+
+              <div class="relative bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 transition-all group-hover:shadow-xl group-hover:-translate-y-1">
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 rounded-full"><%= talk.event %></span>
+                  <span class="text-sm text-stone-400 dark:text-stone-600"><%= talk.year %></span>
+                </div>
+
+                <h3 class="font-serif text-xl md:text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-4 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                  <%= talk.title %>
+                </h3>
+
+                <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
+                  <%= talk.description %>
+                </p>
+              </div>
+            </article>
+          <% end %>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops -->
+    <section class="py-24 md:py-32 bg-stone-100/50 dark:bg-stone-900/50">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-24">
+          <div class="lg:col-span-4">
+            <div class="lg:sticky lg:top-32">
+              <div class="flex items-center gap-4 mb-6">
+                <div class="w-16 h-0.5 bg-brand-500"></div>
+                <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">Workshops</h2>
+              </div>
+              <h3 class="font-serif text-3xl md:text-4xl font-semibold text-stone-900 dark:text-stone-100 leading-tight mb-6">
+                Hands-on learning
+              </h3>
+              <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
+                Interactive sessions where leaders build real skills through practice, not just slides.
+              </p>
+            </div>
+          </div>
+
+          <div class="lg:col-span-8">
+            <div class="space-y-8">
+              <% site.data.talks.workshops.each do |workshop| %>
+                <article class="bg-white dark:bg-stone-900 rounded-2xl p-8 md:p-10 border border-stone-200 dark:border-stone-800">
+                  <div class="flex flex-wrap items-center gap-3 mb-4">
+                    <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-brand-100 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 rounded-full"><%= workshop.platform %></span>
+                    <span class="text-sm text-stone-400 dark:text-stone-600"><%= workshop.year %></span>
+                    <% if workshop.sessions && workshop.sessions.is_a?(Array) %>
+                      <span class="text-sm text-stone-400 dark:text-stone-600">· <%= workshop.sessions.size %> sessions</span>
+                    <% end %>
+                  </div>
+
+                  <h3 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-4">
+                    <%= workshop.title %>
+                  </h3>
+
+                  <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                    <%= workshop.description %>
+                  </p>
+
+                  <% if workshop.url %>
+                    <a href="<%= workshop.url %>" class="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 font-semibold hover:gap-4 transition-all" rel="external" target="_blank">
+                      Learn more
+                      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </a>
+                  <% end %>
+                </article>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  <% end %>
 
-  <!-- Conference Talks -->
-  <section class="mb-16 animate-fade-in animate-delay-2">
-    <h2 class="text-sm font-medium uppercase tracking-wider text-stone-500 dark:text-stone-500 mb-6">Conference Talks</h2>
-
-    <div class="space-y-6">
-      <% site.data.talks.conference_talks.reject { |t| t.featured }.each do |talk| %>
-        <article class="p-6 bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800">
-          <div class="flex items-baseline gap-3 mb-2">
-            <span class="text-sm font-medium text-brand-600 dark:text-brand-400"><%= talk.event %></span>
-            <span class="text-sm text-stone-400 dark:text-stone-600"><%= talk.year %></span>
+    <!-- Topics & CTA -->
+    <section class="py-24 md:py-32">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto text-center">
+          <div class="flex items-center justify-center gap-4 mb-8">
+            <div class="w-16 h-0.5 bg-brand-500"></div>
+            <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">Topics</h2>
+            <div class="w-16 h-0.5 bg-brand-500"></div>
           </div>
-          <h3 class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 mb-2">
-            <%= talk.title %>
+
+          <div class="flex flex-wrap justify-center gap-3 mb-16">
+            <% site.data.talks.topics.each do |topic| %>
+              <span class="px-4 py-2 bg-stone-100 dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded-full text-sm font-medium"><%= topic %></span>
+            <% end %>
+          </div>
+
+          <h3 class="font-serif text-3xl md:text-4xl font-semibold text-stone-900 dark:text-stone-100 mb-6">
+            Open to speaking opportunities
           </h3>
-          <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
-            <%= talk.description %>
+          <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-10">
+            If you're organizing a conference, podcast, or workshop and think my perspective would be valuable, I'd love to hear from you.
           </p>
-        </article>
-      <% end %>
-    </div>
-  </section>
 
-  <!-- Workshops -->
-  <section class="mb-16 animate-fade-in animate-delay-3">
-    <h2 class="text-sm font-medium uppercase tracking-wider text-stone-500 dark:text-stone-500 mb-6">Workshops</h2>
-
-    <% site.data.talks.workshops.each do |workshop| %>
-      <div class="p-6 md:p-8 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800">
-        <div class="flex items-baseline gap-3 mb-2">
-          <span class="text-sm font-medium text-accent-600 dark:text-accent-400"><%= workshop.platform %></span>
-          <span class="text-sm text-stone-400 dark:text-stone-600"><%= workshop.year %></span>
+          <a href="mailto:jesse@jcmcginnis.com" class="inline-flex items-center gap-3 px-8 py-4 bg-stone-900 dark:bg-stone-100 hover:bg-brand-600 dark:hover:bg-brand-500 text-white dark:text-stone-900 dark:hover:text-white font-semibold rounded-full transition-all hover:scale-105">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            Get in touch
+          </a>
         </div>
-        <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-3">
-          <%= workshop.title %>
-        </h3>
-        <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
-          <%= workshop.description %>
-        </p>
-
-        <h4 class="text-sm font-medium text-stone-900 dark:text-stone-100 mb-3">Sessions</h4>
-        <ol class="space-y-2">
-          <% workshop.sessions.each_with_index do |session, i| %>
-            <li class="flex items-baseline gap-3">
-              <span class="text-sm text-stone-400 dark:text-stone-600 font-mono"><%= i + 1 %>.</span>
-              <a href="<%= session.url %>" class="text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors" target="_blank" rel="external">
-                <%= session.title %>
-              </a>
-            </li>
-          <% end %>
-        </ol>
       </div>
-    <% end %>
-  </section>
+    </section>
+  </main>
 
-  <!-- Topics & CTA -->
-  <section class="animate-fade-in animate-delay-4">
-    <div class="p-6 md:p-8 bg-stone-100 dark:bg-stone-900 rounded-2xl">
-      <h2 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-4">Topics I speak about</h2>
-      <ul class="flex flex-wrap gap-2 mb-6">
-        <% site.data.talks.topics.each do |topic| %>
-          <li class="px-3 py-1 text-sm bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded-full border border-stone-200 dark:border-stone-700">
-            <%= topic %>
-          </li>
-        <% end %>
-      </ul>
-
-      <div class="divider my-6"></div>
-
-      <p class="text-stone-600 dark:text-stone-400 mb-4">
-        <%= site.data.talks.cta.text %>. If you're interested in having me speak at your event, reach out.
-      </p>
-      <a href="mailto:<%= site.data.talks.cta.contact %>" class="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 font-medium transition-colors">
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-        </svg>
-        <%= site.data.talks.cta.contact %>
-      </a>
-    </div>
-  </section>
+  <%= render "footer" %>
 </div>

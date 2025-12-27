@@ -5,6 +5,6 @@ main:
   - name: "Speaking"
     url: "/speaking/"
     weight: 2
-  - name: "README.md"
+  - name: "README"
     url: "/readme/"
     weight: 3

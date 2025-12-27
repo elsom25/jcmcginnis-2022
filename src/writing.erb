@@ -1,75 +1,170 @@
 ---
 title: Writing
 permalink: /writing/
-layout: default
+layout: base
+skip_footer: false
 ---
-<div class="max-w-3xl mx-auto">
-  <!-- Header -->
-  <header class="mb-12 animate-fade-in">
-    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight mb-4">
-      Writing
-    </h1>
-    <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
-      Thoughts on leading humans, building high-trust teams, and the craft of engineering management.
-      Essays and shorter musings from a decade of building teams at scale.
-    </p>
-  </header>
+<div class="min-h-screen flex flex-col w-full">
+  <%= render "header", page: resource, menu: site.data.menu %>
 
-  <!-- Featured Post -->
-  <% featured_posts = collections.posts.resources.select { |p| p.data.home || p.data.featured } %>
-  <% if featured_posts.any? %>
-    <% featured = featured_posts.first %>
-    <section class="mb-16 animate-fade-in animate-delay-1">
-      <article class="p-8 md:p-10 bg-gradient-to-br from-brand-50 to-stone-50 dark:from-brand-950/30 dark:to-stone-900 rounded-2xl border border-brand-100 dark:border-brand-900/50">
-        <span class="text-sm font-medium text-brand-600 dark:text-brand-400 mb-3 block">Featured</span>
-        <h2 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-3">
-          <a href="<%= featured.relative_url %>" class="hover:text-brand-600 dark:hover:text-brand-400 transition-colors"><%= featured.data.title %></a>
-        </h2>
-        <% if featured.data.description %>
-          <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-4">
-            <%= featured.data.description %>
+  <main class="flex-auto">
+    <!-- Hero -->
+    <section class="relative py-20 md:py-32 overflow-hidden">
+      <!-- Background elements -->
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-1/4 -left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-brand-200/20 to-transparent rounded-full blur-3xl dark:from-brand-900/10"></div>
+      </div>
+
+      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-3 mb-8 animate-fade-in">
+            <div class="w-12 h-0.5 bg-brand-500"></div>
+            <span class="text-sm font-mono uppercase tracking-widest text-brand-600 dark:text-brand-400">Essays & Musings</span>
+          </div>
+
+          <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-stone-900 dark:text-stone-100 leading-[1.1] tracking-tight mb-8 animate-fade-in-up">
+            Thoughts on<br class="hidden md:block" />
+            <span class="text-brand-600 dark:text-brand-400">leading humans</span>
+          </h1>
+
+          <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl animate-fade-in animate-delay-2">
+            Essays on building high-trust teams, the craft of engineering management, and the lessons learned from a decade of leading at scale.
           </p>
-        <% end %>
-        <div class="flex items-center gap-4">
-          <span class="text-sm text-stone-500 dark:text-stone-500"><%= featured.date.strftime("%B %e, %Y") %></span>
-          <% featured.data.categories&.each do |category| %>
-            <a href="<%= category_url(category) %>" class="text-sm text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors"><%= category %></a>
-          <% end %>
-        </div>
-      </article>
-    </section>
-  <% end %>
-
-  <!-- All Posts by Year -->
-  <section class="animate-fade-in animate-delay-2">
-    <% posts_by_year.each_with_index do |(year, posts), year_index| %>
-      <div class="mb-12" id="year-<%= year %>">
-        <h2 class="font-serif text-xl text-stone-400 dark:text-stone-600 mb-6 sticky top-16 bg-bg-light dark:bg-bg-dark py-2 z-10" id="y-<%= year %>">
-          <%= year %>
-        </h2>
-
-        <div class="space-y-8">
-          <% posts.each do |post| %>
-            <% next if post.data.categories&.include?("Talks") %>
-            <article class="group">
-              <div class="flex items-baseline gap-3 mb-1">
-                <span class="text-sm text-stone-400 dark:text-stone-600 w-24 flex-shrink-0"><%= post.date.strftime("%B %e") %></span>
-                <% post.data.categories&.each do |category| %>
-                  <a href="<%= category_url(category) %>" class="text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors"><%= category %></a>
-                <% end %>
-              </div>
-              <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
-                <a href="<%= post.relative_url %>"><%= post.data.title %></a>
-              </h3>
-              <% if post.data.description %>
-                <p class="mt-2 text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl">
-                  <%= post.data.description %>
-                </p>
-              <% end %>
-            </article>
-          <% end %>
         </div>
       </div>
+    </section>
+
+    <%
+      # Filter out talks from writing - they belong on the Speaking page
+      writing_posts = collections.posts.resources.reject { |p|
+        p.data.categories&.include?("Talks") || p.data.categories&.include?("Talks & Workshops")
+      }
+      featured_posts = writing_posts.select { |p| p.data.home || p.data.featured }
+    %>
+    <!-- Featured Post -->
+    <% if featured_posts.any? %>
+      <% featured = featured_posts.first %>
+      <section class="py-16 md:py-24 bg-stone-900 dark:bg-stone-950">
+        <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+          <div class="flex items-center gap-4 mb-10">
+            <div class="w-16 h-0.5 bg-brand-500"></div>
+            <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500">Featured Essay</h2>
+          </div>
+
+          <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <!-- Visual decoration -->
+            <div class="relative hidden lg:block">
+              <div class="absolute inset-0 bg-gradient-to-br from-brand-500/20 to-accent-500/20 rounded-2xl rotate-3"></div>
+              <div class="relative aspect-[4/3] bg-gradient-to-br from-stone-800 to-stone-900 rounded-2xl flex items-center justify-center p-12">
+                <p class="font-serif text-4xl text-white/90 leading-tight text-center italic">
+                  "<%= featured.data.description || featured.data.title %>"
+                </p>
+              </div>
+            </div>
+
+            <!-- Post info -->
+            <div>
+              <div class="flex items-center gap-3 mb-4">
+                <% featured.data.categories&.each do |category| %>
+                  <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-brand-500/20 text-brand-300 rounded-full"><%= category %></span>
+                <% end %>
+                <span class="text-stone-500"><%= featured.date.strftime("%B %Y") %></span>
+              </div>
+
+              <h3 class="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-white mb-6 leading-tight">
+                <%= featured.data.title %>
+              </h3>
+
+              <% if featured.data.description %>
+                <p class="text-lg text-stone-400 leading-relaxed mb-8">
+                  <%= featured.data.description %>
+                </p>
+              <% end %>
+
+              <a href="<%= featured.relative_url %>" class="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-stone-100 text-stone-900 font-semibold rounded-full transition-all hover:scale-105">
+                Read essay
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     <% end %>
-  </section>
+
+    <!-- All Posts by Year -->
+    <section class="py-24 md:py-32">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <% writing_by_year = writing_posts.group_by { |p| p.date.year }.sort.reverse.to_h %>
+        <% writing_by_year.each do |year, posts| %>
+          <div class="mb-20 last:mb-0">
+            <div class="flex items-center gap-4 mb-12">
+              <span class="font-serif text-6xl md:text-7xl font-bold text-stone-200 dark:text-stone-800"><%= year %></span>
+              <div class="flex-1 h-px bg-stone-200 dark:bg-stone-800"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+              <% posts.each_with_index do |post, i| %>
+                <article class="group relative">
+                  <div class="relative bg-white dark:bg-stone-900 rounded-2xl p-8 border border-stone-200 dark:border-stone-800 transition-all group-hover:shadow-xl group-hover:-translate-y-1">
+                    <div class="flex items-center gap-3 mb-4">
+                      <span class="text-sm text-stone-400 dark:text-stone-600"><%= post.date.strftime("%B %e") %></span>
+                      <% post.data.categories&.each do |category| %>
+                        <a href="<%= category_url(category) %>" class="text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300"><%= category %></a>
+                      <% end %>
+                    </div>
+
+                    <h3 class="font-serif text-xl md:text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-4 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                      <a href="<%= post.relative_url %>"><%= post.data.title %></a>
+                    </h3>
+
+                    <% if post.data.description %>
+                      <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+                        <%= post.data.description %>
+                      </p>
+                    <% end %>
+
+                    <a href="<%= post.relative_url %>" class="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 font-semibold group-hover:gap-4 transition-all">
+                      Read essay
+                      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </a>
+                  </div>
+                </article>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </section>
+
+    <!-- Subscribe/RSS -->
+    <section class="py-24 md:py-32 bg-stone-100/50 dark:bg-stone-900/50">
+      <div class="w-full max-w-3xl mx-auto px-6 md:px-12 text-center">
+        <div class="flex items-center justify-center gap-4 mb-8">
+          <div class="w-16 h-0.5 bg-brand-500"></div>
+          <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">Stay Updated</h2>
+          <div class="w-16 h-0.5 bg-brand-500"></div>
+        </div>
+
+        <h3 class="font-serif text-3xl md:text-4xl font-semibold text-stone-900 dark:text-stone-100 mb-6">
+          Don't miss new essays
+        </h3>
+        <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-10">
+          Subscribe via RSS to get new posts delivered to your reader of choice.
+        </p>
+
+        <a href="/feed.xml" class="inline-flex items-center gap-3 px-8 py-4 bg-stone-900 dark:bg-stone-100 hover:bg-brand-600 dark:hover:bg-brand-500 text-white dark:text-stone-900 dark:hover:text-white font-semibold rounded-full transition-all hover:scale-105">
+          <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
+          </svg>
+          Subscribe via RSS
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <%= render "footer" %>
 </div>
