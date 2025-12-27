@@ -1,0 +1,12 @@
+min_version = "2025.4.12"
+
+[tools]
+
+[settings]
+idiomatic_version_file_enable_tools = ["ruby", "node"]
+
+[env]
+_.file = [
+  ".env.development",
+  ".env.local",
+]

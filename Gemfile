@@ -8,5 +8,7 @@ gem "bridgetown-seo-tag", "~> 7.0"
 gem "puma", "~> 6.4" # Puma is the recommended web server for Bridgetown
 
 group :development do
+  gem "rubocop-shopify", require: false
   gem "erb_lint", require: false
+  gem "foreman"
 end

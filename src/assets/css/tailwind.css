@@ -10,7 +10,7 @@ html {
 }
 
 /* Content sources for Tailwind to scan */
-@source "../../src/**/*.{erb,md}";
+@source "../../**/*.{erb,md}";
 
 /* Theme configuration */
 @theme {

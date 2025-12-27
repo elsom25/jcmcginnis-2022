@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+#MISE description="Install dependencies and setup"
+
+echo "==> Installing mise tools..."
+mise install
+
 echo "==> Installing Ruby dependencies..."
 bundle install
 
@@ -8,4 +13,3 @@ echo "==> Installing Node dependencies..."
 npm install
 
 echo "==> Setup complete!"
-

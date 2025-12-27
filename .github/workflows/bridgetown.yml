@@ -19,17 +19,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: .ruby-version
-          bundler-cache: true
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-          cache: "npm"
-
-      - run: npm ci
-      - run: bin/build
+      - uses: jdx/mise-action@v3
+      - run: mise run up
+      - run: mise run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

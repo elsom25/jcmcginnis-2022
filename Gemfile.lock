@@ -115,6 +115,8 @@ GEM
     ffi (1.17.2-x86_64-darwin)
     ffi (1.17.2-x86_64-linux-gnu)
     ffi (1.17.2-x86_64-linux-musl)
+    foreman (0.90.0)
+      thor (~> 1.4)
     hash_with_dot_access (2.2.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -219,6 +221,8 @@ GEM
     rubocop-ast (1.48.0)
       parser (>= 3.3.7.2)
       prism (~> 1.4)
+    rubocop-shopify (2.18.0)
+      rubocop (~> 1.62)
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
     serbea (2.4.1)
@@ -248,7 +252,6 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
-  ruby
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
@@ -260,7 +263,9 @@ DEPENDENCIES
   bridgetown-feed (~> 4.0)
   bridgetown-seo-tag (~> 7.0)
   erb_lint
+  foreman
   puma (~> 6.4)
+  rubocop-shopify
 
 BUNDLED WITH
    2.6.9

@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-set -euo pipefail
-
-echo "==> Building site..."
-BRIDGETOWN_ENV=production bin/bridgetown build
-
-echo "==> Build complete!"
