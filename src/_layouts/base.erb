@@ -16,24 +16,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
     <script>
-      // Theme initialization - prevents flash of wrong theme
-      (function() {
-        const stored = localStorage.getItem('theme');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-        if (stored === 'dark' || (stored === 'system' && prefersDark) || (!stored && prefersDark)) {
-          document.documentElement.classList.add('dark');
-        } else {
-          document.documentElement.classList.remove('dark');
+      // Theme management - shared across header toggle and initial load
+      window.Theme = {
+        get: () => localStorage.getItem('theme') || 'system',
+        set: (theme) => { localStorage.setItem('theme', theme); Theme.apply(); },
+        apply: () => {
+          const theme = Theme.get();
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('dark', theme === 'dark' || (theme === 'system' && prefersDark));
         }
-      })();
+      };
+      Theme.apply();
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', Theme.apply);
     </script>
     <%= live_reload_dev_js %>
     <%= render "head" %>
     <%= seo %>
     <%= feed_meta %>
   </head>
-  <body class="page flex min-h-full bg-[#faf9f7] text-stone-800 selection:bg-stone-200 selection:text-violet-700 dark:bg-[#0c0a09] dark:text-stone-200 dark:selection:bg-stone-700 dark:selection:text-violet-300" id="page-top">
+  <body class="page flex min-h-full bg-bg-light text-stone-800 selection:bg-stone-200 selection:text-violet-700 dark:bg-bg-dark dark:text-stone-200 dark:selection:bg-stone-700 dark:selection:text-violet-300" id="page-top">
     <div class="flex w-full">
       <%= yield %>
     </div>

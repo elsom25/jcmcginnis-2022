@@ -6,7 +6,7 @@ permalink: /blog/
 
 <div class="space-y-12">
   <% posts_by_year.each_with_index do |(year, posts), year_index| %>
-    <section class="animate-fade-in md:flex gap-8" style="animation-delay: <%= year_index * 60 %>ms" id="year-<%= year %>">
+    <section class="animate-fade-in animate-stagger md:flex gap-8" style="--stagger: <%= year_index %>" id="year-<%= year %>">
       <h2 class="font-serif text-lg text-stone-400 dark:text-stone-600 flex-none w-20 mb-4 md:mb-0" id="y-<%= year %>"><%= year %></h2>
       <div class="flex-1 grid md:grid-cols-2 gap-x-8 gap-y-6">
         <% posts.each do |post| %>
