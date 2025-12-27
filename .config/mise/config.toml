@@ -1,12 +1,11 @@
 min_version = "2025.4.12"
 
 [tools]
-node = "24.11.1"
 sops = "latest"
 age = "latest"
 
 [settings]
-idiomatic_version_file_enable_tools = ["ruby"]
+idiomatic_version_file_enable_tools = ["ruby", "node"]
 
 [env]
 _.file = [
