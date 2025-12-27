@@ -22,55 +22,56 @@ current:
     powered by enterprise cloud data.
   url: https://www.growthloop.com
 
-inflections:
-  - number: "01"
-    lesson: "Build a lot. Most of it won't matter. That's the point."
-    context: Boltmade
-    period: "2013–2016"
-    story: |
-      Dozens of projects. Every language, framework, industry imaginable. What emerged: there's a common core to building software, but the magic is in going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop worrying about learning the "right" thing. Be curious. Chase what excites you.
+# Inflection points organized by era for visual grouping
+eras:
+  - name: The Foundation
+    company: Boltmade
+    years: "2013–2016"
+    points:
+      - lesson: "Build a lot. Most of it won't matter. That's the point."
+        byline: Learning to ship fast, go deep, and be genuinely confident
+        detail: |
+          Dozens of projects. Every language, framework, industry imaginable. What emerged: there's a common core to building software, but the magic is in going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop worrying about learning the "right" thing. Be curious. Chase what excites you.
 
-  - number: "02"
-    lesson: "Move fast to explore. Move slow to commit."
-    context: Shopify
-    period: "Years 1–2"
-    story: |
-      Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took the time to find THE right answer, knowing how hard it would be to change later. Short-term speed and long-term speed are different games.
-
-  - number: "03"
-    lesson: "The best thing you can build is a team that doesn't need you"
-    context: Shopify
-    period: "The Shift"
-    story: |
-      I found myself doing less building and more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Especially this: most people deeply underestimate themselves. Holding them to a bar they thought was impossible, then watching them clear it. People are the hardest problem. I've always chased the hardest problems.
-
-  - number: "04"
-    lesson: "Delegation isn't distance"
-    context: Shopify
-    period: "Scaling"
-    story: |
-      The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work WITH them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and it sets the stage for everything else.
-
-  - number: "05"
-    lesson: "Chaos is good... if directed"
-    context: Shopify
-    period: "Through Turbulence"
-    story: |
-      Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was building teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
-
-  - number: "06"
-    lesson: "The only real test: can you do it again, faster?"
-    context: GrowthLoop
-    period: "Now"
-    in_progress: true
-    story: |
-      Taking everything and proving one thing—how fast can I transform a place with everything I've learned? While learning entirely new things. This chapter is still being written.
-
-journey:
-  - company: Shopify
+  - name: The Growth
+    company: Shopify
     years: "2016–2025"
-    headline: "From IC to Director, scaling teams and systems"
     duration: "8+ years"
+    points:
+      - lesson: "Move fast to explore. Move slow to commit."
+        byline:
+          Discovering that short-term and long-term speed are different games
+        period: "2016–2018"
+        detail: |
+          Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took the time to find THE right answer, knowing how hard it would be to change later.
+
+      - lesson: "The best thing you can build is a team that doesn't need you"
+        byline: Transitioning from builder to builder of builders
+        period: "2018–2020"
+        detail: |
+          I found myself doing less building and more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Especially this: most people deeply underestimate themselves. Holding them to a bar they thought was impossible, then watching them clear it. People are the hardest problem. I've always chased the hardest problems.
+
+      - lesson: "Delegation isn't distance"
+        byline: Staying in the details while raising others to meet you there
+        period: "2020–2022"
+        detail: |
+          The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work WITH them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and it sets the stage for everything else.
+
+      - lesson: "Chaos is good... if directed"
+        byline: Building resilience through intentional turbulence
+        period: "2022–2025"
+        detail: |
+          Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was building teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
+
+  - name: The Proving Ground
+    company: GrowthLoop
+    years: "2025–Present"
+    in_progress: true
+    points:
+      - lesson: "The only real test: can you do it again, faster?"
+        byline: Taking everything learned and transforming a new place
+        detail: |
+          How fast can I transform a company with everything I've learned? While learning entirely new things. This chapter is still being written.
 
 book:
   title: Embracing Uncertainty
