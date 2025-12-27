@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: jdx/mise-action@v2
+      - uses: jdx/mise-action@v3
+        with:
+          cache_save: ${{ github.ref_name == 'main' }}
       - run: mise run up
       - run: mise run lint
