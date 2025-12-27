@@ -1,0 +1,152 @@
+---
+title: Speaking
+permalink: /speaking/
+layout: default
+---
+<div class="max-w-3xl mx-auto">
+  <!-- Header -->
+  <header class="mb-12 animate-fade-in">
+    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight mb-4">
+      Speaking
+    </h1>
+    <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
+      I speak about building high-trust teams, remote leadership, and engineering culture at scale.
+      My talks draw from years of experience leading teams at Shopify and building organizations that thrive.
+    </p>
+  </header>
+
+  <!-- Featured Talk -->
+  <% featured = site.data.talks.conference_talks.find { |t| t.featured } %>
+  <% if featured %>
+    <section class="mb-16 animate-fade-in animate-delay-1">
+      <h2 class="text-sm font-medium uppercase tracking-wider text-stone-500 dark:text-stone-500 mb-6">Featured Talk</h2>
+
+      <div class="bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800 overflow-hidden">
+        <!-- Video embed -->
+        <% if featured.video_url %>
+          <div class="aspect-video bg-stone-100 dark:bg-stone-800">
+            <iframe
+              src="https://www.youtube.com/embed/<%= featured.video_url.split('/').last.split('?').first rescue '' %>"
+              class="w-full h-full"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              title="<%= featured.title %>"></iframe>
+          </div>
+        <% end %>
+
+        <div class="p-6 md:p-8">
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="text-sm font-medium text-brand-600 dark:text-brand-400"><%= featured.event %></span>
+            <span class="text-sm text-stone-400 dark:text-stone-600"><%= featured.year %></span>
+          </div>
+          <h3 class="font-serif text-xl md:text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-3">
+            <%= featured.title %>
+          </h3>
+          <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-4">
+            <%= featured.description %>
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <% if featured.video_url %>
+              <a href="<%= featured.video_url %>" class="inline-flex items-center gap-2 text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors" target="_blank" rel="external">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Watch video
+              </a>
+            <% end %>
+            <% if featured.slides_url %>
+              <a href="<%= featured.slides_url %>" class="inline-flex items-center gap-2 text-sm font-medium text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-200 transition-colors" target="_blank" rel="external">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                View slides
+              </a>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </section>
+  <% end %>
+
+  <!-- Conference Talks -->
+  <section class="mb-16 animate-fade-in animate-delay-2">
+    <h2 class="text-sm font-medium uppercase tracking-wider text-stone-500 dark:text-stone-500 mb-6">Conference Talks</h2>
+
+    <div class="space-y-6">
+      <% site.data.talks.conference_talks.reject { |t| t.featured }.each do |talk| %>
+        <article class="p-6 bg-white dark:bg-stone-900 rounded-xl border border-stone-200 dark:border-stone-800">
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="text-sm font-medium text-brand-600 dark:text-brand-400"><%= talk.event %></span>
+            <span class="text-sm text-stone-400 dark:text-stone-600"><%= talk.year %></span>
+          </div>
+          <h3 class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 mb-2">
+            <%= talk.title %>
+          </h3>
+          <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
+            <%= talk.description %>
+          </p>
+        </article>
+      <% end %>
+    </div>
+  </section>
+
+  <!-- Workshops -->
+  <section class="mb-16 animate-fade-in animate-delay-3">
+    <h2 class="text-sm font-medium uppercase tracking-wider text-stone-500 dark:text-stone-500 mb-6">Workshops</h2>
+
+    <% site.data.talks.workshops.each do |workshop| %>
+      <div class="p-6 md:p-8 bg-white dark:bg-stone-900 rounded-2xl border border-stone-200 dark:border-stone-800">
+        <div class="flex items-baseline gap-3 mb-2">
+          <span class="text-sm font-medium text-accent-600 dark:text-accent-400"><%= workshop.platform %></span>
+          <span class="text-sm text-stone-400 dark:text-stone-600"><%= workshop.year %></span>
+        </div>
+        <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-3">
+          <%= workshop.title %>
+        </h3>
+        <p class="text-stone-600 dark:text-stone-400 leading-relaxed mb-6">
+          <%= workshop.description %>
+        </p>
+
+        <h4 class="text-sm font-medium text-stone-900 dark:text-stone-100 mb-3">Sessions</h4>
+        <ol class="space-y-2">
+          <% workshop.sessions.each_with_index do |session, i| %>
+            <li class="flex items-baseline gap-3">
+              <span class="text-sm text-stone-400 dark:text-stone-600 font-mono"><%= i + 1 %>.</span>
+              <a href="<%= session.url %>" class="text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors" target="_blank" rel="external">
+                <%= session.title %>
+              </a>
+            </li>
+          <% end %>
+        </ol>
+      </div>
+    <% end %>
+  </section>
+
+  <!-- Topics & CTA -->
+  <section class="animate-fade-in animate-delay-4">
+    <div class="p-6 md:p-8 bg-stone-100 dark:bg-stone-900 rounded-2xl">
+      <h2 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-4">Topics I speak about</h2>
+      <ul class="flex flex-wrap gap-2 mb-6">
+        <% site.data.talks.topics.each do |topic| %>
+          <li class="px-3 py-1 text-sm bg-white dark:bg-stone-800 text-stone-700 dark:text-stone-300 rounded-full border border-stone-200 dark:border-stone-700">
+            <%= topic %>
+          </li>
+        <% end %>
+      </ul>
+
+      <div class="divider my-6"></div>
+
+      <p class="text-stone-600 dark:text-stone-400 mb-4">
+        <%= site.data.talks.cta.text %>. If you're interested in having me speak at your event, reach out.
+      </p>
+      <a href="mailto:<%= site.data.talks.cta.contact %>" class="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 font-medium transition-colors">
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+        </svg>
+        <%= site.data.talks.cta.contact %>
+      </a>
+    </div>
+  </section>
+</div>

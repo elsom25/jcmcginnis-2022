@@ -1,0 +1,44 @@
+# Career timeline for homepage and about page
+# Ordered most recent first
+
+current:
+  company: GrowthLoop
+  role: VP Product Engineering
+  start: 2025
+  location: Remote, Canada
+  summary:
+    Building a Compound Marketing Engine that drives growth using Agentic AI
+    powered by enterprise cloud data.
+  url: https://www.growthloop.com
+
+highlights:
+  - company: Shopify
+    role: Director of Engineering
+    years: "2016-2025"
+    duration: 8+ years
+    summary:
+      Led 50+ engineers building custom data tools (Metafields, Metaobjects),
+      media systems, and commerce infrastructure powering millions of merchants.
+    achievements:
+      - Built high-performing org of 50+ engineers with ownership-first culture
+      - Pioneered multi-currency, laying groundwork for Shopify Markets
+      - Evolved custom data system into powerful merchant storytelling platform
+
+  - company: Boltmade
+    role: Developer
+    years: "2013-2016"
+    duration: 3+ years
+    summary:
+      Consulting and product development across startups to Fortune 500.
+      Eventually acquired by Shopify.
+    note: Acquired by Shopify
+    achievements:
+      - Co-authored company handbook capturing agile approach
+      - Led technical strategy across 8 diverse projects
+
+book:
+  title: Embracing Uncertainty
+  tagline:
+    A field guide to agile packed with strategies for building top-performing
+    teams.
+  url: https://www.uncertaintybook.ca/

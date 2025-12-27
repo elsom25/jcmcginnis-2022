@@ -1,10 +1,10 @@
 main:
-  - name: "About"
-    url: "/"
+  - name: "Writing"
+    url: "/writing/"
     weight: 1
-  - name: "README"
-    url: "/readme/"
+  - name: "Speaking"
+    url: "/speaking/"
     weight: 2
-  - name: "Blog"
-    url: "/blog/"
+  - name: "README.md"
+    url: "/readme/"
     weight: 3

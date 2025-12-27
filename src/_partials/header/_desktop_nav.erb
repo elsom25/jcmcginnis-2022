@@ -1,7 +1,7 @@
 <nav class="hidden md:flex items-center gap-1">
   <% menu.main.each do |item| %>
     <a href="<%= relative_url item.url %>"
-       class="relative px-3 py-2 text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all after:absolute after:bottom-1 after:left-3 after:right-3 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-rose-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left after:rounded-full <%= 'text-stone-900 dark:text-stone-100 after:scale-x-100' if item.url == '/' ? page.relative_url == '/' : page.relative_url.start_with?(item.url) %>">
+       class="relative px-3 py-2 text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all after:absolute after:bottom-1 after:left-3 after:right-3 after:h-0.5 after:bg-gradient-to-r after:from-brand-500 after:to-accent-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left after:rounded-full <%= 'text-stone-900 dark:text-stone-100 after:scale-x-100' if item.url == '/' ? page.relative_url == '/' : page.relative_url.start_with?(item.url) %>">
       <%= item.name %>
     </a>
   <% end %>

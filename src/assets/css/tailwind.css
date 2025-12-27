@@ -12,39 +12,102 @@ html {
 /* Content sources for Tailwind to scan */
 @source "../../**/*.{erb,md}";
 
-/* Theme configuration */
+/* ==========================================================================
+   DESIGN SYSTEM: "The Challenger's Manifesto"
+
+   A bold, editorial aesthetic that reflects confidence and authenticity.
+   Warm tones, generous whitespace, and distinctive typography.
+   ========================================================================== */
+
 @theme {
+  /* Typography - Editorial pairing */
   --font-sans:
     "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: "Newsreader", "Georgia", "Cambria", "Times New Roman", serif;
+  --font-serif: "Fraunces", "Newsreader", "Georgia", serif;
 
-  /* Custom background colors */
-  --color-bg-light: #faf9f7;
-  --color-bg-dark: #0c0a09;
+  /* Color Palette - Warm, confident, human
+     Primary: Terracotta/Rust - confident, warm, distinctive
+     Accent: Amber - energy, CTAs
+     Neutrals: Warm stone scale */
+
+  /* Primary brand color - terracotta */
+  --color-brand-50: #fdf4f3;
+  --color-brand-100: #fce8e6;
+  --color-brand-200: #f9d5d1;
+  --color-brand-300: #f4b5ae;
+  --color-brand-400: #eb8a7f;
+  --color-brand-500: #dd6557;
+  --color-brand-600: #c84a3b;
+  --color-brand-700: #a83c2f;
+  --color-brand-800: #8b352b;
+  --color-brand-900: #743229;
+  --color-brand-950: #3f1712;
+
+  /* Accent - warm amber */
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+
+  /* Backgrounds - warm neutrals */
+  --color-bg-light: #faf8f6;
+  --color-bg-dark: #1a1614;
+  --color-bg-dark-elevated: #231f1c;
 }
 
-/* View Transitions */
+/* ==========================================================================
+   Custom Fonts
+   ========================================================================== */
+
+/* Fraunces - expressive editorial serif */
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/fraunces/v31/6NUh8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c7qv8o.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/fraunces/v31/6NVf8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvUtV0FABVR8Fw.woff2")
+    format("woff2");
+}
+
+/* ==========================================================================
+   View Transitions
+   ========================================================================== */
+
 @view-transition {
   navigation: auto;
 }
+
 ::view-transition-old(root) {
   animation: vt-fade 180ms ease-out;
 }
+
 ::view-transition-new(root) {
   animation: vt-fade 180ms ease-in reverse;
 }
+
 @keyframes vt-fade {
   to {
     opacity: 0;
   }
 }
 
-/* Fade-in animation utilities */
+/* ==========================================================================
+   Animation Utilities
+   ========================================================================== */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(4px);
+    transform: translateY(8px);
   }
   to {
     opacity: 1;
@@ -52,28 +115,65 @@ html {
   }
 }
 
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @utility animate-fade-in {
-  animation: fadeIn 350ms ease-out both;
+  animation: fadeIn 500ms ease-out both;
+}
+
+@utility animate-fade-in-up {
+  animation: fadeInUp 600ms ease-out both;
+}
+
+@utility animate-slide-in-left {
+  animation: slideInLeft 500ms ease-out both;
 }
 
 /* Staggered animation using CSS custom property */
 @utility animate-stagger {
-  animation-delay: calc(var(--stagger, 0) * 60ms);
+  animation-delay: calc(var(--stagger, 0) * 80ms);
 }
 
-/* Fixed delay utilities for non-dynamic cases */
+/* Fixed delay utilities */
 @utility animate-delay-1 {
-  animation-delay: 60ms;
+  animation-delay: 100ms;
 }
 @utility animate-delay-2 {
-  animation-delay: 120ms;
+  animation-delay: 200ms;
 }
 @utility animate-delay-3 {
-  animation-delay: 180ms;
+  animation-delay: 300ms;
 }
 @utility animate-delay-4 {
-  animation-delay: 240ms;
+  animation-delay: 400ms;
 }
+@utility animate-delay-5 {
+  animation-delay: 500ms;
+}
+
+/* ==========================================================================
+   Typography Utilities
+   ========================================================================== */
 
 /* Prose quoteless - removes blockquote decorations */
 @utility prose-quoteless {
@@ -85,25 +185,61 @@ html {
   }
 }
 
+/* Gradient text utility */
+@utility text-gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Display heading - for hero sections */
+@utility text-display {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* Editorial subhead */
+@utility text-subhead {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
 /* Code highlighting */
 .highlight {
   @apply whitespace-pre-wrap font-mono;
 }
 
-/* Gradient text utility - adds webkit prefix that Tailwind 4 doesn't include */
-@utility text-gradient {
-  -webkit-background-clip: text;
-  background-clip: text;
-}
+/* ==========================================================================
+   Component Utilities
+   ========================================================================== */
 
-/* Header accent bar gradient */
+/* Header accent bar gradient - warmer */
 @utility bg-accent-gradient {
-  background: linear-gradient(90deg, #f59e0b 0%, #e11d48 40%, #7c3aed 100%);
+  background: linear-gradient(
+    90deg,
+    var(--color-accent-500) 0%,
+    var(--color-brand-500) 50%,
+    var(--color-brand-700) 100%
+  );
 }
 
-/* Accent link style for homepage and inline text links */
+/* Accent link style */
 @utility link-accent {
-  @apply font-semibold text-stone-900 dark:text-stone-100 underline decoration-2 underline-offset-2 decoration-rose-500/50 hover:decoration-rose-600 dark:hover:decoration-rose-400 transition-colors;
+  @apply font-medium text-brand-600 dark:text-brand-400 underline decoration-1 underline-offset-2 decoration-brand-400/50 hover:decoration-brand-600 dark:hover:decoration-brand-400 transition-colors;
+}
+
+/* Card hover effect */
+@utility card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+}
+
+/* Subtle divider */
+@utility divider {
+  @apply h-px bg-gradient-to-r from-transparent via-stone-300 dark:via-stone-700 to-transparent;
 }
 
 /* Theme toggle button active state */
@@ -111,28 +247,47 @@ html {
   @apply bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-50 shadow-sm;
 }
 
-/* Prose link styles - these need custom CSS for the gradient underline effect */
+/* ==========================================================================
+   Prose Styling
+   ========================================================================== */
+
 .prose a {
-  @apply text-inherit no-underline transition-colors duration-200;
+  @apply text-brand-700 dark:text-brand-400 no-underline transition-colors duration-200;
   background-image: linear-gradient(
-    transparent calc(100% - 1px),
-    currentColor 1px
+    transparent calc(100% - 2px),
+    currentColor 2px
   );
   background-size: 100% 100%;
   background-position: 0 100%;
 }
 
 .prose a:hover {
-  @apply text-rose-700 dark:text-rose-400;
+  @apply text-brand-800 dark:text-brand-300;
 }
 
-/* External link indicator - only for truly external links */
-.prose a[href^="http"]:not([href^="/"]):not([href^="#"])::after {
+/* External link indicator */
+.prose a[href^="http"]:not([href*="jcmcginnis.com"])::after {
   content: " ↗";
-  @apply text-[0.7em] opacity-40 align-super;
+  @apply text-[0.7em] opacity-50 align-super;
 }
 
-/* Mobile Navigation Drawer */
+/* Blockquote styling */
+.prose blockquote {
+  @apply border-l-4 border-brand-400 dark:border-brand-600 font-serif not-italic text-stone-700 dark:text-stone-300;
+}
+
+/* Headings in prose use serif */
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4 {
+  @apply font-serif;
+}
+
+/* ==========================================================================
+   Mobile Navigation
+   ========================================================================== */
+
 .mobile-drawer {
   max-height: 0;
   overflow: hidden;
@@ -147,7 +302,6 @@ html {
   opacity: 1;
 }
 
-/* Lock body scroll when mobile menu is open */
 body.mobile-menu-open {
   overflow: hidden;
 }
@@ -156,4 +310,30 @@ body.mobile-menu-open {
   body.mobile-menu-open {
     overflow: auto;
   }
+}
+
+/* ==========================================================================
+   Homepage Hero Effects
+   ========================================================================== */
+
+/* Subtle grain texture overlay */
+@utility bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  opacity: 0.03;
+}
+
+/* Decorative accent line */
+@utility accent-line {
+  @apply w-16 h-1 bg-gradient-to-r from-brand-500 to-accent-500 rounded-full;
+}
+
+/* Section divider with icon */
+@utility section-divider {
+  @apply flex items-center justify-center gap-4 py-8;
+}
+
+/* Pull quote styling */
+@utility pull-quote {
+  @apply font-serif text-2xl md:text-3xl italic text-stone-700 dark:text-stone-300 leading-relaxed;
 }
