@@ -1,8 +1,6 @@
 min_version = "2025.4.12"
 
 [tools]
-sops = "latest"
-age = "latest"
 
 [settings]
 idiomatic_version_file_enable_tools = ["ruby", "node"]
@@ -10,6 +8,5 @@ idiomatic_version_file_enable_tools = ["ruby", "node"]
 [env]
 _.file = [
   ".env.development",
-  ".env.secret.json",
   ".env.local",
 ]
