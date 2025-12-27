@@ -9,5 +9,4 @@ gem "puma", "~> 6.4" # Puma is the recommended web server for Bridgetown
 
 group :development do
   gem "erb_lint", require: false
-  gem "foreman"
 end

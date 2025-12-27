@@ -1,18 +1,81 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+/* Enable class-based dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Prevent layout shift from scrollbar appearance */
+html {
+  scrollbar-gutter: stable;
+}
+
 /* Content sources for Tailwind to scan */
 @source "../../src/**/*.{erb,md}";
 
 /* Theme configuration */
 @theme {
-  /* Font family - Inter variable font */
   --font-sans:
     "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: "Newsreader", "Georgia", "Cambria", "Times New Roman", serif;
+
+  /* Custom background colors */
+  --color-bg-light: #faf9f7;
+  --color-bg-dark: #0c0a09;
 }
 
-/* Custom typography variant for removing blockquote decorations */
+/* View Transitions */
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root) {
+  animation: vt-fade 180ms ease-out;
+}
+::view-transition-new(root) {
+  animation: vt-fade 180ms ease-in reverse;
+}
+@keyframes vt-fade {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Fade-in animation utilities */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@utility animate-fade-in {
+  animation: fadeIn 350ms ease-out both;
+}
+
+/* Staggered animation using CSS custom property */
+@utility animate-stagger {
+  animation-delay: calc(var(--stagger, 0) * 60ms);
+}
+
+/* Fixed delay utilities for non-dynamic cases */
+@utility animate-delay-1 {
+  animation-delay: 60ms;
+}
+@utility animate-delay-2 {
+  animation-delay: 120ms;
+}
+@utility animate-delay-3 {
+  animation-delay: 180ms;
+}
+@utility animate-delay-4 {
+  animation-delay: 240ms;
+}
+
+/* Prose quoteless - removes blockquote decorations */
 @utility prose-quoteless {
   & :where(blockquote p:first-of-type)::before {
     content: none;
@@ -22,6 +85,75 @@
   }
 }
 
+/* Code highlighting */
 .highlight {
   @apply whitespace-pre-wrap font-mono;
+}
+
+/* Gradient text utility - adds webkit prefix that Tailwind 4 doesn't include */
+@utility text-gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+/* Header accent bar gradient */
+@utility bg-accent-gradient {
+  background: linear-gradient(90deg, #f59e0b 0%, #e11d48 40%, #7c3aed 100%);
+}
+
+/* Accent link style for homepage and inline text links */
+@utility link-accent {
+  @apply font-semibold text-stone-900 dark:text-stone-100 underline decoration-2 underline-offset-2 decoration-rose-500/50 hover:decoration-rose-600 dark:hover:decoration-rose-400 transition-colors;
+}
+
+/* Theme toggle button active state */
+.theme-btn[data-active="true"] {
+  @apply bg-white dark:bg-stone-800 text-stone-900 dark:text-stone-50 shadow-sm;
+}
+
+/* Prose link styles - these need custom CSS for the gradient underline effect */
+.prose a {
+  @apply text-inherit no-underline transition-colors duration-200;
+  background-image: linear-gradient(
+    transparent calc(100% - 1px),
+    currentColor 1px
+  );
+  background-size: 100% 100%;
+  background-position: 0 100%;
+}
+
+.prose a:hover {
+  @apply text-rose-700 dark:text-rose-400;
+}
+
+/* External link indicator - only for truly external links */
+.prose a[href^="http"]:not([href^="/"]):not([href^="#"])::after {
+  content: " ↗";
+  @apply text-[0.7em] opacity-40 align-super;
+}
+
+/* Mobile Navigation Drawer */
+.mobile-drawer {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 200ms ease-out,
+    opacity 200ms ease-out;
+  opacity: 0;
+}
+
+.mobile-drawer.drawer-open {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Lock body scroll when mobile menu is open */
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  body.mobile-menu-open {
+    overflow: auto;
+  }
 }
