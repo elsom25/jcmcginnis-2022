@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-Bridgetown.configure do |config|
+Bridgetown.configure do |_config|
   init :"bridgetown-feed"
   init :"bridgetown-seo-tag"
 end

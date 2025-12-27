@@ -9,19 +9,25 @@ if [ "${1:-}" = "-a" ] || [ "${1:-}" = "--autocorrect" ]; then
 fi
 
 if [ "$AUTOCORRECT" = true ]; then
-  echo "==> Formatting with Prettier..."
-  npm run format
+  echo "Autocorrecting..."
+  echo " → ruby with rubocop"
+  bin/rubocop -A
 
-  echo ""
-  echo "==> Fixing ERB files with erb_lint..."
+  echo " → erb with erb_lint"
   bundle exec erb_lint --lint-all --autocorrect
-else
-  echo "==> Checking Prettier formatting..."
-  npm run format:check
 
-  echo ""
-  echo "==> Checking ERB files with erb_lint..."
+  echo " → everything else with prettier"
+  npm run format
+else
+  echo "Checking..."
+  echo " → ruby with rubocop"
+  bin/rubocop
+
+  echo " → erb with erb_lint"
   bundle exec erb_lint --lint-all
+
+  echo " → everything else with prettier"
+  npm run format:check
 fi
 
 echo ""
