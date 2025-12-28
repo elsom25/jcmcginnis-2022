@@ -14,21 +14,17 @@ social:
 pagination:
   enabled: true
 
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title/
-  # talks collection is defined in config/initializers.rb (Ruby DSL preferred in Bridgetown 2.0)
-
 defaults:
   - scope:
       collection: posts
     values:
       layout: post
+      page_id: post
   - scope:
       collection: talks
     values:
       layout: talk
+      page_id: talk
 
 template_engine: erb
 

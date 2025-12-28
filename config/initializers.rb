@@ -6,6 +6,10 @@ Bridgetown.configure do
 
   # Custom collections (Ruby DSL is preferred in Bridgetown 2.0)
   collections do
+    posts do
+      output true
+      permalink "/blog/:title/"
+    end
     talks do
       output true
       permalink "/talks/:slug/"

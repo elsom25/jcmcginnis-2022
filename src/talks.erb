@@ -1,13 +1,8 @@
 ---
 title: Speaking
 permalink: /talks/
-layout: base
-skip_footer: false
+layout: page
 ---
-<div class="min-h-screen flex flex-col w-full">
-  <%= render "header", page: resource, menu: site.data.menu %>
-
-  <main class="flex-auto">
     <!-- Hero Section - BOLD Speaker Portfolio with Light/Dark support -->
     <section class="relative min-h-[70vh] flex items-end overflow-hidden">
       <!-- Light: warm cream with accent | Dark: deep stone -->
@@ -175,22 +170,3 @@ skip_footer: false
         </div>
       </div>
     </section>
-  </main>
-
-  <%= render "footer" %>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.add('reveal-ready');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-  document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
-});
-</script>

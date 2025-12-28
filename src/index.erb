@@ -1,11 +1,10 @@
 ---
-layout: base
+layout: page
 skip_footer: true
+page_id: index
+head_scripts:
+  - gsap
 ---
-<div class="min-h-screen flex flex-col w-full">
-  <%= render "header", page: resource, menu: site.data.menu %>
-
-  <main class="flex-auto">
     <!-- Hero Section - BOLD with Light/Dark support -->
     <section class="relative min-h-[90vh] flex items-center overflow-hidden">
       <!-- Light mode: warm cream with brand accent -->
@@ -527,84 +526,3 @@ skip_footer: true
         </div>
       </div>
     </section>
-  </main>
-</div>
-
-<!-- Minimal JS: Timeline fill + reveal animations -->
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  // Mark document as JS-ready for CSS reveal animations
-  document.body.classList.add('reveal-ready');
-
-  // Simple IntersectionObserver for reveal animations (no library needed)
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target); // Only animate once
-      }
-    });
-  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
-
-  document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
-
-  // Wait for GSAP for timeline fill only
-  const check = setInterval(() => {
-    if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-      clearInterval(check);
-      gsap.registerPlugin(ScrollTrigger);
-      initTimelineFill();
-    }
-  }, 50);
-  setTimeout(() => clearInterval(check), 3000);
-});
-
-function initTimelineFill() {
-  const track = document.getElementById('timeline-track');
-  const fill = document.getElementById('timeline-fill');
-  const glow = document.getElementById('timeline-glow');
-  const thesis = document.getElementById('thesis-card');
-  const container = document.getElementById('timeline-container');
-  const firstLesson = document.querySelector('.lesson-panel');
-
-  if (!track || !fill || !glow || !thesis || !container || !firstLesson) return;
-
-  let trackHeight = 0;
-
-  // Position timeline and glow from first lesson to thesis card top
-  function positionTimeline() {
-    const startY = firstLesson.offsetTop + 32; // Start below first dot
-    const thesisSection = document.getElementById('thesis-section');
-    const endY = thesisSection.offsetTop + thesis.offsetTop; // End at thesis card top
-
-    trackHeight = Math.max(100, endY - startY);
-
-    track.style.top = `${startY}px`;
-    track.style.height = `${trackHeight}px`;
-    // Position glow to match track (height animated separately)
-    glow.style.top = `${startY}px`;
-  }
-
-  // Position on load and resize
-  positionTimeline();
-  setTimeout(positionTimeline, 100);
-  window.addEventListener('resize', () => {
-    positionTimeline();
-    ScrollTrigger.refresh();
-  });
-
-  // Scroll-driven fill + glow animation (scrub ensures it reverts on scroll up)
-  ScrollTrigger.create({
-    trigger: firstLesson,
-    start: 'top 50%',
-    endTrigger: thesis,
-    end: 'top 40%',
-    scrub: 0.3,
-    onUpdate: (self) => {
-      const progress = self.progress;
-      fill.style.height = `${progress * 100}%`;
-      glow.style.height = `${progress * trackHeight}px`;
-    }
-  });
-}
-</script>

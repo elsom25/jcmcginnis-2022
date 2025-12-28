@@ -1,13 +1,8 @@
 ---
 title: Writing
 permalink: /blog/
-layout: base
-skip_footer: false
+layout: page
 ---
-<div class="min-h-screen flex flex-col w-full">
-  <%= render "header", page: resource, menu: site.data.menu %>
-
-  <main class="flex-auto">
     <!-- Hero - BOLD Editorial Masthead with Light/Dark support -->
     <section class="relative min-h-[70vh] flex items-end overflow-hidden">
       <!-- Light: warm cream | Dark: deep stone -->
@@ -42,10 +37,6 @@ skip_footer: false
         </div>
       </div>
     </section>
-
-    <%
-      writing_posts = collections.posts.resources
-    %>
 
     <!-- Featured Post - Bold Accent Zone -->
     <% if featured_post %>
@@ -109,7 +100,7 @@ skip_footer: false
     <!-- All Posts by Year -->
     <section class="py-24 md:py-32">
       <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
-        <% writing_by_year = writing_posts.group_by { |p| p.date.year }.sort.reverse.to_h %>
+        <% writing_by_year = posts_by_year %>
         <% writing_by_year.each do |year, posts| %>
           <div class="mb-24 last:mb-0">
             <!-- Year anchor with oversized typography -->
@@ -181,23 +172,4 @@ skip_footer: false
           Subscribe via RSS
         </a>
       </div>
-    </section>
-  </main>
-
-  <%= render "footer" %>
-</div>
-
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  document.body.classList.add('reveal-ready');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-  document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
-});
-</script>
+      </section>

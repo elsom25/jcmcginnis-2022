@@ -1,5 +1,9 @@
 <link href="<%= relative_url '/assets/css/style.css' %>" rel="stylesheet">
 <link href="<%= relative_url '/assets/css/syntax.css' %>" rel="stylesheet">
-<!-- GSAP for scroll animations -->
+<% if resource.data.head_scripts&.include?("gsap") %>
+<!-- GSAP for scroll animations (homepage only) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<% end %>
+<!-- Bundled JavaScript via Bridgetown esbuild -->
+<script src="<%= asset_path :js %>" defer></script>
