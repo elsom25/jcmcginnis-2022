@@ -30,9 +30,6 @@
   flex_align = alignment == "center" ? "justify-center" : ""
 %>
 <div class="flex items-center gap-4 <%= margin %> <%= flex_align %> animate-fade-in">
-  <% if alignment == "center" %>
-    <div class="<%= line_width %> h-0.5 <%= line_color %>"></div>
-  <% end %>
   <div class="<%= line_width %> h-0.5 <%= line_color %>"></div>
   <span class="text-eyebrow <%= text_color %>"><%= label %></span>
   <% if alignment == "center" %>

@@ -7,7 +7,8 @@ tldr:
   - anchor: how-i-show-up
     headline: "Trust first. Expect everything. Best ideas win."
     summary:
-      "I show up with trust, high expectations, and a hunger for the best ideas."
+      "I show up with trust, high expectations, and a hunger for the best
+      answers—however we get there."
   - anchor: inspiration
     headline: "Words that shaped me."
     summary:
@@ -18,32 +19,27 @@ expectations:
   - number: "01"
     headline: "Will I be surrounded by people who make me uncomfortable?"
     keywords:
-      - "Scary smart"
-      - "Genuine"
-      - "Optimistic"
-      - "Expect more"
-    details:
-      - title: "Scary smart"
-        content:
+      - label: "Scary smart"
+        detail:
           'People who are *always* pushing themselves to be better. People who
           have gone past "what''s necessary" simply because they wanted to see
           the other side. People I am inspired by and I will learn from. Scary
           is an important word here: it should be uneasy to keep up with them.'
-      - title: "Genuine"
-        content:
+      - label: "Genuine"
+        detail:
           "People who make me *want* to be better. People who care not just
           about what they do, but *how they do it*. People who want to know the
           humans they work with, and likewise want to *be known*. People who
           embody honesty, kindness, and authenticity in everything they do."
-      - title: "Optimistic"
-        content:
+      - label: "Optimistic"
+        detail:
           "Never toxic positivity, but a deeply held belief *in a better
           tomorrow*. Always honest about the barriers, but willing to put in the
           work. People who are excited to learn and grow together. I'm
           optimistic by nature, and I want to work in a place where the
           *optimists greatly outnumber the pessimists*."
-      - title: "Expect more"
-        content:
+      - label: "Expect more"
+        detail:
           "I want to be pushed. I want to be challenged. I want to be held
           accountable. I want a culture of excellence, where we're all here to
           do *our best work*. People who are excited by the idea that today is
@@ -52,30 +48,25 @@ expectations:
   - number: "02"
     headline: "Will I have the autonomy to build something meaningful?"
     keywords:
-      - "Chart my path"
-      - "Recognized"
-      - "Help others"
-      - "Scale up"
-    details:
-      - title: "Chart my own path"
-        content:
+      - label: "Chart my own path"
+        detail:
           "I must be able to *choose my own adventure*, with guideposts not hard
           walls. A place that treats employees like the adults they are, and
           trusts them to make the right decisions. A place that values
           *autonomy* and *ownership*. Defaults, not rules. Capabilities, not
           titles."
-      - title: "Achievements recognized"
-        content:
+      - label: "Achievements recognized"
+        detail:
           "I put in my all, and expect to be recognized when I achieve
           incredible things."
-      - title: "Help others"
-        content:
+      - label: "Help others"
+        detail:
           "I want to be able to *help others*. I want to be able to *mentor*,
           *coach*, and *teach*. Design programs or work 1:1 with the people
           around me. A place where we're all here to grow and learn, where I get
           to help make that happen."
-      - title: "Scale my responsibilities"
-        content:
+      - label: "Scale my responsibilities"
+        detail:
           "I want to keep learning new things. There will be phases of mastering
           skills, but there must be phases of growth and new challenges too.
           Stagnation is not an option."
@@ -83,68 +74,59 @@ expectations:
   - number: "03"
     headline: "Can I win even when I lose?"
     keywords:
-      - "Learn from failure"
-      - "Win in loss"
-      - "Worth fighting for"
-    details:
-      - title: "Winning in failure"
-        content:
+      - label: "Winning in failure"
+        detail:
           "A place that *knows failure is a lesson*, not something to avoid.
           Where I can *grow* from my mistakes. Where I can *fail fast* and *fail
           forward*. Antifragile, not fragile."
-      - title: "Winning in loss"
-        content:
+      - label: "Winning in loss"
+        detail:
           "A place where even if the bet (of the project, job, company) loses,
           I've gained something good. Growth, learning, relationships, skills. A
           place where I (and everyone) *win*, even in loss."
-      - title: "Push through difficulty"
-        content:
+      - label: "Push through difficulty"
+        detail:
           "A place I *believe in*. Where what we're here to do is worth sticking
           through the hard times for."
 
 principles:
-  - number: 1
-    title: "I start with trust"
+  - title: "I start with trust"
     detail:
-      "I will share openly with you, and I will trust you can & will do what you
-      say. Warning: if you burn my trust it's a long road back."
-  - number: 2
-    title: "I expect your best"
+      "I will share openly with you, and I will *trust* you can & will do what
+      you say. Warning: if you burn my trust it's a long road back."
+  - title: "I expect your best"
     detail:
       "I want people to do and see everything they're capable of. I've learned
       my expectations are high: I hold what I know you're capable of and will
       actively help you get there."
-  - number: 3
-    title: "The best ideas win"
+  - title: "The best ideas win"
     detail:
       "Idea labs are fun and where the best results come from. So expect me to
-      argue, push, prod, and question. And I expect the same from you."
-  - number: 4
-    title: "I'm honest"
+      argue, push, prod, and question. And I expect the same from you. This is
+      how we get to the best answers."
+  - title: "I'm honest"
     detail:
       "I will not lie, but I might say nothing. I will tell you what I think,
       clearly and kindly. I expect the same from you."
-  - number: 5
-    title: "Don't box me in"
+  - title: "Don't box me in"
     detail:
       "Defaults are powerful; rules are suffocating. If you put a hard line in
-      front of me expect me to interrogate and challenge it."
-  - number: 6
-    title: "I'm optimistic"
+      front of me expect me to interrogate and challenge it. I will always look
+      for the best path forward, and sometimes (often) that means breaking the
+      rules."
+  - title: "I'm optimistic"
     detail:
       "I believe in a better tomorrow, and I will work to make it happen. I will
       always look for the silver lining, though will never ignore the storm
       clouds."
-  - number: 7
-    title: "I'm pragmatic"
+  - title: "I'm pragmatic"
     detail:
       "The world is grey and complex. I will always find a path forward, even if
       it's not the one I wanted. Never let perfect be the enemy of good enough."
-  - number: 8
-    title: "Communication matters"
+  - title: "Communication matters"
     detail:
       "Clear is kind. Be direct, concise, and precise with what you communicate.
-      This doesn't mean cold & bare however, pith and context matter."
+      This doesn't mean *cold & bare* however, pith and context matter."
 
 quotes:
   seek:
@@ -159,7 +141,7 @@ quotes:
         until it is faced."
       author: "James Arthur Baldwin"
 
-  how_to_be:
+  be:
     - text:
         "We are what we repeatedly do. Excellence, therefore, is not an act, but
         a habit."
@@ -180,14 +162,29 @@ quotes:
       author: "Richard M. Nixon"
     - text:
         "Be soft. Do not let the world make you hard. Do not let pain make you
-        hate. Do not let the bitterness steal your sweetness."
+        hate. Do not let the bitterness steal your sweetness. Take pride that
+        even though the rest of the world may disagree, you still believe it to
+        be a beautiful place."
       author: "Kurt Vonnegut"
 
-  to_remember:
-    text: |
-      Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there—on a mote of dust suspended in a sunbeam.
+  remember:
+    - text:
+        "All that is necessary for the triumph of evil is that good men do
+        nothing."
+      author: "Edmund Burke"
+    - text:
+        "It is not power that corrupts but fear. Fear of losing power corrupts
+        those who wield it and fear of the scourge of power corrupts those who
+        are subject to it."
+      author: "Aung San Suu Kyi"
 
-      The Earth is a very small stage in a vast cosmic arena. Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+sagan: |
+  Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you know, everyone you ever heard of, every human being who ever was, lived out their lives. The aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic doctrines, every hunter and forager, every hero and coward, every creator and destroyer of civilization, every king and peasant, every young couple in love, every mother and father, hopeful child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar," every "supreme leader," every saint and sinner in the history of our species lived there-on a mote of dust suspended in a sunbeam.
 
-      It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.
-    author: "Carl Sagan"
+  The Earth is a very small stage in a vast cosmic arena. Think of the endless cruelties visited by the inhabitants of one corner of this pixel on the scarcely distinguishable inhabitants of some other corner, how frequent their misunderstandings, how eager they are to kill one another, how fervent their hatreds.
+
+  Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+
+  The Earth is the only world known so far to harbor life. There is nowhere else, at least in the near future, to which our species could migrate. Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is where we make our stand.
+
+  It has been said that astronomy is a humbling and character-building experience. There is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly with one another, and to preserve and cherish the pale blue dot, the only home we've ever known.

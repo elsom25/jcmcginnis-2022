@@ -1,346 +1,319 @@
 ---
 title: README.md
 permalink: /readme/
-layout: readme
-
-description: What I expect, how I show up, and what inspires me.
+layout: base
+skip_footer: false
 ---
+<%
+  readme = site.data.readme
+%>
+<div class="min-h-screen flex flex-col w-full">
+  <%= render "header", page: resource, menu: site.data.menu %>
 
-<p>
-  My <code class="language-plaintext highlighter-rouge">README.md</code>, a
-  document for myself first to reflect on and with, but also to share with new
-  teams, new managers, and new collaborators. It sets expectations, shares my
-  values, and gives a glimpse into how I think.
-</p>
+  <main class="flex-auto">
+    <!-- Hero Section - Terminal Aesthetic -->
+    <section class="relative py-20 md:py-32 overflow-hidden">
+      <%= render "gradient_orbs", preset: "brand" %>
 
-<h2 id="tldr">tl;dr</h2>
+      <!-- Decorative elements -->
+      <div class="absolute top-32 right-[10%] w-20 h-20 border-2 border-brand-300/20 dark:border-brand-700/20 rotate-12 hidden lg:block"></div>
+      <div class="absolute bottom-20 left-[15%] w-12 h-12 bg-accent-400/15 dark:bg-accent-600/10 rounded-full hidden lg:block"></div>
 
-<p>
-  <a href="#what-i-expect">I expect</a> to work with people who are smart &amp;
-  genuine. I need to chart my own path and keep growing. I seek good things out
-  of failure.
-</p>
+      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <!-- Photo with rotated backdrop -->
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="relative max-w-md mx-auto lg:mx-0">
+              <!-- Rotated backdrop card -->
+              <div class="absolute -inset-4 bg-gradient-to-br from-brand-500/20 to-accent-500/20 dark:from-brand-700/30 dark:to-accent-700/20 rounded-3xl rotate-3"></div>
+              <div class="absolute -inset-4 bg-gradient-to-tr from-stone-200/50 to-transparent dark:from-stone-800/50 dark:to-transparent rounded-3xl -rotate-2"></div>
 
-<p>
-  <a href="#how-i-show-up">I show up</a> with trust, high expectations, and a
-  hunger for the best ideas. I'm honest, optimistic, and pragmatic. I value
-  direct communication and hate rules.
-</p>
+              <!-- Photo -->
+              <img
+                src="/assets/img/jesse-mcginnis.jpg"
+                alt="Jesse McGinnis"
+                class="relative w-full rounded-2xl shadow-2xl object-cover aspect-[4/5]" />
+            </div>
+          </div>
 
-<p>
-  <a href="#inspiration">I take inspiration</a> from many others. Their words
-  inspire me, shape how I think, and remind me of the world's vastness.
-</p>
+          <!-- Title and intro -->
+          <div class="lg:col-span-7 order-1 lg:order-2">
+            <%= render "section_header", label: "Personal Operating Manual", color: "brand" %>
 
-<h2 id="what-i-expect">What I expect</h2>
+            <!-- Terminal-style title -->
+            <div class="mb-8 animate-fade-in-up">
+              <h1 class="text-hero text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-stone-900 dark:text-stone-100 mb-2">
+                <code class="font-mono text-brand-600 dark:text-brand-400">README</code><span class="text-stone-400 dark:text-stone-600">.md</span>
+              </h1>
+            </div>
 
-<p>
-  My most critical expectations for the people and places I work and grow with.
-  These questions help me reflect and evaluate fit and progress; guardrails to
-  stay true to myself.
-</p>
+            <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-xl mb-8 animate-fade-in animate-delay-1">
+              What I expect, how I show up, and what inspires me. A document for myself first—and for new teams, managers, and collaborators.
+            </p>
 
-<h3>
-  1. Will I work with people who are scary smart, genuine, optimistic, and who
-  expect more?
-</h3>
+            <!-- Personality badges -->
+            <div class="flex flex-wrap gap-3 animate-fade-in animate-delay-2">
+              <a href="https://www.enneagraminstitute.com/type-8/" class="group inline-flex items-center gap-2 px-4 py-2 bg-brand-100 dark:bg-brand-900/30 border border-brand-200 dark:border-brand-800 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-brand-500/20" target="_blank" rel="external">
+                <span class="text-sm font-bold text-brand-700 dark:text-brand-300">Type 8</span>
+                <span class="text-sm text-brand-600 dark:text-brand-400">"The Challenger"</span>
+                <svg class="w-4 h-4 text-brand-500 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+              <a href="https://www.16personalities.com/enfj-personality" class="group inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/20" target="_blank" rel="external">
+                <span class="text-sm font-bold text-emerald-700 dark:text-emerald-300">ENFJ-A</span>
+                <span class="text-sm text-emerald-600 dark:text-emerald-400">"The Protagonist"</span>
+                <svg class="w-4 h-4 text-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>
-  <strong>Scary smart</strong>: People who are <em>always</em> pushing
-  themselves to be better. People who have gone past "what's necessary" simply
-  because they wanted to see the other side. People I am inspired by and I will
-  learn from. Scary is an important word here: it should be uneasy to keep up
-  with them.
-</p>
+    <!-- tl;dr - Bold Accent Zone -->
+    <section class="accent-zone relative py-20 md:py-28">
+      <!-- Base gradient -->
+      <div class="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 dark:from-black dark:via-stone-950 dark:to-black"></div>
+      <!-- Radial overlays -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_20%_30%,rgba(225,29,72,0.25),transparent)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_80%_70%,rgba(245,158,11,0.15),transparent)]"></div>
 
-<p>
-  <strong>Genuine</strong>: People who make me <em>want</em> to be better.
-  People who care not just about what they do, but <em>how they do it</em>.
-  People who want to know the humans they work with, and likewise want to
-  <em>be known</em>. People who embody honesty, kindness, and authenticity in
-  everything they do.
-</p>
+      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="text-center mb-12">
+          <span class="text-eyebrow text-stone-500">tl;dr</span>
+        </div>
 
-<p>
-  <strong>Optimistic</strong>: Never toxic positivity, but a deeply held belief
-  <em>in a better tomorrow</em>. Always honest about the barriers, but willing
-  to put in the work. People who are excited to learn and grow together. I'm
-  optimistic by nature, and I want to work in a place where the
-  <em>optimists greatly outnumber the pessimists</em>.
-</p>
+        <div class="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          <% readme.tldr.each_with_index do |item, i| %>
+            <a href="#<%= item.anchor %>" class="group block">
+              <div class="relative h-full p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-brand-500/50 group-hover:bg-stone-900/70 group-hover:-translate-y-1">
+                <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-brand-500/0 to-brand-500/0 group-hover:from-brand-500/10 group-hover:to-transparent transition-all"></div>
 
-<p>
-  <strong>Expect more</strong>: I want to be pushed. I want to be challenged. I
-  want to be held accountable. I want a culture of excellence, where we're all
-  here to do <em>our best work</em>. People who are excited by the idea that
-  today is the worst we'll be at what we do.
-</p>
+                <div class="relative">
+                  <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-4 leading-tight">
+                    <%= item.headline %>
+                  </h3>
+                  <p class="text-stone-400 leading-relaxed text-sm">
+                    <%= item.summary %>
+                  </p>
+                  <div class="mt-6 flex items-center gap-2 text-brand-400 text-sm font-medium group-hover:gap-3 transition-all">
+                    Read more
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </a>
+          <% end %>
+        </div>
+      </div>
+    </section>
 
-<h3>
-  2. Will I be able to chart my own path, see my achievements recognized, help
-  others, and scale my responsibilities?
-</h3>
+    <!-- What I Expect - Numbered Cards -->
+    <section id="what-i-expect" class="py-24 md:py-32">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <%= render "section_header", label: "What I Expect", color: "brand" %>
 
-<p>
-  <strong>Chart my own path</strong>: I must be able to
-  <em>choose my own adventure</em>, with guideposts not hard walls. A place that
-  treats employees like the adults they are, and trusts them to make the right
-  decisions. A place that values <em>autonomy</em> and <em>ownership</em>.
-  Defaults, not rules. Capabilities, not titles.
-</p>
+        <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl mb-16">
+          My most critical expectations for the people and places I work and grow with. These questions help me reflect and evaluate fit and progress; guardrails to stay true to myself.
+        </p>
 
-<p>
-  <strong>Achievements recognized</strong>: I put in my all, and expect to be
-  recognized when I achieve incredible things.
-</p>
+        <div class="space-y-8">
+          <% readme.expectations.each_with_index do |expectation, i| %>
+            <div class="group">
+              <div class="relative bg-white dark:bg-stone-900 rounded-3xl border border-stone-200 dark:border-stone-800 overflow-hidden transition-all group-hover:shadow-xl group-hover:border-brand-300/50 dark:group-hover:border-brand-700/50">
+                <!-- Number badge -->
+                <div class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center">
+                  <span class="font-mono text-2xl font-bold text-white"><%= expectation.number %></span>
+                </div>
 
-<p>
-  <strong>Help others</strong>: I want to be able to <em>help others</em>. I
-  want to be able to <em>mentor</em>, <em>coach</em>, and <em>teach</em>. Design
-  programs or work 1:1 with the people around me. A place where we're all here
-  to grow and learn, where I get to help make that happen.
-</p>
+                <div class="pt-8 pb-10 px-8 md:px-12 md:pl-28">
+                  <h3 class="font-serif text-2xl md:text-3xl font-semibold text-stone-900 dark:text-stone-100 mb-8 leading-tight">
+                    <%= expectation.headline %>
+                  </h3>
 
-<p>
-  <strong>Scale my responsibilities</strong>: I want to keep learning new
-  things. There will be phases of mastering skills, but there must be phases of
-  growth and new challenges too. Stagnation is not an option.
-</p>
+                  <div class="grid sm:grid-cols-2 gap-6">
+                    <% expectation.keywords.each do |keyword| %>
+                      <div class="space-y-2">
+                        <h4 class="font-semibold text-brand-600 dark:text-brand-400"><%= keyword.label %></h4>
+                        <p class="text-stone-600 dark:text-stone-400 leading-relaxed text-sm prose prose-sm prose-stone dark:prose-invert prose-em:text-brand-600 dark:prose-em:text-brand-400">
+                          <%= keyword.detail.gsub(/\*([^*]+)\*/, '<em>\1</em>').html_safe %>
+                        </p>
+                      </div>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </section>
 
-<h3>
-  3. Can I win when I fail? Will we win if the company loses? Is this a place where
-  I can push through difficulty and discomfort to something brighter?
-</h3>
+    <!-- How I Show Up - Principles Grid -->
+    <section id="how-i-show-up" class="py-24 md:py-32 bg-stone-50 dark:bg-stone-950">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <%= render "section_header", label: "How I Show Up", color: "emerald" %>
 
-<p>
-  <strong>Winning in failure</strong>: A place that
-  <em>knows failure is a lesson</em>, not something to avoid. Where I can
-  <em>grow</em> from my mistakes. Where I can <em>fail fast</em> and
-  <em>fail forward</em>. Antifragile, not fragile.
-</p>
+        <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl mb-16">
+          Observations about how I show up at my best, not targets. Some learned from self-reflection, much learned through feedback from those I work with.
+        </p>
 
-<p>
-  <strong>Winning in loss</strong>: A place where even if the bet (of the
-  project, job, company) loses, I've gained something good. Growth, learning,
-  relationships, skills. A place where I (and everyone) <em>win</em>, even in
-  loss.
-</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <% readme.principles.each_with_index do |principle, i| %>
+            <div class="group h-full">
+              <div class="relative h-full bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-200 dark:border-stone-800 transition-all group-hover:shadow-xl group-hover:-translate-y-1 group-hover:border-emerald-300/50 dark:group-hover:border-emerald-700/50">
+                <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/5 group-hover:to-transparent transition-all"></div>
 
-<p>
-  <strong>Push through difficulty and discomfort</strong>: A place I
-  <em>believe in</em>. Where what we're here to do is worth sticking through the
-  hard times for.
-</p>
+                <div class="relative">
+                  <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-900/50 dark:to-emerald-800/50 flex items-center justify-center mb-4">
+                    <span class="font-mono text-sm font-bold text-emerald-600 dark:text-emerald-400"><%= i + 1 %></span>
+                  </div>
 
-<h2 id="how-i-show-up">How I show up</h2>
+                  <h4 class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 mb-3">
+                    <%= principle.title %>
+                  </h4>
 
-<p>
-  Observations about how I show up at my best, not targets. Some learned from
-  self-reflection, much learned through feedback from those I work with. I've
-  found these sticky over the last decade, though all have gotten more nuanced
-  with experience, practice, and awareness.
-</p>
+                  <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed prose prose-sm prose-stone dark:prose-invert prose-em:text-emerald-600 dark:prose-em:text-emerald-400">
+                    <%= principle.detail.gsub(/\*([^*]+)\*/, '<em>\1</em>').html_safe %>
+                  </p>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </section>
 
-<p>
-  I love self-reflection through personality typology; it's a good avenue for
-  self-reflection. I'm an
-  <a href="https://www.enneagraminstitute.com/type-8/">Enneagram type 8 "challenger"</a>
-  and a
-  <a href="https://www.16personalities.com/enfj-personality">Myers-Briggs ENFJ-A "protagonist"</a>
-  (T/F oscillate).
-</p>
+    <!-- Inspiration - Quote Galleries -->
+    <section id="inspiration" class="py-24 md:py-32">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <%= render "section_header", label: "Inspiration", color: "accent" %>
 
-<p>That out of the way, my light-weight guideposts for how I show up:</p>
+        <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl mb-16">
+          Wise words from others have shaped my thinking. Some guide what I look for, others have shaped how I try to be, and a few have shaped how I look at the world.
+        </p>
 
-<ol>
-  <li>
-    <strong>I start with trust</strong>. I will share openly with you, and I
-    will <em>trust</em> you can &amp; will do what you say. Warning: if you burn
-    my trust it's a long road back.
-  </li>
-  <li>
-    <strong>I expect your best</strong>. I want people to do and see everything
-    they're capable of. I've learned my expectations are high: I hold what I
-    know you're capable of and will actively help you get there.
-  </li>
-  <li>
-    <strong>I'm honest</strong>. I will not lie, but I might say nothing. I will
-    tell you what I think, clearly and kindly. I expect the same from you.
-  </li>
-  <li>
-    <strong>I'm optimistic</strong>. I believe in a better tomorrow, and I will
-    work to make it happen. I will always look for the silver lining, though
-    will never ignore the storm clouds.
-  </li>
-  <li>
-    <strong>I'm pragmatic</strong>. The world is grey and complex. I will always
-    find a path forward, even if it's not the one I wanted. Never let perfect be
-    the enemy of good enough.
-  </li>
-  <li>
-    <strong>The best ideas win</strong>. Idea labs are fun and where the best
-    results come from. So expect me to argue, push, prod, and question. And I
-    expect the same from you. This is how we get to the best answers.
-  </li>
-  <li>
-    <strong>Communication matters</strong>. Clear is kind. Be direct, concise,
-    and precise with what you communicate. This doesn't mean
-    <em>cold &amp; bare</em> however, pith and context matter.
-  </li>
-  <li>
-    <strong>Don't box me in</strong>. Defaults are powerful; rules are
-    suffocating. If you put a hard line in front of me expect me to interrogate
-    and challenge it. I will always look for the best path forward, and
-    sometimes (often) that means breaking the rules.
-  </li>
-</ol>
+        <!-- What to Seek - Horizontal Cards -->
+        <div class="mb-20">
+          <h3 class="font-serif text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-8">What to seek</h3>
+          <p class="text-stone-600 dark:text-stone-400 mb-8">Nudges and reminders on what to look for in where I spend my time and energy.</p>
 
-<h2 id="inspiration">Inspiration</h2>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <% readme.quotes.seek.each do |quote| %>
+              <div class="group relative bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-200 dark:border-stone-800 transition-all hover:shadow-lg hover:border-accent-300/50 dark:hover:border-accent-700/50">
+                <div class="absolute top-4 left-4 text-6xl text-accent-200 dark:text-accent-900 font-serif leading-none">"</div>
+                <div class="relative pt-6">
+                  <p class="font-serif text-lg text-stone-900 dark:text-stone-100 leading-relaxed mb-4">
+                    <%= quote.text %>
+                  </p>
+                  <p class="text-sm text-stone-500 dark:text-stone-500">— <%= quote.author %></p>
+                </div>
+              </div>
+            <% end %>
+          </div>
+        </div>
 
-<p>
-  Wise words from others have shaped my thinking. Some guide what I look for,
-  others have shaped how I try to be, and a few have shaped how I look at the
-  world.
-</p>
+        <!-- How to Be - Pull Quote Stack -->
+        <div class="mb-20">
+          <h3 class="font-serif text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-8">How to be</h3>
+          <p class="text-stone-600 dark:text-stone-400 mb-8">Guardrails on how to show up, how to think, and how to act.</p>
 
-<h3 id="what-to-seek">What to seek</h3>
+          <div class="space-y-6 max-w-3xl">
+            <% readme.quotes.be.each do |quote| %>
+              <blockquote class="relative pl-8 border-l-4 border-brand-500">
+                <p class="font-serif text-xl md:text-2xl text-stone-700 dark:text-stone-300 leading-relaxed mb-3">
+                  "<%= quote.text %>"
+                </p>
+                <cite class="text-sm text-stone-500 dark:text-stone-500 not-italic">— <%= quote.author %></cite>
+              </blockquote>
+            <% end %>
+          </div>
+        </div>
 
-<p>
-  Nudges and reminders on what to look for in where I spend my time and energy.
-</p>
+        <!-- To Remember - Bold Accent for Sagan -->
+        <div>
+          <h3 class="font-serif text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-8">To remember about the world</h3>
+          <p class="text-stone-600 dark:text-stone-400 mb-8">Less directed, but essential reminders which help me recenter and refocus.</p>
 
-<blockquote>
-  <p>"Work on something uncomfortably exciting." — Larry Page</p>
-</blockquote>
+          <!-- Short quotes first -->
+          <div class="space-y-4 max-w-3xl mb-12">
+            <% readme.quotes.remember.each do |quote| %>
+              <blockquote class="relative pl-8 border-l-4 border-stone-300 dark:border-stone-700">
+                <p class="font-serif text-lg text-stone-700 dark:text-stone-300 leading-relaxed mb-2">
+                  "<%= quote.text %>"
+                </p>
+                <cite class="text-sm text-stone-500 dark:text-stone-500 not-italic">— <%= quote.author %></cite>
+              </blockquote>
+            <% end %>
+          </div>
 
-<blockquote>
-  <p>
-    "Choose things that will make you smarter in 10 or 20 years." — Warren
-    Buffett
-  </p>
-</blockquote>
+          <!-- Sagan - Full Width Bold Accent -->
+          <div class="relative rounded-3xl overflow-hidden">
+            <!-- Background -->
+            <div class="absolute inset-0 bg-gradient-to-br from-stone-900 via-stone-950 to-black"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_100%_60%_at_50%_0%,rgba(59,130,246,0.15),transparent)]"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_40%_at_20%_100%,rgba(225,29,72,0.10),transparent)]"></div>
 
-<blockquote>
-  <p>"Look for smart people and hard problems." — Paul Graham</p>
-</blockquote>
+            <!-- Pale Blue Dot decoration -->
+            <div class="absolute top-8 right-8 w-3 h-3 bg-sky-400 rounded-full shadow-lg shadow-sky-400/50 animate-pulse"></div>
 
-<blockquote>
-  <p>
-    "Not everything that is faced can be changed. But nothing can be changed
-    until it is faced." — James Arthur Baldwin
-  </p>
-</blockquote>
+            <div class="relative z-10 p-8 md:p-12 lg:p-16">
+              <div class="max-w-3xl mx-auto">
+                <div class="prose prose-lg prose-invert prose-p:text-stone-300 prose-p:leading-relaxed prose-p:mb-6">
+                  <% readme.sagan.split("\n\n").each do |paragraph| %>
+                    <p class="font-serif text-lg md:text-xl"><%= paragraph %></p>
+                  <% end %>
+                </div>
+                <p class="text-right text-stone-500 mt-8 text-lg">— Carl Sagan, <em>Pale Blue Dot</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<h3 id="how-to-be">How to be</h3>
+    <!-- Connect CTA - Bold Accent -->
+    <section class="relative py-28 md:py-40 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-600 via-brand-700 to-stone-900">
+        <div class="absolute inset-0 pattern-plus opacity-30"></div>
+      </div>
 
-<p>Guardrails on how to show up, how to think, and how to act.</p>
+      <div class="absolute top-1/2 left-[15%] -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 right-[15%] -translate-y-1/2 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl"></div>
 
-<blockquote>
-  <p>
-    "We are what we repeatedly do. Excellence, therefore, is not an act, but a
-    habit." — Aristotle
-  </p>
-</blockquote>
+      <div class="absolute top-20 left-[10%] w-16 h-16 border-2 border-white/10 rotate-12 hidden lg:block"></div>
+      <div class="absolute bottom-20 right-[10%] w-24 h-24 border-2 border-white/10 -rotate-6 hidden lg:block"></div>
 
-<blockquote>
-  <p>
-    "We judge others by their behavior. We judge ourselves by our intentions." -
-    Ian Percy
-  </p>
-</blockquote>
+      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="max-w-3xl mx-auto text-center">
+          <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white mb-6">
+            Want to work together?
+          </h2>
+          <p class="text-lg md:text-xl text-white/70 max-w-xl mx-auto mb-12">
+            I'm always interested in conversations with fellow builders and leaders. Don't be a stranger.
+          </p>
 
-<blockquote>
-  <p>
-    "It is the mark of an educated mind to be able to entertain a thought
-    without accepting it." — Aristotle
-  </p>
-</blockquote>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="mailto:jesse@jcmcginnis.com" class="group inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Email me
+            </a>
+          </div>
 
-<blockquote>
-  <p>
-    "You must never be satisfied with losing. You must get angry, terribly
-    angry, about losing. But the mark of the good loser is that he takes his
-    anger out on himself and not his victorious opponents or on his teammates."
-    — Richard M. Nixon
-  </p>
-</blockquote>
+          <div class="mt-10">
+            <%= render "social_links", style: "pills", show_labels: true, color: "white" %>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<blockquote>
-  <p>
-    "Be soft. Do not let the world make you hard. Do not let pain make you hate.
-    Do not let the bitterness steal your sweetness. Take pride that even though
-    the rest of the world may disagree, you still believe it to be a beautiful
-    place." — Kurt Vonnegut
-  </p>
-</blockquote>
-
-<h3 id="to-remember-about-the-world">To remember about the world</h3>
-
-<p>
-  Less directed, but essential reminders which help me recenter and refocus.
-</p>
-
-<blockquote>
-  <p>
-    "All that is necessary for the triumph of evil is that good men do nothing."
-    — Edmund Burke
-  </p>
-</blockquote>
-
-<blockquote>
-  <p>
-    "It is not power that corrupts but fear. Fear of losing power corrupts those
-    who wield it and fear of the scourge of power corrupts those who are subject
-    to it." — Aung San Suu Kyi, Freedom from Fear
-  </p>
-</blockquote>
-
-<blockquote>
-  <p>
-    Look again at that dot. That's here. That's home. That's us. On it everyone
-    you love, everyone you know, everyone you ever heard of, every human being
-    who ever was, lived out their lives. The aggregate of our joy and suffering,
-    thousands of confident religions, ideologies, and economic doctrines, every
-    hunter and forager, every hero and coward, every creator and destroyer of
-    civilization, every king and peasant, every young couple in love, every
-    mother and father, hopeful child, inventor and explorer, every teacher of
-    morals, every corrupt politician, every "superstar," every "supreme leader,"
-    every saint and sinner in the history of our species lived there-on a mote
-    of dust suspended in a sunbeam.
-  </p>
-
-  <p>
-    The Earth is a very small stage in a vast cosmic arena. Think of the endless
-    cruelties visited by the inhabitants of one corner of this pixel on the
-    scarcely distinguishable inhabitants of some other corner, how frequent
-    their misunderstandings, how eager they are to kill one another, how fervent
-    their hatreds. Think of the rivers of blood spilled by all those generals
-    and emperors so that, in glory and triumph, they could become the momentary
-    masters of a fraction of a dot.
-  </p>
-
-  <p>
-    Our posturings, our imagined self-importance, the delusion that we have some
-    privileged position in the Universe, are challenged by this point of pale
-    light. Our planet is a lonely speck in the great enveloping cosmic dark. In
-    our obscurity, in all this vastness, there is no hint that help will come
-    from elsewhere to save us from ourselves.
-  </p>
-
-  <p>
-    The Earth is the only world known so far to harbor life. There is nowhere
-    else, at least in the near future, to which our species could migrate.
-    Visit, yes. Settle, not yet. Like it or not, for the moment the Earth is
-    where we make our stand.
-  </p>
-
-  <p>
-    It has been said that astronomy is a humbling and character-building
-    experience. There is perhaps no better demonstration of the folly of human
-    conceits than this distant image of our tiny world. To me, it underscores
-    our responsibility to deal more kindly with one another, and to preserve and
-    cherish the pale blue dot, the only home we've ever known.
-  </p>
-
-  <p>— Carl Sagan</p>
-</blockquote>
+  <%= render "footer" %>
+</div>
