@@ -1,0 +1,154 @@
+---
+description: Site design system - colors, typography, components, page identities
+globs: ["**/*.erb", "**/*.css", "**/*.html"]
+alwaysApply: false
+---
+
+# Design System: The Challenger's Manifesto
+
+A bold, editorial aesthetic that reflects confidence and authenticity. Warm tones, generous whitespace, and distinctive typography.
+
+## Color Vocabulary
+
+| Name | Role | Values | Usage |
+|------|------|--------|-------|
+| **Brand (terracotta)** | Primary accent | `brand-500` to `brand-700` | Links, CTAs, post accents |
+| **Accent (amber)** | Secondary warmth | `accent-500` to `accent-600` | Highlights, talks section |
+| **Emerald** | Growth, evolution | `emerald-500` | Shopify era, philosophy sections |
+| **Sky/Blue** | Current, active | `sky-500` | GrowthLoop era, in-progress states |
+| **Stone** | Neutrals | Full scale | Text, backgrounds, borders |
+
+**Rule:** Brand and accent are warm. Never use cold blues/purples as primary accents.
+
+## Typography
+
+| Face | Role | Usage |
+|------|------|-------|
+| **Fraunces (serif)** | Display, headlines | Page titles, section headers, pull-quotes |
+| **Inter (sans)** | Body, UI | Paragraphs, navigation, buttons |
+| **System mono** | Technical | Eyebrows, labels, code, dates |
+
+**Rule:** Headlines are always serif. Body is always sans. Eyebrows are always mono.
+
+### Typography Utilities
+
+- `text-hero` — Hero display, extra large serif
+- `text-display` — Page section headers
+- `text-subhead` — Italic editorial subhead
+- `text-eyebrow` — Monospace uppercase labels
+- `text-gradient` — Gradient text effect
+
+## Component Patterns
+
+### Bold Accent Section
+
+Dark contrast zone with radial gradient overlays. Use for high-impact moments only.
+
+```erb
+<%= render "bold_accent", color: "brand" do %>
+  <!-- Content here -->
+<% end %>
+```
+
+**When to use:** Featured content, philosophy statements, CTAs. NOT for regular content sections.
+
+### Section Header (Eyebrow Pattern)
+
+```erb
+<%= render "section_header", label: "Featured", color: "brand" %>
+```
+
+### Cards
+
+- Background: `bg-white dark:bg-stone-800`
+- Border: `border border-stone-200 dark:border-stone-700`
+- Radius: `rounded-2xl`
+- Hover: `-translate-y-1` + `shadow-xl`
+
+### CTA Buttons
+
+- Primary: `bg-stone-900 dark:bg-stone-100` → `hover:bg-brand-600`
+- Secondary: `border-2 border-stone-300` → `hover:border-brand-500`
+- Shape: `rounded-full`
+- Hover: `hover:scale-105`
+
+## Page Identities
+
+| Page | Identity | Unique Element | Color Accent |
+|------|----------|----------------|--------------|
+| Homepage | The Origin Story | Timeline (UNIQUE) | Brand/Emerald/Sky |
+| Blog | The Magazine | Year anchors | Brand |
+| Talks | The Portfolio | Philosophy cards | Accent/Emerald |
+| README | The Manifesto | Quote galleries | Brand |
+| Post | Editorial Feature | Pull-quotes | Brand |
+| Talk | Speaker Profile | Event badge | Accent |
+
+**Rule:** Homepage timeline is UNIQUE. Do not replicate timeline mechanics elsewhere.
+
+## Shared Partials
+
+| Partial | Purpose |
+|---------|---------|
+| `_bold_accent.erb` | Dark section with gradient overlays |
+| `_section_header.erb` | Eyebrow + line pattern |
+| `_card.erb` | Content card with hover effects |
+| `_cta_button.erb` | Primary/secondary buttons |
+| `_social_links.erb` | Social media link row |
+| `_gradient_orbs.erb` | Decorative background blobs |
+
+## Timelessness Rules
+
+**DO:**
+
+- Warm palette over cold/tech
+- Editorial confidence over flashy effects
+- Subtle motion (scroll reveals, gentle hovers)
+- Generous whitespace
+- Geometric shapes over organic blobs
+
+**DON'T:**
+
+- Glassmorphism or blur-heavy cards
+- Neubrutalism
+- 3D transforms or perspective
+- Parallax chaos
+- Pastel gradients
+
+## Common Patterns
+
+### Eyebrow + Line
+
+```erb
+<div class="flex items-center gap-3 mb-8">
+  <div class="w-12 h-0.5 bg-brand-500"></div>
+  <span class="text-eyebrow text-brand-600 dark:text-brand-400">Label</span>
+</div>
+```
+
+### Card with Hover
+
+```erb
+<article class="group bg-white dark:bg-stone-800 rounded-2xl p-8 border border-stone-200 dark:border-stone-700 transition-all hover:shadow-xl hover:-translate-y-1">
+  <!-- Content -->
+</article>
+```
+
+### Gradient Text
+
+```erb
+<span class="text-gradient bg-gradient-to-r from-brand-600 via-brand-500 to-accent-500">
+  Gradient text
+</span>
+```
+
+### Bold Accent Zone
+
+```erb
+<section class="accent-zone relative">
+  <div class="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900"></div>
+  <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_20%_30%,rgba(225,29,72,0.25),transparent)]"></div>
+  <div class="relative z-10">
+    <!-- Content -->
+  </div>
+</section>
+```

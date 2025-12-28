@@ -137,3 +137,12 @@ Alternative: Negative margins for simpler cases:
   margin-top: -2rem;
 }
 ```
+
+## Bold Accent Pattern
+
+For the site's high-contrast dark sections, see `design-system.mdc`. Use the `_bold_accent.erb` partial rather than recreating manually. The pattern includes:
+
+- Dark gradient base (works in both light/dark modes)
+- Colored radial gradient overlays
+- Optional pattern texture overlay
+- Proper z-index stacking for content

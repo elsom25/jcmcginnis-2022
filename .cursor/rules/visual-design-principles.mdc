@@ -47,6 +47,8 @@ The combination creates perceived depth without any single layer being obvious.
 - In dark sections, colored overlays should be visible in BOTH light and dark modes
 - Test at multiple scroll positions and viewport sizes
 
+**Site palette:** See `design-system.mdc` for the brand/accent/emerald/sky vocabulary.
+
 ## The "Off" Feeling
 
 Trust your gut when something feels "off." Common causes:
