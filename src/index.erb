@@ -110,23 +110,24 @@ skip_footer: true
 
       <!-- Timeline Container -->
       <div id="timeline-container" class="relative">
-        <!-- Timeline Track - Dull background, gradient fills on scroll with glow -->
+        <!-- Timeline Track - Dull background, gradient fills on scroll with layered glow -->
         <!-- z-[1] keeps it below the era containers which have z-[2] -->
         <div id="timeline-track" class="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 z-[1]">
           <!-- Dull/dark background track (always visible) -->
           <div class="absolute inset-0 rounded-full bg-stone-700/30"></div>
-          <!-- Glow wrapper - NOT clipped, follows fill height -->
-          <div id="timeline-glow" class="absolute top-0 left-1/2 -translate-x-1/2 w-20 pointer-events-none" style="height: 0%;">
-            <!-- Outer glow (wide, soft) -->
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 h-full w-12 rounded-full blur-xl opacity-60" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
-            <!-- Inner glow (tighter, brighter) -->
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 h-full w-6 rounded-full blur-md opacity-80" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
-          </div>
-          <!-- Fill wrapper - clips the core line only -->
+          <!-- Core fill wrapper - clips the main line -->
           <div id="timeline-fill" class="absolute top-0 left-0 right-0 overflow-hidden rounded-full" style="height: 0%;">
-            <!-- Core gradient line (sharp) -->
-            <div class="absolute top-0 left-0 right-0 h-[3000px] rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-[3000px] rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
           </div>
+        </div>
+        <!-- Glow - soft ambient light using blur to create natural soft edges -->
+        <div id="timeline-glow" class="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none" style="width: 200px; height: 0px;">
+          <!-- Wide ambient bloom - very large blur creates natural soft edges -->
+          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-16 rounded-full opacity-[0.12]" style="height: 100%; filter: blur(40px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
+          <!-- Mid glow layer -->
+          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-8 rounded-full opacity-[0.18]" style="height: 100%; filter: blur(24px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
+          <!-- Inner glow - tighter but still soft -->
+          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-4 rounded-full opacity-[0.22]" style="height: 100%; filter: blur(12px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
         </div>
 
         <%# Global lesson index for alternating sides across all eras %>
@@ -572,38 +573,41 @@ function initTimelineFill() {
 
   if (!track || !fill || !glow || !thesis || !container || !firstLesson) return;
 
-  // Position timeline from first lesson to thesis card top
+  let trackHeight = 0;
+
+  // Position timeline and glow from first lesson to thesis card top
   function positionTimeline() {
-    // Calculate in document coordinates
     const startY = firstLesson.offsetTop + 32; // Start below first dot
     const thesisSection = document.getElementById('thesis-section');
     const endY = thesisSection.offsetTop + thesis.offsetTop; // End at thesis card top
 
-    const height = Math.max(100, endY - startY);
+    trackHeight = Math.max(100, endY - startY);
 
     track.style.top = `${startY}px`;
-    track.style.height = `${height}px`;
+    track.style.height = `${trackHeight}px`;
+    // Position glow to match track (height animated separately)
+    glow.style.top = `${startY}px`;
   }
 
   // Position on load and resize
   positionTimeline();
-  setTimeout(positionTimeline, 100); // Reposition after fonts/layout settle
+  setTimeout(positionTimeline, 100);
   window.addEventListener('resize', () => {
     positionTimeline();
     ScrollTrigger.refresh();
   });
 
-  // Scroll-driven fill animation (scrub ensures it reverts on scroll up)
+  // Scroll-driven fill + glow animation (scrub ensures it reverts on scroll up)
   ScrollTrigger.create({
     trigger: firstLesson,
     start: 'top 70%',
     endTrigger: thesis,
     end: 'top 60%',
-    scrub: 0.5, // Smooth scrub, follows scroll in both directions
+    scrub: 0.5,
     onUpdate: (self) => {
-      const heightPercent = `${self.progress * 100}%`;
-      fill.style.height = heightPercent;
-      glow.style.height = heightPercent; // Animate glow with fill
+      const progress = self.progress;
+      fill.style.height = `${progress * 100}%`;
+      glow.style.height = `${progress * trackHeight}px`;
     }
   });
 }
