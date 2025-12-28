@@ -1,9 +1,13 @@
 <% is_home = page.relative_url == "/" %>
 <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-bg-light/95 dark:bg-bg-dark/95 border-b border-stone-200/50 dark:border-stone-800/50">
+  <!-- Accent gradient bar at top -->
+  <div class="absolute top-0 left-0 right-0 h-0.5 bg-accent-gradient opacity-80"></div>
+
   <%= render "container" do %>
-    <div class="flex items-center justify-between h-14">
-      <a href="/" class="group flex items-center gap-2" aria-label="Home">
-        <span class="text-brand-500 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo/Name -->
+      <a href="/" class="group flex items-center gap-3" aria-label="Home">
+        <span class="relative flex items-center justify-center w-9 h-9 rounded-lg bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 group-hover:bg-brand-200 dark:group-hover:bg-brand-900/50 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
           </svg>

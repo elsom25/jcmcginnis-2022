@@ -1,47 +1,130 @@
 ---
 layout: default
 ---
-<div class="max-w-3xl mx-auto">
-  <header class="text-center mb-10 animate-fade-in">
-    <div class="flex items-center justify-center gap-3 mb-4">
+<%
+  # Check if this is a featured post
+  is_featured = resource.data.home || resource.data.featured
+  has_image = resource.data.image.present?
+
+  # Get related posts (same category, excluding current)
+  current_categories = resource.data.categories || []
+  related_posts = collections.posts.resources
+    .reject { |p| p.relative_url == resource.relative_url }
+    .select { |p| (p.data.categories || []).any? { |c| current_categories.include?(c) } }
+    .first(2)
+%>
+
+<!-- Reading progress bar -->
+<div id="reading-progress" class="fixed top-0 left-0 right-0 h-1 bg-transparent z-50">
+  <div id="progress-bar" class="h-full bg-gradient-to-r from-brand-500 to-accent-500 transition-all duration-100" style="width: 0%"></div>
+</div>
+
+<article class="max-w-4xl mx-auto">
+  <!-- Post header -->
+  <header class="text-center mb-12 animate-fade-in">
+    <!-- Meta info -->
+    <div class="flex items-center justify-center gap-3 mb-6">
       <span class="text-sm text-stone-400 dark:text-stone-600"><%= resource.date.strftime("%B %e, %Y") %></span>
       <% resource.data.categories&.each do |category| %>
-        <a class="text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors" href="<%= category_url(category) %>"><%= category %></a>
+        <a href="<%= category_url(category) %>" class="group inline-flex items-center px-3 py-1 text-xs font-bold uppercase tracking-wider bg-brand-100 dark:bg-brand-900/30 text-brand-700 dark:text-brand-300 rounded-full transition-all hover:bg-brand-200 dark:hover:bg-brand-900/50 hover:shadow-lg hover:shadow-brand-500/20">
+          <%= category %>
+        </a>
       <% end %>
     </div>
-    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight"><%= resource.data.title %></h1>
+
+    <!-- Title -->
+    <h1 class="text-hero text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-stone-900 dark:text-stone-100 mb-6">
+      <%= resource.data.title %>
+    </h1>
+
     <% if resource.data.description %>
-      <p class="mt-4 text-lg text-stone-600 dark:text-stone-400"><%= resource.data.description %></p>
+      <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 max-w-2xl mx-auto leading-relaxed">
+        <%= resource.data.description %>
+      </p>
     <% end %>
   </header>
 
-  <% if resource.data.image %>
-    <figure class="mb-12 rounded-xl overflow-hidden shadow-lg animate-fade-in animate-delay-1">
+  <% if has_image %>
+    <!-- Featured image -->
+    <figure class="mb-12 rounded-2xl overflow-hidden shadow-2xl animate-fade-in animate-delay-1">
       <img width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" class="w-full" />
     </figure>
   <% else %>
-    <div class="flex items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-1" aria-hidden="true">
-      <span class="flex-grow max-w-16 h-px bg-gradient-to-r from-transparent to-brand-300 dark:to-brand-800"></span>
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-brand-400 dark:fill-brand-600" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
-      </svg>
-      <span class="flex-grow max-w-16 h-px bg-gradient-to-l from-transparent to-brand-300 dark:to-brand-800"></span>
+    <!-- Decorative divider -->
+    <div class="flex items-center justify-center gap-6 mb-12 animate-fade-in animate-delay-1" aria-hidden="true">
+      <span class="flex-grow max-w-24 h-px bg-gradient-to-r from-transparent to-brand-300 dark:to-brand-800"></span>
+      <div class="deco-diamond"></div>
+      <span class="flex-grow max-w-24 h-px bg-gradient-to-l from-transparent to-brand-300 dark:to-brand-800"></span>
     </div>
   <% end %>
 
-  <article class="max-w-2xl mx-auto prose prose-quoteless prose-stone prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight prose-p:leading-relaxed prose-a:font-medium prose-blockquote:border-l-brand-400 prose-blockquote:font-serif prose-blockquote:not-italic md:prose-lg dark:prose-invert animate-fade-in animate-delay-2">
+  <!-- Article content with enhanced prose styling -->
+  <div class="max-w-2xl mx-auto prose prose-lg prose-quoteless prose-stone dark:prose-invert
+    prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight
+    prose-p:leading-relaxed prose-p:text-stone-700 dark:prose-p:text-stone-300
+    prose-a:font-medium prose-a:text-brand-600 dark:prose-a:text-brand-400
+    prose-blockquote:border-l-4 prose-blockquote:border-brand-400 dark:prose-blockquote:border-brand-600
+    prose-blockquote:font-serif prose-blockquote:not-italic prose-blockquote:text-xl prose-blockquote:leading-relaxed
+    prose-strong:text-stone-900 dark:prose-strong:text-stone-100
+    animate-fade-in animate-delay-2">
     <%= yield %>
-  </article>
+  </div>
 
-  <!-- Post footer with share/navigation -->
-  <footer class="mt-16 pt-8 border-t border-stone-200 dark:border-stone-800">
-    <div class="flex items-center justify-between">
-      <a href="/blog/" class="text-sm font-medium text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 transition-colors">
-        ← Back to all writing
+  <!-- Post footer -->
+  <footer class="max-w-2xl mx-auto mt-16 pt-8 border-t border-stone-200 dark:border-stone-800">
+    <div class="flex items-center justify-between mb-12">
+      <a href="/blog/" class="group inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 font-semibold hover:gap-3 transition-all">
+        <svg class="w-5 h-5 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+        </svg>
+        Back to all writing
       </a>
-      <a href="https://twitter.com/intent/tweet?text=<%= CGI.escape(resource.data.title) %>&url=<%= CGI.escape("https://jcmcginnis.com#{resource.relative_url}") %>" class="text-sm text-stone-500 dark:text-stone-500 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" target="_blank" rel="external">
+      <a href="https://twitter.com/intent/tweet?text=<%= CGI.escape(resource.data.title) %>&url=<%= CGI.escape("https://jcmcginnis.com#{resource.relative_url}") %>" class="inline-flex items-center gap-2 text-sm text-stone-500 dark:text-stone-500 hover:text-brand-600 dark:hover:text-brand-400 transition-colors" target="_blank" rel="external">
+        <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+          <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"></path>
+        </svg>
         Share on X
       </a>
     </div>
+
+    <% if related_posts.any? %>
+      <!-- Related posts -->
+      <div class="pt-8 border-t border-stone-200 dark:border-stone-800">
+        <h3 class="font-serif text-xl font-semibold text-stone-900 dark:text-stone-100 mb-6">Continue reading</h3>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <% related_posts.each do |post| %>
+            <a href="<%= post.relative_url %>" class="group block p-6 rounded-xl bg-stone-50 dark:bg-stone-900/50 border border-stone-200 dark:border-stone-800 transition-all hover:shadow-lg hover:-translate-y-1 hover:border-brand-300 dark:hover:border-brand-700">
+              <span class="text-xs text-stone-400 dark:text-stone-600"><%= post.date.strftime("%B %Y") %></span>
+              <h4 class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 mt-2 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                <%= post.data.title %>
+              </h4>
+            </a>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
   </footer>
-</div>
+</article>
+
+<script>
+// Reading progress bar
+document.addEventListener('DOMContentLoaded', () => {
+  const progressBar = document.getElementById('progress-bar');
+  const article = document.querySelector('article');
+
+  if (progressBar && article) {
+    window.addEventListener('scroll', () => {
+      const articleTop = article.offsetTop;
+      const articleHeight = article.offsetHeight;
+      const windowHeight = window.innerHeight;
+      const scrollY = window.scrollY;
+
+      const progress = Math.min(100, Math.max(0,
+        ((scrollY - articleTop + windowHeight * 0.3) / articleHeight) * 100
+      ));
+
+      progressBar.style.width = `${progress}%`;
+    });
+  }
+});
+</script>

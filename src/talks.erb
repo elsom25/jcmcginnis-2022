@@ -8,96 +8,108 @@ skip_footer: false
   <%= render "header", page: resource, menu: site.data.menu %>
 
   <main class="flex-auto">
-    <!-- Hero (simplified) -->
-    <section class="relative py-20 md:py-32 overflow-hidden">
-      <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-accent-200/20 to-transparent rounded-full blur-3xl dark:from-accent-900/10"></div>
-      </div>
+    <!-- Hero Section -->
+    <section class="relative py-24 md:py-36 overflow-hidden">
+      <%= render "gradient_orbs", preset: "accent" %>
+
+      <!-- Decorative elements -->
+      <div class="absolute top-20 right-[15%] w-20 h-20 border-2 border-accent-300/20 dark:border-accent-700/20 rotate-12 hidden lg:block animate-float"></div>
+      <div class="absolute bottom-24 right-[25%] w-12 h-12 bg-emerald-400/15 dark:bg-emerald-600/10 rounded-full hidden lg:block animate-float-delayed"></div>
 
       <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12">
         <div class="max-w-4xl">
-          <div class="flex items-center gap-3 mb-8">
-            <div class="w-12 h-0.5 bg-accent-500"></div>
-            <span class="text-sm font-mono uppercase tracking-widest text-accent-600 dark:text-accent-400">Speaking</span>
-          </div>
+          <%= render "section_header", label: "Speaking", color: "accent" %>
 
-          <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-stone-900 dark:text-stone-100 leading-[1.15] tracking-tight mb-8">
+          <h1 class="text-hero text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-stone-900 dark:text-stone-100 mb-8 animate-fade-in-up">
             I don't speak often,<br class="hidden sm:block" />
             but when I do it's about<br class="hidden lg:block" />
-            <span class="text-accent-600 dark:text-accent-400">what actually works.</span>
+            <span class="text-gradient bg-gradient-to-r from-accent-500 via-accent-600 to-emerald-500">what actually works.</span>
           </h1>
 
-          <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl">
+          <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl animate-fade-in animate-delay-2">
             Hard-won lessons from a decade of building and leading engineering teams. No frameworks for frameworks' sake—just the stuff that's made a real difference.
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Philosophy Section -->
-    <section class="py-20 md:py-28 bg-stone-900 dark:bg-stone-950">
-      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
-        <div class="flex items-center gap-4 mb-16">
-          <div class="w-16 h-0.5 bg-accent-500"></div>
-          <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500">What I Talk About</h2>
-        </div>
+    <!-- Philosophy Section - Bold Accent Zone (inlined) -->
+    <section class="accent-zone relative py-20 md:py-28">
+      <!-- Base gradient -->
+      <div class="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 dark:from-black dark:via-stone-950 dark:to-black"></div>
+      <!-- Mixed color overlays -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_10%_20%,rgba(225,29,72,0.25),transparent)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_90%_40%,rgba(16,185,129,0.20),transparent)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_30%_80%,rgba(59,130,246,0.20),transparent)]"></div>
 
-        <div class="grid gap-16 md:gap-20 max-w-4xl">
+      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <%= render "section_header", label: "What I Talk About", color: "stone", size: "small" %>
+
+        <div class="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl">
           <!-- High-Trust Teams -->
-          <div class="group">
-            <div class="flex items-start gap-6">
-              <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-lg shadow-brand-500/20">
-                <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-serif text-2xl md:text-3xl font-semibold text-white mb-3">
+          <div class="group reveal-on-scroll" style="--stagger: 0">
+            <div class="relative p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-brand-500/30 group-hover:bg-stone-900/70">
+              <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-brand-500/0 to-brand-500/0 group-hover:from-brand-500/10 group-hover:to-transparent transition-all"></div>
+
+              <div class="relative">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-lg shadow-brand-500/20 mb-6">
+                  <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                  </svg>
+                </div>
+
+                <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-2">
                   High-Trust Teams
                 </h3>
-                <p class="text-lg text-brand-400 mb-4">The foundation of everything.</p>
-                <p class="text-stone-400 leading-relaxed">
-                  Trust is the multiplier. Teams that have it move faster, take bigger swings, and recover from failure with grace. I share how to build it intentionally—through authenticity, psychological safety, and the small daily choices that compound.
+                <p class="text-sm text-brand-400 mb-4">The foundation of everything.</p>
+                <p class="text-stone-400 leading-relaxed text-sm">
+                  Trust is the multiplier. Teams that have it move faster, take bigger swings, and recover from failure with grace. I share how to build it intentionally.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- Directed Chaos -->
-          <div class="group">
-            <div class="flex items-start gap-6">
-              <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg shadow-emerald-500/20">
-                <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-serif text-2xl md:text-3xl font-semibold text-white mb-3">
+          <div class="group reveal-on-scroll" style="--stagger: 1">
+            <div class="relative p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-emerald-500/30 group-hover:bg-stone-900/70">
+              <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/10 group-hover:to-transparent transition-all"></div>
+
+              <div class="relative">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg shadow-emerald-500/20 mb-6">
+                  <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                  </svg>
+                </div>
+
+                <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-2">
                   Directed Chaos
                 </h3>
-                <p class="text-lg text-emerald-400 mb-4">Embracing turbulence over comfort.</p>
-                <p class="text-stone-400 leading-relaxed">
-                  Most leaders optimize for stability. I optimize for resilience. Layoffs, pivots, reorgs—not avoiding chaos, but harnessing it. Comfort is where growth goes to die.
+                <p class="text-sm text-emerald-400 mb-4">Embracing turbulence over comfort.</p>
+                <p class="text-stone-400 leading-relaxed text-sm">
+                  Most leaders optimize for stability. I optimize for resilience. Layoffs, pivots, reorgs—not avoiding chaos, but harnessing it.
                 </p>
               </div>
             </div>
           </div>
 
           <!-- High-Agency Leadership -->
-          <div class="group">
-            <div class="flex items-start gap-6">
-              <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center shadow-lg shadow-accent-500/20">
-                <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                </svg>
-              </div>
-              <div>
-                <h3 class="font-serif text-2xl md:text-3xl font-semibold text-white mb-3">
+          <div class="group reveal-on-scroll" style="--stagger: 2">
+            <div class="relative p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-accent-500/30 group-hover:bg-stone-900/70">
+              <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-accent-500/0 to-accent-500/0 group-hover:from-accent-500/10 group-hover:to-transparent transition-all"></div>
+
+              <div class="relative">
+                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center shadow-lg shadow-accent-500/20 mb-6">
+                  <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
+                  </svg>
+                </div>
+
+                <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-2">
                   High-Agency Leadership
                 </h3>
-                <p class="text-lg text-accent-400 mb-4">Building teams that don't need you.</p>
-                <p class="text-stone-400 leading-relaxed">
-                  The best thing you can build is a team that doesn't need you. Hold people to a bar they thought was impossible, then watch them clear it. Most people deeply underestimate themselves—your job is to help them see what they're capable of.
+                <p class="text-sm text-accent-400 mb-4">Building teams that don't need you.</p>
+                <p class="text-stone-400 leading-relaxed text-sm">
+                  The best thing you can build is a team that doesn't need you. Hold people to a bar they thought was impossible.
                 </p>
               </div>
             </div>
@@ -106,63 +118,85 @@ skip_footer: false
       </div>
     </section>
 
-    <!-- Past Speaking -->
+    <!-- Past Speaking - Card Layout -->
     <% all_talks = collections.talks.resources.sort_by { |t| -t.data.year } %>
     <% if all_talks.any? %>
-      <section class="py-20 md:py-28">
+      <section class="py-24 md:py-32">
         <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
-          <div class="flex items-center gap-4 mb-12">
-            <div class="w-16 h-0.5 bg-stone-300 dark:bg-stone-700"></div>
-            <h2 class="text-sm font-mono uppercase tracking-widest text-stone-500 dark:text-stone-500">Past Speaking</h2>
-          </div>
+          <%= render "section_header", label: "Past Speaking", color: "stone" %>
 
-          <div class="max-w-4xl space-y-0">
-            <% all_talks.each do |talk| %>
-              <div class="group flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8 py-5 border-b border-stone-200 dark:border-stone-800">
-                <span class="text-sm font-mono text-stone-400 dark:text-stone-600 tabular-nums w-12"><%= talk.data.year %></span>
-                <div class="flex-1 min-w-0">
-                  <a href="<%= talk.relative_url %>" class="font-semibold text-stone-900 dark:text-stone-100 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
-                    <%= talk.data.title %>
-                  </a>
-                  <span class="text-stone-500 dark:text-stone-500"> · <%= talk.data.event %></span>
-                  <% if talk.data.type == "workshop" %>
-                    <span class="ml-2 px-2 py-0.5 text-xs font-medium uppercase tracking-wider bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400 rounded">Workshop</span>
-                  <% end %>
-                </div>
-                <div class="flex items-center gap-4 text-sm shrink-0">
-                  <% if talk.data.video_url %>
-                    <a href="<%= talk.data.video_url %>" class="text-stone-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors" rel="external" target="_blank">Video</a>
-                  <% end %>
-                  <% if talk.data.slides_url %>
-                    <a href="<%= talk.data.slides_url %>" class="text-stone-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors" rel="external" target="_blank">Slides</a>
-                  <% end %>
-                </div>
-              </div>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <% all_talks.each_with_index do |talk, i| %>
+              <article class="group reveal-on-scroll" style="--stagger: <%= i %>">
+                <a href="<%= talk.relative_url %>" class="block h-full">
+                  <div class="relative h-full bg-white dark:bg-stone-900 rounded-2xl p-6 border border-stone-200 dark:border-stone-800 transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1 group-hover:border-accent-300/50 dark:group-hover:border-accent-700/50">
+                    <div class="flex items-center justify-between mb-4">
+                      <span class="text-sm font-mono text-stone-400 dark:text-stone-600 tabular-nums"><%= talk.data.year %></span>
+                      <% if talk.data.type == "workshop" %>
+                        <span class="px-2 py-0.5 text-xs font-medium uppercase tracking-wider bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 rounded">Workshop</span>
+                      <% else %>
+                        <span class="px-2 py-0.5 text-xs font-medium uppercase tracking-wider bg-accent-100 dark:bg-accent-900/30 text-accent-700 dark:text-accent-400 rounded">Talk</span>
+                      <% end %>
+                    </div>
+
+                    <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-accent-100 to-accent-200 dark:from-accent-900/50 dark:to-accent-800/50 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                      <svg class="w-6 h-6 text-accent-600 dark:text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                      </svg>
+                    </div>
+
+                    <h3 class="font-serif text-lg md:text-xl font-semibold text-stone-900 dark:text-stone-100 mb-2 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors">
+                      <%= talk.data.title %>
+                    </h3>
+
+                    <p class="text-sm text-stone-500 dark:text-stone-500 mb-4">
+                      <%= talk.data.event %>
+                    </p>
+
+                    <div class="flex items-center gap-4 pt-4 border-t border-stone-100 dark:border-stone-800">
+                      <% if talk.data.video_url %>
+                        <span class="text-sm text-accent-600 dark:text-accent-400 font-medium">Video</span>
+                      <% end %>
+                      <% if talk.data.slides_url %>
+                        <span class="text-sm text-stone-500">Slides</span>
+                      <% end %>
+                      <span class="ml-auto text-accent-600 dark:text-accent-400">
+                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </article>
             <% end %>
           </div>
         </div>
       </section>
     <% end %>
 
-    <!-- Speaking CTA -->
-    <section class="relative py-24 md:py-32 overflow-hidden">
+    <!-- Speaking CTA - Bold Accent Zone -->
+    <section class="relative py-28 md:py-40 overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-accent-600 via-accent-700 to-stone-900">
-        <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M36%2034v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6%2034v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6%204V0H4v4H0v2h4v4h2V6h4V4H6z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E')] opacity-30"></div>
+        <div class="absolute inset-0 pattern-plus opacity-30"></div>
       </div>
 
-      <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
-      <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 left-[15%] -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 right-[15%] -translate-y-1/2 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
 
-      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12">
+      <div class="absolute top-20 left-[10%] w-16 h-16 border-2 border-white/10 rotate-12 hidden lg:block"></div>
+      <div class="absolute bottom-20 right-[10%] w-24 h-24 border-2 border-white/10 -rotate-6 hidden lg:block"></div>
+
+      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
         <div class="max-w-3xl mx-auto text-center">
-          <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
+          <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white mb-6">
             Let's talk about<br class="hidden sm:block" /> <em class="text-accent-200">what actually works</em>
           </h2>
-          <p class="text-lg md:text-xl text-white/70 max-w-xl mx-auto mb-10">
+          <p class="text-lg md:text-xl text-white/70 max-w-xl mx-auto mb-12">
             If you're organizing a conference, podcast, or workshop and think my perspective would resonate with your audience—I'd love to hear from you.
           </p>
 
-          <a href="mailto:jesse@jcmcginnis.com" class="inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl">
+          <a href="mailto:jesse@jcmcginnis.com" class="group inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl">
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
@@ -175,3 +209,18 @@ skip_footer: false
 
   <%= render "footer" %>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('reveal-ready');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
+});
+</script>

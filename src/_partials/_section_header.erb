@@ -1,0 +1,41 @@
+<%# Section Header - Eyebrow + line pattern
+  Options: label (required), color: "brand" | "accent" | "emerald" | "sky" | "stone",
+  alignment: "left" | "center", size: "default" | "small" %>
+<%
+  label ||= "Section"
+  color ||= "brand"
+  alignment ||= "left"
+  size ||= "default"
+
+  # Line and text colors
+  if color == "brand"
+    line_color = "bg-brand-500"
+    text_color = "text-brand-600 dark:text-brand-400"
+  elsif color == "accent"
+    line_color = "bg-accent-500"
+    text_color = "text-accent-600 dark:text-accent-400"
+  elsif color == "emerald"
+    line_color = "bg-emerald-500"
+    text_color = "text-emerald-600 dark:text-emerald-400"
+  elsif color == "sky"
+    line_color = "bg-sky-500"
+    text_color = "text-sky-600 dark:text-sky-400"
+  else
+    line_color = "bg-stone-300 dark:bg-stone-700"
+    text_color = "text-stone-500 dark:text-stone-500"
+  end
+
+  line_width = size == "small" ? "w-8" : "w-16"
+  margin = size == "small" ? "mb-8" : "mb-12"
+  flex_align = alignment == "center" ? "justify-center" : ""
+%>
+<div class="flex items-center gap-4 <%= margin %> <%= flex_align %> animate-fade-in">
+  <% if alignment == "center" %>
+    <div class="<%= line_width %> h-0.5 <%= line_color %>"></div>
+  <% end %>
+  <div class="<%= line_width %> h-0.5 <%= line_color %>"></div>
+  <span class="text-eyebrow <%= text_color %>"><%= label %></span>
+  <% if alignment == "center" %>
+    <div class="<%= line_width %> h-0.5 <%= line_color %>"></div>
+  <% end %>
+</div>

@@ -1,0 +1,23 @@
+<%# Gradient Orbs - Decorative background gradient blobs
+  Presets: "hero" | "subtle" | "warm" | "accent" | "brand" (default: "hero") %>
+<%
+  preset ||= "hero"
+%>
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+  <% if preset == "hero" %>
+    <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-gradient-to-br from-brand-200/40 to-transparent rounded-full blur-3xl dark:from-brand-900/30"></div>
+    <div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-gradient-to-tr from-accent-200/30 to-transparent rounded-full blur-3xl dark:from-accent-900/20"></div>
+  <% elsif preset == "accent" %>
+    <div class="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-accent-200/20 to-transparent rounded-full blur-3xl dark:from-accent-900/10"></div>
+  <% elsif preset == "subtle" %>
+    <div class="absolute -top-1/4 -left-1/4 w-[600px] h-[600px] bg-gradient-to-br from-brand-200/20 to-transparent rounded-full blur-3xl dark:from-brand-900/10"></div>
+  <% elsif preset == "warm" %>
+    <div class="absolute -top-1/4 -right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-accent-200/30 to-transparent rounded-full blur-3xl dark:from-accent-900/15"></div>
+    <div class="absolute bottom-0 left-1/4 w-[400px] h-[400px] bg-gradient-to-tr from-brand-200/20 to-transparent rounded-full blur-3xl dark:from-brand-900/10"></div>
+  <% elsif preset == "brand" %>
+    <div class="absolute -top-1/4 -right-1/4 w-[700px] h-[700px] bg-gradient-to-br from-brand-200/30 to-transparent rounded-full blur-3xl dark:from-brand-900/20"></div>
+    <div class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-gradient-to-tr from-brand-100/20 to-transparent rounded-full blur-3xl dark:from-brand-950/15"></div>
+  <% else %>
+    <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-gradient-to-br from-brand-200/40 to-transparent rounded-full blur-3xl dark:from-brand-900/30"></div>
+  <% end %>
+</div>
