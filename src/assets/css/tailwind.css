@@ -210,6 +210,39 @@ html {
 }
 
 /* ==========================================================================
+   Card Hover Animations - Subtle, refined interactions
+   ========================================================================== */
+
+/* Card lift effect - subtle hover lift */
+.card-lift {
+  transition:
+    transform 300ms ease-out,
+    box-shadow 300ms ease-out;
+}
+
+.group:hover .card-lift {
+  transform: translateY(-4px);
+}
+
+/* Number badge subtle scale on hover */
+.card-badge {
+  transition: transform 300ms ease-out;
+}
+
+.group:hover .card-badge {
+  transform: scale(1.02);
+}
+
+/* Icon subtle shift on hover */
+.card-icon {
+  transition: transform 300ms ease-out;
+}
+
+.group:hover .card-icon {
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
    Typography Utilities
    ========================================================================== */
 

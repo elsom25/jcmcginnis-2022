@@ -9,38 +9,46 @@ layout: default
   next_talk = current_index && current_index > 0 ? all_talks[current_index - 1] : nil
 %>
 
-<article class="max-w-4xl mx-auto">
-  <!-- Talk header with prominent event badge -->
-  <header class="text-center mb-12 animate-fade-in">
-    <!-- Event badge - enhanced -->
-    <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-accent-100 to-accent-200 dark:from-accent-900/50 dark:to-accent-800/50 border border-accent-300/50 dark:border-accent-700/50 shadow-lg shadow-accent-500/10 mb-8">
-      <svg class="w-5 h-5 text-accent-600 dark:text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-      <span class="font-semibold text-accent-700 dark:text-accent-300"><%= resource.data.event %></span>
-      <span class="text-accent-400 dark:text-accent-600">·</span>
-      <span class="text-accent-600 dark:text-accent-400"><%= resource.data.year %></span>
-      <% if resource.data.type == "workshop" %>
-        <span class="px-2 py-0.5 text-xs font-medium uppercase tracking-wider bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 rounded">Workshop</span>
+<article class="talk-article relative">
+  <!-- Decorative elements for visual anchoring -->
+  <div class="hidden lg:block absolute top-32 right-[5%] w-16 h-16 border-2 border-stone-200/50 dark:border-stone-800/50 -rotate-12 opacity-60"></div>
+  <div class="hidden lg:block absolute top-64 left-[8%] w-10 h-10 rounded-full border-2 border-accent-300/30 dark:border-accent-700/30"></div>
+
+  <!-- Talk header - wider than content for visual funnel -->
+  <header class="relative pt-8 pb-10 md:pt-12 md:pb-12">
+    <div class="max-w-4xl mx-auto px-6 md:px-8">
+      <!-- Event badge - enhanced -->
+      <div class="flex justify-center mb-8 animate-fade-in">
+        <div class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-accent-100 to-accent-200 dark:from-accent-900/50 dark:to-accent-800/50 border border-accent-300/50 dark:border-accent-700/50 shadow-lg shadow-accent-500/10">
+          <svg class="w-5 h-5 text-accent-600 dark:text-accent-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span class="font-semibold text-accent-700 dark:text-accent-300"><%= resource.data.event %></span>
+          <span class="text-accent-400 dark:text-accent-600">·</span>
+          <span class="text-accent-600 dark:text-accent-400"><%= resource.data.year %></span>
+          <% if resource.data.type == "workshop" %>
+            <span class="px-2 py-0.5 text-xs font-medium uppercase tracking-wider bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 rounded">Workshop</span>
+          <% end %>
+        </div>
+      </div>
+
+      <!-- Title -->
+      <h1 class="text-hero text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-stone-900 dark:text-stone-100 mb-6 text-center animate-fade-in animate-delay-1">
+        <%= resource.data.title %>
+      </h1>
+
+      <% if resource.data.description %>
+        <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 max-w-2xl mx-auto leading-relaxed text-center animate-fade-in animate-delay-2">
+          <%= resource.data.description %>
+        </p>
       <% end %>
     </div>
-
-    <!-- Title -->
-    <h1 class="text-hero text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-stone-900 dark:text-stone-100 mb-6">
-      <%= resource.data.title %>
-    </h1>
-
-    <% if resource.data.description %>
-      <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 max-w-2xl mx-auto leading-relaxed">
-        <%= resource.data.description %>
-      </p>
-    <% end %>
   </header>
 
   <!-- Quick action buttons - enhanced with glow -->
   <% if resource.data.video_url || resource.data.slides_url %>
-    <div class="flex flex-wrap items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-1">
+    <div class="max-w-4xl mx-auto px-6 md:px-8 flex flex-wrap items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-2">
       <% if resource.data.video_url %>
         <a href="<%= resource.data.video_url %>" class="group relative inline-flex items-center gap-3 px-8 py-4 bg-stone-900 dark:bg-stone-100 text-white dark:text-stone-900 font-semibold rounded-full transition-all hover:scale-105 shadow-lg" rel="external" target="_blank">
           <!-- Glow effect on hover -->
@@ -66,7 +74,7 @@ layout: default
   <% end %>
 
   <!-- Decorative divider with accent color -->
-  <div class="flex items-center justify-center gap-6 mb-12 animate-fade-in animate-delay-1" aria-hidden="true">
+  <div class="max-w-4xl mx-auto px-6 md:px-8 flex items-center justify-center gap-6 mb-12 animate-fade-in animate-delay-3" aria-hidden="true">
     <span class="flex-grow max-w-32 h-px bg-gradient-to-r from-transparent to-accent-300 dark:to-accent-800"></span>
     <svg class="w-6 h-6 text-accent-400 dark:text-accent-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
@@ -74,20 +82,20 @@ layout: default
     <span class="flex-grow max-w-32 h-px bg-gradient-to-l from-transparent to-accent-300 dark:to-accent-800"></span>
   </div>
 
-  <!-- Talk content with accent-themed blockquotes -->
-  <div class="max-w-2xl mx-auto prose prose-lg prose-quoteless prose-stone dark:prose-invert
+  <!-- Talk content with accent-themed blockquotes - narrower for visual funnel -->
+  <div class="max-w-3xl mx-auto px-6 md:px-8 prose prose-lg prose-quoteless prose-stone dark:prose-invert
     prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight
     prose-p:leading-relaxed prose-p:text-stone-700 dark:prose-p:text-stone-300
     prose-a:font-medium prose-a:text-accent-600 dark:prose-a:text-accent-400
     prose-blockquote:border-l-4 prose-blockquote:border-accent-400 dark:prose-blockquote:border-accent-600
     prose-blockquote:font-serif prose-blockquote:not-italic prose-blockquote:text-xl
     prose-strong:text-stone-900 dark:prose-strong:text-stone-100
-    animate-fade-in animate-delay-2">
+    animate-fade-in animate-delay-3">
     <%= yield %>
   </div>
 
   <!-- Talk footer with navigation -->
-  <footer class="max-w-2xl mx-auto mt-16 pt-8 border-t border-stone-200 dark:border-stone-800">
+  <footer class="max-w-3xl mx-auto px-6 md:px-8 mt-16 pt-8 border-t border-stone-200 dark:border-stone-800">
     <!-- Back link and share -->
     <div class="flex items-center justify-between mb-12">
       <a href="/talks/" class="group inline-flex items-center gap-2 text-accent-600 dark:text-accent-400 font-semibold hover:gap-3 transition-all">

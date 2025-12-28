@@ -116,12 +116,12 @@ skip_footer: false
 
         <div class="grid md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
           <% readme.tldr.each_with_index do |item, i| %>
-            <a href="#<%= item.anchor %>" class="group block">
-              <div class="relative h-full p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-brand-500/50 group-hover:bg-stone-900/70 group-hover:-translate-y-1">
-                <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-brand-500/0 to-brand-500/0 group-hover:from-brand-500/10 group-hover:to-transparent transition-all"></div>
+            <a href="#<%= item.anchor %>" class="group block reveal-on-scroll" style="--stagger: <%= i %>">
+              <div class="card-lift relative h-full p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 group-hover:border-brand-500/50 group-hover:bg-stone-900/70 group-hover:shadow-2xl group-hover:shadow-brand-500/10">
+                <div class="card-glow absolute -inset-px rounded-2xl bg-gradient-to-br from-brand-500/0 to-brand-500/0 group-hover:from-brand-500/15 group-hover:to-transparent opacity-0 group-hover:opacity-100"></div>
 
                 <div class="relative">
-                  <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-4 leading-tight">
+                  <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-4 leading-tight transition-colors group-hover:text-brand-100">
                     <%= item.headline %>
                   </h3>
                   <p class="text-stone-400 leading-relaxed text-sm">
@@ -129,7 +129,7 @@ skip_footer: false
                   </p>
                   <div class="mt-6 flex items-center gap-2 text-brand-400 text-sm font-medium group-hover:gap-3 transition-all">
                     Read more
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="card-icon w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
                   </div>
@@ -155,10 +155,10 @@ skip_footer: false
 
         <div class="space-y-8">
           <% readme.expectations.each_with_index do |expectation, i| %>
-            <div class="group">
-              <div class="relative bg-stone-50 dark:bg-stone-900 rounded-3xl border border-stone-200 dark:border-stone-800 overflow-hidden transition-all group-hover:shadow-xl group-hover:border-brand-300/50 dark:group-hover:border-brand-700/50">
+            <div class="group reveal-on-scroll" style="--stagger: <%= i %>">
+              <div class="card-lift relative bg-stone-50 dark:bg-stone-900 rounded-3xl border border-stone-200 dark:border-stone-800 overflow-hidden group-hover:shadow-2xl group-hover:shadow-brand-500/5 group-hover:border-brand-300/50 dark:group-hover:border-brand-700/50">
                 <!-- Number badge -->
-                <div class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center">
+                <div class="card-badge absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-brand-500 to-brand-600 flex items-center justify-center origin-top-left">
                   <span class="font-mono text-2xl font-bold text-white"><%= expectation.number %></span>
                 </div>
 
@@ -199,16 +199,16 @@ skip_footer: false
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <% readme.principles.each_with_index do |principle, i| %>
-            <div class="group h-full">
-              <div class="relative h-full bg-white dark:bg-stone-800 rounded-2xl p-6 border border-stone-200 dark:border-stone-700 transition-all group-hover:shadow-xl group-hover:-translate-y-1 group-hover:border-emerald-300/50 dark:group-hover:border-emerald-700/50">
-                <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/5 group-hover:to-transparent transition-all"></div>
+            <div class="group h-full reveal-on-scroll" style="--stagger: <%= i %>">
+              <div class="card-lift relative h-full bg-white dark:bg-stone-800 rounded-2xl p-6 border border-stone-200 dark:border-stone-700 group-hover:shadow-2xl group-hover:shadow-emerald-500/5 group-hover:border-emerald-300/50 dark:group-hover:border-emerald-700/50">
+                <div class="card-glow absolute -inset-px rounded-2xl bg-gradient-to-br from-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/8 group-hover:to-transparent opacity-0 group-hover:opacity-100"></div>
 
                 <div class="relative">
-                  <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-900/50 dark:to-emerald-800/50 flex items-center justify-center mb-4">
+                  <div class="card-badge w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-100 to-emerald-200 dark:from-emerald-900/50 dark:to-emerald-800/50 flex items-center justify-center mb-4 origin-center">
                     <span class="font-mono text-sm font-bold text-emerald-600 dark:text-emerald-400"><%= i + 1 %></span>
                   </div>
 
-                  <h4 class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 mb-3">
+                  <h4 class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 mb-3 transition-colors group-hover:text-emerald-700 dark:group-hover:text-emerald-300">
                     <%= principle.title %>
                   </h4>
 
@@ -243,14 +243,14 @@ skip_footer: false
           </div>
           <p class="text-stone-600 dark:text-stone-400 mb-8 max-w-2xl">Nudges and reminders on what to look for in where I spend my time and energy.</p>
 
-          <div class="grid md:grid-cols-2 gap-8">
-            <% readme.quotes.seek.each do |quote| %>
-              <blockquote class="group relative p-6 bg-gradient-to-br from-accent-50 to-white dark:from-accent-950/30 dark:to-stone-900 rounded-2xl border border-accent-200/50 dark:border-accent-800/30 transition-all hover:shadow-lg hover:border-accent-300 dark:hover:border-accent-700">
-                <div class="absolute top-4 left-4 text-6xl text-accent-200 dark:text-accent-800/50 font-serif leading-none">"</div>
-                <p class="relative font-serif text-lg text-stone-800 dark:text-stone-200 leading-relaxed mb-4 pt-4">
+          <div class="grid md:grid-cols-2 gap-6">
+            <% readme.quotes.seek.each_with_index do |quote, i| %>
+              <blockquote class="group relative p-6 bg-gradient-to-br from-accent-50/80 to-white dark:from-accent-950/30 dark:to-stone-900 rounded-xl border border-accent-200/30 dark:border-accent-800/30 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-accent-500/5 reveal-on-scroll" style="--stagger: <%= i %>">
+                <div class="absolute top-4 left-4 text-5xl text-accent-300/60 dark:text-accent-700/40 font-serif leading-none">"</div>
+                <p class="relative font-serif text-lg text-stone-700 dark:text-stone-200 leading-relaxed mb-4 pt-4">
                   <%= quote.text %>
                 </p>
-                <cite class="relative text-sm text-accent-600 dark:text-accent-400 not-italic font-semibold">— <%= quote.author %></cite>
+                <cite class="relative text-sm text-accent-600 dark:text-accent-400 not-italic font-medium">— <%= quote.author %></cite>
               </blockquote>
             <% end %>
           </div>
@@ -264,14 +264,14 @@ skip_footer: false
           </div>
           <p class="text-stone-600 dark:text-stone-400 mb-8 max-w-2xl">Guardrails on how to show up, how to think, and how to act.</p>
 
-          <div class="grid md:grid-cols-2 gap-8">
-            <% readme.quotes.be.each do |quote| %>
-              <blockquote class="group relative p-6 bg-gradient-to-br from-brand-50 to-white dark:from-brand-950/30 dark:to-stone-900 rounded-2xl border border-brand-200/50 dark:border-brand-800/30 transition-all hover:shadow-lg hover:border-brand-300 dark:hover:border-brand-700">
-                <div class="absolute top-4 left-4 text-6xl text-brand-200 dark:text-brand-800/50 font-serif leading-none">"</div>
-                <p class="relative font-serif text-lg text-stone-800 dark:text-stone-200 leading-relaxed mb-4 pt-4">
+          <div class="grid md:grid-cols-2 gap-6">
+            <% readme.quotes.be.each_with_index do |quote, i| %>
+              <blockquote class="group relative p-6 bg-gradient-to-br from-brand-50/80 to-white dark:from-brand-950/30 dark:to-stone-900 rounded-xl border border-brand-200/30 dark:border-brand-800/30 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-brand-500/5 reveal-on-scroll" style="--stagger: <%= i %>">
+                <div class="absolute top-4 left-4 text-5xl text-brand-300/60 dark:text-brand-700/40 font-serif leading-none">"</div>
+                <p class="relative font-serif text-lg text-stone-700 dark:text-stone-200 leading-relaxed mb-4 pt-4">
                   <%= quote.text %>
                 </p>
-                <cite class="relative text-sm text-brand-600 dark:text-brand-400 not-italic font-semibold">— <%= quote.author %></cite>
+                <cite class="relative text-sm text-brand-600 dark:text-brand-400 not-italic font-medium">— <%= quote.author %></cite>
               </blockquote>
             <% end %>
           </div>
@@ -285,14 +285,14 @@ skip_footer: false
           </div>
           <p class="text-stone-600 dark:text-stone-400 mb-8 max-w-2xl">Less directed, but essential reminders which help me recenter and refocus.</p>
 
-          <div class="grid md:grid-cols-2 gap-8">
-            <% readme.quotes.remember.each do |quote| %>
-              <blockquote class="group relative p-6 bg-gradient-to-br from-emerald-50 to-white dark:from-emerald-950/30 dark:to-stone-900 rounded-2xl border border-emerald-200/50 dark:border-emerald-800/30 transition-all hover:shadow-lg hover:border-emerald-300 dark:hover:border-emerald-700">
-                <div class="absolute top-4 left-4 text-6xl text-emerald-200 dark:text-emerald-800/50 font-serif leading-none">"</div>
-                <p class="relative font-serif text-lg text-stone-800 dark:text-stone-200 leading-relaxed mb-4 pt-4">
+          <div class="grid md:grid-cols-2 gap-6">
+            <% readme.quotes.remember.each_with_index do |quote, i| %>
+              <blockquote class="group relative p-6 bg-gradient-to-br from-emerald-50/80 to-white dark:from-emerald-950/30 dark:to-stone-900 rounded-xl border border-emerald-200/30 dark:border-emerald-800/30 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg hover:shadow-emerald-500/5 reveal-on-scroll" style="--stagger: <%= i %>">
+                <div class="absolute top-4 left-4 text-5xl text-emerald-300/60 dark:text-emerald-700/40 font-serif leading-none">"</div>
+                <p class="relative font-serif text-lg text-stone-700 dark:text-stone-200 leading-relaxed mb-4 pt-4">
                   <%= quote.text %>
                 </p>
-                <cite class="relative text-sm text-emerald-600 dark:text-emerald-400 not-italic font-semibold">— <%= quote.author %></cite>
+                <cite class="relative text-sm text-emerald-600 dark:text-emerald-400 not-italic font-medium">— <%= quote.author %></cite>
               </blockquote>
             <% end %>
           </div>
@@ -302,33 +302,52 @@ skip_footer: false
     </section>
 
     <!-- Sagan - Pale Blue Dot (standalone contemplative section) -->
-    <section class="relative bg-gradient-to-b from-stone-950 via-black to-stone-950 dark:from-black dark:via-stone-950 dark:to-black overflow-hidden">
-      <!-- Cosmic atmosphere -->
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_100%_80%_at_50%_0%,rgba(14,165,233,0.08),transparent)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(56,189,248,0.05),transparent)]"></div>
+    <section class="relative min-h-screen flex items-center overflow-hidden bg-slate-950">
+      <!-- Star field - CSS-only scattered points -->
+      <div class="absolute inset-0 opacity-60" style="background-image: radial-gradient(1px 1px at 20px 30px, white, transparent), radial-gradient(1px 1px at 40px 70px, rgba(255,255,255,0.7), transparent), radial-gradient(1px 1px at 90px 40px, white, transparent), radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.6), transparent), radial-gradient(1.5px 1.5px at 160px 120px, white, transparent), radial-gradient(1px 1px at 200px 50px, rgba(255,255,255,0.4), transparent), radial-gradient(1px 1px at 250px 180px, white, transparent), radial-gradient(1px 1px at 280px 90px, rgba(255,255,255,0.7), transparent); background-size: 300px 200px;"></div>
 
-      <div class="relative z-10 w-full max-w-4xl mx-auto px-6 md:px-12 py-24 md:py-32">
+      <!-- Subtle nebula atmosphere -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_100%_60%_at_50%_0%,rgba(56,189,248,0.12),transparent_60%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_20%_90%,rgba(139,92,246,0.08),transparent_50%)]"></div>
+
+      <!-- Soft sunbeam -->
+      <div class="absolute inset-0 bg-[linear-gradient(135deg,transparent_42%,rgba(251,191,36,0.04)_48%,rgba(251,191,36,0.06)_50%,rgba(251,191,36,0.04)_52%,transparent_58%)]"></div>
+
+      <!-- Top edge: smooth fade from previous section -->
+      <div class="absolute top-0 inset-x-0 h-48 z-10 bg-gradient-to-b from-white via-stone-200/50 to-transparent dark:from-stone-950 dark:via-slate-900/50"></div>
+
+      <div class="relative z-10 w-full max-w-4xl mx-auto px-6 md:px-12 py-32 md:py-40">
         <div class="text-center">
-          <!-- Pale Blue Dot marker -->
-          <div class="inline-flex items-center gap-3 mb-12">
-            <div class="w-1.5 h-1.5 rounded-full bg-sky-400 shadow-lg shadow-sky-400/50"></div>
-            <span class="text-eyebrow text-sky-400/70 tracking-widest">Pale Blue Dot</span>
-            <div class="w-1.5 h-1.5 rounded-full bg-sky-400 shadow-lg shadow-sky-400/50"></div>
+          <!-- The Pale Blue Dot itself - a tiny glowing point -->
+          <div class="flex flex-col items-center mb-16">
+            <!-- Outer glow -->
+            <div class="relative">
+              <div class="absolute -inset-8 bg-sky-400/20 rounded-full blur-xl"></div>
+              <div class="absolute -inset-4 bg-sky-400/30 rounded-full blur-md"></div>
+              <!-- The dot -->
+              <div class="relative w-3 h-3 rounded-full bg-gradient-to-br from-sky-300 via-sky-400 to-sky-500 shadow-[0_0_20px_8px_rgba(56,189,248,0.5),0_0_40px_16px_rgba(56,189,248,0.3),0_0_60px_24px_rgba(56,189,248,0.1)]"></div>
+            </div>
+            <span class="mt-8 text-xs font-mono uppercase tracking-[0.4em] text-sky-400/60">Pale Blue Dot</span>
           </div>
 
-          <blockquote class="space-y-8">
+          <blockquote class="space-y-10">
             <% readme.sagan.split("\n\n").each_with_index do |paragraph, i| %>
-              <p class="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed sagan-paragraph" style="--paragraph-index: <%= i %>;">
+              <p class="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed text-stone-300/90 sagan-paragraph" style="--paragraph-index: <%= i %>;">
                 <%= paragraph %>
               </p>
             <% end %>
           </blockquote>
 
-          <cite class="block mt-14 text-base text-stone-500 not-italic">
-            — <span class="font-medium text-sky-400">Carl Sagan</span>, <em class="text-stone-400">Pale Blue Dot</em>, 1994
+          <cite class="block mt-16 text-base not-italic">
+            <span class="text-stone-500">—</span>
+            <span class="font-medium text-sky-400 ml-2">Carl Sagan</span><span class="text-stone-600">,</span>
+            <em class="text-stone-500 ml-1">Pale Blue Dot</em><span class="text-stone-600">, 1994</span>
           </cite>
         </div>
       </div>
+
+      <!-- Bottom fade to next section -->
+      <div class="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-brand-700 to-transparent"></div>
     </section>
 
     <!-- Connect CTA (separate, warm section) -->
@@ -368,3 +387,18 @@ skip_footer: false
 
   <%= render "footer" %>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.classList.add('reveal-ready');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
+});
+</script>

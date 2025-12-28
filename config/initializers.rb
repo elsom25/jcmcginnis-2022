@@ -15,13 +15,14 @@ end
 
 Bridgetown::RubyTemplateView::Helpers.class_eval do
   def featured_post
-    home_posts = site.collections.posts.resources.select { |p| p.data.home }
-    return if home_posts.empty?
+    return @featured_post if defined?(@featured_post)
+
+    home_posts = site.collections.posts.resources.select { it.data.home }.sort_by(&:date).reverse
+    return @featured_post = nil if home_posts.empty?
 
     recent = home_posts.first
-
     four_weeks_ago = Time.now - (4 * 7 * 24 * 60 * 60)
-    if recent && recent.date > four_weeks_ago
+    @featured_post = if recent && recent.date > four_weeks_ago
       recent
     else
       home_posts[Date.today.yday % home_posts.size]
@@ -29,7 +30,7 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
   end
 
   def posts_by_year
-    site.collections.posts.resources.group_by { |p| p.date.year }.sort.reverse.to_h
+    site.collections.posts.resources.group_by { it.date.year }.sort.reverse.to_h
   end
 
   def category_url(category_name)

@@ -5,6 +5,7 @@ home: true
 
 categories: ["Leadership"]
 description: Change is coming; I hope you're ready.
+pull_quote: By remembering your past, you'll come to understand your present and shape your future.
 
 image: "/assets/img/org-changelog.webp"
 ---

@@ -6,6 +6,7 @@ home: true
 categories: ["Leadership"]
 description:
   Leading with trust first is the best way to build a team that is aligned, engaged, and productive.
+pull_quote: Trust is slow to gain and quick to lose; requiring consistent care.
 
 image: "/assets/img/trust-first.jpg"
 ---

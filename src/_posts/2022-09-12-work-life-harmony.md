@@ -5,6 +5,7 @@ home: true
 
 categories: ["Musings"]
 description: Life deserves more than simple balance.
+pull_quote: Work itself is part of life, and treating it as a separate entity is an unhealthy frame.
 
 image: "/assets/img/work-life-harmony.jpg"
 ---
