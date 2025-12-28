@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="theme-color" content="#be195c">
+    <!-- Theme colors - brand terracotta -->
+    <meta name="theme-color" content="#dd6557">
+    <meta name="theme-color" content="#1a1614" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="view-transition" content="same-origin">
     <link rel="icon" href="<%= relative_url '/favicon.svg' %>">
-    <link rel="mask-icon" href="<%= relative_url '/favicon.svg' %>" color="#be195c">
+    <link rel="mask-icon" href="<%= relative_url '/favicon.svg' %>" color="#dd6557">
     <link rel="apple-touch-icon" href="<%= relative_url '/apple-touch-icon' %>">
     <link rel="manifest" href="<%= relative_url '/manifest.json' %>">
-    <link rel="preconnect" href="https://rsms.me/">
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <!-- Fonts: preconnect to Google Fonts (Inter + Fraunces loaded in _head partial) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
     <script>
       // Theme management - must be inline to prevent flash and be available for header toggle
       window.Theme = {
@@ -34,7 +36,7 @@
     <%= seo %>
     <%= feed_meta %>
   </head>
-  <body class="page flex min-h-full bg-bg-light text-stone-800 selection:bg-stone-200 selection:text-violet-700 dark:bg-bg-dark dark:text-stone-200 dark:selection:bg-stone-700 dark:selection:text-violet-300" id="page-top" data-page="<%= resource.data.page_id || (resource.respond_to?(:collection) && resource.collection&.label&.singularize) || 'default' %>">
+  <body class="page flex min-h-full bg-bg-light text-stone-800 dark:bg-bg-dark dark:text-stone-200" id="page-top" data-page="<%= resource.data.page_id || (resource.respond_to?(:collection) && resource.collection&.label&.singularize) || 'default' %>">
     <div class="flex w-full">
       <%= yield %>
     </div>

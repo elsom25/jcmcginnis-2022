@@ -29,9 +29,9 @@ html {
 
   /* Typography - Editorial pairing */
   --font-sans:
-    "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-serif: "Fraunces", "Newsreader", "Georgia", serif;
+  --font-serif: "Fraunces", "Georgia", serif;
 
   /* Color Palette - Warm, confident, human
      Primary: Terracotta/Rust - confident, warm, distinctive
@@ -897,12 +897,6 @@ body.mobile-menu-open {
 :is(.dark) input:focus,
 :is(.dark) textarea:focus {
   border-color: var(--color-brand-500);
-}
-
-/* Dark mode selection styling */
-:is(.dark) ::selection {
-  background-color: var(--color-stone-700);
-  color: var(--color-brand-300);
 }
 
 /* ==========================================================================
