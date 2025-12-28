@@ -600,10 +600,10 @@ function initTimelineFill() {
   // Scroll-driven fill + glow animation (scrub ensures it reverts on scroll up)
   ScrollTrigger.create({
     trigger: firstLesson,
-    start: 'top 70%',
+    start: 'top 50%',
     endTrigger: thesis,
-    end: 'top 60%',
-    scrub: 0.5,
+    end: 'top 40%',
+    scrub: 0.3,
     onUpdate: (self) => {
       const progress = self.progress;
       fill.style.height = `${progress * 100}%`;
