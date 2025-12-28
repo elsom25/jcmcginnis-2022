@@ -5,8 +5,7 @@ featured: true
 
 categories: ["Leadership"]
 description: Transitioning to a new team is hard, doubly so as a leader.
-pull_quote:
-  We face this discomfort with a plan centered on one idea: trust.
+pull_quote: We face this discomfort with a plan centered on one idea — trust.
 
 image: "/assets/img/transitioning-well.jpg"
 ---

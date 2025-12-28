@@ -34,6 +34,7 @@
     <%= live_reload_dev_js %>
     <%= render "head" %>
     <%= seo %>
+    <%= render "social_meta", resource: resource %>
     <%= feed_meta %>
   </head>
   <body class="page flex min-h-full bg-bg-light text-stone-800 dark:bg-bg-dark dark:text-stone-200" id="page-top" data-page="<%= resource.data.page_id || (resource.respond_to?(:collection) && resource.collection&.label&.singularize) || 'default' %>">
