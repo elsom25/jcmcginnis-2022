@@ -8,7 +8,7 @@ Bridgetown.configure do
   collections do
     talks do
       output true
-      permalink "/speaking/:slug/"
+      permalink "/talks/:slug/"
     end
   end
 end

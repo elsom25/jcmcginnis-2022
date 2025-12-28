@@ -9,12 +9,12 @@
             current_url = page.relative_url
             is_active = current_url == item.url || (item.url != "/" && current_url.start_with?(item.url))
 
-            if item.url == "/writing/" && !is_active
+            if item.url == "/blog/" && !is_active
               is_active = (current_url.start_with?("/blog/") && !current_url.include?("qcon") && !current_url.include?("gartner") && !current_url.include?("uplimit")) ||
                           (current_url.start_with?("/category/") && !current_url.include?("talks"))
             end
 
-            if item.url == "/speaking/" && !is_active
+            if item.url == "/talks/" && !is_active
               is_active = current_url.include?("qcon") || current_url.include?("gartner") || current_url.include?("uplimit") || current_url.include?("/category/talks")
             end
           %>

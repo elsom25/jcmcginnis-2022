@@ -1,9 +1,9 @@
 main:
   - name: "Writing"
-    url: "/writing/"
+    url: "/blog/"
     weight: 1
   - name: "Speaking"
-    url: "/speaking/"
+    url: "/talks/"
     weight: 2
   - name: "README"
     url: "/readme/"
