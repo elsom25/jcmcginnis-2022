@@ -8,113 +8,73 @@ skip_footer: false
   <%= render "header", page: resource, menu: site.data.menu %>
 
   <main class="flex-auto">
-    <!-- Hero Section -->
-    <section class="relative py-24 md:py-36 overflow-hidden">
-      <%= render "gradient_orbs", preset: "accent" %>
+    <!-- Hero Section - BOLD Speaker Portfolio with Light/Dark support -->
+    <section class="relative min-h-[70vh] flex items-end overflow-hidden">
+      <!-- Light: warm cream with accent | Dark: deep stone -->
+      <div class="absolute inset-0 bg-gradient-to-br from-stone-100 via-white to-accent-50/30 dark:from-stone-950 dark:via-stone-950 dark:to-stone-900"></div>
+      <!-- Accent gradient wash - subtle in light, bold in dark -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_100%_80%_at_100%_0%,rgba(245,158,11,0.12),transparent_50%)] dark:bg-[radial-gradient(ellipse_100%_80%_at_100%_0%,rgba(245,158,11,0.30),transparent_50%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_0%_100%,rgba(16,185,129,0.06),transparent_50%)] dark:bg-[radial-gradient(ellipse_80%_60%_at_0%_100%,rgba(16,185,129,0.15),transparent_50%)]"></div>
 
-      <!-- Decorative elements -->
-      <div class="absolute top-20 right-[15%] w-20 h-20 border-2 border-accent-300/20 dark:border-accent-700/20 rotate-12 hidden lg:block animate-float"></div>
-      <div class="absolute bottom-24 right-[25%] w-12 h-12 bg-emerald-400/15 dark:bg-emerald-600/10 rounded-full hidden lg:block animate-float-delayed"></div>
+      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12 pb-16 md:pb-24 pt-32 md:pt-40">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-end">
+          <!-- Left: Main content -->
+          <div class="lg:col-span-7">
+            <!-- Eyebrow -->
+            <div class="flex items-center gap-4 mb-8 animate-fade-in">
+              <div class="h-px w-16 bg-accent-500"></div>
+              <span class="text-xs font-mono uppercase tracking-[0.3em] text-stone-500">Speaking</span>
+            </div>
 
-      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12">
-        <div class="max-w-4xl">
-          <%= render "section_header", label: "Speaking", color: "accent" %>
+            <!-- MASSIVE heading -->
+            <h1 class="text-hero text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl text-stone-900 dark:text-white leading-[0.85] tracking-tight animate-fade-in-up">
+              Talks &<br />Workshops
+            </h1>
 
-          <h1 class="text-hero text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-stone-900 dark:text-stone-100 mb-8 animate-fade-in-up">
-            I don't speak often,<br class="hidden sm:block" />
-            but when I do it's about<br class="hidden lg:block" />
-            <span class="text-gradient bg-gradient-to-r from-accent-500 via-accent-600 to-emerald-500">what actually works.</span>
-          </h1>
+            <p class="mt-10 text-xl md:text-2xl text-stone-600 dark:text-stone-400 max-w-xl leading-relaxed animate-fade-in animate-delay-1">
+              Hard-won lessons from a decade of building and leading engineering teams. No frameworks for frameworks' sake—just what actually works.
+            </p>
+          </div>
 
-          <p class="text-xl md:text-2xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl animate-fade-in animate-delay-2">
-            Hard-won lessons from a decade of building and leading engineering teams. No frameworks for frameworks' sake—just the stuff that's made a real difference.
-          </p>
+          <!-- Right: Featured Talk - dramatic card -->
+          <% featured_talk = collections.talks.resources.sort_by { |t| -t.data.year }.first %>
+          <% if featured_talk %>
+            <div class="lg:col-span-5 animate-fade-in animate-delay-2">
+              <a href="<%= featured_talk.relative_url %>" class="group block">
+                <div class="relative bg-white/80 dark:bg-stone-900/80 backdrop-blur-sm border border-stone-200 dark:border-stone-800 rounded-2xl p-8 shadow-xl shadow-stone-200/50 dark:shadow-none transition-all group-hover:border-accent-500/50 group-hover:bg-white dark:group-hover:bg-stone-900">
+                  <!-- Glow -->
+                  <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-accent-500/0 to-accent-500/0 group-hover:from-accent-500/20 group-hover:to-transparent transition-all"></div>
+
+                  <div class="relative">
+                    <div class="flex items-center justify-between mb-6">
+                      <span class="px-3 py-1 bg-accent-500 text-white text-xs font-bold uppercase tracking-wider rounded-full">Latest Talk</span>
+                      <span class="text-xs font-mono text-stone-500"><%= featured_talk.data.year %></span>
+                    </div>
+
+                    <h3 class="font-serif text-2xl md:text-3xl font-bold text-stone-900 dark:text-white mb-3 group-hover:text-accent-600 dark:group-hover:text-accent-400 transition-colors leading-tight">
+                      <%= featured_talk.data.title %>
+                    </h3>
+
+                    <p class="text-stone-500 mb-6"><%= featured_talk.data.event %></p>
+
+                    <div class="flex items-center gap-3 text-accent-600 dark:text-accent-400 font-semibold">
+                      <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" />
+                      </svg>
+                      Watch talk
+                      <svg class="w-4 h-4 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          <% end %>
         </div>
-      </div>
-    </section>
 
-    <!-- Philosophy Section - Bold Accent Zone (inlined) -->
-    <section class="accent-zone relative py-20 md:py-28">
-      <!-- Base gradient -->
-      <div class="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 dark:from-black dark:via-stone-950 dark:to-black"></div>
-      <!-- Mixed color overlays -->
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_10%_20%,rgba(225,29,72,0.25),transparent)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_90%_40%,rgba(16,185,129,0.20),transparent)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_30%_80%,rgba(59,130,246,0.20),transparent)]"></div>
-
-      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
-        <%= render "section_header", label: "What I Talk About", color: "stone", size: "small" %>
-
-        <div class="grid md:grid-cols-3 gap-8 lg:gap-12 max-w-5xl">
-          <!-- High-Trust Teams -->
-          <div class="group reveal-on-scroll" style="--stagger: 0">
-            <div class="relative p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-brand-500/30 group-hover:bg-stone-900/70">
-              <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-brand-500/0 to-brand-500/0 group-hover:from-brand-500/10 group-hover:to-transparent transition-all"></div>
-
-              <div class="relative">
-                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center shadow-lg shadow-brand-500/20 mb-6">
-                  <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
-                  </svg>
-                </div>
-
-                <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-2">
-                  High-Trust Teams
-                </h3>
-                <p class="text-sm text-brand-400 mb-4">The foundation of everything.</p>
-                <p class="text-stone-400 leading-relaxed text-sm">
-                  Trust is the multiplier. Teams that have it move faster, take bigger swings, and recover from failure with grace. I share how to build it intentionally.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Directed Chaos -->
-          <div class="group reveal-on-scroll" style="--stagger: 1">
-            <div class="relative p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-emerald-500/30 group-hover:bg-stone-900/70">
-              <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/10 group-hover:to-transparent transition-all"></div>
-
-              <div class="relative">
-                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-emerald-500 to-emerald-700 flex items-center justify-center shadow-lg shadow-emerald-500/20 mb-6">
-                  <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
-                  </svg>
-                </div>
-
-                <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-2">
-                  Directed Chaos
-                </h3>
-                <p class="text-sm text-emerald-400 mb-4">Embracing turbulence over comfort.</p>
-                <p class="text-stone-400 leading-relaxed text-sm">
-                  Most leaders optimize for stability. I optimize for resilience. Layoffs, pivots, reorgs—not avoiding chaos, but harnessing it.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- High-Agency Leadership -->
-          <div class="group reveal-on-scroll" style="--stagger: 2">
-            <div class="relative p-8 rounded-2xl bg-stone-900/50 border border-stone-700/50 transition-all group-hover:border-accent-500/30 group-hover:bg-stone-900/70">
-              <div class="absolute -inset-px rounded-2xl bg-gradient-to-br from-accent-500/0 to-accent-500/0 group-hover:from-accent-500/10 group-hover:to-transparent transition-all"></div>
-
-              <div class="relative">
-                <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center shadow-lg shadow-accent-500/20 mb-6">
-                  <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z" />
-                  </svg>
-                </div>
-
-                <h3 class="font-serif text-xl md:text-2xl font-semibold text-white mb-2">
-                  High-Agency Leadership
-                </h3>
-                <p class="text-sm text-accent-400 mb-4">Building teams that don't need you.</p>
-                <p class="text-stone-400 leading-relaxed text-sm">
-                  The best thing you can build is a team that doesn't need you. Hold people to a bar they thought was impossible.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Sharp rule -->
+        <div class="mt-16 md:mt-20 h-0.5 bg-gradient-to-r from-accent-500 via-accent-500/30 to-transparent"></div>
       </div>
     </section>
 
@@ -175,7 +135,7 @@ skip_footer: false
       </section>
     <% end %>
 
-    <!-- Speaking CTA - Bold Accent Zone -->
+    <!-- Speaking CTA - Bold Accent Zone with Topics -->
     <section class="relative py-28 md:py-40 overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-accent-600 via-accent-700 to-stone-900">
         <div class="absolute inset-0 pattern-plus opacity-30"></div>
@@ -184,24 +144,43 @@ skip_footer: false
       <div class="absolute top-1/2 left-[15%] -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
       <div class="absolute top-1/2 right-[15%] -translate-y-1/2 w-96 h-96 bg-brand-500/10 rounded-full blur-3xl"></div>
 
-      <div class="absolute top-20 left-[10%] w-16 h-16 border-2 border-white/10 rotate-12 hidden lg:block"></div>
-      <div class="absolute bottom-20 right-[10%] w-24 h-24 border-2 border-white/10 -rotate-6 hidden lg:block"></div>
-
       <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
-        <div class="max-w-3xl mx-auto text-center">
-          <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white mb-6">
-            Let's talk about<br class="hidden sm:block" /> <em class="text-accent-200">what actually works</em>
-          </h2>
-          <p class="text-lg md:text-xl text-white/70 max-w-xl mx-auto mb-12">
-            If you're organizing a conference, podcast, or workshop and think my perspective would resonate with your audience—I'd love to hear from you.
-          </p>
+        <div class="max-w-4xl mx-auto">
+          <!-- Header -->
+          <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-white mb-6">
+              Let's talk about<br class="hidden sm:block" /> <em class="text-accent-200">what actually works</em>
+            </h2>
+            <p class="text-lg md:text-xl text-white/70 max-w-xl mx-auto">
+              If you're organizing a conference, podcast, or workshop and think my perspective would resonate—I'd love to hear from you.
+            </p>
+          </div>
 
-          <a href="mailto:jesse@jcmcginnis.com" class="group inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl">
-            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-            Get in touch
-          </a>
+          <!-- Topics Grid -->
+          <div class="grid md:grid-cols-3 gap-6 mb-16">
+            <div class="text-center md:text-left p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h3 class="font-bold text-white mb-2">High-Trust Teams</h3>
+              <p class="text-sm text-white/60">Trust is the multiplier. Teams that have it move faster and recover from failure with grace.</p>
+            </div>
+            <div class="text-center md:text-left p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h3 class="font-bold text-white mb-2">Directed Chaos</h3>
+              <p class="text-sm text-white/60">Layoffs, pivots, reorgs—not avoiding turbulence, but harnessing it to build resilience.</p>
+            </div>
+            <div class="text-center md:text-left p-6 rounded-2xl bg-white/5 border border-white/10">
+              <h3 class="font-bold text-white mb-2">High-Agency Leadership</h3>
+              <p class="text-sm text-white/60">Building teams that don't need you. Holding people to a bar they thought was impossible.</p>
+            </div>
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center">
+            <a href="mailto:jesse@jcmcginnis.com" class="group inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl">
+              <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              Get in touch
+            </a>
+          </div>
         </div>
       </div>
     </section>
