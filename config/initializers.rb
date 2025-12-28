@@ -47,4 +47,84 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
       current_page.data.nav_section == item.url ||
       (item.collection && current_page.respond_to?(:collection) && current_page.collection&.label == item.collection)
   end
+
+  # ════════════════════════════════════════════════════════════════════════════
+  # PARTIAL CONTRACT HELPER
+  # ════════════════════════════════════════════════════════════════════════════
+  #
+  # Validates partial parameters via a declarative contract with dev logging.
+  #
+  # @param b [Binding] Caller's binding
+  # @param schema [Hash] Parameter specs (see examples)
+  # @return [Struct] Validated params accessible as p.name
+  #
+  # @example
+  #   p = contract(binding,
+  #     color: %w[brand accent],           # enum, first is default
+  #     bold:  false,                       # boolean
+  #     href:  nil                          # optional
+  #   )
+  #
+  def contract(b, schema)
+    # Capture caller stack once (only parsed on error)
+    call_stack = caller
+
+    result = schema.map do |param, spec|
+      # Phase 1: Normalize spec to common structure
+      normalized = normalize_spec(spec)
+
+      # Phase 2: Extract and validate
+      value = b.local_variable_defined?(param) ? b.local_variable_get(param) : nil
+      validated = validate_param(call_stack, param, value, normalized)
+
+      [param, validated]
+    end.to_h
+
+    Struct.new(*result.keys).new(*result.values)
+  end
+
+  private
+
+  def normalize_spec(spec)
+    case spec
+    when Array
+      { type: :enum, allowed: spec, default: spec.first }
+    when Hash
+      { type: :enum, allowed: spec[:allowed], default: spec[:default] || spec[:allowed].first }
+    when true, false
+      { type: :bool, default: spec }
+    else
+      { type: :optional, default: nil }
+    end
+  end
+
+  def validate_param(call_stack, param, value, spec)
+    case spec[:type]
+    when :enum
+      return spec[:default] if value.nil?
+      return value if spec[:allowed].include?(value)
+
+      log_validation_error(call_stack, param, value, spec)
+      spec[:default]
+
+    when :bool
+      value == true
+
+    when :optional
+      value
+    end
+  end
+
+  def log_validation_error(call_stack, param, value, spec)
+    return unless Bridgetown.env.development?
+
+    # Only parse call stack when we need to log an error
+    partial = call_stack
+      .find { it.include?("/_partials/") }
+      &.then { it[%r{_partials/(.+?\.erb)}, 1] } || "unknown partial"
+
+    warn("\e[33m[#{partial}]\e[0m #{param}: \e[31m#{value.inspect}\e[0m is invalid")
+    warn("  Allowed: #{spec[:allowed].join(" | ")}")
+    warn("  Using: #{spec[:default]}")
+  end
 end

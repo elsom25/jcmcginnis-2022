@@ -1,36 +1,83 @@
 <%
-  # Defaults - all parameters with their options and validations
-  color ||= "brand"         # accent color for borders, shadows, and highlights
-  color = "brand" unless %w[brand accent emerald sky].include?(color)
+  # ════════════════════════════════════════════════════════════════════════════
+  # CARD PARTIAL
+  # ════════════════════════════════════════════════════════════════════════════
+  #
+  # Versatile content container with hover effects and theme integration.
+  # Use for: blog previews, feature callouts, quotes, numbered lists.
+  #
+  # ── Visual ────────────────────────────────────────────────────────────────
+  # @param color       [String]  Accent color: "brand" | "accent" | "emerald" | "sky"
+  # @param size        [String]  Padding scale: "sm" | "md" | "lg" | "xl"
+  # @param rounded     [String]  Border radius: "xl" | "2xl" | "3xl"
+  # @param shadow_size [String]  Hover shadow: "lg" | "xl" | "2xl"
+  # @param bg_variant  [String]  Background: "default" | "muted" | "glass" | "frosted"
+  # @param bold        [Boolean] Dark promotional style for CTAs on light sections
+  #
+  # ── Behavior ──────────────────────────────────────────────────────────────
+  # @param href        [String]  URL - renders as <a> instead of <div>
+  # @param external    [Boolean] Opens in new tab (requires href)
+  # @param h_full      [Boolean] Stretch to container height (for grid layouts)
+  #
+  # ── Content Modes (mutually exclusive) ────────────────────────────────────
+  # @param number       [Integer] Shows numbered badge, expects block content
+  # @param quote_text   [String]  Quote mode - ignores block content
+  # @param quote_author [String]  Attribution (only with quote_text)
+  # (default)           [Block]   Custom content via block
+  #
+  # @example Link card
+  #   render "card", href: "/blog/post", color: "brand" do ... end
+  #
+  # @example Quote with attribution
+  #   render "card", quote_text: "...", quote_author: "Name", color: "accent"
+  #
+  # @example Numbered card (for ordered lists)
+  #   render "card", number: 1, color: "emerald" do ... end
+  #
+  # @example Bold CTA on light background
+  #   render "card", bold: true, href: "#section" do ... end
+  #
+  # @avoid
+  #   - Nesting cards inside cards
+  #   - Using for pure text without visual hierarchy - use prose instead
+  #   - Mixing quote_text with block content (quote wins)
+  #
+  # @see _bold_accent.erb for dark section backgrounds
+  # @see _section_header.erb for eyebrow labels above card groups
+  #
+  # ════════════════════════════════════════════════════════════════════════════
 
-  size ||= "md"             # padding scale
-  size = "md" unless %w[sm md lg xl].include?(size)
+  p = contract(binding,
+    # Visual
+    color:        %w[brand accent emerald sky],
+    size:         %w[sm md lg xl],
+    rounded:      { allowed: %w[xl 2xl 3xl], default: "2xl" },
+    shadow_size:  %w[lg xl 2xl],
+    bg_variant:   %w[default muted glass frosted],
+    bold:         false,
 
-  rounded ||= "2xl"         # border radius
-  rounded = "2xl" unless %w[xl 2xl 3xl].include?(rounded)
+    # Behavior
+    href:         nil,
+    external:     false,
+    h_full:       false,
 
-  shadow_size ||= "lg"      # hover shadow intensity
-  shadow_size = "lg" unless %w[lg xl 2xl].include?(shadow_size)
+    # Content
+    number:       nil,
+    quote_text:   nil,
+    quote_author: nil
+  )
 
-  bg_variant ||= "default"  # background style (default, muted, glass, frosted)
-  bg_variant = "default" unless %w[default muted glass frosted].include?(bg_variant)
-
-  bold ||= false            # dark promotional style
-  h_full ||= false          # height: 100% for grid layouts
-  external ||= false        # target="_blank" when href set
-
-  href ||= nil              # wraps card in <a> tag
-  number ||= nil            # large corner badge
-  quote_text ||= nil        # renders blockquote card
-  quote_author ||= nil      # citation for quote
+  # ──────────────────────────────────────────────────────────────────────────
+  # DESIGN TOKENS
+  # ──────────────────────────────────────────────────────────────────────────
 
   # Size → padding
   padding_map = { "sm" => "p-4", "md" => "p-6", "lg" => "p-8", "xl" => "p-10" }
-  padding = padding_map[size]
+  padding = padding_map[p.size]
 
   # Shadow size → hover class
   shadow_size_map = { "lg" => "hover:shadow-lg", "xl" => "hover:shadow-xl", "2xl" => "hover:shadow-2xl" }
-  shadow_class = shadow_size_map[shadow_size]
+  shadow_class = shadow_size_map[p.shadow_size]
 
   # Color-keyed mappings
   shadow_colors = {
@@ -105,28 +152,31 @@
     "3xl" => "rounded-tl-3xl rounded-br-3xl"
   }
 
-  # Build classes
-  overflow_class = number ? "overflow-hidden" : ""
-  height_class = h_full ? "h-full" : ""
-  rounded_class = "rounded-#{rounded}"
+  # ──────────────────────────────────────────────────────────────────────────
+  # BUILD CLASSES
+  # ──────────────────────────────────────────────────────────────────────────
+
+  overflow_class = p.number ? "overflow-hidden" : ""
+  height_class = p.h_full ? "h-full" : ""
+  rounded_class = "rounded-#{p.rounded}"
   transition_class = "transition-all duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
 
   # Background & border based on variant
-  if bold
+  if p.bold
     # Bold promotional style - dark gradient, no inner hover gradient
     bg_classes = "bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 border-stone-700/50 hover:border-stone-600/70"
-  elsif quote_text
-    bg_classes = "#{quote_bg_gradients[color]} #{quote_borders[color]} #{border_hover_light[color]} #{border_hover_dark[color]}"
-  elsif bg_variant == "muted"
-    bg_classes = "bg-stone-50 dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[color]} #{border_hover_dark[color]}"
-  elsif bg_variant == "glass"
+  elsif p.quote_text
+    bg_classes = "#{quote_bg_gradients[p.color]} #{quote_borders[p.color]} #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
+  elsif p.bg_variant == "muted"
+    bg_classes = "bg-stone-50 dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
+  elsif p.bg_variant == "glass"
     # Light frosted glass - translucent with blur
-    bg_classes = "bg-white/40 dark:bg-stone-900/60 backdrop-blur-md border-white/50 dark:border-stone-700/50 #{border_hover_light[color]} #{border_hover_dark[color]}"
-  elsif bg_variant == "frosted"
+    bg_classes = "bg-white/40 dark:bg-stone-900/60 backdrop-blur-md border-white/50 dark:border-stone-700/50 #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
+  elsif p.bg_variant == "frosted"
     # Dark frosted glass - for use on colorful/gradient backgrounds
     bg_classes = "bg-stone-900/40 backdrop-blur-sm border-white/15 hover:border-white/25 hover:bg-stone-900/55"
   else
-    bg_classes = "bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[color]} #{border_hover_dark[color]}"
+    bg_classes = "bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
   end
 
   # Combine all classes
@@ -139,46 +189,46 @@
     transition_class,
     "hover:-translate-y-1",
     shadow_class,
-    shadow_colors[color],
+    shadow_colors[p.color],
     bg_classes
   ].join(" ")
 
-  link_attrs = external ? 'rel="external" target="_blank"' : ''
+  link_attrs = p.external ? 'rel="external" target="_blank"' : ''
 %>
 
-<% if href %>
-<a href="<%= href %>" class="<%= card_classes %>" <%= link_attrs.html_safe %>>
+<% if p.href %>
+<a href="<%= p.href %>" class="<%= card_classes %> focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-stone-900" <%= link_attrs.html_safe %>>
 <% else %>
 <div class="<%= card_classes %>">
 <% end %>
-  <% unless bold %>
+  <% unless p.bold %>
     <!-- Subtle inner hover gradient (disabled for bold cards) -->
-    <div class="absolute inset-0 <%= rounded_class %> bg-gradient-to-br <%= hover_gradient[color] %> pointer-events-none transition-all duration-300"></div>
+    <div class="absolute inset-0 <%= rounded_class %> bg-gradient-to-br <%= hover_gradient[p.color] %> pointer-events-none transition-all duration-300"></div>
   <% end %>
 
-  <% if number %>
+  <% if p.number %>
     <!-- Number badge -->
-    <div class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br <%= badge_gradients[color] %> flex items-center justify-center <%= badge_radius_map[rounded] %>">
-      <span class="font-mono text-2xl font-bold text-white"><%= number %></span>
+    <div class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br <%= badge_gradients[p.color] %> flex items-center justify-center <%= badge_radius_map[p.rounded] %>">
+      <span class="font-mono text-2xl font-bold text-white"><%= p.number %></span>
     </div>
   <% end %>
 
-  <% if quote_text %>
+  <% if p.quote_text %>
     <!-- Quote content -->
-    <div class="absolute top-3 left-4 text-5xl <%= quote_mark_colors[color] %> font-serif">"</div>
+    <div class="absolute top-3 left-4 text-5xl <%= quote_mark_colors[p.color] %> font-serif">"</div>
     <p class="relative font-serif text-lg text-stone-700 dark:text-stone-200 leading-relaxed mb-4 pt-4">
-      <%= quote_text %>
+      <%= p.quote_text %>
     </p>
-    <% if quote_author %>
-      <cite class="text-sm <%= cite_colors[color] %> not-italic font-medium">— <%= quote_author %></cite>
+    <% if p.quote_author %>
+      <cite class="text-sm <%= cite_colors[p.color] %> not-italic font-medium">— <%= p.quote_author %></cite>
     <% end %>
   <% else %>
     <!-- Block content -->
-    <div class="relative <%= number ? 'pl-24' : '' %>">
+    <div class="relative <%= p.number ? 'pl-24' : '' %>">
       <%= content %>
     </div>
   <% end %>
-<% if href %>
+<% if p.href %>
 </a>
 <% else %>
 </div>
