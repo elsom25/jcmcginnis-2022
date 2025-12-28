@@ -35,4 +35,10 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
   def category_url(category_name)
     "/category/#{category_name.downcase.gsub(/\s+/, "-")}/"
   end
+
+  def active_nav_item?(item, current_page)
+    current_page.relative_url == item.url ||
+      current_page.data.nav_section == item.url ||
+      (item.collection && current_page.respond_to?(:collection) && current_page.collection&.label == item.collection)
+  end
 end

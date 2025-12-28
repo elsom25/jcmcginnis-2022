@@ -375,3 +375,69 @@ body.mobile-menu-open {
 @utility pull-quote {
   @apply font-serif text-2xl md:text-3xl italic text-stone-700 dark:text-stone-300 leading-relaxed;
 }
+
+/* ==========================================================================
+   Accent Zone - Dark contrast sections (reusable across pages)
+   ========================================================================== */
+
+/* Base styling for accent zones - high contrast dark sections */
+.accent-zone {
+  /* Force white text throughout */
+  color: var(--color-stone-100);
+
+  /* Default background - can be overridden */
+  background: linear-gradient(
+    to bottom,
+    rgb(28, 25, 23) 0%,
+    rgb(12, 10, 9) 50%,
+    rgb(28, 25, 23) 100%
+  );
+}
+
+/* Accent zone links */
+.accent-zone a:not(.btn) {
+  color: var(--color-brand-400);
+}
+
+.accent-zone a:not(.btn):hover {
+  color: var(--color-brand-300);
+}
+
+/* ==========================================================================
+   Scroll-triggered reveal animations (CSS-based)
+   ========================================================================== */
+
+/* Default: content is visible (no JS required) */
+.reveal-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 0.5s ease-out,
+    transform 0.5s ease-out;
+}
+
+/* When JS adds this class, elements start hidden */
+.reveal-ready .reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Revealed state */
+.reveal-ready .reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Directional variants */
+.reveal-ready .reveal-on-scroll[data-side="left"] {
+  transform: translateX(-30px);
+}
+
+.reveal-ready .reveal-on-scroll[data-side="right"] {
+  transform: translateX(30px);
+}
+
+.reveal-ready .reveal-on-scroll[data-side="left"].revealed,
+.reveal-ready .reveal-on-scroll[data-side="right"].revealed {
+  transform: translateX(0);
+}

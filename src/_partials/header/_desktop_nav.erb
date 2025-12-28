@@ -1,20 +1,6 @@
 <nav class="hidden md:flex items-center gap-1">
   <% menu.main.each do |item| %>
-    <%
-      current_url = page.relative_url
-      is_active = current_url == item.url || (item.url != "/" && current_url.start_with?(item.url))
-
-      # Writing is active for non-talk blog posts and non-talk categories
-      if item.url == "/blog/" && !is_active
-        is_active = (current_url.start_with?("/blog/") && !current_url.include?("qcon") && !current_url.include?("gartner") && !current_url.include?("uplimit")) ||
-                    (current_url.start_with?("/category/") && !current_url.include?("talks"))
-      end
-
-      # Speaking is active for talk-related blog posts
-      if item.url == "/talks/" && !is_active
-        is_active = current_url.include?("qcon") || current_url.include?("gartner") || current_url.include?("uplimit") || current_url.include?("/category/talks")
-      end
-    %>
+    <% is_active = active_nav_item?(item, page) %>
     <a href="<%= relative_url item.url %>"
        class="relative px-3 py-2 text-sm font-medium transition-colors <%= is_active ? 'text-stone-900 dark:text-stone-100' : 'text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100' %>">
       <%= item.name %>

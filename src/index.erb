@@ -81,8 +81,8 @@ skip_footer: true
       </div>
     </section>
 
-    <!-- THE LESSONS - High Contrast Dark Section -->
-    <section id="lessons" class="relative">
+    <!-- THE LESSONS - High Contrast Dark Section (Accent Zone) -->
+    <section id="lessons" class="accent-zone relative">
       <!-- Base: Dark in both modes for high contrast -->
       <div class="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 dark:from-black dark:via-stone-950 dark:to-black"></div>
       <!-- Colored gradient overlays - visible in BOTH modes -->
@@ -108,26 +108,36 @@ skip_footer: true
         </div>
       </div>
 
-      <!-- Pinned Timeline Container -->
+      <!-- Timeline Container -->
       <div id="timeline-container" class="relative">
-        <!-- Timeline Track - Global, spans entire container -->
-        <div id="timeline-track" class="hidden md:block absolute left-1/2 -translate-x-1/2 w-px z-5">
-          <!-- Full gradient background (stable colors per section: brand=red, emerald=green, sky=blue) -->
-          <div class="absolute inset-0 rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #e11d48 12%, #10b981 12%, #10b981 72%, #3b82f6 72%, #3b82f6 100%); opacity: 0.25;"></div>
-          <!-- Animated fill overlay -->
-          <div id="timeline-fill" class="absolute top-0 left-0 right-0 rounded-full transition-all duration-100" style="height: 0%; background: linear-gradient(to bottom, #e11d48 0%, #e11d48 12%, #10b981 12%, #10b981 72%, #3b82f6 72%, #3b82f6 100%);"></div>
+        <!-- Timeline Track - Dull background, gradient fills on scroll with glow -->
+        <!-- z-[1] keeps it below the era containers which have z-[2] -->
+        <div id="timeline-track" class="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 z-[1]">
+          <!-- Dull/dark background track (always visible) -->
+          <div class="absolute inset-0 rounded-full bg-stone-700/30"></div>
+          <!-- Glow wrapper - NOT clipped, follows fill height -->
+          <div id="timeline-glow" class="absolute top-0 left-1/2 -translate-x-1/2 w-20 pointer-events-none" style="height: 0%;">
+            <!-- Outer glow (wide, soft) -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 h-full w-12 rounded-full blur-xl opacity-60" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
+            <!-- Inner glow (tighter, brighter) -->
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 h-full w-6 rounded-full blur-md opacity-80" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
+          </div>
+          <!-- Fill wrapper - clips the core line only -->
+          <div id="timeline-fill" class="absolute top-0 left-0 right-0 overflow-hidden rounded-full" style="height: 0%;">
+            <!-- Core gradient line (sharp) -->
+            <div class="absolute top-0 left-0 right-0 h-[3000px] rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
+          </div>
         </div>
 
         <%# Global lesson index for alternating sides across all eras %>
         <% global_lesson_index = 0 %>
 
         <!-- Era: Boltmade -->
-        <div class="timeline-era relative" data-era="boltmade" data-color="brand">
-          <!-- Era Header - Prominent card style with proper sticky offset -->
+        <div class="timeline-era relative z-[2]" data-era="boltmade" data-color="brand">
+          <!-- Era Header -->
           <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
             <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
               <div class="relative">
-                <!-- Background card for era header -->
                 <div class="absolute inset-0 bg-gradient-to-r from-brand-900/95 via-brand-800/95 to-brand-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-brand-500/20 border border-brand-600/30"></div>
                 <div class="relative flex items-center justify-between px-5 py-4">
                   <div class="flex items-center gap-4">
@@ -149,11 +159,11 @@ skip_footer: true
           <div class="relative pt-4 pb-2">
             <% site.data.career.eras[0].points.each_with_index do |point, i| %>
               <% is_right = global_lesson_index.even? %>
-              <article class="lesson-panel relative py-4 md:py-6" data-lesson="boltmade-<%= i %>">
-                <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
-                  <div class="relative md:grid md:grid-cols-2 md:gap-8">
+              <article class="lesson-panel reveal-on-scroll relative md:-mt-8 first:mt-0" data-lesson="boltmade-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
+                <div class="w-full max-w-5xl mx-auto px-6 md:px-12 py-6 md:py-8">
+                  <div class="relative md:grid md:grid-cols-2 md:gap-12">
                     <!-- Timeline dot -->
-                    <div class="hidden md:block absolute left-1/2 top-2 -translate-x-1/2 z-10">
+                    <div class="timeline-dot hidden md:block absolute left-1/2 top-8 -translate-x-1/2 z-10">
                       <div class="w-3 h-3 rounded-full bg-brand-500 ring-2 ring-stone-900 shadow-lg shadow-brand-500/50"></div>
                     </div>
 
@@ -161,7 +171,6 @@ skip_footer: true
                       <div class="hidden md:block"></div>
                     <% end %>
 
-                    <!-- Content -->
                     <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
                       <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
                         <%= point.lesson %>
@@ -188,7 +197,7 @@ skip_footer: true
         </div>
 
         <!-- Era: Shopify -->
-        <div class="timeline-era relative" data-era="shopify" data-color="emerald">
+        <div class="timeline-era relative z-[2]" data-era="shopify" data-color="emerald">
           <!-- Era Header -->
           <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
             <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
@@ -210,23 +219,24 @@ skip_footer: true
             </div>
           </div>
 
-          <!-- Lessons - TRUE overlapping layout with CSS Grid row positioning -->
-          <div class="relative pt-4 pb-2">
+          <!-- Lessons - CSS Grid for compact overlapping layout -->
+          <div class="relative pt-4 pb-8">
             <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
-              <%# CSS Grid with explicit row positioning for overlapping effect %>
-              <div class="md:grid md:grid-cols-[1fr_1px_1fr] md:gap-x-8 relative">
-                <%# Timeline column (center) - rendered separately %>
+              <%# Use CSS Grid with row spans for visual overlap on desktop %>
+              <div class="md:grid md:grid-cols-[1fr_24px_1fr] md:gap-x-6" style="grid-auto-rows: minmax(48px, auto);">
                 <% site.data.career.eras[1].points.each_with_index do |point, i| %>
                   <% is_right = global_lesson_index.even? %>
-                  <%# Each item spans 2 rows, offset by 1 row from previous %>
-                  <article class="lesson-panel relative py-4 md:py-0 md:row-span-2 <%= is_right ? 'md:col-start-3' : 'md:col-start-1 md:text-right' %>" data-lesson="shopify-<%= i %>" style="<%= i > 0 ? 'grid-row-start: ' + (i * 2).to_s + ';' : '' %>">
-                    <!-- Timeline dot - positioned at center column -->
-                    <div class="hidden md:block absolute <%= is_right ? '-left-4' : '-right-4' %> top-6 z-10 <%= is_right ? '-translate-x-1/2' : 'translate-x-1/2' %>">
-                      <div class="w-3 h-3 rounded-full bg-emerald-500 ring-2 ring-stone-900 shadow-lg shadow-emerald-500/50"></div>
-                    </div>
+                  <%# Each lesson spans 5 rows, starting offset by 3 rows from previous %>
+                  <% row_start = (i * 3) + 1 %>
 
-                    <!-- Content -->
-                    <div class="<%= is_right ? 'md:pl-4' : 'md:pr-4' %>">
+                  <%# Timeline dot in center column %>
+                  <div class="hidden md:flex items-start justify-center pt-2 timeline-dot z-10" style="grid-column: 2; grid-row: <%= row_start %>;">
+                    <div class="w-3 h-3 rounded-full bg-emerald-500 ring-2 ring-stone-900 shadow-lg shadow-emerald-500/50"></div>
+                  </div>
+
+                  <%# Content on alternating sides %>
+                  <article class="lesson-panel reveal-on-scroll py-6 md:py-4" data-lesson="shopify-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>" style="grid-column: <%= is_right ? '3' : '1' %>; grid-row: <%= row_start %> / span 5;">
+                    <div class="<%= is_right ? 'md:pl-4' : 'md:pr-4 md:text-right' %>">
                       <p class="text-xs font-mono text-emerald-500 mb-2"><%= point.period %></p>
                       <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
                         <%= point.lesson %>
@@ -248,8 +258,8 @@ skip_footer: true
           </div>
         </div>
 
-        <!-- Era: GrowthLoop (Blue color scheme) -->
-        <div class="timeline-era relative" data-era="growthloop" data-color="sky">
+        <!-- Era: GrowthLoop -->
+        <div class="timeline-era relative z-[2]" data-era="growthloop" data-color="sky">
           <!-- Era Header -->
           <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
             <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
@@ -279,11 +289,11 @@ skip_footer: true
           <div class="relative pt-4 pb-2">
             <% site.data.career.eras[2].points.each_with_index do |point, i| %>
               <% is_right = global_lesson_index.even? %>
-              <article class="lesson-panel relative py-4 md:py-6" data-lesson="growthloop-<%= i %>">
-                <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
-                  <div class="relative md:grid md:grid-cols-2 md:gap-8">
+              <article class="lesson-panel reveal-on-scroll relative md:-mt-8 first:mt-0" data-lesson="growthloop-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
+                <div class="w-full max-w-5xl mx-auto px-6 md:px-12 py-6 md:py-8">
+                  <div class="relative md:grid md:grid-cols-2 md:gap-12">
                     <!-- Timeline dot -->
-                    <div class="hidden md:block absolute left-1/2 top-2 -translate-x-1/2 z-10">
+                    <div class="timeline-dot hidden md:block absolute left-1/2 top-8 -translate-x-1/2 z-10">
                       <div class="w-3 h-3 rounded-full bg-sky-500 ring-2 ring-stone-900 shadow-lg shadow-sky-500/50 animate-pulse"></div>
                     </div>
 
@@ -291,7 +301,6 @@ skip_footer: true
                       <div class="hidden md:block"></div>
                     <% end %>
 
-                    <!-- Content -->
                     <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
                       <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
                         <%= point.lesson %>
@@ -318,10 +327,10 @@ skip_footer: true
         </div>
 
         <!-- The Thesis - Timeline ends at top boundary -->
-        <div id="thesis-section" class="relative pt-16 pb-20 md:pt-20 md:pb-28">
+        <div id="thesis-section" class="relative pt-16 pb-20 md:pt-20 md:pb-28 z-10">
           <div class="w-full max-w-3xl mx-auto px-6 md:px-12">
-            <!-- Thesis card - Timeline ends at the top of this box -->
-            <div id="thesis-card" class="relative">
+            <!-- Thesis card - z-index ensures timeline doesn't overlap -->
+            <div id="thesis-card" class="relative z-20 reveal-on-scroll">
               <!-- Glowing border effect -->
               <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-brand-500 via-emerald-500 to-sky-500 opacity-50 blur-sm"></div>
               <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-brand-500 via-emerald-500 to-sky-500 opacity-30"></div>
@@ -524,153 +533,78 @@ skip_footer: true
   </main>
 </div>
 
-<!-- GSAP Scroll Animations -->
+<!-- Minimal JS: Timeline fill + reveal animations -->
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  const checkGSAP = setInterval(() => {
+  // Mark document as JS-ready for CSS reveal animations
+  document.body.classList.add('reveal-ready');
+
+  // Simple IntersectionObserver for reveal animations (no library needed)
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target); // Only animate once
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+  document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
+
+  // Wait for GSAP for timeline fill only
+  const check = setInterval(() => {
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-      clearInterval(checkGSAP);
-      initScrollAnimations();
+      clearInterval(check);
+      gsap.registerPlugin(ScrollTrigger);
+      initTimelineFill();
     }
   }, 50);
-  setTimeout(() => clearInterval(checkGSAP), 3000);
+  setTimeout(() => clearInterval(check), 3000);
 });
 
-function initScrollAnimations() {
-  gsap.registerPlugin(ScrollTrigger);
+function initTimelineFill() {
+  const track = document.getElementById('timeline-track');
+  const fill = document.getElementById('timeline-fill');
+  const glow = document.getElementById('timeline-glow');
+  const thesis = document.getElementById('thesis-card');
+  const container = document.getElementById('timeline-container');
+  const firstLesson = document.querySelector('.lesson-panel');
 
-  const timelineTrack = document.getElementById('timeline-track');
-  const timelineFill = document.getElementById('timeline-fill');
-  const thesisCard = document.getElementById('thesis-card');
-  const timelineContainer = document.getElementById('timeline-container');
-  const firstEra = document.querySelector('.timeline-era');
+  if (!track || !fill || !glow || !thesis || !container || !firstLesson) return;
 
-  // Position timeline track using getBoundingClientRect for accurate positioning
-  function updateTimelinePosition() {
-    if (!timelineTrack || !thesisCard || !timelineContainer || !firstEra) return;
+  // Position timeline from first lesson to thesis card top
+  function positionTimeline() {
+    // Calculate in document coordinates
+    const startY = firstLesson.offsetTop + 32; // Start below first dot
+    const thesisSection = document.getElementById('thesis-section');
+    const endY = thesisSection.offsetTop + thesis.offsetTop; // End at thesis card top
 
-    const firstHeader = firstEra.querySelector('.era-header');
-    if (!firstHeader) return;
+    const height = Math.max(100, endY - startY);
 
-    // Get positions relative to the viewport, then calculate relative to container
-    const containerRect = timelineContainer.getBoundingClientRect();
-    const headerRect = firstHeader.getBoundingClientRect();
-    const cardRect = thesisCard.getBoundingClientRect();
-
-    // Calculate positions relative to container using scroll position
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const containerTop = containerRect.top + scrollTop;
-    const headerBottom = headerRect.bottom + scrollTop;
-    const cardTop = cardRect.top + scrollTop;
-
-    // Position timeline: starts after first header, ends at thesis card top
-    const startY = headerBottom - containerTop;
-    const endY = cardTop - containerTop;
-    const height = endY - startY;
-
-    timelineTrack.style.top = `${startY}px`;
-    timelineTrack.style.height = `${Math.max(0, height)}px`;
+    track.style.top = `${startY}px`;
+    track.style.height = `${height}px`;
   }
 
-  // Initial positioning with multiple retries for layout settling
-  updateTimelinePosition();
-  setTimeout(updateTimelinePosition, 100);
-  setTimeout(updateTimelinePosition, 300);
-  setTimeout(updateTimelinePosition, 600);
-  setTimeout(updateTimelinePosition, 1000);
-
-  // Update on resize and scroll (for position recalculation)
-  window.addEventListener('resize', updateTimelinePosition);
-  window.addEventListener('scroll', () => {
-    // Only recalculate on first scroll or when near top
-    if (window.scrollY < 100) updateTimelinePosition();
-  }, { passive: true });
-
-  // Timeline fill animation
-  if (timelineFill && timelineTrack && thesisCard) {
-    ScrollTrigger.create({
-      trigger: timelineTrack,
-      start: 'top 50%',
-      endTrigger: thesisCard,
-      end: 'top 60%',
-      onUpdate: (self) => {
-        timelineFill.style.height = `${self.progress * 100}%`;
-      }
-    });
-  }
-
-  // Lesson panels - animate in from sides
-  document.querySelectorAll('.lesson-panel').forEach((panel) => {
-    const isLeft = panel.classList.contains('md:text-right') || panel.querySelector('.md\\:text-right') !== null;
-    const content = panel.querySelector('[class*="md:pr-"], [class*="md:pl-"]');
-
-    if (content) {
-      gsap.from(content, {
-        x: isLeft ? -40 : 40,
-        opacity: 0,
-        duration: 0.5,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: panel,
-          start: 'top 85%',
-          toggleActions: 'play none none none'
-        }
-      });
-    }
+  // Position on load and resize
+  positionTimeline();
+  setTimeout(positionTimeline, 100); // Reposition after fonts/layout settle
+  window.addEventListener('resize', () => {
+    positionTimeline();
+    ScrollTrigger.refresh();
   });
 
-  // Era headers - slide in
-  document.querySelectorAll('.era-header').forEach((header) => {
-    const card = header.querySelector('.relative');
-    if (card) {
-      gsap.from(card, {
-        y: -20,
-        opacity: 0,
-        duration: 0.4,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: header,
-          start: 'top 90%',
-          toggleActions: 'play none none none'
-        }
-      });
+  // Scroll-driven fill animation (scrub ensures it reverts on scroll up)
+  ScrollTrigger.create({
+    trigger: firstLesson,
+    start: 'top 70%',
+    endTrigger: thesis,
+    end: 'top 60%',
+    scrub: 0.5, // Smooth scrub, follows scroll in both directions
+    onUpdate: (self) => {
+      const heightPercent = `${self.progress * 100}%`;
+      fill.style.height = heightPercent;
+      glow.style.height = heightPercent; // Animate glow with fill
     }
   });
-
-  // Timeline dots - pop in
-  document.querySelectorAll('.lesson-panel .rounded-full').forEach((dot) => {
-    if (dot.classList.contains('bg-brand-500') ||
-        dot.classList.contains('bg-emerald-500') ||
-        dot.classList.contains('bg-sky-500')) {
-      gsap.from(dot, {
-        scale: 0,
-        duration: 0.25,
-        ease: 'back.out(2)',
-        scrollTrigger: {
-          trigger: dot,
-          start: 'top 80%',
-          toggleActions: 'play none none none'
-        }
-      });
-    }
-  });
-
-  // Thesis card - fade in
-  if (thesisCard) {
-    gsap.from(thesisCard, {
-      y: 30,
-      opacity: 0,
-      duration: 0.6,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: thesisCard,
-        start: 'top 85%',
-        toggleActions: 'play none none none'
-      }
-    });
-  }
-
-  // Refresh ScrollTrigger after positioning
-  ScrollTrigger.refresh();
 }
 </script>
