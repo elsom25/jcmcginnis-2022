@@ -1,0 +1,83 @@
+---
+description: Process patterns for efficient iteration on visual/interactive features
+globs: ["**/*"]
+alwaysApply: true
+---
+
+# Iteration & Problem-Solving Process
+
+## The "Revert and Rethink" Signal
+
+When you find yourself:
+- Adding more JS to fix visual bugs
+- Fighting CSS with `!important` or inline overrides
+- Patching one area but breaking another
+- On the 3rd+ attempt at the same effect
+
+**STOP.** The architecture is wrong.
+
+Ask:
+1. Am I fighting the natural behavior of CSS? (overflow, z-index, stacking)
+2. Is there a simpler approach that works WITH the browser?
+3. What would a print designer do? (layers, bleeds, soft edges)
+4. What real-world phenomenon am I simulating?
+
+## The Iteration Pattern That Works
+
+```
+1. Bold first attempt → Get something visible, don't overthink
+2. Identify what feels "off" → Trust gut, NAME the specific problem
+3. Fix the CAUSE not the symptom → Understand WHY it's off
+4. Refine in layers → Opacity, spacing, timing (small adjustments)
+5. Test edge cases → Scroll positions, viewport sizes, themes
+```
+
+**Common trap:** Getting stuck in 2-3 loops, fixing symptoms instead of causes.
+
+## Vocabulary for Faster Communication
+
+Use precise terms to identify issues:
+
+| Term | Meaning |
+|------|---------|
+| "Hard edge" | Visible boundary where there shouldn't be one |
+| "Falloff" | How gradually something fades (glow, shadow, opacity) |
+| "Stacking context" | z-index not working because parent creates new context |
+| "Clip vs extend" | Should effect stay inside bounds or radiate outward? |
+| "Scrub" | Scroll position directly controls animation progress |
+| "Fighting CSS" | Using JS/hacks to override natural browser behavior |
+
+## Common Visual Bugs & Root Causes
+
+| Symptom | Likely Cause | Solution |
+|---------|--------------|----------|
+| Glow has hard edges | `overflow: hidden` clipping | Remove clipping, let blur extend |
+| Effect too loud | High opacity, small blur | Reduce opacity, increase blur, add layers |
+| Content doesn't overlap | Sequential layout | CSS Grid with row spans, or negative margins |
+| Sticky not working | Ancestor has `overflow: hidden` | Remove overflow or restructure |
+| z-index ignored | No stacking context | Add `position: relative` to parent |
+| Animation doesn't reverse | Using `toggleActions: 'play none none none'` | Use `scrub` for scroll-linked |
+
+## Before Starting Visual Work
+
+1. **Reference check** - Find 2-3 examples of the effect done well
+2. **Physics check** - What real phenomenon does this simulate?
+3. **Complexity check** - Can this be CSS-only? If not, what's the minimal JS?
+4. **Layer plan** - How many layers needed for depth? What are their roles?
+
+## After Implementation
+
+1. Test at 3+ scroll positions (start, middle, end)
+2. Test light AND dark mode
+3. Test at narrow (mobile) AND wide (desktop) viewports
+4. Scroll up AND down (does it revert correctly?)
+5. Ask: "Does this feel refined or generic?"
+
+## The Meta-Lesson
+
+**The fastest path to refined results:**
+
+1. Understand the physics of what you're building
+2. Trust your gut when something feels "off"
+3. When stuck, zoom out and question the APPROACH (not just values)
+4. Simple architecture + subtle values beats complex architecture + loud values

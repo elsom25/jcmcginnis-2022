@@ -1,0 +1,137 @@
+---
+description: Patterns for scroll-driven animations using GSAP ScrollTrigger
+globs: ["**/*.erb", "**/*.js", "**/*.html"]
+alwaysApply: false
+---
+
+# Scroll Animation Patterns
+
+## Core Philosophy
+
+**CSS does the heavy lifting. JS only tracks scroll progress.**
+
+- All styling (colors, blur, opacity, layout) in CSS
+- JS maps scroll position to a 0-1 progress value
+- GSAP ScrollTrigger for smooth, auto-reverting animations
+
+## When to Use Libraries vs CSS
+
+| Use CSS | Use JS Library (GSAP) |
+|---------|----------------------|
+| Static effects | Scroll-linked animations |
+| Hover/focus states | Progress-based reveals |
+| Layout (grid, flex) | Pinning/parallax |
+| Transitions between states | Complex choreography |
+| `:hover`, `:focus` animations | Scroll position → value mapping |
+
+## GSAP ScrollTrigger Pattern
+
+```javascript
+// Minimal JS - just animate based on progress
+ScrollTrigger.create({
+  trigger: startElement,
+  start: 'top 80%',      // Start when element top hits 80% down viewport
+  endTrigger: endElement,
+  end: 'top 40%',        // End when end element top hits 40% down viewport
+  scrub: 0.3,            // Smooth following, auto-reverts on scroll up
+  onUpdate: (self) => {
+    const progress = self.progress; // 0 to 1
+    fill.style.height = `${progress * 100}%`;
+    glow.style.height = `${progress * trackHeight}px`;
+  }
+});
+```
+
+### Key ScrollTrigger Settings
+
+- `scrub: 0.3` - Smooth following with slight lag, auto-reverts
+- `scrub: true` - Immediate following, can feel jerky
+- `start: 'top 80%'` - Triggers early (element near bottom of viewport)
+- `end: 'top 40%'` - Completes when element near middle of viewport
+
+## CSS Reveal Animations (No JS needed)
+
+For simple fade-in reveals, use IntersectionObserver with CSS:
+
+```css
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Directional reveals */
+.reveal-on-scroll[data-side="left"] {
+  transform: translateX(-40px);
+}
+
+.reveal-on-scroll[data-side="right"] {
+  transform: translateX(40px);
+}
+```
+
+```javascript
+// Simple observer - no library needed
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+
+document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+```
+
+## Timeline Fill Pattern
+
+For a timeline that fills as user scrolls:
+
+1. **Track** - Full height, dull/dark background
+2. **Fill** - Animated height, gradient foreground
+3. **Glow** - Animated height, blurred layers (no clipping!)
+
+```html
+<div id="timeline-track">
+  <!-- Dull background (always visible) -->
+  <div class="bg-stone-700/30 absolute inset-0"></div>
+
+  <!-- Fill (animated height) -->
+  <div id="timeline-fill" style="height: 0%;">
+    <div class="gradient-line"></div>
+  </div>
+</div>
+
+<!-- Glow OUTSIDE the track (no clipping) -->
+<div id="timeline-glow" style="height: 0px;">
+  <div class="blur-layer-outer"></div>
+  <div class="blur-layer-mid"></div>
+  <div class="blur-layer-inner"></div>
+</div>
+```
+
+## Position Calculation
+
+```javascript
+function positionTimeline() {
+  const startY = firstElement.offsetTop + offset;
+  const endY = endElement.offsetTop;
+  const height = Math.max(100, endY - startY);
+
+  track.style.top = `${startY}px`;
+  track.style.height = `${height}px`;
+  glow.style.top = `${startY}px`;
+}
+
+// Recalculate on resize
+window.addEventListener('resize', () => {
+  positionTimeline();
+  ScrollTrigger.refresh();
+});
+```

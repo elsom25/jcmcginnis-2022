@@ -1,0 +1,57 @@
+---
+description: Core principles for refined visual design and polish
+globs: ["**/*.erb", "**/*.css", "**/*.html"]
+alwaysApply: false
+---
+
+# Visual Design Principles
+
+## Start with Physics, Not Code
+
+Before implementing any visual effect, ask: **"What real-world phenomenon am I simulating?"**
+
+- **Glow** = light diffusing through atmosphere → needs soft falloff in ALL directions
+- **Shadow** = light blocked by object → soft edges, directional
+- **Timeline/progress** = journey through time → clear start/end, smooth progression
+- **Sticky element** = physical anchoring → should feel "attached" to something solid
+
+When an implementation looks wrong, stop coding and revisit the physics. Chasing symptoms (adjusting values) without understanding the cause leads to iteration loops.
+
+## Taste Markers: Refined vs Generic
+
+| Generic (Avoid) | Refined (Aim For) |
+|-----------------|-------------------|
+| Same pattern repeated | Variation that feels intentional |
+| Hard edges, sharp boundaries | Soft transitions, natural falloff |
+| Static elements | Responds to user (scroll, hover) |
+| Single layer | Multiple subtle layers creating depth |
+| Loud, obvious effects | Barely-there effects you feel more than see |
+| Fighting the medium | Working WITH browser rendering |
+
+**Key insight:** Refined design often means *reducing* intensity while *increasing* complexity (more layers, softer values, more gradual transitions).
+
+## Layering for Depth
+
+When creating depth effects (glows, shadows, backgrounds):
+
+1. **Outer layer** - Wide, very soft, barely visible (opacity 8-12%)
+2. **Mid layer** - Medium spread, soft (opacity 15-20%)
+3. **Inner layer** - Tighter, slightly more visible (opacity 20-25%)
+
+The combination creates perceived depth without any single layer being obvious.
+
+## Color Transitions
+
+- Gradients should have clear anchor points (start, middle, end)
+- Use brand colors as anchors, let transitions blend naturally
+- In dark sections, colored overlays should be visible in BOTH light and dark modes
+- Test at multiple scroll positions and viewport sizes
+
+## The "Off" Feeling
+
+Trust your gut when something feels "off." Common causes:
+
+- Hard edges where there should be soft falloff
+- Missing depth (needs more layers)
+- Effect too loud (reduce opacity, not layers)
+- Fighting CSS natural behavior (overflow, stacking)
