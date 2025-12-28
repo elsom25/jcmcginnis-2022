@@ -69,9 +69,9 @@ head_scripts:
                   <span class="text-xs font-mono uppercase tracking-wider text-stone-500">Currently</span>
                 </div>
                 <p class="text-2xl font-bold text-stone-900 dark:text-white mb-2"><%= site.data.career.current.role %></p>
-                <p class="text-lg text-brand-600 dark:text-brand-400 mb-6">@ <%= site.data.career.current.company %></p>
+                <p class="text-lg text-brand-600 dark:text-brand-400 mb-6">@ <a href="<%= site.data.career.current.url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity"><%= site.data.career.current.company %></a></p>
                 <div class="pt-6 border-t border-stone-200 dark:border-stone-800">
-                  <p class="text-sm text-stone-500">Previously 8+ years @ Shopify</p>
+                  <p class="text-sm text-stone-500">Previously <%= site.data.career.eras[1].duration %> @ <a href="<%= site.data.career.eras[1].url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity"><%= site.data.career.eras[1].company %></a></p>
                 </div>
               </div>
             </div>
@@ -147,8 +147,10 @@ head_scripts:
                       <span class="text-sm font-bold text-white">01</span>
                     </div>
                     <div>
-                      <h3 class="text-xl font-serif font-bold text-white">Boltmade</h3>
-                      <p class="text-xs font-mono text-brand-300/70">2013–2016</p>
+                      <h3 class="text-xl font-serif font-bold">
+                        <a href="<%= site.data.career.eras[0].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[0].company %></a>
+                      </h3>
+                      <p class="text-xs font-mono text-brand-300/70"><%= site.data.career.eras[0].years %></p>
                     </div>
                   </div>
                   <div class="hidden sm:block text-xs font-mono text-brand-300/50 uppercase tracking-wider">The Foundation</div>
@@ -211,8 +213,10 @@ head_scripts:
                       <span class="text-sm font-bold text-white">02</span>
                     </div>
                     <div>
-                      <h3 class="text-xl font-serif font-bold text-white">Shopify</h3>
-                      <p class="text-xs font-mono text-emerald-300/70">2016–2025 · 8+ years</p>
+                      <h3 class="text-xl font-serif font-bold">
+                        <a href="<%= site.data.career.eras[1].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[1].company %></a>
+                      </h3>
+                      <p class="text-xs font-mono text-emerald-300/70"><%= site.data.career.eras[1].years %> · <%= site.data.career.eras[1].duration %></p>
                     </div>
                   </div>
                   <div class="hidden sm:block text-xs font-mono text-emerald-300/50 uppercase tracking-wider">The Crucible</div>
@@ -274,8 +278,10 @@ head_scripts:
                       <span class="text-sm font-bold text-white">03</span>
                     </div>
                     <div>
-                      <h3 class="text-xl font-serif font-bold text-white">GrowthLoop</h3>
-                      <p class="text-xs font-mono text-sky-300/70">2025–Present</p>
+                      <h3 class="text-xl font-serif font-bold">
+                        <a href="<%= site.data.career.eras[2].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[2].company %></a>
+                      </h3>
+                      <p class="text-xs font-mono text-sky-300/70"><%= site.data.career.eras[2].years %></p>
                     </div>
                   </div>
                   <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-sky-300/50 uppercase tracking-wider">

@@ -801,15 +801,6 @@ body.mobile-menu-open {
   );
 }
 
-/* Accent zone links */
-.accent-zone a:not(.btn) {
-  color: var(--color-brand-400);
-}
-
-.accent-zone a:not(.btn):hover {
-  color: var(--color-brand-300);
-}
-
 /* Accent zone text overrides for consistent contrast */
 .accent-zone h1,
 .accent-zone h2,

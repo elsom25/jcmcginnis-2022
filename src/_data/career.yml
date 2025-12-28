@@ -20,12 +20,13 @@ current:
   summary:
     Building a Compound Marketing Engine that drives growth using Agentic AI
     powered by enterprise cloud data.
-  url: https://www.growthloop.com
+  url: http://growthloop.com/careers
 
 # Inflection points organized by era for visual grouping
 eras:
   - name: The Foundation
     company: Boltmade
+    url: http://boltmade.com/
     years: "2013–2016"
     points:
       - lesson: "Build a lot. Most of it won't matter. That's the point."
@@ -35,6 +36,7 @@ eras:
 
   - name: The Growth
     company: Shopify
+    url: https://www.shopify.com/
     years: "2016–2025"
     duration: "8+ years"
     points:
@@ -65,6 +67,7 @@ eras:
 
   - name: The Proving Ground
     company: GrowthLoop
+    url: http://growthloop.com/careers
     years: "2025–Present"
     in_progress: true
     points:
