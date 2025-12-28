@@ -61,6 +61,10 @@ html {
   --color-bg-light: #faf8f6;
   --color-bg-dark: #1a1614;
   --color-bg-dark-elevated: #231f1c;
+
+  /* Physics-based card hover timing */
+  --ease-card: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-card: 350ms;
 }
 
 /* ==========================================================================
@@ -210,39 +214,6 @@ html {
 }
 
 /* ==========================================================================
-   Card Hover Animations - Subtle, refined interactions
-   ========================================================================== */
-
-/* Card lift effect - subtle hover lift */
-.card-lift {
-  transition:
-    transform 300ms ease-out,
-    box-shadow 300ms ease-out;
-}
-
-.group:hover .card-lift {
-  transform: translateY(-4px);
-}
-
-/* Number badge subtle scale on hover */
-.card-badge {
-  transition: transform 300ms ease-out;
-}
-
-.group:hover .card-badge {
-  transform: scale(1.02);
-}
-
-/* Icon subtle shift on hover */
-.card-icon {
-  transition: transform 300ms ease-out;
-}
-
-.group:hover .card-icon {
-  transform: translateY(-2px);
-}
-
-/* ==========================================================================
    Typography Utilities
    ========================================================================== */
 
@@ -357,30 +328,6 @@ html {
 /* Accent link style */
 @utility link-accent {
   @apply font-medium text-brand-600 dark:text-brand-400 underline decoration-1 underline-offset-2 decoration-brand-400/50 hover:decoration-brand-600 dark:hover:decoration-brand-400 transition-colors;
-}
-
-/* Card hover effect - standard */
-@utility card-hover {
-  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
-}
-
-/* Card hover effect - with glow */
-@utility card-hover-glow {
-  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
-}
-
-.card-hover-glow:hover {
-  box-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0 10px 10px -5px rgba(0, 0, 0, 0.04),
-    0 0 30px -5px rgba(221, 101, 87, 0.15);
-}
-
-:is(.dark .card-hover-glow):hover {
-  box-shadow:
-    0 20px 25px -5px rgba(0, 0, 0, 0.3),
-    0 10px 10px -5px rgba(0, 0, 0, 0.2),
-    0 0 30px -5px rgba(221, 101, 87, 0.25);
 }
 
 /* Button hover effect - scale with shadow */

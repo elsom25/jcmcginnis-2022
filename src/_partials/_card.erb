@@ -1,0 +1,185 @@
+<%
+  # Defaults - all parameters with their options and validations
+  color ||= "brand"         # accent color for borders, shadows, and highlights
+  color = "brand" unless %w[brand accent emerald sky].include?(color)
+
+  size ||= "md"             # padding scale
+  size = "md" unless %w[sm md lg xl].include?(size)
+
+  rounded ||= "2xl"         # border radius
+  rounded = "2xl" unless %w[xl 2xl 3xl].include?(rounded)
+
+  shadow_size ||= "lg"      # hover shadow intensity
+  shadow_size = "lg" unless %w[lg xl 2xl].include?(shadow_size)
+
+  bg_variant ||= "default"  # background style (default, muted, glass, frosted)
+  bg_variant = "default" unless %w[default muted glass frosted].include?(bg_variant)
+
+  bold ||= false            # dark promotional style
+  h_full ||= false          # height: 100% for grid layouts
+  external ||= false        # target="_blank" when href set
+
+  href ||= nil              # wraps card in <a> tag
+  number ||= nil            # large corner badge
+  quote_text ||= nil        # renders blockquote card
+  quote_author ||= nil      # citation for quote
+
+  # Size → padding
+  padding_map = { "sm" => "p-4", "md" => "p-6", "lg" => "p-8", "xl" => "p-10" }
+  padding = padding_map[size]
+
+  # Shadow size → hover class
+  shadow_size_map = { "lg" => "hover:shadow-lg", "xl" => "hover:shadow-xl", "2xl" => "hover:shadow-2xl" }
+  shadow_class = shadow_size_map[shadow_size]
+
+  # Color-keyed mappings
+  shadow_colors = {
+    "brand"   => "hover:shadow-brand-500/5",
+    "accent"  => "hover:shadow-accent-500/5",
+    "emerald" => "hover:shadow-emerald-500/5",
+    "sky"     => "hover:shadow-sky-500/5"
+  }
+
+  border_hover_light = {
+    "brand"   => "hover:border-brand-300/50",
+    "accent"  => "hover:border-accent-300/50",
+    "emerald" => "hover:border-emerald-300/50",
+    "sky"     => "hover:border-sky-300/50"
+  }
+
+  border_hover_dark = {
+    "brand"   => "dark:hover:border-brand-700/50",
+    "accent"  => "dark:hover:border-accent-700/50",
+    "emerald" => "dark:hover:border-emerald-700/50",
+    "sky"     => "dark:hover:border-sky-700/50"
+  }
+
+  # Inner hover gradient - subtle color wash on hover (only for non-bold cards)
+  hover_gradient = {
+    "brand"   => "from-brand-500/0 via-brand-500/0 to-brand-500/0 group-hover:from-brand-500/[0.03] group-hover:via-transparent group-hover:to-brand-500/[0.02]",
+    "accent"  => "from-accent-500/0 via-accent-500/0 to-accent-500/0 group-hover:from-accent-500/[0.03] group-hover:via-transparent group-hover:to-accent-500/[0.02]",
+    "emerald" => "from-emerald-500/0 via-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/[0.03] group-hover:via-transparent group-hover:to-emerald-500/[0.02]",
+    "sky"     => "from-sky-500/0 via-sky-500/0 to-sky-500/0 group-hover:from-sky-500/[0.03] group-hover:via-transparent group-hover:to-sky-500/[0.02]"
+  }
+
+  # Quote styling
+  quote_mark_colors = {
+    "brand"   => "text-brand-300/60 dark:text-brand-700/40",
+    "accent"  => "text-accent-300/60 dark:text-accent-700/40",
+    "emerald" => "text-emerald-300/60 dark:text-emerald-700/40",
+    "sky"     => "text-sky-300/60 dark:text-sky-700/40"
+  }
+
+  cite_colors = {
+    "brand"   => "text-brand-600 dark:text-brand-400",
+    "accent"  => "text-accent-600 dark:text-accent-400",
+    "emerald" => "text-emerald-600 dark:text-emerald-400",
+    "sky"     => "text-sky-600 dark:text-sky-400"
+  }
+
+  quote_bg_gradients = {
+    "brand"   => "bg-gradient-to-br from-brand-50/80 to-white dark:from-brand-950/30 dark:to-stone-900",
+    "accent"  => "bg-gradient-to-br from-accent-50/80 to-white dark:from-accent-950/30 dark:to-stone-900",
+    "emerald" => "bg-gradient-to-br from-emerald-50/80 to-white dark:from-emerald-950/30 dark:to-stone-900",
+    "sky"     => "bg-gradient-to-br from-sky-50/80 to-white dark:from-sky-950/30 dark:to-stone-900"
+  }
+
+  quote_borders = {
+    "brand"   => "border-brand-200/30 dark:border-brand-800/30",
+    "accent"  => "border-accent-200/30 dark:border-accent-800/30",
+    "emerald" => "border-emerald-200/30 dark:border-emerald-800/30",
+    "sky"     => "border-sky-200/30 dark:border-sky-800/30"
+  }
+
+  # Number badge
+  badge_gradients = {
+    "brand"   => "from-brand-500 to-brand-600",
+    "accent"  => "from-accent-500 to-accent-600",
+    "emerald" => "from-emerald-500 to-emerald-600",
+    "sky"     => "from-sky-500 to-sky-600"
+  }
+
+  badge_radius_map = {
+    "xl"  => "rounded-tl-xl rounded-br-xl",
+    "2xl" => "rounded-tl-2xl rounded-br-2xl",
+    "3xl" => "rounded-tl-3xl rounded-br-3xl"
+  }
+
+  # Build classes
+  overflow_class = number ? "overflow-hidden" : ""
+  height_class = h_full ? "h-full" : ""
+  rounded_class = "rounded-#{rounded}"
+  transition_class = "transition-all duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+
+  # Background & border based on variant
+  if bold
+    # Bold promotional style - dark gradient, no inner hover gradient
+    bg_classes = "bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 border-stone-700/50 hover:border-stone-600/70"
+  elsif quote_text
+    bg_classes = "#{quote_bg_gradients[color]} #{quote_borders[color]} #{border_hover_light[color]} #{border_hover_dark[color]}"
+  elsif bg_variant == "muted"
+    bg_classes = "bg-stone-50 dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[color]} #{border_hover_dark[color]}"
+  elsif bg_variant == "glass"
+    # Light frosted glass - translucent with blur
+    bg_classes = "bg-white/40 dark:bg-stone-900/60 backdrop-blur-md border-white/50 dark:border-stone-700/50 #{border_hover_light[color]} #{border_hover_dark[color]}"
+  elsif bg_variant == "frosted"
+    # Dark frosted glass - for use on colorful/gradient backgrounds
+    bg_classes = "bg-stone-900/40 backdrop-blur-sm border-white/15 hover:border-white/25 hover:bg-stone-900/55"
+  else
+    bg_classes = "bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[color]} #{border_hover_dark[color]}"
+  end
+
+  # Combine all classes
+  card_classes = [
+    "group block relative border",
+    rounded_class,
+    overflow_class,
+    height_class,
+    padding,
+    transition_class,
+    "hover:-translate-y-1",
+    shadow_class,
+    shadow_colors[color],
+    bg_classes
+  ].join(" ")
+
+  link_attrs = external ? 'rel="external" target="_blank"' : ''
+%>
+
+<% if href %>
+<a href="<%= href %>" class="<%= card_classes %>" <%= link_attrs.html_safe %>>
+<% else %>
+<div class="<%= card_classes %>">
+<% end %>
+  <% unless bold %>
+    <!-- Subtle inner hover gradient (disabled for bold cards) -->
+    <div class="absolute inset-0 <%= rounded_class %> bg-gradient-to-br <%= hover_gradient[color] %> pointer-events-none transition-all duration-300"></div>
+  <% end %>
+
+  <% if number %>
+    <!-- Number badge -->
+    <div class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br <%= badge_gradients[color] %> flex items-center justify-center <%= badge_radius_map[rounded] %>">
+      <span class="font-mono text-2xl font-bold text-white"><%= number %></span>
+    </div>
+  <% end %>
+
+  <% if quote_text %>
+    <!-- Quote content -->
+    <div class="absolute top-3 left-4 text-5xl <%= quote_mark_colors[color] %> font-serif">"</div>
+    <p class="relative font-serif text-lg text-stone-700 dark:text-stone-200 leading-relaxed mb-4 pt-4">
+      <%= quote_text %>
+    </p>
+    <% if quote_author %>
+      <cite class="text-sm <%= cite_colors[color] %> not-italic font-medium">— <%= quote_author %></cite>
+    <% end %>
+  <% else %>
+    <!-- Block content -->
+    <div class="relative <%= number ? 'pl-24' : '' %>">
+      <%= content %>
+    </div>
+  <% end %>
+<% if href %>
+</a>
+<% else %>
+</div>
+<% end %>

@@ -8,6 +8,29 @@ alwaysApply: false
 
 A bold, editorial aesthetic that reflects confidence and authenticity. Warm tones, generous whitespace, and distinctive typography.
 
+## Implementation Philosophy
+
+### Tailwind-First
+
+Always prefer Tailwind utility classes. Go to CSS only for:
+- **Theme variables**: Define in `@theme` block (colors, fonts, custom easings)
+- **Complex keyframe animations**: When motion can't be expressed with transforms
+- **Never**: Custom classes for hover states, shadows, or transitions
+
+### Partials for Reuse
+
+When a pattern appears in 2+ files, create a partial. Partials enforce the design system - they're opinionated by design.
+
+### Shadows Over Glows
+
+Use `shadow-*` utilities for hover depth. Shadows are physics-based (object lifts, shadow spreads). Avoid gradient overlays or glow effects.
+
+### Animation Timing
+
+Card hovers: `duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)]`
+- Smooth deceleration with slight overshoot
+- Creates "snap" feel without being jarring
+
 ## Color Vocabulary
 
 | Name | Role | Values | Usage |
@@ -58,12 +81,57 @@ Dark contrast zone with radial gradient overlays. Use for high-impact moments on
 <%= render "section_header", label: "Featured", color: "brand" %>
 ```
 
-### Cards
+### Cards (via `_card.erb` partial)
 
-- Background: `bg-white dark:bg-stone-800`
-- Border: `border border-stone-200 dark:border-stone-700`
-- Radius: `rounded-2xl`
-- Hover: `-translate-y-1` + `shadow-xl`
+**Composition-based:** All parameters documented at top of partial with validation.
+
+| Parameter | Values | Default | Description |
+|-----------|--------|---------|-------------|
+| `color` | `brand\|accent\|emerald\|sky` | `brand` | Accent color for borders, shadows, hover |
+| `size` | `sm\|md\|lg\|xl` | `md` | Padding scale |
+| `rounded` | `xl\|2xl\|3xl` | `2xl` | Border radius |
+| `shadow_size` | `lg\|xl\|2xl` | `lg` | Hover shadow size |
+| `bg_variant` | `default\|muted\|glass\|frosted` | `default` | Background style |
+| `bold` | `true\|false` | `false` | Dark promotional style |
+| `h_full` | `true\|false` | `false` | Height 100% for grids |
+| `href` | string | `nil` | Wraps in `<a>` tag |
+| `external` | `true\|false` | `false` | `target="_blank"` if href |
+| `number` | integer | `nil` | Corner badge with number |
+| `quote_text` | string | `nil` | Renders as blockquote |
+| `quote_author` | string | `nil` | Citation for quote |
+
+**Hover effect:** Cards include a subtle inner gradient that appears on hover, matching the card's color. This is built-in for all variants except `bold` and `frosted` (which use border/opacity changes only).
+
+**Background variants:**
+- `default` — Solid white/dark background
+- `muted` — Subtle stone-50/stone-900 background
+- `glass` — Translucent white with blur (use on light backgrounds)
+- `frosted` — Dark translucent with blur (use on colorful/gradient backgrounds)
+
+```erb
+<%# Simple content card %>
+<%= render "card", color: "brand" do %>
+  <h3>Title</h3>
+<% end %>
+
+<%# Numbered card with custom styling %>
+<%= render "card", color: "brand", number: 1, rounded: "3xl", bg_variant: "muted" do %>
+  <h3>Expectation</h3>
+<% end %>
+
+<%# Quote card %>
+<%= render "card", color: "accent", quote_text: "Work on something...", quote_author: "Larry Page" %>
+
+<%# Bold promotional card (dark background) %>
+<%= render "card", color: "brand", href: "#section", bold: true do %>
+  <h3>tl;dr item</h3>
+<% end %>
+
+<%# External link card %>
+<%= render "card", color: "brand", href: "https://...", external: true, bold: true do %>
+  <h3>The Book</h3>
+<% end %>
+```
 
 ### CTA Buttons
 
@@ -141,10 +209,12 @@ The README page has distinct emotional zones:
 
 ### Card with Hover
 
+Use the `_card.erb` partial for all cards:
+
 ```erb
-<article class="group bg-white dark:bg-stone-800 rounded-2xl p-8 border border-stone-200 dark:border-stone-700 transition-all hover:shadow-xl hover:-translate-y-1">
+<%= render "card", color: "brand", size: "lg" do %>
   <!-- Content -->
-</article>
+<% end %>
 ```
 
 ### Gradient Text
