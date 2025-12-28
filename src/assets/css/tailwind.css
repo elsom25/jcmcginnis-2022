@@ -68,29 +68,6 @@ html {
 }
 
 /* ==========================================================================
-   Custom Fonts
-   ========================================================================== */
-
-/* Fraunces - expressive editorial serif */
-@font-face {
-  font-family: "Fraunces";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("https://fonts.gstatic.com/s/fraunces/v31/6NUh8FyLNQOQZAnv9bYEvDiIdE9Ea92uemAk_WBq8U_9v0c2Wa0K7iN7hzFUPJH58nib14c7qv8o.woff2")
-    format("woff2");
-}
-
-@font-face {
-  font-family: "Fraunces";
-  font-style: italic;
-  font-weight: 100 900;
-  font-display: swap;
-  src: url("https://fonts.gstatic.com/s/fraunces/v31/6NVf8FyLNQOQZAnv9ZwNjucMHVn85Ni7emAe9lKqZTnbB-gzTK0K1ChJdt9vIVYX9G37lvUtV0FABVR8Fw.woff2")
-    format("woff2");
-}
-
-/* ==========================================================================
    View Transitions
    ========================================================================== */
 
