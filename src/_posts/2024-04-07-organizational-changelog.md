@@ -1,7 +1,7 @@
 ---
 title: Organizational Changelog
 permalink: /blog/org-changelog/
-home: true
+featured: true
 
 categories: ["Leadership"]
 description: Change is coming; I hope you're ready.

@@ -414,7 +414,7 @@ skip_footer: true
           <% end %>
 
           <div class="lg:col-span-5 flex flex-col gap-6 md:gap-8">
-            <% second_post = collections.posts.resources.select { |p| p.data.home || p.data.featured }[1] %>
+            <% second_post = featured_posts.find { it != featured_post } %>
             <% if second_post %>
               <article class="group relative bg-white dark:bg-stone-800 rounded-2xl p-6 border border-stone-200 dark:border-stone-700 transition-all hover:shadow-xl flex-1">
                 <div class="flex items-center gap-3 mb-4">

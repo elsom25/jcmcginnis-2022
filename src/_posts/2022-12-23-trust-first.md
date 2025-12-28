@@ -1,7 +1,7 @@
 ---
 title: Trust First
 permalink: /blog/trust-first/
-home: true
+featured: true
 
 categories: ["Leadership"]
 description:

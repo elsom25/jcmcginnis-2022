@@ -14,18 +14,23 @@ Bridgetown.configure do
 end
 
 Bridgetown::RubyTemplateView::Helpers.class_eval do
+  def featured_posts
+    @featured_posts ||= site.collections.posts.resources
+      .select { it.data.featured }
+      .sort_by(&:date)
+      .reverse
+  end
+
   def featured_post
     return @featured_post if defined?(@featured_post)
+    return @featured_post = nil if featured_posts.empty?
 
-    home_posts = site.collections.posts.resources.select { it.data.home }.sort_by(&:date).reverse
-    return @featured_post = nil if home_posts.empty?
-
-    recent = home_posts.first
+    recent = featured_posts.first
     four_weeks_ago = Time.now - (4 * 7 * 24 * 60 * 60)
     @featured_post = if recent && recent.date > four_weeks_ago
       recent
     else
-      home_posts[Date.today.yday % home_posts.size]
+      featured_posts[Date.today.yday % featured_posts.size]
     end
   end
 

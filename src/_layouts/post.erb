@@ -3,7 +3,7 @@ layout: default
 ---
 <%
   # Check if this is a featured post
-  is_featured = resource.data.home || resource.data.featured
+  is_featured = resource.data.featured
   has_image = resource.data.image.present?
 
   # Get related posts (same category, excluding current)
