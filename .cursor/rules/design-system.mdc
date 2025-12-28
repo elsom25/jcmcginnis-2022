@@ -15,20 +15,20 @@ A bold, editorial aesthetic that reflects confidence and authenticity. Warm tone
 | **Brand (terracotta)** | Primary accent | `brand-500` to `brand-700` | Links, CTAs, post accents |
 | **Accent (amber)** | Secondary warmth | `accent-500` to `accent-600` | Highlights, talks section |
 | **Emerald** | Growth, evolution | `emerald-500` | Shopify era, philosophy sections |
-| **Sky/Blue** | Current, active | `sky-500` | GrowthLoop era, in-progress states |
+| **Sky/Blue** | Contemplative, cosmic | `sky-400` to `sky-500` | Pale Blue Dot section, aspirational |
 | **Stone** | Neutrals | Full scale | Text, backgrounds, borders |
 
-**Rule:** Brand and accent are warm. Never use cold blues/purples as primary accents.
+**Rule:** Brand and accent are warm. Sky is reserved for contemplative/cosmic moments (Pale Blue Dot). Never use cold blues as primary accents.
 
 ## Typography
 
 | Face | Role | Usage |
 |------|------|-------|
-| **Fraunces (serif)** | Display, headlines | Page titles, section headers, pull-quotes |
-| **Inter (sans)** | Body, UI | Paragraphs, navigation, buttons |
-| **System mono** | Technical | Eyebrows, labels, code, dates |
+| **Fraunces (serif)** | Display, headlines, **blog body** | Page titles, section headers, pull-quotes, blog post content |
+| **Inter (sans)** | UI, navigation | Navigation, buttons, labels, meta info |
+| **System mono** | Technical | Eyebrows, dates, code, list markers |
 
-**Rule:** Headlines are always serif. Body is always sans. Eyebrows are always mono.
+**Rule:** Headlines are always serif. Blog posts use serif body for elevated editorial feel. UI elements use sans. Eyebrows/dates use mono.
 
 ### Typography Utilities
 
@@ -77,13 +77,27 @@ Dark contrast zone with radial gradient overlays. Use for high-impact moments on
 | Page | Identity | Unique Element | Color Accent |
 |------|----------|----------------|--------------|
 | Homepage | The Origin Story | Timeline (UNIQUE) | Brand/Emerald/Sky |
-| Blog | The Magazine | Year anchors | Brand |
+| Blog | The Magazine | Year anchors, serif body | Brand |
 | Talks | The Portfolio | Philosophy cards | Accent/Emerald |
-| README | The Manifesto | Quote galleries | Brand |
-| Post | Editorial Feature | Pull-quotes | Brand |
+| README | The Manifesto | Quote galleries, Pale Blue Dot | Brand/Sky |
+| Post | Editorial Feature | Serif body, pull-quotes | Brand |
 | Talk | Speaker Profile | Event badge | Accent |
 
 **Rule:** Homepage timeline is UNIQUE. Do not replicate timeline mechanics elsewhere.
+
+### README Section Pattern
+
+The README page has distinct emotional zones:
+
+1. **Hero** - Terminal aesthetic with photo + personality badges
+2. **tl;dr** - Dark accent zone with linked cards
+3. **What I Expect** - Numbered cards on light background
+4. **How I Show Up** - Principles grid on subtle stone-50 background
+5. **Inspiration** - Quote galleries with colored borders (accent/brand/emerald)
+6. **Pale Blue Dot** - **SEPARATE contemplative section** (cosmic dark, sky accents)
+7. **Connect CTA** - Warm brand gradient (distinct from Pale Blue Dot)
+
+**Rule:** Pale Blue Dot is a standalone contemplative moment. Never merge with CTA.
 
 ## Shared Partials
 
@@ -151,4 +165,45 @@ Dark contrast zone with radial gradient overlays. Use for high-impact moments on
     <!-- Content -->
   </div>
 </section>
+```
+
+## Blog Post Typography
+
+Blog posts use `.post-content` class which provides:
+
+- **Body text**: Serif (Fraunces) for elevated editorial feel
+- **Headings**: Serif, bold, with tight tracking
+- **Blockquotes**: Serif, left-bordered with brand color
+- **Lists**: Properly styled with colored markers (brand-500)
+- **Links**: Brand color with underline decoration
+- **Code**: Monospace with subtle background
+
+### Markdown Element Support
+
+All standard markdown elements are styled:
+
+| Element | Treatment |
+|---------|-----------|
+| `# ## ###` | Serif headings with brand accents |
+| `**bold**` | Darker weight, brand-tinted |
+| `*italic*` | Same font, subtle color shift |
+| `> quote` | Serif, left-bordered pull quote |
+| `- bullet` | Brand-colored disc markers |
+| `1. number` | Mono-styled brand markers |
+| `` `code` `` | Mono with subtle bg |
+| `---` | Gradient fade horizontal rule |
+| `[link]()` | Brand color, underlined |
+
+### Progressive Text Fade
+
+For the Sagan quote, use CSS custom property `--paragraph-index` with `color-mix()`:
+
+```css
+.sagan-paragraph {
+  color: color-mix(
+    in oklch,
+    var(--color-stone-100) calc(100% - var(--paragraph-index) * 18%),
+    var(--color-stone-500) calc(var(--paragraph-index) * 18%)
+  );
+}
 ```

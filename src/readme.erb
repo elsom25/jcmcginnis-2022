@@ -273,22 +273,22 @@ skip_footer: false
       </div>
     </section>
 
-    <!-- Sagan - Full-width accent zone flowing into CTA -->
-    <section class="relative bg-gradient-to-b from-stone-900 via-stone-950 to-brand-900 dark:from-black dark:via-stone-950 dark:to-brand-950">
-      <!-- Sky-themed radial overlays -->
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_20%,rgba(14,165,233,0.12),transparent)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_80%_80%,rgba(225,29,72,0.08),transparent)]"></div>
+    <!-- Sagan - Pale Blue Dot (standalone contemplative section) -->
+    <section class="relative bg-gradient-to-b from-stone-950 via-black to-stone-950 dark:from-black dark:via-stone-950 dark:to-black overflow-hidden">
+      <!-- Cosmic atmosphere -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_100%_80%_at_50%_0%,rgba(14,165,233,0.08),transparent)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_70%,rgba(56,189,248,0.05),transparent)]"></div>
 
-      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12 py-20 md:py-28">
-        <div class="max-w-4xl mx-auto text-center">
+      <div class="relative z-10 w-full max-w-4xl mx-auto px-6 md:px-12 py-24 md:py-32">
+        <div class="text-center">
           <!-- Pale Blue Dot marker -->
-          <div class="inline-flex items-center gap-3 mb-10">
+          <div class="inline-flex items-center gap-3 mb-12">
             <div class="w-1.5 h-1.5 rounded-full bg-sky-400 shadow-lg shadow-sky-400/50"></div>
-            <span class="text-eyebrow text-sky-400/80">Pale Blue Dot</span>
+            <span class="text-eyebrow text-sky-400/70 tracking-widest">Pale Blue Dot</span>
             <div class="w-1.5 h-1.5 rounded-full bg-sky-400 shadow-lg shadow-sky-400/50"></div>
           </div>
 
-          <blockquote class="space-y-6">
+          <blockquote class="space-y-8">
             <% readme.sagan.split("\n\n").each_with_index do |paragraph, i| %>
               <p class="font-serif text-lg md:text-xl lg:text-2xl leading-relaxed sagan-paragraph" style="--paragraph-index: <%= i %>;">
                 <%= paragraph %>
@@ -296,19 +296,28 @@ skip_footer: false
             <% end %>
           </blockquote>
 
-          <cite class="block mt-12 text-base text-stone-500 not-italic">
+          <cite class="block mt-14 text-base text-stone-500 not-italic">
             — <span class="font-medium text-sky-400">Carl Sagan</span>, <em class="text-stone-400">Pale Blue Dot</em>, 1994
           </cite>
         </div>
       </div>
+    </section>
 
-      <!-- CTA content within same section -->
-      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12 pt-16 md:pt-24 pb-24 md:pb-32">
+    <!-- Connect CTA (separate, warm section) -->
+    <section class="relative py-24 md:py-32 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-600 via-brand-700 to-stone-900">
+        <div class="absolute inset-0 pattern-plus opacity-20"></div>
+      </div>
+
+      <div class="absolute top-1/2 left-[15%] -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 right-[15%] -translate-y-1/2 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl"></div>
+
+      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-white mb-6">
             Want to work together?
           </h2>
-          <p class="text-lg md:text-xl text-white/60 max-w-xl mx-auto mb-12">
+          <p class="text-lg md:text-xl text-white/70 max-w-xl mx-auto mb-12">
             I'm always interested in conversations with fellow builders and leaders. Don't be a stranger.
           </p>
 
