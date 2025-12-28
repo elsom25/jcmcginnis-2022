@@ -1,32 +1,73 @@
-<% is_home = page.relative_url == "/" %>
-<header class="sticky top-0 z-50 w-full backdrop-blur-md bg-bg-light/95 dark:bg-bg-dark/95 border-b border-stone-200/50 dark:border-stone-800/50">
-  <!-- Accent gradient bar at top -->
-  <div class="absolute top-0 left-0 right-0 h-0.5 bg-accent-gradient opacity-80"></div>
+<%
+  # Pages can signal they need light header text on dark backgrounds (ghost state only)
+  header_light = page.data.header_theme == "light"
+%>
+<!-- Spacer: reserves space for compact (scrolled) header in document flow -->
+<div class="h-header-compact" aria-hidden="true"></div>
 
-  <%= render "container" do %>
-    <div class="flex items-center justify-between h-16">
-      <!-- Logo/Name -->
-      <a href="/" class="group flex items-center gap-3" aria-label="Home">
-        <span class="relative flex items-center justify-center w-9 h-9 rounded-lg bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 group-hover:bg-brand-200 dark:group-hover:bg-brand-900/50 transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 h-5 fill-current" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
-          </svg>
-        </span>
-        <span class="relative">
-          <span class="font-semibold text-sm <%= is_home ? 'text-stone-900 dark:text-stone-100' : 'text-stone-600 dark:text-stone-400' %> group-hover:text-stone-900 dark:group-hover:text-stone-100 transition-colors">Jesse McGinnis</span>
-          <span class="absolute -bottom-1 left-0 right-0 h-[2px] bg-brand-500 rounded-full transition-transform origin-left <%= is_home ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' %>"></span>
+<header
+  id="site-header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-out group/header"
+  data-scrolled="false"
+  data-theme="<%= header_light ? 'light' : 'default' %>">
+  <!-- Scroll-aware background layer
+       Fast fade-out (100ms) when returning to ghost, slower fade-in (300ms) when scrolling down.
+       The [data-scrolled=true] state adds its own slower transition. -->
+  <div class="header-bg absolute inset-0 -z-10 transition-all duration-100 ease-out
+              bg-transparent backdrop-blur-none shadow-none
+              group-data-[scrolled=true]/header:duration-300
+              group-data-[scrolled=true]/header:bg-white/90
+              group-data-[scrolled=true]/header:dark:bg-stone-900/80
+              group-data-[scrolled=true]/header:backdrop-blur-md
+              group-data-[scrolled=true]/header:shadow-sm
+              group-data-[scrolled=true]/header:shadow-stone-900/5
+              group-data-[scrolled=true]/header:dark:shadow-black/10">
+  </div>
+
+  <!-- Wide page margins to match hero sections -->
+  <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+    <!-- Ghost: tall on desktop, compact on mobile. Scrolled: always compact. -->
+    <div class="flex items-center justify-between h-header-compact md:h-header-ghost group-data-[scrolled=true]/header:h-header-compact transition-all duration-300 ease-out">
+      <!-- Logo: Serif name with underline (descenders layer above it via z-index) -->
+      <a href="/" class="group/logo relative flex items-center" aria-label="Home">
+        <span class="relative isolate font-serif text-xl font-bold tracking-tight transition-colors
+                     <%= header_light ? 'text-white dark:text-white group-data-[scrolled=true]/header:text-stone-800 group-data-[scrolled=true]/header:dark:text-stone-100' : 'text-stone-800 dark:text-stone-100' %>
+                     group-hover/logo:text-brand-600 dark:group-hover/logo:text-brand-400">
+          Jesse McGinnis
+          <!-- Underline behind text (-z-10), descenders appear on top -->
+          <span class="absolute inset-x-0 bottom-0 -z-10 h-px bg-brand-500 transition-all duration-200
+                       <%= page.relative_url == '/' ? 'w-full' : 'w-0 group-hover/logo:w-full' %>"></span>
         </span>
       </a>
 
-      <%= render "header/desktop_nav", menu: menu, page: page %>
-      <%= render "header/mobile_nav" %>
+      <%= render "header/desktop_nav", menu: menu, page: page, header_light: header_light %>
+      <%= render "header/mobile_nav", header_light: header_light %>
     </div>
-  <% end %>
+  </div>
 
   <%= render "header/mobile_drawer", menu: menu, page: page %>
 
   <script>
     (function() {
+      // Scroll-aware header state
+      const header = document.getElementById('site-header');
+      let ticking = false;
+
+      function updateHeader() {
+        // Simple threshold - fixed positioning means no layout jiggle
+        header.dataset.scrolled = window.scrollY > 48;
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(updateHeader);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      updateHeader(); // Set initial state
+
       // Theme toggle - uses global Theme module from base layout
       const buttons = document.querySelectorAll('.theme-btn');
       const updateButtons = () => {
@@ -45,6 +86,8 @@
       const closeIcon = menuBtn.querySelector('.close-icon');
 
       const openMenu = () => {
+        // Force scrolled (compact) state while menu is open for consistent UI
+        header.dataset.scrolled = 'true';
         mobileMenu.classList.remove('hidden');
         mobileMenu.offsetHeight; // Force reflow
         mobileMenu.classList.add('drawer-open');
@@ -62,6 +105,8 @@
         hamburgerIcon.classList.remove('hidden');
         closeIcon.classList.add('hidden');
         document.body.classList.remove('mobile-menu-open');
+        // Restore scroll-aware state
+        updateHeader();
         setTimeout(() => {
           if (!mobileMenu.classList.contains('drawer-open')) mobileMenu.classList.add('hidden');
         }, 200);

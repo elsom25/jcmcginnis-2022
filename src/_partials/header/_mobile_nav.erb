@@ -1,5 +1,12 @@
+<% header_light ||= false %>
 <!-- Mobile Menu Button -->
-<button type="button" id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-11 h-11 -mr-2 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+<button type="button"
+        id="mobile-menu-btn"
+        class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg transition-colors
+               <%= header_light ? 'text-white/70 dark:text-white/70 group-data-[scrolled=true]/header:text-stone-500 group-data-[scrolled=true]/header:dark:text-stone-400 hover:text-white hover:bg-white/10 dark:hover:text-white group-data-[scrolled=true]/header:hover:text-stone-800 group-data-[scrolled=true]/header:hover:bg-stone-100 group-data-[scrolled=true]/header:dark:hover:text-stone-100 group-data-[scrolled=true]/header:dark:hover:bg-stone-800' : 'text-stone-500 dark:text-stone-400 hover:text-stone-800 hover:bg-stone-100 dark:hover:text-stone-100 dark:hover:bg-stone-800' %>"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
   <svg class="hamburger-icon w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
   </svg>

@@ -20,6 +20,13 @@ html {
    ========================================================================== */
 
 @theme {
+  /* Layout - Header spacing (4 tunable values)
+     Tune these to adjust header behavior site-wide */
+  --spacing-header-ghost: 8rem; /* Tall transparent header height (desktop only) */
+  --spacing-header-compact: 3.5rem; /* Scrolled header height (& mobile ghost) */
+  --spacing-header-content-padding: 4rem; /* Breathing room below header (desktop) */
+  --spacing-header-content-padding-mobile: 1.5rem; /* Breathing room (mobile) */
+
   /* Typography - Editorial pairing */
   --font-sans:
     "Inter var", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
@@ -65,6 +72,52 @@ html {
   /* Physics-based card hover timing */
   --ease-card: cubic-bezier(0.22, 1, 0.36, 1);
   --duration-card: 350ms;
+}
+
+/* Layout utilities - responsive for mobile (compact ghost) vs desktop (full ghost)
+   Mobile: clearance = compact + mobile-content-padding
+   Desktop: clearance = ghost + content-padding */
+
+@utility hero-extend {
+  /* Mobile: pull up by compact + mobile-content-padding */
+  margin-top: calc(
+    -1 *
+      (
+        var(--spacing-header-compact) +
+          var(--spacing-header-content-padding-mobile)
+      )
+  );
+  /* Desktop (md+): pull up by ghost + content-padding */
+  @media (width >= theme(--breakpoint-md)) {
+    margin-top: calc(
+      -1 * (var(--spacing-header-ghost) + var(--spacing-header-content-padding))
+    );
+  }
+}
+
+@utility hero-content-padding {
+  /* Mobile: pad by compact + mobile-content-padding */
+  padding-top: calc(
+    var(--spacing-header-compact) + var(--spacing-header-content-padding-mobile)
+  );
+  /* Desktop (md+): pad by ghost + content-padding */
+  @media (width >= theme(--breakpoint-md)) {
+    padding-top: calc(
+      var(--spacing-header-ghost) + var(--spacing-header-content-padding)
+    );
+  }
+}
+
+@utility main-content-padding {
+  /* Mobile: spacer=compact, so just mobile-content-padding */
+  padding-top: var(--spacing-header-content-padding-mobile);
+  /* Desktop (md+): ghost + content-padding - compact */
+  @media (width >= theme(--breakpoint-md)) {
+    padding-top: calc(
+      var(--spacing-header-ghost) + var(--spacing-header-content-padding) -
+        var(--spacing-header-compact)
+    );
+  }
 }
 
 /* ==========================================================================

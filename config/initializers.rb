@@ -38,6 +38,20 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
     end
   end
 
+  def featured_talks
+    @featured_talks ||= site.collections.talks.resources
+      .select { it.data.featured }
+      .sort_by { -it.data.year }
+  end
+
+  def featured_talk
+    return @featured_talk if defined?(@featured_talk)
+    return @featured_talk = nil if featured_talks.empty?
+
+    # Rotate through featured talks based on day of year
+    @featured_talk = featured_talks[Date.today.yday % featured_talks.size]
+  end
+
   def posts_by_year
     site.collections.posts.resources.group_by { it.date.year }.sort.reverse.to_h
   end

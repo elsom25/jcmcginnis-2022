@@ -6,7 +6,7 @@ head_scripts:
   - gsap
 ---
     <!-- Hero Section - BOLD with Light/Dark support -->
-    <section class="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section class="relative hero-extend min-h-[90vh] flex items-center overflow-hidden">
       <!-- Light mode: warm cream with brand accent -->
       <div class="absolute inset-0 bg-gradient-to-br from-stone-50 via-white to-brand-50/30 dark:from-stone-950 dark:via-stone-950 dark:to-stone-900"></div>
       <!-- Dramatic gradient sweep - both modes -->
@@ -15,7 +15,7 @@ head_scripts:
       <!-- Noise texture - visible in both modes -->
       <div class="absolute inset-0 opacity-[0.04] dark:opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.7%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E');"></div>
 
-      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12 py-20 md:py-28">
+      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12 hero-content-padding pb-20 md:pb-28">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           <!-- Left: Main content -->
           <div class="lg:col-span-8">

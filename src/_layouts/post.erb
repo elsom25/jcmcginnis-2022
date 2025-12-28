@@ -25,12 +25,13 @@ layout: page
 
 <article class="post-article relative">
   <!-- Decorative elements for visual anchoring -->
-  <div class="hidden lg:block absolute top-32 left-[5%] w-16 h-16 border-2 border-stone-200/50 dark:border-stone-800/50 rotate-12 opacity-60"></div>
+  <div class="hidden lg:block absolute top-header-ghost left-[5%] w-16 h-16 border-2 border-stone-200/50 dark:border-stone-800/50 rotate-12 opacity-60"></div>
   <div class="hidden lg:block absolute top-64 right-[8%] w-10 h-10 rounded-full border-2 border-brand-300/30 dark:border-brand-700/30"></div>
   <div class="hidden lg:block absolute top-[40%] left-[3%] w-6 h-6 bg-accent-400/20 dark:bg-accent-600/20 rotate-45"></div>
 
   <!-- Post header - slightly wider than content for visual funnel -->
-  <header class="relative pt-8 pb-10 md:pt-12 md:pb-12">
+  <!-- pt handled by page.erb main element -->
+  <header class="relative pb-10 md:pb-12">
     <div class="max-w-4xl mx-auto px-6 md:px-8">
       <!-- Meta info -->
       <div class="flex flex-wrap items-center gap-3 mb-6 animate-fade-in">
