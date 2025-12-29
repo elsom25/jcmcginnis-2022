@@ -1,5 +1,5 @@
 ---
-published: false
+feed: false
 
 title: Directed Chaos
 permalink: /blog/directed-chaos/
