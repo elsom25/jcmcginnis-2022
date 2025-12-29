@@ -18,11 +18,12 @@ passes for competence.
 Calm organizations don't get strong. They get good at calm. Then they get brittle. The first real
 hit shatters them.
 
-Resilience grows in turbulence, not in shelter. You build it the way you build muscle: stress,
-recovery, repeat. If you can't recover from the dose, you're not building resilience—you're just
-injuring people.
+Resilience grows in turbulence, not in shelter. It's not the absence of chaos; it's the ability to
+metabolize it. You build it the way you build muscle: stress, recovery, repeat. If you can't recover
+from the dose, you're not building resilience—you're just injuring people.
 
-I learned this the only way that counts: I made changes and kept the survivors.
+I didn't learn this from a clever framework. I learned it the only way that counts: I experimented
+and kept the survivors.
 
 ## The pattern
 
@@ -71,6 +72,7 @@ Two leads tried to resurrect it. They discovered the old ritual's real purpose: 
 responsibility upward. Without a center, there was nowhere to export it. So they stopped looking.
 
 Some did it well on the first pass. Others stumbled, then learned. Either way, they were thinking.
+That was the point.
 
 It turned out "calm" had been disguising learned helplessness. Remove the disguise and you don't get
 serenity. You get noise. That's atrophied muscle waking up.
@@ -125,6 +127,8 @@ Not all structure is process. Some structure is vocabulary.
 
 ## Language as infrastructure
 
+Language is infrastructure. Choose it carefully and it carries judgment inside it.
+
 People don't move from obedience to judgment by willpower. Many have been trained for years that
 independent judgment is how you get in trouble. So you give them structure—but the right kind.
 
@@ -140,7 +144,9 @@ we wished we already had—concrete, not dreamy.
 
 Patches shifted from "how do we hide this hole?" to "what's one brick we can lay the right way?" It
 sounds semantic until you do it in a meeting and feel the room tilt from firefighting to
-architecture.
+architecture. Desired state does two things: it forces you to name the shape of the problem, and it
+absolves you of fixing all of it right now. You just have to move one notch toward what you actually
+want.
 
 Here's another that did a lot of work: **Code Red**.
 
@@ -169,7 +175,9 @@ problems before you know the problems exist.
 The people who thrive in this environment don't just tolerate turbulence—they generate it. They pick
 fights with reality before reality picks one for them.
 
-I call these people **exothermic**: they produce more energy than they consume.
+I call these people **exothermic**: they produce more energy than they consume. Once you have the
+word, you can hire for it and coach it. "Be more exothermic" isn't vague when you can translate it
+to: bring a draft next time. Don't ask for permission to think.
 
 They bring drafts instead of questions. They kill ambiguity for the people around them. They make
 everyone faster.
@@ -191,10 +199,14 @@ give them language. You don't flinch in the first storm.
 
 And then, the next time, they don't either.
 
-If you want to try this: pick one cushion to remove—a handoff, a ceremony, an escalation habit.
+Change is exhausting. The part you can control is its dose and its direction. The hard part isn't
+inventing changes. It's choosing a small set that reinforce each other—then tolerating the boredom
+of repetition. The boredom is a sign you're building muscle. Around the third cycle, the system
+starts saying it back to you.
 
-Don't plan the structure up front. Let the scramble show you what support people actually need. Then
-answer it without stealing the work back.
+If you want one tactic to steal tomorrow: forbid patches for the first ten minutes of your next
+decision meeting. Make the team write the desired state in plain words. Then pick the one step you
+can take this week that moves you toward it. The debate shrinks. Morale rises.
 
 **Chaos without cadence is panic. Cadence without chaos is theater.**
 
@@ -202,6 +214,7 @@ The paradox is that if you do this long enough, calm returns. Not the fragile ca
 never been tested, but the earned calm of one that has weathered real storms.
 
 Resilience isn't something you can give people. It's something they build by going through storms.
+If you want a resilient company, stop promising calm seas.
 
 So give them storms worth weathering. Teach them to yearn for the sea. Then give them a ship worth
 sailing.
