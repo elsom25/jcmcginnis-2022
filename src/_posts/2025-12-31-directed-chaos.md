@@ -12,21 +12,22 @@ pull_quote: Ownership isn't a belief you argue someone into. It's a weight you l
 image: "/assets/img/directed-chaos.jpg"
 ---
 
-Most leaders try to make work calm. They spend their energy eliminating surprises, tuning meetings,
-polishing checklists. Calm looks like competence.
+Most leaders try to make work calm. They sand down surprises, tune meetings, polish checklists. Calm
+passes for competence.
 
 Calm organizations don't get stronger. They get good at calm. Then they get brittle. The first real
 hit shatters them.
 
-Resilience comes from exposure to disorder—not protection from it. You inject chaos in controlled
-doses so your team builds the muscle to survive it. You can't train that capacity by shielding
-people from turbulence. You train it by creating turbulence.
+Resilience grows in disorder, not in shelter. You inject chaos in controlled doses so your team
+builds the muscle to survive it. You can't train that capacity by shielding people from turbulence.
+You train it by creating turbulence.
 
 I learned this the only way that matters: by making changes and watching which ones stuck.
 
 ## The pattern
 
-Every change that worked followed the same move: **remove a cushion, then add structure**. If you can't stop it, you don't get to start it.
+Every change that worked followed the same move: **remove a cushion, then add structure**. If you
+can't stop it, you don't get to start it.
 
 Removal alone creates panic. Structure alone creates theater. The move is always paired: you take
 away something that did the thinking for them, and you replace it with something that makes thinking
@@ -42,8 +43,8 @@ If the system feels calm, ask: _what cushion is doing our thinking for us?_
 
 ## Remove the center
 
-When I arrived at GrowthLoop, there was a central Scrum meeting that acted like a spinal cord for
-the whole org. It was tidy and numbing. Everyone left "aligned" and nobody moved.
+When I arrived at GrowthLoop, one Scrum meeting ran the whole company like a spine. It was tidy and
+numbing. Everyone left nodding—and nothing changed.
 
 I didn't refactor it. I removed it.
 
