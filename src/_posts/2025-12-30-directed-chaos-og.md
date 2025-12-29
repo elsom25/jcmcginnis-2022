@@ -3,7 +3,7 @@ published: false
 
 title: Directed Chaos Alpha
 permalink: /blog/directed-chaos-alpha/
-featured: true
+featured: false
 
 categories: ["Leadership"]
 description: Teaching people to yearn for the sea of change.
