@@ -383,11 +383,13 @@ head_scripts:
     <!-- Explore More -->
     <section class="py-24 md:py-32 bg-stone-50 dark:bg-stone-900/50">
       <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
-        <%= render "section_header", label: "Explore More", color: "brand" %>
+        <div class="reveal-on-scroll">
+          <%= render "section_header", label: "Explore More", color: "brand" %>
+        </div>
 
         <div class="grid lg:grid-cols-12 gap-6 md:gap-8">
           <% if featured_post %>
-            <article class="lg:col-span-7">
+            <article class="reveal-on-scroll [--stagger:0] lg:col-span-7">
               <%= render "card", color: "brand", size: "xl", rounded: "3xl", shadow_size: "2xl", href: featured_post.relative_url do %>
                 <div class="flex items-center gap-4 mb-6">
                   <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 rounded-full">Featured Essay</span>
@@ -421,7 +423,7 @@ head_scripts:
           <div class="lg:col-span-5 flex flex-col gap-6 md:gap-8">
             <% second_post = featured_posts.find { it != featured_post } %>
             <% if second_post %>
-              <article class="flex-1">
+              <article class="reveal-on-scroll [--stagger:1] flex-1">
                 <%= render "card", color: "brand", size: "md", shadow_size: "xl", h_full: true, href: second_post.relative_url do %>
                   <div class="flex items-center gap-3 mb-4">
                     <span class="text-sm text-stone-400 dark:text-stone-600"><%= second_post.date.strftime("%B %Y") %></span>
@@ -441,7 +443,7 @@ head_scripts:
               </article>
             <% end %>
 
-            <div class="grid grid-cols-2 gap-4">
+            <div class="reveal-on-scroll [--stagger:2] grid grid-cols-2 gap-4">
               <%= render "card", color: "brand", size: "sm", rounded: "xl", href: "/blog/" do %>
                 <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 mb-3 group-hover:scale-110 transition-transform">
                   <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
@@ -464,7 +466,7 @@ head_scripts:
             </div>
           </div>
 
-          <div class="lg:col-span-12">
+          <div class="reveal-on-scroll [--stagger:3] lg:col-span-12">
           <%= render "card", color: "brand", size: "lg", bold: true, shadow_size: "2xl", rounded: "2xl", href: site.data.career.book.url, external: true do %>
             <div class="absolute inset-0 bg-gradient-to-r from-brand-600/10 via-transparent to-accent-600/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
             <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -513,21 +515,23 @@ head_scripts:
       <div class="absolute bottom-16 right-[8%] w-28 h-28 border-2 border-white/10 -rotate-6 hidden lg:block"></div>
 
       <div class="relative z-10 w-full max-w-[72rem] mx-auto px-6 md:px-12 text-center">
-        <h2 class="text-hero text-4xl md:text-5xl lg:text-6xl text-white mb-6">
-          Let's build something<br class="hidden sm:block" /> <em class="text-accent-300">extraordinary</em>
-        </h2>
-        <p class="text-xl text-white/70 max-w-2xl mx-auto mb-12">
-          Always up for hard conversations about leadership and the craft of building teams. Reach out.
-        </p>
+        <div class="reveal-on-scroll">
+          <h2 class="text-hero text-4xl md:text-5xl lg:text-6xl text-white mb-6">
+            Let's build something<br class="hidden sm:block" /> <em class="text-accent-300">extraordinary</em>
+          </h2>
+          <p class="text-xl text-white/70 max-w-2xl mx-auto mb-12">
+            Always up for hard conversations about leadership and the craft of building teams. Reach out.
+          </p>
+        </div>
 
-        <a href="mailto:jesse@jcmcginnis.com" class="group inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl mb-10">
+        <a href="mailto:jesse@jcmcginnis.com" class="reveal-on-scroll [--stagger:1] group inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl mb-10">
           <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
           jesse@jcmcginnis.com
         </a>
 
-        <div class="pt-4">
+        <div class="reveal-on-scroll [--stagger:2] pt-4">
           <%= render "social_links", style: "pills", color: "white", show_labels: true %>
         </div>
       </div>
