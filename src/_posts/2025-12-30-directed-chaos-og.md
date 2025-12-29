@@ -1,5 +1,6 @@
 ---
 published: false
+feed: false
 
 title: Directed Chaos Alpha
 permalink: /blog/directed-chaos-alpha/

@@ -6,10 +6,11 @@ layout: page
   is_featured = resource.data.featured
   has_image = resource.data.image.present?
 
-  # Get related posts (same category, excluding current)
+  # Get related posts (same category, excluding current and hidden)
   current_categories = resource.data.categories || []
   related_posts = collections.posts.resources
     .reject { |p| p.relative_url == resource.relative_url }
+    .reject { |p| p.data.feed == false }
     .select { |p| (p.data.categories || []).any? { |c| current_categories.include?(c) } }
     .first(2)
 
