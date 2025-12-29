@@ -1,0 +1,97 @@
+<%
+  # ════════════════════════════════════════════════════════════════════════════
+  # BOLD ACCENT
+  # ════════════════════════════════════════════════════════════════════════════
+  #
+  # Full-width accent zone wrapper for high-contrast dark sections.
+  # Use for: featured content, CTAs, hero callouts that need to stand out.
+  #
+  # @param color     [String]  Primary gradient color: "brand" | "accent" | "emerald" | "sky"
+  # @param variant   [String]  Background style: "gradient" | "solid" | "radial"
+  # @param pattern   [Boolean] Show plus pattern overlay
+  # @param orbs      [Boolean] Show decorative gradient orbs
+  # @param padding   [String]  Vertical padding: "sm" | "md" | "lg" | "xl"
+  #
+  # @example Basic usage
+  #   render "bold_accent", color: "brand" do
+  #     <h2>Featured content</h2>
+  #   end
+  #
+  # @example With pattern and orbs
+  #   render "bold_accent", color: "accent", pattern: true, orbs: true do
+  #     <div>CTA content</div>
+  #   end
+  #
+  # @see _card.erb for content cards within accent zones
+  #
+  # ════════════════════════════════════════════════════════════════════════════
+
+  p = contract(binding,
+    color:   %w[brand accent emerald sky],
+    variant: %w[gradient solid radial],
+    pattern: false,
+    orbs:    false,
+    padding: %w[md sm lg xl]
+  )
+
+  # DESIGN TOKENS
+  gradient_colors = {
+    "brand"   => "from-stone-900 via-stone-950 to-stone-900 dark:from-black dark:via-stone-950 dark:to-black",
+    "accent"  => "from-accent-600 via-accent-700 to-stone-900",
+    "emerald" => "from-emerald-600 via-emerald-700 to-stone-900",
+    "sky"     => "from-sky-600 via-sky-700 to-stone-900"
+  }
+
+  solid_colors = {
+    "brand"   => "bg-stone-900 dark:bg-black",
+    "accent"  => "bg-accent-700",
+    "emerald" => "bg-emerald-700",
+    "sky"     => "bg-sky-700"
+  }
+
+  radial_overlays = {
+    "brand"   => "bg-[radial-gradient(ellipse_80%_50%_at_20%_30%,rgba(225,29,72,0.20),transparent)]",
+    "accent"  => "bg-[radial-gradient(ellipse_80%_50%_at_20%_30%,rgba(245,158,11,0.20),transparent)]",
+    "emerald" => "bg-[radial-gradient(ellipse_80%_50%_at_20%_30%,rgba(16,185,129,0.20),transparent)]",
+    "sky"     => "bg-[radial-gradient(ellipse_80%_50%_at_20%_30%,rgba(56,189,248,0.20),transparent)]"
+  }
+
+  padding_map = {
+    "sm" => "py-16 md:py-20",
+    "md" => "py-20 md:py-28",
+    "lg" => "py-24 md:py-32",
+    "xl" => "py-32 md:py-40"
+  }
+
+  # BUILD CLASSES
+  bg_class = if p.variant == "gradient"
+    "bg-gradient-to-b #{gradient_colors[p.color]}"
+  else
+    solid_colors[p.color]
+  end
+%>
+<section class="accent-zone relative <%= padding_map[p.padding] %> overflow-hidden">
+  <!-- Base background -->
+  <div class="absolute inset-0 <%= bg_class %>"></div>
+
+  <% if p.variant == "radial" || p.variant == "gradient" %>
+    <!-- Radial overlay for depth -->
+    <div class="absolute inset-0 <%= radial_overlays[p.color] %>"></div>
+  <% end %>
+
+  <% if p.pattern %>
+    <!-- Plus pattern overlay -->
+    <div class="absolute inset-0 pattern-plus opacity-20"></div>
+  <% end %>
+
+  <% if p.orbs %>
+    <!-- Decorative orbs -->
+    <div class="absolute top-1/2 left-[15%] -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+    <div class="absolute top-1/2 right-[15%] -translate-y-1/2 w-96 h-96 bg-<%= p.color %>-500/10 rounded-full blur-3xl"></div>
+  <% end %>
+
+  <!-- Content -->
+  <div class="relative z-10">
+    <%= content %>
+  </div>
+</section>

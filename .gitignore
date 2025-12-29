@@ -11,8 +11,8 @@ tmp/
 .bridgetown-metadata
 .bridgetown-webpack/
 
-# Generated CSS (built by Tailwind during deploy)
-src/assets/css/style.css
+# Generated CSS (compiled by Tailwind, bundled by esbuild)
+frontend/styles/index.css
 
 # Ruby
 .bundle/

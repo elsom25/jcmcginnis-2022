@@ -1,16 +1,34 @@
-<nav class="hidden md:flex items-center gap-1">
+<% header_light ||= false %>
+<nav class="hidden md:flex items-center gap-6">
   <% menu.main.each do |item| %>
+    <% is_active = active_nav_item?(item, page) %>
     <a href="<%= relative_url item.url %>"
-       class="relative px-3 py-2 text-sm text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all after:absolute after:bottom-1 after:left-3 after:right-3 after:h-0.5 after:bg-gradient-to-r after:from-amber-500 after:to-rose-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left after:rounded-full <%= 'text-stone-900 dark:text-stone-100 after:scale-x-100' if item.url == '/' ? page.relative_url == '/' : page.relative_url.start_with?(item.url) %>">
-      <%= item.name %>
+       class="group/nav text-sm font-medium transition-colors
+              <%= if header_light
+                    # Ghost state: light text for dark hero. Scrolled: normal theme colors.
+                    is_active ? 'text-white dark:text-white group-data-[scrolled=true]/header:text-stone-800 group-data-[scrolled=true]/header:dark:text-stone-100' : 'text-white/70 dark:text-white/70 group-data-[scrolled=true]/header:text-stone-500 group-data-[scrolled=true]/header:dark:text-stone-400 hover:text-white dark:hover:text-white group-data-[scrolled=true]/header:hover:text-stone-800 group-data-[scrolled=true]/header:dark:hover:text-stone-100'
+                  else
+                    is_active ? 'text-stone-800 dark:text-stone-100' : 'text-stone-500 dark:text-stone-400 hover:text-stone-800 dark:hover:text-stone-100'
+                  end %>">
+      <!-- Text wrapper with underline behind it (isolate creates stacking context) -->
+      <span class="relative isolate">
+        <%= item.name %>
+        <!-- Underline behind text (-z-10), descenders appear on top -->
+        <span class="absolute inset-x-0 bottom-0 -z-10 h-px bg-brand-500 transition-opacity duration-200
+                     <%= is_active ? 'opacity-100' : 'opacity-0 group-hover/nav:opacity-100' %>"></span>
+      </span>
     </a>
   <% end %>
-  <a href="<%= relative_url '/feed.xml' %>" class="px-3 py-2 text-stone-600 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-colors" aria-label="RSS Feed">
-    <svg class="w-4 h-4" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none">
+
+  <a href="<%= relative_url '/feed.xml' %>"
+     class="transition-colors <%= header_light ? 'text-white/50 dark:text-white/50 group-data-[scrolled=true]/header:text-stone-400 group-data-[scrolled=true]/header:dark:text-stone-500 hover:text-white dark:hover:text-white group-data-[scrolled=true]/header:hover:text-brand-600 group-data-[scrolled=true]/header:dark:hover:text-brand-400' : 'text-stone-400 dark:text-stone-500 hover:text-brand-600 dark:hover:text-brand-400' %>"
+     aria-label="RSS Feed">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
       <path stroke-linecap="round" stroke-linejoin="round" d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z" />
     </svg>
   </a>
-  <div class="ml-2">
-    <%= render "header/theme_toggle" %>
-  </div>
+
+  <div class="w-px h-4 <%= header_light ? 'bg-white/20 dark:bg-white/20 group-data-[scrolled=true]/header:bg-stone-300 group-data-[scrolled=true]/header:dark:bg-stone-700' : 'bg-stone-300 dark:bg-stone-700' %>"></div>
+
+  <%= render "header/theme_toggle", header_light: header_light %>
 </nav>

@@ -1,0 +1,56 @@
+<%
+  # ════════════════════════════════════════════════════════════════════════════
+  # GRADIENT ORBS
+  # ════════════════════════════════════════════════════════════════════════════
+  #
+  # Decorative background gradient blobs for visual depth.
+  # Use for: hero backgrounds, section atmosphere, visual interest.
+  #
+  # @param preset [String] Orb configuration: "hero" | "subtle" | "warm" | "accent" | "brand"
+  #
+  # @example Hero section
+  #   render "gradient_orbs", preset: "hero"
+  #
+  # @example Subtle background
+  #   render "gradient_orbs", preset: "subtle"
+  #
+  # @note Parent element must have `position: relative` and `overflow: hidden`
+  #
+  # ════════════════════════════════════════════════════════════════════════════
+
+  p = contract(binding,
+    preset: %w[hero subtle warm accent brand]
+  )
+
+  # DESIGN TOKENS - Orb configurations
+  orb_configs = {
+    "hero" => [
+      { position: "-top-1/4 -right-1/4", size: "w-[800px] h-[800px]", color: "from-brand-200/40 dark:from-brand-900/30" },
+      { position: "-bottom-1/4 -left-1/4", size: "w-[600px] h-[600px]", color: "from-accent-200/30 dark:from-accent-900/20", direction: "to-tr" }
+    ],
+    "accent" => [
+      { position: "-top-1/4 -right-1/4", size: "w-[600px] h-[600px]", color: "from-accent-200/20 dark:from-accent-900/10" }
+    ],
+    "subtle" => [
+      { position: "-top-1/4 -left-1/4", size: "w-[600px] h-[600px]", color: "from-brand-200/20 dark:from-brand-900/10" }
+    ],
+    "warm" => [
+      { position: "-top-1/4 -right-1/4", size: "w-[600px] h-[600px]", color: "from-accent-200/30 dark:from-accent-900/15" },
+      { position: "bottom-0 left-1/4", size: "w-[400px] h-[400px]", color: "from-brand-200/20 dark:from-brand-900/10", direction: "to-tr" }
+    ],
+    "brand" => [
+      { position: "-top-1/4 -right-1/4", size: "w-[700px] h-[700px]", color: "from-brand-200/30 dark:from-brand-900/20" },
+      { position: "bottom-0 left-1/4", size: "w-[500px] h-[500px]", color: "from-brand-100/20 dark:from-brand-950/15", direction: "to-tr" }
+    ]
+  }
+
+  orbs = orb_configs[p.preset]
+%>
+<div class="absolute inset-0 overflow-hidden pointer-events-none">
+  <% orbs.each do |orb| %>
+    <%
+      direction = orb[:direction] || "to-br"
+    %>
+    <div class="absolute <%= orb[:position] %> <%= orb[:size] %> bg-gradient-<%= direction %> <%= orb[:color] %> to-transparent rounded-full blur-3xl"></div>
+  <% end %>
+</div>

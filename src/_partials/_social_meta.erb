@@ -1,0 +1,12 @@
+<%
+  # Use pull_quote for social descriptions when available
+  # This overrides bridgetown-seo-tag's og:description with more compelling text
+  social_description = resource.data.pull_quote.presence ||
+                       resource.data.description.presence ||
+                       site.data.site_metadata.tagline
+%>
+<% if social_description %>
+<!-- Social sharing overrides -->
+<meta name="twitter:description" content="<%= social_description %>">
+<meta property="og:description" content="<%= social_description %>">
+<% end %>

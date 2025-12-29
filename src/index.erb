@@ -1,67 +1,538 @@
 ---
-layout: default
+layout: page
 skip_footer: true
+page_id: index
+head_scripts:
+  - gsap
 ---
-<div class="max-w-2xl">
-  <h1 class="font-serif leading-none mb-10">
-    <span class="block animate-fade-in">
-      <span class="italic text-5xl sm:text-6xl md:text-7xl tracking-tight text-gradient bg-gradient-to-br from-rose-600 to-fuchsia-500 text-transparent">Software engineer</span>
-      <span class="not-italic text-3xl sm:text-4xl md:text-5xl text-stone-400 dark:text-stone-500 ml-2">&</span>
-    </span>
-    <span class="block animate-fade-in animate-delay-1 mt-1">
-      <span class="italic text-5xl sm:text-6xl md:text-7xl tracking-tight text-gradient bg-gradient-to-br from-red-600 to-rose-600 text-transparent">Leader</span>
-      <span class="not-italic text-3xl sm:text-4xl md:text-5xl text-stone-400 dark:text-stone-500 ml-2">&</span>
-    </span>
-    <span class="block animate-fade-in animate-delay-2 mt-1">
-      <span class="italic text-5xl sm:text-6xl md:text-7xl tracking-tight text-gradient bg-gradient-to-br from-orange-600 to-red-600 text-transparent">Author</span>
-      <span class="not-italic text-3xl sm:text-4xl md:text-5xl text-stone-400 dark:text-stone-500 ml-2">&</span>
-    </span>
-    <span class="block animate-fade-in animate-delay-3 mt-1">
-      <span class="italic text-5xl sm:text-6xl md:text-7xl tracking-tight text-gradient bg-gradient-to-br from-amber-500 to-orange-600 text-transparent">Entrepreneur</span><span class="not-italic text-3xl sm:text-4xl md:text-5xl text-stone-400 dark:text-stone-500 ml-2">.</span>
-    </span>
-  </h1>
+    <!-- Hero Section - BOLD with Light/Dark support -->
+    <section class="relative hero-extend min-h-[90vh] flex items-center overflow-hidden">
+      <!-- Light mode: warm cream with brand accent -->
+      <div class="absolute inset-0 bg-gradient-to-br from-stone-50 via-white to-brand-50/30 dark:from-stone-950 dark:via-stone-950 dark:to-stone-900"></div>
+      <!-- Dramatic gradient sweep - both modes -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_20%_-20%,rgba(225,29,72,0.12),transparent_50%)] dark:bg-[radial-gradient(ellipse_120%_80%_at_20%_-20%,rgba(225,29,72,0.35),transparent_50%)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_80%_120%,rgba(245,158,11,0.08),transparent_50%)] dark:bg-[radial-gradient(ellipse_80%_60%_at_80%_120%,rgba(245,158,11,0.20),transparent_50%)]"></div>
+      <!-- Noise texture - visible in both modes -->
+      <div class="absolute inset-0 opacity-[0.04] dark:opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.7%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E');"></div>
 
-  <div class="space-y-5 animate-fade-in animate-delay-4 text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
-    <p>I'm Jesse, a software engineer and entrepreneur based in Waterloo.</p>
-    <p>
-      I'm fueled by solving impactful and complex problems on a global scale, steering high-performing teams towards extraordinary results.
-      Join me at
-      <a class="link-accent" href="https://www.growthloop.com/company/careers" rel="external" target="_blank">GrowthLoop</a>
-      to reimagine marketing.
-    </p>
-    <p>
-      I wrote
-      <a class="link-accent" href="https://www.uncertaintybook.ca/" rel="external" target="_blank">Embracing Uncertainty</a>,
-      a field guide to agile packed with strategies for building top-performing teams.
-      <% if (post = featured_post) %>
-        I also write time-to-time about engineering and leadership on my blog. Dive into my post,
-        <a class="link-accent" href="<%= post.relative_url %>"><%= post.data.title %></a>
-        for a taste.
-      <% end %>
-    </p>
-    <p>Now, let's create the extraordinary together.</p>
-  </div>
+      <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12 hero-content-padding pb-20 md:pb-28">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          <!-- Left: Main content -->
+          <div class="lg:col-span-8">
+            <!-- Stark credential line -->
+            <div class="flex items-center gap-6 mb-8 animate-fade-in">
+              <div class="h-px w-12 bg-brand-500"></div>
+              <span class="text-xs font-mono uppercase tracking-[0.3em] text-stone-500">Engineer · Leader · Author</span>
+            </div>
 
-  <div class="flex gap-1 mt-8 -ml-3">
-    <a class="flex items-center justify-center w-11 h-11 text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all hover:-translate-y-0.5" aria-label="Follow on X" href="https://twitter.com/elsom25" rel="external" target="_blank">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-        <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"></path>
-      </svg>
-    </a>
-    <a class="flex items-center justify-center w-11 h-11 text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all hover:-translate-y-0.5" aria-label="Follow on GitHub" href="https://github.com/elsom25" rel="external" target="_blank">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.588 2 12.253c0 4.537 2.862 8.369 6.838 9.727.5.09.687-.218.687-.487 0-.243-.013-1.05-.013-1.91C7 20.059 6.35 18.957 6.15 18.38c-.113-.295-.6-1.205-1.025-1.448-.35-.192-.85-.667-.013-.68.788-.012 1.35.744 1.538 1.051.9 1.551 2.338 1.116 2.912.846.088-.666.35-1.115.638-1.371-2.225-.256-4.55-1.14-4.55-5.062 0-1.115.387-2.038 1.025-2.756-.1-.256-.45-1.307.1-2.717 0 0 .837-.269 2.75 1.051.8-.23 1.65-.346 2.5-.346.85 0 1.7.115 2.5.346 1.912-1.333 2.75-1.05 2.75-1.05.55 1.409.2 2.46.1 2.716.637.718 1.025 1.628 1.025 2.756 0 3.934-2.337 4.806-4.562 5.062.362.32.675.936.675 1.897 0 1.371-.013 2.473-.013 2.82 0 .268.188.589.688.486a10.039 10.039 0 0 0 4.932-3.74A10.447 10.447 0 0 0 22 12.253C22 6.588 17.525 2 12 2Z"></path>
-      </svg>
-    </a>
-    <a class="flex items-center justify-center w-11 h-11 text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all hover:-translate-y-0.5" aria-label="Follow on LinkedIn" href="https://www.linkedin.com/in/jcmcginnis" rel="external" target="_blank">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-        <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"></path>
-      </svg>
-    </a>
-    <a class="flex items-center justify-center w-11 h-11 text-stone-500 dark:text-stone-400 hover:text-stone-900 dark:hover:text-stone-100 transition-all hover:-translate-y-0.5" aria-label="Email Jesse" href="mailto:jesse@jcmcginnis.com">
-      <svg viewBox="0 0 24 24" aria-hidden="true" class="w-5 h-5 fill-current">
-        <path fill-rule="evenodd" d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"></path>
-      </svg>
-    </a>
-  </div>
-</div>
+            <!-- MASSIVE H1 -->
+            <h1 class="animate-fade-in-up">
+              <span class="block text-hero text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[11rem] text-stone-900 dark:text-white leading-[0.85] tracking-tight">
+                I build
+              </span>
+              <span class="block text-hero text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[11rem] leading-[0.85] tracking-tight">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-accent-500 dark:from-brand-400 dark:via-brand-500 dark:to-accent-400">teams</span>
+              </span>
+              <span class="block text-hero text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[11rem] text-stone-900 dark:text-white leading-[0.85] tracking-tight">
+                that ship.
+              </span>
+            </h1>
+
+            <!-- Single punchy intro -->
+            <p class="mt-12 text-xl md:text-2xl text-stone-600 dark:text-stone-400 max-w-2xl leading-relaxed animate-fade-in animate-delay-1">
+              <strong class="text-stone-900 dark:text-white">Engineer first, leader always.</strong> Hard problems at global scale. Teams that ship what others thought was impossible. Trust is the multiplier.
+            </p>
+
+            <!-- CTAs -->
+            <div class="mt-10 flex flex-wrap items-center gap-4 animate-fade-in animate-delay-2">
+              <a href="/blog/" class="group inline-flex items-center gap-3 px-8 py-4 bg-stone-900 dark:bg-white hover:bg-brand-600 dark:hover:bg-brand-500 text-white dark:text-stone-900 dark:hover:text-white font-bold rounded-full transition-all hover:scale-105">
+                Read my writing
+                <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+              <a href="/readme/" class="inline-flex items-center gap-2 px-8 py-4 border-2 border-stone-300 dark:border-stone-700 hover:border-brand-500 dark:hover:border-brand-500 text-stone-900 dark:text-white font-semibold rounded-full transition-all hover:bg-brand-500/10">
+                <span class="font-mono">README.md</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Status card -->
+          <div class="lg:col-span-4 hidden lg:block animate-fade-in animate-delay-2">
+            <div class="relative">
+              <!-- Glow -->
+              <div class="absolute -inset-4 bg-gradient-to-br from-brand-500/10 to-accent-500/5 dark:from-brand-500/20 dark:to-accent-500/10 rounded-3xl blur-2xl"></div>
+              <!-- Card -->
+              <div class="relative bg-white/80 dark:bg-stone-900/80 backdrop-blur-sm border border-stone-200 dark:border-stone-800 rounded-2xl p-8 shadow-xl shadow-stone-200/50 dark:shadow-none">
+                <div class="flex items-center gap-2 mb-6">
+                  <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                  <span class="text-xs font-mono uppercase tracking-wider text-stone-500">Currently</span>
+                </div>
+                <p class="text-2xl font-bold text-stone-900 dark:text-white mb-2"><%= site.data.career.current.role %></p>
+                <p class="text-lg text-brand-600 dark:text-brand-400 mb-6">@ <a href="<%= site.data.career.current.url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity"><%= site.data.career.current.company %></a></p>
+                <div class="pt-6 border-t border-stone-200 dark:border-stone-800">
+                  <p class="text-sm text-stone-500">Previously <%= site.data.career.eras[1].duration %> @ <a href="<%= site.data.career.eras[1].url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity"><%= site.data.career.eras[1].company %></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 pb-8">
+        <span class="text-xs font-mono uppercase tracking-widest text-stone-400 dark:text-stone-600">Scroll</span>
+        <div class="w-px h-16 bg-gradient-to-b from-stone-400 dark:from-stone-600 to-transparent"></div>
+      </div>
+    </section>
+
+    <!-- THE LESSONS - High Contrast Dark Section (Accent Zone) -->
+    <section id="lessons" class="accent-zone relative">
+      <!-- Base: Dark in both modes for high contrast -->
+      <div class="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 dark:from-black dark:via-stone-950 dark:to-black"></div>
+      <!-- Colored gradient overlays - visible in BOTH modes -->
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_10%_20%,rgba(225,29,72,0.25),transparent)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_90%_40%,rgba(16,185,129,0.20),transparent)]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_30%_80%,rgba(59,130,246,0.20),transparent)]"></div>
+
+      <!-- Header - Smaller, more distinct from page hero -->
+      <div class="relative z-10 pt-20 pb-8 md:pt-28 md:pb-12">
+        <div class="w-full max-w-5xl mx-auto px-6 md:px-12 text-center">
+          <%= render "section_header", label: "The Lessons", color: "brand", alignment: "center", size: "small" %>
+          <h2 class="text-hero text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
+            <span class="text-brand-400">Chaos</span> <span class="text-white">isn't the enemy.</span><br>
+            <span class="text-sky-400">Comfort</span> <span class="text-white">is.</span>
+          </h2>
+          <p class="text-base md:text-lg text-stone-400 max-w-2xl mx-auto leading-relaxed">
+            <%= site.data.career.opening.subhead %>
+          </p>
+        </div>
+      </div>
+
+      <!-- Timeline Container -->
+      <div id="timeline-container" class="relative">
+        <!-- Timeline Track - Dull background, gradient fills on scroll with layered glow -->
+        <!-- z-[1] keeps it below the era containers which have z-[2] -->
+        <div id="timeline-track" class="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 z-[1]">
+          <!-- Dull/dark background track (always visible) -->
+          <div class="absolute inset-0 rounded-full bg-stone-700/30"></div>
+          <!-- Core fill wrapper - clips the main line -->
+          <div id="timeline-fill" class="absolute top-0 left-0 right-0 overflow-hidden rounded-full" style="height: 0%;">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-[3000px] rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
+          </div>
+        </div>
+        <!-- Glow - soft ambient light using blur to create natural soft edges -->
+        <div id="timeline-glow" class="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none" style="width: 200px; height: 0px;">
+          <!-- Wide ambient bloom - very large blur creates natural soft edges -->
+          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-16 rounded-full opacity-[0.12]" style="height: 100%; filter: blur(40px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
+          <!-- Mid glow layer -->
+          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-8 rounded-full opacity-[0.18]" style="height: 100%; filter: blur(24px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
+          <!-- Inner glow - tighter but still soft -->
+          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-4 rounded-full opacity-[0.22]" style="height: 100%; filter: blur(12px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
+        </div>
+
+        <%# Global lesson index for alternating sides across all eras %>
+        <% global_lesson_index = 0 %>
+
+        <!-- Era: Boltmade -->
+        <div class="timeline-era relative z-[2]" data-era="boltmade" data-color="brand">
+          <!-- Era Header -->
+          <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
+            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-900/95 via-brand-800/95 to-brand-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-brand-500/20 border border-brand-600/30"></div>
+                <div class="relative flex items-center justify-between px-5 py-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                      <span class="text-sm font-bold text-white">01</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-serif font-bold">
+                        <a href="<%= site.data.career.eras[0].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[0].company %></a>
+                      </h3>
+                      <p class="text-xs font-mono text-brand-300/70"><%= site.data.career.eras[0].years %></p>
+                    </div>
+                  </div>
+                  <div class="hidden sm:block text-xs font-mono text-brand-300/50 uppercase tracking-wider">The Foundation</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lessons -->
+          <div class="relative pt-4 pb-2">
+            <% site.data.career.eras[0].points.each_with_index do |point, i| %>
+              <% is_right = global_lesson_index.even? %>
+              <article class="lesson-panel reveal-on-scroll relative md:-mt-8 first:mt-0" data-lesson="boltmade-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
+                <div class="w-full max-w-5xl mx-auto px-6 md:px-12 py-6 md:py-8">
+                  <div class="relative md:grid md:grid-cols-2 md:gap-12">
+                    <!-- Timeline dot -->
+                    <div class="timeline-dot hidden md:block absolute left-1/2 top-8 -translate-x-1/2 z-10">
+                      <div class="w-3 h-3 rounded-full bg-brand-500 ring-2 ring-stone-900 shadow-lg shadow-brand-500/50"></div>
+                    </div>
+
+                    <% if is_right %>
+                      <div class="hidden md:block"></div>
+                    <% end %>
+
+                    <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
+                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
+                        <%= point.lesson %>
+                      </h4>
+                      <p class="text-sm md:text-base text-brand-400 mb-3">
+                        <%= point.byline %>
+                      </p>
+                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+                        <% point.detail.strip.split("\n\n").each do |p| %>
+                          <p><%= p.strip %></p>
+                        <% end %>
+                      </div>
+                    </div>
+
+                    <% unless is_right %>
+                      <div class="hidden md:block"></div>
+                    <% end %>
+                  </div>
+                </div>
+              </article>
+              <% global_lesson_index += 1 %>
+            <% end %>
+          </div>
+        </div>
+
+        <!-- Era: Shopify -->
+        <div class="timeline-era relative z-[2]" data-era="shopify" data-color="emerald">
+          <!-- Era Header -->
+          <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
+            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/95 via-emerald-800/95 to-emerald-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-emerald-500/20 border border-emerald-600/30"></div>
+                <div class="relative flex items-center justify-between px-5 py-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
+                      <span class="text-sm font-bold text-white">02</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-serif font-bold">
+                        <a href="<%= site.data.career.eras[1].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[1].company %></a>
+                      </h3>
+                      <p class="text-xs font-mono text-emerald-300/70"><%= site.data.career.eras[1].years %> · <%= site.data.career.eras[1].duration %></p>
+                    </div>
+                  </div>
+                  <div class="hidden sm:block text-xs font-mono text-emerald-300/50 uppercase tracking-wider">The Crucible</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lessons - CSS Grid for compact overlapping layout -->
+          <div class="relative pt-4 pb-8">
+            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
+              <%# Use CSS Grid with row spans for visual overlap on desktop %>
+              <div class="md:grid md:grid-cols-[1fr_24px_1fr] md:gap-x-6" style="grid-auto-rows: minmax(48px, auto);">
+                <% site.data.career.eras[1].points.each_with_index do |point, i| %>
+                  <% is_right = global_lesson_index.even? %>
+                  <%# Each lesson spans 5 rows, starting offset by 3 rows from previous %>
+                  <% row_start = (i * 3) + 1 %>
+
+                  <%# Timeline dot in center column %>
+                  <div class="hidden md:flex items-start justify-center pt-2 timeline-dot z-10" style="grid-column: 2; grid-row: <%= row_start %>;">
+                    <div class="w-3 h-3 rounded-full bg-emerald-500 ring-2 ring-stone-900 shadow-lg shadow-emerald-500/50"></div>
+                  </div>
+
+                  <%# Content on alternating sides %>
+                  <article class="lesson-panel reveal-on-scroll py-6 md:py-4" data-lesson="shopify-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>" style="grid-column: <%= is_right ? '3' : '1' %>; grid-row: <%= row_start %> / span 5;">
+                    <div class="<%= is_right ? 'md:pl-4' : 'md:pr-4 md:text-right' %>">
+                      <p class="text-xs font-mono text-emerald-500 mb-2"><%= point.period %></p>
+                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
+                        <%= point.lesson %>
+                      </h4>
+                      <p class="text-sm md:text-base text-emerald-400 mb-3">
+                        <%= point.byline %>
+                      </p>
+                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+                        <% point.detail.strip.split("\n\n").each do |p| %>
+                          <p><%= p.strip %></p>
+                        <% end %>
+                      </div>
+                    </div>
+                  </article>
+                  <% global_lesson_index += 1 %>
+                <% end %>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Era: GrowthLoop -->
+        <div class="timeline-era relative z-[2]" data-era="growthloop" data-color="sky">
+          <!-- Era Header -->
+          <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
+            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
+              <div class="relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-sky-900/95 via-blue-800/95 to-sky-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-sky-500/20 border border-sky-600/30"></div>
+                <div class="relative flex items-center justify-between px-5 py-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center relative">
+                      <span class="absolute -top-1.5 -right-1.5 w-2 h-2 bg-sky-400 rounded-full animate-pulse"></span>
+                      <span class="text-sm font-bold text-white">03</span>
+                    </div>
+                    <div>
+                      <h3 class="text-xl font-serif font-bold">
+                        <a href="<%= site.data.career.eras[2].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[2].company %></a>
+                      </h3>
+                      <p class="text-xs font-mono text-sky-300/70"><%= site.data.career.eras[2].years %></p>
+                    </div>
+                  </div>
+                  <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-sky-300/50 uppercase tracking-wider">
+                    <span class="w-1.5 h-1.5 bg-sky-400 rounded-full animate-pulse"></span>
+                    The Acceleration
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lessons -->
+          <div class="relative pt-4 pb-2">
+            <% site.data.career.eras[2].points.each_with_index do |point, i| %>
+              <% is_right = global_lesson_index.even? %>
+              <article class="lesson-panel reveal-on-scroll relative md:-mt-8 first:mt-0" data-lesson="growthloop-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
+                <div class="w-full max-w-5xl mx-auto px-6 md:px-12 py-6 md:py-8">
+                  <div class="relative md:grid md:grid-cols-2 md:gap-12">
+                    <!-- Timeline dot -->
+                    <div class="timeline-dot hidden md:block absolute left-1/2 top-8 -translate-x-1/2 z-10">
+                      <div class="w-3 h-3 rounded-full bg-sky-500 ring-2 ring-stone-900 shadow-lg shadow-sky-500/50 animate-pulse"></div>
+                    </div>
+
+                    <% if is_right %>
+                      <div class="hidden md:block"></div>
+                    <% end %>
+
+                    <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
+                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
+                        <%= point.lesson %>
+                      </h4>
+                      <p class="text-sm md:text-base text-sky-400 mb-3">
+                        <%= point.byline %>
+                      </p>
+                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+                        <% point.detail.strip.split("\n\n").each do |p| %>
+                          <p><%= p.strip %></p>
+                        <% end %>
+                      </div>
+                    </div>
+
+                    <% unless is_right %>
+                      <div class="hidden md:block"></div>
+                    <% end %>
+                  </div>
+                </div>
+              </article>
+              <% global_lesson_index += 1 %>
+            <% end %>
+          </div>
+        </div>
+
+        <!-- The Thesis - Timeline ends at top boundary -->
+        <div id="thesis-section" class="relative pt-16 pb-20 md:pt-20 md:pb-28 z-10">
+          <div class="w-full max-w-3xl mx-auto px-6 md:px-12">
+            <!-- Thesis card - z-index ensures timeline doesn't overlap -->
+            <div id="thesis-card" class="relative z-20 reveal-on-scroll">
+              <!-- Glowing border effect -->
+              <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-brand-500 via-emerald-500 to-sky-500 opacity-50 blur-sm"></div>
+              <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-brand-500 via-emerald-500 to-sky-500 opacity-30"></div>
+
+              <div class="relative bg-stone-950 rounded-2xl p-8 md:p-12 border border-stone-700/50">
+                <p class="text-xs font-mono uppercase tracking-widest text-stone-500 mb-8 text-center">The Thesis</p>
+
+                <blockquote class="space-y-3 md:space-y-4 text-center">
+                  <p class="font-serif text-xl sm:text-2xl md:text-3xl leading-tight">
+                    <span class="text-brand-400">High-agency</span> <span class="text-white">trumps everything.</span>
+                  </p>
+                  <p class="font-serif text-xl sm:text-2xl md:text-3xl leading-tight">
+                    <span class="text-emerald-400">Trust</span> <span class="text-white">unlocks it.</span>
+                  </p>
+                  <p class="font-serif text-xl sm:text-2xl md:text-3xl leading-tight">
+                    <span class="text-sky-400">Directed chaos</span> <span class="text-white">forges it.</span>
+                  </p>
+                </blockquote>
+
+                <div class="mt-8 pt-6 border-t border-stone-800 text-center">
+                  <p class="text-base md:text-lg text-stone-400">
+                    That's the work.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- "More to come" indicator -->
+            <div class="mt-12 flex flex-col items-center gap-2">
+              <div class="flex items-center gap-1.5">
+                <div class="w-1 h-1 rounded-full bg-stone-600 animate-pulse"></div>
+                <div class="w-1 h-1 rounded-full bg-stone-600/60 animate-pulse" style="animation-delay: 0.2s"></div>
+                <div class="w-1 h-1 rounded-full bg-stone-600/30 animate-pulse" style="animation-delay: 0.4s"></div>
+              </div>
+              <p class="text-xs font-mono text-stone-600">Story in progress...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Explore More -->
+    <section class="py-24 md:py-32 bg-stone-50 dark:bg-stone-900/50">
+      <div class="w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="reveal-on-scroll">
+          <%= render "section_header", label: "Explore More", color: "brand" %>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-6 md:gap-8">
+          <% if featured_post %>
+            <article class="reveal-on-scroll [--stagger:0] lg:col-span-7">
+              <%= render "card", color: "brand", size: "xl", rounded: "3xl", shadow_size: "2xl", href: featured_post.relative_url do %>
+                <div class="flex items-center gap-4 mb-6">
+                  <span class="px-3 py-1 text-xs font-bold uppercase tracking-wider bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 rounded-full">Featured Essay</span>
+                  <span class="text-sm text-stone-400 dark:text-stone-600"><%= featured_post.date.strftime("%B %Y") %></span>
+                </div>
+                <h3 class="font-serif text-3xl md:text-4xl font-semibold text-stone-900 dark:text-stone-100 mb-4 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                  <%= featured_post.data.title %>
+                </h3>
+                <% if featured_post.data.pull_quote %>
+                  <blockquote class="pl-6 border-l-4 border-brand-500 mb-6">
+                    <p class="font-serif text-xl text-stone-700 dark:text-stone-300 italic leading-relaxed">
+                      "<%= featured_post.data.pull_quote %>"
+                    </p>
+                  </blockquote>
+                <% end %>
+                <% if featured_post.data.description %>
+                  <p class="text-lg text-stone-600 dark:text-stone-400 leading-relaxed mb-8">
+                    <%= featured_post.data.description %>
+                  </p>
+                <% end %>
+                <div class="inline-flex items-center gap-2 text-brand-600 dark:text-brand-400 font-semibold group-hover:gap-4 transition-all">
+                  Read the full essay
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </div>
+              <% end %>
+            </article>
+          <% end %>
+
+          <div class="lg:col-span-5 flex flex-col gap-6 md:gap-8">
+            <% second_post = featured_posts.find { it != featured_post } %>
+            <% if second_post %>
+              <article class="reveal-on-scroll [--stagger:1] flex-1">
+                <%= render "card", color: "brand", size: "md", shadow_size: "xl", h_full: true, href: second_post.relative_url do %>
+                  <div class="flex items-center gap-3 mb-4">
+                    <span class="text-sm text-stone-400 dark:text-stone-600"><%= second_post.date.strftime("%B %Y") %></span>
+                    <% second_post.data.categories&.each do |category| %>
+                      <span class="text-sm font-medium text-brand-600 dark:text-brand-400"><%= category %></span>
+                    <% end %>
+                  </div>
+                  <h4 class="font-serif text-xl md:text-2xl font-semibold text-stone-900 dark:text-stone-100 mb-3 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors">
+                    <%= second_post.data.title %>
+                  </h4>
+                  <% if second_post.data.description %>
+                    <p class="text-stone-600 dark:text-stone-400 leading-relaxed">
+                      <%= second_post.data.description %>
+                    </p>
+                  <% end %>
+                <% end %>
+              </article>
+            <% end %>
+
+            <div class="reveal-on-scroll [--stagger:2] grid grid-cols-2 gap-4">
+              <%= render "card", color: "brand", size: "sm", rounded: "xl", href: "/blog/" do %>
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-brand-100 dark:bg-brand-900/30 text-brand-600 dark:text-brand-400 mb-3 group-hover:scale-110 transition-transform">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                  </svg>
+                </div>
+                <p class="font-semibold text-stone-900 dark:text-stone-100 mb-1">All Writing</p>
+                <p class="text-sm text-stone-500">Essays & thoughts</p>
+              <% end %>
+
+              <%= render "card", color: "accent", size: "sm", rounded: "xl", href: "/talks/" do %>
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-accent-100 dark:bg-accent-900/30 text-accent-600 dark:text-accent-400 mb-3 group-hover:scale-110 transition-transform">
+                  <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+                  </svg>
+                </div>
+                <p class="font-semibold text-stone-900 dark:text-stone-100 mb-1">Speaking</p>
+                <p class="text-sm text-stone-500">Talks & workshops</p>
+              <% end %>
+            </div>
+          </div>
+
+          <div class="reveal-on-scroll [--stagger:3] lg:col-span-12">
+          <%= render "card", color: "brand", size: "lg", bold: true, shadow_size: "2xl", rounded: "2xl", href: site.data.career.book.url, external: true do %>
+            <div class="absolute inset-0 bg-gradient-to-r from-brand-600/10 via-transparent to-accent-600/10 opacity-0 group-hover:opacity-100 transition-opacity rounded-2xl pointer-events-none"></div>
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div class="flex items-center gap-6">
+                <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-white/10 text-white group-hover:scale-110 transition-transform">
+                  <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-serif text-2xl md:text-3xl font-semibold text-white mb-1">
+                    The Book
+                    <svg class="inline w-5 h-5 ml-2 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                  </h3>
+                  <p class="text-stone-300">
+                    <em class="text-brand-400"><%= site.data.career.book.title %></em> — <%= site.data.career.book.tagline.downcase %>
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 text-white font-semibold group-hover:gap-4 transition-all">
+                <span>Get the book</span>
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </div>
+            </div>
+          <% end %>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Connect Section - Bold Accent Zone -->
+    <section class="relative py-32 md:py-48 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-brand-600 via-brand-700 to-stone-900">
+        <div class="absolute inset-0 pattern-plus opacity-30"></div>
+      </div>
+
+      <div class="absolute top-1/2 left-1/4 -translate-y-1/2 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 right-1/4 -translate-y-1/2 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl"></div>
+
+      <!-- Geometric decorations -->
+      <div class="absolute top-16 left-[8%] w-20 h-20 border-2 border-white/10 rotate-12 hidden lg:block"></div>
+      <div class="absolute bottom-16 right-[8%] w-28 h-28 border-2 border-white/10 -rotate-6 hidden lg:block"></div>
+
+      <div class="relative z-10 w-full max-w-[72rem] mx-auto px-6 md:px-12 text-center">
+        <div class="reveal-on-scroll">
+          <h2 class="text-hero text-4xl md:text-5xl lg:text-6xl text-white mb-6">
+            Let's build something<br class="hidden sm:block" /> <em class="text-accent-300">extraordinary</em>
+          </h2>
+          <p class="text-xl text-white/70 max-w-2xl mx-auto mb-12">
+            Always up for hard conversations about leadership and the craft of building teams. Reach out.
+          </p>
+        </div>
+
+        <a href="mailto:jesse@jcmcginnis.com" class="reveal-on-scroll [--stagger:1] group inline-flex items-center gap-3 px-10 py-5 bg-white hover:bg-stone-100 text-stone-900 text-lg font-bold rounded-full transition-all hover:scale-105 shadow-2xl mb-10">
+          <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          jesse@jcmcginnis.com
+        </a>
+
+        <div class="reveal-on-scroll [--stagger:2] pt-4">
+          <%= render "social_links", style: "pills", color: "white", show_labels: true %>
+        </div>
+      </div>
+    </section>

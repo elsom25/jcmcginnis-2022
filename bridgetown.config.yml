@@ -14,19 +14,16 @@ social:
 pagination:
   enabled: true
 
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title/
-
 defaults:
   - scope:
       collection: posts
     values:
       layout: post
+      page_id: post
+  - scope:
+      collection: talks
+    values:
+      layout: talk
+      page_id: talk
 
 template_engine: erb
-
-# Exclude Tailwind source from static file copying (it gets compiled to output/)
-exclude:
-  - assets/css/tailwind.css

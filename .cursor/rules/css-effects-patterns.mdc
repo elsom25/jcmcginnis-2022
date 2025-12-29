@@ -1,0 +1,148 @@
+---
+description: Patterns for CSS effects like glows, gradients, and layered visuals
+globs: ["**/*.css", "**/*.erb", "**/*.html"]
+alwaysApply: false
+---
+
+# CSS Effects Patterns
+
+## Glow Effects
+
+A glow represents light radiating into space. It should NEVER have hard edges.
+
+### ✅ DO: Use blur to create natural soft edges
+
+```css
+/* Layer with graduated widths and subtle opacities */
+.glow-outer {
+  filter: blur(40px);
+  opacity: 0.12;
+  width: 4rem; /* wide spread */
+}
+
+.glow-mid {
+  filter: blur(24px);
+  opacity: 0.18;
+  width: 2rem;
+}
+
+.glow-inner {
+  filter: blur(12px);
+  opacity: 0.22;
+  width: 1rem; /* tight core */
+}
+```
+
+### ❌ DON'T: These create hard edges
+
+```css
+/* overflow-hidden on glow containers - creates hard cutoffs */
+.glow-container { overflow: hidden; } /* BAD */
+
+/* CSS mask-image with animated height - mask compresses, hides content */
+mask-image: linear-gradient(...); /* BAD for animated containers */
+
+/* High opacity values - looks artificial */
+opacity: 0.4; /* Too loud, not timeless */
+```
+
+**Why blur works:** Large blur values (40px, 24px, 12px) create natural falloff in ALL directions. The blur IS the soft edge—don't fight it with clipping.
+
+## Gradient Backgrounds
+
+### Section gradients with depth
+
+```css
+/* Base gradient */
+background: linear-gradient(to bottom,
+  var(--start-color) 0%,
+  var(--mid-color) 50%,
+  var(--end-color) 100%
+);
+
+/* Add radial overlays for depth */
+.depth-overlay {
+  background: radial-gradient(
+    ellipse at 20% 30%,
+    rgba(var(--accent), 0.2) 0%,
+    transparent 50%
+  );
+}
+```
+
+### Timeline/progress gradients
+
+```css
+/* Define stable colors for entire gradient, not just visible portion */
+background: linear-gradient(to bottom,
+  #e11d48 0%,    /* red - start */
+  #10b981 40%,   /* green - middle */
+  #3b82f6 90%,   /* blue - end */
+  #3b82f6 100%
+);
+```
+
+## z-index Layering
+
+Establish clear stacking contexts:
+
+```css
+/* Background elements */
+.timeline-track { z-index: 1; }
+
+/* Content containers */
+.era-container { z-index: 2; }
+
+/* Interactive elements */
+.timeline-dots { z-index: 10; }
+
+/* Overlays and cards */
+.thesis-card { z-index: 20; }
+
+/* Sticky headers */
+.sticky-header { z-index: 30; }
+```
+
+## Sticky Elements
+
+```css
+.sticky-header {
+  position: sticky;
+  top: 64px; /* Account for global nav height */
+  z-index: 30;
+}
+```
+
+**Key:** Sticky positioning breaks if ANY ancestor has `overflow: hidden`. Remove clipping or restructure.
+
+## Spacing for Overlap
+
+Use CSS Grid with row spans for controlled visual overlap:
+
+```css
+.overlap-grid {
+  display: grid;
+  grid-auto-rows: minmax(48px, auto);
+}
+
+.overlap-item {
+  grid-row: calc(var(--index) * 3 + 1) / span 5;
+}
+```
+
+Alternative: Negative margins for simpler cases:
+
+```css
+.overlap-item + .overlap-item {
+  margin-top: -2rem;
+}
+```
+
+## Bold Accent Pattern
+
+For the site's high-contrast dark sections, see `design-system.mdc`. Use the `_bold_accent.erb` partial rather than recreating manually. The pattern includes:
+
+- Dark gradient base (works in both light/dark modes)
+- Colored radial gradient overlays
+- Optional pattern texture overlay
+- Proper z-index stacking for content

@@ -1,35 +1,153 @@
 ---
-layout: default
+layout: page
 ---
-<div class="max-w-3xl mx-auto">
-  <header class="text-center mb-10 animate-fade-in">
-    <div class="flex items-center justify-center gap-3 mb-4">
-      <span class="text-sm text-stone-400 dark:text-stone-600"><%= resource.date.strftime("%B %e, %Y") %></span>
-      <% resource.data.categories&.each do |category| %>
-        <a class="text-sm font-medium text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 transition-colors" href="<%= category_url(category) %>"><%= category %></a>
+<%
+  # Check if this is a featured post
+  is_featured = resource.data.featured
+  has_image = resource.data.image.present?
+
+  # Get related posts (same category, excluding current)
+  current_categories = resource.data.categories || []
+  related_posts = collections.posts.resources
+    .reject { |p| p.relative_url == resource.relative_url }
+    .select { |p| (p.data.categories || []).any? { |c| current_categories.include?(c) } }
+    .first(2)
+
+  # Estimate reading time (assumes ~200 words per minute)
+  word_count = resource.content.split.size
+  reading_time = [(word_count / 200.0).ceil, 1].max
+%>
+
+<!-- Reading progress bar -->
+<div id="reading-progress" class="fixed top-0 left-0 right-0 h-0.5 bg-transparent z-50">
+  <div id="progress-bar" class="h-full bg-brand-500 transition-all duration-75" style="width: 0%"></div>
+</div>
+
+<article class="post-article relative">
+  <!-- Decorative elements for visual anchoring -->
+  <div class="hidden lg:block absolute top-header-ghost left-[5%] w-16 h-16 border-2 border-stone-200/50 dark:border-stone-800/50 rotate-12 opacity-60"></div>
+  <div class="hidden lg:block absolute top-64 right-[8%] w-10 h-10 rounded-full border-2 border-brand-300/30 dark:border-brand-700/30"></div>
+  <div class="hidden lg:block absolute top-[40%] left-[3%] w-6 h-6 bg-accent-400/20 dark:bg-accent-600/20 rotate-45"></div>
+
+  <!-- Post header - slightly wider than content for visual funnel -->
+  <!-- pt handled by page.erb main element -->
+  <header class="relative pb-10 md:pb-12">
+    <div class="max-w-4xl mx-auto px-6 md:px-8">
+      <!-- Meta info -->
+      <div class="flex flex-wrap items-center gap-3 mb-6 animate-fade-in">
+        <time datetime="<%= resource.date.strftime("%Y-%m-%d") %>" class="text-sm font-mono text-stone-500 dark:text-stone-500">
+          <%= resource.date.strftime("%B %e, %Y") %>
+        </time>
+        <span class="text-stone-300 dark:text-stone-700">·</span>
+        <span class="text-sm font-mono text-stone-500 dark:text-stone-500"><%= reading_time %> min</span>
+        <% resource.data.categories&.each do |category| %>
+          <a href="<%= category_url(category) %>" class="ml-1 inline-flex items-center px-2.5 py-0.5 text-xs font-bold uppercase tracking-wider bg-brand-100 dark:bg-brand-900/40 text-brand-700 dark:text-brand-300 rounded transition-colors hover:bg-brand-200 dark:hover:bg-brand-900/60">
+            <%= category %>
+          </a>
+        <% end %>
+      </div>
+
+      <!-- Title -->
+      <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight mb-6 animate-fade-in animate-delay-1">
+        <%= resource.data.title %>
+      </h1>
+
+      <% if resource.data.description %>
+        <p class="text-lg md:text-xl text-stone-600 dark:text-stone-400 leading-relaxed max-w-2xl animate-fade-in animate-delay-2">
+          <%= resource.data.description %>
+        </p>
       <% end %>
     </div>
-    <h1 class="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-stone-900 dark:text-stone-100 leading-tight tracking-tight"><%= resource.data.title %></h1>
-    <% if resource.data.description %>
-      <p class="mt-4 text-lg text-stone-600 dark:text-stone-400"><%= resource.data.description %></p>
-    <% end %>
   </header>
 
-  <% if resource.data.image %>
-    <figure class="mb-12 rounded-xl overflow-hidden shadow-lg animate-fade-in animate-delay-1">
-      <img width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" class="w-full" />
+  <% if has_image %>
+    <!-- Featured image - full bleed on larger screens -->
+    <figure class="mb-12 md:mb-16 animate-fade-in animate-delay-2">
+      <div class="max-w-5xl mx-auto px-6 md:px-12">
+        <div class="relative rounded-xl md:rounded-2xl overflow-hidden shadow-xl">
+          <img width="1080" height="608" src="<%= resource.data.image %>" alt="<%= resource.data.title %>" class="w-full" />
+        </div>
+      </div>
     </figure>
   <% else %>
-    <div class="flex items-center justify-center gap-4 mb-12 animate-fade-in animate-delay-1" aria-hidden="true">
-      <span class="flex-grow max-w-16 h-px bg-gradient-to-r from-transparent to-stone-300 dark:to-stone-700"></span>
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-stone-400 dark:fill-stone-600" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
-      </svg>
-      <span class="flex-grow max-w-16 h-px bg-gradient-to-l from-transparent to-stone-300 dark:to-stone-700"></span>
+    <!-- Decorative divider when no image -->
+    <div class="max-w-4xl mx-auto px-6 md:px-8 mb-12 md:mb-16 animate-fade-in animate-delay-2">
+      <div class="h-px bg-gradient-to-r from-transparent via-stone-300 dark:via-stone-700 to-transparent"></div>
     </div>
   <% end %>
 
-  <article class="max-w-2xl mx-auto prose prose-quoteless prose-stone prose-headings:font-serif prose-headings:font-semibold prose-headings:tracking-tight prose-p:leading-relaxed prose-a:font-medium prose-blockquote:border-l-rose-500 prose-blockquote:font-serif prose-blockquote:not-italic md:prose-lg dark:prose-invert animate-fade-in animate-delay-2">
+  <!-- Article content with custom styling - narrower than header for visual funnel -->
+  <div class="post-content max-w-3xl mx-auto px-6 md:px-8 animate-fade-in animate-delay-3">
     <%= yield %>
-  </article>
-</div>
+  </div>
+
+  <!-- Post footer -->
+  <footer class="max-w-3xl mx-auto px-6 md:px-8 mt-16 md:mt-20">
+    <!-- Divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-stone-300 dark:via-stone-700 to-transparent mb-10"></div>
+
+    <!-- Actions -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 mb-12">
+      <a href="/blog/" class="group inline-flex items-center gap-2 text-stone-600 dark:text-stone-400 font-medium hover:text-brand-600 dark:hover:text-brand-400 transition-colors">
+        <svg class="w-4 h-4 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M7 16l-4-4m0 0l4-4m-4 4h18" />
+        </svg>
+        All writing
+      </a>
+
+      <%
+        # Build share text with pull_quote for more compelling tweets
+        share_text = [resource.data.title, resource.data.pull_quote].compact.join("\n\n")
+        share_url = "https://jcmcginnis.com#{resource.relative_url}"
+      %>
+      <div class="flex items-center gap-3">
+        <span class="text-xs font-mono uppercase tracking-wider text-stone-400 dark:text-stone-600">Share</span>
+        <a href="https://twitter.com/intent/tweet?text=<%= CGI.escape(share_text) %>&url=<%= CGI.escape(share_url) %>" class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400 hover:bg-brand-100 dark:hover:bg-brand-900/50 hover:text-brand-600 dark:hover:text-brand-400 transition-all" target="_blank" rel="external noopener" aria-label="Share on X">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+            <path d="M13.3174 10.7749L19.1457 4H17.7646L12.7039 9.88256L8.66193 4H4L10.1122 12.8955L4 20H5.38119L10.7254 13.7878L14.994 20H19.656L13.3171 10.7749H13.3174ZM11.4257 12.9738L10.8064 12.0881L5.87886 5.03974H8.00029L11.9769 10.728L12.5962 11.6137L17.7652 19.0075H15.6438L11.4257 12.9742V12.9738Z"></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=<%= CGI.escape(share_url) %>" class="inline-flex items-center justify-center w-9 h-9 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400 hover:bg-brand-100 dark:hover:bg-brand-900/50 hover:text-brand-600 dark:hover:text-brand-400 transition-all" target="_blank" rel="external noopener" aria-label="Share on LinkedIn">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-current">
+            <path d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 01-1.548-1.549 1.548 1.548 0 111.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <% if related_posts.any? %>
+      <!-- Related posts -->
+      <div class="py-10 border-t border-stone-200 dark:border-stone-800">
+        <h3 class="font-mono text-xs uppercase tracking-wider text-stone-500 dark:text-stone-500 mb-6">Continue reading</h3>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <% related_posts.each do |post| %>
+            <a href="<%= post.relative_url %>" class="group block p-5 rounded-xl bg-stone-50 dark:bg-stone-900/50 border border-stone-200 dark:border-stone-800 transition-all hover:shadow-lg hover:-translate-y-0.5 hover:border-brand-300 dark:hover:border-brand-800">
+              <time class="text-xs font-mono text-stone-400 dark:text-stone-600"><%= post.date.strftime("%b %Y") %></time>
+              <h4 class="font-serif text-lg font-semibold text-stone-900 dark:text-stone-100 mt-1 group-hover:text-brand-600 dark:group-hover:text-brand-400 transition-colors leading-snug">
+                <%= post.data.title %>
+              </h4>
+            </a>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+
+    <!-- Author -->
+    <div class="py-10 border-t border-stone-200 dark:border-stone-800">
+      <div class="flex items-start gap-4">
+        <img src="/assets/img/jesse-mcginnis.png" alt="Jesse McGinnis" class="w-12 h-12 rounded-full object-cover ring-2 ring-stone-200 dark:ring-stone-700" />
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <h4 class="font-semibold text-stone-900 dark:text-stone-100">Jesse McGinnis</h4>
+            <a href="https://twitter.com/elsom25" class="text-xs text-stone-400 hover:text-brand-500 transition-colors" target="_blank" rel="external noopener">@elsom25</a>
+          </div>
+          <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+            Engineering leader writing about teams, products, and the messy middle of leadership.
+            <a href="/readme/" class="text-brand-600 dark:text-brand-400 hover:underline ml-1">Read my README →</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</article>

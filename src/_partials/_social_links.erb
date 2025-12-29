@@ -1,0 +1,67 @@
+<%
+  # ════════════════════════════════════════════════════════════════════════════
+  # SOCIAL LINKS
+  # ════════════════════════════════════════════════════════════════════════════
+  #
+  # Row of social media links with icon partials.
+  # Uses data from src/_data/socials.yml.
+  #
+  # @param style       [String]  Visual style: "pills" | "minimal" | "icons"
+  # @param color       [String]  Color scheme: "default" | "white"
+  # @param show_labels [Boolean] Show text labels next to icons
+  # @param size        [String]  Icon size: "sm" | "md" | "lg"
+  #
+  # @example Pills with labels (CTAs)
+  #   render "social_links", style: "pills", show_labels: true
+  #
+  # @example Icons only in footer
+  #   render "social_links", style: "icons", show_labels: false
+  #
+  # @example White on dark background
+  #   render "social_links", style: "pills", color: "white", show_labels: true
+  #
+  # @see src/_data/socials.yml for social links data
+  # @see src/_partials/icons/ for individual icon partials
+  #
+  # ════════════════════════════════════════════════════════════════════════════
+
+  p = contract(binding,
+    style:       %w[pills minimal icons],
+    color:       %w[default white],
+    show_labels: false,
+    size:        %w[md sm lg]
+  )
+
+  # DESIGN TOKENS
+  link_styles = {
+    "pills" => {
+      "default" => "inline-flex items-center gap-2 px-6 py-3 border-2 border-stone-300 dark:border-stone-700 hover:border-brand-500 dark:hover:border-brand-500 text-stone-900 dark:text-stone-100 font-semibold rounded-full transition-all",
+      "white"   => "flex items-center gap-2 px-5 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full transition-all"
+    },
+    "minimal" => {
+      "default" => "text-stone-500 hover:text-brand-600 dark:hover:text-brand-400 transition-colors",
+      "white"   => "text-white/70 hover:text-white transition-colors"
+    },
+    "icons" => {
+      "default" => "flex items-center justify-center w-10 h-10 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-500 dark:text-stone-400 hover:bg-brand-100 dark:hover:bg-brand-900/30 hover:text-brand-600 dark:hover:text-brand-400 transition-all",
+      "white"   => "flex items-center justify-center w-10 h-10 rounded-lg bg-white/10 hover:bg-white/20 text-white transition-all"
+    }
+  }
+
+  gap_class = p.style == "pills" ? "gap-4" : (p.style == "icons" ? "gap-3" : "gap-6")
+  justify_class = p.style == "icons" ? "" : "justify-center"
+  link_class = link_styles[p.style][p.color]
+
+  # Get socials from data file
+  socials = site.data.socials
+%>
+<div class="flex flex-wrap <%= justify_class %> <%= gap_class %>">
+  <% socials.each do |social| %>
+    <a href="<%= social.url %>" class="<%= link_class %>" rel="external noopener" target="_blank" aria-label="<%= social.name %>">
+      <%= render "icons/#{social.icon}", size: p.size %>
+      <% if p.show_labels %>
+        <span class="font-medium"><%= social.handle || social.name %></span>
+      <% end %>
+    </a>
+  <% end %>
+</div>

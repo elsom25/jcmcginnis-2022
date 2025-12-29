@@ -3,11 +3,13 @@ set -euo pipefail
 
 #MISE description="Build the site for production"
 
+echo "==> Compiling Tailwind CSS..."
+npx @tailwindcss/cli -i frontend/styles/tailwind.css -o frontend/styles/index.css --minify
+
+echo "==> Bundling frontend assets (JS + CSS)..."
+node esbuild.config.js --minify
+
 echo "==> Building site..."
 BRIDGETOWN_ENV=production bin/bridgetown build
 
-echo "==> Compiling Tailwind CSS..."
-npx @tailwindcss/cli -i src/assets/css/tailwind.css -o output/assets/css/style.css --minify
-
 echo "==> Build complete!"
-

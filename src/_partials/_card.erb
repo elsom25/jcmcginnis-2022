@@ -1,0 +1,235 @@
+<%
+  # ════════════════════════════════════════════════════════════════════════════
+  # CARD PARTIAL
+  # ════════════════════════════════════════════════════════════════════════════
+  #
+  # Versatile content container with hover effects and theme integration.
+  # Use for: blog previews, feature callouts, quotes, numbered lists.
+  #
+  # ── Visual ────────────────────────────────────────────────────────────────
+  # @param color       [String]  Accent color: "brand" | "accent" | "emerald" | "sky"
+  # @param size        [String]  Padding scale: "sm" | "md" | "lg" | "xl"
+  # @param rounded     [String]  Border radius: "xl" | "2xl" | "3xl"
+  # @param shadow_size [String]  Hover shadow: "lg" | "xl" | "2xl"
+  # @param bg_variant  [String]  Background: "default" | "muted" | "glass" | "frosted"
+  # @param bold        [Boolean] Dark promotional style for CTAs on light sections
+  #
+  # ── Behavior ──────────────────────────────────────────────────────────────
+  # @param href        [String]  URL - renders as <a> instead of <div>
+  # @param external    [Boolean] Opens in new tab (requires href)
+  # @param h_full      [Boolean] Stretch to container height (for grid layouts)
+  #
+  # ── Content Modes (mutually exclusive) ────────────────────────────────────
+  # @param number       [Integer] Shows numbered badge, expects block content
+  # @param quote_text   [String]  Quote mode - ignores block content
+  # @param quote_author [String]  Attribution (only with quote_text)
+  # (default)           [Block]   Custom content via block
+  #
+  # @example Link card
+  #   render "card", href: "/blog/post", color: "brand" do ... end
+  #
+  # @example Quote with attribution
+  #   render "card", quote_text: "...", quote_author: "Name", color: "accent"
+  #
+  # @example Numbered card (for ordered lists)
+  #   render "card", number: 1, color: "emerald" do ... end
+  #
+  # @example Bold CTA on light background
+  #   render "card", bold: true, href: "#section" do ... end
+  #
+  # @avoid
+  #   - Nesting cards inside cards
+  #   - Using for pure text without visual hierarchy - use prose instead
+  #   - Mixing quote_text with block content (quote wins)
+  #
+  # @see _bold_accent.erb for dark section backgrounds
+  # @see _section_header.erb for eyebrow labels above card groups
+  #
+  # ════════════════════════════════════════════════════════════════════════════
+
+  p = contract(binding,
+    # Visual
+    color:        %w[brand accent emerald sky],
+    size:         %w[sm md lg xl],
+    rounded:      { allowed: %w[xl 2xl 3xl], default: "2xl" },
+    shadow_size:  %w[lg xl 2xl],
+    bg_variant:   %w[default muted glass frosted],
+    bold:         false,
+
+    # Behavior
+    href:         nil,
+    external:     false,
+    h_full:       false,
+
+    # Content
+    number:       nil,
+    quote_text:   nil,
+    quote_author: nil
+  )
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # DESIGN TOKENS
+  # ──────────────────────────────────────────────────────────────────────────
+
+  # Size → padding
+  padding_map = { "sm" => "p-4", "md" => "p-6", "lg" => "p-8", "xl" => "p-10" }
+  padding = padding_map[p.size]
+
+  # Shadow size → hover class
+  shadow_size_map = { "lg" => "hover:shadow-lg", "xl" => "hover:shadow-xl", "2xl" => "hover:shadow-2xl" }
+  shadow_class = shadow_size_map[p.shadow_size]
+
+  # Color-keyed mappings
+  shadow_colors = {
+    "brand"   => "hover:shadow-brand-500/5",
+    "accent"  => "hover:shadow-accent-500/5",
+    "emerald" => "hover:shadow-emerald-500/5",
+    "sky"     => "hover:shadow-sky-500/5"
+  }
+
+  border_hover_light = {
+    "brand"   => "hover:border-brand-300/50",
+    "accent"  => "hover:border-accent-300/50",
+    "emerald" => "hover:border-emerald-300/50",
+    "sky"     => "hover:border-sky-300/50"
+  }
+
+  border_hover_dark = {
+    "brand"   => "dark:hover:border-brand-700/50",
+    "accent"  => "dark:hover:border-accent-700/50",
+    "emerald" => "dark:hover:border-emerald-700/50",
+    "sky"     => "dark:hover:border-sky-700/50"
+  }
+
+  # Inner hover gradient - subtle color wash on hover (only for non-bold cards)
+  hover_gradient = {
+    "brand"   => "from-brand-500/0 via-brand-500/0 to-brand-500/0 group-hover:from-brand-500/[0.03] group-hover:via-transparent group-hover:to-brand-500/[0.02]",
+    "accent"  => "from-accent-500/0 via-accent-500/0 to-accent-500/0 group-hover:from-accent-500/[0.03] group-hover:via-transparent group-hover:to-accent-500/[0.02]",
+    "emerald" => "from-emerald-500/0 via-emerald-500/0 to-emerald-500/0 group-hover:from-emerald-500/[0.03] group-hover:via-transparent group-hover:to-emerald-500/[0.02]",
+    "sky"     => "from-sky-500/0 via-sky-500/0 to-sky-500/0 group-hover:from-sky-500/[0.03] group-hover:via-transparent group-hover:to-sky-500/[0.02]"
+  }
+
+  # Quote styling
+  quote_mark_colors = {
+    "brand"   => "text-brand-300/60 dark:text-brand-700/40",
+    "accent"  => "text-accent-300/60 dark:text-accent-700/40",
+    "emerald" => "text-emerald-300/60 dark:text-emerald-700/40",
+    "sky"     => "text-sky-300/60 dark:text-sky-700/40"
+  }
+
+  cite_colors = {
+    "brand"   => "text-brand-600 dark:text-brand-400",
+    "accent"  => "text-accent-600 dark:text-accent-400",
+    "emerald" => "text-emerald-600 dark:text-emerald-400",
+    "sky"     => "text-sky-600 dark:text-sky-400"
+  }
+
+  quote_bg_gradients = {
+    "brand"   => "bg-gradient-to-br from-brand-50/80 to-white dark:from-brand-950/30 dark:to-stone-900",
+    "accent"  => "bg-gradient-to-br from-accent-50/80 to-white dark:from-accent-950/30 dark:to-stone-900",
+    "emerald" => "bg-gradient-to-br from-emerald-50/80 to-white dark:from-emerald-950/30 dark:to-stone-900",
+    "sky"     => "bg-gradient-to-br from-sky-50/80 to-white dark:from-sky-950/30 dark:to-stone-900"
+  }
+
+  quote_borders = {
+    "brand"   => "border-brand-200/30 dark:border-brand-800/30",
+    "accent"  => "border-accent-200/30 dark:border-accent-800/30",
+    "emerald" => "border-emerald-200/30 dark:border-emerald-800/30",
+    "sky"     => "border-sky-200/30 dark:border-sky-800/30"
+  }
+
+  # Number badge
+  badge_gradients = {
+    "brand"   => "from-brand-500 to-brand-600",
+    "accent"  => "from-accent-500 to-accent-600",
+    "emerald" => "from-emerald-500 to-emerald-600",
+    "sky"     => "from-sky-500 to-sky-600"
+  }
+
+  badge_radius_map = {
+    "xl"  => "rounded-tl-xl rounded-br-xl",
+    "2xl" => "rounded-tl-2xl rounded-br-2xl",
+    "3xl" => "rounded-tl-3xl rounded-br-3xl"
+  }
+
+  # ──────────────────────────────────────────────────────────────────────────
+  # BUILD CLASSES
+  # ──────────────────────────────────────────────────────────────────────────
+
+  overflow_class = p.number ? "overflow-hidden" : ""
+  height_class = p.h_full ? "h-full" : ""
+  rounded_class = "rounded-#{p.rounded}"
+  transition_class = "transition-all duration-[350ms] ease-[cubic-bezier(0.22,1,0.36,1)]"
+
+  # Background & border based on variant
+  if p.bold
+    # Bold promotional style - dark gradient, no inner hover gradient
+    bg_classes = "bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 border-stone-700/50 hover:border-stone-600/70"
+  elsif p.quote_text
+    bg_classes = "#{quote_bg_gradients[p.color]} #{quote_borders[p.color]} #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
+  elsif p.bg_variant == "muted"
+    bg_classes = "bg-stone-50 dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
+  elsif p.bg_variant == "glass"
+    # Light frosted glass - translucent with blur
+    bg_classes = "bg-white/40 dark:bg-stone-900/60 backdrop-blur-md border-white/50 dark:border-stone-700/50 #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
+  elsif p.bg_variant == "frosted"
+    # Dark frosted glass - for use on colorful/gradient backgrounds
+    bg_classes = "bg-stone-900/40 backdrop-blur-sm border-white/15 hover:border-white/25 hover:bg-stone-900/55"
+  else
+    bg_classes = "bg-white dark:bg-stone-900 border-stone-200 dark:border-stone-800 #{border_hover_light[p.color]} #{border_hover_dark[p.color]}"
+  end
+
+  # Combine all classes
+  card_classes = [
+    "group block relative border",
+    rounded_class,
+    overflow_class,
+    height_class,
+    padding,
+    transition_class,
+    "hover:-translate-y-1",
+    shadow_class,
+    shadow_colors[p.color],
+    bg_classes
+  ].join(" ")
+
+  link_attrs = p.external ? 'rel="external noopener" target="_blank"' : ''
+%>
+
+<% if p.href %>
+<a href="<%= p.href %>" class="<%= card_classes %> focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-stone-900" <%= link_attrs.html_safe %>>
+<% else %>
+<div class="<%= card_classes %>">
+<% end %>
+  <% unless p.bold %>
+    <!-- Subtle inner hover gradient (disabled for bold cards) -->
+    <div class="absolute inset-0 <%= rounded_class %> bg-gradient-to-br <%= hover_gradient[p.color] %> pointer-events-none transition-all duration-300"></div>
+  <% end %>
+
+  <% if p.number %>
+    <!-- Number badge -->
+    <div class="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br <%= badge_gradients[p.color] %> flex items-center justify-center <%= badge_radius_map[p.rounded] %>">
+      <span class="font-mono text-2xl font-bold text-white"><%= p.number %></span>
+    </div>
+  <% end %>
+
+  <% if p.quote_text %>
+    <!-- Quote content -->
+    <div class="absolute top-3 left-4 text-5xl <%= quote_mark_colors[p.color] %> font-serif">"</div>
+    <p class="relative font-serif text-lg text-stone-700 dark:text-stone-200 leading-relaxed mb-4 pt-4">
+      <%= p.quote_text %>
+    </p>
+    <% if p.quote_author %>
+      <cite class="text-sm <%= cite_colors[p.color] %> not-italic font-medium">— <%= p.quote_author %></cite>
+    <% end %>
+  <% else %>
+    <!-- Block content -->
+    <div class="relative <%= p.number ? 'pl-24' : '' %>">
+      <%= content %>
+    </div>
+  <% end %>
+<% if p.href %>
+</a>
+<% else %>
+</div>
+<% end %>

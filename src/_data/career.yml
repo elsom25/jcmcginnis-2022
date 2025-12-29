@@ -1,0 +1,82 @@
+# Career data - Inflection Points model
+# Tells the story of how high-agency leadership is forged
+
+opening:
+  headline: "Chaos isn't the enemy. Comfort is."
+  subhead: "Most leaders optimize for stability. I optimize for high-agency."
+
+closing:
+  synthesis:
+    "High-agency trumps everything. Trust unlocks it. Directed chaos forges it.
+    As a leader, your job is to cultivate it in others."
+
+current:
+  company: GrowthLoop
+  role: VP Product Engineering
+  start: 2025
+  location: Remote, Canada
+  summary:
+    Building a Compound Marketing Engine that drives growth using Agentic AI
+    powered by enterprise cloud data.
+  url: http://growthloop.com/careers
+
+# Inflection points organized by era for visual grouping
+eras:
+  - name: The Foundation
+    company: Boltmade
+    url: http://boltmade.com/
+    years: "2013–2016"
+    points:
+      - lesson: "Build a lot. Most of it won't matter. That's the point."
+        byline: Where I learned to trust my instincts
+        detail: |
+          Dozens of projects. Every language, framework, industry. What emerged: the magic isn't breadth—it's going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
+
+  - name: The Growth
+    company: Shopify
+    url: https://www.shopify.com/
+    years: "2016–2025"
+    duration: "8+ years"
+    points:
+      - lesson: "Move fast to explore. Move slow to commit."
+        byline: Short-term speed and long-term speed are different games
+        period: "2016–2018"
+        detail: |
+          Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took time to find the right answer, knowing how hard it would be to change later. The trap is treating both phases the same.
+
+      - lesson: "The best thing you can build is a team that doesn't need you"
+        byline: From builder to builder of builders
+        period: "2018–2020"
+        detail: |
+          Less building, more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Most people deeply underestimate themselves. Hold them to a bar they thought was impossible, then watch them clear it. People are the hardest problem—and one worth solving.
+
+      - lesson: "Delegation isn't distance"
+        byline: Close to the work, not above it
+        period: "2020–2022"
+        detail: |
+          The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work with them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and everything else follows.
+
+      - lesson: "Directed chaos builds resilience"
+        byline: Resilience comes from storms, not shelter
+        period: "2022–2025"
+        detail: |
+          Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
+
+  - name: The Proving Ground
+    company: GrowthLoop
+    url: http://growthloop.com/careers
+    years: "2025–Present"
+    in_progress: true
+    points:
+      - lesson: "Prove it's not luck"
+        byline: Everything learned, applied at once
+        detail: |
+          High-agency teams from scratch. Relentless shipping. The chaos others avoid. This one's live.
+
+book:
+  title: Embracing Uncertainty
+  tagline:
+    A field guide to Agile packed with strategies for building top-performing
+    teams.
+  url: https://www.uncertaintybook.ca/
+  note: Co-authored with lessons from the trenches of scaling teams.

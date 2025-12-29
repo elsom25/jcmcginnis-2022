@@ -1,2 +1,3 @@
-web: bin/bridgetown start
-css: npx @tailwindcss/cli -i src/assets/css/tailwind.css -o output/assets/css/style.css --watch
+web: bin/bridgetown start --unpublished --future
+css: npx @tailwindcss/cli -i frontend/styles/tailwind.css -o frontend/styles/index.css --watch
+js: node esbuild.config.js --watch

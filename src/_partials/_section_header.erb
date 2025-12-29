@@ -1,0 +1,57 @@
+<%
+  # ════════════════════════════════════════════════════════════════════════════
+  # SECTION HEADER
+  # ════════════════════════════════════════════════════════════════════════════
+  #
+  # Eyebrow label with decorative line for section introductions.
+  # Use for: section titles, content dividers, category labels.
+  #
+  # @param label     [String]  Eyebrow text (required)
+  # @param color     [String]  Accent color: "brand" | "accent" | "emerald" | "sky" | "stone"
+  # @param alignment [String]  Layout: "left" | "center"
+  # @param size      [String]  Scale: "default" | "small"
+  #
+  # @example Left-aligned brand
+  #   render "section_header", label: "Featured Work", color: "brand"
+  #
+  # @example Centered with accent
+  #   render "section_header", label: "The Lessons", color: "brand", alignment: "center"
+  #
+  # @example Small for subsections
+  #   render "section_header", label: "Related", color: "stone", size: "small"
+  #
+  # @see _bold_accent.erb for dark section backgrounds
+  #
+  # ════════════════════════════════════════════════════════════════════════════
+
+  p = contract(binding,
+    label:     nil,
+    color:     %w[brand accent emerald sky stone],
+    alignment: %w[left center],
+    size:      %w[default small]
+  )
+
+  # Fallback for required param
+  label_text = p.label || "Section"
+
+  # DESIGN TOKENS
+  color_map = {
+    "brand"   => { line: "bg-brand-500",   text: "text-brand-600 dark:text-brand-400" },
+    "accent"  => { line: "bg-accent-500",  text: "text-accent-600 dark:text-accent-400" },
+    "emerald" => { line: "bg-emerald-500", text: "text-emerald-600 dark:text-emerald-400" },
+    "sky"     => { line: "bg-sky-500",     text: "text-sky-600 dark:text-sky-400" },
+    "stone"   => { line: "bg-stone-300 dark:bg-stone-700", text: "text-stone-500 dark:text-stone-500" }
+  }
+
+  colors = color_map[p.color]
+  line_width = p.size == "small" ? "w-8" : "w-16"
+  margin = p.size == "small" ? "mb-8" : "mb-12"
+  flex_align = p.alignment == "center" ? "justify-center" : ""
+%>
+<div class="flex items-center gap-4 <%= margin %> <%= flex_align %> animate-fade-in">
+  <div class="<%= line_width %> h-0.5 <%= colors[:line] %>"></div>
+  <span class="text-eyebrow <%= colors[:text] %>"><%= label_text %></span>
+  <% if p.alignment == "center" %>
+    <div class="<%= line_width %> h-0.5 <%= colors[:line] %>"></div>
+  <% end %>
+</div>
