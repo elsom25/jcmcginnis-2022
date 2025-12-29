@@ -108,7 +108,7 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
     when Array
       { type: :enum, allowed: spec, default: spec.first }
     when Hash
-      { type: :enum, allowed: spec[:allowed], default: spec[:default] || spec[:allowed].first }
+      { type: :enum, allowed: spec[:allowed], default: spec.key?(:default) ? spec[:default] : spec[:allowed].first }
     when true, false
       { type: :bool, default: spec }
     else
