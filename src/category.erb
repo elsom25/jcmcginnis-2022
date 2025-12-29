@@ -7,7 +7,7 @@ prototype:
   collection: posts
   term: categories
 ---
-<% posts = paginator.resources %>
+<% posts = paginator.resources.reject { it.data.feed == false } %>
 
 <div class="min-h-screen flex flex-col w-full">
   <%= render "header", page: resource, menu: site.data.menu %>

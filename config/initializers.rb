@@ -20,6 +20,7 @@ end
 Bridgetown::RubyTemplateView::Helpers.class_eval do
   def featured_posts
     @featured_posts ||= site.collections.posts.resources
+      .reject { it.data.feed == false }
       .select { it.data.featured }
       .sort_by(&:date)
       .reverse
@@ -53,7 +54,9 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
   end
 
   def posts_by_year
-    site.collections.posts.resources.group_by { it.date.year }.sort.reverse.to_h
+    site.collections.posts.resources
+      .reject { it.data.feed == false }
+      .group_by { it.date.year }.sort.reverse.to_h
   end
 
   def category_url(category_name)

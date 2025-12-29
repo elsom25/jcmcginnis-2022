@@ -10,6 +10,6 @@ echo "==> Bundling frontend assets (JS + CSS)..."
 node esbuild.config.js --minify
 
 echo "==> Building site..."
-BRIDGETOWN_ENV=production bin/bridgetown build
+BRIDGETOWN_ENV=production bin/bridgetown build --future
 
 echo "==> Build complete!"
