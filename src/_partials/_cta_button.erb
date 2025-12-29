@@ -49,7 +49,7 @@
     "group inline-flex items-center gap-2 #{padding} border-2 border-stone-300 dark:border-stone-700 hover:border-brand-500 dark:hover:border-brand-500 text-stone-900 dark:text-stone-100 font-semibold rounded-full transition-all #{text_size}"
   end
 
-  external_attrs = p.external ? 'rel="external" target="_blank"' : ''
+  external_attrs = p.external ? 'rel="external noopener" target="_blank"' : ''
 %>
 <a href="<%= href %>" class="<%= btn_classes %>" <%= external_attrs.html_safe %>>
   <% if p.icon == "email" %>

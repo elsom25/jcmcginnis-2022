@@ -57,7 +57,7 @@
 %>
 <div class="flex flex-wrap <%= justify_class %> <%= gap_class %>">
   <% socials.each do |social| %>
-    <a href="<%= social.url %>" class="<%= link_class %>" rel="external" target="_blank" aria-label="<%= social.name %>">
+    <a href="<%= social.url %>" class="<%= link_class %>" rel="external noopener" target="_blank" aria-label="<%= social.name %>">
       <%= render "icons/#{social.icon}", size: p.size %>
       <% if p.show_labels %>
         <span class="font-medium"><%= social.handle || social.name %></span>
