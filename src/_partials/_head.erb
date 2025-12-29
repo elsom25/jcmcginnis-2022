@@ -1,7 +1,7 @@
 <!-- Fonts: Inter (sans) + Fraunces (serif) from Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link href="<%= relative_url '/assets/css/style.css' %>" rel="stylesheet">
-<link href="<%= relative_url '/assets/css/syntax.css' %>" rel="stylesheet">
+<!-- Bundled CSS via Bridgetown esbuild (includes syntax highlighting) -->
+<link href="<%= asset_path 'styles/index.css' %>" rel="stylesheet">
 <% if resource.data.head_scripts&.include?("gsap") %>
 <!-- GSAP for scroll animations (homepage only) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>

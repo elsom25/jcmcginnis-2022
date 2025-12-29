@@ -33,6 +33,10 @@ import build from "./config/esbuild.defaults.js";
  * @type {BuildOptions}
  */
 const esbuildOptions = {
+  entryPoints: [
+    "./frontend/javascript/index.js",
+    "./frontend/styles/index.css",
+  ],
   plugins: [
     // add new plugins here...
   ],
