@@ -13,23 +13,23 @@ image: "/assets/img/directed-chaos.jpg"
 ---
 
 Most leaders try to make work calm. They spend their energy eliminating surprises, tuning meetings,
-adding checklists. Calm looks like competence.
+polishing checklists. Calm looks like competence.
 
-The problem is that calm organizations don't get stronger. They get brittle. The first real hit
-shatters them.
+Calm organizations don't get stronger. They get good at calm. Then they get brittle. The first real
+hit shatters them.
 
 Resilience comes from exposure to disorder—not protection from it. You inject chaos in controlled
-doses so your team builds the muscle to handle it. You can't train that capacity by shielding people
-from turbulence. You train it by creating turbulence.
+doses so your team builds the muscle to survive it. You can't train that capacity by shielding
+people from turbulence. You train it by creating turbulence.
 
 I learned this the only way that matters: by making changes and watching which ones stuck.
 
 ## The pattern
 
-Every change that worked followed the same move: **remove a cushion, then add structure**.
+Every change that worked followed the same move: **remove a cushion, then add structure**. If you can't stop it, you don't get to start it.
 
 Removal alone creates panic. Structure alone creates theater. The move is always paired: you take
-away something that blocked thinking, and you replace it with something that makes thinking
+away something that did the thinking for them, and you replace it with something that makes thinking
 survivable.
 
 The cushion might be a process, a role, or a ritual that has become a crutch. The structure is a
@@ -38,10 +38,12 @@ to do the work themselves.
 
 What changes is where responsibility lands. And whether people actually feel it.
 
+If the system feels calm, ask: _what cushion is doing our thinking for us?_
+
 ## Remove the center
 
-When I arrived at GrowthLoop, there was a central Scrum that acted like a spinal cord for the whole
-org. It was tidy, performative, and numbing. Everyone left "aligned" and nobody moved.
+When I arrived at GrowthLoop, there was a central Scrum meeting that acted like a spinal cord for
+the whole org. It was tidy and numbing. Everyone left "aligned" and nobody moved.
 
 I didn't refactor it. I removed it.
 
@@ -55,15 +57,17 @@ realized they were the adults in the room. Two leads tried to re-create it; they
 old ritual's purpose had been to export responsibility upward. Without a center, there was nowhere
 to export it. So they stopped looking.
 
-Some did it well on the first pass. Others stumbled, then learned. But they were thinking.
+Some did it well on the first pass. Others stumbled, then learned. Either way, they were thinking.
 
 It turned out "calm" had been disguising learned helplessness. Remove the disguise and you don't get
 serenity. You get noise. That noise is the sound of atrophied muscles starting to fire.
 
+But deletion alone is just chaos. What we needed was something to push against.
+
 ## Add structure
 
-Deleting the central meeting left a vacuum. Agency needs something to push against. Freedom without
-structure is chaos. Structure without freedom is bureaucracy. The magic is in the tension.
+Deleting the central meeting left a vacuum. Judgment needs something to push against. **Freedom
+without structure is chaos. Structure without freedom is bureaucracy.** The magic is in the tension.
 
 So we added structure that dignifies freedom.
 
@@ -85,20 +89,23 @@ Not because quality doesn't matter. Because quality had become something you got
 like a notarized stamp. Engineers would write code, toss it over, and wait for absolution.
 Responsibility diffused in proportion to the number of handoffs.
 
-We removed the handoff.
+We removed the handoff. Ownership didn't vanish—it moved. The release checklist moved to the person
+who wrote the code—and their name stayed on it.
 
-The first cycle was predictably messy. We shipped bugs that would have been caught. We reverted. We
-apologized. It felt wrong for about a week and necessary by the second.
+The first cycle was messy on purpose. We shipped bugs we used to pay someone else to catch. We
+reverted. We apologized. It felt wrong for about a week and necessary by the second.
 
 Engineers started writing better tests because there was no one else to write them. Reviews got
 sharper because the cost of a lazy review arrived at your door, not someone else's.
 
 **Ownership isn't a belief you argue someone into. It's a weight you let them feel.**
 
+Not all structure is process. Some structure is vocabulary.
+
 ## Language as infrastructure
 
-People don't move from obedience to judgment on willpower alone. Many have been trained for years
-that independent judgment is how you get in trouble. So you give them structure—but the right kind.
+People don't move from obedience to judgment by willpower. Many have been trained for years that
+independent judgment is how you get in trouble. So you give them structure—but the right kind.
 
 Language is one of the most underrated structures you can add. Words seem soft, but chosen
 carefully, they become load-bearing. A shared vocabulary compresses judgment. It lets people make
@@ -113,12 +120,12 @@ When everything is urgent, nothing is. Our platform started thrashing as we move
 felt it, customers felt it, and we were still juggling feature work like nothing had changed.
 Everyone knew something was wrong, but nobody had license to say it.
 
-Declaring a Code Red did not create panic. It created calm. Suddenly it was not a personal failure
-to pause your roadmap—it was a company decision. People don't burn out from hard work. They burn out
+Calling a Code Red did not create panic. It created calm. Suddenly it was not a personal failure to
+pause your roadmap—it was a company decision. People don't burn out from hard work. They burn out
 from ambiguous work. Code Red removed the ambiguity.
 
-I regret not calling it earlier. The minute we did, the recurring fires that had been draining us
-for months started getting fixed.
+I regret not calling it earlier. When we did, the recurring fires that had been draining us for
+months started getting fixed.
 
 Find the words that compress judgment for your team. A phrase that ends arguments. A term that gives
 permission. Language like this isn't decoration—it's infrastructure.
@@ -131,11 +138,12 @@ Engineers defend customers with test suites they wrote without being asked. PMs 
 slowing a feature during a Code Red; they ask what they can do to help. People start solving
 problems before you know the problems exist.
 
-The people who thrive in this environment don't just tolerate the turbulence—they generate it. They
-bring drafts instead of questions. They make the people around them faster, braver, clearer.
+The people who thrive in this environment don't just tolerate the turbulence—they generate it.
 
-**I call these people exothermic: they produce more energy than they consume.** Directed chaos
-doesn't just build resilience. It builds exothermic people.
+**I call these people exothermic: they produce more energy than they consume.** They bring drafts
+instead of questions. They close out ambiguity for the people around them. They make everyone
+faster. That's not a trait: it's what ownership plus clarity produce. Directed chaos doesn't just
+build resilience—it builds exothermic people.
 
 The surface still looks busy. Underneath, there's a steadiness you can't get by chasing calm. It
 comes from rough seas, not still water.
@@ -150,10 +158,9 @@ give them language. You don't flinch in the first storm.
 
 And then, the next time, they don't either.
 
-If you want to try the pattern yourself: remove the cushion of patch-thinking. In your next decision
-meeting, forbid patches for ten minutes. Ask people to describe the system they wish they had—not in
-a dreamy way, but concretely. What would be true if you could wave a wand? That's the structure you
-add: a clear destination that makes every step feel directional.
+If you want to try this: pick one cushion to remove—a handoff, a ceremony, an escalation habit.
+Don't plan the structure up front. Let the demand signal emerge. Then answer it without stealing the
+work back.
 
 The paradox is that if you do this long enough, calm returns. Not the fragile calm of a team that's
 never been tested, but the earned calm of one that has weathered real storms.
