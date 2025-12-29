@@ -22,11 +22,11 @@ Resilience grows in turbulence, not in shelter. You build it the way you build m
 recovery, repeat. If you can't recover from the dose, you're not building resilience—you're just
 injuring people.
 
-I learned this the only way that counts: by making changes and watching which ones survived.
+I learned this the only way that counts: I made changes and kept the survivors.
 
 ## The pattern
 
-Every change that worked followed the same move: **remove a cushion, then add structure.**
+Every change that worked used the same move: **remove a cushion, then add structure.**
 
 **If you can't stop it, you don't get to start it.**
 
@@ -45,8 +45,8 @@ _What cushion is doing our thinking for us?_
 
 ## Remove the center
 
-When I arrived at GrowthLoop, one Scrum meeting ran the whole company like a spine. It was tidy and
-numbing. Everyone left nodding—and nothing changed.
+When I arrived at GrowthLoop, one Scrum meeting was the company's spine. It was tidy and numbing.
+Everyone left nodding—and nothing changed.
 
 I didn't refactor it. I deleted it.
 
@@ -57,7 +57,7 @@ away. The fiction that one meeting could plan for everyone did.
 
 The deletion produced the most valuable artifact in the company: empty space.
 
-Within hours my Slack was full of DMs asking for a replacement ceremony, a new playbook, a
+Within hours my Slack filled with DMs asking for a replacement ceremony, a new playbook, a
 definitive timebox. I said no.
 
 Not because structure is bad. Because this structure had become a cast.
@@ -67,7 +67,7 @@ Casts prevent injury. Left on too long, they prevent growth.
 The first week was loud in the right way. Teams argued about planning. Leads looked around and
 realized there was no parent to escalate to.
 
-Two leads tried to re-create it. They discovered the old ritual's real purpose: export
+Two leads tried to resurrect it. They discovered the old ritual's real purpose: exporting
 responsibility upward. Without a center, there was nowhere to export it. So they stopped looking.
 
 Some did it well on the first pass. Others stumbled, then learned. Either way, they were thinking.
@@ -128,15 +128,15 @@ Not all structure is process. Some structure is vocabulary.
 People don't move from obedience to judgment by willpower. Many have been trained for years that
 independent judgment is how you get in trouble. So you give them structure—but the right kind.
 
-Language is one of the most underrated structures you can add. Words seem soft, but chosen
-carefully, they become load-bearing. A shared vocabulary compresses judgment. It lets people make
-decisions without escalating, because the criteria are already embedded in the terms they use.
+Language is one of the most underrated structures you can add. Words seem soft. Chosen carefully,
+they become load-bearing. A shared vocabulary compresses judgment. It lets people make decisions
+without escalating, because the criteria are already embedded in the terms they use.
 
 The right word ends debates before they start. It gives permission without requiring approval. It
 makes the implicit explicit—and once something is explicit, people can act on it.
 
-We normalized the phrase **desired state**. When someone proposed a patch, I'd ask: describe the
-system we wish we already had. Concrete, not dreamy.
+We normalized **desired state**. When someone proposed a patch, I'd ask them to describe the system
+we wished we already had—concrete, not dreamy.
 
 Patches shifted from "how do we hide this hole?" to "what's one brick we can lay the right way?" It
 sounds semantic until you do it in a meeting and feel the room tilt from firefighting to
@@ -163,7 +163,7 @@ permission. Language like this isn't decoration—it's infrastructure.
 There's a quiet moment when it starts to stick.
 
 Engineers defend customers with test suites they wrote without being asked. PMs stop apologizing for
-slowing a feature during a Code Red. Instead they ask what they can do to help. People start solving
+slowing a feature during a Code Red. They ask what they can do to help. People start solving
 problems before you know the problems exist.
 
 The people who thrive in this environment don't just tolerate turbulence—they generate it. They pick
