@@ -3,9 +3,7 @@
 
 opening:
   headline: "Chaos isn't the enemy. Comfort is."
-  subhead:
-    "Most leaders optimize for stability. I optimize for high-agency. Here's how
-    I learned why."
+  subhead: "Most leaders optimize for stability. I optimize for high-agency."
 
 closing:
   synthesis:
@@ -30,9 +28,9 @@ eras:
     years: "2013–2016"
     points:
       - lesson: "Build a lot. Most of it won't matter. That's the point."
-        byline: Learning to ship fast, go deep, and be genuinely confident
+        byline: Where I learned to trust my instincts
         detail: |
-          Dozens of projects. Every language, framework, industry imaginable. What emerged: there's a common core to building software, but the magic is in going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop worrying about learning the "right" thing. Be curious. Chase what excites you.
+          Dozens of projects. Every language, framework, industry. What emerged: the magic isn't breadth—it's going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
 
   - name: The Growth
     company: Shopify
@@ -41,29 +39,28 @@ eras:
     duration: "8+ years"
     points:
       - lesson: "Move fast to explore. Move slow to commit."
-        byline:
-          Discovering that short-term and long-term speed are different games
+        byline: Short-term speed and long-term speed are different games
         period: "2016–2018"
         detail: |
-          Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took the time to find THE right answer, knowing how hard it would be to change later.
+          Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took time to find the right answer, knowing how hard it would be to change later. The trap is treating both phases the same.
 
       - lesson: "The best thing you can build is a team that doesn't need you"
-        byline: Transitioning from builder to builder of builders
+        byline: From builder to builder of builders
         period: "2018–2020"
         detail: |
-          I found myself doing less building and more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Especially this: most people deeply underestimate themselves. Holding them to a bar they thought was impossible, then watching them clear it. People are the hardest problem. I've always chased the hardest problems.
+          Less building, more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Most people deeply underestimate themselves. Hold them to a bar they thought was impossible, then watch them clear it. People are the hardest problem—and one worth solving.
 
       - lesson: "Delegation isn't distance"
-        byline: Staying in the details while raising others to meet you there
+        byline: Close to the work, not above it
         period: "2020–2022"
         detail: |
-          The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work WITH them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and it sets the stage for everything else.
+          The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work with them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and everything else follows.
 
-      - lesson: "Chaos is good... if directed"
-        byline: Building resilience through intentional turbulence
+      - lesson: "Directed chaos builds resilience"
+        byline: Resilience comes from storms, not shelter
         period: "2022–2025"
         detail: |
-          Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was building teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
+          Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
 
   - name: The Proving Ground
     company: GrowthLoop
@@ -71,10 +68,10 @@ eras:
     years: "2025–Present"
     in_progress: true
     points:
-      - lesson: Now prove it works anywhere
-        byline: Company building through directed chaos
+      - lesson: "Prove it's not luck"
+        byline: Everything learned, applied at once
         detail: |
-          Every lesson distilled into one question: can I transform a company—fast—using everything I've learned? Build high-agency teams from scratch. Ship relentlessly. Embrace the chaos that others avoid. This chapter is still being written, but the early results are clear.
+          High-agency teams from scratch. Relentless shipping. The chaos others avoid. This one's live.
 
 book:
   title: Embracing Uncertainty

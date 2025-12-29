@@ -1,19 +1,20 @@
 tldr:
   - anchor: what-i-expect
+    label: "What I Expect"
     headline: "Smart people. Hard problems. No bullshit."
     summary:
-      "I expect to work with people who push me, challenge me, and make me
-      uncomfortable in the best way."
+      "People who push me, challenge me, and make me uncomfortable in the best
+      way."
   - anchor: how-i-show-up
+    label: "How I Show Up"
     headline: "Trust first. Expect everything. Best ideas win."
     summary:
-      "I show up with trust, high expectations, and a hunger for the best
-      answers—however we get there."
+      "Trust, high expectations, and a hunger for the best answers—however we
+      get there."
   - anchor: inspiration
+    label: "What Inspires Me"
     headline: "Words that shaped me."
-    summary:
-      "Wise words from others have shaped my thinking and remind me of the
-      world's vastness."
+    summary: "Wisdom that reminds me of the world's vastness."
 
 expectations:
   - number: "01"
@@ -21,55 +22,49 @@ expectations:
     keywords:
       - label: "Scary smart"
         detail:
-          'People who are *always* pushing themselves to be better. People who
-          have gone past "what''s necessary" simply because they wanted to see
-          the other side. People I am inspired by and I will learn from. Scary
-          is an important word here: it should be uneasy to keep up with them.'
+          'People who push themselves past "what''s necessary" simply because
+          they wanted to see the other side. People I''m inspired by. People
+          I''ll learn from. Scary is the important word: it should be uneasy to
+          keep up with them.'
       - label: "Genuine"
         detail:
-          "People who make me *want* to be better. People who care not just
-          about what they do, but *how they do it*. People who want to know the
-          humans they work with, and likewise want to *be known*. People who
-          embody honesty, kindness, and authenticity in everything they do."
+          "People who care not just about what they do, but *how they do it*.
+          People who want to know the humans they work with, and want to *be
+          known* in return. Honesty, kindness, authenticity—not as values on a
+          wall, but as how they live."
       - label: "Optimistic"
         detail:
-          "Never toxic positivity, but a deeply held belief *in a better
-          tomorrow*. Always honest about the barriers, but willing to put in the
-          work. People who are excited to learn and grow together. I'm
-          optimistic by nature, and I want to work in a place where the
-          *optimists greatly outnumber the pessimists*."
+          "Never toxic positivity—a deeply held belief *in a better tomorrow*.
+          Honest about barriers, willing to do the work. I'm optimistic by
+          nature, and I want to be somewhere the *optimists outnumber the
+          pessimists*."
       - label: "Expect more"
         detail:
-          "I want to be pushed. I want to be challenged. I want to be held
-          accountable. I want a culture of excellence, where we're all here to
-          do *our best work*. People who are excited by the idea that today is
-          the worst we'll be at what we do."
+          "Push me. Challenge me. Hold me accountable. A culture of excellence,
+          where we're all here to do *our best work*. People excited by the idea
+          that today is the worst we'll ever be at what we do."
 
   - number: "02"
     headline: "Will I have the autonomy to build something meaningful?"
     keywords:
       - label: "Chart my own path"
         detail:
-          "I must be able to *choose my own adventure*, with guideposts not hard
-          walls. A place that treats employees like the adults they are, and
-          trusts them to make the right decisions. A place that values
-          *autonomy* and *ownership*. Defaults, not rules. Capabilities, not
-          titles."
-      - label: "Achievements recognized"
+          "*Choose my own adventure*, with guideposts not hard walls. A place
+          that treats people like adults who can make the right decisions.
+          Defaults, not rules. Capabilities, not titles."
+      - label: "See my impact"
         detail:
-          "I put in my all, and expect to be recognized when I achieve
-          incredible things."
-      - label: "Help others"
+          "I put in my all. I expect to see the impact—and be recognized when I
+          achieve something extraordinary."
+      - label: "Lift others"
         detail:
-          "I want to be able to *help others*. I want to be able to *mentor*,
-          *coach*, and *teach*. Design programs or work 1:1 with the people
-          around me. A place where we're all here to grow and learn, where I get
+          "I want to help others grow—*mentor*, *coach*, *teach*. Design
+          programs or work 1:1. A place where we're all here to learn, and I get
           to help make that happen."
-      - label: "Scale my responsibilities"
+      - label: "Room to grow"
         detail:
-          "I want to keep learning new things. There will be phases of mastering
-          skills, but there must be phases of growth and new challenges too.
-          Stagnation is not an option."
+          "Keep learning. There will be phases of mastery, but there must be
+          phases of stretch too. Stagnation is not an option."
 
   - number: "03"
     headline: "Can I win even when I lose?"
@@ -77,56 +72,50 @@ expectations:
       - label: "Winning in failure"
         detail:
           "A place that *knows failure is a lesson*, not something to avoid.
-          Where I can *grow* from my mistakes. Where I can *fail fast* and *fail
-          forward*. Antifragile, not fragile."
+          Where I can *fail fast* and *fail forward*. Antifragile, not fragile."
       - label: "Winning in loss"
         detail:
-          "A place where even if the bet (of the project, job, company) loses,
-          I've gained something good. Growth, learning, relationships, skills. A
-          place where I (and everyone) *win*, even in loss."
-      - label: "Push through difficulty"
+          "Even if the bet loses—the project, the job, the company—I've gained
+          something real. Growth, learning, relationships, skills. A place where
+          everyone *wins*, even in loss."
+      - label: "Worth the hard days"
         detail:
-          "A place I *believe in*. Where what we're here to do is worth sticking
-          through the hard times for."
+          "A place I *believe in*. Where what we're building is worth sticking
+          through the storms for."
 
 principles:
-  - title: "I start with trust"
+  - title: "Trust first"
     detail:
-      "I will share openly with you, and I will *trust* you can & will do what
-      you say. Warning: if you burn my trust it's a long road back."
-  - title: "I expect your best"
+      "I share openly. I *trust* you can and will do what you say. But fair
+      warning: burn my trust and it's a long road back."
+  - title: "Expect your best"
     detail:
-      "I want people to do and see everything they're capable of. I've learned
-      my expectations are high: I hold what I know you're capable of and will
-      actively help you get there."
-  - title: "The best ideas win"
+      "I want people to see everything they're capable of. My expectations are
+      high—I hold what I know you can do, and I'll actively help you get there."
+  - title: "Best ideas win"
     detail:
-      "Idea labs are fun and where the best results come from. So expect me to
-      argue, push, prod, and question. And I expect the same from you. This is
-      how we get to the best answers."
-  - title: "I'm honest"
+      "Idea labs are fun—and where the best results come from. So expect me to
+      argue, push, prod, and question. I expect the same from you. This is how
+      we get to the best answers."
+  - title: "Honest, not brutal"
     detail:
-      "I will not lie, but I might say nothing. I will tell you what I think,
+      "I won't lie, but I might say nothing. I will tell you what I think,
       clearly and kindly. I expect the same from you."
   - title: "Don't box me in"
     detail:
-      "Defaults are powerful; rules are suffocating. If you put a hard line in
-      front of me expect me to interrogate and challenge it. I will always look
-      for the best path forward, and sometimes (often) that means breaking the
-      rules."
-  - title: "I'm optimistic"
+      "Defaults are powerful; rules are suffocating. Put a hard line in front of
+      me and expect me to interrogate it. The best path forward often means
+      breaking the rules."
+  - title: "Optimistic by nature"
     detail:
-      "I believe in a better tomorrow, and I will work to make it happen. I will
-      always look for the silver lining, though will never ignore the storm
-      clouds."
-  - title: "I'm pragmatic"
+      "I believe in a better tomorrow and I'll work to make it happen. Always
+      looking for the silver lining—but never ignoring the storm clouds."
+  - title: "Pragmatic by practice"
     detail:
-      "The world is grey and complex. I will always find a path forward, even if
-      it's not the one I wanted. Never let perfect be the enemy of good enough."
-  - title: "Communication matters"
-    detail:
-      "Clear is kind. Be direct, concise, and precise with what you communicate.
-      This doesn't mean *cold & bare* however, pith and context matter."
+      "The world is grey and complex. I will find a path forward, even if it's
+      not the one I wanted. Never let perfect be the enemy of good enough."
+  - title: "Clear is kind"
+    detail: "Direct, concise, precise. But not cold—pith and context matter."
 
 quotes:
   seek:
