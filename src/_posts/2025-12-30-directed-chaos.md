@@ -12,17 +12,17 @@ pull_quote: Ownership isn't a belief you argue someone into. It's a weight you l
 image: "/assets/img/directed-chaos.jpg"
 ---
 
-Most leaders try to make work calm. They file down surprises, tune meetings, polish checklists. Calm
-passes for competence.
+World-class teams metabolize chaos. Calm teams shatter.
 
-Calm organizations don't get strong. They get good at calm. Then they get brittle. The first real
-hit shatters them.
+Yet most leaders try to make work _calm_. They file down surprises, tune meetings, and polish checklists. Because calm
+looks competent. But calm organizations don't get strong. They get good at calm. Then they get
+brittle. And when the first real hit comes, they shatter.
 
-Resilience grows in turbulence, not in shelter. It's not the absence of chaos; it's the ability to
-metabolize it. You build it the way you build muscle: stress, recovery, repeat. If you can't recover
-from the dose, you're not building resilience—you're just injuring people.
+There's another way. I call it **directed chaos**: controlled doses of turbulence that build the muscle
+to handle real storms. You build resilience the way you build muscle—stress, recovery, repeat. If
+you can't recover from the dose, you're not building resilience. You're just injuring people.
 
-I didn't learn this from a clever framework. I learned it the only way that counts: I experimented
+I didn't learn this from a clever framework. I learned it the only way that counts: I made changes
 and kept the survivors.
 
 ## The pattern
@@ -123,11 +123,12 @@ sharper because the cost of a lazy review arrived at your door, not someone else
 
 **Ownership isn't a belief you argue someone into. It's a weight you let them feel.**
 
-Not all structure is process. Some structure is vocabulary.
+Removal and structure are the first two moves. There's a third: vocabulary.
 
 ## Language as infrastructure
 
-Language is infrastructure. Choose it carefully and it carries judgment inside it.
+Directed chaos needs more than process. It needs language—words that compress judgment so people can
+act without escalating every decision.
 
 People don't move from obedience to judgment by willpower. Many have been trained for years that
 independent judgment is how you get in trouble. So you give them structure—but the right kind.
