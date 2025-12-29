@@ -12,7 +12,7 @@ Bridgetown.configure do
     end
     talks do
       output true
-      permalink "/talks/:slug/"
+      permalink "/talks/:year/:slug/"
     end
   end
 end
