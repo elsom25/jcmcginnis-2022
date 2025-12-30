@@ -20,14 +20,14 @@ Calm passes for competence.
 But calm organizations don't get strong. They get good at calm. Then they get brittle. When the
 first real hit comes, they shatter.
 
-There's another way. I call it **directed chaos**: practice under load—small, controlled storms that
-teach people how to sail. You build resilience the way you build muscle: stress, recover, repeat.
+There's another way: **directed chaos**—practice under load, small controlled storms that teach
+people how to sail. You build resilience the way you build muscle: stress, recover, repeat.
 Resilience isn't the absence of chaos; it's the ability to metabolize it.
 
 ## The pattern
 
-Every change that worked used the same move: **remove a cushion, then add structure.** Then
-normalize and name it so you can do it again.
+Every change that worked used one move: **remove a cushion, then add structure.** Then normalize and
+name it so you can do it again.
 
 Removal alone sparks panic. Structure alone creates theater. The move is paired. You take away the
 thing that did the thinking. You replace it with something that makes thinking survivable.
@@ -47,11 +47,10 @@ This pursuit of directed chaos is the work—and where I started when I got to G
 ## Removing the center
 
 When I arrived at GrowthLoop, one Scrum meeting was the company's spine: 30 minutes for 25
-engineers + 2 PMs spread across 5 "teams." A round-robin of surface-level updates, a parade of
-"blocked," and a dopamine hit of alignment.
+engineers + 2 PMs spread across 5 "teams." A round-robin of thin updates, a parade of "blocked," and
+a dopamine hit of alignment.
 
-Everyone left "aligned," yet things kept slipping. Tidy
-performative-calm.
+Everyone left nodding—then work still slipped. Tidy performative-calm.
 
 Everyone "loved" the meeting, but if a meeting can't die, it's not a tool—it's a religion.
 
@@ -100,13 +99,8 @@ And to keep the system honest: every six weeks champions sit with the exec team 
 guts in plain language. No slide theater. No green/yellow/red. Just: what's true, what changed, and
 what's at risk?
 
-The cadence forces reality onto the calendar. It gives people a place to bring uncertainty on
-purpose, and leadership a chance to reinforce that uncertainty isn't a sin. It's a signal.
-
-The cadence is a metronome for reality. It gives people a place to bring uncertainty on purpose, and
-it gives leadership an opportunity to reinforce that uncertainty isn't a sin. It's a signal.
-
-That cadence isn't approval. It's friction on purpose.
+The cadence is a metronome for reality: a place to surface uncertainty on purpose—and to treat it as
+a signal, not a sin. That's not approval. It's friction on purpose.
 
 This structure—named champions plus recurring, plain-language review—made the removal not just
 survivable, but thriveable.
