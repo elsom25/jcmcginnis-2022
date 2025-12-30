@@ -26,52 +26,55 @@ eras:
     company: Boltmade
     url: http://boltmade.com/
     years: "2013–2016"
+    context: "First hire. 4 → 28 people. Published author."
     points:
       - lesson: "Build a lot. Most of it won't matter. That's the point."
         byline: Where I learned to trust my instincts
         detail: |
-          Dozens of projects. Every language, framework, industry. What emerged: the magic isn't breadth—it's going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
+          Eight shipped products in four years—scrappy startups to Kik and enterprise clients. Helped scale the company from four people (three founders + me) to twenty-eight. What emerged: the magic isn't breadth—it's going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
 
-  - name: The Growth
+  - name: The Crucible
     company: Shopify
     url: https://www.shopify.com/
     years: "2016–2025"
     duration: "8+ years"
+    context: "IC → Director. 1k → 10k company. Through layoffs."
     points:
       - lesson: "Move fast to explore. Move slow to commit."
         byline: Short-term speed and long-term speed are different games
         period: "2016–2018"
         detail: |
-          Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took time to find the right answer, knowing how hard it would be to change later. The trap is treating both phases the same.
+          Multi-currency was open-heart surgery on how money was modeled at Shopify—rewriting every monetary model to enable global commerce. Dozens of prototypes in months. But we took a year to find and ship the right architecture, knowing how hard it would be to change later. That foundation now powers Shopify Markets and billions in international GMV. The trap is treating exploration and commitment as the same game.
 
       - lesson: "The best thing you can build is a team that doesn't need you"
         byline: From builder to builder of builders
         period: "2018–2020"
         detail: |
-          Less building, more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Most people deeply underestimate themselves. Hold them to a bar they thought was impossible, then watch them clear it. People are the hardest problem—and one worth solving.
+          Built Bulk Account Inviter—onboarded millions of B2B customers. Built Destinations—a service now used by 30+ internal teams. Less building for myself, more activating others. I loved it. Most people deeply underestimate themselves. Hold them to a bar they thought was impossible, then watch them clear it. People are the hardest problem—and one worth solving.
 
       - lesson: "Delegation isn't distance"
         byline: Close to the work, not above it
         period: "2020–2022"
         detail: |
-          The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work with them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and everything else follows.
+          Led shopify.plus launch across 10+ cross-functional teams. Shipped Metaobjects—an entirely new primitive for how merchants structure custom data, now core to how thousands of stores operate. The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work with them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and everything else follows.
 
       - lesson: "Directed chaos builds resilience"
         byline: Resilience comes from storms, not shelter
         period: "2022–2025"
         detail: |
-          Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
+          Built an organization of 50+ engineers (80+ R&D-wide). Layoffs hit. Pivoted the team's mission every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
 
   - name: The Proving Ground
     company: GrowthLoop
     url: http://growthloop.com/careers
     years: "2025–Present"
+    context: "VP Product Engineering. 0 → 1. Series B."
     in_progress: true
     points:
       - lesson: "Prove it's not luck"
         byline: Everything learned, applied at once
         detail: |
-          High-agency teams from scratch. Relentless shipping. The chaos others avoid. This one's live.
+          Building 0 → 1 on an AI-first product. High-agency teams from scratch. Relentless shipping. The chaos others avoid. This one's live.
 
 book:
   title: Embracing Uncertainty

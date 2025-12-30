@@ -149,8 +149,11 @@ head_scripts:
                     <div>
                       <h3 class="text-xl font-serif font-bold">
                         <a href="<%= site.data.career.eras[0].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[0].company %></a>
+                        <span class="text-xs font-mono text-brand-300/70 ml-2 font-normal"><%= site.data.career.eras[0].years %></span>
                       </h3>
-                      <p class="text-xs font-mono text-brand-300/70"><%= site.data.career.eras[0].years %></p>
+                      <% if site.data.career.eras[0].context %>
+                        <p class="text-sm text-brand-100 mt-1.5 font-medium tracking-tight"><%= site.data.career.eras[0].context %></p>
+                      <% end %>
                     </div>
                   </div>
                   <div class="hidden sm:block text-xs font-mono text-brand-300/50 uppercase tracking-wider">The Foundation</div>
@@ -179,10 +182,10 @@ head_scripts:
                       <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
                         <%= point.lesson %>
                       </h4>
-                      <p class="text-sm md:text-base text-brand-400 mb-3">
-                        <%= point.byline %>
+                      <p class="text-sm italic text-brand-400/80 mb-4">
+                        — <%= point.byline %>
                       </p>
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+                      <div class="text-stone-400 leading-relaxed space-y-3 text-sm">
                         <% point.detail.strip.split("\n\n").each do |p| %>
                           <p><%= p.strip %></p>
                         <% end %>
@@ -215,8 +218,11 @@ head_scripts:
                     <div>
                       <h3 class="text-xl font-serif font-bold">
                         <a href="<%= site.data.career.eras[1].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[1].company %></a>
+                        <span class="text-xs font-mono text-emerald-300/70 ml-2 font-normal"><%= site.data.career.eras[1].years %> · <%= site.data.career.eras[1].duration %></span>
                       </h3>
-                      <p class="text-xs font-mono text-emerald-300/70"><%= site.data.career.eras[1].years %> · <%= site.data.career.eras[1].duration %></p>
+                      <% if site.data.career.eras[1].context %>
+                        <p class="text-sm text-emerald-100 mt-1.5 font-medium tracking-tight"><%= site.data.career.eras[1].context %></p>
+                      <% end %>
                     </div>
                   </div>
                   <div class="hidden sm:block text-xs font-mono text-emerald-300/50 uppercase tracking-wider">The Crucible</div>
@@ -247,10 +253,10 @@ head_scripts:
                       <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
                         <%= point.lesson %>
                       </h4>
-                      <p class="text-sm md:text-base text-emerald-400 mb-3">
-                        <%= point.byline %>
+                      <p class="text-sm italic text-emerald-400/80 mb-4">
+                        — <%= point.byline %>
                       </p>
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+                      <div class="text-stone-400 leading-relaxed space-y-3 text-sm">
                         <% point.detail.strip.split("\n\n").each do |p| %>
                           <p><%= p.strip %></p>
                         <% end %>
@@ -280,13 +286,16 @@ head_scripts:
                     <div>
                       <h3 class="text-xl font-serif font-bold">
                         <a href="<%= site.data.career.eras[2].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[2].company %></a>
+                        <span class="text-xs font-mono text-sky-300/70 ml-2 font-normal"><%= site.data.career.eras[2].years %></span>
                       </h3>
-                      <p class="text-xs font-mono text-sky-300/70"><%= site.data.career.eras[2].years %></p>
+                      <% if site.data.career.eras[2].context %>
+                        <p class="text-sm text-sky-100 mt-1.5 font-medium tracking-tight"><%= site.data.career.eras[2].context %></p>
+                      <% end %>
                     </div>
                   </div>
                   <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-sky-300/50 uppercase tracking-wider">
                     <span class="w-1.5 h-1.5 bg-sky-400 rounded-full animate-pulse"></span>
-                    The Acceleration
+                    The Proving Ground
                   </div>
                 </div>
               </div>
@@ -313,10 +322,10 @@ head_scripts:
                       <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
                         <%= point.lesson %>
                       </h4>
-                      <p class="text-sm md:text-base text-sky-400 mb-3">
-                        <%= point.byline %>
+                      <p class="text-sm italic text-sky-400/80 mb-4">
+                        — <%= point.byline %>
                       </p>
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+                      <div class="text-stone-400 leading-relaxed space-y-3 text-sm">
                         <% point.detail.strip.split("\n\n").each do |p| %>
                           <p><%= p.strip %></p>
                         <% end %>
