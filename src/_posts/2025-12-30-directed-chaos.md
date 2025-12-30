@@ -1,5 +1,5 @@
 ---
-feed: false
+feed: true
 
 title: Directed Chaos
 permalink: /blog/directed-chaos/
@@ -14,33 +14,32 @@ image: "/assets/img/directed-chaos.jpg"
 
 World-class teams metabolize chaos. Calm teams break.
 
-Most leaders try to make work calm. They file down surprises, tune meetings, and polish checklists.
-Calm passes for competence.
-
-But calm organizations don't get strong. They get good at calm. Then they get brittle. When the
-first real hit comes, they shatter.
-
-There's another way: **directed chaos**—practice under load, small controlled storms that teach
-people how to sail. You build resilience the way you build muscle: stress, recover, repeat.
-Resilience isn't the absence of chaos; it's the ability to metabolize it.
-
-## The problem
-
-Calm is attractive because it looks like control. It lowers conflict. It keeps leaders out of blame.
-It makes progress easy to report even when progress is hard to make.
+Most leaders chase calm. They file down surprises, tune meetings, and polish checklists. They hunt
+surprises like a hospital infection team. Calm passes for competence because it looks like control. It keeps leaders out of blame.
 
 So companies build cushions: meetings that decide for you, roles that absorb risk, rituals that
 launder uncertainty into status updates. The failure mode has a name: **exporting responsibility
-upward.** Decision-making centralizes. Ownership diffuses. Everyone looks aligned while nobody owns
-the outcome.
+upward.** Decisions centralize. Ownership diffuses. Everyone looks aligned while nobody owns the
+outcome.
 
-The result isn't stability. It's learned helplessness dressed as good calendar hygiene. Reality is
-never calm seas—but navigation can be steady. The difference is who's steering.
+It feels like good management—absorbing chaos so others can focus. But taking responsibility _for_
+people isn't the same as developing people who can take responsibility. The former creates calm. The
+latter creates capability. Only one survives contact with reality.
+
+Calm organizations don't get strong. They get good at calm. Then they get brittle. When the first
+real hit comes, they shatter. The result isn't stability. It's learned helplessness dressed as good
+calendar hygiene.
+
+There's another way: **directed chaos**—practice under load. Small, controlled storms that teach
+people how to sail. The sea is never calm. But navigation can be steady if the right person is
+steering.
+
+You build resilience the way you build muscle: stress, recover, repeat. Resilience isn't the absence
+of chaos; it's the ability to metabolize it.
 
 ## The pattern
 
-Every change that worked used one move: **remove a cushion, then add structure.** Then normalize and
-name it so you can do it again.
+Every change that worked used one move: **remove a cushion, then add structure.**
 
 Removal alone sparks panic. Structure alone creates theater. The move is paired. You take away the
 thing that did the thinking. You replace it with something that makes thinking survivable.
@@ -53,27 +52,25 @@ What changes is where responsibility lands—and where it's felt.
 
 If the system feels calm, ask: _What cushion is doing our thinking for us?_
 
-This essay is one move, repeated. I learned it at GrowthLoop by killing the meeting that exported
-responsibility and replacing ticket soup with champion-owned projects on a six-week drumbeat. The
-payoff wasn't process. It was people who generate heat.
+Here’s the cleanest example I have.
 
 ## The meeting that couldn't die
 
-When I arrived at GrowthLoop, one Scrum meeting was the company's spine: 30 minutes for 25
-engineers + 2 PMs spread across 5 "teams." A round-robin of thin updates, a parade of "blocked," and
-a dopamine hit of alignment.
+When I arrived at GrowthLoop, one Scrum meeting was the company's spine: 30 minutes for 25 engineers
+and 2 PMs across five "teams." A round-robin of thin updates, a parade of "blocked," and a dopamine
+hit of alignment.
 
-Everyone left nodding—then work still slipped. Tidy performative calm.
+Everyone left nodding. Work still slipped. Tidy, performative calm.
 
-Before, work was ticket soup: ad hoc initiatives that belonged to "teams" who shared blame but not
-conviction. The meeting was the cushion that absorbed responsibility so nobody had to.
+Underneath, work was ticket soup: ad hoc initiatives that belonged to "teams" who shared blame but
+not conviction. The meeting was the cushion that absorbed responsibility so nobody had to.
 
 Everyone "loved" the meeting, but if a meeting can't die, it's not a tool—it's a religion.
 
 So I didn't refactor it. I deleted it.
 
 We didn't stop coordinating. We stopped pretending coordination was a meeting. Planning didn't go
-away: the fiction that one meeting could plan for everyone did.
+away. The fiction that one meeting could plan for everyone did.
 
 The deletion produced the most valuable artifact in the company: empty space. Within hours my Slack
 filled with DMs asking for a replacement ceremony, a new playbook, a definitive timebox. I said
@@ -88,23 +85,26 @@ export to. So they stopped looking.
 Then the experimentation started. Some did it well on the first pass. Others stumbled, then learned.
 Either way, they were thinking. That was the point.
 
+But deletion alone is just chaos. Chaos needs a wall to push against.
+
 **Freedom without structure is chaos. Structure without freedom is bureaucracy.** The magic is in
 the tension.
 
-So we added structure that doesn't steer for you. Projects as our anchors and 6-week reviews as our
-metronome.
+So we added structure that doesn't steer for you.
 
 Projects became the atomic unit of work: a bounded bet with a finish line. Each project had a
 load-bearing owner—not a committee. We named the role **champion**, and that word did real work.
 
 A champion isn't a PM with a new hat. It's the person who carries the project when it gets heavy.
-They cut scope, pull in the right people, and write the story of what's true. Their name stays
-attached when the project is ugly. If there's no champion, it's not a project. It's a wish.
+They cut scope, pull in the right people, and say what's true. Their name stays attached when the
+project is ugly. If there's no champion, it's not a project. It's a wish.
 
 Every six weeks champions sit with the exec team and walk through the guts in plain language. No
-slide theater. No green/yellow/red. Just: what's true, what changed, and what's at risk? The cadence
-is a metronome for reality: a place to surface uncertainty on purpose—and to treat it as a signal,
-not a sin.
+slide theater. No green/yellow/red. Just: what's true, what changed, what's at risk, and what you're
+doing about it.
+
+That review isn't approval. It's forced contact with reality—an engineered place to surface
+uncertainty on purpose and treat it as a signal, not a sin.
 
 That was the pattern: remove the cushion that exported responsibility, add structure that
 concentrated it.
