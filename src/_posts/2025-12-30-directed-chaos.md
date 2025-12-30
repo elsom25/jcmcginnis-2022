@@ -172,7 +172,7 @@ I call these people **exothermic**: they produce more energy than they consume.
 Endothermic people can be brilliant—but they are a tax. Exothermic people are a generator.
 
 Once you have the word, you can hire for it and coach it. "Be more exothermic" isn't vague when you
-can translate it to: bring a draft next time. Don't ask for permission to think.
+can translate it to: close the loop before you leave the room. Don't wait for permission to think.
 
 They bring drafts instead of questions. They kill ambiguity for the people around them. They make
 everyone faster.
