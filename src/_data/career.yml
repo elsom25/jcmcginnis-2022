@@ -1,85 +1,109 @@
-# Career data - Inflection Points model
-# Tells the story of how high-agency leadership is forged
-
-opening:
-  headline: "Chaos isn't the enemy. Comfort is."
-  subhead: "Most leaders optimize for stability. I optimize for high-agency."
-
-closing:
-  synthesis:
-    "High-agency trumps everything. Trust unlocks it. Directed chaos forges it.
-    As a leader, your job is to cultivate it in others."
+# Career data - lessons that shaped how I lead
+# Lesson is the headline. Metrics + bullets are proof.
 
 current:
-  company: GrowthLoop
-  role: VP Product Engineering
-  start: 2025
-  location: Remote, Canada
-  summary:
-    Building a Compound Marketing Engine that drives growth using Agentic AI
-    powered by enterprise cloud data.
-  url: http://growthloop.com/careers
+  role: "VP Product Engineering"
+  company: "GrowthLoop"
+  url: "http://growthloop.com/careers"
 
-# Inflection points organized by era for visual grouping
+opening:
+  subhead: "Most leaders optimize for stability. I optimize for high-agency."
+
+book:
+  title: "Embracing Uncertainty"
+  tagline:
+    "A field guide to agile packed with strategies for building top-performing
+    teams"
+  url: "https://www.uncertaintybook.ca/"
+
 eras:
   - name: The Foundation
     company: Boltmade
     url: http://boltmade.com/
     years: "2013–2016"
-    context: "First hire. 4 → 28 people. Published author."
-    points:
-      - lesson: "Build a lot. Most of it won't matter. That's the point."
-        byline: Where I learned to trust my instincts
-        detail: |
-          Eight shipped products in four years—scrappy startups to Kik and enterprise clients. Helped scale the company from four people (three founders + me) to twenty-eight. What emerged: the magic isn't breadth—it's going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
+    role: "First Engineer → Technical Lead"
+    context: "Acquired by Shopify"
+    lessons:
+      - text: "Build a lot. Most of it won't matter. That's the point."
+        metrics:
+          - value: "8"
+            label: "products"
+          - value: "7x"
+            label: "team growth"
+        bullets:
+          - "From 4 people to 28. First hire to tech lead."
+          - "Startups, Kik, enterprise. Ruby, Rails, iOS."
+          - "Co-authored a book on agile. The lessons stuck."
 
   - name: The Crucible
     company: Shopify
     url: https://www.shopify.com/
     years: "2016–2025"
     duration: "8+ years"
-    context: "IC → Director. 1k → 10k company. Through layoffs."
-    points:
-      - lesson: "Move fast to explore. Move slow to commit."
-        byline: Short-term speed and long-term speed are different games
+    role: "Developer → Director"
+    context: "Through layoffs and hypergrowth"
+    lessons:
+      - text: "Move fast to explore. Move slow to commit."
         period: "2016–2018"
-        detail: |
-          Multi-currency was open-heart surgery on how money was modeled at Shopify—rewriting every monetary model to enable global commerce. Dozens of prototypes in months. But we took a year to find and ship the right architecture, knowing how hard it would be to change later. That foundation now powers Shopify Markets and billions in international GMV. The trap is treating exploration and commitment as the same game.
+        metrics:
+          - value: "$B+"
+            label: "GMV now"
+          - value: "20+"
+            label: "prototypes"
+        bullets:
+          - "Rewrote how Shopify handles money. Every monetary model."
+          - "Dozens of prototypes. Then a year to get the architecture right."
+          - "Now powers Shopify Markets and international commerce."
 
-      - lesson: "The best thing you can build is a team that doesn't need you"
-        byline: From builder to builder of builders
+      - text: "The best thing you can build is a team that doesn't need you."
         period: "2018–2020"
-        detail: |
-          Built Bulk Account Inviter—onboarded millions of B2B customers. Built Destinations—a service now used by 30+ internal teams. Less building for myself, more activating others. I loved it. Most people deeply underestimate themselves. Hold them to a bar they thought was impossible, then watch them clear it. People are the hardest problem—and one worth solving.
+        metrics:
+          - value: "M+"
+            label: "customers"
+          - value: "30+"
+            label: "teams"
+        bullets:
+          - "Bulk Account Inviter. Millions of B2B customers onboarded."
+          - "Destinations. A service 30+ internal teams now depend on."
+          - "Less building for myself. More building builders."
 
-      - lesson: "Delegation isn't distance"
-        byline: Close to the work, not above it
+      - text: "Delegation isn't distance. It's staying close to the right work."
         period: "2020–2022"
-        detail: |
-          Led shopify.plus launch across 10+ cross-functional teams. Shipped Metaobjects—an entirely new primitive for how merchants structure custom data, now core to how thousands of stores operate. The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work with them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and everything else follows.
+        metrics:
+          - value: "10+"
+            label: "teams"
+          - value: "1"
+            label: "primitive"
+        bullets:
+          - "Metaobjects. An entirely new way merchants structure data."
+          - "shopify.plus launch. 10+ cross-functional teams orchestrated."
+          - "Trust but verify. Push on the details. Get close to the work."
 
-      - lesson: "Directed chaos builds resilience"
-        byline: Resilience comes from storms, not shelter
+      - text: "Directed chaos builds resilience."
         period: "2022–2025"
-        detail: |
-          Built an organization of 50+ engineers (80+ R&D-wide). Layoffs hit. Pivoted the team's mission every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
+        metrics:
+          - value: "50+"
+            label: "engineers"
+          - value: "6"
+            label: "pivots"
+        bullets:
+          - "Built an organization of 50+ engineers. 80+ R&D-wide."
+          - "Mission pivoted every six months. By design."
+          - "Layoffs. Reorgs. Teams that are unstoppable."
 
   - name: The Proving Ground
     company: GrowthLoop
     url: http://growthloop.com/careers
     years: "2025–Present"
-    context: "VP Product Engineering. 0 → 1. Series B."
+    role: "VP Product Engineering"
+    context: "Series B · Agentic AI"
     in_progress: true
-    points:
-      - lesson: "Prove it's not luck"
-        byline: Everything learned, applied at once
-        detail: |
-          Building 0 → 1 on an AI-first product. High-agency teams from scratch. Relentless shipping. The chaos others avoid. This one's live.
-
-book:
-  title: Embracing Uncertainty
-  tagline:
-    A field guide to Agile packed with strategies for building top-performing
-    teams.
-  url: https://www.uncertaintybook.ca/
-  note: Co-authored with lessons from the trenches of scaling teams.
+    lessons:
+      - text: "Prove it's not luck."
+        metrics:
+          - value: "0→1"
+            label: "stage"
+        bullets:
+          - "Everything learned, applied at once."
+          - "AI-first product. High-agency teams from scratch."
+          - "The chaos others avoid. This one's live."
