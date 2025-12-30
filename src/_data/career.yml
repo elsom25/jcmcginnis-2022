@@ -1,38 +1,36 @@
-# Career data - Inflection Points model
-# Tells the story of how high-agency leadership is forged
+# Career data - lessons that shaped how I lead
 
 opening:
   headline: "Chaos isn't the enemy. Comfort is."
-  subhead: "Most leaders optimize for stability. I optimize for high-agency."
+  subhead: "Most leaders chase stability. I chase high-agency."
 
 closing:
   synthesis:
-    "High-agency trumps everything. Trust unlocks it. Directed chaos forges it.
-    As a leader, your job is to cultivate it in others."
+    "High-agency trumps everything. Trust unlocks it. Directed chaos forges it."
 
 current:
   company: GrowthLoop
   role: VP Product Engineering
-  start: 2025
-  location: Remote, Canada
-  summary:
-    Building a Compound Marketing Engine that drives growth using Agentic AI
-    powered by enterprise cloud data.
   url: http://growthloop.com/careers
 
-# Inflection points organized by era for visual grouping
+book:
+  title: Embracing Uncertainty
+  tagline: A field guide to Agile. Strategies for building top-performing teams.
+  url: https://www.uncertaintybook.ca/
+
 eras:
   - name: The Foundation
     company: Boltmade
     url: http://boltmade.com/
     years: "2013–2016"
     points:
-      - lesson: "Build a lot. Most of it won't matter. That's the point."
-        byline: Where I learned to trust my instincts
+      - lesson: "Build a lot. Most won't matter. That's the point."
+        byline: Trusting instincts over process
+        proof: "8 products · 4→28 people"
         detail: |
-          Dozens of projects. Every language, framework, industry. What emerged: the magic isn't breadth—it's going deep. Knowing Ruby's memory patterns let us do impossible things. Learning to be genuinely confident—not faking it—in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
+          Dozens of projects. Every language, framework, industry. The magic isn't breadth—it's depth. Knowing Ruby's memory patterns let us ship what others couldn't. Genuine confidence in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
 
-  - name: The Growth
+  - name: The Crucible
     company: Shopify
     url: https://www.shopify.com/
     years: "2016–2025"
@@ -41,26 +39,30 @@ eras:
       - lesson: "Move fast to explore. Move slow to commit."
         byline: Short-term speed and long-term speed are different games
         period: "2016–2018"
+        proof: "$B+ GMV · 1yr architecture"
         detail: |
-          Multi-currency was open-heart surgery on how money was modeled at Shopify. Dozens of prototypes—we moved fast. But we took time to find the right answer, knowing how hard it would be to change later. The trap is treating both phases the same.
+          Multi-currency was open-heart surgery on Shopify's money model. Dozens of prototypes—fast. One year to find the right architecture—slow. That foundation now powers Shopify Markets and billions in international GMV. The trap: treating exploration and commitment as the same game.
 
       - lesson: "The best thing you can build is a team that doesn't need you"
         byline: From builder to builder of builders
         period: "2018–2020"
+        proof: "M+ customers · 30+ internal teams"
         detail: |
-          Less building, more activating—championing projects, unblocking teams, the work that makes work happen. And I loved it. Most people deeply underestimate themselves. Hold them to a bar they thought was impossible, then watch them clear it. People are the hardest problem—and one worth solving.
+          Bulk Account Inviter onboarded millions of B2B customers. Destinations became a service 30+ internal teams depend on. Less building, more activating others. Most people underestimate themselves. Hold them to a bar they thought was impossible. Watch them clear it. People are the hardest problem—and one worth solving.
 
       - lesson: "Delegation isn't distance"
         byline: Close to the work, not above it
         period: "2020–2022"
+        proof: "10+ teams · Metaobjects launch"
         detail: |
-          The trap: stepping back and letting teams "figure it out." Real delegation is staying in the work with them—not saving them from every spike, but being the wall they learn to climb. Trust, but verify. Push on the details. Get close to the right work, and everything else follows.
+          Shopify.plus launch across 10+ cross-functional teams. Metaobjects—an entirely new primitive for custom data, now core to thousands of stores. The trap: stepping back and letting teams "figure it out." Real delegation means staying in the work. Not saving them from every spike—being the wall they learn to climb. Trust, but verify.
 
       - lesson: "Directed chaos builds resilience"
         byline: Resilience comes from storms, not shelter
         period: "2022–2025"
+        proof: "50+ engineers · 6 pivots"
         detail: |
-          Layoffs. Pivoting the team every six months. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that are resilient, adaptable, unstoppable. Comfort is where growth goes to die.
+          50+ engineers. 80+ R&D-wide. Mission pivoted every six months. Layoffs hit. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that adapt. Teams that don't break. Comfort is where growth goes to die.
 
   - name: The Proving Ground
     company: GrowthLoop
@@ -68,15 +70,8 @@ eras:
     years: "2025–Present"
     in_progress: true
     points:
-      - lesson: "Prove it's not luck"
-        byline: Everything learned, applied at once
+      - lesson: "Prove it's not luck—and set up what comes next"
+        byline: Big company lessons. Startup speed.
+        proof: "0→1 AI · Series B · Company reinvention"
         detail: |
-          High-agency teams from scratch. Relentless shipping. The chaos others avoid. This one's live.
-
-book:
-  title: Embracing Uncertainty
-  tagline:
-    A field guide to Agile packed with strategies for building top-performing
-    teams.
-  url: https://www.uncertaintybook.ca/
-  note: Co-authored with lessons from the trenches of scaling teams.
+          GrowthLoop isn't a typical 0→1. The company existed for years—now it's chasing hypergrowth. AI is the new frontier. The rest is reinvention. My experiment: big company scale with just the right rails. Enough structure to accelerate, not enough to kill speed. Everything learned, applied at once. This one's live.

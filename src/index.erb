@@ -112,31 +112,26 @@ head_scripts:
       <!-- Timeline Container -->
       <div id="timeline-container" class="relative">
         <!-- Timeline Track - Dull background, gradient fills on scroll with layered glow -->
-        <!-- z-[1] keeps it below the era containers which have z-[2] -->
-        <div id="timeline-track" class="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 z-[1]">
+        <div id="timeline-track" class="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 z-[1]" style="top: 0; bottom: 0;">
           <!-- Dull/dark background track (always visible) -->
           <div class="absolute inset-0 rounded-full bg-stone-700/30"></div>
           <!-- Core fill wrapper - clips the main line -->
           <div id="timeline-fill" class="absolute top-0 left-0 right-0 overflow-hidden rounded-full" style="height: 0%;">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-[3000px] rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-[5000px] rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
           </div>
         </div>
-        <!-- Glow - soft ambient light using blur to create natural soft edges -->
-        <div id="timeline-glow" class="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none" style="width: 200px; height: 0px;">
-          <!-- Wide ambient bloom - very large blur creates natural soft edges -->
+        <!-- Glow layers -->
+        <div id="timeline-glow" class="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none" style="width: 200px; top: 0; height: 0px;">
           <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-16 rounded-full opacity-[0.12]" style="height: 100%; filter: blur(40px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
-          <!-- Mid glow layer -->
           <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-8 rounded-full opacity-[0.18]" style="height: 100%; filter: blur(24px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
-          <!-- Inner glow - tighter but still soft -->
           <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-4 rounded-full opacity-[0.22]" style="height: 100%; filter: blur(12px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
         </div>
 
-        <%# Global lesson index for alternating sides across all eras %>
         <% global_lesson_index = 0 %>
 
         <!-- Era: Boltmade -->
         <div class="timeline-era relative z-[2]" data-era="boltmade" data-color="brand">
-          <!-- Era Header -->
+          <!-- Era Header - Clean: number + company + years -->
           <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
             <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
               <div class="relative">
@@ -176,13 +171,23 @@ head_scripts:
                     <% end %>
 
                     <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
-                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
+                      <!-- Zone 1: The Lesson (hero) -->
+                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-3">
                         <%= point.lesson %>
                       </h4>
-                      <p class="text-sm md:text-base text-brand-400 mb-3">
-                        <%= point.byline %>
-                      </p>
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+
+                      <!-- Zone 2: Context (byline + proof) -->
+                      <div class="mb-4">
+                        <p class="text-sm italic text-brand-300/90 mb-1.5">
+                          <%= point.byline %>
+                        </p>
+                        <% if point.proof %>
+                          <p class="text-[11px] font-mono text-stone-500/80 tracking-wide"><%= point.proof %></p>
+                        <% end %>
+                      </div>
+
+                      <!-- Zone 3: The Story (detail) -->
+                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm border-t border-stone-800/50 pt-4">
                         <% point.detail.strip.split("\n\n").each do |p| %>
                           <p><%= p.strip %></p>
                         <% end %>
@@ -202,7 +207,7 @@ head_scripts:
 
         <!-- Era: Shopify -->
         <div class="timeline-era relative z-[2]" data-era="shopify" data-color="emerald">
-          <!-- Era Header -->
+          <!-- Era Header - Clean: number + company + years -->
           <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
             <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
               <div class="relative">
@@ -232,31 +237,44 @@ head_scripts:
               <div class="md:grid md:grid-cols-[1fr_24px_1fr] md:gap-x-6" style="grid-auto-rows: minmax(48px, auto);">
                 <% site.data.career.eras[1].points.each_with_index do |point, i| %>
                   <% is_right = global_lesson_index.even? %>
-                  <%# Each lesson spans 5 rows, starting offset by 3 rows from previous %>
-                  <% row_start = (i * 3) + 1 %>
+                  <%# Each lesson spans 6 rows for more content, starting offset by 4 rows from previous %>
+                  <% row_start = (i * 4) + 1 %>
 
                   <%# Timeline dot in center column %>
                   <div class="hidden md:flex items-start justify-center pt-2 timeline-dot z-10" style="grid-column: 2; grid-row: <%= row_start %>;">
                     <div class="w-3 h-3 rounded-full bg-emerald-500 ring-2 ring-stone-900 shadow-lg shadow-emerald-500/50"></div>
                   </div>
 
-                  <%# Content on alternating sides %>
-                  <article class="lesson-panel reveal-on-scroll py-6 md:py-4" data-lesson="shopify-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>" style="grid-column: <%= is_right ? '3' : '1' %>; grid-row: <%= row_start %> / span 5;">
-                    <div class="<%= is_right ? 'md:pl-4' : 'md:pr-4 md:text-right' %>">
-                      <p class="text-xs font-mono text-emerald-500 mb-2"><%= point.period %></p>
-                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
+                  <%# Lesson content %>
+                  <article class="lesson-panel reveal-on-scroll py-4 md:py-0" style="grid-column: <%= is_right ? 3 : 1 %>; grid-row: <%= row_start %> / span 6;" data-lesson="shopify-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
+                    <div class="<%= is_right ? '' : 'md:text-right' %>">
+                      <!-- Zone 1: The Lesson (hero) -->
+                      <% if point.period %>
+                        <p class="text-[10px] font-mono text-emerald-400/60 mb-2 tracking-wider uppercase"><%= point.period %></p>
+                      <% end %>
+                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-3">
                         <%= point.lesson %>
                       </h4>
-                      <p class="text-sm md:text-base text-emerald-400 mb-3">
-                        <%= point.byline %>
-                      </p>
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+
+                      <!-- Zone 2: Context (byline + proof) -->
+                      <div class="mb-4">
+                        <p class="text-sm italic text-emerald-300/90 mb-1.5">
+                          <%= point.byline %>
+                        </p>
+                        <% if point.proof %>
+                          <p class="text-[11px] font-mono text-stone-500/80 tracking-wide"><%= point.proof %></p>
+                        <% end %>
+                      </div>
+
+                      <!-- Zone 3: The Story (detail) -->
+                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm border-t border-stone-800/50 pt-4">
                         <% point.detail.strip.split("\n\n").each do |p| %>
                           <p><%= p.strip %></p>
                         <% end %>
                       </div>
                     </div>
                   </article>
+
                   <% global_lesson_index += 1 %>
                 <% end %>
               </div>
@@ -266,11 +284,11 @@ head_scripts:
 
         <!-- Era: GrowthLoop -->
         <div class="timeline-era relative z-[2]" data-era="growthloop" data-color="sky">
-          <!-- Era Header -->
+          <!-- Era Header - Clean: number + company + years -->
           <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
             <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
               <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-sky-900/95 via-blue-800/95 to-sky-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-sky-500/20 border border-sky-600/30"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-sky-900/95 via-sky-800/95 to-sky-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-sky-500/20 border border-sky-600/30"></div>
                 <div class="relative flex items-center justify-between px-5 py-4">
                   <div class="flex items-center gap-4">
                     <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center relative">
@@ -284,9 +302,9 @@ head_scripts:
                       <p class="text-xs font-mono text-sky-300/70"><%= site.data.career.eras[2].years %></p>
                     </div>
                   </div>
-                  <div class="hidden sm:flex items-center gap-2 text-xs font-mono text-sky-300/50 uppercase tracking-wider">
+                  <div class="hidden sm:flex items-center gap-1.5 text-xs font-mono text-sky-300/50 uppercase tracking-wider">
                     <span class="w-1.5 h-1.5 bg-sky-400 rounded-full animate-pulse"></span>
-                    The Acceleration
+                    The Proving Ground
                   </div>
                 </div>
               </div>
@@ -310,13 +328,23 @@ head_scripts:
                     <% end %>
 
                     <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
-                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-2">
+                      <!-- Zone 1: The Lesson (hero) -->
+                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-3">
                         <%= point.lesson %>
                       </h4>
-                      <p class="text-sm md:text-base text-sky-400 mb-3">
-                        <%= point.byline %>
-                      </p>
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm">
+
+                      <!-- Zone 2: Context (byline + proof) -->
+                      <div class="mb-4">
+                        <p class="text-sm italic text-sky-300/90 mb-1.5">
+                          <%= point.byline %>
+                        </p>
+                        <% if point.proof %>
+                          <p class="text-[11px] font-mono text-stone-500/80 tracking-wide"><%= point.proof %></p>
+                        <% end %>
+                      </div>
+
+                      <!-- Zone 3: The Story (detail) -->
+                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm border-t border-stone-800/50 pt-4">
                         <% point.detail.strip.split("\n\n").each do |p| %>
                           <p><%= p.strip %></p>
                         <% end %>
