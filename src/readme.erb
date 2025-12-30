@@ -39,54 +39,56 @@ header_theme: light
             <!-- Terminal window - THE WHOLE THING -->
             <div class="animate-fade-in-up">
               <!-- Terminal chrome -->
-              <div class="flex items-center justify-between px-4 py-3 bg-[#161b22] rounded-t-xl border border-b-0 border-[#30363d]">
-                <div class="flex items-center gap-2">
-                  <span class="w-3 h-3 rounded-full bg-[#ff5f56]"></span>
-                  <span class="w-3 h-3 rounded-full bg-[#ffbd2e]"></span>
-                  <span class="w-3 h-3 rounded-full bg-[#27c93f]"></span>
+              <div class="flex items-center justify-between px-3 sm:px-4 py-2.5 sm:py-3 bg-[#161b22] rounded-t-xl border border-b-0 border-[#30363d]">
+                <div class="flex items-center gap-1.5 sm:gap-2">
+                  <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#ff5f56]"></span>
+                  <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#ffbd2e]"></span>
+                  <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-[#27c93f]"></span>
                 </div>
-                <span class="text-xs font-mono text-[#8b949e]">jesse@macbook ~ README.md</span>
-                <div class="w-16"></div>
+                <span class="text-[10px] sm:text-xs font-mono text-[#8b949e] truncate max-w-[140px] sm:max-w-none">jesse@macbook ~ README.md</span>
+                <div class="w-8 sm:w-16"></div>
               </div>
 
               <!-- Terminal content -->
-              <div class="bg-[#0d1117] rounded-b-xl border border-t-0 border-[#30363d] p-6 md:p-8 font-mono">
+              <div class="bg-[#0d1117] rounded-b-xl border border-t-0 border-[#30363d] p-4 sm:p-6 md:p-8 font-mono">
                 <!-- Command line -->
-                <div class="flex items-center gap-2 text-sm mb-6">
+                <div class="flex items-center gap-2 text-xs sm:text-sm mb-4 sm:mb-6">
                   <span class="text-[#27c93f]">➜</span>
                   <span class="text-[#79c0ff]">~</span>
                   <span class="text-[#c9d1d9]">cat README.md</span>
-                  <span class="w-2 h-5 bg-[#c9d1d9] animate-pulse ml-1"></span>
+                  <span class="w-2 h-4 sm:h-5 bg-[#c9d1d9] animate-pulse ml-1"></span>
                 </div>
 
                 <!-- README content -->
-                <div class="space-y-6">
+                <div class="space-y-4 sm:space-y-6">
                   <div>
-                    <p class="text-[#8b949e] text-sm mb-2"># Personal Operating Manual</p>
-                    <h1 class="text-hero text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#c9d1d9] leading-tight">
+                    <p class="text-[#8b949e] text-xs sm:text-sm mb-2"># Personal Operating Manual</p>
+                    <h1 class="text-hero text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#c9d1d9] leading-tight">
                       README<span class="text-[#8b949e]">.md</span>
                     </h1>
                   </div>
 
-                  <p class="text-[#8b949e] text-lg md:text-xl leading-relaxed max-w-2xl">
+                  <p class="text-[#8b949e] text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl">
                     What I expect. How I show up. What inspires me.<br />
                     For myself first—then for anyone I work with.
                   </p>
 
                   <!-- Metadata block -->
-                  <div class="pt-6 border-t border-[#30363d] space-y-3">
-                    <div class="flex items-center gap-3">
+                  <div class="pt-6 border-t border-[#30363d] space-y-2 sm:space-y-3 text-sm sm:text-base">
+                    <div class="flex items-center gap-2 sm:gap-3">
                       <span class="text-[#7ee787]">author:</span>
                       <span class="text-[#c9d1d9]">Jesse McGinnis</span>
                     </div>
-                    <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-2 sm:gap-3">
                       <span class="text-[#7ee787]">version:</span>
                       <span class="text-[#c9d1d9]">2025.01</span>
                     </div>
-                    <div class="flex flex-wrap items-center gap-3">
+                    <div class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-2 sm:gap-3">
                       <span class="text-[#7ee787]">tags:</span>
-                      <a href="https://www.enneagraminstitute.com/type-8/" class="px-3 py-1 bg-brand-500/20 text-brand-400 rounded-md hover:bg-brand-500/30 transition-colors" target="_blank" rel="external noopener">Type 8 "Challenger"</a>
-                      <a href="https://www.16personalities.com/enfj-personality" class="px-3 py-1 bg-emerald-500/20 text-emerald-400 rounded-md hover:bg-emerald-500/30 transition-colors" target="_blank" rel="external noopener">ENFJ-A "Protagonist"</a>
+                      <div class="flex flex-wrap gap-2">
+                        <a href="https://www.enneagraminstitute.com/type-8/" class="px-2.5 sm:px-3 py-1 text-xs sm:text-sm bg-brand-500/20 text-brand-400 rounded-md hover:bg-brand-500/30 transition-colors" target="_blank" rel="external noopener">Type 8 "Challenger"</a>
+                        <a href="https://www.16personalities.com/enfj-personality" class="px-2.5 sm:px-3 py-1 text-xs sm:text-sm bg-emerald-500/20 text-emerald-400 rounded-md hover:bg-emerald-500/30 transition-colors" target="_blank" rel="external noopener">ENFJ-A "Protagonist"</a>
+                      </div>
                     </div>
                   </div>
                 </div>

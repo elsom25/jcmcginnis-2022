@@ -24,6 +24,9 @@ export function initTimelineFill() {
   setTimeout(() => clearInterval(check), 3000);
 
   function setupTimeline() {
+    // Skip on mobile - timeline is hidden and scrub interferes with touch scrolling
+    if (window.innerWidth < 768) return;
+
     let trackHeight = 0;
 
     // Position timeline and glow from first lesson to thesis card top
