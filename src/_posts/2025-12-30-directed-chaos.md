@@ -12,18 +12,21 @@ pull_quote: Ownership isn't a belief you argue someone into. It's a weight you l
 image: "/assets/img/directed-chaos.jpg"
 ---
 
-World-class teams metabolize chaos. Calm teams shatter.
+World-class teams metabolize chaos. Calm teams break.
 
-Yet most leaders try to make work _calm_. They file down surprises, tune meetings, and polish checklists. Because calm
-looks competent. But calm organizations don't get strong. They get good at calm. Then they get
-brittle. And when the first real hit comes, they shatter.
+Most leaders try to make work calm. They file down surprises, tune meetings, polish checklists. They
+hunt surprises like a hospital infection team. Calm looks like competence.
 
-There's another way. I call it **directed chaos**: controlled doses of turbulence that build the muscle
-to handle real storms. You build resilience the way you build muscle—stress, recovery, repeat. If
-you can't recover from the dose, you're not building resilience. You're just injuring people.
+But calm organizations don't get strong. They get good at calm. Then they get brittle. When the
+first real hit comes, they shatter.
+
+There's another way. I call it **directed chaos**: practice under load—small, controlled storms that
+teach people how to sail. Resilience isn't the absence of chaos; it's the ability to metabolize it.
+You build it the way you build muscle: stress, recovery, repeat. If you can't recover from the dose,
+you're not building resilience. You're just injuring people.
 
 I didn't learn this from a clever framework. I learned it the only way that counts: I made changes
-and kept the survivors.
+and kept what survived.
 
 ## The pattern
 
@@ -92,14 +95,26 @@ So we added structure that doesn't steer for you.
 Projects became the atomic unit of work. Each one had a load-bearing champion—a name, not a
 committee.
 
-Every six weeks team leads sit with the exec team and walk through the guts in plain
-language—champions in their pocket, accountability on their shoulders. No slide theater. No
-green/yellow/red. Just: what's true, what changed, what's at risk?
+Every six weeks those champions sit with the exec team and walk through the guts in plain language.
+No slide theater. No green/yellow/red. Just: what's true, what changed, what's at risk?
 
 That cadence gives people a place to bring uncertainty on purpose. It gives leadership a chance to
-reinforce that uncertainty isn't a sin—it's a signal. The cadence is a metronome for reality.
+reinforce that uncertainty isn't a sin—it's a signal. The cadence is a metronome for reality. It
+forces reality onto the calendar.
 
 This was the structure that made the removal not just survivable, but valuable.
+
+Not all structure is process. Sometimes it's a word that ends arguments.
+
+We normalized **desired state**. When someone proposed a patch, I'd stop them and ask them to
+describe the system we wished we already had—concrete, not dreamy.
+
+Patches shifted from "how do we hide this hole?" to "what's one brick we can lay the right way?" It
+sounds semantic until you do it in a meeting and feel the room tilt from firefighting to
+architecture.
+
+Desired state does two things: it forces you to name the shape of the problem, and it absolves you
+of fixing all of it right now. You just have to move one notch toward what you actually want.
 
 ## Remove the safety net
 
@@ -123,33 +138,11 @@ sharper because the cost of a lazy review arrived at your door, not someone else
 
 **Ownership isn't a belief you argue someone into. It's a weight you let them feel.**
 
-Removal and structure are the first two moves. There's a third: vocabulary.
+Ownership fixed one half of the problem: quality. Attention was the other half.
 
-## Language as infrastructure
+We needed a word that could stop the line.
 
-Directed chaos needs more than process. It needs language—words that compress judgment so people can
-act without escalating every decision.
-
-People don't move from obedience to judgment by willpower. Many have been trained for years that
-independent judgment is how you get in trouble. So you give them structure—but the right kind.
-
-Language is one of the most underrated structures you can add. Words seem soft. Chosen carefully,
-they become load-bearing. A shared vocabulary compresses judgment. It lets people make decisions
-without escalating, because the criteria are already embedded in the terms they use.
-
-The right word ends debates before they start. It gives permission without requiring approval. It
-makes the implicit explicit—and once something is explicit, people can act on it.
-
-We normalized **desired state**. When someone proposed a patch, I'd ask them to describe the system
-we wished we already had—concrete, not dreamy.
-
-Patches shifted from "how do we hide this hole?" to "what's one brick we can lay the right way?" It
-sounds semantic until you do it in a meeting and feel the room tilt from firefighting to
-architecture. Desired state does two things: it forces you to name the shape of the problem, and it
-absolves you of fixing all of it right now. You just have to move one notch toward what you actually
-want.
-
-Here's another that did a lot of work: **Code Red**.
+**Code Red** did that work.
 
 When everything is urgent, nothing is. Our platform started thrashing as we moved upmarket. The team
 felt it, customers felt it, and we were still juggling feature work like nothing had changed.
@@ -159,11 +152,9 @@ Calling a Code Red didn't create panic. It created calm. Suddenly pausing the ro
 personal failure—it was a company decision. People don't burn out from hard work. They burn out from
 ambiguous work. Code Red removed the ambiguity.
 
-I regret not calling it earlier. When we did, the recurring fires that had been draining us for
-months started getting fixed.
+I regret not calling it earlier. The minute we did, the heaviest rocks started to move.
 
-Find the words that compress judgment for your team. A phrase that ends arguments. A term that gives
-permission. Language like this isn't decoration—it's infrastructure.
+A good word doesn't just describe reality. It changes what people can do next.
 
 ## The payoff
 
@@ -176,9 +167,12 @@ problems before you know the problems exist.
 The people who thrive in this environment don't just tolerate turbulence—they generate it. They pick
 fights with reality before reality picks one for them.
 
-I call these people **exothermic**: they produce more energy than they consume. Once you have the
-word, you can hire for it and coach it. "Be more exothermic" isn't vague when you can translate it
-to: bring a draft next time. Don't ask for permission to think.
+I call these people **exothermic**: they produce more energy than they consume.
+
+Endothermic people can be brilliant—but they are a tax. Exothermic people are a generator.
+
+Once you have the word, you can hire for it and coach it. "Be more exothermic" isn't vague when you
+can translate it to: close the loop before you leave the room. Don't wait for permission to think.
 
 They bring drafts instead of questions. They kill ambiguity for the people around them. They make
 everyone faster.
@@ -200,14 +194,17 @@ give them language. You don't flinch in the first storm.
 
 And then, the next time, they don't either.
 
-Change is exhausting. The part you can control is its dose and its direction. The hard part isn't
-inventing changes. It's choosing a small set that reinforce each other—then tolerating the boredom
-of repetition. The boredom is a sign you're building muscle. Around the third cycle, the system
-starts saying it back to you.
+Change is exhausting. The part you can control is its dose and its direction.
+
+The hard part isn't inventing changes. It's choosing a small set that reinforce each other—then
+tolerating the boredom of repetition. The boredom is a sign you're building muscle. Around the third
+cycle, the system starts saying it back to you.
 
 If you want one tactic to steal tomorrow: forbid patches for the first ten minutes of your next
 decision meeting. Make the team write the desired state in plain words. Then pick the one step you
-can take this week that moves you toward it. The debate shrinks. Morale rises.
+can take this week that moves you toward it.
+
+The debate shrinks. Morale rises. People can tolerate pain if they believe it's directional.
 
 **Chaos without cadence is panic. Cadence without chaos is theater.**
 
