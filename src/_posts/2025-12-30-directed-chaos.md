@@ -14,25 +14,20 @@ image: "/assets/img/directed-chaos.jpg"
 
 World-class teams metabolize chaos. Calm teams break.
 
-Most leaders try to make work calm. They file down surprises, tune meetings, polish checklists. They
-hunt surprises like a hospital infection team. Calm looks like competence.
+Most leaders try to make work calm. They file down surprises, tune meetings, and polish checklists.
+Calm passes for competence.
 
 But calm organizations don't get strong. They get good at calm. Then they get brittle. When the
 first real hit comes, they shatter.
 
 There's another way. I call it **directed chaos**: practice under load—small, controlled storms that
-teach people how to sail. Resilience isn't the absence of chaos; it's the ability to metabolize it.
-You build it the way you build muscle: stress, recovery, repeat. If you can't recover from the dose,
-you're not building resilience. You're just injuring people.
-
-I didn't learn this from a clever framework. I learned it the only way that counts: I made changes
-and kept what survived.
+teach people how to sail. You build resilience the way you build muscle: stress, recover, repeat.
+Resilience isn't the absence of chaos; it's the ability to metabolize it.
 
 ## The pattern
 
-Every change that worked used the same move: **remove a cushion, then add structure.**
-
-**If you can't stop it, you don't get to start it.**
+Every change that worked used the same move: **remove a cushion, then add structure.** Then
+normalize and name it so you can do it again.
 
 Removal alone sparks panic. Structure alone creates theater. The move is paired. You take away the
 thing that did the thinking. You replace it with something that makes thinking survivable.
@@ -41,80 +36,80 @@ The cushion might be a process, a role, a meeting, or a ritual that has become a
 structure is a different kind of support—not one that does the work for people, but one that makes
 it safe to do the work themselves.
 
-What changes is where responsibility lands—and whether people feel it.
+What changes is where responsibility lands—and where it's felt.
 
 If the system feels calm, ask:
 
 _What cushion is doing our thinking for us?_
 
-## Remove the center
+This pursuit of directed chaos is the work—and where I started when I got to GrowthLoop.
 
-When I arrived at GrowthLoop, one Scrum meeting was the company's spine. It was tidy and numbing.
-Everyone left nodding—and nothing changed.
+## Removing the center
 
-I didn't refactor it. I deleted it.
+When I arrived at GrowthLoop, one Scrum meeting was the company's spine: 30 minutes for 25
+engineers + 2 PMs spread across 5 "teams." A round-robin of surface-level updates, a parade of
+"blocked," and a dopamine hit of alignment.
 
-If a meeting can't die, it's not a tool—it's a religion.
+Everyone left "aligned," yet things kept slipping. Tidy
+performative-calm.
+
+Everyone "loved" the meeting, but if a meeting can't die, it's not a tool—it's a religion.
+
+So I didn't refactor it. I deleted it.
 
 We didn't stop coordinating. We stopped pretending coordination was a meeting. Planning didn't go
-away. The fiction that one meeting could plan for everyone did.
+away: the fiction that one meeting could plan for everyone did.
 
-The deletion produced the most valuable artifact in the company: empty space.
-
-Within hours my Slack filled with DMs asking for a replacement ceremony, a new playbook, a
-definitive timebox. I said no.
-
-Not because structure is bad. Because this structure had become a cast.
-
-Casts prevent injury. Left on too long, they prevent growth.
+The deletion produced the most valuable artifact in the company: empty space. Within hours my Slack
+filled with DMs asking for a replacement ceremony, a new playbook, a definitive timebox. I said no—
+not because structure is bad, but because this structure had become a cast. Casts prevent injury.
+Left on too long, they prevent growth.
 
 The first week was loud in the right way. Teams argued about planning. Leads looked around and
-realized there was no parent to escalate to.
+realized there was no parent to escalate to. Two leads tried to resurrect the central meeting and
+learned why it existed: to export responsibility upward. Without a center, there was nowhere to
+export to. So they stopped looking.
 
-Two leads tried to resurrect it. They discovered the old ritual's real purpose: exporting
-responsibility upward. Without a center, there was nowhere to export it. So they stopped looking.
+Then the experimentation started. Some did it well on the first pass. Others stumbled, then learned.
+Either way, they were thinking. That was the point.
 
-Some did it well on the first pass. Others stumbled, then learned. Either way, they were thinking.
-That was the point.
+Calm wasn't competence. It was learned helplessness with good calendar hygiene. Remove the disguise
+and you don't get serenity. You get noise. That's atrophied muscle waking up.
 
-It turned out "calm" had been disguising learned helplessness. Remove the disguise and you don't get
-serenity. You get noise. That's atrophied muscle waking up.
+But deleting the central meeting left a vacuum. Teams were surviving, but not thriving.
 
-But deletion alone is just chaos. Chaos needs a wall to push against.
+**Freedom without structure is chaos. Structure without freedom is bureaucracy.** The magic is in
+the tension.
 
-## Add structure
+So we added structure that doesn't steer for you. Projects as our anchors and 6-week reviews as our
+metronome.
 
-Deleting the central meeting left a vacuum. Judgment needs friction.
+Projects became the atomic unit of work: a bounded bet with a finish line. Each project had a
+load-bearing owner. Not a committee.
 
-**Freedom without structure is chaos. Structure without freedom is bureaucracy.**
+But "owner" was too soft. It sounded like a label. So we named the role **champion**—and that word
+did real work after the fact.
 
-The magic is in the tension.
+A champion isn't a PM with a new hat. It's the person who carries the project when it gets heavy.
+They cut scope, pull in the right people, and write the story of what's true. Their name stays
+attached when the project is ugly.
 
-So we added structure that doesn't steer for you.
+If there's no champion, it's not a project. It's a wish.
 
-Projects became the atomic unit of work. Each one had a load-bearing champion—a name, not a
-committee.
+And to keep the system honest: every six weeks champions sit with the exec team and walk through the
+guts in plain language. No slide theater. No green/yellow/red. Just: what's true, what changed, and
+what's at risk?
 
-Every six weeks those champions sit with the exec team and walk through the guts in plain language.
-No slide theater. No green/yellow/red. Just: what's true, what changed, what's at risk?
+The cadence forces reality onto the calendar. It gives people a place to bring uncertainty on
+purpose, and leadership a chance to reinforce that uncertainty isn't a sin. It's a signal.
 
-That cadence gives people a place to bring uncertainty on purpose. It gives leadership a chance to
-reinforce that uncertainty isn't a sin—it's a signal. The cadence is a metronome for reality. It
-forces reality onto the calendar.
+The cadence is a metronome for reality. It gives people a place to bring uncertainty on purpose, and
+it gives leadership an opportunity to reinforce that uncertainty isn't a sin. It's a signal.
 
-This was the structure that made the removal not just survivable, but valuable.
+That cadence isn't approval. It's friction on purpose.
 
-Not all structure is process. Sometimes it's a word that ends arguments.
-
-We normalized **desired state**. When someone proposed a patch, I'd stop them and ask them to
-describe the system we wished we already had—concrete, not dreamy.
-
-Patches shifted from "how do we hide this hole?" to "what's one brick we can lay the right way?" It
-sounds semantic until you do it in a meeting and feel the room tilt from firefighting to
-architecture.
-
-Desired state does two things: it forces you to name the shape of the problem, and it absolves you
-of fixing all of it right now. You just have to move one notch toward what you actually want.
+This structure—named champions plus recurring, plain-language review—made the removal not just
+survivable, but thriveable.
 
 ## Remove the safety net
 
@@ -131,9 +126,8 @@ We removed the handoff. Ownership didn't vanish—it concentrated. The release c
 person who wrote the code—and their name stayed on it.
 
 The first cycle was messy on purpose. We shipped bugs we used to pay someone else to catch. We
-reverted. We apologized. It felt wrong for about a week and necessary by the second.
-
-Engineers started writing better tests because there was no one else to write them. Reviews got
+reverted. We apologized. It felt wrong for about a week and necessary by the second—and then
+engineers started writing better tests because there was no one else to write them. Reviews got
 sharper because the cost of a lazy review arrived at your door, not someone else's.
 
 **Ownership isn't a belief you argue someone into. It's a weight you let them feel.**
@@ -189,8 +183,8 @@ comes from rough seas, not still water.
 None of this is a plea for reckless change. Unmanaged chaos breaks people. Directed chaos makes
 them.
 
-You expose your people to turbulence, but you go through it with them. You give them structure. You
-give them language. You don't flinch in the first storm.
+You expose your people to waves, but you go through it with them. You give them structure. You give
+them language. You don't flinch in the first storm.
 
 And then, the next time, they don't either.
 
@@ -199,14 +193,6 @@ Change is exhausting. The part you can control is its dose and its direction.
 The hard part isn't inventing changes. It's choosing a small set that reinforce each other—then
 tolerating the boredom of repetition. The boredom is a sign you're building muscle. Around the third
 cycle, the system starts saying it back to you.
-
-If you want one tactic to steal tomorrow: forbid patches for the first ten minutes of your next
-decision meeting. Make the team write the desired state in plain words. Then pick the one step you
-can take this week that moves you toward it.
-
-The debate shrinks. Morale rises. People can tolerate pain if they believe it's directional.
-
-**Chaos without cadence is panic. Cadence without chaos is theater.**
 
 The paradox is that if you do this long enough, calm returns. Not the fragile calm of a team that's
 never been tested, but the earned calm of one that has weathered real storms.
