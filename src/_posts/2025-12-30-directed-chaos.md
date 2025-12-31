@@ -6,7 +6,7 @@ permalink: /blog/directed-chaos/
 featured: true
 
 categories: ["Leadership"]
-description: Resilience isn't the absence of chaos; it's the ability to metabolize it.
+description: Structure becomes a cast if you're not careful.
 pull_quote: Ownership isn't a belief you argue someone into. It's a weight you let them feel.
 
 image: "/assets/img/directed-chaos.jpg"
@@ -18,31 +18,25 @@ Most leaders chase calm. They file down surprises, tune meetings, and polish che
 surprises like a hospital infection team. Calm passes for competence because it looks like control.
 It keeps leaders out of blame.
 
-So companies build structures that do the thinking for them: meetings that decide for you, roles
-that absorb risk, rituals that launder uncertainty into status updates. The failure mode has a name:
-**exporting responsibility upward.** Decisions centralize. Ownership diffuses. Everyone looks
-aligned while nobody owns the outcome.
+Structure decides where ownership lands. Casts centralize it. Good structure distributes it.
+
+So companies build casts: meetings that decide for you, roles that absorb risk, rituals that launder
+uncertainty into status updates. The failure mode has a name: **exporting responsibility upward.**
+Decisions centralize. Ownership diffuses. Everyone looks aligned while nobody owns the outcome.
 
 It feels like good management—absorbing chaos so others can focus. But taking responsibility _for_
 people isn't the same as developing people who can take responsibility. The former creates calm. The
 latter creates capability. Only one survives contact with reality.
 
-Calm organizations don't get strong. They get good at calm. Then they get brittle. When the first
-real hit comes, they shatter. The result isn't stability. It's learned helplessness dressed as good
-calendar hygiene.
-
-There's another way: **directed chaos**—practice under load. Small, controlled storms that teach
-people how to sail. You're not manufacturing problems. You're removing the structures that hide
-them. The sea is never calm. But navigation can be steady if the right people are steering.
-
-Resilience isn't the absence of chaos; it's the ability to metabolize it.
+There's another way: **directed chaos**—aim the storm instead of absorbing it. You're not
+manufacturing problems. You're removing the structures that hide them.
 
 ## The pattern
 
 One move makes this work: **remove a cast, then add structure.**
 
 Removal alone sparks panic. Structure alone creates theater. The move is paired. You take away the
-thing that immobilized thinking. You replace it with something that makes thinking survivable.
+thing that did the thinking. You replace it with something that makes thinking survivable.
 
 A cast is any structure that does the thinking for you—a process, a role, a meeting that has become
 a substitute for judgment. It prevents injury. Left on too long, it prevents growth. Good structure
@@ -80,7 +74,7 @@ not because structure is bad, but because this structure had become a cast.
 The first week was loud in the right way. Teams argued about planning. Leads looked around and
 realized there was no parent to escalate to. Two leads tried to resurrect the central meeting and
 learned why it existed: to export responsibility upward. Without a center, there was nowhere to
-export to. The weight landed on them.
+export it. The weight landed on them.
 
 Then the experimentation started. Some did it well on the first pass. Others stumbled, then learned.
 Either way, they were thinking. That was the point.
@@ -96,7 +90,7 @@ Projects became the atomic unit of work: a bounded bet with a finish line. Each 
 load-bearing owner—not a committee. We named the role **champion**, and that word did real work.
 
 A champion isn't a PM with a new hat. It's the person who carries the project when it gets heavy.
-They cut scope, pull in the right people, and say what's true. Their name stays attached when the
+They cut scope, pull in the right people, and tell the truth. Their name stays attached when the
 project is ugly. If there's no champion, it's not a project. It's a wish.
 
 Every six weeks champions sit with the exec team and walk through the guts in plain language. No
@@ -106,8 +100,7 @@ doing about it.
 That review isn't approval. It's forced contact with reality—an engineered place to surface
 uncertainty on purpose and treat it as a signal, not a sin.
 
-That was the pattern: remove the cast that exported responsibility, add structure that concentrated
-it.
+That was the pattern: stop absorbing the weight, let it land where it belongs.
 
 ## The payoff
 
@@ -123,15 +116,15 @@ The people who thrive here don't just tolerate turbulence—they generate it. I 
 **exothermic**: they produce more energy than they consume. They bring drafts instead of questions.
 They kill ambiguity for everyone around them.
 
-Directed chaos doesn't just build resilience—it builds exothermic people.
+Directed chaos doesn't just distribute ownership—it builds exothermic people.
 
 ## The invitation
 
 None of this is a plea for reckless change. Unmanaged chaos breaks people. Directed chaos makes
 them.
 
-You expose your people to waves, but you go through it with them. You give them structure. You don't
-flinch in the first storm. And then, the next time, they don't either.
+You stop absorbing the weight. You let it land where it belongs. You give them structure that makes
+bearing it survivable—not structure that bears it for them. And you don't flinch when they stumble.
 
 Resilience isn't something you can give people. It's something they build by going through storms.
 If you want a resilient company, stop promising calm seas.
