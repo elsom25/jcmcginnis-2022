@@ -6,7 +6,7 @@ permalink: /blog/directed-chaos/
 featured: true
 
 categories: ["Leadership"]
-description: Resilience doesn't come from calm. It comes from practice.
+description: Resilience isn't the absence of chaos; it's the ability to metabolize it.
 pull_quote: Ownership isn't a belief you argue someone into. It's a weight you let them feel.
 
 image: "/assets/img/directed-chaos.jpg"
@@ -15,12 +15,13 @@ image: "/assets/img/directed-chaos.jpg"
 World-class teams metabolize chaos. Calm teams break.
 
 Most leaders chase calm. They file down surprises, tune meetings, and polish checklists. They hunt
-surprises like a hospital infection team. Calm passes for competence because it looks like control. It keeps leaders out of blame.
+surprises like a hospital infection team. Calm passes for competence because it looks like control.
+It keeps leaders out of blame.
 
-So companies build cushions: meetings that decide for you, roles that absorb risk, rituals that
-launder uncertainty into status updates. The failure mode has a name: **exporting responsibility
-upward.** Decisions centralize. Ownership diffuses. Everyone looks aligned while nobody owns the
-outcome.
+So companies build structures that do the thinking for them: meetings that decide for you, roles
+that absorb risk, rituals that launder uncertainty into status updates. The failure mode has a name:
+**exporting responsibility upward.** Decisions centralize. Ownership diffuses. Everyone looks
+aligned while nobody owns the outcome.
 
 It feels like good management—absorbing chaos so others can focus. But taking responsibility _for_
 people isn't the same as developing people who can take responsibility. The former creates calm. The
@@ -31,26 +32,26 @@ real hit comes, they shatter. The result isn't stability. It's learned helplessn
 calendar hygiene.
 
 There's another way: **directed chaos**—practice under load. Small, controlled storms that teach
-people how to sail. The sea is never calm. But navigation can be steady if the right person is
-steering.
+people how to sail. You're not manufacturing problems. You're removing the structures that hide
+them. The sea is never calm. But navigation can be steady if the right people are steering.
 
-You build resilience the way you build muscle: stress, recover, repeat. Resilience isn't the absence
-of chaos; it's the ability to metabolize it.
+Resilience isn't the absence of chaos; it's the ability to metabolize it.
 
 ## The pattern
 
-Every change that worked used one move: **remove a cushion, then add structure.**
+One move makes this work: **remove a cast, then add structure.**
 
 Removal alone sparks panic. Structure alone creates theater. The move is paired. You take away the
-thing that did the thinking. You replace it with something that makes thinking survivable.
+thing that immobilized thinking. You replace it with something that makes thinking survivable.
 
-A cushion is anything that keeps you from doing the difficult thinking yourself—a process, a role, a
-meeting, a ritual that has become a crutch. Good structure is different: not something that does the
-work for people, but something that makes it safe to do the work themselves.
+A cast is any structure that does the thinking for you—a process, a role, a meeting that has become
+a substitute for judgment. It prevents injury. Left on too long, it prevents growth. Good structure
+is different: not something that centralizes decisions, but something that distributes ownership. It
+doesn't do the thinking—it makes thinking unavoidable.
 
 What changes is where responsibility lands—and where it's felt.
 
-If the system feels calm, ask: _What cushion is doing our thinking for us?_
+If the system feels calm, ask: _What's doing our thinking for us?_
 
 Here’s the cleanest example I have.
 
@@ -63,7 +64,7 @@ hit of alignment.
 Everyone left nodding. Work still slipped. Tidy, performative calm.
 
 Underneath, work was ticket soup: ad hoc initiatives that belonged to "teams" who shared blame but
-not conviction. The meeting was the cushion that absorbed responsibility so nobody had to.
+not conviction. The meeting was the cast that absorbed responsibility so nobody had to.
 
 Everyone "loved" the meeting, but if a meeting can't die, it's not a tool—it's a religion.
 
@@ -73,14 +74,13 @@ We didn't stop coordinating. We stopped pretending coordination was a meeting. P
 away. The fiction that one meeting could plan for everyone did.
 
 The deletion produced the most valuable artifact in the company: empty space. Within hours my Slack
-filled with DMs asking for a replacement ceremony, a new playbook, a definitive timebox. I said
-no—not because structure is bad, but because this structure had become a cast. Casts prevent injury.
-Left on too long, they prevent growth.
+filled with DMs asking for a replacement ceremony, a new playbook, a definitive timebox. I said no—
+not because structure is bad, but because this structure had become a cast.
 
 The first week was loud in the right way. Teams argued about planning. Leads looked around and
 realized there was no parent to escalate to. Two leads tried to resurrect the central meeting and
 learned why it existed: to export responsibility upward. Without a center, there was nowhere to
-export to. So they stopped looking.
+export to. The weight landed on them.
 
 Then the experimentation started. Some did it well on the first pass. Others stumbled, then learned.
 Either way, they were thinking. That was the point.
@@ -106,8 +106,8 @@ doing about it.
 That review isn't approval. It's forced contact with reality—an engineered place to surface
 uncertainty on purpose and treat it as a signal, not a sin.
 
-That was the pattern: remove the cushion that exported responsibility, add structure that
-concentrated it.
+That was the pattern: remove the cast that exported responsibility, add structure that concentrated
+it.
 
 ## The payoff
 
