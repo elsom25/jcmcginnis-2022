@@ -28,7 +28,7 @@ It feels like good management—absorbing chaos so others can focus. But taking 
 people isn't the same as developing people who can take responsibility. The former creates calm. The
 latter creates capability. Only one survives contact with reality.
 
-There's another way: **directed chaos**—aim the storm instead of absorbing it. You're not
+There's another way: **directed chaos**—direct the storms instead of absorbing them. You're not
 manufacturing problems. You're removing the structures that hide them.
 
 ## The pattern
@@ -43,11 +43,7 @@ a substitute for judgment. It prevents injury. Left on too long, it prevents gro
 is different: not something that centralizes decisions, but something that distributes ownership. It
 doesn't do the thinking—it makes thinking unavoidable.
 
-What changes is where responsibility lands—and where it's felt.
-
-If the system feels calm, ask: _What's doing our thinking for us?_
-
-Here’s the cleanest example I have.
+**Give people ownership. Stop absorbing it for them.**
 
 ## The meeting that couldn't die
 
@@ -57,8 +53,8 @@ hit of alignment.
 
 Everyone left nodding. Work still slipped. Tidy, performative calm.
 
-Underneath, work was ticket soup: ad hoc initiatives that belonged to "teams" who shared blame but
-not conviction. The meeting was the cast that absorbed responsibility so nobody had to.
+Underneath, work was ticket soup: ad hoc initiatives owned by "teams" who shared blame but not
+conviction. The meeting was the cast that absorbed responsibility so nobody had to own the outcome.
 
 Everyone "loved" the meeting, but if a meeting can't die, it's not a tool—it's a religion.
 
@@ -123,7 +119,7 @@ Directed chaos doesn't just distribute ownership—it builds exothermic people.
 None of this is a plea for reckless change. Unmanaged chaos breaks people. Directed chaos makes
 them.
 
-You stop absorbing the weight. You let it land where it belongs. You give them structure that makes
+You stop absorbing the weight. Let it land where it belongs. You give them structure that makes
 bearing it survivable—not structure that bears it for them. And you don't flinch when they stumble.
 
 Resilience isn't something you can give people. It's something they build by going through storms.
