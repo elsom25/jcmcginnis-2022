@@ -1,4 +1,5 @@
 .vscode
+.cursor/hooks/state/*
 
 # NPM
 node_modules

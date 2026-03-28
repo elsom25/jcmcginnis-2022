@@ -12,8 +12,8 @@ head_scripts:
       <!-- Dramatic gradient sweep - both modes -->
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_120%_80%_at_20%_-20%,rgba(225,29,72,0.12),transparent_50%)] dark:bg-[radial-gradient(ellipse_120%_80%_at_20%_-20%,rgba(225,29,72,0.35),transparent_50%)]"></div>
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_80%_120%,rgba(245,158,11,0.08),transparent_50%)] dark:bg-[radial-gradient(ellipse_80%_60%_at_80%_120%,rgba(245,158,11,0.20),transparent_50%)]"></div>
-      <!-- Noise texture - visible in both modes -->
-      <div class="absolute inset-0 opacity-[0.04] dark:opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22n%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%22.7%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22/%3E%3C/svg%3E');"></div>
+      <div class="pointer-events-none absolute inset-0 hero-atmosphere"></div>
+      <div class="pointer-events-none absolute inset-0 bg-grain"></div>
 
       <div class="relative w-full max-w-[90rem] mx-auto px-6 md:px-12 hero-content-padding pb-20 md:pb-28">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -40,7 +40,7 @@ head_scripts:
 
             <!-- Single punchy intro -->
             <p class="mt-12 text-xl md:text-2xl text-stone-600 dark:text-stone-400 max-w-2xl leading-relaxed animate-fade-in animate-delay-1">
-              <strong class="text-stone-900 dark:text-white">Engineer first, leader always.</strong> Hard problems at global scale. Teams that ship what others thought was impossible. Trust is the multiplier.
+              <strong class="text-stone-900 dark:text-white">Engineer first, leader always.</strong> Global-scale systems, small teams, ugly tradeoffs. I build teams that ship anyway. Trust is the multiplier.
             </p>
 
             <!-- CTAs -->
@@ -68,10 +68,22 @@ head_scripts:
                   <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
                   <span class="text-xs font-mono uppercase tracking-wider text-stone-500">Currently</span>
                 </div>
-                <p class="text-2xl font-bold text-stone-900 dark:text-white mb-2"><%= site.data.career.current.role %></p>
-                <p class="text-lg text-brand-600 dark:text-brand-400 mb-6">@ <a href="<%= site.data.career.current.url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity"><%= site.data.career.current.company %></a></p>
+                <% live_era = site.data.career.eras.find { |e| e["current"] } %>
+                <% shopify_eras = site.data.career.eras.select { |e| e["company"].to_s == "Shopify" } %>
+                <% shopify_era = shopify_eras.last %>
+                <% if live_era %>
+                  <p class="text-2xl font-bold text-stone-900 dark:text-white mb-2"><%= live_era.role %></p>
+                  <p class="text-lg text-brand-600 dark:text-brand-400 mb-6">@ <a href="<%= live_era.url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity"><%= live_era.company %></a></p>
+                <% end %>
                 <div class="pt-6 border-t border-stone-200 dark:border-stone-800">
-                  <p class="text-sm text-stone-500">Previously <%= site.data.career.eras[1].duration %> @ <a href="<%= site.data.career.eras[1].url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity"><%= site.data.career.eras[1].company %></a></p>
+                  <p class="text-sm text-stone-500">
+                    Previously @
+                    <% if shopify_era %>
+                      <a href="<%= shopify_era.url %>" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">Shopify</a>
+                    <% else %>
+                      Shopify
+                    <% end %>
+                  </p>
                 </div>
               </div>
             </div>
@@ -81,324 +93,76 @@ head_scripts:
 
     </section>
 
-    <!-- THE LESSONS - High Contrast Dark Section (Accent Zone) -->
-    <section id="lessons" class="accent-zone relative">
-      <!-- Base: Dark in both modes for high contrast -->
-      <div class="absolute inset-0 bg-gradient-to-b from-stone-900 via-stone-950 to-stone-900 dark:from-black dark:via-stone-950 dark:to-black"></div>
-      <!-- Colored gradient overlays - visible in BOTH modes -->
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_10%_20%,rgba(225,29,72,0.25),transparent)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_60%_40%_at_90%_40%,rgba(16,185,129,0.20),transparent)]"></div>
-      <div class="absolute inset-0 bg-[radial-gradient(ellipse_70%_50%_at_30%_80%,rgba(59,130,246,0.20),transparent)]"></div>
+    <!-- MY JOURNEY — narrative instrument panel: copy-first, shared rail axis -->
+    <section id="lessons" class="lessons-stage relative border-t border-stone-200/80 dark:border-stone-800/60">
+      <div class="absolute inset-0 bg-linear-to-b from-stone-50 via-white to-stone-100/70 dark:from-stone-950 dark:via-[#111113] dark:to-black"></div>
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_95%_56%_at_20%_-20%,rgba(225,29,72,0.06),transparent_60%)] dark:bg-[radial-gradient(ellipse_100%_58%_at_20%_-20%,rgba(244,63,94,0.12),transparent_60%)]"></div>
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_62%_at_78%_118%,rgba(245,158,11,0.05),transparent_58%)] dark:bg-[radial-gradient(ellipse_90%_62%_at_78%_118%,rgba(245,158,11,0.10),transparent_58%)]"></div>
+      <div class="pointer-events-none absolute inset-0 lessons-atmosphere"></div>
+      <div class="pointer-events-none absolute inset-0 bg-grain"></div>
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-linear-to-b from-transparent to-stone-950/8 dark:to-black/18"></div>
 
-      <!-- Header - Smaller, more distinct from page hero -->
-      <div class="relative z-10 pt-20 pb-8 md:pt-28 md:pb-12">
-        <div class="w-full max-w-5xl mx-auto px-6 md:px-12 text-center">
-          <%= render "section_header", label: "The Lessons", color: "brand", alignment: "center", size: "small" %>
-          <h2 class="text-hero text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-[0.95] mb-6">
-            <span class="text-brand-400">Chaos</span> <span class="text-white">isn't the enemy.</span><br>
-            <span class="text-sky-400">Comfort</span> <span class="text-white">is.</span>
-          </h2>
-          <p class="text-base md:text-lg text-stone-400 max-w-2xl mx-auto leading-relaxed">
-            <%= site.data.career.opening.subhead %>
-          </p>
+      <div class="relative z-10 w-full max-w-[90rem] mx-auto px-6 md:px-12">
+        <div class="relative">
+          <div class="pt-16 pb-8 md:pt-24 md:pb-12">
+            <%= render "section_header", label: "My Journey", color: "stone", alignment: "left", size: "small" %>
+            <h2 class="text-hero mt-4 text-3xl leading-[1.05] text-stone-900 sm:text-4xl md:text-5xl lg:text-[3.2rem] dark:text-white">
+              <span class="text-stone-900 dark:text-white">Chaos isn't the enemy.</span><br>
+              <span class="text-stone-500 dark:text-brand-400/95">Comfort is.</span>
+            </h2>
+          </div>
+
+          <div id="timeline-container" class="relative z-[1] pb-20 md:pb-28 lg:pb-0">
+            <!-- Rail: fixed x-axis via CSS — dots + index share w-11 column -->
+            <div id="timeline-track" class="hidden md:block absolute top-0 left-[var(--lessons-rail-center)] z-[1] w-px -translate-x-1/2 pointer-events-none" style="height: 0;">
+              <div class="absolute inset-0 bg-stone-300/85 dark:bg-stone-700/55"></div>
+              <div id="timeline-fill" class="absolute top-0 left-0 right-0 overflow-hidden" style="height: 0%;">
+                <div class="absolute top-0 left-0 right-0 h-[8000px] w-px bg-brand-500/70 dark:bg-brand-500/55"></div>
+              </div>
+            </div>
+
+            <% chapter_offset = 0 %>
+            <% site.data.career.eras.each_with_index do |era, era_idx| %>
+              <% visible_chapter_count =
+                   Array(era["chapters"]).then do |chapters|
+                     if chapters.empty?
+                       Array(era["markers"]).map(&:to_s).map(&:strip).reject(&:empty?).any? ? 1 : 0
+                     else
+                       chapters.count do |chapter_data|
+                         Array(chapter_data["markers"]).map(&:to_s).map(&:strip).reject(&:empty?).any?
+                       end
+                     end
+                   end %>
+              <%= render "career_era", era: era, index: era_idx, is_last: era_idx == site.data.career.eras.size - 1, chapter_offset: chapter_offset %>
+              <% chapter_offset += visible_chapter_count %>
+            <% end %>
+            <div class="hidden h-28 lg:block" aria-hidden="true"></div>
+          </div>
+
         </div>
       </div>
+    </section>
 
-      <!-- Timeline Container -->
-      <div id="timeline-container" class="relative">
-        <!-- Timeline Track - Dull background, gradient fills on scroll with layered glow -->
-        <div id="timeline-track" class="hidden md:block absolute left-1/2 -translate-x-1/2 w-1 z-[1]" style="top: 0; bottom: 0;">
-          <!-- Dull/dark background track (always visible) -->
-          <div class="absolute inset-0 rounded-full bg-stone-700/30"></div>
-          <!-- Core fill wrapper - clips the main line -->
-          <div id="timeline-fill" class="absolute top-0 left-0 right-0 overflow-hidden rounded-full" style="height: 0%;">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1 h-[5000px] rounded-full" style="background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%, #3b82f6 100%);"></div>
-          </div>
-        </div>
-        <!-- Glow layers -->
-        <div id="timeline-glow" class="hidden md:block absolute left-1/2 -translate-x-1/2 pointer-events-none" style="width: 200px; top: 0; height: 0px;">
-          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-16 rounded-full opacity-[0.12]" style="height: 100%; filter: blur(40px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
-          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-8 rounded-full opacity-[0.18]" style="height: 100%; filter: blur(24px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
-          <div class="glow-layer absolute top-0 left-1/2 -translate-x-1/2 w-4 rounded-full opacity-[0.22]" style="height: 100%; filter: blur(12px); background: linear-gradient(to bottom, #e11d48 0%, #10b981 40%, #3b82f6 90%);"></div>
-        </div>
+    <section id="thesis-section" class="relative border-t border-stone-200 dark:border-stone-800 bg-stone-950 text-stone-100 dark:bg-black">
+      <div class="pointer-events-none absolute inset-x-0 top-0 h-20 bg-linear-to-b from-white/2 to-transparent dark:from-white/[0.03]"></div>
+      <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_20%_10%,rgba(244,63,94,0.10),transparent_55%)] dark:bg-[radial-gradient(ellipse_80%_60%_at_20%_10%,rgba(244,63,94,0.14),transparent_55%)]"></div>
+      <div class="w-full max-w-[90rem] mx-auto px-6 py-28 md:px-12 md:py-36">
+        <div class="mx-auto max-w-[42rem]">
+          <p class="mb-12 font-mono text-[10px] uppercase tracking-[0.34em] text-stone-500 dark:text-stone-500">
+            The Thesis
+          </p>
 
-        <% global_lesson_index = 0 %>
-
-        <!-- Era: Boltmade -->
-        <div class="timeline-era relative z-[2]" data-era="boltmade" data-color="brand">
-          <!-- Era Header - Clean: number + company + years -->
-          <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
-            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
-              <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-brand-900/95 via-brand-800/95 to-brand-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-brand-500/20 border border-brand-600/30"></div>
-                <div class="relative flex items-center justify-between px-5 py-4">
-                  <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-                      <span class="text-sm font-bold text-white">01</span>
-                    </div>
-                    <div>
-                      <h3 class="text-xl font-serif font-bold">
-                        <a href="<%= site.data.career.eras[0].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[0].company %></a>
-                      </h3>
-                      <p class="text-xs font-mono text-brand-300/70"><%= site.data.career.eras[0].years %></p>
-                    </div>
-                  </div>
-                  <div class="hidden sm:block text-xs font-mono text-brand-300/50 uppercase tracking-wider">The Foundation</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Lessons -->
-          <div class="relative pt-4 pb-2">
-            <% site.data.career.eras[0].points.each_with_index do |point, i| %>
-              <% is_right = global_lesson_index.even? %>
-              <article class="lesson-panel reveal-on-scroll relative md:-mt-8 first:mt-0" data-lesson="boltmade-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
-                <div class="w-full max-w-5xl mx-auto px-6 md:px-12 py-6 md:py-8">
-                  <div class="relative md:grid md:grid-cols-2 md:gap-12">
-                    <!-- Timeline dot -->
-                    <div class="timeline-dot hidden md:block absolute left-1/2 top-8 -translate-x-1/2 z-10">
-                      <div class="w-3 h-3 rounded-full bg-brand-500 ring-2 ring-stone-900 shadow-lg shadow-brand-500/50"></div>
-                    </div>
-
-                    <% if is_right %>
-                      <div class="hidden md:block"></div>
-                    <% end %>
-
-                    <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
-                      <!-- Zone 1: The Lesson (hero) -->
-                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-3">
-                        <%= point.lesson %>
-                      </h4>
-
-                      <!-- Zone 2: Context (byline + proof) -->
-                      <div class="mb-4">
-                        <p class="text-sm italic text-brand-300/90 mb-1.5">
-                          <%= point.byline %>
-                        </p>
-                        <% if point.proof %>
-                          <p class="text-[11px] font-mono text-stone-500/80 tracking-wide"><%= point.proof %></p>
-                        <% end %>
-                      </div>
-
-                      <!-- Zone 3: The Story (detail) -->
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm border-t border-stone-800/50 pt-4">
-                        <% point.detail.strip.split("\n\n").each do |p| %>
-                          <p><%= p.strip %></p>
-                        <% end %>
-                      </div>
-                    </div>
-
-                    <% unless is_right %>
-                      <div class="hidden md:block"></div>
-                    <% end %>
-                  </div>
-                </div>
-              </article>
-              <% global_lesson_index += 1 %>
-            <% end %>
-          </div>
-        </div>
-
-        <!-- Era: Shopify -->
-        <div class="timeline-era relative z-[2]" data-era="shopify" data-color="emerald">
-          <!-- Era Header - Clean: number + company + years -->
-          <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
-            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
-              <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-emerald-900/95 via-emerald-800/95 to-emerald-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-emerald-500/20 border border-emerald-600/30"></div>
-                <div class="relative flex items-center justify-between px-5 py-4">
-                  <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center">
-                      <span class="text-sm font-bold text-white">02</span>
-                    </div>
-                    <div>
-                      <h3 class="text-xl font-serif font-bold">
-                        <a href="<%= site.data.career.eras[1].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[1].company %></a>
-                      </h3>
-                      <p class="text-xs font-mono text-emerald-300/70"><%= site.data.career.eras[1].years %> · <%= site.data.career.eras[1].duration %></p>
-                    </div>
-                  </div>
-                  <div class="hidden sm:block text-xs font-mono text-emerald-300/50 uppercase tracking-wider">The Crucible</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Lessons - CSS Grid for compact overlapping layout -->
-          <div class="relative pt-4 pb-8">
-            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
-              <%# Use CSS Grid with row spans for visual overlap on desktop %>
-              <div class="md:grid md:grid-cols-[1fr_24px_1fr] md:gap-x-6" style="grid-auto-rows: minmax(48px, auto);">
-                <% site.data.career.eras[1].points.each_with_index do |point, i| %>
-                  <% is_right = global_lesson_index.even? %>
-                  <%# Each lesson spans 6 rows for more content, starting offset by 4 rows from previous %>
-                  <% row_start = (i * 4) + 1 %>
-
-                  <%# Timeline dot in center column %>
-                  <div class="hidden md:flex items-start justify-center pt-2 timeline-dot z-10" style="grid-column: 2; grid-row: <%= row_start %>;">
-                    <div class="w-3 h-3 rounded-full bg-emerald-500 ring-2 ring-stone-900 shadow-lg shadow-emerald-500/50"></div>
-                  </div>
-
-                  <%# Lesson content %>
-                  <article class="lesson-panel reveal-on-scroll py-4 md:py-0" style="grid-column: <%= is_right ? 3 : 1 %>; grid-row: <%= row_start %> / span 6;" data-lesson="shopify-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
-                    <div class="<%= is_right ? '' : 'md:text-right' %>">
-                      <!-- Zone 1: The Lesson (hero) -->
-                      <% if point.period %>
-                        <p class="text-[10px] font-mono text-emerald-400/60 mb-2 tracking-wider uppercase"><%= point.period %></p>
-                      <% end %>
-                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-3">
-                        <%= point.lesson %>
-                      </h4>
-
-                      <!-- Zone 2: Context (byline + proof) -->
-                      <div class="mb-4">
-                        <p class="text-sm italic text-emerald-300/90 mb-1.5">
-                          <%= point.byline %>
-                        </p>
-                        <% if point.proof %>
-                          <p class="text-[11px] font-mono text-stone-500/80 tracking-wide"><%= point.proof %></p>
-                        <% end %>
-                      </div>
-
-                      <!-- Zone 3: The Story (detail) -->
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm border-t border-stone-800/50 pt-4">
-                        <% point.detail.strip.split("\n\n").each do |p| %>
-                          <p><%= p.strip %></p>
-                        <% end %>
-                      </div>
-                    </div>
-                  </article>
-
-                  <% global_lesson_index += 1 %>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Era: GrowthLoop -->
-        <div class="timeline-era relative z-[2]" data-era="growthloop" data-color="sky">
-          <!-- Era Header - Clean: number + company + years -->
-          <div class="era-header sticky z-30 pt-4 pb-2" style="top: 64px;">
-            <div class="w-full max-w-5xl mx-auto px-6 md:px-12">
-              <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-sky-900/95 via-sky-800/95 to-sky-900/95 rounded-xl backdrop-blur-sm shadow-lg shadow-sky-500/20 border border-sky-600/30"></div>
-                <div class="relative flex items-center justify-between px-5 py-4">
-                  <div class="flex items-center gap-4">
-                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center relative">
-                      <span class="absolute -top-1.5 -right-1.5 w-2 h-2 bg-sky-400 rounded-full animate-pulse"></span>
-                      <span class="text-sm font-bold text-white">03</span>
-                    </div>
-                    <div>
-                      <h3 class="text-xl font-serif font-bold">
-                        <a href="<%= site.data.career.eras[2].url %>" target="_blank" rel="noopener" class="text-white hover:opacity-80 transition-opacity"><%= site.data.career.eras[2].company %></a>
-                      </h3>
-                      <p class="text-xs font-mono text-sky-300/70"><%= site.data.career.eras[2].years %></p>
-                    </div>
-                  </div>
-                  <div class="hidden sm:flex items-center gap-1.5 text-xs font-mono text-sky-300/50 uppercase tracking-wider">
-                    <span class="w-1.5 h-1.5 bg-sky-400 rounded-full animate-pulse"></span>
-                    The Proving Ground
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Lessons -->
-          <div class="relative pt-4 pb-2">
-            <% site.data.career.eras[2].points.each_with_index do |point, i| %>
-              <% is_right = global_lesson_index.even? %>
-              <article class="lesson-panel reveal-on-scroll relative md:-mt-8 first:mt-0" data-lesson="growthloop-<%= i %>" data-side="<%= is_right ? 'right' : 'left' %>">
-                <div class="w-full max-w-5xl mx-auto px-6 md:px-12 py-6 md:py-8">
-                  <div class="relative md:grid md:grid-cols-2 md:gap-12">
-                    <!-- Timeline dot -->
-                    <div class="timeline-dot hidden md:block absolute left-1/2 top-8 -translate-x-1/2 z-10">
-                      <div class="w-3 h-3 rounded-full bg-sky-500 ring-2 ring-stone-900 shadow-lg shadow-sky-500/50 animate-pulse"></div>
-                    </div>
-
-                    <% if is_right %>
-                      <div class="hidden md:block"></div>
-                    <% end %>
-
-                    <div class="<%= is_right ? 'md:pl-8' : 'md:pr-8 md:text-right' %>">
-                      <!-- Zone 1: The Lesson (hero) -->
-                      <h4 class="font-serif text-lg md:text-xl font-semibold text-white leading-tight mb-3">
-                        <%= point.lesson %>
-                      </h4>
-
-                      <!-- Zone 2: Context (byline + proof) -->
-                      <div class="mb-4">
-                        <p class="text-sm italic text-sky-300/90 mb-1.5">
-                          <%= point.byline %>
-                        </p>
-                        <% if point.proof %>
-                          <p class="text-[11px] font-mono text-stone-500/80 tracking-wide"><%= point.proof %></p>
-                        <% end %>
-                      </div>
-
-                      <!-- Zone 3: The Story (detail) -->
-                      <div class="text-stone-400 leading-relaxed space-y-2 text-sm border-t border-stone-800/50 pt-4">
-                        <% point.detail.strip.split("\n\n").each do |p| %>
-                          <p><%= p.strip %></p>
-                        <% end %>
-                      </div>
-                    </div>
-
-                    <% unless is_right %>
-                      <div class="hidden md:block"></div>
-                    <% end %>
-                  </div>
-                </div>
-              </article>
-              <% global_lesson_index += 1 %>
-            <% end %>
-          </div>
-        </div>
-
-        <!-- The Thesis - Timeline ends at top boundary -->
-        <div id="thesis-section" class="relative pt-16 pb-20 md:pt-20 md:pb-28 z-10">
-          <div class="w-full max-w-3xl mx-auto px-6 md:px-12">
-            <!-- Thesis card - z-index ensures timeline doesn't overlap -->
-            <div id="thesis-card" class="relative z-20 reveal-on-scroll">
-              <!-- Glowing border effect -->
-              <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-brand-500 via-emerald-500 to-sky-500 opacity-50 blur-sm"></div>
-              <div class="absolute -inset-px rounded-2xl bg-gradient-to-r from-brand-500 via-emerald-500 to-sky-500 opacity-30"></div>
-
-              <div class="relative bg-stone-950 rounded-2xl p-8 md:p-12 border border-stone-700/50">
-                <p class="text-xs font-mono uppercase tracking-widest text-stone-500 mb-8 text-center">The Thesis</p>
-
-                <blockquote class="space-y-3 md:space-y-4 text-center">
-                  <p class="font-serif text-xl sm:text-2xl md:text-3xl leading-tight">
-                    <span class="text-brand-400">High-agency</span> <span class="text-white">trumps everything.</span>
-                  </p>
-                  <p class="font-serif text-xl sm:text-2xl md:text-3xl leading-tight">
-                    <span class="text-emerald-400">Trust</span> <span class="text-white">unlocks it.</span>
-                  </p>
-                  <p class="font-serif text-xl sm:text-2xl md:text-3xl leading-tight">
-                    <span class="text-sky-400">Directed chaos</span> <span class="text-white">forges it.</span>
-                  </p>
-                </blockquote>
-
-                <div class="mt-8 pt-6 border-t border-stone-800 text-center">
-                  <p class="text-base md:text-lg text-stone-400">
-                    That's the work.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <!-- "More to come" indicator -->
-            <div class="mt-12 flex flex-col items-center gap-2">
-              <div class="flex items-center gap-1.5">
-                <div class="w-1 h-1 rounded-full bg-stone-600 animate-pulse"></div>
-                <div class="w-1 h-1 rounded-full bg-stone-600/60 animate-pulse" style="animation-delay: 0.2s"></div>
-                <div class="w-1 h-1 rounded-full bg-stone-600/30 animate-pulse" style="animation-delay: 0.4s"></div>
-              </div>
-              <p class="text-xs font-mono text-stone-600">Story in progress...</p>
-            </div>
-          </div>
+          <blockquote class="space-y-7 md:space-y-8">
+            <p class="max-w-[15ch] font-serif text-4xl leading-[0.96] tracking-tight text-stone-100 sm:text-5xl md:text-[3.65rem]">
+              High-agency trumps everything.
+            </p>
+            <p class="max-w-[17ch] font-serif text-4xl leading-[0.96] tracking-tight text-stone-100 sm:text-5xl md:text-[3.65rem]">
+              Trust is the multiplier.
+            </p>
+            <p class="max-w-[18ch] font-serif text-4xl leading-[0.96] tracking-tight text-stone-100 sm:text-5xl md:text-[3.65rem]">
+              Directed chaos forges it.
+            </p>
+          </blockquote>
         </div>
       </div>
     </section>
@@ -543,7 +307,7 @@ head_scripts:
             Let's build something<br class="hidden sm:block" /> <em class="text-accent-300">extraordinary</em>
           </h2>
           <p class="text-xl text-white/70 max-w-2xl mx-auto mb-12">
-            Always up for hard conversations about leadership and the craft of building teams. Reach out.
+            Leadership, teams, and the messy middle between strategy and code. If you're wrestling with that, say hello.
           </p>
         </div>
 

@@ -33,6 +33,9 @@ import build from "./config/esbuild.defaults.js";
  * @type {BuildOptions}
  */
 const esbuildOptions = {
+  entryNames: process.argv.includes("--watch")
+    ? "[dir]/[name]"
+    : "[dir]/[name].[hash]",
   entryPoints: [
     "./frontend/javascript/index.js",
     "./frontend/styles/index.css",

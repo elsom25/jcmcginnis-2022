@@ -1,0 +1,18 @@
+---
+description: Writing personal narrative copy for the site
+globs: src/**/*.{md,erb,yml}
+alwaysApply: false
+---
+# Personal Narrative Copy
+
+- Homepage copy is not LinkedIn. Curate, don't catalog.
+- Give each era or section one clear job: what changed, what it proves, and why it leads to the next beat.
+- Earn transitions. Do not drop facts, proper nouns, or examples out of nowhere.
+- Start with concrete scenes and behavior. Let the lesson emerge from the example.
+- Prefer observed behavior over labels: "thin updates" beats "misalignment"; "responsibility moved upward" beats "low agency."
+- Keep proper nouns only when they prove scale, taste, or emotional weight. Cut internal lore and glossary-like phrasing.
+- Distinguish the official role from the actual work when that gap matters to the story.
+- End sections with a live sentence, not a resume summary. For active chapters, close on the open problem now underway.
+- Preserve sharp filter words that are authentically Jesse, such as `truth-seeking`, when they attract the right readers.
+- Prefer raw over polished, but never self-pitying. Show constraints matter-of-factly and move quickly to agency.
+- When writing about AI transformation, frame it as an operating paradox and behavioral shift, not trend-chasing: an AI company where nobody is operating AI-first is a real story.

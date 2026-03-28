@@ -1,0 +1,216 @@
+<%# locals: era, index, is_last, chapter_offset %>
+<% idx = index %>
+<% num = format("%02d", idx + 1) %>
+<% chapter_offset ||= 0 %>
+<% era_top_spacing = idx.zero? ? "" : "lg:pt-16 xl:pt-20" %>
+<% has_url = era["url"].to_s.strip != "" %>
+<% era_live = era["current"] %>
+<%
+  theme_key = era["theme"].to_s.strip
+  theme_map = {
+    "start" => {
+      "data_era" => "start",
+      "accent" => "amber",
+      "accent_border" => "border-amber-600/50",
+      "link_hover" => "hover:text-amber-400",
+      "dot_fill" => "bg-amber-600",
+      "dot_ring" => "ring-amber-900/40",
+      "accent_rgb" => "245 158 11",
+    },
+    "boltmade" => {
+      "data_era" => "boltmade",
+      "accent" => "brand",
+      "accent_border" => "border-rose-600/50",
+      "link_hover" => "hover:text-rose-400",
+      "dot_fill" => "bg-rose-600",
+      "dot_ring" => "ring-rose-950/30",
+      "accent_rgb" => "244 63 94",
+    },
+    "shopify" => {
+      "data_era" => "shopify",
+      "accent" => "emerald",
+      "accent_border" => "border-emerald-600/50",
+      "link_hover" => "hover:text-emerald-400",
+      "dot_fill" => "bg-emerald-600",
+      "dot_ring" => "ring-emerald-950/30",
+      "accent_rgb" => "16 185 129",
+    },
+    "growthloop" => {
+      "data_era" => "growthloop",
+      "accent" => "sky",
+      "accent_border" => "border-sky-500/50",
+      "link_hover" => "hover:text-sky-400",
+      "dot_fill" => "bg-sky-500",
+      "dot_ring" => "ring-sky-950/30",
+      "accent_rgb" => "14 165 233",
+    },
+  }
+  theme = theme_map.fetch(theme_key, theme_map["growthloop"])
+  data_era = theme["data_era"]
+  accent = theme["accent"]
+  accent_border = theme["accent_border"]
+  link_hover = theme["link_hover"]
+  dot_fill = theme["dot_fill"]
+  dot_ring = theme["dot_ring"]
+  accent_rgb = theme["accent_rgb"]
+
+  chapters = Array(era["chapters"])
+  if chapters.empty?
+    chapters = [
+      {
+        "name" => era["name"],
+        "years" => era["years"],
+        "markers" => era["markers"],
+      },
+    ]
+  end
+
+  visible_chapters = chapters.filter_map do |chapter_data|
+    chapter_markers = Array(chapter_data["markers"]).map(&:to_s).map(&:strip).reject(&:empty?)
+    next if chapter_markers.empty?
+
+    chapter_data.merge("markers" => chapter_markers)
+  end
+
+  chapter_count = visible_chapters.length
+  last_chapter_idx = chapter_count - 1
+  first_chapter_name = visible_chapters.first&.fetch("name", "").to_s.strip
+  mobile_label = first_chapter_name
+%>
+
+<div class="timeline-era relative z-2 <%= idx == 0 ? "is-active" : "" %> <%= era_top_spacing %> lg:grid lg:grid-cols-[var(--lessons-cockpit-width)_minmax(0,1fr)] lg:gap-x-[var(--lessons-grid-gap)]" data-era="<%= data_era %>" data-color="<%= accent %>" data-era-index="<%= idx %>" style="--timeline-accent: rgb(<%= accent_rgb %>); --timeline-accent-soft: rgb(<%= accent_rgb %> / 0.16); --timeline-accent-border: rgb(<%= accent_rgb %> / 0.28);">
+  <div class="lg:hidden">
+    <div class="flex gap-3 md:gap-4">
+      <div class="flex w-11 shrink-0 items-center justify-center" aria-hidden="true">
+        <span class="inline-flex h-9 min-w-9 items-center justify-center rounded border <%= accent_border %> bg-white/90 px-2 font-mono text-[11px] tabular-nums tracking-widest text-stone-600 shadow-sm shadow-stone-200/70 dark:bg-black/90 dark:text-stone-100 dark:shadow-none">
+          <%= num %>
+        </span>
+      </div>
+      <div class="era-frame min-w-0 flex-1 px-4 py-3.5 md:px-5 md:py-4">
+        <div class="flex min-h-13 flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+          <div class="min-w-0 flex-1">
+            <h3 class="font-serif text-xl font-semibold tracking-tight text-stone-900 md:text-[1.65rem] md:leading-tight dark:text-stone-100">
+              <% if has_url %>
+                <a href="<%= era.url %>" target="_blank" rel="noopener" class="text-stone-900 transition-colors dark:text-stone-100 <%= link_hover %>"><%= era.company %></a>
+              <% else %>
+                <%= era.company %>
+              <% end %>
+            </h3>
+            <% if era.years.to_s.strip != "" %>
+              <p class="mt-1 font-mono text-[11px] tracking-[0.08em] text-stone-500 dark:text-stone-400/90"><%= era.years %></p>
+            <% end %>
+          </div>
+          <div class="flex shrink-0 items-center gap-3 sm:justify-end sm:border-l sm:border-stone-200/90 sm:pl-6 dark:sm:border-stone-600/50">
+            <% if era_live %>
+              <span class="inline-block h-1.5 w-1.5 animate-pulse rounded-full bg-sky-500" aria-hidden="true"></span>
+            <% end %>
+            <p class="max-w-56 font-mono text-[10px] uppercase leading-snug tracking-[0.2em] text-stone-500 md:text-[11px] dark:text-stone-400">
+              <%= mobile_label %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hidden lg:block">
+    <div class="sticky top-24 select-none">
+      <div class="timeline-cockpit-inner flex flex-col items-end pr-1 text-right" data-timeline-cockpit>
+        <div class="timeline-cockpit-num font-mono text-[7.6rem] leading-none tracking-[-0.11em] text-stone-300 dark:text-stone-800 xl:text-[8rem]">
+          <%= num %>
+        </div>
+        <div class="timeline-cockpit-copy mt-3.5 w-46 xl:w-48">
+          <% if has_url %>
+            <a href="<%= era.url %>" target="_blank" rel="noopener" class="timeline-cockpit-company font-serif text-[1.85rem] leading-[0.96] tracking-tight text-stone-900 transition-colors dark:text-stone-100 xl:text-[1.95rem] <%= link_hover %>">
+              <%= era.company %>
+            </a>
+          <% else %>
+            <p class="timeline-cockpit-company font-serif text-[1.85rem] leading-[0.96] tracking-tight text-stone-900 dark:text-stone-100 xl:text-[1.95rem]">
+              <%= era.company %>
+            </p>
+          <% end %>
+          <div class="timeline-cockpit-rule ml-auto mt-3.5 h-px w-14 bg-stone-700 dark:bg-stone-600"></div>
+          <% if era.years.to_s.strip != "" %>
+            <p class="timeline-cockpit-years mt-3 font-mono text-[11px] tracking-[0.12em] text-stone-600 dark:text-stone-600">
+              <%= era.years %>
+            </p>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative pt-4 pb-8 md:pt-5 md:pb-10 lg:pt-0 lg:pb-0">
+    <% visible_chapters.each_with_index do |chapter_data, chapter_idx| %>
+      <% chapter_name = chapter_data["name"].to_s.strip %>
+      <% chapter_years = chapter_data["years"].to_s.strip %>
+      <% chapter_markers = chapter_data["markers"] %>
+      <% chapter_index = chapter_offset + chapter_idx %>
+      <% is_last_chapter = chapter_idx == last_chapter_idx %>
+      <% chapter_section_spacing = is_last_chapter ? "pb-6 md:pb-8" : "pb-1 md:pb-2" %>
+      <% chapter_header_spacing = is_last_chapter ? "mb-5 md:mb-6 lg:mb-7" : "mb-3 md:mb-4 lg:mb-4" %>
+      <% marker_last_padding = is_last_chapter ? "last:pb-6 md:last:pb-8 lg:last:pb-0" : "last:pb-1 md:last:pb-2 lg:last:pb-3" %>
+      <% chapter_letter = +""
+         remainder = chapter_index
+         loop do
+           chapter_letter.prepend((97 + (remainder % 26)).chr)
+           remainder = (remainder / 26) - 1
+           break if remainder < 0
+         end %>
+      <% last_midx = chapter_markers.length - 1 %>
+
+      <section class="timeline-chapter relative <%= chapter_section_spacing %> lg:contents">
+        <div
+          class="<%= chapter_header_spacing %> lg:sticky lg:top-24 lg:z-20"
+          data-chapter-index="<%= chapter_idx %>">
+          <div class="grid min-h-10 grid-cols-[var(--lessons-rail-width)_minmax(0,1fr)_auto] items-center rounded-lg border border-stone-200/90 bg-white shadow-[0_10px_24px_-22px_rgba(28,25,23,0.16),inset_0_1px_0_rgba(255,255,255,0.82)] dark:border-zinc-700 dark:bg-zinc-950 dark:shadow-none">
+            <div class="flex h-full items-center justify-center">
+              <span class="inline-grid h-6 w-6 place-items-center rounded-sm border <%= accent_border %> bg-stone-50 font-mono text-[10px] font-semibold uppercase leading-none tracking-[0.18em] text-(--timeline-accent) dark:bg-zinc-900" aria-hidden="true">
+                <%= chapter_letter %>
+              </span>
+            </div>
+
+            <div class="min-w-0 px-4 py-2">
+              <p class="truncate font-mono text-[11px] font-medium uppercase leading-none tracking-[0.2em] text-stone-700 dark:text-stone-200">
+                <%= chapter_name %>
+              </p>
+            </div>
+            <% if chapter_years != "" %>
+              <p class="shrink-0 pr-4 font-mono text-[10px] tracking-[0.12em] text-stone-500 dark:text-stone-400">
+                <%= chapter_years %>
+              </p>
+            <% end %>
+          </div>
+        </div>
+
+        <% chapter_markers.each_with_index do |marker_text, marker_idx| %>
+          <article
+            class="lesson-panel timeline-marker reveal-on-scroll relative flex gap-3 pb-8 <%= marker_last_padding %> md:gap-4 md:pb-10"
+            data-lesson="<%= data_era %>-<%= idx %>-<%= chapter_idx %>-<%= marker_idx %>"
+            data-era-index="<%= idx %>">
+            <div class="flex w-11 shrink-0 justify-center md:pt-1.5" aria-hidden="true">
+              <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full md:hidden <%= dot_fill %>"></span>
+              <div
+                class="hidden md:block relative z-1 h-2.5 w-2.5 shrink-0 rounded-full <%= dot_fill %> ring-2 ring-white dark:ring-black <%= dot_ring %>"
+                <% if idx == 0 && chapter_idx == 0 && marker_idx == 0 %>
+                  data-timeline-rail-anchor
+                <% end %>></div>
+            </div>
+
+            <div class="min-w-0 max-w-184 flex-1 space-y-4 text-[15px] leading-[1.68] text-stone-700 md:text-[1.04rem] md:leading-[1.72] dark:text-stone-400 [&>p]:text-pretty">
+              <% marker_text.split(/\r?\n(?:\s*\r?\n)+/).each do |para| %>
+                <% t = para.strip %>
+                <% next if t.empty? %>
+                <p><%= t %></p>
+              <% end %>
+            </div>
+
+            <% if is_last && chapter_idx == last_chapter_idx && marker_idx == last_midx %>
+              <div class="pointer-events-none absolute bottom-0 left-(--lessons-rail-center) hidden h-px w-px -translate-x-1/2 md:block" data-timeline-rail-end aria-hidden="true"></div>
+            <% end %>
+          </article>
+        <% end %>
+      </section>
+    <% end %>
+  </div>
+</div>
