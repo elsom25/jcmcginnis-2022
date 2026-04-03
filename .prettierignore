@@ -1,3 +1,7 @@
+# Bridgetown-shipped; `bridgetown esbuild update` overwrites this. Prettier’s
+# formatting fights upstream, so exclude it from `npm run format`.
+config/esbuild.defaults.js
+
 # Build output
 output/
 

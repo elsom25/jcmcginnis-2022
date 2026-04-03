@@ -1,77 +1,86 @@
-# Career data - lessons that shaped how I lead
-
-opening:
-  headline: "Chaos isn't the enemy. Comfort is."
-  subhead: "Most leaders chase stability. I chase high-agency."
-
-closing:
-  synthesis:
-    "High-agency trumps everything. Trust unlocks it. Directed chaos forges it."
-
-current:
-  company: GrowthLoop
-  role: VP Product Engineering
-  url: http://growthloop.com/careers
+# Homepage: book (Explore card), timeline eras. Hero “currently” = era with current: true.
+# markers: list of beats; blank line inside a block = new paragraph.
 
 book:
   title: Embracing Uncertainty
-  tagline: A field guide to Agile. Strategies for building top-performing teams.
+  tagline:
+    A field guide to Agile—for teams that need to move without pretending
+    certainty exists.
   url: https://www.uncertaintybook.ca/
 
 eras:
-  - name: The Foundation
-    company: Boltmade
+  - company: The Start
+    name: Hacking My Way Out
+    theme: start
+    markers:
+      - |
+        We had one computer in the house, limited access, no one technical around me, and no one who had ever gone to university. High school felt like the only way out. Grade ten, eleven, I took a CS class on a whim and fell in love — not with theory, with building dumb shit. RPG Maker became my obsession: nights on forums hacking battle systems to feel like Final Fantasy, swapping sprites, modding everything I could on the family computer. Ruby snuck into my life before I even knew the name.
+      - |
+        Before I got to the University of Waterloo, I made my first $100 building a trash website for a friend's dad. That was the first time this felt like a real way out. Then I got to Waterloo and realized I didn't actually want school. I wanted escape. But I was the first in my family to go, so quitting wasn't an option. I stayed attached however I could: orientation, Senate, the paper, a ridiculous goose-tracking app with friends.
+
+        My early co-ops were rough. I bombed the interviews I wanted and landed in library IT. Officially I was on the help desk. In practice I hacked their spreadsheets, rebuilt their information architecture, and fixed internal tools because they had never really had a developer before. That was the click: most people don't notice what can change. I do.
+
+  - company: Boltmade
+    name: The Forge
+    theme: boltmade
     url: http://boltmade.com/
     years: "2013–2016"
-    points:
-      - lesson: "Build a lot. Most won't matter. That's the point."
-        byline: Trusting instincts over process
-        proof: "8 products · 4→28 people"
-        detail: |
-          Dozens of projects. Every language, framework, industry. The magic isn't breadth—it's depth. Knowing Ruby's memory patterns let us ship what others couldn't. Genuine confidence in domains we'd only known for weeks. Stop chasing the "right" thing. Chase what excites you.
+    markers:
+      - |
+        I landed at Boltmade as the first non-founder—technically an intern. Five of us; four years later, nearly thirty. We built first prototypes for funded startups with no team, dropped into mid-sized companies stuck in politics, and ran skunkworks for Fortune 500 execs. It was the place I saw what happens when smart people actually care about the work.
+      - |
+        One client ran a heavily regulated helicopter operation and was drowning in paper tomes. We spent days whiteboarding the real pain, doing UX work, and rapid prototyping. He got it approved and could finally spend more time flying than filing. That showed me what caring about the problem can unlock.
 
-  - name: The Crucible
-    company: Shopify
+        Another client needed perfect audio sync across phones at a party. The tech we came up with was incredible, but the founder ran the team like a blood sport. So I protected the builders, got people sharing instead of competing, repaired the relationship, and kept the product moving. I still use that instinct.
+
+  - company: Shopify
+    theme: shopify
     url: https://www.shopify.com/
     years: "2016–2025"
-    duration: "8+ years"
-    points:
-      - lesson: "Move fast to explore. Move slow to commit."
-        byline: Short-term speed and long-term speed are different games
-        period: "2016–2018"
-        proof: "$B+ GMV · 1yr architecture"
-        detail: |
-          Multi-currency was open-heart surgery on Shopify's money model. Dozens of prototypes—fast. One year to find the right architecture—slow. That foundation now powers Shopify Markets and billions in international GMV. The trap: treating exploration and commitment as the same game.
+    chapters:
+      - name: The Landing
+        years: "2016–2017"
+        markers:
+          - |
+            By year four at Boltmade, we had to stop being a family and grow up or sell. Google circled. Shopify fit. We joined in 2016, when Shopify had around a thousand people and Plus felt like a rebellion inside the giant.
 
-      - lesson: "The best thing you can build is a team that doesn't need you"
-        byline: From builder to builder of builders
-        period: "2018–2020"
-        proof: "M+ customers · 30+ internal teams"
-        detail: |
-          Bulk Account Inviter onboarded millions of B2B customers. Destinations became a service 30+ internal teams depend on. Less building, more activating others. Most people underestimate themselves. Hold them to a bar they thought was impossible. Watch them clear it. People are the hardest problem—and one worth solving.
+            My first year was "special projects": twelve problems in a row. I broke Shopify early-on—account invites overloaded databases and slipped past rate limits. Nobody yelled; they told me to fix it and learn. I started living on planes to Ottawa and Montreal. Relationships move hard problems faster than heroics.
+      - name: Open-Heart Surgery
+        years: "2017–2021"
+        markers:
+          - |
+            I raised my hand for what everyone called "open-heart surgery": multi-currency. People said two years. We prototyped a version in a couple weeks; Montreal killed it on payments risk. I'd already been burned on money once before. I wasn't going to bluff here.
 
-      - lesson: "Delegation isn't distance"
-        byline: Close to the work, not above it
-        period: "2020–2022"
-        proof: "10+ teams · Metaobjects launch"
-        detail: |
-          Shopify.plus launch across 10+ cross-functional teams. Metaobjects—an entirely new primitive for custom data, now core to thousands of stores. The trap: stepping back and letting teams "figure it out." Real delegation means staying in the work. Not saving them from every spike—being the wall they learn to climb. Trust, but verify.
+            We built prototype after prototype, argued through arbitrage edge cases, and landed on MoneyBags: explicit currency context, backward-compatible casts, a migration path that didn't break the world. Launched in under a year.
+          - |
+            Then came the long middle: a Plus dashboard that got axed, big swings at CMS, inventory, and CRM that failed. Same lesson every time—if you don't fix the core, big bets turn into theater.
 
-      - lesson: "Directed chaos builds resilience"
-        byline: Resilience comes from storms, not shelter
-        period: "2022–2025"
-        proof: "50+ engineers · 6 pivots"
-        detail: |
-          50+ engineers. 80+ R&D-wide. Mission pivoted every six months. Layoffs hit. Not avoiding chaos—harnessing it. The goal was never stability. It was teams that adapt. Teams that don't break. Comfort is where growth goes to die.
+            That pushed us to the app shell: sidebar, top nav, what became Destinations, app pinning, Command-K, the early bones of notifications. Same people, same shape of problem. By the end I was burned out on the loop. I needed something new.
+      - name: The Reset
+        years: "2021–2025"
+        markers:
+          - |
+            The reset was a new org; the role was sold as a year of hell. They weren't wrong, but I loved it. I inherited two messy teams—Metafields and Media—under leadership pressure, with no coherent story for either. The mandate was simple to say and brutal to run: finally ship a CMS.
 
-  - name: The Proving Ground
-    company: GrowthLoop
+            After six months arguing about the minimum viable thing, I wrote the black-box rules for Metafields and the room snapped into focus. Metaobjects emerged; we raced and had them live in 6 months for Winter Editions. On Media we stood up a tiger squad and fixed the obvious rot first: WebP upload/download mismatches, bad quantization, CDN quality. Trust came back fast. When we layered generative-AI on top, the winning move was honesty—not "pick from six options," but "click a box, get a prompt."
+          - |
+            That work spread. Metaobjects touched more of Shopify; Media got cleaner and more central. Then taxonomy arrived—a headline project with real weight. We rebuilt the PDP, shipped ML that balanced correctness with human taste, and took the harder path: ground it in Metaobjects so the core got stronger for everyone.
+
+            I made director after taxonomy. Near the end I helped shape The Catalogue, Shopify's first serious swing at a global view across stores. After eight years of bumping against shop-level walls, it felt like a real ending.
+
+  - company: GrowthLoop
+    name: The Mirror
+    theme: growthloop
     url: http://growthloop.com/careers
-    years: "2025–Present"
-    in_progress: true
-    points:
-      - lesson: "Prove it's not luck—and set up what comes next"
-        byline: Big company lessons. Startup speed.
-        proof: "0→1 AI · Series B · Company reinvention"
-        detail: |
-          GrowthLoop isn't a typical 0→1. The company existed for years—now it's chasing hypergrowth. AI is the new frontier. The rest is reinvention. My experiment: big company scale with just the right rails. Enough structure to accelerate, not enough to kill speed. Everything learned, applied at once. This one's live.
+    years: "2025–present"
+    current: true
+    role: VP Product Engineering
+    markers:
+      - |
+        Early 2025 I was still riding high from Shopify, but GrowthLoop pulled on something deeper. I left to learn whether I could lead outside Shopify's machine.
+
+        The contrast was immediate: cash-constrained, too much to balance, and all running through one central meeting that had become its spine. Forty people, thin updates, everyone pretending things were fine while work slipped. Responsibility kept moving upward instead of landing anywhere real.
+      - |
+        Fixing it was tougher than I expected. I killed that meeting and replaced it with projects and champions so ownership had somewhere real to land. Then came the slower work: building an internal operating system with AI, rewriting values, raising the talent bar, and pushing harder on debate, truth-seeking, and owning the hard calls.
+
+        The wild part was that, in an AI company, almost nobody was actually operating AI-first. Engineering moved first. Now the same shift is hitting the rest of the company. We're figuring out, in real time, what all of our jobs become when AI is the default. That's the story I'm in now.
