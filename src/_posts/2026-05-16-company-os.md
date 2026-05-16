@@ -13,13 +13,19 @@ pull_quote: The best company OS is not a central brain. It is a market with memo
 <!--
   FIRST CUT / WORKING DRAFT
 
-  Core angle:
+  Current thesis:
   Company OSs are having a moment. The obvious version is a central brain: one canonical system,
   one founder lens, one place where reality gets mapped, routed, and controlled.
 
   My take is different. The best company OS should look less like a brain and more like a free
   market with good institutions. Shared infrastructure. High trust. Fast information flow. Clear
   consequences. A managed core. Wild, competitive, memetic life at the edges.
+
+  Concrete GrowthLoop spine:
+  - Gaia as the shared local-first repo/substrate for agents, skills, tools, and memory.
+  - Grimoire as the central spine for reality of work: projects, champions, phases, evidence,
+    health, reviews, and targeted controls.
+  - High talent bar as a non-optional precondition. This breaks with weak people.
 
   Strong candidates for final title:
   - The Company OS Is a Market
@@ -51,6 +57,46 @@ works, and killing what does not.
 
 The best company OS is not a central brain. It is a market with memory, standards, and consequences.
 
+## The Scene
+
+This stopped being theory for me when AI made local-first company building feel possible.
+
+At GrowthLoop, we have been pushing hard on a strange shape: a central spine paired with wild local
+power.
+
+The local side is Gaia. It is our shared repo for agent skills, tools, configs, prompts, and working
+memory. The important part is not that it exists. The important part is the posture it permits.
+
+People can build for themselves first. A tiny script. A skill. A prompt. A local tool. A workflow
+that only helps one person survive one ugly week.
+
+Most companies would force that work through a deployment path or let it die in someone's private
+folder. We are trying to make a third path normal: build locally, share cheaply, let anyone use it,
+and let the useful pieces spread without waiting for a blessed product surface.
+
+AI changes the economics. What used to require a small platform team can now start as one sharp
+person with a repo, taste, and a problem worth solving. The company does not need to deploy every
+tool for the tool to matter. It needs the tool to be findable, legible, stealable, and easy to
+improve.
+
+That is the edge.
+
+The center is Grimoire.
+
+Grimoire is our spine for the reality of work: who is working on what, where a project sits, whether
+it is healthy, what evidence supports it, and who is accountable for moving it. It gives leadership
+visibility without making leadership the owner of every decision.
+
+Every real project needs a champion. Not a committee. Not a vague team. A human whose name stays
+attached when the work gets heavy.
+
+Every six weeks, leaders look across the whole project portfolio. Champions defend, justify, and
+account for what is happening. Not slide theater. Not progress perfume. Reality of work.
+
+That review is not the market. It is one of the institutions that makes the market possible.
+
+The edge can build because the core can still see.
+
 ## The Market, Not The Monarch
 
 Markets beat central planning for boring reasons that become profound at scale.
@@ -76,30 +122,28 @@ Central planning inside a company creates familiar failure modes:
 
 The answer is not anarchy. Free markets work because institutions make them possible. Property
 rights, courts, currency, standards, shared infrastructure, trust, and credible consequences all
-matter. Without them you do not get capitalism. You get looting.
+matter. Without them you do not get capitalism. You get extraction, noise, and local power games.
 
 A company OS should do the same job.
 
 It should create the conditions for distributed power to compound without letting the company
-dissolve into noise.
+dissolve into theater.
 
-## The Central Bank
+## Founder Power Still Matters
 
-Leadership still matters. A lot.
+This is not an argument against founder control.
 
-But in this model leadership is less monarch and more central bank, constitution, and infrastructure
-builder. It controls scarce resources. It sets the rules of the game. It protects the commons. It
-intervenes when local incentives threaten the system. It raises or lowers the cost of certain
-behaviors.
+Founder ownership matters because founders can make bets no one else is structurally allowed to
+make. They can absorb risk. They can spend trust. They can say, "We are moving now," when the local
+market is still debating the cleanest answer.
 
 That power is real. It should feel heavy.
 
-The leadership mistake is believing that because this power exists, every important thing should
-flow through it. That is how you turn responsibility into a bottleneck.
+The analogy is not a monarch. It is a government when government is doing its job: setting the rules
+of the game, protecting the commons, controlling scarce resources, enforcing standards, and making
+rare interventions when local incentives threaten the system.
 
-The better move is to make leadership power legible and rare.
-
-Leaders should shape the terrain:
+Leadership should shape the terrain:
 
 - what the company values
 - what truth must be visible
@@ -109,16 +153,48 @@ Leaders should shape the terrain:
 - where autonomy is real
 - where autonomy ends
 
-Then they should let the market run.
+Then leadership should let the market run.
 
-That means letting teams compete with ideas. Letting practices spread because they work, not because
-they were announced. Letting the edge build selfishly in ways that still enrich the whole system.
-Letting impact become the currency.
+At GrowthLoop, six-week reviews are one version of this. They are a recurring central intervention
+where leaders look over the whole system and force contact with reality. They create pressure. They
+make projects explain themselves. They let leaders reallocate attention, escalate risk, or kill
+things that no longer deserve oxygen.
 
-Impact is the only currency that should survive contact with the core.
+Launches are another version. Sometimes a team is afraid, split, or over-indexing on the best answer
+when the company needs progress more. In those moments, leadership has to absorb risk for the team.
+It has to make the bet explicit, take responsibility for it, and create motion.
 
-Not polish. Not proximity. Not who repeated the company's favorite words most fluently. Results.
-Truth made visible. Energy converted into movement.
+The market should discover. The center should sometimes decide.
+
+That is not a contradiction. It is the whole design.
+
+## Impact As Currency
+
+This is the part I do not fully know how to operationalize yet.
+
+I think impact has to become the currency. Not polish. Not proximity. Not who repeats the company's
+favorite words most fluently. Results. Truth made visible. Energy converted into movement.
+
+But every currency can be counterfeited.
+
+Charisma counterfeits impact. Executive proximity counterfeits impact. A beautiful narrative
+counterfeits impact. So does being loud, available, fast, or fluent in whatever language the company
+currently rewards.
+
+Two things seem real enough to hold onto.
+
+The first is trust battery. Some people earn the right to ship with fewer questions because their
+past work proved their judgment. They have made good calls. They have told the truth early. They
+have carried ugly work without hiding the mess. Their future claims get more credit because their
+past claims cleared.
+
+The second is mastery. Craft excellence. Taste. The ability to make something good enough that other
+strong people trust it, use it, copy it, and build on it.
+
+Impact probably lives where trust battery and mastery meet visible results.
+
+That still needs sharper language. But I think the direction is right: a company OS should make real
+impact easier to see and fake impact harder to launder.
 
 ## Directed Chaos
 
@@ -162,6 +238,49 @@ Then the core can absorb winners.
 Not because someone wrote a memo declaring them best practice. Because the organization already
 voted with behavior.
 
+## Strong Institutions Or Defeat
+
+The obvious critique is correct.
+
+Markets inside companies create duplicated work, shadow systems, local optimization, taste wars, and
+political games. Distributed power can become distributed chaos theater. People will build clever
+things that help their corner and hurt the company. They will confuse autonomy with indulgence.
+They will make five versions of the same tool and call it innovation.
+
+This critique is not a reason to abandon the market model. It is the reason strong institutions
+matter.
+
+Central planning is more efficient in tight time horizons. That is why companies love it. It can
+reduce duplication. It can align action. It can force decisions. It can move faster than consensus.
+
+But central planning buys short-term efficiency by spending long-term adaptability.
+
+If all meaningful decisions route through the center, the company gets worse at sensing reality. It
+waits for permission. It frames work for approval. It trains people to be accurate upward instead of
+effective outward.
+
+The answer is not unfettered local freedom. Unfettered freedom is not civilization. It is defeat in
+a nicer outfit.
+
+The answer is a market bounded by strong institutions:
+
+- a core that stays small and trusted
+- standards that are enforced
+- a culture that prices truth highly
+- review loops where leaders can intervene
+- reward systems that make the desired behavior worth it
+- talent dense enough to use freedom well
+
+That last one is non-negotiable.
+
+This entire thesis relies on strong people.
+
+Not obedient people. Not merely smart people. Founder-type people. Builders. People with agency,
+care, curiosity, and enough heat to make the room warmer. People who can take a scary amount of
+freedom and turn it into company progress instead of personal sprawl.
+
+If you do not have those people, the market will not save you. It will expose you.
+
 ## The Core And The Edge
 
 The company OS needs a hard distinction between the core and the edge.
@@ -186,6 +305,12 @@ The OS should make the path from edge to core explicit.
 Start with selfish utility. Make it shareable. Watch what spreads. Raise the standards. Pull the
 winners inward. Keep the core small enough to matter.
 
+Core does not mean permanent. Everything in the core can change.
+
+But some categories probably belong near the center forever: culture, reward systems, job levels,
+performance management, and budget allocation. These are the economic rules of the company. If they
+drift invisibly, everything else prices wrong.
+
 ## High Trust Is The Ground
 
 None of this works in a low-trust company.
@@ -202,13 +327,26 @@ People need to believe that visible reality will be used to make better decision
 blame. Leaders need to believe that autonomy will produce judgment, not entitlement. Teams need to
 believe that sharing unfinished work will help them, not embarrass them.
 
+Trust is both input and output, but it is more input than output.
+
+The company OS can reinforce trust. It can make reality easier to see. It can make honest work
+easier to share. It can reduce the cost of coordination. But it cannot manufacture trust from
+nothing.
+
+This is why hypergrowth so often breaks culture. A high-trust society depends on shared standards,
+repeated contact, enforcement, and time. Add too many people too quickly without enough assimilation
+pressure and the trust layer thins. The company still has the words, but the words stop meaning the
+same thing.
+
+Software does not fix that.
+
+The OS can expose the loss of trust. It can make drift visible. It can help new people adapt faster.
+But culture has to be taught, enforced, and lived.
+
 Trust makes the market liquid.
 
 Without it, every transaction gets expensive. Every handoff needs insurance. Every meeting becomes a
 court record. Every honest signal gets hedged.
-
-The OS cannot fake this. Software can make truth easier to see, but culture decides whether people
-will tell it.
 
 ## What This Means Practically
 
@@ -261,10 +399,9 @@ Not calm. Not tidy. Alive.
 
 - Does this want to be one essay, or should it split into a series?
 - Is "market" the right metaphor, or does it invite too much baggage?
-- Where do I need a concrete GrowthLoop scene, like the Scrum deletion in Directed Chaos?
 - How directly should I name River, Shopify, Tobi, and the current company OS moment?
 - Do I want to reference Wait But Why explicitly, or just inherit the long-term-games frame?
-- What are the non-negotiable core standards in a real company OS?
+- What exactly is impact, and how do we prevent counterfeit impact from winning?
 - What are examples of edge experiments that should not become core?
-- What is the failure mode where distributed power becomes chaos theater?
 - What does the reader actually do Monday morning after reading this?
+- What should be cut because it only makes sense inside GrowthLoop?
