@@ -67,6 +67,10 @@ standards, and consequences too. That is not the distinction that matters.
 They win because many minds get better at finding truth, allocating energy, copying what works, and
 killing what does not.
 
+That used to be expensive. Working together has always been the only way to do hard things, but
+coordination tax eats ambition. Context gets lost. Decisions wait. Good ideas need a meeting before
+they can become useful.
+
 The best company OS is not one central brain. It is a market with memory, standards, and
 consequences.
 
@@ -97,7 +101,9 @@ low-trust, low-ownership company and you get faster mess. More drafts. More tool
 systems. More ways to look busy while reality gets worse.
 
 The harder story is that AI worked because it entered an operating system designed to make leverage
-compound.
+compound. Systems carried more of the coordination tax: context, memory, routing, visibility, review
+loops, and shared tools. People still had to bring judgment. The system made that judgment travel
+farther.
 
 We needed everyone to operate more like a founder because our competitors are bigger and better
 capitalized. We cannot outspend them. We have to outlearn them, outbuild them, and outcorrect them.
