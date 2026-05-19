@@ -11,25 +11,32 @@ pull_quote: The best company OS is not a central brain. It is a market with memo
 ---
 
 <!--
-  WORKING DRAFT
+  WORKING DRAFT NOTES
 
-  Current thesis:
+  Core thesis:
   Company OSs are having a moment. The obvious version is a central brain: one canonical system,
   one founder lens, one place where reality gets mapped, routed, and controlled.
 
-  My take is different. The best company OS should look less like a brain and more like a free
-  market with strong institutions. Shared infrastructure. High trust. Fast information flow. Clear
-  consequences. A managed core. Wild, competitive, memetic life at the edges.
+  My take is different. The best company OS should look less like a brain and more like a market
+  with strong institutions: high trust, high agency, shared infrastructure, fast information flow,
+  clear consequences, a managed core, and wild memetic life at the edges.
 
-  Concrete GrowthLoop spine:
-  - Board-slide proof: YoY engineering PRs/qtr roughly 700 -> 1900, ~2.6x, while hiring fast,
-    absorbing exits, and living through chaos that normally tanks productivity.
-  - Gaia as the shared local-first repo/substrate for agents, skills, tools, and memory.
-  - Grimoire as the central spine for reality of work: projects, champions, phases, evidence,
-    health, reviews, and targeted controls.
-  - AI decisioning launch as likely sharper story: ownership and information became addressable,
-    and the team got dramatically more high-agency.
-  - High talent bar as a non-optional precondition. This breaks with low-agency people.
+  Current proof/spine:
+  - Engineering output rose roughly 2.6x YoY by PRs/qtr, while the org hired quickly, raised the
+    bar, changed systems, and made intentional people/culture changes that normally tax output.
+  - Gaia is the edge: the true company monorepo in the broad sense, not just code but context,
+    tools, agent skills, prompts, memory, and necessary systems.
+  - Grimoire is the core: reality of work, champions, phases, evidence, health, reviews, and
+    targeted central controls.
+  - AI decisioning launch is the likely lived scene, but still needs concrete before/after.
+
+  Questions for next pass:
+  - Is the 2.6x PR number a keeper, or does it invite the wrong fight?
+  - What exactly changed on the AI decisioning team when ownership and information flowed better?
+  - How directly should I name River, Shopify, Tobi, and the current company OS moment?
+  - Do I want to reference Wait But Why explicitly, or just inherit the long-term-games frame?
+  - What exactly is impact, and how do we prevent fake impact from winning?
+  - What should be cut because it only makes sense inside GrowthLoop?
 -->
 
 Company OSs are about to get overbuilt.
@@ -57,24 +64,28 @@ works, and killing what does not.
 
 The best company OS is not a central brain. It is a market with memory, standards, and consequences.
 
-## The Proof
+Markets do not run on vibes. They need institutions. They need trust. They need people strong enough
+to use freedom well.
 
-The thing I keep coming back to is one slide.
+That is the hard part.
+
+## The Result
 
 Over the last year, our engineering output rose roughly 2.6x by one crude measure: PRs per quarter
 went from about 700 to about 1900.
 
 That number is not sacred. PRs can be gamed. Lines of code can lie. Activity is not impact.
 
-But the shape matters because of the backdrop. We hired quickly. We lost people. We changed systems,
-teams, expectations, tools, and operating defaults. We lived through the kind of
-[organizational noise](/blog/org-changelog/) that usually taxes productivity into the floor.
+But the shape matters because of the backdrop. We hired quickly, raised the bar, changed systems,
+shifted operating defaults, and made intentional people and culture changes. We lived through the
+kind of [organizational noise](/blog/org-changelog/) that usually taxes productivity into the
+floor.
 
 Net-net, engineering is about the same size now. The machine is not simply bigger.
 
 It is different.
 
-The easy story would be "AI made everyone faster." That is true and not enough.
+The easy story is "AI made everyone faster." That is true and not enough.
 
 AI gave people new leverage. But leverage cuts both ways. Put new leverage into a low-context,
 low-trust, low-ownership company and you get faster mess. More drafts. More tools. More half-built
@@ -97,8 +108,9 @@ junk drawer?"
 
 At GrowthLoop, the edge is increasingly local-first.
 
-Gaia is our shared repo for agent skills, tools, configs, prompts, and working memory. The important
-part is not the repo. The important part is the posture it permits.
+Gaia is our true monorepo in the broadest sense: not just code, but context, tools, agent skills,
+prompts, memory, and the necessary systems around them. The important part is not the repo. The
+important part is the posture it permits.
 
 People can build for themselves first. A tiny script. A skill. A prompt. A local tool. A workflow
 that only helps one person survive one ugly week.
@@ -136,7 +148,7 @@ attached when the work gets heavy.
 Every six weeks, leaders look across the whole project portfolio. Champions defend, justify, and
 account for what is happening.
 
-Not slide theater. Not progress perfume.
+Not slide theater. Not status theater.
 
 Reality of work.
 
@@ -144,29 +156,7 @@ That review is not the market. It is one of the institutions that makes the mark
 
 The edge can build because the core can still see.
 
-## The Launch
-
-I do not have the clean public story yet, but the AI decisioning launch is probably the closest.
-
-The obvious story is that a launch shipped. That is less interesting than what changed in the team.
-
-Over a couple of months, ownership and information moved closer to the people doing the work. More
-of the work became addressable. More decisions became visible. More tradeoffs could be made by the
-people close enough to feel them.
-
-The team got more high-agency.
-
-Not because someone gave a speech about agency. Because the system gave them more of the ingredients
-agency needs: context, room, pressure, tools, and accountability.
-
-This is the point people miss.
-
-High agency is not a personality trait you hire once and admire forever. It is a capacity the system
-either compounds or suppresses.
-
-A good company OS should compound it.
-
-## The Market, Not The Monarch
+## The Market
 
 Markets beat central planning for boring reasons that become profound at scale.
 
@@ -199,7 +189,7 @@ A company OS should do the same job.
 It should create the conditions for distributed power to compound without letting the company
 dissolve into theater.
 
-## Founder Power Still Matters
+## The Government
 
 This is not an argument against founder control.
 
@@ -209,17 +199,20 @@ market is still debating the cleanest answer.
 
 That power is real. It should feel heavy.
 
-The analogy is not a monarch. It is a government when government is doing its job: setting the rules
-of the game, protecting the commons, controlling scarce resources, enforcing standards, and making
-rare interventions when local incentives threaten the system.
+The analogy is not a monarch. It is a government when government is doing its job.
 
-Leadership should shape the terrain:
+Good government does not replace the market. It makes the market possible. It funds roads, research,
+standards, courts, and infrastructure the market needs but would underbuild on its own. It protects
+the commons. It intervenes when local incentives threaten the system.
 
-- what the company values
+Leadership should do the same.
+
+It should shape the terrain:
+
 - what truth must be visible
-- what gets funded
-- what gets killed
-- which standards are non-negotiable
+- what standards are non-negotiable
+- what commons need funding before they are obviously profitable
+- what constraints keep local optimization from damaging the whole
 - where autonomy is real
 - where autonomy ends
 
@@ -235,21 +228,18 @@ The market should discover. The center should sometimes decide.
 
 That is not a contradiction. It is the design.
 
-## Impact As Currency
+## The Currency
 
-This is the part I do not fully know how to operationalize yet.
-
-I think impact has to become the currency.
+Impact has to become the currency.
 
 Not polish. Not proximity. Not who repeats the company's favorite words most fluently.
 
 Results. Truth made visible. Energy converted into movement.
 
-But every currency can be counterfeited.
+But every currency can be faked.
 
-Charisma counterfeits impact. Executive proximity counterfeits impact. A beautiful narrative
-counterfeits impact. So does being loud, available, fast, or fluent in whatever language the company
-currently rewards.
+Charisma can look like impact. So can executive proximity. So can a beautiful narrative, a fast
+response time, or fluency in whatever language the company currently rewards.
 
 Two things seem real enough to hold onto.
 
@@ -262,8 +252,7 @@ strong people trust it, use it, copy it, and build on it.
 
 Impact probably lives where trust battery and mastery meet visible results.
 
-That still needs sharper language. But I think the direction is right: a company OS should make real
-impact easier to see and fake impact harder to launder.
+A company OS should make real impact easier to see and fake impact harder to launder.
 
 ## Directed Chaos
 
@@ -301,7 +290,7 @@ Then the core can absorb winners.
 Not because someone wrote a memo declaring them best practice. Because the organization already
 voted with behavior.
 
-## Strong Institutions Or Defeat
+## The Conditions
 
 The obvious critique is correct.
 
@@ -326,30 +315,16 @@ effective outward.
 The answer is not unfettered local freedom. Unfettered freedom is not civilization. It is defeat in
 a nicer outfit.
 
-The answer is a market bounded by strong institutions:
+The answer is a market bounded by three conditions.
 
-- a core that stays small and trusted
-- standards that are enforced
-- a culture that prices truth highly
-- review loops where leaders can intervene
-- reward systems that make the desired behavior worth it
-- talent dense enough to use freedom well
+First: strong institutions. A small trusted core. Standards that are enforced. Review loops where
+leaders can intervene. Reward systems that make the desired behavior worth it.
 
-That last one is non-negotiable.
+Second: strong people. Not obedient people. Not merely smart people. Founder-type people. Builders.
+People with agency, care, curiosity, and enough heat to make the room warmer. People who can take a
+scary amount of freedom and turn it into company progress instead of personal sprawl.
 
-This entire thesis relies on strong people.
-
-Not obedient people. Not merely smart people. Founder-type people. Builders. People with agency,
-care, curiosity, and enough heat to make the room warmer. People who can take a scary amount of
-freedom and turn it into company progress instead of personal sprawl.
-
-If you do not have those people, the market will not save you.
-
-It will expose you.
-
-## High Trust Is The Ground
-
-None of this works in a low-trust company.
+Third: [high trust](/blog/trust-first/). Not niceness. The operating condition that lets truth move.
 
 Low-trust companies cannot run markets. They can only run permissions.
 
@@ -357,27 +332,19 @@ If people hide bad news, distributed power becomes distributed theater. If leade
 information stops flowing. If teams hoard context, local optimization wins. If status beats impact,
 the market prices the wrong thing.
 
-[High trust](/blog/trust-first/) is not niceness. It is the operating condition that lets truth
-move.
+Trust makes the market liquid.
 
-The company OS can reinforce trust. It can make reality easier to see. It can make honest work
-easier to share. It can reduce the cost of coordination. But it cannot manufacture trust from
-nothing.
-
-This is why hypergrowth so often breaks culture. A high-trust society depends on shared standards,
-repeated contact, enforcement, and time. Add too many people too quickly without enough assimilation
-pressure and the trust layer thins. The company still has the words, but the words stop meaning the
-same thing.
+Without it, every transaction gets expensive. Every handoff needs insurance. Every meeting becomes a
+court record. Every honest signal gets hedged.
 
 Software does not fix that.
 
 The OS can expose the loss of trust. It can make drift visible. It can help new people adapt faster.
 But culture has to be taught, enforced, and lived.
 
-Trust makes the market liquid.
+If you do not have the conditions, the market will not save you.
 
-Without it, every transaction gets expensive. Every handoff needs insurance. Every meeting becomes a
-court record. Every honest signal gets hedged.
+It will expose you.
 
 ## The Bet
 
@@ -395,14 +362,3 @@ when it is concentrated carefully and distributed aggressively.
 But if you get it right, the company starts to feel less like a machine and more like an economy.
 
 Not calm. Not tidy. Alive.
-
-## Open Questions For The Next Draft
-
-- Is the 2.6x PR number a keeper, or does it invite the wrong fight?
-- Is the AI decisioning launch concrete enough to become the main scene?
-- What exactly changed on that team when ownership and information flowed better?
-- How directly should I name River, Shopify, Tobi, and the current company OS moment?
-- Do I want to reference Wait But Why explicitly, or just inherit the long-term-games frame?
-- What exactly is impact, and how do we prevent counterfeit impact from winning?
-- What are examples of edge experiments that should not become core?
-- What should be cut because it only makes sense inside GrowthLoop?
