@@ -7,7 +7,9 @@ permalink: /blog/company-os/
 
 categories: ["Leadership"]
 description: A company operating system should create markets, not monarchies.
-pull_quote: The best company OS is not a central brain. It is a market with memory, standards, and consequences.
+pull_quote:
+  The best company OS is not a central brain. It is a market with memory, standards, and
+  consequences.
 ---
 
 <!--
@@ -42,8 +44,8 @@ pull_quote: The best company OS is not a central brain. It is a market with memo
 
 Company OSs are about to get overbuilt.
 
-That is what happens when a useful idea gets hot. Someone names a real ache. Everyone recognizes
-it. Then the category fills with dashboards, agents, workflow engines, and founder-brain command
+That is what happens when a useful idea gets hot. Someone names a real ache. Everyone recognizes it.
+Then the category fills with dashboards, agents, workflow engines, and founder-brain command
 centers.
 
 Some of that will work. A lot of it will make companies more legible and less alive.
@@ -79,8 +81,7 @@ That number is not sacred. PRs can be gamed. Lines of code can lie. Activity is 
 
 But the shape matters because of the backdrop. We hired quickly, raised the bar, changed systems,
 shifted operating defaults, and made intentional people and culture changes. We lived through the
-kind of [organizational noise](/blog/org-changelog/) that usually taxes productivity into the
-floor.
+kind of [organizational noise](/blog/org-changelog/) that usually taxes productivity into the floor.
 
 Net-net, engineering is about the same size now. The machine is not simply bigger.
 
@@ -102,8 +103,8 @@ That is the real company OS problem.
 
 Not "how do leaders see everything?"
 
-"How do more people become capable of founder-shaped action without turning the company into a
-junk drawer?"
+"How do more people become capable of founder-shaped action without turning the company into a junk
+drawer?"
 
 ## The Edge
 
@@ -129,9 +130,9 @@ It needs the tool to be findable, legible, stealable, and easy to improve.
 
 That is a market.
 
-Not a metaphorical one. A real one. People spend time, trust, attention, and reputation on tools
-and ideas. Useful work gets copied. Bad work gets ignored. Patterns mutate. The edge discovers what
-the center could never have designed.
+Not a metaphorical one. A real one. People spend time, trust, attention, and reputation on tools and
+ideas. Useful work gets copied. Bad work gets ignored. Patterns mutate. The edge discovers what the
+center could never have designed.
 
 ## The Core
 
@@ -190,10 +191,11 @@ A company OS should do the same job.
 It should create the conditions for distributed power to compound without letting the company
 dissolve into theater.
 
-In [Wait But Why's language](https://waitbutwhy.com/2019/10/idea-labs-echo-chambers.html), the
-company has to become more Idea Lab than Echo Chamber: a place where ideas compete in contact with
-truth instead of hardening into tribal loyalty. That does not happen because people are nice. It
-happens because the institution rewards truth-seeking and punishes theater.
+The company has to become more
+[Idea Lab](https://waitbutwhy.com/2019/10/idea-labs-echo-chambers.html) than echo chamber: a place
+where ideas compete in contact with truth instead of hardening into tribal loyalty. That does not
+happen because people are nice. It happens because the institution rewards truth-seeking and
+punishes theater.
 
 ## The Government
 
@@ -264,8 +266,8 @@ A company OS should make real impact easier to see and fake impact harder to lau
 
 This is where company OS work either becomes alive or turns into software cosplay.
 
-The goal is not to capture every process. The goal is to build a high-trust arena where useful
-chaos can turn into institutional memory.
+The goal is not to capture every process. The goal is to build a high-trust arena where useful chaos
+can turn into institutional memory.
 
 [Freedom without structure is chaos](/blog/directed-chaos/). Structure without freedom is
 bureaucracy.
@@ -302,8 +304,8 @@ The obvious critique is correct.
 
 Markets inside companies create duplicated work, shadow systems, local optimization, taste wars, and
 political games. Distributed power can become distributed chaos theater. People will build clever
-things that help their corner and hurt the company. They will confuse autonomy with indulgence.
-They will make five versions of the same tool and call it innovation.
+things that help their corner and hurt the company. They will confuse autonomy with indulgence. They
+will make five versions of the same tool and call it innovation.
 
 This critique is not a reason to abandon the market model.
 

@@ -365,7 +365,8 @@ html {
 }
 
 /* External link indicator */
-.prose a[href^="http"]:not([href*="jcmcginnis.com"])::after {
+.prose a[href^="http"]:not([href*="jcmcginnis.com"])::after,
+.prose .external-link::after {
   content: " ↗";
   @apply text-[0.7em] opacity-50 align-super;
 }
@@ -441,7 +442,8 @@ html {
 }
 
 /* External link indicator */
-.post-content a[href^="http"]:not([href*="jcmcginnis.com"])::after {
+.post-content a[href^="http"]:not([href*="jcmcginnis.com"])::after,
+.post-content .external-link::after {
   content: " ↗";
   font-size: 0.7em;
   opacity: 0.5;

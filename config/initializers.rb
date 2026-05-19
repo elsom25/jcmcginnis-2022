@@ -63,6 +63,16 @@ Bridgetown::RubyTemplateView::Helpers.class_eval do
     "/category/#{category_name.downcase.gsub(/\s+/, "-")}/"
   end
 
+  def external_link_to(label, url, **attrs)
+    classes = ["external-link", attrs.delete(:class)].compact.join(" ")
+    rel = attrs.delete(:rel).to_s.split
+    rel = (rel + ["external", "noopener"]).uniq.join(" ")
+    attr_hash = attrs.merge(href: url, class: classes, target: "_blank", rel:)
+    attr_string = attr_hash.map { |key, value| %(#{key}="#{ERB::Util.html_escape(value)}") }.join(" ")
+
+    %(<a #{attr_string}>#{ERB::Util.html_escape(label)}</a>).html_safe
+  end
+
   def active_nav_item?(item, current_page)
     current_page.relative_url == item.url ||
       current_page.data.nav_section == item.url ||

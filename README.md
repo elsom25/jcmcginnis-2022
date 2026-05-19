@@ -83,6 +83,8 @@ Defined in `config/initializers.rb`:
 - **`featured_post`** - Returns a featured post for the homepage (recent if within 4 weeks,
   otherwise rotates daily)
 - **`posts_by_year`** - Groups posts by year for the blog index
+- **`external_link_to`** - Renders external text links with consistent `target`, `rel`, and
+  `external-link` styling hooks
 
 ## Development
 
