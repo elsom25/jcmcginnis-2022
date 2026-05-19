@@ -38,6 +38,8 @@ pull_quote:
   - Decision for now: keep River/Shopify/Tobi/Kasava out of the essay body; use them in social
     framing where timeliness helps instead of dating the essay.
   - Wait But Why reference belongs only where Idea Lab vs Echo Chamber strengthens the core thesis.
+  - Cosmos/decentralization thread is background: do not argue decentralization as virtue. Argue
+    overlapping authority, nested institutions, local knowledge, and countervailing power.
   - What exactly is impact, and how do we prevent fake impact from winning?
   - What should be cut because it only makes sense inside GrowthLoop?
 -->
@@ -175,9 +177,9 @@ different truth.
 If the operating system requires all useful truth to climb a ladder before it can matter, the
 company has already chosen latency.
 
-That is why the market metaphor matters. Not because markets are magic, but because they do not ask
-truth to pass through one mind before it can matter. They let local knowledge collide, compete,
-spread, and improve while the institution keeps standards, memory, and consequences intact.
+Markets work here only if truth can matter before the center fully understands it. Local knowledge
+has to collide, compete, spread, and improve while the institution keeps standards, memory, and
+consequences intact.
 
 Central planning inside a company creates familiar failure modes:
 
@@ -216,7 +218,8 @@ The analogy is not a monarch. It is a government when government is doing its jo
 
 Good government does not replace the market. It makes the market possible. It funds roads, research,
 standards, courts, and infrastructure the market needs but would underbuild on its own. It protects
-the commons. It intervenes when local incentives threaten the system.
+the commons. It intervenes when local incentives threaten the system. And it prevents power from
+answering only to itself.
 
 Leadership should do the same.
 
@@ -226,10 +229,15 @@ It should shape the terrain:
 - what standards are non-negotiable
 - what commons need funding before they are obviously profitable
 - what constraints keep local optimization from damaging the whole
+- who is allowed and expected to push back on their own terms
 - where autonomy is real
 - where autonomy ends
 
 Then leadership should let the market run.
+
+That is the part clean command-center thinking misses. The goal is not to shrink power until it
+becomes harmless. The goal is to make power answer to enough independent reality that it cannot
+comfortably capture the system around it.
 
 Sometimes the center has to decide.
 
@@ -331,7 +339,8 @@ a nicer outfit.
 The answer is a market bounded by three conditions.
 
 First: strong institutions. A small trusted core. Standards that are enforced. Review loops where
-leaders can intervene. Reward systems that make the desired behavior worth it.
+leaders can intervene. Reward systems that make the desired behavior worth it. Overlapping places
+where truth can surface when any one channel gets captured.
 
 Second: strong people. Not obedient people. Not merely smart people. Founder-type people. Builders.
 People with agency, care, curiosity, and enough heat to make the room warmer. People who can take a
