@@ -236,8 +236,9 @@ It should shape the terrain:
 Then leadership should let the market run.
 
 That is the part clean command-center thinking misses. The goal is not to shrink power until it
-becomes harmless. The goal is to make power answer to enough independent reality that it cannot
-comfortably capture the system around it.
+becomes harmless. The goal is to make power
+[answer to enough independent reality](https://blog.cosmos-institute.org/p/when-decentralization-fails)
+that it cannot comfortably capture the system around it.
 
 Sometimes the center has to decide.
 
