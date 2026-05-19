@@ -68,7 +68,8 @@ That number is not sacred. PRs can be gamed. Lines of code can lie. Activity is 
 
 But the shape matters because of the backdrop. We hired quickly. We lost people. We changed systems,
 teams, expectations, tools, and operating defaults. We lived through the kind of organizational
-noise that usually taxes productivity into the floor.
+noise that usually taxes productivity into the floor. The company had an
+[organizational changelog](/blog/org-changelog/) whether or not we wrote every entry down.
 
 Net-net, engineering is about the same size now. The machine is not simply bigger.
 
@@ -267,7 +268,9 @@ impact easier to see and fake impact harder to launder.
 
 ## Directed Chaos
 
-This is where company OS work either becomes alive or turns into software cosplay.
+This is where company OS work either becomes alive or turns into software cosplay. It is the same
+operating tension I was circling in [Directed Chaos](/blog/directed-chaos/), but AI raises the
+stakes.
 
 The goal is not to capture every process. The goal is to build a high-trust arena where useful
 chaos can turn into institutional memory.
@@ -356,7 +359,8 @@ If people hide bad news, distributed power becomes distributed theater. If leade
 information stops flowing. If teams hoard context, local optimization wins. If status beats impact,
 the market prices the wrong thing.
 
-High trust is not niceness. It is the operating condition that lets truth move.
+High trust is not niceness. I used to write about [trust first](/blog/trust-first/) mostly as a
+leadership stance. Here it is more severe: trust is the operating condition that lets truth move.
 
 The company OS can reinforce trust. It can make reality easier to see. It can make honest work
 easier to share. It can reduce the cost of coordination. But it cannot manufacture trust from
