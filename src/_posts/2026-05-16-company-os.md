@@ -33,8 +33,9 @@ pull_quote: The best company OS is not a central brain. It is a market with memo
   Questions for next pass:
   - Is the 2.6x PR number a keeper, or does it invite the wrong fight?
   - What exactly changed on the AI decisioning team when ownership and information flowed better?
-  - How directly should I name River, Shopify, Tobi, and the current company OS moment?
-  - Do I want to reference Wait But Why explicitly, or just inherit the long-term-games frame?
+  - Decision for now: keep River/Shopify/Tobi/Kasava out of the essay body; use them in social
+    framing where timeliness helps instead of dating the essay.
+  - Wait But Why reference belongs only where Idea Lab vs Echo Chamber strengthens the core thesis.
   - What exactly is impact, and how do we prevent fake impact from winning?
   - What should be cut because it only makes sense inside GrowthLoop?
 -->
@@ -188,6 +189,11 @@ A company OS should do the same job.
 
 It should create the conditions for distributed power to compound without letting the company
 dissolve into theater.
+
+In [Wait But Why's language](https://waitbutwhy.com/2019/10/idea-labs-echo-chambers.html), the
+company has to become more Idea Lab than Echo Chamber: a place where ideas compete in contact with
+truth instead of hardening into tribal loyalty. That does not happen because people are nice. It
+happens because the institution rewards truth-seeking and punishes theater.
 
 ## The Government
 
