@@ -17,21 +17,20 @@ Company operating systems are about to be overbuilt in the most obvious wrong di
 The category is already bending toward the oldest executive fantasy in the world: one room, one
 map, one interface where reality finally behaves.
 
-That pull is strong because the problem is real. Founders are drowning in partial reality. Every
-department has its own map. Every meeting turns truth into theater. Every status update arrives
-laundered by incentives, fear, politeness, and time.
+That pull is strong because the problem is real. Founders are drowning in partial reality.
+Departments keep separate maps. Meetings turn truth into theater. Status updates arrive laundered
+by incentives, fear, politeness, and time.
 
 The relief on offer is a central brain. A command center for founders.
 
-I think that is the wrong bet, and AI makes the wrong bet more tempting.
+That is the wrong bet. AI makes it more tempting.
 
 The winning company OS will not be one smarter mind at the top. It will be a market with strong
 institutions: many people close to reality, enough shared infrastructure to make their work legible,
 and enough consequence that good ideas spread while bad ones die.
 
-A company OS market lets tools, decisions, and practices emerge near the work, spread through
-usage, and stay governed by visible standards and consequences. Impact is the currency. Truth is
-the clearing mechanism.
+In that market, useful tools and practices emerge near the work, spread by usage, and stay governed
+by visible standards. Impact is the currency. Truth is the clearing mechanism.
 
 ## The Real Bet
 
@@ -50,34 +49,28 @@ for decisions they should never touch.
 
 That is why the company OS question cannot be "how do leaders see everything?"
 
-It is: how do more people make founder-shaped moves without turning the company into a junk drawer?
+It is: how do more people make consequential moves without turning the company into a junk drawer?
 
-That bet used to be too expensive for most companies. Working through many minds has always been
-more adaptive, but coordination tax ate the advantage. Context got lost. Decisions waited. Good
-ideas needed meetings before they were allowed to matter.
+That bet used to be too expensive. Working through many minds was more adaptive, but coordination
+tax ate the advantage: context got lost, decisions waited, and good ideas needed meetings before
+they mattered.
 
-AI changes that bargain. Systems can now carry more of the coordination tax: context, memory,
-routing, visibility, review loops, and shared tools. People still have to bring judgment. The system
-lets more judgment travel.
+AI changes the bargain by carrying more of that tax: context, memory, routing, visibility, review
+loops, and shared tools. People still bring judgment. The system lets more judgment travel.
 
 AI amplifies the model you choose. In a command center, it makes central planning more powerful and
 more brittle. In a market, it makes distributed truth cheaper to coordinate.
 
 ## Where Markets Form
 
-The obvious company OS puts AI in the command center.
+The obvious company OS puts AI in the command center. The better one puts AI in everyone's hands,
+then gives the company a way to notice what those hands build.
 
-The more interesting one puts AI in everyone's hands, then gives the company a way to notice what
-those hands build.
+Dashboards, Slack agents, and GitHub agents all matter. Slack handles shared requests. GitHub
+handles code-shaped work. Dashboards make reality legible. I want all of them.
 
-That requires a place for useful work to be born before it is official. Not a dashboard. Not a
-ticket queue. Not a Slack bot waiting in a shared channel for someone to ask the right question.
-
-Those things matter. Slack agents are good at shared requests. GitHub agents are good at code-shaped
-work. Dashboards are good at legible reality. I want all of them.
-
-But a company market needs a place for illegible work to become real before anyone knows what to
-call it. Otherwise the market has nothing to select.
+But the market inside the company also needs a place where illegible work can become real before
+anyone knows what to call it. Otherwise it has nothing to select.
 
 That place is local-first: repo-based tools, scripts, prompts, skills, agents, notes, and workflows
 built close to the person feeling the pain.
@@ -85,19 +78,14 @@ built close to the person feeling the pain.
 Local-first matters because the best internal tools do not begin as products. They begin as coping
 mechanisms. One person hits the same wall enough times, gets annoyed enough, and builds a ladder.
 
-The monorepo is not the point because code is sacred. The monorepo is the point because proximity
-changes behavior. Prompts sit near scripts. Skills sit near workflows. Context sits near tools. A
-selfish fix has somewhere to go when it starts helping more than one person.
-
-AI makes every person more capable. Local-first decides whether that capability becomes private
-leverage, command-center theater, or organizational leverage.
+The monorepo is not the point because code is sacred. It matters because proximity changes
+behavior. Prompts sit near scripts. Skills sit near workflows. Context sits near tools. A selfish
+fix has somewhere to go when it starts helping more than one person.
 
 ## Build For Yourself First
 
-At GrowthLoop, that market runs through Gaia: our true monorepo in the broadest sense. Code,
-context, tools, agent skills, prompts, memory, and the systems around them.
-
-The market starts with people solving their own problems.
+At GrowthLoop, that market runs through Gaia: our broad monorepo for code, context, tools, agent
+skills, prompts, memory, and the systems around them.
 
 People build selfishly first: a script, a skill, a prompt, a local workflow that helps one person
 survive one ugly week.
@@ -109,22 +97,15 @@ Most companies either force that work through deployment, let it die in a privat
 magic in the shared interface. We are trying to make a fourth path normal: build locally, share
 cheaply, make it stealable, and let usefulness pull the work forward.
 
-In a command center, people ask the system to do work. In a market, people make work real, expose it
-to others, and let usefulness decide what survives.
-
-Good ideas should travel before leadership blesses them. A company OS should make memetic
-repetition possible. It should let the company notice what people are already choosing.
-
-Then the core can absorb the winners.
-
-Not because someone wrote a memo declaring them a best practice. Because people already voted with
-their behavior.
+In a command center, people ask the system to do work. In a market, people make work real, expose
+it to others, and let usefulness decide what survives. Good ideas should travel before leadership
+blesses them. The core can absorb the winners after people have already voted with behavior.
 
 ## Markets Need Institutions
 
 A market is not a permission slip for chaos. Markets work because institutions make them possible:
-property rights, courts, currency, standards, shared infrastructure, trust, and credible
-consequences. Without those, you get extraction, noise, and local power games.
+standards, shared infrastructure, trust, and credible consequences. Without those, you get
+extraction, noise, and local power games.
 
 A company OS has to do the same job.
 
@@ -134,21 +115,17 @@ where ideas compete in contact with truth instead of hardening into tribal loyal
 happen because people are nice. It happens because institutions reward truth-seeking and punish
 theater.
 
-At GrowthLoop, that means a wide market with a small trusted core.
-
 It also means the market has to price the right thing. Otherwise it prices bullshit: polish,
 proximity, slogans, whatever language leadership is rewarding this quarter. Real impact has to be
 easier to see and fake impact harder to launder.
 
-The core runs through Grimoire: our spine for the reality of work. Who is working on what, where a
-project sits, whether it is healthy, what evidence supports it, and who is accountable for moving
-it.
+At GrowthLoop, the core runs through Grimoire: our spine for the reality of work. It shows who is
+working on what, where a project sits, whether it is healthy, what evidence supports it, and who is
+accountable.
 
-Every real project needs a champion. Not a committee. Not a vague team. A human whose name stays
-attached when the work gets heavy.
-
-Every six weeks, leaders put the whole project portfolio on the table. Champions defend, justify,
-and account for what is happening.
+Every real project needs a champion: not a committee, not a vague team, but a human whose name
+stays attached when the work gets heavy. Every six weeks, leaders put the whole portfolio on the
+table. Champions defend, justify, and account for what is happening.
 
 No slide theater. No status theater. Reality of work.
 
@@ -172,23 +149,15 @@ still debating the cleanest answer.
 
 That power is real. It should feel heavy.
 
-The founder is not the market. The founder is not the monarch. Founder power is the part of the
+The founder is not the market, and the founder is not the monarch. Founder power is the part of the
 system that can fund the commons, defend standards, absorb risk, and force motion when the market
 is stuck.
 
-Good government funds the commons, defends standards, and intervenes when local incentives threaten
-the system. It does not become the market. It makes the market possible.
-
-Founder power should do the same.
-
-Fund the commons. Defend standards. Absorb risk. Force motion when the market is stuck. Then get
-out of the way.
+Good government does the same. It does not become the market. It makes the market possible.
 
 Founder intervention turns back into central planning when it is constant, unreviewed, or detached
-from local evidence. The intervention has to be explicit. The bet has to be owned. The consequences
-have to come back into view.
-
-<!-- TODO: Add one public-safe example of leadership absorbing risk or forcing motion. The point is that intervention should be explicit, costly, and reviewed after. -->
+from local evidence. The intervention has to be explicit, the bet owned, and the consequences
+brought back into view.
 
 Command-center thinking misses this. The goal is not to shrink power until it becomes harmless. The
 goal is to make power answer to
@@ -207,36 +176,34 @@ from about 700 to about 1900.
 
 That should not have happened.
 
-We hired fast. People left. We raised the bar. We changed systems. We changed defaults. We changed
-the culture on purpose. Engineering is about the same size now, so this was not headcount math.
+We hired fast. People left. We raised the bar, changed systems, reset defaults, and moved the
+culture on purpose. Engineering is about the same size now, so this was not headcount math.
 
 Most companies get slower when they absorb that much change. We got faster.
 
 Not because AI magically made everyone better.
 
-AI was necessary, but it was not sufficient. Put AI into a low-context, low-trust, low-ownership
-company and you get faster mess: more drafts, more tools, more half-built systems, more ways to look
-busy while reality gets worse.
+AI was necessary. It was not magic.
 
-The difference was the operating system around it.
+Put AI into a low-context, low-trust, low-ownership company and you get faster mess: more drafts,
+more tools, more half-built systems, more ways to look busy while reality decays.
+
+The operating system decides where the leverage goes.
 
 More people had context. More people had trust. More people had permission to act close to the
-problem. AI gave them leverage, but the system gave that leverage somewhere useful to go.
-
-<!-- TODO: Add one concrete GrowthLoop scene here: AI decisioning launch, 6-week review intervention, or a local Gaia tool that spread. This section needs one lived moment, not just the 2.6x metric. -->
+problem. AI gave them leverage, but the company gave that leverage somewhere useful to go.
 
 ## The Bet
 
 The companies that win from here will not have the prettiest internal command center.
 
-They will have the fastest reality loops: local action without waiting, leadership visibility
-without absorption, ideas that propagate because they work, and a core that stays sacred, small, and
-earned.
+They will have the shortest path from reality to action. Someone sees the thing. Someone fixes the
+thing. The company notices. The good version spreads.
 
 That is a harder system to build than a dashboard.
 
-It demands trust. It demands taste. It demands leaders who understand that power gets more useful
-when it is concentrated carefully and distributed aggressively.
+It demands trust, taste, and leaders who understand that power gets more useful when it is
+concentrated carefully and distributed aggressively.
 
 Low-trust companies cannot run markets. They can only run permissions. Software does not fix that.
 It exposes it.
