@@ -30,7 +30,8 @@ institutions: many people close to reality, enough shared infrastructure to make
 and enough consequence that good ideas spread while bad ones die.
 
 A company OS market lets tools, decisions, and practices emerge near the work, spread through
-usage, and stay governed by visible standards and consequences.
+usage, and stay governed by visible standards and consequences. Impact is the currency. Truth is
+the clearing mechanism.
 
 ## The Real Bet
 
@@ -135,6 +136,10 @@ theater.
 
 At GrowthLoop, that means a wide market with a small trusted core.
 
+It also means the market has to price the right thing. Otherwise it prices bullshit: polish,
+proximity, slogans, whatever language leadership is rewarding this quarter. Real impact has to be
+easier to see and fake impact harder to launder.
+
 The core runs through Grimoire: our spine for the reality of work. Who is working on what, where a
 project sits, whether it is healthy, what evidence supports it, and who is accountable for moving
 it.
@@ -220,42 +225,6 @@ problem. AI gave them leverage, but the system gave that leverage somewhere usef
 
 <!-- TODO: Add one concrete GrowthLoop scene here: AI decisioning launch, 6-week review intervention, or a local Gaia tool that spread. This section needs one lived moment, not just the 2.6x metric. -->
 
-## What The Market Must Price
-
-Impact has to become the currency. If the market prices the wrong thing, the whole system rots.
-
-Otherwise the market prices bullshit: polish, proximity, slogans, whatever language leadership is
-rewarding this quarter.
-
-The real currency is results. Truth made visible. Energy converted into movement.
-
-But every currency can be counterfeited. Charisma can look like impact. So can executive proximity.
-So can a beautiful narrative or a fast response time.
-
-Two signals seem useful, though I do not think the language is finished.
-
-The first is trust battery: earned permission to ship with fewer questions because past work proved
-your judgment. You made good calls. You told the truth early. You carried ugly work without hiding
-the mess.
-
-The second is mastery: craft excellence, taste, and the ability to make something good enough that
-other strong people trust it, use it, copy it, and build on it.
-
-Impact probably lives where trust battery and mastery meet visible results. A company OS should
-make real impact easier to see and fake impact harder to launder.
-
-This only works in [high trust](/blog/trust-first/) companies. Not nice companies. High-trust
-companies. Places where truth can move.
-
-Low-trust companies cannot run markets. They can only run permissions. If people hide bad news,
-distributed power becomes distributed theater. If leaders punish truth, information stops flowing.
-If teams hoard context, local optimization wins. If status beats impact, the market prices the wrong
-thing.
-
-Software does not fix that. The OS can expose the loss of trust, but culture has to be taught,
-enforced, and lived. If you do not have the conditions, the market will not save you. It will expose
-you.
-
 ## The Bet
 
 The companies that win from here will not have the prettiest internal command center.
@@ -268,6 +237,9 @@ That is a harder system to build than a dashboard.
 
 It demands trust. It demands taste. It demands leaders who understand that power gets more useful
 when it is concentrated carefully and distributed aggressively.
+
+Low-trust companies cannot run markets. They can only run permissions. Software does not fix that.
+It exposes it.
 
 The bet is simple: convert distributed reality into coordinated action faster than competitors.
 
