@@ -14,8 +14,8 @@ pull_quote: >
 
 Company operating systems are about to be overbuilt in the most obvious wrong direction.
 
-By company OS, I mean the shared layer where priorities, context, accountability, tools, AI
-workflows, and decisions turn into coordinated action.
+A company OS is where company reality turns into action: what matters, who owns it, what evidence
+counts, which tools carry the work, and which decisions survive contact with the company.
 
 The category is already bending toward the oldest executive fantasy in the world: one room, one
 map, one interface where reality finally behaves. A dashboard that knows everything. An AI chief of
@@ -25,23 +25,21 @@ That pull is strong because the problem is real. Founders are drowning in partia
 Departments keep separate maps. Meetings turn truth into theater. Status updates arrive laundered
 by incentives, fear, politeness, and time.
 
-The command-center case is not stupid. Distributed systems hide risk, duplicate work, and let local
-narratives harden into politics.
-
-The relief on offer is a central brain. A command center for founders.
+Distributed companies hide risk. They duplicate work. They let local narratives harden into
+politics. The relief on offer is a central brain. A command center for founders.
 
 That is the wrong bet. AI makes it more tempting.
 
-The winning company OS will not be one smarter mind at the top. It will be a market with teeth.
-People close to reality create the supply of tools, practices, and decisions. Shared infrastructure
-makes their work legible. Review loops decide what gets attention, staffing, trust, or death.
-Founder power governs the market instead of pretending to be the market.
+The winning company OS will not be one smarter mind at the top. It will be a market with teeth:
+local truth turning into tools, practices, and decisions; shared infrastructure making that work
+legible; review loops deciding what gets attention, staffing, trust, or death; founder power
+setting the rules without pretending to be the market.
 
 Good ideas spread. Bad ideas die. Impact is the currency. Truth is the clearing mechanism.
 
 ## The Real Bet
 
-Markets beat central planning because reality is distributed.
+Markets beat central planning because reality is too distributed to be chaired into existence.
 
 Leadership can see across the system. It cannot feel every local bruise. ICs see the customer paper
 cut, the broken handoff, the stupid weekly ritual, the SQL query quietly owning the business. They
@@ -62,13 +60,10 @@ That bet used to collapse under its own coordination cost. Distributed judgment 
 but context got lost, decisions waited, and good ideas needed meetings before they mattered.
 
 AI changes the bargain. It can carry more context, memory, routing, visibility, review, and
-tool-sharing. In a command center, that makes central planning more powerful and more brittle. In a
-market, it makes distributed truth cheaper to coordinate.
+tool-sharing. In a command center, that lets one model of reality move faster, with more confidence
+and less dissent. In a market, it makes distributed truth cheaper to coordinate.
 
 ## Supply Starts Near Pain
-
-The obvious company OS puts AI in the founder's command center. The better one puts AI in
-everyone's hands, then teaches the company to notice which local inventions deserve to spread.
 
 The market also needs a workshop for work that is still too raw to name: repo-based tools, scripts,
 prompts, skills, agents, notes, and workflows built beside the person who is sick of the pain.
@@ -162,6 +157,11 @@ Founder intervention turns back into central planning when it is constant, unrev
 from local evidence. The intervention has to be explicit, the bet owned, and the consequences
 brought back into view.
 
+Command-center thinking misses this. The goal is not to shrink power until it becomes harmless. The
+goal is to make power answer to
+[enough independent reality](https://blog.cosmos-institute.org/p/when-decentralization-fails) that
+it cannot comfortably capture the system around it.
+
 The market should discover. The center should sometimes decide. That is not a contradiction. It is
 the design.
 
@@ -169,7 +169,8 @@ the design.
 
 At GrowthLoop, this is the signal that made me take the theory seriously.
 
-One crude activity signal moved hard: merged PRs per quarter went from about 700 to about 1900.
+Over the last year, one crude activity signal moved hard: merged PRs per quarter went from about
+700 to about 1900.
 
 PR count is not output, and I would not use that number alone. It is a smoke signal. The signal
 matters because it moved while we hired fast, people left, standards went up, systems changed,
