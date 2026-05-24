@@ -12,16 +12,16 @@ pull_quote: >
   consequences.
 ---
 
-Company operating systems are about to be overbuilt.
+Company operating systems are about to be overbuilt in the most obvious wrong direction.
 
-The category is already being pulled toward its most obvious shape: the founder command center. One
-place where truth lives, work routes itself, and leadership can see and steer the whole company.
+The category is already bending toward the oldest executive fantasy in the world: one room, one
+map, one interface where reality finally behaves.
 
 That pull is strong because the problem is real. Founders are drowning in partial reality. Every
 department has its own map. Every meeting turns truth into theater. Every status update arrives
 laundered by incentives, fear, politeness, and time.
 
-The relief on offer is a central brain.
+The relief on offer is a central brain. A command center for founders.
 
 I think that is the wrong bet, and AI makes the wrong bet more tempting.
 
@@ -59,11 +59,67 @@ lets more judgment travel.
 AI amplifies the model you choose. In a command center, it makes central planning more powerful and
 more brittle. In a market, it makes distributed truth cheaper to coordinate.
 
+## The Missing Mechanism
+
+The obvious company OS puts AI in the command center.
+
+The more interesting one puts AI in everyone's hands, then gives the company a way to notice what
+those hands build.
+
+That requires a place for useful work to be born before it is official. Not a dashboard. Not a
+ticket queue. Not a Slack bot waiting in a shared channel for someone to ask the right question.
+
+Those things matter. Slack agents are good at shared requests. GitHub agents are good at code-shaped
+work. Dashboards are good at legible reality. I want all of them.
+
+But a company market needs a place for illegible work to become real before anyone knows what to
+call it.
+
+That place is local-first.
+
+Local-first matters because the best internal tools do not begin as products. They begin as coping
+mechanisms. One person hits the same wall enough times, gets annoyed enough, and builds a ladder.
+
+The monorepo is not the point because code is sacred. The monorepo is the point because proximity
+changes behavior. Prompts sit near scripts. Skills sit near workflows. Context sits near tools. A
+selfish fix has somewhere to go when it starts helping more than one person.
+
+AI makes every person more capable. Local-first decides whether that capability becomes private
+leverage, command-center theater, or organizational leverage.
+
+## Build For Yourself First
+
+At GrowthLoop, that market runs through Gaia: our true monorepo in the broadest sense. Code,
+context, tools, agent skills, prompts, memory, and the systems around them.
+
+The market starts with people solving their own problems.
+
+People build selfishly first: a script, a skill, a prompt, a local workflow that helps one person
+survive one ugly week.
+
+That sounds small. It is the whole thing. Markets work because the right kind of selfishness can
+become useful to everyone else.
+
+Most companies either force that work through deployment, let it die in a private folder, or summon
+magic in the shared interface. We are trying to make a fourth path normal: build locally, share
+cheaply, make it stealable, and let usefulness pull the work forward.
+
+In a command center, people ask the system to do work. In a market, people make work real, expose it
+to others, and let usefulness decide what survives.
+
+Good ideas should travel before leadership blesses them. A company OS should make memetic
+repetition possible. It should let the company notice what people are already choosing.
+
+Then the core can absorb the winners.
+
+Not because someone wrote a memo declaring them a best practice. Because people already voted with
+their behavior.
+
 ## Markets Need Institutions
 
-The answer is not anarchy. Markets work because institutions make them possible: property rights,
-courts, currency, standards, shared infrastructure, trust, and credible consequences. Without those,
-you get extraction, noise, and local power games.
+A market is not a permission slip for chaos. Markets work because institutions make them possible:
+property rights, courts, currency, standards, shared infrastructure, trust, and credible
+consequences. Without those, you get extraction, noise, and local power games.
 
 A company OS has to do the same job.
 
@@ -74,9 +130,6 @@ happen because people are nice. It happens because institutions reward truth-see
 theater.
 
 At GrowthLoop, that means a wide market with a small trusted core.
-
-The market runs through Gaia: our true monorepo in the broadest sense. Code, context, tools, agent
-skills, prompts, memory, and the systems around them. The repo is not the point. The posture is.
 
 The core runs through Grimoire: our spine for the reality of work. Who is working on what, where a
 project sits, whether it is healthy, what evidence supports it, and who is accountable for moving
@@ -90,35 +143,11 @@ and account for what is happening.
 
 No slide theater. No status theater. Reality of work.
 
-That review is not the market. It is one of the institutions that keeps the market honest.
+That review is not reporting. It is where the market touches consequence. Projects can get killed,
+redirected, resourced, escalated, or forced to show evidence. Ownership cannot diffuse into "the
+team" when a champion has to carry the truth out loud.
 
 People can build for themselves because the core can still see.
-
-## Build For Yourself First
-
-The market starts with people solving their own problems.
-
-People build selfishly first: a script, a skill, a prompt, a local workflow that helps one person
-survive one ugly week.
-
-That sounds small. It is the whole thing. Markets work because the right kind of selfishness can
-become useful to everyone else.
-
-Most companies either force that work through deployment or let it die in a private folder. We are
-trying to make a third path normal: build locally, share cheaply, make it stealable, and let useful
-work spread before it becomes a product.
-
-AI changes the economics. What used to require a platform team can now start as one sharp person
-with a problem worth solving. Solve for yourself. Share when interest emerges. Let usefulness pull
-the work forward.
-
-Good ideas should travel before leadership blesses them. A company OS should make memetic
-repetition possible. It should let the company notice what people are already choosing.
-
-Then the core can absorb the winners.
-
-Not because someone wrote a memo declaring them a best practice. Because people already voted with
-their behavior.
 
 [Freedom without structure is chaos](/blog/directed-chaos/). Structure without freedom is
 bureaucracy. The point is not to capture every process. The point is to build a high-trust arena
@@ -126,7 +155,7 @@ where useful chaos can turn into institutional memory.
 
 ## Founder Power
 
-This is not an argument against founder control.
+None of this kills founder control.
 
 Founder ownership matters because founders can make bets no one else is structurally allowed to
 make. They can absorb risk, spend trust, and say, "We are moving now," when the local market is
@@ -138,14 +167,15 @@ The founder is not the market. The founder is not the monarch. Founder power is 
 system that can fund the commons, defend standards, absorb risk, and force motion when the market
 is stuck.
 
-Good government funds the commons. It protects standards. It intervenes when local incentives
-threaten the system. It prevents power from answering only to itself.
+Good government funds the commons, defends standards, and intervenes when local incentives threaten
+the system. It does not become the market. It makes the market possible.
 
-Leadership should do the same. It should shape what truth must be visible, what standards are
-non-negotiable, what commons need funding, what constraints keep local optimization from damaging
-the whole, who is expected to push back, where autonomy is real, and where autonomy ends.
+Founder power should do the same.
 
-Then leadership should let the market run.
+Fund the commons. Defend standards. Absorb risk. Force motion when the market is stuck. Then get
+out of the way.
+
+<!-- TODO: Add one public-safe example of leadership absorbing risk or forcing motion. The point is that intervention should be explicit, costly, and reviewed after. -->
 
 Command-center thinking misses this. The goal is not to shrink power until it becomes harmless. The
 goal is to make power answer to
@@ -157,23 +187,30 @@ the design.
 
 ## Why I Believe This
 
-At GrowthLoop, this has stopped being theory.
+At GrowthLoop, this is not theory anymore.
 
 Over the last year, engineering output rose roughly 2.6x by one crude measure: PRs per quarter went
-from about 700 to about 1900. That happened despite rapid hiring, exits, higher standards, new
-systems, shifting defaults, and intentional culture changes. Engineering is about the same size now.
-This was not headcount math.
+from about 700 to about 1900.
 
-We blew up a lot of the operating model and got dramatically better anyway.
+That should not have happened.
 
-The easy story is "AI made everyone faster." True, but shallow.
+We hired fast. People left. We raised the bar. We changed systems. We changed defaults. We changed
+the culture on purpose. Engineering is about the same size now, so this was not headcount math.
 
-AI gave people leverage. But leverage in a low-context, low-trust, low-ownership company becomes
-faster mess: more drafts, more tools, more half-built systems, more ways to look busy while reality
-gets worse.
+Most companies get slower when they absorb that much change. We got faster.
 
-AI was necessary. It was not enough. It entered an operating system built to compound leverage. We
-gave more people the context, trust, and ownership to act closer to founders.
+Not because AI magically made everyone better.
+
+AI was necessary, but it was not sufficient. Put AI into a low-context, low-trust, low-ownership
+company and you get faster mess: more drafts, more tools, more half-built systems, more ways to look
+busy while reality gets worse.
+
+The difference was the operating system around it.
+
+More people had context. More people had trust. More people had permission to act close to the
+problem. AI gave them leverage, but the system gave that leverage somewhere useful to go.
+
+<!-- TODO: Add one concrete GrowthLoop scene here: AI decisioning launch, 6-week review intervention, or a local Gaia tool that spread. This section needs one lived moment, not just the 2.6x metric. -->
 
 ## What The Market Must Price
 
@@ -209,19 +246,15 @@ If people hide bad news, distributed power becomes distributed theater. If leade
 information stops flowing. If teams hoard context, local optimization wins. If status beats impact,
 the market prices the wrong thing.
 
-Trust makes the market liquid.
-
-Without it, every transaction gets expensive. Every handoff needs insurance. Every meeting becomes a
-court record. Every honest signal gets hedged.
+Trust makes the market liquid. Without it, every transaction gets expensive. Every handoff needs
+insurance. Every honest signal gets hedged.
 
 Software does not fix that.
 
 The OS can expose the loss of trust. It can make drift visible. It can help new people adapt faster.
 But culture has to be taught, enforced, and lived.
 
-If you do not have the conditions, the market will not save you.
-
-It will expose you.
+If you do not have the conditions, the market will not save you. It will expose you.
 
 ## The Bet
 
