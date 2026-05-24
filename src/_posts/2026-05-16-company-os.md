@@ -29,6 +29,9 @@ The winning company OS will not be one smarter mind at the top. It will be a mar
 institutions: many people close to reality, enough shared infrastructure to make their work legible,
 and enough consequence that good ideas spread while bad ones die.
 
+A company OS market lets tools, decisions, and practices emerge near the work, spread through
+usage, and stay governed by visible standards and consequences.
+
 ## The Real Bet
 
 Markets beat central planning because reality is distributed.
@@ -59,7 +62,7 @@ lets more judgment travel.
 AI amplifies the model you choose. In a command center, it makes central planning more powerful and
 more brittle. In a market, it makes distributed truth cheaper to coordinate.
 
-## The Missing Mechanism
+## Where Markets Form
 
 The obvious company OS puts AI in the command center.
 
@@ -73,9 +76,10 @@ Those things matter. Slack agents are good at shared requests. GitHub agents are
 work. Dashboards are good at legible reality. I want all of them.
 
 But a company market needs a place for illegible work to become real before anyone knows what to
-call it.
+call it. Otherwise the market has nothing to select.
 
-That place is local-first.
+That place is local-first: repo-based tools, scripts, prompts, skills, agents, notes, and workflows
+built close to the person feeling the pain.
 
 Local-first matters because the best internal tools do not begin as products. They begin as coping
 mechanisms. One person hits the same wall enough times, gets annoyed enough, and builds a ladder.
@@ -175,6 +179,10 @@ Founder power should do the same.
 Fund the commons. Defend standards. Absorb risk. Force motion when the market is stuck. Then get
 out of the way.
 
+Founder intervention turns back into central planning when it is constant, unreviewed, or detached
+from local evidence. The intervention has to be explicit. The bet has to be owned. The consequences
+have to come back into view.
+
 <!-- TODO: Add one public-safe example of leadership absorbing risk or forcing motion. The point is that intervention should be explicit, costly, and reviewed after. -->
 
 Command-center thinking misses this. The goal is not to shrink power until it becomes harmless. The
@@ -214,7 +222,7 @@ problem. AI gave them leverage, but the system gave that leverage somewhere usef
 
 ## What The Market Must Price
 
-Impact has to become the currency.
+Impact has to become the currency. If the market prices the wrong thing, the whole system rots.
 
 Otherwise the market prices bullshit: polish, proximity, slogans, whatever language leadership is
 rewarding this quarter.
@@ -224,7 +232,7 @@ The real currency is results. Truth made visible. Energy converted into movement
 But every currency can be counterfeited. Charisma can look like impact. So can executive proximity.
 So can a beautiful narrative or a fast response time.
 
-Two signals seem real enough to price, though I do not think the language is finished.
+Two signals seem useful, though I do not think the language is finished.
 
 The first is trust battery: earned permission to ship with fewer questions because past work proved
 your judgment. You made good calls. You told the truth early. You carried ugly work without hiding
@@ -233,28 +241,20 @@ the mess.
 The second is mastery: craft excellence, taste, and the ability to make something good enough that
 other strong people trust it, use it, copy it, and build on it.
 
-Impact probably lives where trust battery and mastery meet visible results.
-
-A company OS should make real impact easier to see and fake impact harder to launder.
+Impact probably lives where trust battery and mastery meet visible results. A company OS should
+make real impact easier to see and fake impact harder to launder.
 
 This only works in [high trust](/blog/trust-first/) companies. Not nice companies. High-trust
 companies. Places where truth can move.
 
-Low-trust companies cannot run markets. They can only run permissions.
+Low-trust companies cannot run markets. They can only run permissions. If people hide bad news,
+distributed power becomes distributed theater. If leaders punish truth, information stops flowing.
+If teams hoard context, local optimization wins. If status beats impact, the market prices the wrong
+thing.
 
-If people hide bad news, distributed power becomes distributed theater. If leaders punish truth,
-information stops flowing. If teams hoard context, local optimization wins. If status beats impact,
-the market prices the wrong thing.
-
-Trust makes the market liquid. Without it, every transaction gets expensive. Every handoff needs
-insurance. Every honest signal gets hedged.
-
-Software does not fix that.
-
-The OS can expose the loss of trust. It can make drift visible. It can help new people adapt faster.
-But culture has to be taught, enforced, and lived.
-
-If you do not have the conditions, the market will not save you. It will expose you.
+Software does not fix that. The OS can expose the loss of trust, but culture has to be taught,
+enforced, and lived. If you do not have the conditions, the market will not save you. It will expose
+you.
 
 ## The Bet
 
@@ -268,6 +268,8 @@ That is a harder system to build than a dashboard.
 
 It demands trust. It demands taste. It demands leaders who understand that power gets more useful
 when it is concentrated carefully and distributed aggressively.
+
+The bet is simple: convert distributed reality into coordinated action faster than competitors.
 
 Get it right and the company starts to feel less like a machine and more like an economy.
 
