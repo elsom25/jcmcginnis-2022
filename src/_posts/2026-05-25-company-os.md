@@ -1,6 +1,6 @@
 ---
 feed: false
-published: false
+published: true
 
 title: The Company OS Is a Market
 permalink: /blog/company-os/
