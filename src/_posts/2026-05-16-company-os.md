@@ -203,8 +203,8 @@ Our work on
 was one of those bets: too early for the internal market to fully price, important enough for the
 center to fund anyway. Then the work had to come back into standards, ownership, and consequence.
 
-Founder power belongs in that gap, but only if it comes back with receipts: what risk was taken, what
-commons got funded, what standards now apply.
+Founder power belongs in that gap, but only if it comes back with receipts: what risk was taken,
+what commons got funded, what standards now apply.
 
 Founder intervention becomes central planning when it is constant, hidden, or detached from local
 evidence. Intervene loudly, own the bet, and make the cost visible.
