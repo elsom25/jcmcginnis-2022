@@ -98,7 +98,8 @@ and the company still routes every useful move through the center, the company t
 wait. It turns builders into factory workers with better equipment: faster with inputs, weaker at
 owning the outcome.
 
-A market gives that first version somewhere to go.
+A market gives that first version somewhere to go: inspect it, steal it, improve it, fund it, or
+kill it.
 
 ## Useful Work Starts Near Pain
 
@@ -198,12 +199,13 @@ market is still debating the cleanest answer.
 The cultural standard is not permissionless chaos. Act like an owner inside standards the center
 will actually defend.
 
+Our public work on
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
 was one of those bets: too early for the internal market to fully price, important enough for the
 center to fund anyway. Then the work had to come back into standards, ownership, and consequence.
 
 Founder power earns its place in that gap only when it comes back with receipts: what risk was
-taken, what commons got funded, what standards now apply.
+taken, what commons got funded, which owners were named, what standards changed.
 
 Founder intervention becomes central planning when it is constant, hidden, or detached from local
 evidence. Intervene loudly, own the bet, and make the cost visible.
@@ -253,13 +255,13 @@ Someone sees the failure, fixes the local version, puts the fix where others can
 the company to decide whether to adopt it, fund it, or kill it.
 
 Done right, the company leaves evidence behind: owners, reusable work, funded bets, dead projects,
-and standards that changed because reality made them change.
+and standards rewritten by evidence.
 
 That takes leaders willing to concentrate power and then spend that power building people who need
 less permission.
 
-Permission-bound companies cannot run markets. They can only run queues. Better software just makes
-the queues move faster. It will not save them. It will expose them.
+Permission-bound companies cannot run markets. They can only run queues. Software will not save
+them. It will expose them.
 
 Get it right, and the company stops performing alignment. The work itself starts teaching the
 company what is true.
