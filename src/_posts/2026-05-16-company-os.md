@@ -198,7 +198,6 @@ market is still debating the cleanest answer.
 The cultural standard is not permissionless chaos. Act like an owner inside standards the center
 will actually defend.
 
-Our work on
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
 was one of those bets: too early for the internal market to fully price, important enough for the
 center to fund anyway. Then the work had to come back into standards, ownership, and consequence.
