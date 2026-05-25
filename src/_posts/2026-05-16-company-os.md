@@ -25,9 +25,9 @@ The fantasy works because the pain is real. Each function carries its own map. M
 hard parts. Status arrives late, pre-defended, and pre-softened. So central planning feels like
 relief.
 
-False relief, but relief. AI does not kill the fantasy. It makes the fantasy cheaper. Central
-planning works in emergencies, which is why it is dangerous: war powers feel effective until they
-become the operating model.
+False relief. AI does not kill the fantasy. It makes the fantasy cheaper. Central planning works in
+emergencies, which is why it is dangerous: war powers feel effective until they become the operating
+model.
 
 A company OS should not help the center see everything. It should help true things change the
 company before politics, latency, or approval theater can sand them down.
@@ -66,18 +66,17 @@ workflow, inspect the logs, write the script, summarize the evidence, and ship t
 before the next planning meeting. Not perfectly. Not forever. Enough to prove whether the work
 deserves more company attention.
 
-The old excuse was coordination. The company had not enabled the work yet. The tools were missing.
-The mandate was unclear. The team was too busy. AI does not erase every constraint, but it burns
-through enough of them that waiting starts to look like a choice. A ticket is no longer proof of
-ownership. A process gap is no longer proof that no one could move.
+The old excuse was coordination: the company had not enabled the work yet, the tools were missing,
+the mandate was unclear, the team was too busy; permission lived somewhere else. AI does not erase
+every constraint, but it burns through enough of them that waiting starts to look like a choice. A
+ticket is no longer proof of ownership. A process gap is no longer proof that no one could move.
 
 Before adding headcount, meetings, platform work, or another operating ritual, the first question
 should be brutal: did a sharp owner with AI actually fail, or did everyone just reach for the org
 chart?
 
-A lot of people who looked high-agency in the old company will look passive in the new one. The old
-excuse was access: I do not have the tools, the team, the mandate, the time. AI burns through that
-excuse. High agency is no longer a personality trait. It is the job.
+A lot of people who looked high-agency in the old company will look passive in the new one. High
+agency is no longer a personality trait. It is the job.
 
 That makes central planning more expensive, not less. The center cannot inspect and approve every
 useful thing people can now create.
@@ -94,7 +93,7 @@ A market gives that first version somewhere to go.
 Useful work usually starts selfish. Someone has a bad week and refuses to repeat it. They write the
 script, save the prompt, patch the workflow, document the path through a recurring failure.
 
-Good. That is the market working: the right kind of selfishness becoming useful to everyone else.
+Markets work when the right kind of selfishness becomes useful to everyone else.
 
 Someone in support knows the path: which logs matter, which project to open, which tenant context
 changes the answer, how to rerun a failed audience export without making the failure worse. That
@@ -113,9 +112,9 @@ That is why a central agent is useful but insufficient. It gives everyone one ea
 if the shared brain only lives behind a bot, people learn to query the machine instead of learning
 how the company works. A bot can answer the question. Gaia makes the answer inheritable.
 
-That is the difference. The work can be pulled apart, rerun, changed, and improved. It can feed
-local dev, cloud agents, Slack, CI, reviews, and whatever surface comes next. The point is not the
-repo. The point is that company memory can be executed.
+The work can be pulled apart, rerun, changed, and improved. It can feed local dev, cloud agents,
+Slack, CI, reviews, and whatever surface comes next. The point is not the repo. The point is that
+company memory can be executed.
 
 Slack still matters. It is the bazaar: loud, public, messy, weirdly efficient at discovery. Gaia
 matters because the bazaar needs goods of its own. Discovery needs a shelf life.
@@ -180,15 +179,14 @@ market is still debating the cleanest answer.
 The cultural standard is not permissionless chaos. Act like an owner inside standards the center
 will actually defend.
 
-Product strategy tests the same boundary. Some bets are too early for the internal market to price
-correctly.
+GrowthLoop has lived this in public. Our work on
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
-is one of ours. We put weight behind the bet before every local team could justify its piece from
-current evidence, then forced the work back into standards, ownership, and consequence.
+was a bet the internal market could not fully price yet. The center put weight behind it before
+every local team could justify its piece from current evidence, then forced the work back into
+standards, ownership, and consequence.
 
-That is where founder power belongs: in the uncomfortable gap between what the market can already
-prove and what the company has to bet before proof arrives. Fund the commons before the market can,
-own the risk before the evidence is comfortable, and force the consequences back into view.
+Founder power belongs in that uncomfortable gap: fund the commons before the market can, own the
+risk before the evidence is comfortable, and force the consequences back into view.
 
 Founder intervention becomes central planning when it is constant, hidden, or detached from local
 evidence. Intervene loudly, own the bet, and make the cost visible.
@@ -231,7 +229,7 @@ becomes compounding leverage.
 
 ## The Bet
 
-The companies that win will not be the ones with the prettiest cockpit. They will be the ones that
+The companies that win will not be the ones with the best dashboard. They will be the ones that
 shorten the path from lived reality to changed behavior. Someone sees the failure, fixes the local
 version, puts the fix where others can use it, and the company decides whether to adopt it, fund it,
 or kill it.
