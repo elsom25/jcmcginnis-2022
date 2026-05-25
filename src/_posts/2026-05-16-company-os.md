@@ -174,24 +174,22 @@ we increase motion without losing ownership or quality?
 A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. Now a smaller
 team is shipping about 1,900. Per person, shipped PRs more than tripled.
 
-The numbers are not clean enough to treat as science. PR count is not output. I would not trust it
-alone. But it told us where to look.
+PR count is not output. I would not trust it alone. But it told us where to look.
 
 Ownership held. We track whether shipped PRs attach to real project work, and the unassociated
-share stayed roughly steady. That is higher than I want, but not the pattern you would expect if
-the gain came from everyone spraying clever, ownerless work into the codebase.
+share stayed steady. That is not the pattern you would expect if the gain came from everyone
+spraying clever, ownerless work into the codebase.
 
 Quality held too, but not by accident. Early in this journey, we had to call a platform stability
 Code Red because the system was moving faster than its guardrails. That was central power doing its
 job: making the problem visible enough to price.
 
-Then the numbers moved. High-urgency incidents fell from roughly 80 a month to roughly 40.
-Resolution time fell from about four days to less than one day. Pager acknowledgements went from
-about 25% to nearly 100%.
+Then the numbers moved. High-urgency incidents fell from about 80 a month to about 40. Resolution
+time fell from four days to less than one. Pager acknowledgements went from 25% to nearly 100%.
 
 That combination is what matters: more throughput from fewer people, without ownership collapse,
-while quality improves. That does not prove causality by itself. It does make the lazy explanation
-harder: this was not simply a team spraying more work into the system and paying for it later.
+while quality improves. The lazy explanation gets harder: this was not simply a team spraying more
+work into the system and paying for it later.
 
 Most companies get slower when they raise standards. They get careful, political, and
 approval-bound. The machine protects itself by adding friction.
@@ -206,11 +204,11 @@ The companies that win from here will shorten the path from lived reality to cha
 Someone sees the failure, fixes the local version, puts the fix where others can use it, and the
 company decides whether to adopt, fund, or kill it.
 
-That is harder than a dashboard. It takes leaders willing to concentrate power and then spend that
-power building people who need less permission.
+That is harder than installing a command center. It takes leaders willing to concentrate power and
+then spend that power building people who need less permission.
 
-Low-trust companies cannot run markets. They can only run queues. Software will not save them. It
-will expose them.
+Permission-bound companies cannot run markets. They can only run queues. Software will not save
+them. It will expose them.
 
 The bet is simple: turn distributed reality into coordinated action faster than competitors can.
 
