@@ -138,54 +138,37 @@ matters because the bazaar needs goods of its own. Discovery needs a shelf life.
 ## Markets Need Institutions
 
 Without institutions, an internal market does not discover truth. It discovers who can route around
-whom.
-
-Institutions have to make the honest move cheaper than the political move: show the evidence, name
-the owner, price the risk, and make truth-seeking easier to carry than polished theater.
+whom. The system has to make the honest move cheaper than the political move: show the evidence,
+name the owner, price the risk, and make truth-seeking easier to carry than polished theater.
 
 At GrowthLoop, Gaia and Grimoire carry that bargain together. Gaia is the market substrate: the
 place where local work can appear, compete, spread, mutate, and become shared company memory.
 Grimoire is the institutional layer that keeps that market honest by making work visible, owned,
 reviewed, funded, killed, and remembered.
 
-Gaia creates supply. Grimoire prices consequence.
-
-Pain becomes a first version. The first version becomes inspectable. Use creates evidence. The
-institution decides whether the work gets funded, standardized, redirected, or killed.
+Gaia creates supply. Grimoire prices consequence. Pain becomes a first version. Use creates
+evidence. The institution decides whether the work gets funded, standardized, redirected, or killed.
 
 Grimoire does not just collect reality. It enforces contact with it: no project without a champion,
 no stale work quietly consuming people, no green status without current evidence, no leader hiding
 behind lane boundaries, no project surviving on social momentum alone.
 
-Standards get written back into the system. People move. Funding changes. Work loses legitimacy when
-evidence goes cold.
-
-Six-week reviews make that hard to fake.
-
-Every real project needs a champion: not a committee, not a vague team, but a human whose name stays
-attached when the work gets heavy.
-
 Every six weeks, Grimoire turns the portfolio into a court docket. The system brings the facts: who
 owns the work, what moved, what stalled, what changed, what evidence exists, and what the work is
-costing. The champion has to stand in public with the truth.
-
-The review is not status theater. It is where the company decides: fund it, kill it, redirect it,
-escalate it, or force better evidence.
+costing. Every real project needs a named champion, not a committee or vague team. The champion has
+to stand in public with the truth. The review is not status theater. It is where the company
+decides: fund it, kill it, redirect it, escalate it, or force better evidence.
 
 In one recent review, Grimoire made the uncomfortable truth hard to hide. Some work was still
-getting funded after the evidence had gone cold. Some leaders were staying inside their lane when
-the company needed them to cross it.
+getting funded after the evidence had gone cold, and some leaders were staying inside their lane
+when the company needed them to cross it. So we killed most of that work, moved people to better
+bets, and made the standard explicit: leads are accountable for coaching through fear, resistance,
+and ambiguity, not just reporting that those things exist.
 
-So we killed most of that work, moved people to better bets, and made the standard explicit: leads
-are accountable for coaching through fear, resistance, and ambiguity, not just reporting that those
-things exist.
-
-People can build for themselves because the work still has to face the institution: name the owner,
-show the evidence, price the risk, and change what happens next.
-
-That is the [directed chaos](/blog/directed-chaos/) bargain: freedom without structure is chaos;
-structure without freedom is bureaucracy. The goal is an arena where people can move without asking
-permission and still expect standards, memory, ownership, and consequence.
+That is the [directed chaos](/blog/directed-chaos/) bargain: people can build for themselves because
+the work still has to face the institution. Freedom without structure is chaos; structure without
+freedom is bureaucracy. The goal is an arena where people can move without asking permission and
+still expect standards, memory, ownership, and consequence.
 
 ## The Center Still Has a Job
 
@@ -217,9 +200,10 @@ Let the market discover. Let the center decide when it must. Make both answer to
 
 ## Why I Believe This
 
-At GrowthLoop, the harder test came when speed started testing quality. Throughput by itself would
-be easy to distrust. The real test was whether standards rose, incident pressure fell, ownership
-held, and throughput rose together.
+The reason I trust the model is not that it sounds elegant. It is that we needed more velocity, and
+the usual tradeoff did not hold. Our pace was not high enough for the bets we wanted to win, but raw
+throughput would have been easy to distrust. The real test was whether standards rose, incident
+pressure fell, ownership held, and throughput rose together.
 
 Quality moved first. Early in this journey, we had to call a platform stability Code Red because the
 system was moving faster than its guardrails. That was central power doing its job: making the
@@ -248,16 +232,13 @@ becomes compounding leverage.
 
 ## The Bet
 
-The companies that win will shorten the path from lived reality to changed behavior.
-
-Someone sees the failure, fixes the local version, puts the fix where others can use it, and forces
-the company to decide whether to adopt it, fund it, or kill it.
+The companies that win will shorten the path from lived reality to changed behavior: someone sees
+the failure, fixes the local version, puts the fix where others can use it, and forces the company
+to decide whether to adopt it, fund it, or kill it.
 
 Done right, reality leaves marks: owners, reusable work, funded bets, dead projects, and standards
-the company had to rewrite.
-
-That takes leaders willing to concentrate power and then spend that power building people who need
-less permission.
+the company had to rewrite. That takes leaders willing to concentrate power and then spend that
+power building people who need less permission.
 
 Permission-bound companies cannot run markets. They can only run queues. Software will not save
 them. It will expose them.
