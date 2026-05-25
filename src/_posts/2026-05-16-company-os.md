@@ -74,6 +74,15 @@ doing the work. Local to the repo. Local to the pain.
 At GrowthLoop, Gaia is that workshop: the repo where code, context, tools, agent skills, prompts,
 memory, and operating habits live close enough to collide.
 
+The shape is not theoretical. We have skills for reading production logs with the right project and
+tenant context, tracing Datadog latency back into code, reading Grimoire through the product
+session instead of pretending GitHub metadata is enough, and sharing experimental skills back
+through Gaia itself. Before Gaia, most of that would have been a Slack post with a prompt in it. At
+best, someone copied the idea. Usually, it decayed.
+
+Gaia changes the artifact. We are no longer only sharing what other people made. We are sharing
+what we make.
+
 People build selfishly first: a script, a skill, a prompt, a local workflow that helps one person
 survive one ugly week.
 
@@ -90,8 +99,10 @@ the same wall enough times, gets annoyed enough, and builds a ladder.
 Proximity changes behavior. Prompts sit near scripts. Skills sit near workflows. Context sits near
 tools. A selfish fix has somewhere to go when it starts helping more than one person.
 
-Good ideas should travel before leadership blesses them. The company can absorb the winners after
-people have already voted with behavior.
+Good ideas should travel before leadership blesses them. Slack can still be the bazaar, but now the
+goods are ours: a playground skill, a local workflow, a repo convention, something another person
+can pull, mutate, and improve. When enough people vote with behavior, Gaia can turn the useful
+thing into a PR, move it into the global set, and make it part of the installed surface.
 
 That is the supply side. Gaia gives local fixes somewhere to start and spread. Grimoire gives the
 work ownership, evidence, review, and consequence when it starts to matter.
@@ -153,6 +164,14 @@ existential bets, and the commons no local team would fund early enough on its o
 should set those boundaries. It should not become the mandatory path by which local truth becomes
 real.
 
+We just made that explicit again: everyone is expected to act more like a founder. Not as a slogan.
+As a standard we use to evaluate ourselves and each other.
+
+The same thing shows up in capital allocation. We have protected more than a third of R&D, including
+some of our strongest ICs, for the causality and marketing bet behind our recent Google Next
+releases. The internal market would not naturally create enough pressure for that work early enough.
+That is exactly where founder power has to spend trust.
+
 Founder intervention turns back into central planning when it is constant, unreviewed, or detached
 from local evidence. The intervention has to be explicit, the bet owned, and the consequences
 brought back into view.
@@ -169,13 +188,21 @@ the design.
 
 At GrowthLoop, this is the signal that made me take the theory seriously.
 
-Over the last year, one crude activity signal moved hard: merged PRs per quarter went from about
-700 to about 1900.
+In March 2025, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. By May
+2026, roughly 25 are shipping about 1900.
 
 PR count is not output, and I would not use that number alone. It is a smoke signal. The signal
-matters because it moved while we hired fast, people left, standards went up, systems changed,
-defaults reset, and the culture moved on purpose. Engineering is about the same size now, so this
-was not headcount math.
+matters because it moved while we hired a dozen-plus people, exited more than that, raised
+standards, changed systems, reset defaults, and moved the culture on purpose. Engineering is
+smaller now, so this was not headcount math.
+
+It also did not come from losing the plot. We track project association for shipped PRs, and the
+unassociated share has stayed roughly steady around 30-35%. Higher than I want, but not the shape
+you would expect if throughput came from everyone spraying unowned work into the codebase.
+
+The signal also did not come from letting the machine rot. Over the same period, we ran a code red
+on quality: fewer bugs, fewer support requests, faster pager response, faster engineering support
+resolution. The quality push has held.
 
 Most companies get slower when they absorb that much change. We got faster.
 
