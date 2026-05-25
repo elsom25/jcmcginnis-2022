@@ -149,9 +149,8 @@ reviewed, funded, killed, and remembered.
 
 Gaia creates supply. Grimoire prices consequence.
 
-That is the operating loop: pain becomes a first version, the first version becomes inspectable,
-adoption creates evidence, and the institution decides whether the work gets funded, standardized,
-redirected, or killed.
+Pain becomes a first version. The first version becomes inspectable. Adoption creates evidence. The
+institution decides whether the work gets funded, standardized, redirected, or killed.
 
 Grimoire does not just collect reality. It enforces contact with it: no project without a champion,
 no stale work quietly consuming people, no green status without current evidence, no leader hiding
