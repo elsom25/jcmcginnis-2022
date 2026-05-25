@@ -134,6 +134,11 @@ That review is where the market touches consequence. Projects can get killed, re
 resourced, escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a
 champion has to carry the truth out loud.
 
+In one recent Composable review, the useful thing was not a prettier dashboard. The system surfaced
+patterns the local market could too easily smooth over: stale updates, overloaded champions,
+discovery work without enough validation, and health labels that did not match the evidence. That
+is what an institution is for. It makes uncomfortable reality harder to route around.
+
 People can build for themselves because the center can still inspect the work, name the owner, and
 change the consequence.
 
@@ -184,11 +189,11 @@ the design.
 
 ## Why I Believe This
 
-At GrowthLoop, this stopped being theory when the numbers moved in the wrong direction for the
-central-planning story.
+At GrowthLoop, this stopped being theory when the operating model started producing results the old
+system had no right to produce.
 
 A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. Now a
-smaller team is shipping about 1900.
+smaller team is shipping about 1900. Per person, shipped PRs more than tripled.
 
 PR count is not output. I would not trust that number by itself. It is a smoke signal. The proof is
 that the smoke did not come with the usual organizational fire.
