@@ -74,14 +74,12 @@ doing the work. Local to the repo. Local to the pain.
 At GrowthLoop, Gaia is that workshop: the repo where code, context, tools, agent skills, prompts,
 memory, and operating habits live close enough to collide.
 
-The shape is not theoretical. We have skills for reading production logs with the right project and
-tenant context, tracing Datadog latency back into code, reading Grimoire through the product
-session instead of pretending GitHub metadata is enough, and sharing experimental skills back
-through Gaia itself. Before Gaia, most of that would have been a Slack post with a prompt in it. At
-best, someone copied the idea. Usually, it decayed.
+Gaia makes the difference concrete. A support investigation, a production-log search, a Datadog
+trace, a Grimoire lookup, or a presentation workflow can become a reusable skill instead of a
+one-off heroic act.
 
-Gaia changes the artifact. We are no longer only sharing what other people made. We are sharing
-what we make.
+Before Gaia, that knowledge usually became a Slack tip: helpful for a day, hard to reuse, easy to
+lose. Gaia turns it into an artifact someone can pull, inspect, run, mutate, and improve.
 
 People build selfishly first: a script, a skill, a prompt, a local workflow that helps one person
 survive one ugly week.
@@ -99,10 +97,10 @@ the same wall enough times, gets annoyed enough, and builds a ladder.
 Proximity changes behavior. Prompts sit near scripts. Skills sit near workflows. Context sits near
 tools. A selfish fix has somewhere to go when it starts helping more than one person.
 
-Good ideas should travel before leadership blesses them. Slack can still be the bazaar, but now the
-goods are ours: a playground skill, a local workflow, a repo convention, something another person
-can pull, mutate, and improve. When enough people vote with behavior, Gaia can turn the useful
-thing into a PR, move it into the global set, and make it part of the installed surface.
+Good ideas should travel before leadership blesses them. Slack still matters because people learn
+in public there. It is where discovery happens. Gaia gives the discovered thing a product path:
+start local, prove usefulness, turn it into a PR, and promote it into the shared environment when
+adoption earns it.
 
 That is the supply side. Gaia gives local fixes somewhere to start and spread. Grimoire gives the
 work ownership, evidence, review, and consequence when it starts to matter.
@@ -129,10 +127,8 @@ shows who is working on what, where a project sits, whether it is healthy, what 
 it, and who is accountable.
 
 Every real project needs a champion: not a committee, not a vague team, but a human whose name
-stays attached when the work gets heavy. Every six weeks, leaders put the whole portfolio on the
-table. Champions defend, justify, and account for what is happening.
-
-No slide theater. No status theater. Names, evidence, consequences.
+stays attached when the work gets heavy. Every six weeks, leaders put the portfolio on the table:
+what is moving, what is stuck, what evidence exists, and what deserves more investment.
 
 That review is where the market touches consequence. Projects can get killed, redirected,
 resourced, escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a
@@ -164,13 +160,15 @@ existential bets, and the commons no local team would fund early enough on its o
 should set those boundaries. It should not become the mandatory path by which local truth becomes
 real.
 
-We just made that explicit again: everyone is expected to act more like a founder. Not as a slogan.
-As a standard we use to evaluate ourselves and each other.
+We just made that explicit again: everyone is expected to act more like a founder. Not as a slogan,
+but as a standard for how we judge the work and each other.
 
-The same thing shows up in capital allocation. We have protected more than a third of R&D, including
-some of our strongest ICs, for the causality and marketing bet behind our recent Google Next
-releases. The internal market would not naturally create enough pressure for that work early enough.
-That is exactly where founder power has to spend trust.
+The same thing shows up in product strategy. Some bets are too early for the internal market to
+price correctly. Our work on [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
+is a bet that agentic marketing, composable decisioning, measurement, and the data cloud belong in
+one compounding loop. That required concentrated R&D commitment before the demand signal was
+obvious enough to pull the organization on its own. That is where founder power belongs: naming the
+strategic bet, funding it, and accepting responsibility for the risk.
 
 Founder intervention turns back into central planning when it is constant, unreviewed, or detached
 from local evidence. The intervention has to be explicit, the bet owned, and the consequences
@@ -186,25 +184,31 @@ the design.
 
 ## Why I Believe This
 
-At GrowthLoop, this is the signal that made me take the theory seriously.
+At GrowthLoop, this stopped being theory when the numbers moved in the wrong direction for the
+central-planning story.
 
-In March 2025, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. By May
-2026, roughly 25 are shipping about 1900.
+A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. Now a
+smaller team is shipping about 1900.
 
-PR count is not output, and I would not use that number alone. It is a smoke signal. The signal
-matters because it moved while we hired a dozen-plus people, exited more than that, raised
-standards, changed systems, reset defaults, and moved the culture on purpose. Engineering is
-smaller now, so this was not headcount math.
+PR count is not output. I would not trust that number by itself. It is a smoke signal. The proof is
+that the smoke did not come with the usual organizational fire.
 
-It also did not come from losing the plot. We track project association for shipped PRs, and the
-unassociated share has stayed roughly steady around 30-35%. Higher than I want, but not the shape
-you would expect if throughput came from everyone spraying unowned work into the codebase.
+Ownership did not disappear. We track whether shipped PRs attach back to real project work, and the
+unassociated share has stayed roughly steady. Higher than I want, but not the shape you would
+expect if the gain came from everyone spraying clever, ownerless work into the codebase.
 
-The signal also did not come from letting the machine rot. Over the same period, we ran a code red
-on quality: fewer bugs, fewer support requests, faster pager response, faster engineering support
-resolution. The quality push has held.
+Quality did not get sacrificed on the altar of speed either. We pushed hard on the basics: fewer
+bugs, fewer support requests, faster pager response, faster engineering support resolution. The
+quality push held.
 
-Most companies get slower when they absorb that much change. We got faster.
+That combination is what matters. More throughput from fewer people is interesting. More throughput
+without ownership collapse is more interesting. More throughput while quality improves is the thing
+worth studying.
+
+Most companies get slower when they raise standards and change the way work moves. They get more
+careful, more political, more approval-bound. The machine protects itself by adding friction.
+
+We got faster.
 
 Not because AI magically made everyone better.
 
