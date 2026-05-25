@@ -53,10 +53,10 @@ choices the work itself could have resolved.
 Eventually the company fills with permission queues. People get good at serving the machine and
 worse at changing it.
 
-A better company OS is a market with strong institutions. Local pain gets a path to a fix. Useful
-fixes harden into shared infrastructure. Work proves itself by being used, copied, improved, or
-abandoned. Institutions decide what earns trust, funding, attention, or a clean death. The center
-still intervenes, but only where the market cannot price the risk.
+The alternative is not one smarter center. Local pain needs a path to a fix. Useful fixes harden
+into shared infrastructure. Work proves itself by being used, copied, improved, or abandoned.
+Institutions decide what earns trust, funding, attention, or a clean death. The center still
+intervenes, but only where the market cannot price the risk.
 
 The sharper company OS question is not "how do leaders see everything?"
 
@@ -85,9 +85,10 @@ Before adding headcount, meetings, platform work, or another operating ritual, t
 should be brutal: did a sharp owner with AI hit a real boundary, or did everyone just reach for the
 org chart?
 
-A lot of people who looked high-agency in the old company were really good at navigating scarcity.
-In the new one, scarcity is a weaker alibi. High agency is no longer a personality trait. It is the
-job.
+A lot of people who looked high-agency in the old company were really good at navigating scarcity:
+finding the right person, waiting for the right mandate, surviving the missing tool. That skill
+still matters. It is no longer enough. In the new company, scarcity is a weaker alibi. High agency
+is no longer a personality trait. It is the job.
 
 That makes central planning more expensive, not less. The center cannot inspect and approve every
 useful thing people can now create.
@@ -102,9 +103,9 @@ kill it.
 
 ## Useful Work Starts Near Pain
 
-Useful work usually starts selfish. Someone has a bad week and refuses to repeat it. They write the
-script, save the prompt, patch the workflow, document the escalation path, preserve the customer
-workaround, or codify the ritual everyone keeps doing by hand.
+Useful work usually starts selfish. Someone has a bad week and refuses to repeat it. They leave
+behind a script, a prompt, a patched workflow, an escalation path, a customer workaround, a ritual
+made less stupid.
 
 First it saves one person's week. Then someone else steals it, changes it, and makes it sturdier.
 That is when it becomes supply.
@@ -149,7 +150,7 @@ reviewed, funded, killed, and remembered.
 
 Gaia creates supply. Grimoire prices consequence.
 
-Pain becomes a first version. The first version becomes inspectable. Adoption creates evidence. The
+Pain becomes a first version. The first version becomes inspectable. Use creates evidence. The
 institution decides whether the work gets funded, standardized, redirected, or killed.
 
 Grimoire does not just collect reality. It enforces contact with it: no project without a champion,
@@ -198,10 +199,9 @@ market is still debating the cleanest answer.
 The cultural standard is not permissionless chaos. Act like an owner inside standards the center
 will actually defend.
 
-Our public work on
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
-was one of those bets: too early for the internal market to fully price, important enough for the
-center to fund anyway, and still accountable to standards, ownership, and consequence.
+was one of those product bets: too early for the internal market to fully price, important enough
+for the center to fund anyway, and still accountable to standards, ownership, and consequence.
 
 Founder power earns its place in that gap only when it comes back with receipts: risk taken, commons
 funded, owners named, standards changed.
@@ -213,7 +213,7 @@ Power does not get better by pretending it is harmless. It gets better when it h
 [enough independent reality](https://blog.cosmos-institute.org/p/when-decentralization-fails) that
 it cannot comfortably capture the system around it.
 
-The market should discover. The center should sometimes decide. Both have to answer to reality.
+Let the market discover. Let the center decide when it must. Make both answer to reality.
 
 ## Why I Believe This
 
@@ -253,8 +253,8 @@ The companies that win will shorten the path from lived reality to changed behav
 Someone sees the failure, fixes the local version, puts the fix where others can use it, and forces
 the company to decide whether to adopt it, fund it, or kill it.
 
-Done right, the company leaves evidence behind: owners, reusable work, funded bets, dead projects,
-and standards rewritten by reality.
+Done right, reality leaves marks: owners, reusable work, funded bets, dead projects, and standards
+the company had to rewrite.
 
 That takes leaders willing to concentrate power and then spend that power building people who need
 less permission.
