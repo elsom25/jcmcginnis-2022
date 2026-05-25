@@ -10,6 +10,8 @@ description: A company operating system should coordinate many minds, not crown 
 pull_quote: >
   A company OS is not the place where founders see everything. It is the system that lets local
   truth become consequential.
+
+image: "/assets/img/company-market.png"
 ---
 
 Founders are not short on data. They are short on unedited reality.
