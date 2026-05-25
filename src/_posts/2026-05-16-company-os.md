@@ -12,7 +12,7 @@ pull_quote: >
   truth become consequential.
 ---
 
-The next wave of company-OS software is being aimed at the wrong appetite: the founder who wants
+The next wave of company OS software is being aimed at the wrong appetite: the founder who wants
 one clean screen where the company finally holds still.
 
 That is the seductive product: one room, one map, one AI chief of staff, one interface where
@@ -52,9 +52,10 @@ tool, collapse the option space, and move the room. The tax arrives later: peopl
 work for approval, not impact. Ideas become safe before they become useful. Leaders become traffic
 cops for choices the work itself could have resolved.
 
-That is why the company OS question cannot be "how do leaders see everything?"
+That is why the company OS question is not "how do leaders see everything?"
 
-It is: how do more people make consequential moves without turning the company into a junk drawer?
+It is this: how do more people make consequential moves without turning the company into a junk
+drawer?
 
 That used to be expensive. The person closest to the problem had to gather the context, find the
 policy, write the pitch, wait for the meeting, and hope the idea survived translation.
@@ -65,15 +66,14 @@ travel without getting neutered.
 
 ## Supply Starts Near Pain
 
-People build selfishly first.
-
-A script. A prompt. A skill. A local workflow that helps one person survive one ugly week.
+The first version is usually selfish: a script, a prompt, a skill, a local workflow that helps one
+person survive one ugly week.
 
 That is not a flaw in the model. It is the supply side. Markets work because the right kind of
 selfishness can become useful to everyone else.
 
-That is local-first in the only sense that matters here: close to the person doing the work, close
-to the repo, close to the pain.
+That is local-first in the only sense that matters here: close to the person doing the work, the
+repo, and the pain.
 
 At GrowthLoop, Gaia is where those fixes go: a broad monorepo for code, context, tools, agent
 skills, prompts, memory, and operating habits. The point is not repository purity. The point is
@@ -83,8 +83,8 @@ Gaia makes the difference concrete. Someone in support knows the path: which log
 project to open, which tenant context changes the answer, how to rerun a failed audience export
 without making the failure worse.
 
-Before Gaia, that knowledge usually became a Slack tip: helpful for a day, hard to reuse, easy to
-lose. In Gaia, it becomes a skill someone can pull, inspect, run, mutate, and improve. When those
+Before Gaia, that knowledge usually became a Slack tip: useful once, hard to reuse, easy to lose.
+In Gaia, it becomes a skill someone can pull, inspect, run, change, and improve. When those
 skills showed up in demos, people did not need a platform mandate. They wanted the tools because the
 pain was already theirs.
 
@@ -111,9 +111,9 @@ Every real project needs a champion: not a committee, not a vague team, but a hu
 attached when the work gets heavy. Every six weeks, leaders put the portfolio on the table: what is
 moving, what is stuck, what evidence exists, and what deserves more investment.
 
-That review is where the market touches consequence. Projects can get killed, redirected, resourced,
-escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a champion has
-to carry the truth in public.
+That review is where the market touches consequence. Projects can be killed, redirected,
+resourced, escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a
+champion has to carry the truth in public.
 
 In one recent review, Grimoire did not give us a prettier dashboard. It forced a harder
 conversation. Some work was still getting funded after the evidence had gone cold. Some leaders
@@ -123,8 +123,8 @@ So we killed most of that work, moved people to better bets, and made the standa
 are accountable for coaching through fear, resistance, and ambiguity, not just reporting that those
 things exist.
 
-People can build for themselves because the center can still inspect the work, name the owner, and
-change what happens next.
+People can build for themselves because the center can still inspect the work, name the owner,
+price the risk, and change what happens next.
 
 [Freedom without structure is chaos](/blog/directed-chaos/). Structure without freedom is
 bureaucracy. Neither is the goal. The goal is an arena where people can make moves without asking
@@ -144,7 +144,7 @@ The founder is not the market, and the founder is not the monarch. Founder power
 system that can fund the commons, defend standards, absorb risk, and force motion when the market is
 stuck.
 
-The cultural standard is not permissionless chaos. It is: act like an owner inside standards the
+The cultural standard is not permissionless chaos. It is this: act like an owner inside standards the
 center will actually defend.
 
 The same boundary shows up in product strategy. Some bets are too early for the internal market to
@@ -172,29 +172,26 @@ At GrowthLoop, this stopped being theory when the operating model had to pass a 
 we increase motion without losing ownership or quality?
 
 A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. Now a smaller
-team is shipping about 1900. Per person, shipped PRs more than tripled.
+team is shipping about 1,900. Per person, shipped PRs more than tripled.
 
 The numbers are not clean enough to treat as science. PR count is not output. I would not trust it
 alone. But it told us where to look.
 
-Ownership held. We track whether shipped PRs attach back to real project work, and the unassociated
-share stayed roughly steady. Higher than I want, but not the pattern you would expect if the gain
-came from everyone spraying clever, ownerless work into the codebase.
+Ownership held. We track whether shipped PRs attach to real project work, and the unassociated
+share stayed roughly steady. That is higher than I want, but not the pattern you would expect if
+the gain came from everyone spraying clever, ownerless work into the codebase.
 
 Quality held too, but not by accident. Early in this journey, we had to call a platform stability
 Code Red because the system was moving faster than its guardrails. That was central power doing its
 job: making the problem visible enough to price.
 
 Then the numbers moved. High-urgency incidents fell from roughly 80 a month to roughly 40.
-Resolution time fell from about four days to less than one. Pager acknowledgements went from about
-25% to nearly 100%.
+Resolution time fell from about four days to less than one day. Pager acknowledgements went from
+about 25% to nearly 100%.
 
-That combination is what matters. More throughput from fewer people is interesting. More throughput
-without ownership collapse is more interesting. More throughput while quality improves is the thing
-worth studying.
-
-That does not prove causality by itself. It does make the lazy explanation harder: this was not
-simply a team spraying more work into the system and paying for it later.
+That combination is what matters: more throughput from fewer people, without ownership collapse,
+while quality improves. That does not prove causality by itself. It does make the lazy explanation
+harder: this was not simply a team spraying more work into the system and paying for it later.
 
 Most companies get slower when they raise standards. They get careful, political, and
 approval-bound. The machine protects itself by adding friction.
@@ -217,6 +214,6 @@ will expose them.
 
 The bet is simple: turn distributed reality into coordinated action faster than competitors can.
 
-Get it right and the company stops performing alignment.
+Get it right, and the company stops performing alignment.
 
 It starts behaving like an economy.
