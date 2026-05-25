@@ -30,12 +30,16 @@ politics. The relief on offer is a central brain. A command center for founders.
 
 That is the wrong bet. AI makes it more tempting.
 
+The central-brain instinct is not stupid. In a crisis, it works. When standards are weak, it may be
+the only thing that works. War powers are real. The danger is turning an emergency pattern into the
+company's permanent nervous system.
+
 A company OS is not the place where founders see everything. It is the system that lets local truth
 become consequential before politics, latency, or approval theater can sand it down.
 
 The winning company OS will not be one smarter mind at the top. It will be a market with teeth.
-AI lowers the coordination cost. Gaia creates supply. Grimoire attaches consequence. Founder power
-sets the rules and pays for the commons.
+That market needs supply from the edge, institutions that attach consequence, and a center strong
+enough to set rules without becoming the only path to action.
 
 ## The Real Bet
 
@@ -65,8 +69,14 @@ and less dissent. In a market, it makes distributed truth cheaper to coordinate.
 
 ## Supply Starts Near Pain
 
-The market also needs a workshop for work that is still too raw to name: repo-based tools, scripts,
-prompts, skills, agents, notes, and workflows built beside the person who is sick of the pain.
+People build selfishly first: a script, a skill, a prompt, a local workflow that helps one person
+survive one ugly week.
+
+That sounds small. It is the whole thing. Markets work because the right kind of selfishness can
+become useful to everyone else.
+
+The company OS needs a workshop for that raw work: repo-based tools, scripts, prompts, skills,
+agents, notes, and workflows built beside the person who is sick of the pain.
 
 That is what I mean by local-first. Not local-first as a sync architecture. Local to the person
 doing the work. Local to the repo. Local to the pain.
@@ -83,12 +93,6 @@ Before Gaia, that knowledge usually became a Slack tip: helpful for a day, hard 
 lose. In Gaia, it becomes an artifact someone can pull, inspect, run, mutate, and improve. When
 those skills showed up in demos, people did not need a platform mandate. They wanted the tools
 because the pain was already theirs.
-
-People build selfishly first: a script, a skill, a prompt, a local workflow that helps one person
-survive one ugly week.
-
-That sounds small. It is the whole thing. Markets work because the right kind of selfishness can
-become useful to everyone else.
 
 Most companies either force that work through deployment, let it die in a private folder, or summon
 magic in the shared interface. We are trying to make a fourth path normal: build locally, share
@@ -137,12 +141,12 @@ That review is where the market touches consequence. Projects can get killed, re
 resourced, escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a
 champion has to carry the truth out loud.
 
-In one recent review, the useful thing was not a prettier dashboard. The system made it hard to
-route around an uncomfortable truth: we were investing too much in work that was not earning it,
-partly because people were afraid to push outside their lane. The consequence was not another
-status field. We killed most of the work, freed people for more important bets, and made the
-standard explicit: leads have to coach through fear, resistance, and ambiguity. Staying in lane is
-not a virtue when reality needs someone to move.
+In one recent review, the useful thing was not a prettier dashboard. The system made it harder to
+route around an uncomfortable truth: we were investing in work that was not earning it, and some
+people were staying inside their lane when reality needed them to move.
+
+So we killed most of the work, freed people for better bets, and made the standard explicit: leads
+have to coach through fear, resistance, and ambiguity.
 
 People can build for themselves because the center can still inspect the work, name the owner, and
 change the consequence.
@@ -207,11 +211,13 @@ Ownership did not disappear. We track whether shipped PRs attach back to real pr
 unassociated share has stayed roughly steady. Higher than I want, but not the shape you would
 expect if the gain came from everyone spraying clever, ownerless work into the codebase.
 
-Quality did not get sacrificed on the altar of speed either. We had just closed a platform
-stability Code Red: expanded Datadog coverage, clearer on-call roles and severities, more alerting
-for core product behavior, monitors for ad-network match rates, automation for failed audience
-exports, and more self-serve investigation paths for CS. The outcomes moved the right way: fewer
-incidents and product-stability issues, faster response, faster resolution.
+Quality did not get sacrificed on the altar of speed either. Early in this journey, we had to call
+a platform stability Code Red because the system was moving faster than its quality rails. That was
+central power doing its job: making the problem visible enough to price.
+
+Then the numbers moved. High-urgency incidents fell from roughly 80 a month to roughly 40.
+Resolution time fell from about four days to less than one. Pager acknowledgements went from about
+25% to nearly 100%.
 
 That combination is what matters. More throughput from fewer people is interesting. More throughput
 without ownership collapse is more interesting. More throughput while quality improves is the thing
