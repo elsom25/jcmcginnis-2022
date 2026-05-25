@@ -33,8 +33,7 @@ model.
 A company OS should not help the center see everything. It should help true things change the
 company before politics, latency, or approval theater can sand them down.
 
-That requires a stranger design: more local motion, more consequence, and less worship of the
-center.
+That requires more local motion, more consequence, and less worship of the center.
 
 ## The Real Bet
 
@@ -73,7 +72,7 @@ AI changes who gets to claim helplessness. The person closest to the problem can
 workflow, inspect the logs, write the script, summarize the evidence, and make the first version
 real before the next planning meeting.
 
-Not perfectly. Not forever. Enough to make passivity visible.
+Not perfectly. Not forever. Enough to expose the alibi.
 
 The old excuse was coordination. The company had not enabled the work yet. The tools were missing.
 The mandate was unclear. The team was too busy. Permission was always in another room.
@@ -107,8 +106,8 @@ Useful work usually starts selfish. Someone has a bad week and refuses to repeat
 script, save the prompt, patch the workflow, document the escalation path, preserve the customer
 workaround, or codify the ritual everyone keeps doing by hand.
 
-First it saves one person's week. Then someone else steals it, changes it, and makes it sturdier. It
-only becomes supply when the work is inspectable and improvable.
+First it saves one person's week. Then someone else steals it, changes it, and makes it sturdier.
+That is when it becomes supply.
 
 Someone in support knows the path: which logs matter, which project to open, which tenant context
 changes the answer, how to rerun a failed audience export without making the failure worse. That
@@ -129,8 +128,8 @@ leave the path just as invisible for the next person. A bot can answer the quest
 answer inheritable.
 
 The work can be pulled apart, rerun, changed, and improved. It can feed local dev, cloud agents,
-Slack, CI, reviews, and whatever surface comes next. The point is not the repo. The point is that
-company memory can be executed.
+Slack, CI, reviews, and whatever surface comes next. The point is not the repo. The point is
+executable company memory.
 
 Slack still matters. It is the bazaar: loud, public, messy, weirdly efficient at discovery. Gaia
 matters because the bazaar needs goods of its own. Discovery needs a shelf life.
@@ -160,7 +159,7 @@ behind lane boundaries, no project surviving on social momentum alone.
 Standards get written back into the system. People move. Funding changes. Work loses legitimacy when
 evidence goes cold.
 
-Six-week reviews are where enforcement becomes hard to fake.
+Six-week reviews make that hard to fake.
 
 Every real project needs a champion: not a committee, not a vague team, but a human whose name stays
 attached when the work gets heavy.
@@ -202,10 +201,10 @@ will actually defend.
 Our public work on
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
 was one of those bets: too early for the internal market to fully price, important enough for the
-center to fund anyway. Then the work had to come back into standards, ownership, and consequence.
+center to fund anyway, and still accountable to standards, ownership, and consequence.
 
-Founder power earns its place in that gap only when it comes back with receipts: what risk was
-taken, what commons got funded, which owners were named, what standards changed.
+Founder power earns its place in that gap only when it comes back with receipts: risk taken, commons
+funded, owners named, standards changed.
 
 Founder intervention becomes central planning when it is constant, hidden, or detached from local
 evidence. Intervene loudly, own the bet, and make the cost visible.
@@ -255,7 +254,7 @@ Someone sees the failure, fixes the local version, puts the fix where others can
 the company to decide whether to adopt it, fund it, or kill it.
 
 Done right, the company leaves evidence behind: owners, reusable work, funded bets, dead projects,
-and standards rewritten by evidence.
+and standards rewritten by reality.
 
 That takes leaders willing to concentrate power and then spend that power building people who need
 less permission.
