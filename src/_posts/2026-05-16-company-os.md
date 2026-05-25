@@ -16,21 +16,21 @@ Company operating systems are about to be overbuilt in the most obvious wrong di
 
 A company OS should shorten the distance between what is true and what changes.
 
-The category is already bending toward the oldest executive fantasy in the world: one room, one
-map, one interface where reality finally behaves. A dashboard that knows everything. An AI chief of
+The category is already bending toward the oldest executive fantasy in the world: one room, one map,
+one interface where reality finally behaves. A dashboard that knows everything. An AI chief of
 staff. A founder cockpit.
 
 That pull is strong because the problem is real. Founders are drowning in partial reality.
-Departments keep separate maps. Meetings turn truth into theater. Status updates arrive laundered
-by incentives, fear, politeness, and time.
+Departments keep separate maps. Meetings turn truth into theater. Status updates arrive laundered by
+incentives, fear, politeness, and time.
 
 Distributed companies hide risk. They duplicate work. They let local narratives harden into
 politics. The relief on offer is a central brain. A command center for founders.
 
 That is the wrong bet. AI makes it more tempting.
 
-The central brain works in emergencies. That is the trap. War powers should not become the
-company's permanent nervous system.
+The central brain works in emergencies. That is the trap. War powers should not become the company's
+permanent nervous system.
 
 A company OS is not the place where founders see everything. It is the system that lets local truth
 become consequential before politics, latency, or approval theater can sand it down.
@@ -51,16 +51,16 @@ see the truth from the floor.
 If the operating system requires all useful truth to climb a ladder before it can matter, the
 company has already chosen latency.
 
-Central planning buys short-term efficiency by spending long-term adaptability. Work gets framed
-for approval instead of impact. Ideas become safe before they become sharp. Leaders become routers
-for decisions they should never touch.
+Central planning buys short-term efficiency by spending long-term adaptability. Work gets framed for
+approval instead of impact. Ideas become safe before they become sharp. Leaders become routers for
+decisions they should never touch.
 
 That is why the company OS question cannot be "how do leaders see everything?"
 
 It is: how do more people make consequential moves without turning the company into a junk drawer?
 
-That used to be too expensive. Context leaked. Decisions waited. Good ideas needed a meeting
-before they mattered.
+That used to be too expensive. Context leaked. Decisions waited. Good ideas needed a meeting before
+they mattered.
 
 AI changes the price. In a command center, it makes one model of reality move faster, with more
 confidence and less dissent. In a market, it makes distributed truth cheaper to coordinate.
@@ -89,21 +89,21 @@ without making the failure worse.
 
 Before Gaia, that knowledge usually became a Slack tip: helpful for a day, hard to reuse, easy to
 lose. In Gaia, it becomes a skill someone can pull, inspect, run, mutate, and improve. When those
-skills showed up in demos, people did not need a platform mandate. They wanted the tools because
-the pain was already theirs.
+skills showed up in demos, people did not need a platform mandate. They wanted the tools because the
+pain was already theirs.
 
 Most companies either bury that work in a private folder, force it through a product process too
 early, or pretend the shared interface will somehow invent it. We are trying to make a fourth path
 normal: build locally, share cheaply, make it stealable, and let usefulness pull the work forward.
 
 The best internal tools do not begin as products. They begin as coping mechanisms. One person hits
-the same wall enough times, gets annoyed enough, and builds a ladder. A selfish fix has somewhere
-to go when it starts helping more than one person.
+the same wall enough times, gets annoyed enough, and builds a ladder. A selfish fix has somewhere to
+go when it starts helping more than one person.
 
-Good ideas should travel before leadership blesses them. Slack still matters because people learn
-in public there. It is where discovery happens. Gaia gives the discovered thing a product path:
-start local, prove usefulness, turn it into a PR, and promote it into the shared environment when
-adoption earns it.
+Good ideas should travel before leadership blesses them. Slack still matters because people learn in
+public there. It is where discovery happens. Gaia gives the discovered thing a product path: start
+local, prove usefulness, turn it into a PR, and promote it into the shared environment when adoption
+earns it.
 
 That is the supply side. Useful local work gets somewhere to start, somewhere to spread, and
 somewhere to answer for itself.
@@ -125,13 +125,13 @@ At GrowthLoop, our project and accountability system, Grimoire, is one of those 
 shows who is working on what, where a project sits, whether it is healthy, what evidence supports
 it, and who is accountable.
 
-Every real project needs a champion: not a committee, not a vague team, but a human whose name
-stays attached when the work gets heavy. Every six weeks, leaders put the portfolio on the table:
-what is moving, what is stuck, what evidence exists, and what deserves more investment.
+Every real project needs a champion: not a committee, not a vague team, but a human whose name stays
+attached when the work gets heavy. Every six weeks, leaders put the portfolio on the table: what is
+moving, what is stuck, what evidence exists, and what deserves more investment.
 
-That review is where the market touches consequence. Projects can get killed, redirected,
-resourced, escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a
-champion has to carry the truth in public.
+That review is where the market touches consequence. Projects can get killed, redirected, resourced,
+escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a champion has
+to carry the truth in public.
 
 In one recent review, the useful thing was not a prettier dashboard. The system made it harder to
 route around an uncomfortable truth: we were investing in work that was not earning it, and some
@@ -155,8 +155,8 @@ the local market is still debating the cleanest answer.
 That power is real. It should feel heavy.
 
 The founder is not the market, and the founder is not the monarch. Founder power is the part of the
-system that can fund the commons, defend standards, absorb risk, and force motion when the market
-is stuck.
+system that can fund the commons, defend standards, absorb risk, and force motion when the market is
+stuck.
 
 Some things still belong at the center: levels, pay, standards, budgets, kill calls, existential
 bets, and the commons no local team would fund early enough on its own. Set the boundaries. Do not
@@ -188,8 +188,8 @@ the design.
 
 At GrowthLoop, the theory started paying rent.
 
-A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. Now a
-smaller team is shipping about 1900. Per person, shipped PRs more than tripled.
+A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. Now a smaller
+team is shipping about 1900. Per person, shipped PRs more than tripled.
 
 PR count is not output. I would not trust it alone. But the smoke did not come with the usual fire.
 
