@@ -12,8 +12,8 @@ pull_quote: >
   truth become consequential.
 ---
 
-The next wave of company OS software is being aimed at the wrong appetite: the founder who wants
-one clean screen where the company finally holds still.
+The next wave of company OS software is being aimed at the oldest executive fantasy: central
+planning that finally works.
 
 That is the seductive product: one room, one map, one AI chief of staff, one interface where
 reality stops arguing back.
@@ -22,11 +22,11 @@ The pull is strong because the pain is real. Founders are not short on data; the
 unedited reality. Each function carries its own map. Meetings sand off the hard parts. Status
 arrives pre-defended, pre-softened, already late.
 
-So the central brain feels like relief.
+So central planning feels like relief.
 
-It is the wrong relief. AI does not kill the fantasy. It makes the fantasy cheaper. The central
-brain works in emergencies, which is why it is dangerous: war powers feel effective right up until
-they become the company's permanent operating model.
+It is the wrong relief. AI does not kill the fantasy. It makes the fantasy cheaper. Central
+planning works in emergencies, which is why it is dangerous: war powers feel effective right up
+until they become the company's permanent operating model.
 
 A company OS is not the place where founders see everything. Its job is to make true things change
 the company before politics, latency, or approval theater can sand them down.
@@ -38,8 +38,7 @@ intervenes when the market cannot price the cost on its own.
 
 ## The Real Bet
 
-Markets beat central planning at discovering local reality because the painful facts are never
-evenly distributed.
+Markets beat central planning because reality is distributed.
 
 Leadership can see across the system. It cannot feel every local bruise. ICs see the customer paper
 cut, the broken handoff, the stupid weekly ritual, the SQL query quietly owning the business.
@@ -49,8 +48,8 @@ company has already chosen latency.
 
 Central planning is often more efficient this week. One person can settle the debate, pick the
 tool, collapse the option space, and move the room. The tax arrives later: people learn to frame
-work for approval, not impact. Ideas become safe before they become useful. Leaders become traffic
-cops for choices the work itself could have resolved.
+work for approval, not impact. Ideas become safe before they become useful. Leaders become routers
+for choices the work itself could have resolved.
 
 That is why the company OS question is not "how do leaders see everything?"
 
@@ -60,9 +59,13 @@ drawer?
 That used to be expensive. The person closest to the problem had to gather the context, find the
 policy, write the pitch, wait for the meeting, and hope the idea survived translation.
 
-AI lowers that coordination cost. In a command center, it accelerates the official story. In a
-market, it helps the person at the edge package enough context, evidence, and code for the work to
-travel without getting neutered.
+AI changes the cost of agency. More people can now build the script, draft the workflow, wire the
+agent, inspect the logs, and ship the first version themselves. In the company that is coming, high
+agency is not a personality trait. It is the job.
+
+That makes central planning more expensive, not less. The center cannot inspect, approve, and
+integrate every new thing people can now create. In a market, AI helps the person at the edge
+package enough context, evidence, and code for the work to travel without getting neutered.
 
 ## Supply Starts Near Pain
 
@@ -75,9 +78,10 @@ selfishness can become useful to everyone else.
 That is local-first in the only sense that matters here: close to the person doing the work, the
 repo, and the pain.
 
-At GrowthLoop, Gaia is where those fixes go: a broad monorepo for code, context, tools, agent
-skills, prompts, memory, and operating habits. The point is not repository purity. The point is
-proximity: prompts near scripts, skills near workflows, context near tools.
+At GrowthLoop, Gaia is where those fixes go: shared local-first company memory for code, context,
+tools, agent skills, prompts, and operating habits. The point is not repository purity. The point is
+proximity: prompts near scripts, skills near workflows, context near tools, local judgment becoming
+runnable.
 
 Gaia makes the difference concrete. Someone in support knows the path: which logs matter, which
 project to open, which tenant context changes the answer, how to rerun a failed audience export
@@ -108,16 +112,18 @@ shows who is working on what, where a project sits, whether it is healthy, what 
 it, and who is accountable.
 
 Every real project needs a champion: not a committee, not a vague team, but a human whose name stays
-attached when the work gets heavy. Every six weeks, leaders put the portfolio on the table: what is
-moving, what is stuck, what evidence exists, and what deserves more investment.
+attached when the work gets heavy.
 
-That review is where the market touches consequence. Projects can be killed, redirected,
-resourced, escalated, or forced to show evidence. Ownership cannot diffuse into "the team" when a
-champion has to carry the truth in public.
+Every six weeks, Grimoire turns the portfolio into a court docket. The system brings the facts:
+who owns the work, what moved, what stalled, what changed, what evidence exists, and what the work
+is costing. The champion has to carry that truth in public.
 
-In one recent review, Grimoire did not give us a prettier dashboard. It forced a harder
-conversation. Some work was still getting funded after the evidence had gone cold. Some leaders
-were staying inside their lane when the company needed them to cross it.
+The review is not status theater. It is judgment. Fund it, kill it, redirect it, escalate it, or
+force better evidence.
+
+In one recent review, Grimoire made the uncomfortable truth hard to hide. Some work was still
+getting funded after the evidence had gone cold. Some leaders were staying inside their lane when
+the company needed them to cross it.
 
 So we killed most of that work, moved people to better bets, and made the standard explicit: leads
 are accountable for coaching through fear, resistance, and ambiguity, not just reporting that those
@@ -158,8 +164,8 @@ fund the commons, and bring the consequences back into view.
 Founder intervention becomes central planning when it is constant, hidden, or detached from local
 evidence. Intervene loudly. Own the bet. Make the cost visible.
 
-Command-center thinking misses this. The goal is not to shrink power until it becomes harmless. The
-goal is to make power answer to
+Central planning misses this. The goal is not to shrink power until it becomes harmless. The goal is
+to make power answer to
 [enough independent reality](https://blog.cosmos-institute.org/p/when-decentralization-fails) that
 it cannot comfortably capture the system around it.
 
@@ -171,32 +177,30 @@ the design.
 At GrowthLoop, this stopped being theory when the operating model had to pass a harder test: could
 we increase motion without losing ownership or quality?
 
-A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per quarter. Now a smaller
-team is shipping about 1,900. Per person, shipped PRs more than tripled.
+Quality moved first. Early in this journey, we had to call a platform stability Code Red because
+the system was moving faster than its guardrails. That was central power doing its job: making the
+problem visible enough to price.
 
-PR count is not output. I would not trust it alone. But it told us where to look.
+Then the numbers moved. High-urgency incidents were cut in half. Resolution time fell from four
+days to less than one. Pager acknowledgements went from a coin flip to nearly automatic.
 
 Ownership held. We track whether shipped PRs attach to real project work, and the unassociated
 share stayed steady. That is not the pattern you would expect if the gain came from everyone
 spraying clever, ownerless work into the codebase.
 
-Quality held too, but not by accident. Early in this journey, we had to call a platform stability
-Code Red because the system was moving faster than its guardrails. That was central power doing its
-job: making the problem visible enough to price.
-
-Then the numbers moved. High-urgency incidents fell from about 80 a month to about 40. Resolution
-time fell from four days to less than one. Pager acknowledgements went from 25% to nearly 100%.
+Throughput moved too. A year ago, roughly 30 engineering ICs were shipping about 700 merged PRs per
+quarter. Now a smaller team is shipping about 1,900. Per person, shipped PRs more than tripled.
 
 That combination is what matters: more throughput from fewer people, without ownership collapse,
-while quality improves. The lazy explanation gets harder: this was not simply a team spraying more
-work into the system and paying for it later.
+while quality improves. The lazy explanation stops fitting: this was not simply a team spraying
+more work into the system and paying for it later.
 
 Most companies get slower when they raise standards. They get careful, political, and
 approval-bound. The machine protects itself by adding friction.
 
 We got faster because AI made local work cheaper to package, ship, and reuse, and the operating
-system gave that work a path. Without the market, it becomes trash. With institutions, it becomes
-leverage.
+system gave that work a path. Without a market, local agency becomes noise. With institutions, it
+becomes leverage.
 
 ## The Bet
 
