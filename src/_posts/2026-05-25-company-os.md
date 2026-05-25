@@ -16,12 +16,9 @@ image: "/assets/img/company-market.png"
 
 Founders are not short on data. They are short on unedited reality.
 
-That is why the next wave of company OS software is so tempting. A company OS should turn
-distributed judgment into coordinated action. The category is drifting toward the oldest executive
-fantasy with an AI budget: central planning that finally works.
-
-One room. One map. One AI chief of staff. One executive cockpit where reality stops arguing back and
-everyone else becomes an input supplier.
+So the market sells them the oldest executive fantasy with an AI budget: central planning that
+finally works. One room. One map. One AI chief of staff. One executive cockpit where reality stops
+arguing back and everyone else becomes an input supplier.
 
 The fantasy works because the pain is real. Each function carries its own map. Meetings sand off the
 hard parts. Status arrives late, pre-defended, and pre-softened.
@@ -32,10 +29,11 @@ False relief. AI does not kill the fantasy. It makes the fantasy cheaper. Centra
 emergencies, which is why it is dangerous: war powers feel effective until they become the operating
 model.
 
-A company OS should not help the center see everything. It should help true things change the
-company before politics, latency, or approval theater can sand them down.
+A company OS should not help the center see everything. That is how the cockpit becomes a throne. It
+should help true things change the company before politics, latency, or approval theater can sand
+them down.
 
-That requires more local motion, more consequence, and less worship of the center.
+That takes more local motion, more consequence, and less worship of the center.
 
 ## The Real Bet
 
@@ -60,10 +58,8 @@ into shared infrastructure. Work proves itself by being used, copied, improved, 
 Institutions decide what earns trust, funding, attention, or a clean death. The center still
 intervenes, but only where the market cannot price the risk.
 
-The sharper company OS question is not "how do leaders see everything?"
-
-It is this: how do more people make consequential moves without turning the company into a junk
-drawer?
+So the sharper company OS question is not "how do leaders see everything?" It is: how do more people
+make consequential moves without turning the company into a junk drawer?
 
 ## AI Makes Agency Auditable
 
@@ -76,12 +72,12 @@ real before the next planning meeting.
 
 Not perfectly. Not forever. Enough to expose the alibi.
 
-The old excuse was coordination. The company had not enabled the work yet. The tools were missing.
-The mandate was unclear. The team was too busy. Permission was always in another room.
+The old excuse was coordination. The tools were missing. The mandate was unclear. The team was too
+busy. Permission was always in another room.
 
-AI does not erase every constraint, but it makes the alibi easier to audit. Show the draft. Show the
-logs. Show the failed first version. If none of that exists, the blocker was not the org chart. A
-ticket is no longer proof of ownership. A process gap is no longer proof that no one could move.
+AI does not erase every constraint. It makes the alibi auditable. Show the draft. Show the logs.
+Show the failed first version. If none of that exists, the blocker was not the org chart. A ticket
+is no longer proof of ownership. A process gap is no longer proof that no one could move.
 
 Before adding headcount, meetings, platform work, or another operating ritual, the first question
 should be brutal: did a sharp owner with AI hit a real boundary, or did everyone just reach for the
@@ -89,8 +85,8 @@ org chart?
 
 A lot of people who looked high-agency in the old company were really good at navigating scarcity:
 finding the right person, waiting for the right mandate, surviving the missing tool. That skill
-still matters. It is no longer enough. In the new company, scarcity is a weaker alibi. High agency
-is no longer a personality trait. It is the job.
+still matters. It is no longer enough. When scarcity stops being a reliable excuse, high agency
+stops being a personality trait. It becomes the job.
 
 That makes central planning more expensive, not less. The center cannot inspect and approve every
 useful thing people can now create.
@@ -143,13 +139,12 @@ Without institutions, an internal market does not discover truth. It discovers w
 whom. The system has to make the honest move cheaper than the political move: show the evidence,
 name the owner, price the risk, and make truth-seeking easier to carry than polished theater.
 
-At GrowthLoop, Gaia and Grimoire carry that bargain together. Gaia is the market substrate: the
-place where local work can appear, compete, spread, mutate, and become shared company memory.
-Grimoire is the institutional layer that keeps that market honest by making work visible, owned, and
-remembered.
+At GrowthLoop, Gaia and Grimoire carry that bargain together. Gaia gives local work a place to
+appear, spread, mutate, and become shared company memory. Grimoire keeps the market honest by making
+work visible, owned, and remembered.
 
-Gaia creates supply. Grimoire prices consequence. Pain becomes a first version. Use creates
-evidence. The institution decides whether the work gets funded, standardized, redirected, or killed.
+Gaia creates supply. Grimoire prices consequence. Pain becomes a first version; use creates
+evidence; the institution decides whether the work gets funded, standardized, redirected, or killed.
 
 Grimoire does not just collect reality. It enforces contact with it: no project without a champion,
 no stale work quietly consuming people, no green status without current evidence, no leader hiding
@@ -158,14 +153,14 @@ behind lane boundaries, no project surviving on social momentum alone.
 Every six weeks, Grimoire turns the portfolio into a court docket. The system brings the facts: who
 owns the work, what moved, what stalled, what changed, what evidence exists, and what the work is
 costing. Every real project needs a named champion, not a committee or vague team. The champion has
-to stand in public with the truth. The review is not status theater. It is where the company
-decides: fund it, kill it, redirect it, escalate it, or force better evidence.
+to stand in public with the truth.
 
-In one recent review, Grimoire made the uncomfortable truth hard to hide. Some work was still
-getting funded after the evidence had gone cold, and some leaders were staying inside their lane
-when the company needed them to cross it. So we killed most of that work, moved people to better
-bets, and made the standard explicit: leads are accountable for coaching through fear, resistance,
-and ambiguity, not just reporting that those things exist.
+The review is not status theater. It is where the company decides: fund it, kill it, redirect it,
+escalate it, or force better evidence. In one recent review, Grimoire made the uncomfortable truth
+hard to hide: some work was still getting funded after the evidence had gone cold, and some leaders
+were staying inside their lane when the company needed them to cross it. So we killed most of that
+work, moved people to better bets, and made the standard explicit: leads are accountable for
+coaching through fear, resistance, and ambiguity, not just reporting that those things exist.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: people can build for themselves because
 the work still has to face the institution. Freedom without structure is chaos; structure without
@@ -202,10 +197,9 @@ Let the market discover. Let the center decide when it must. Make both answer to
 
 ## Why I Believe This
 
-The reason I trust the model is not that it sounds elegant. It is that we needed more velocity, and
-the usual tradeoff did not hold. Our pace was not high enough for the bets we wanted to win, but raw
-throughput would have been easy to distrust. The real test was whether standards rose, incident
-pressure fell, ownership held, and throughput rose together.
+We were not moving fast enough for the bets we wanted to win. But raw throughput is cheap to fake
+and easy to distrust. The test was whether we could raise standards, lower incident pressure, hold
+ownership, and still move faster.
 
 Quality moved first. Early in this journey, we had to call a platform stability Code Red because the
 system was moving faster than its guardrails. That was central power doing its job: making the
@@ -230,7 +224,7 @@ approval-bound. The machine learns to call friction maturity.
 We got faster because AI made local work cheaper to package, ship, and reuse, and the operating
 system gave that work a path. Gaia helped useful work travel. Grimoire kept it attached to owners,
 standards, and consequences. Without a market, local agency becomes noise. With institutions, it
-becomes compounding leverage.
+starts changing the company.
 
 ## The Bet
 
