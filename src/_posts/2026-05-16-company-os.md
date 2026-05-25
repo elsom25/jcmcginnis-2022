@@ -104,9 +104,10 @@ A market gives that first version somewhere to go.
 
 Useful work usually starts selfish. Someone has a bad week and refuses to repeat it. They write the
 script, save the prompt, patch the workflow, document the escalation path, preserve the customer
-workaround, or codify the ritual everyone keeps doing by hand. First it saves one person's week.
-Then someone else steals it, changes it, and makes it sturdier. It only becomes supply when the work
-is inspectable and improvable.
+workaround, or codify the ritual everyone keeps doing by hand.
+
+First it saves one person's week. Then someone else steals it, changes it, and makes it sturdier. It
+only becomes supply when the work is inspectable and improvable.
 
 Someone in support knows the path: which logs matter, which project to open, which tenant context
 changes the answer, how to rerun a failed audience export without making the failure worse. That
@@ -121,10 +122,10 @@ At GrowthLoop, Gaia is where that memory lives before it hardens into process. I
 context, tools, agent skills, prompts, and operating habits close enough to the work that people can
 run them, change them, and send back a better version.
 
-A central agent helps, but it cannot be the only home for the shared brain. Bot-only memory creates
-a company of petitioners: people ask the machine for an answer, get unstuck for the moment, and
-leave the path just as invisible for the next person. A bot can answer the question. Gaia makes the
-answer inheritable.
+A central agent helps. It cannot be the only home for the shared brain. Bot-only memory creates a
+company of petitioners: people ask the machine for an answer, get unstuck for the moment, and leave
+the path just as invisible for the next person. A bot can answer the question. Gaia makes the answer
+inheritable.
 
 The work can be pulled apart, rerun, changed, and improved. It can feed local dev, cloud agents,
 Slack, CI, reviews, and whatever surface comes next. The point is not the repo. The point is that
@@ -148,8 +149,8 @@ reviewed, funded, killed, and remembered.
 
 Gaia creates supply. Grimoire prices consequence.
 
-The loop is simple: pain becomes a first version, the first version becomes inspectable, adoption
-creates evidence, and the institution decides whether the work gets funded, standardized,
+That is the operating loop: pain becomes a first version, the first version becomes inspectable,
+adoption creates evidence, and the institution decides whether the work gets funded, standardized,
 redirected, or killed.
 
 Grimoire does not just collect reality. It enforces contact with it: no project without a champion,
@@ -203,8 +204,8 @@ Our work on
 was one of those bets: too early for the internal market to fully price, important enough for the
 center to fund anyway. Then the work had to come back into standards, ownership, and consequence.
 
-Founder power belongs in that gap, but only if it comes back with receipts: what risk was taken,
-what commons got funded, what standards now apply.
+Founder power earns its place in that gap only when it comes back with receipts: what risk was
+taken, what commons got funded, what standards now apply.
 
 Founder intervention becomes central planning when it is constant, hidden, or detached from local
 evidence. Intervene loudly, own the bet, and make the cost visible.
@@ -253,8 +254,8 @@ The companies that win will shorten the path from lived reality to changed behav
 Someone sees the failure, fixes the local version, puts the fix where others can use it, and forces
 the company to decide whether to adopt it, fund it, or kill it.
 
-The loop leaves evidence behind: owners, reusable work, funded bets, dead projects, and standards
-that changed because reality made them change.
+Done right, the company leaves evidence behind: owners, reusable work, funded bets, dead projects,
+and standards that changed because reality made them change.
 
 That takes leaders willing to concentrate power and then spend that power building people who need
 less permission.
