@@ -122,10 +122,10 @@ At GrowthLoop, Gaia is where that memory lives before it hardens into process. I
 context, tools, agent skills, prompts, and operating habits close enough to the work that people can
 run them, change them, and send back a better version.
 
-A central agent helps. It cannot be the only home for the shared brain. Bot-only memory creates a
-company of petitioners: people ask the machine for an answer, get unstuck for the moment, and leave
-the path just as invisible for the next person. A bot can answer the question. Gaia makes the answer
-inheritable.
+A central agent helps, but it cannot be the only home for the shared brain. Bot-only memory creates
+a company of petitioners: people ask the machine for an answer, get unstuck for the moment, and
+leave the path just as invisible for the next person. A bot can answer the question. Gaia makes the
+answer inheritable.
 
 The work can be pulled apart, rerun, changed, and improved. It can feed local dev, cloud agents,
 Slack, CI, reviews, and whatever surface comes next. The point is not the repo. The point is that
