@@ -116,8 +116,8 @@ judgment is company memory trapped in a person.
 
 Before Gaia, that memory usually became a Slack tip: useful once, hard to reuse, easy to lose. In
 Gaia, it becomes runnable company memory: something a person can pull, inspect, run, change, and
-improve. When that work showed up in demos, demand pulled it forward because the pain was already
-shared.
+improve. When that work showed up in demos, people reached for it because the pain was already
+theirs.
 
 At GrowthLoop, Gaia is where that memory lives before it hardens into process. It keeps code,
 context, tools, agent skills, prompts, and operating habits close enough to the work that people can
@@ -143,8 +143,8 @@ name the owner, price the risk, and make truth-seeking easier to carry than poli
 
 At GrowthLoop, Gaia and Grimoire carry that bargain together. Gaia is the market substrate: the
 place where local work can appear, compete, spread, mutate, and become shared company memory.
-Grimoire is the institutional layer that keeps that market honest by making work visible, owned,
-reviewed, funded, killed, and remembered.
+Grimoire is the institutional layer that keeps that market honest by making work visible, owned, and
+remembered.
 
 Gaia creates supply. Grimoire prices consequence. Pain becomes a first version. Use creates
 evidence. The institution decides whether the work gets funded, standardized, redirected, or killed.
