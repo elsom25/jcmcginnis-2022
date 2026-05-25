@@ -56,8 +56,8 @@ worse at changing it.
 
 The alternative is not one smarter center. Local pain needs a path to a fix. Useful fixes harden
 into shared infrastructure. Work proves itself by being used, copied, improved, or abandoned.
-Institutions decide what earns trust, funding, attention, or a clean death. The center still
-intervenes, but only where the market cannot price the risk.
+Institutions set the rules for what earns trust, funding, attention, or a clean death. The center
+still intervenes, but only where the market cannot price the risk.
 
 So the sharper company OS question is not "how do leaders see everything?" It is: how do more people
 make consequential moves without turning the company into a junk drawer?
@@ -139,26 +139,24 @@ whom. The system has to make the honest move cheaper than the political move: sh
 name the owner, price the risk, and make truth-seeking easier to carry than polished theater.
 
 At GrowthLoop, Gaia and Grimoire carry that bargain together. Gaia gives local work a place to
-appear, spread, mutate, and become shared company memory. Grimoire keeps the market honest by making
-work visible, owned, and remembered.
+appear, spread, mutate, and become shared company memory. Grimoire makes that market answer for
+itself: work becomes visible, owned, reviewed, funded, killed, and remembered.
 
-Gaia creates supply. Grimoire prices consequence. Pain becomes a first version; use creates
-evidence; institutions decide whether the work gets funded, standardized, redirected, or killed.
-
-Grimoire does not just collect reality. It enforces contact with it: no project without a champion,
-no stale work quietly consuming people, no green status without current evidence, no leader hiding
-behind lane boundaries, no project surviving on social momentum alone.
+Gaia creates supply. Grimoire prices consequence. Pain becomes a first version. Use creates
+evidence. Then the institution shapes whether the work gets standardized, redirected, funded, or
+cut.
 
 Every six weeks, Grimoire turns the portfolio into a court docket. The system brings the facts: who
 owns the work, what moved, what stalled, what changed, what evidence exists, and what the work is
-costing. The champion has to stand in public with the truth and answer for it.
+costing. The owner has to stand in public with the truth and answer for it. Grimoire does not just
+show reality. It makes the company touch it.
 
-This review is not status theater. It is where the company decides: fund it, kill it, redirect it,
-escalate it, or force better evidence. In one recent review, Grimoire made the uncomfortable truth
-hard to hide: some work was still getting funded after the evidence had gone cold, and some leaders
-were staying inside their lane when the company needed them to cross it. So we killed most of that
-work, moved people to better bets, and made the standard explicit: leads are accountable for
-coaching through fear, resistance, and ambiguity, not just reporting that those things exist.
+This is where the company decides: fund it, kill it, redirect it, escalate it, or force better
+evidence. In one recent review, Grimoire made the uncomfortable truth hard to hide. Some work was
+still getting funded after the evidence had gone cold. Some leaders were staying inside their lane
+when the company needed them to cross it. So we killed most of that work, moved people to better
+bets, and made the standard explicit: leads are accountable for coaching through fear, resistance,
+and ambiguity, not just reporting that those things exist.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: people can build for themselves because
 the work still has to face the institution. Freedom without structure is chaos; structure without
