@@ -20,9 +20,9 @@
 - When naming institutions, use full forms where it aids clarity (for example "University of
   Waterloo" rather than shorthand alone).
 - For serious blog/essay work, prefer the repo skill at `skills/jesse-writing-room`. Keep subagents
-  read-only: reader panels and editor panels review, while the parent agent synthesizes, makes taste
-  calls, and edits. Do not let subagents modify prose files. Preserve raw, direct, high-heat voice;
-  run `mise run lint -a` before commits.
+  read-only and use distinct reader/editor actors when feasible; the parent agent synthesizes, makes
+  taste calls, and edits. Do not let subagents modify prose files. Preserve raw, direct, high-heat
+  voice; run `mise run lint -a` before commits.
 
 ## Learned Workspace Facts
 

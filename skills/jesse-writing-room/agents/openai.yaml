@@ -1,7 +1,7 @@
 interface:
   display_name: "Jesse Writing Room"
   short_description:
-    "Run Jesse's adversarial reader and editor workflow for essays."
+    "Run Jesse's iterative adversarial writing-room workflow for essays."
   default_prompt:
-    "Use the Jesse writing room to review and land this essay with read-only
-    reader and editor panels."
+    "Use the Jesse writing room to review, edit, and land this essay with
+    read-only individual reader and editor actors."

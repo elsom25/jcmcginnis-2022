@@ -4,8 +4,8 @@ description:
   Use for serious blog and essay drafting, rewriting, or final review in this repo when the user
   asks for a writing room, adversarial readers, editor team, Tobi/CEO/Jesse review,
   publish-readiness review, or help landing a high-voice essay. Coordinates read-only reader and
-  editor subagents, preserves Jesse's raw direct voice, and guides the parent agent through
-  synthesis, edits, linting, and commits.
+  editor subagents in iterative loops, preserves Jesse's raw direct voice, and guides the parent
+  agent through synthesis, edits, linting, and commits until the piece converges.
 ---
 
 # Jesse Writing Room
@@ -18,21 +18,29 @@ Never let subagents modify prose files. Use them to surface perspectives, risks,
 candidate rewrites. The parent agent owns taste, synthesis, file edits, validation, commits, and
 pushes.
 
+Do not ask one subagent to represent a whole team when separate actors are feasible. Prefer distinct
+single-purpose reviewers with narrow briefs. Use a combined panel only when the agent/thread limit
+or the user's time constraint makes separate actors impractical, and say so.
+
 ## Workflow
 
 1. Read the current draft, current diff, and nearby house-style essays before forming opinions.
 2. Keep the user's latest edits as the source of truth unless they create a real defect.
 3. Spawn read-only panels only when the user asks for the writing room, adversarial agents, readers,
    editors, or a serious final review.
-4. Run reader and editor panels separately. Do not let one panel simulate the other.
-5. Ask panels for must-fixes, risks, and candidate rewrites. Do not ask them to make files perfect.
-6. Synthesize tensions yourself. Apply only edits that improve the piece more than they sand it
+4. Default to loop mode: review, synthesize, edit, validate, reread, and repeat until the piece
+   reaches the user's goal or the remaining concerns are only taste/publication risk.
+5. If the user asks for a single review, do one read-only pass and stop with findings.
+6. Run reader and editor actors separately. Do not let readers simulate editors or editors simulate
+   audience personas.
+7. Ask actors for must-fixes, risks, and candidate rewrites. Do not ask them to make files perfect.
+8. Synthesize tensions yourself. Apply only edits that improve the piece more than they sand it
    down.
-7. Repeat only while changes are materially improving structure, argument, voice, or proof.
-8. Stop when remaining concerns are taste, publication risk, or quote-mining risk rather than
-   defects.
-9. Run `mise run lint -a` after edits. Commit and push only when requested or when the current loop
-   has converged and the user asked for commits after loops.
+9. Repeat only while changes are materially improving structure, argument, voice, or proof.
+10. Stop when remaining concerns are taste, publication risk, or quote-mining risk rather than
+    defects.
+11. Run `mise run lint -a` after edits. Commit and push only when requested or when the current loop
+    has converged and the user asked for commits after loops.
 
 ## House Taste
 
@@ -49,14 +57,22 @@ pushes.
 
 Load `references/actors.md` when spawning panels or when exact prompt wording would help.
 
-Use two default panels:
+Use two default sets of individual actors:
 
-- Reader panel: modelled Jesse, Tobi-style founder/operator, CEO reader.
-- Editor panel: literary/prose editor, line editor, structure editor, rhetoric editor,
+- Reader actors: modelled Jesse, Tobi-style founder/operator, CEO reader.
+- Editor actors: literary/prose editor, line editor, structure editor, rhetoric editor,
   anti-LinkedIn-slop editor, web/scannability editor, copy chief.
 
-Keep panels read-only and independent. If an agent crosses roles, treat only the relevant part as
-valid, close it, and rerun the missing panel cleanly.
+Keep actors read-only and independent. If an agent crosses roles, treat only the relevant part as
+valid, close it, and rerun the missing actor cleanly when the missing perspective matters.
+
+When actor count is too high for the available subagent limit, prioritize:
+
+1. Modelled Jesse, Tobi-style founder/operator, CEO reader.
+2. Line editor, structure editor, anti-LinkedIn-slop editor.
+3. Literary/prose editor, rhetoric editor, web/scannability editor, copy chief.
+
+If forced to batch actors, batch adjacent editor functions before batching reader personas.
 
 ## Synthesis Heuristics
 
@@ -66,6 +82,8 @@ valid, close it, and rerun the missing panel cleanly.
   explanatory lap.
 - A cut is worth keeping when it preserves the bridge and gets to proof faster.
 - A section is done when a broad pass is more likely to make it safer, smoother, and worse.
+- The user's own edits usually reveal the desired direction. Treat them as training signal, not as
+  noise to normalize.
 
 ## Validation
 
