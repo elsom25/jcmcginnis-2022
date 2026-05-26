@@ -50,12 +50,13 @@ or the user's time constraint makes separate actors impractical, and say so.
 - Avoid consensus prose. The goal is not to please every reviewer.
 - Use formatting sparingly. Prefer plain body prose unless emphasis solves a real reading problem.
 - Treat public/company examples as evidence, not product tours.
-- Protect the central thesis in company-OS-style essays: markets with institutions, distributed
-  agency, founder power with receipts, and reality forcing consequence.
+- Protect the essay's central thesis. Do not let panel feedback turn the piece into a safer,
+  smoother version of a weaker argument.
 
 ## Panels
 
-Load `references/actors.md` when spawning panels or when exact prompt wording would help.
+Load `references/actors.md` when spawning panels or when exact prompt wording would help. Build
+actor prompts from the shared contract plus the relevant actor brief.
 
 Use two default sets of individual actors:
 
