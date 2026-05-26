@@ -27,12 +27,12 @@ hard parts. Status arrives late, pre-defended, and pre-softened.
 
 Central planning feels like relief right up until relief becomes the operating model.
 
-That is the trap. Most AI company OS pitches are rebuilding the CEO dashboard with better
-autocomplete. They promise a business that can be understood from the center, which usually means a
-business that has to be changed from the center too.
+That is the trap. Most AI company OS pitches rebuild the CEO dashboard with better autocomplete.
+They promise a business that can be understood from the center, which usually means a business that
+has to be changed from the center too.
 
 AI does not kill that fantasy. It makes the fantasy cheaper. Central planning works in emergencies,
-which is why it is dangerous: war powers feel effective until they become the operating model.
+which is why it is dangerous: war powers feel effective until the emergency becomes habit.
 
 The companies that use AI to strengthen the center will look modern and get slower. The companies
 that use AI to create internal markets will compound.
@@ -45,7 +45,7 @@ a memory. Pain creates an attempt. The attempt leaves an artifact. The artifact 
 Adoption creates evidence. Evidence forces a decision: fund it, standardize it, or kill it.
 
 That is the company OS worth building. Not a prettier permission system. A loop that turns local
-pain into institutional change before the organization can turn it into status theater.
+pain into institutional change before the organization turns it into status theater.
 
 ## AI Makes Agency Auditable
 
@@ -65,7 +65,7 @@ Not perfectly. Not forever. Enough to expose the alibi.
 
 The old excuse was coordination: missing tools, unclear mandate, no time, permission in another
 room. Real constraints still exist: access, time, incentives, authority. AI makes the alibi
-auditable. Show the draft. Show the attempt. Show where the boundary actually is.
+auditable. Show the draft. Show the attempt. Show the boundary.
 
 Inside a company, a bid is not a complaint or a strategy doc. It is an attempt with evidence
 attached: the script, the workflow, the customer path, the before-and-after, the boundary hit. AI
@@ -86,11 +86,11 @@ building turn AI into theater.
 
 If AI gives everyone tools to build and the company still routes every useful move through the
 center, it teaches people to wait. It turns builders into factory workers with better equipment:
-faster with inputs, weaker at owning the outcome.
+faster with inputs, weaker at owning outcomes.
 
-A market gives that first version somewhere to go.
+That is what a market is for.
 
-## A Market Gives Attempts Somewhere To Go
+## Markets Find The Bruise
 
 Inside companies, markets beat central planning at one job: finding the bruise while it is still
 fresh.
@@ -120,9 +120,9 @@ changes the answer, how to rerun a failed audience export without making the fai
 judgment is company memory trapped in a person.
 
 Before Gaia, that memory usually became a Slack tip or a document: useful once, hard to reuse, easy
-to lose. Gaia is our executable company memory. It turns the support path into something a person
-can pull, inspect, run, change, and improve. When that work showed up in demos, demand pulled it
-forward because the pain was already theirs.
+to lose. Gaia is our executable company memory. It turns the path into something a person can pull,
+inspect, run, change, and improve. When that work showed up in demos, demand pulled it forward
+because the pain was already theirs.
 
 A central agent helps, but it cannot be the only home for the shared brain. If company memory only
 lives behind a bot, people become petitioners: they ask the machine, get unstuck, and leave the path
@@ -135,12 +135,12 @@ That is the loop in miniature. One person's refusal to keep losing time becomes 
 pull it because the pain is theirs too. Use creates evidence. Then the company has to decide: owner,
 standard, budget, or clean death.
 
-That is the alternative to one smarter center. Useful fixes have to travel without being blessed
-first. No owner, no adoption path, no evidence, no kill rule: no market.
+That is the alternative to one smarter center. Useful fixes have to travel before they are blessed.
+No owner, no adoption path, no evidence, no kill rule: no market.
 
-The machinery is boring and non-negotiable: a place to make bids, a public trail of who pulled them,
-an accountable owner, a review cadence, kill criteria, and a budget path. Without that, the market
-is just Slack with better mythology.
+The machinery is non-negotiable: a place to make bids, a public trail of who pulled them, an
+accountable owner, a review cadence, kill criteria, and a budget path. Without that, the market is
+just Slack with better mythology.
 
 ## Markets Need Institutions
 
@@ -149,11 +149,11 @@ whom. People will rename enthusiasm as demand, prototypes as products, Slack pra
 motion as learning. Assume the market will be gamed.
 
 So the institution prices the things theater avoids: who owns it, who uses it without being begged,
-what it costs, what it replaced, what got worse, when it dies.
+what it costs, what it replaced, what got worse, and when it dies.
 
 The currency is not enthusiasm. It is pulled usage, owner time, budget, reduced pain, and changed
 behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves one team by
-creating hidden cost for three others has not cleared the market. It has exported pain.
+pushing its cost onto three others has not cleared the market. It has exported pain.
 
 The system has to make truth-seeking cheaper than the political move: show the evidence, name the
 owner, price the risk, and make polished theater harder to carry.
@@ -164,9 +164,9 @@ visible, owned, reviewed, funded, killed, and remembered. Pain becomes a version
 creates evidence.
 
 Every six weeks, Grimoire turns the portfolio into a docket. The system brings the record: who owns
-the work, what moved, what stalled, what changed, what evidence exists, and what the work is
-costing. The owner has to stand in public with the facts while there is still time to change the
-bet. Grimoire does not just show reality. It makes the company touch it.
+the work, what moved, what stalled, what changed, what evidence exists, and what it costs. The owner
+has to stand in public with the facts while there is still time to change the bet. Grimoire does not
+just show reality. It makes the company touch it.
 
 In one recent review, the room could not hide behind updates. The record showed which bets had gone
 cold, which owners were still carrying work out of habit, and which leaders were treating fear and
@@ -174,7 +174,7 @@ ambiguity as status instead of material to coach through.
 
 So the company moved capital. We killed most of that work, moved people to better bets, and made the
 standard explicit: a lead is not done when they report resistance. They are accountable for coaching
-through fear, resistance, and ambiguity, or for forcing the decision into the open.
+through fear and ambiguity, or for forcing the decision into the open.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: people can build for themselves because
 the work still has to face the institution. This is not permission to hack forever. Local work earns
@@ -200,7 +200,7 @@ bet back through standards, ownership, and consequence.
 That power earns its place only when it comes back with receipts: the risk named, the owner
 assigned, the budget visible, the kill criteria stated, the review date set, the standard changed.
 Founder intervention becomes central planning when it is constant, hidden, or detached from local
-evidence. Intervene loudly, own the bet, and make the cost visible.
+evidence. Intervene loudly, own the bet, make the cost visible.
 
 Power does not get better by pretending it is harmless. It gets better when it has to answer to
 [enough independent reality](https://blog.cosmos-institute.org/p/when-decentralization-fails) that
@@ -218,10 +218,9 @@ Quality moved first. Early in this journey, we had to call a platform stability 
 system was moving faster than its guardrails. That was central power doing its job: making the
 problem visible enough to price.
 
-Then the numbers started moving, and not in the fake way. High-urgency incidents were cut in half.
-Resolution time fell from four days to less than one. Pager acknowledgements went from a coin flip
-to nearly automatic. The system was not hiding pain. It was getting better at forcing pain into the
-open.
+Then the numbers moved in the harder direction. High-urgency incidents were cut in half. Resolution
+time fell from four days to less than one. Pager acknowledgements went from a coin flip to nearly
+automatic. The system was not hiding pain. It was getting better at forcing pain into the open.
 
 Ownership held. The extra work still attached to real projects instead of drifting into clever,
 ownerless churn. More output is not progress if nobody can explain what bet it serves.
@@ -234,9 +233,9 @@ faster, ownership stayed attached, and stale work got harder to carry. The lazy 
 fitting: this was not a team spraying more work into the system and paying for it later.
 
 The important part was the trail. More work arrived with the pain that caused it, the owner carrying
-it, the artifact others could reuse, and the evidence it had to survive. That changed the cost of
-pretending. A project could not stay alive just because it sounded important. A local fix could not
-stay invisible just because it started small.
+it, the artifact others could reuse, and the evidence it had to survive. That changed what the
+company could pretend not to know. A project could not stay alive just because it sounded important.
+A local fix could not stay invisible just because it started small.
 
 Most companies get slower when they raise standards. They get careful, political, and
 approval-bound. The machine learns to call friction maturity.
