@@ -13,7 +13,7 @@ pull_quote: >
   A company OS is not the place where founders see everything. It is the system that lets local
   truth become consequential.
 
-image: "/assets/img/company-os.png"
+image: "/assets/img/company-os.jpg"
 ---
 
 Founders are not short on data. They are short on unedited reality.
