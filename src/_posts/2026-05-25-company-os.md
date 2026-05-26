@@ -65,7 +65,7 @@ The alternative is not one smarter center. Local pain needs a path to a fix. Use
 travel without being blessed first. The company OS should make internal work compete for adoption,
 funding, and survival. No owner, no adoption path, no evidence, no kill rule: no market.
 Institutions set the rules for what earns trust, attention, or a clean death. The center still
-intervenes, but only where the market cannot price the risk.
+intervenes, but only where the market cannot price the risk or see the whole.
 
 The AI-native company is not a command center with better sensors. It is a market where reality can
 bid for change.
@@ -173,8 +173,8 @@ freedom by facing standards before it becomes politics.
 
 ## Founder Power Must Leave Artifacts
 
-Some things still belong at the center: strategy, culture, performance standards, incentives,
-safety, budgets, existential bets, and the commons no local team would fund early enough.
+Some things still belong at the center: strategy, taste, culture, standards, incentives, safety,
+budgets, existential bets, and the commons no local team would fund early enough.
 
 Founder power is real because founders can make bets no one else is structurally allowed to make.
 They can absorb risk, spend trust, fund the commons, and say, "We are moving now," when the local
