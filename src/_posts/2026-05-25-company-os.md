@@ -95,7 +95,7 @@ Diagnosis without an attempt is no longer enough. People owe the company attempt
 explanations. If leaders deny access, time, or authority, they own the bottleneck. Both sides lose
 the right to hide inside ambiguity.
 
-A lot of people who looked high-agency in the old company were really good at navigating scarcity:
+Some people who looked high-agency in the old company were really good at navigating scarcity:
 finding the right person, waiting for the right mandate, surviving the missing tool. That skill
 still matters. But when scarcity stops being a reliable excuse, high agency stops being a
 personality trait. It becomes the floor of the job.
@@ -107,12 +107,11 @@ Managers who only route permission become organizational latency. ICs who only d
 exposed. Companies that cannot absorb local building turn AI into theater.
 
 The failure mode is not just slowness. It is stunted capacity. If AI gives everyone tools to build
-and the company still routes every useful move through the center, the company teaches people to
-wait. It turns builders into factory workers with better equipment: faster with inputs, weaker at
-owning the outcome.
+and the company still routes every useful move through the center, it teaches people to wait. It
+turns builders into factory workers with better equipment: faster with inputs, weaker at owning the
+outcome.
 
-A market gives that first version somewhere to go: inspect it, steal it, improve it, fund it, or
-kill it.
+A market gives that first version somewhere to go.
 
 ## Useful Work Starts Near Pain
 
@@ -136,47 +135,41 @@ A central agent helps, but it cannot be the only home for the shared brain. If c
 lives behind a bot, people become petitioners: they ask the machine, get unstuck, and leave the path
 invisible for the next person. A bot can answer the question. Gaia makes the answer inheritable.
 
-The work can be pulled apart, rerun, changed, and improved. It can feed local dev, cloud agents,
-Slack, CI, reviews, and whatever surface comes next. The point is not the repo. The point is work
-that can outlive the person who first solved the problem.
+Because the work can be pulled apart and rerun, it can feed local dev, cloud agents, Slack, CI,
+reviews, and whatever surface comes next. The point is not the repo. The point is work that can
+outlive the person who first solved the problem.
 
-Slack still matters because discovery is messy and public. But discovery is not enough. The company
-needs goods, not just conversation.
+Slack still matters. It is the bazaar: loud, public, messy, weirdly efficient at discovery. Gaia
+matters because the bazaar needs goods, not just conversation.
 
 ## Markets Need Institutions
 
 Without institutions, an internal market does not discover truth. It discovers who can route around
-whom. It becomes duplicated tools, shadow systems, popularity contests, loud teams winning
-attention, and half-built workflows nobody wants to own. The system has to make the honest move
-cheaper than the political move: show the evidence, name the owner, price the risk, and make the
-polished story harder to carry.
+whom. It becomes duplicated tools, shadow systems, popularity contests, and half-built workflows
+nobody wants to own. The system has to make truth-seeking cheaper than the political move: show the
+evidence, name the owner, price the risk, and make polished theater harder to carry.
 
-At GrowthLoop, Gaia and Grimoire carry that bargain together. Gaia gives local work a place to
-appear, spread, mutate, and become shared machinery. Grimoire is our portfolio and accountability
-system. It makes the market answer for itself: work becomes visible, owned, reviewed, funded,
-killed, and remembered.
+At GrowthLoop, Gaia and Grimoire carry that bargain together. Gaia creates supply: local work can
+appear, spread, mutate, and become shared machinery. Grimoire prices consequence: work becomes
+visible, owned, reviewed, funded, killed, and remembered. Pain becomes a version others can use; use
+creates evidence.
 
-Gaia creates supply. Grimoire prices consequence. Pain becomes a version others can use, and use
-creates evidence. Then the institution shapes whether the work gets standardized, redirected,
-funded, or cut.
-
-Every six weeks, Grimoire turns the portfolio into a docket. The system brings the facts: who owns
+Every six weeks, Grimoire turns the portfolio into a docket. The system brings the record: who owns
 the work, what moved, what stalled, what changed, what evidence exists, and what the work is
-costing. The owner has to stand with the facts while there is still time to change the bet. Grimoire
-does not just show reality. It makes the company touch it.
+costing. The owner has to stand in public with the facts while there is still time to change the
+bet. Grimoire does not just show reality. It makes the company touch it.
 
-This is where the company decides: fund it, kill it, redirect it, escalate it, or force better
-evidence. In one recent review, Grimoire made the uncomfortable truth hard to hide. Some work was
-still getting funded after the evidence had gone cold. Some leaders were staying inside their lane
-when the company needed them to cross it.
+In one recent review, that machinery made the uncomfortable truth hard to hide. Some work was still
+getting funded after the evidence had gone cold. Some leaders were staying inside their lane when
+the company needed them to cross it.
 
 So we killed most of that work, moved people to better bets, and made the standard explicit: leads
 are accountable for coaching through fear, resistance, and ambiguity, not just reporting that those
 things exist.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: people can build for themselves because
-the work still has to face the institution. The point is not to let everyone hack forever. The point
-is to make local work face standards before it becomes politics.
+the work still has to face the institution. This is not permission to hack forever. Local work earns
+freedom by facing standards before it becomes politics.
 
 ## Founder Power Must Leave Artifacts
 
@@ -191,11 +184,9 @@ But founder power matters most when it builds systems that route fewer decisions
 founder. The best use of concentrated power is to make more of the company powerful.
 
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
-was one of those founder bets: too early for the internal market to fully price, important enough
-for the center to fund anyway. It gave the company a name and a funding path for a category no local
-team could justify from its own queue. The market could not yet value the category, but the center
-could name the direction, fund the risk, and force the bet to come back through standards,
-ownership, and consequence.
+was one of those founder bets: too early for any local team to justify, important enough for the
+center to fund anyway. It gave the company a name and funding path for the category, then forced the
+bet back through standards, ownership, and consequence.
 
 That power earns its place in the gap only when it comes back with receipts: the risk named, the
 owner assigned, the budget made visible, the kill criteria stated, the review date set, the standard
@@ -226,9 +217,8 @@ open.
 Ownership held. The extra work still attached to real projects instead of drifting into clever,
 ownerless churn. More output is not progress if nobody can explain what bet it serves.
 
-And critically, throughput rose too. A year ago, roughly 30 engineering ICs shipped about 700 merged
-PRs per quarter. Now a smaller team ships about 1,900, while incident pressure fell instead of
-rising.
+Throughput rose too. A year ago, roughly 30 engineering ICs shipped about 700 merged PRs per
+quarter. Now a smaller team ships about 1,900, while incident pressure fell instead of rising.
 
 The lazy explanation stops fitting: this was not simply a team spraying more work into the system
 and paying for it later.
@@ -237,19 +227,17 @@ Most companies get slower when they raise standards. They get careful, political
 approval-bound. The machine learns to call friction maturity.
 
 We got faster because AI made local work cheaper to package, ship, and reuse, and the operating
-system gave that work a path. Gaia helped useful work travel. Grimoire kept it attached to owners,
-standards, and consequences. Local pain created supply. Institutions priced consequence. The center
-funded what the market could not yet value.
+system gave it a path: Gaia for travel, Grimoire for ownership and consequence, the center for bets
+the market could not yet price.
 
 ## The Company Learns
 
-Winning companies will shorten the path from lived reality to changed behavior: someone sees the
-failure, fixes the local version, puts it where others can use it, and forces the company to decide
-whether to adopt it, fund it, or kill it.
+The mechanism is simple: someone sees the failure, fixes the local version, puts it where others can
+use it, and forces the company to decide whether to adopt it, fund it, or kill it.
 
 When the system works, reality leaves marks: owners, reusable work, funded bets, dead projects, and
-standards the company had to rewrite. That takes leaders willing to concentrate power and then spend
-that power building people who need less permission.
+standards the company had to rewrite. That takes leaders willing to spend power on people who need
+less permission.
 
 If every local truth still needs executive translation, you do not have a company OS. You have a
 prettier permission system.
