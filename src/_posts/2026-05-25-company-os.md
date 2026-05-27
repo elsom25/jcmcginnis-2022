@@ -45,9 +45,8 @@ pain into institutional change before the organization turns it into status thea
 
 ## AI Makes Agency Auditable
 
-The real AI shift is not that the center can see more.
-
-It is that the edge can do more before asking permission.
+The real AI shift is not that the center can see more. It is that the edge can do more before asking
+permission.
 
 The person closest to the problem used to have to gather the context, find the policy, write the
 pitch, wait for the meeting, and hope the idea survived translation.
@@ -106,10 +105,8 @@ worse at changing it.
 
 Useful work usually starts selfish. Someone has a bad week and refuses to repeat it. They leave
 behind a script, a prompt, a patched workflow, an escalation path, a customer workaround, a ritual
-made less stupid.
-
-First it saves one person's week. Then someone else steals it, changes it, and makes it sturdier.
-That is when it becomes supply.
+made less stupid. First it saves one person's week. Then someone else steals it, changes it, and
+makes it sturdier. That is when it becomes supply.
 
 Someone in support knows the path: which logs matter, which project to open, which tenant context
 changes the answer, how to rerun a failed audience export without making the failure worse. That
@@ -179,14 +176,12 @@ freedom by facing standards before it becomes politics.
 ## Founder Power Must Leave Artifacts
 
 Some things still belong at the center: strategy, taste, culture, standards, incentives, safety,
-budgets, existential bets, and the commons no local team would fund early enough.
-
-Founder power is real because founders can make bets no one else is structurally allowed to make.
-They can absorb risk, spend trust, fund the commons, and say, "We are moving now," when the local
-market is still debating the cleanest answer.
-
-But founder power matters most when it builds systems that route fewer decisions through the
-founder. The best use of concentrated power is to make more of the company powerful.
+budgets, existential bets, and the commons no local team would fund early enough. Founder power is
+real because founders can make bets no one else is structurally allowed to make. They can absorb
+risk, spend trust, fund the commons, and say, "We are moving now," when the local market is still
+debating the cleanest answer. But founder power matters most when it builds systems that route fewer
+decisions through the founder. The best use of concentrated power is to make more of the company
+powerful.
 
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
 was one of those founder bets: too early for any local team to justify, important enough for the
