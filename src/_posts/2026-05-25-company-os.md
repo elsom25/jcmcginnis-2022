@@ -20,25 +20,21 @@ Founders are not short on data. They are short on unedited reality.
 
 Vendors sell them the oldest executive fantasy with an AI budget: central planning that finally
 works. One room. One map. One AI chief of staff stitched across Slack, docs, CRM, tickets, metrics,
-and people data so the business finally stops arguing back.
+and people data so the business finally stops arguing back. The pitch works because the pain is
+real. Each function carries its own map. Meetings sand off the hard parts. Status arrives late,
+pre-defended, and pre-softened.
 
-The fantasy works because the pain is real. Each function carries its own map. Meetings sand off the
-hard parts. Status arrives late, pre-defended, and pre-softened.
-
-Central planning feels like relief right up until relief becomes the operating model.
+Central planning feels like relief.
 
 That is the trap. Most AI company OS pitches rebuild the CEO dashboard with better autocomplete.
 They promise a business that can be understood from the center, which usually means a business that
-has to be changed from the center too.
-
-AI does not kill that fantasy. It makes the fantasy cheaper. Central planning works in emergencies,
-which is why it is dangerous: war powers feel effective until the emergency becomes habit.
+has to be changed from the center too. AI does not kill that fantasy. It makes the fantasy cheaper.
+War powers feel effective until the emergency becomes habit.
 
 The companies that use AI to strengthen the center will look modern and get slower. The companies
-that use AI to create internal markets will compound.
-
-A company OS should not help the center see everything. It should make true things change the
-company before politics, latency, or approval theater can sand them down.
+that use AI to create internal markets will compound. A company OS should not help the center see
+everything. It should make true things change the company before politics, latency, or approval
+theater can sand them down.
 
 The future company will not feel like one brain with better sensors. It will feel like a market with
 a memory. Pain creates an attempt. The attempt leaves an artifact. The artifact faces adoption.
