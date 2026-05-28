@@ -27,7 +27,7 @@ and people data. A business that finally stops arguing back.
 
 Central planning feels like relief. That is the trap. Most AI management pitches are just CEO
 dashboards with better autocomplete. They promise a business that can be understood from one seat,
-which usually means it can only be changed from one seat too.
+then quietly make it changeable only from that seat.
 
 Central planning fails at local knowledge, not effort or intelligence. The center can set direction,
 fund the commons, and enforce standards. It cannot know enough, soon enough, to make every useful
@@ -52,10 +52,8 @@ AI does not just give the center better sight. It gives the edge a first move.
 The person closest to the problem used to have to gather the context, find the policy, write the
 pitch, wait for the meeting, and hope the idea survived translation.
 
-Now a complaint can become a draft; a diagnosis can become a script; a recurring failure can become
-a workflow someone else can steal. The person closest to the problem can inspect the logs, summarize
-the evidence, write the first version, and make the boundary visible before the next planning
-meeting.
+Now the first move is cheaper. A complaint can become a draft. A diagnosis can become a script. A
+recurring failure can become a workflow someone else can steal.
 
 The old alibi was coordination: missing tools, unclear mandate, no time, permission in another room.
 Real constraints still exist: access, time, incentives, authority. AI does not erase them. It makes
@@ -90,10 +88,10 @@ weekly ritual, and the SQL query quietly holding the business hostage.
 If useful truth has to climb the ladder before it can matter, the company has already chosen
 latency: politics over truth.
 
-Central planning is often more efficient this week. One person settles the debate, picks the tool,
-collapses the option space, and forces motion. The tax arrives later: people learn to frame work for
-approval, not impact. Eventually the company fills with permission queues. People get good at
-serving the machine and worse at changing it.
+Central planning can win the week. One person settles the debate, picks the tool, collapses the
+option space, and forces motion. The tax arrives later: people learn to frame work for approval, not
+impact. Eventually the company fills with permission queues. People get good at serving the machine
+and bad at changing it.
 
 Someone in support knows the path: which logs matter, which project to open, which tenant context
 changes the answer, how to rerun a failed audience export without making the failure worse. That
@@ -129,8 +127,8 @@ Make the tax explicit. Maintain the paths. Kill duplicates. Protect boring work.
 evidence becomes public performance. Markets do not remove management; they expose the work
 management was already hiding.
 
-The company has to make truth-seeking cheaper than the political move: show receipts, name the
-owner, price the risk, and make polished theater too heavy to carry.
+The company has to make truth-seeking cheaper than politics: show receipts, name the owner, price
+the risk, and make polished theater too heavy to carry.
 
 At GrowthLoop, Gaia and Grimoire split the job. Gaia turns local fixes into shared supply. Grimoire
 turns that supply into named bets: owner, review, funding, and a way to die.
@@ -145,51 +143,15 @@ carrying work because nobody had called it dead, and leaders treating fear and a
 instead of work.
 
 So the company moved capital. We killed most of those bets, moved people to better ones, and made
-the standard explicit: a lead is not done when they report resistance. They are accountable for
-turning resistance into a decision.
+the standard explicit: a lead is not done when they report resistance. They own turning resistance
+into a decision.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: build locally, face standards publicly,
 and let the institution decide what survives.
 
-## The Tradeoff Broke
-
-The bet was that the old tradeoff was fake: more local motion did not have to mean more damage. A
-year ago, we were not moving fast enough for the bets we wanted to win. But raw throughput is cheap
-to fake and easy to distrust. What mattered was whether we could raise standards, lower incident
-pressure, hold ownership, and still move faster.
-
-Quality moved first. We called a platform stability Code Red because we were moving faster than our
-guardrails. That was central power doing its job: stopping the room, naming the cost, and making the
-problem impossible to route around.
-
-Then the operational measures moved the right way. High-urgency incidents were cut in half.
-Resolution time fell from four days to less than one. Pager acknowledgements went from a coin flip
-to nearly automatic.
-
-Work stayed attached to real projects instead of drifting into clever, ownerless churn. More output
-is not progress if nobody can explain what bet it serves.
-
-Throughput rose too. A year ago, roughly 30 engineering ICs shipped about 700 merged PRs per
-quarter. Now a smaller team ships about 1,900, while incident pressure has fallen.
-
-PR count is easy to fake. Slice work smaller, ship cosmetic churn, stay safe. I only care here
-because the obvious failure mode did not show up: incidents fell, recovery sped up, ownership stayed
-attached, and stale work got harder to carry.
-
-More work arrived with the pain that caused it, the person carrying it, and the artifact others
-could reuse. A project could not stay alive just because it sounded important. A local fix could not
-stay invisible just because it started small.
-
-Most companies get slower when they raise standards. They get procedural, political, and
-approval-bound. The machine learns to call friction maturity.
-
-We got faster because AI made local work cheaper to package, ship, and reuse, and the company gave
-that work a path: Gaia for supply, Grimoire for ownership and consequence, the center for bets the
-market could not yet price.
-
 ## Founder Power Must Leave Artifacts
 
-The point is not to abolish the center. Some bets still belong there: strategy, taste, culture,
+That bargain still needs a center. Some bets still belong there: strategy, taste, culture,
 standards, incentives, safety, budgets, existential risk, and the commons no local team would fund
 early enough.
 
@@ -206,21 +168,55 @@ was one of those founder bets. The category did not exist as a clean budget line
 could prove demand yet. The center spent trust to name and fund it, then forced the bet back through
 standards, ownership, and consequence.
 
-That power earns its place only when it comes back with receipts: risk named, owner assigned, budget
+That power earns its place when it comes back with receipts: risk named, owner assigned, budget
 visible, kill criteria stated, review date set. Founder intervention becomes central planning when
-it is constant, hidden, or detached from local evidence. Intervene loudly, own the bet, make the
+it is constant, hidden, or detached from local evidence. Intervene loudly. Own the bet. Make the
 cost visible. The best use of concentrated power is to make more of the company powerful.
 
 Power does not get better by pretending it is harmless. It gets better when reality has enough
 [independent paths](https://blog.cosmos-institute.org/p/when-decentralization-fails) back into the
 room that power cannot quietly grade its own work.
 
+## The Tradeoff Broke
+
+The old tradeoff was fake: more local motion did not have to mean more damage. A year ago, the bets
+in front of us needed a faster company. Speed was not a preference. It was the constraint. But raw
+throughput is cheap to fake and easy to distrust; the question was whether we could raise standards,
+lower incident pressure, keep ownership attached, and move faster anyway.
+
+Quality had to move first. We called a platform stability Code Red because speed had outrun the
+guardrails. That was central power doing its job: stopping the room, naming the cost, and making the
+problem impossible to route around.
+
+Then the failures fell. High-urgency incidents were cut in half. Resolution time fell from four days
+to less than one. Pager acknowledgements went from a coin flip to nearly automatic.
+
+Then shipping caught up. A year ago, roughly 30 engineering ICs merged about 700 PRs per quarter.
+Now a smaller team ships about 1,900, while incident pressure has fallen.
+
+PR count is easy to fake. Slice work smaller, ship cosmetic churn, stay safe. I only care here
+because the obvious failure mode did not show up: incidents fell, recovery sped up, ownership stayed
+attached, and stale work got harder to carry.
+
+The important change was not 1,900 PRs. It was the shape of the work. More of it arrived with the
+pain that caused it, the person carrying it, and the artifact others could reuse. A project could
+not stay alive just because it sounded important. A local fix could not stay invisible just because
+it started small.
+
+Most companies get slower when they raise standards. They get procedural, political, and
+approval-bound. The machine learns to call friction maturity.
+
+We got faster because AI made local work cheaper to package, ship, and reuse, and because we built
+the institutions to catch it: Gaia for supply, Grimoire for ownership and consequence, the center
+for bets the market could not yet price.
+
 ## The Company Learns
 
-AI will flood companies with local attempts. Most organizations will make the flood legible to
-executives: dashboards, approvals, summaries, and prettier permission systems.
+AI will flood every company with local attempts. Weak companies will pipe them upward into
+dashboards, approvals, summaries, and prettier permission systems.
 
-The companies that learn fastest will force those attempts to answer: who owns them, what they cost,
-who uses them, what changed, and when they die.
+Strong companies will make them compete: pain becomes a bid, the bid becomes an artifact, the
+artifact earns adoption, and adoption forces a decision.
 
-The company that wins is not the one that sees more. It is the one that makes truth consequential.
+The company that wins is not the one that sees more. It is the one where truth moves money, people,
+and power.
