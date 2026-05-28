@@ -36,18 +36,23 @@ move from above.
 Use AI to strengthen central planning and the company will look modern while getting slower. Use it
 to make local work compete and the company compounds.
 
-Inside a company, a free market is engineered. The center still chooses the game, funds the commons,
-sets standards, and protects the long-term bet. But useful work needs pressure before politics can
-protect it: pain becomes the bid, the artifact becomes supply, adoption proves demand, owner time
-and budget set the price, and review decides what gets funded, spread, or killed.
+Inside a company, a free market has to be engineered. The company OS is that machinery: a market
+with a memory. It remembers where the pain came from, who turned it into an artifact, who adopted
+it, what adoption cost, and whether the company changed.
+
+The center still chooses the game, funds the commons, sets standards, and protects the long-term
+bet. It does not price every move from above. It makes local work compete before politics can
+protect it. Pain becomes a bid. The bid becomes an artifact. Adoption proves demand. Owner time and
+budget set the price. Review forces the call: fund it, spread it, or kill it.
 
 A better company does not make headquarters omniscient. It turns local pain into work others can
 pull: a draft, a script, a path, a workflow. The useful work travels. The rest has to earn another
-day.
+day. That is the point of a company OS: not to make the company easier to command, but harder to
+fool.
 
 ## AI Makes Agency Auditable
 
-AI does not just give the center better sight. It gives the edge a first move.
+AI does not just give the center better sight. It changes who gets to claim helplessness.
 
 The person closest to the problem used to have to gather the context, find the policy, write the
 pitch, wait for the meeting, and hope the idea survived translation.
@@ -55,9 +60,11 @@ pitch, wait for the meeting, and hope the idea survived translation.
 Now the first move is cheaper. A complaint can become a draft. A diagnosis can become a script. A
 recurring failure can become a workflow someone else can steal.
 
+Not perfectly. Not forever. Enough to expose the alibi.
+
 The old alibi was coordination: missing tools, unclear mandate, no time, permission in another room.
 Real constraints still exist: access, time, incentives, authority. AI does not erase them. It makes
-them auditable.
+them auditable. Show the draft. Show the attempt. Show the boundary.
 
 Inside a company, a bid is not a complaint, a ticket, or a strategy doc. It is an attempt with
 evidence attached: the script, the workflow, the customer path, the boundary hit. AI turns "someone
@@ -68,39 +75,35 @@ AI can draft the move. It cannot stand behind it. Attempts get cheap; ownership 
 a company using AI well, the person who matters is the one willing to answer for what the work does.
 
 Before adding headcount, platform work, or another ritual, ask the hard question: did someone close
-to the problem use AI and still hit a real boundary?
+to the problem use AI, show the attempt, and still hit a real boundary?
 
 People owe the company attempts, not just explanations. Leaders owe the conditions that make
 attempts honest: access, time, authority, and real stakes. Ask for agency while withholding those
-and you are not building a market. You are laundering extra work through ambition.
+conditions, and you are not building a market. You are laundering extra work through ambition.
 
-This makes central planning more expensive, not less. Managers who only route permission become
-delay. ICs who only diagnose run out of cover. Companies that cannot absorb local building turn AI
-into theater.
+That cuts both ways. If no attempt exists, do not start by blaming the org chart. Start with the
+missing artifact.
+
+Auditable agency makes central planning more expensive, not less. Managers who only route permission
+become latency. ICs who only diagnose run out of cover. Companies that cannot absorb local building
+turn AI into theater.
 
 ## Free Markets Find the Bruise
 
-Markets beat central planning at one job: finding the bruise while it is still fresh.
+Markets beat central planning at one job: catching the bruise while it is still fresh.
 
-Leadership sees across the system. ICs see the customer papercut, the broken handoff, the stupid
-weekly ritual, and the SQL query quietly holding the business hostage.
+Leadership sees across the system. People closest to the work feel the customer papercut, the broken
+handoff, the stupid weekly ritual, and the SQL query quietly holding the business hostage.
 
-If useful truth has to climb the ladder before it can matter, the company has already chosen
-latency: politics over truth.
+If that truth has to climb the ladder before it can matter, the company has already chosen latency.
+By the time the center understands the bruise, the person who felt it has learned to route around
+it, complain about it, or stop caring.
 
-Central planning can win the week. One person settles the debate, picks the tool, collapses the
-option space, and forces motion. The tax arrives later: people learn to frame work for approval, not
-impact. Eventually the company fills with permission queues. People get good at serving the machine
-and bad at changing it.
-
-Someone in support knows the path: which logs matter, which project to open, which tenant context
-changes the answer, how to rerun a failed audience export without making the failure worse. That
-judgment is company memory trapped in a person.
-
-Useful work usually starts like that: selfish, specific, and irritated. Someone has a bad week and
-refuses to repeat it. They leave behind a script, a prompt, a patched workflow, an escalation path,
-a customer workaround, a ritual made less stupid. First it saves one person's week. Then someone
-else steals it, changes it, and makes it sturdier. That is when it becomes supply.
+Useful work usually starts there: selfish, specific, and irritated. Someone in support knows which
+logs matter, which project to open, which tenant context changes the answer, how to rerun a failed
+audience export without making the failure worse. That judgment is company memory trapped in a
+person. A free market's first job is to turn it into something others can pull before the bruise
+becomes folklore.
 
 Before Gaia, that support memory usually became a Slack tip or a document: useful once, hard to
 reuse, easy to lose. Slack is still where the bruise announces itself: loud, public, messy, and
@@ -110,8 +113,9 @@ Gaia is our shared repo for those runnable objects: scripts, prompts, workflows,
 other teams can inspect, pull, change, and improve. A bot can answer in the moment. Gaia makes the
 path inheritable.
 
-Work has to travel before it is blessed. If there is no owner, no adoption path, no proof, and no
-way to die, it is not a market. It is noise with better mythology.
+Work has to travel before it is blessed, and that movement has to leave marks. Who pulled it? What
+changed? Who owns it now? What budget or attention did it consume? When does it die? Without that
+memory, the market collapses back into Slack: visible heat, noisy demand, no price.
 
 ## Free Markets Need Institutions
 
@@ -119,9 +123,9 @@ Free markets inside companies are dangerous. Without institutions, they become m
 loud demo, the charismatic owner, the Slack thread that feels like demand because everyone can see
 it. Assume the market will be gamed. Build until gaming gets expensive.
 
-The currency is not enthusiasm. It is pulled usage, owner time, budget, reduced pain, and changed
-behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves one team by
-pushing its cost onto three others has not cleared the market. It has exported pain.
+The currency is not enthusiasm. It is usage pulled into real work, owner time, budget, reduced pain,
+and changed behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves
+one team by pushing its cost onto three others has not cleared the market. It has exported pain.
 
 Make the tax explicit. Maintain the paths. Kill duplicates. Protect boring work. Notice when public
 evidence becomes public performance. Markets do not remove management; they expose the work
@@ -130,8 +134,8 @@ management was already hiding.
 The company has to make truth-seeking cheaper than politics: show receipts, name the owner, price
 the risk, and make polished theater too heavy to carry.
 
-At GrowthLoop, Gaia and Grimoire split the job. Gaia turns local fixes into shared supply. Grimoire
-turns that supply into named bets: owner, review, funding, and a way to die.
+At GrowthLoop, Gaia and Grimoire split the job. Gaia creates supply. Grimoire prices consequence.
+Local fixes become shared machinery, then named bets: owner, review, funding, and a way to die.
 
 Every six weeks, Grimoire turns the portfolio into a docket: owners, movement, stalls, costs,
 evidence, and what changed. The owner has to stand in public with the facts while there is still
@@ -142,9 +146,9 @@ In one recent review, the record made the evasions visible: cold bets wearing ac
 carrying work because nobody had called it dead, and leaders treating fear and ambiguity as weather
 instead of work.
 
-So the company moved capital. We killed most of those bets, moved people to better ones, and made
-the standard explicit: a lead is not done when they report resistance. They own turning resistance
-into a decision.
+So we moved capital. We killed most of those bets, moved people to the few still worth funding, and
+made the standard explicit: a lead is not done when they report resistance. They own turning
+resistance into a decision.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: build locally, face standards publicly,
 and let the institution decide what survives.
@@ -179,20 +183,20 @@ room that power cannot quietly grade its own work.
 
 ## The Tradeoff Broke
 
-The old tradeoff was fake: more local motion did not have to mean more damage. A year ago, the bets
-in front of us needed a faster company. Speed was not a preference. It was the constraint. But raw
-throughput is cheap to fake and easy to distrust; the question was whether we could raise standards,
-lower incident pressure, keep ownership attached, and move faster anyway.
+That is the theory. The test was whether it could survive pressure.
 
-Quality had to move first. We called a platform stability Code Red because speed had outrun the
-guardrails. That was central power doing its job: stopping the room, naming the cost, and making the
-problem impossible to route around.
+A year ago, the bets we had made required a faster company, but speed had already outrun the
+guardrails. Founder power could name the constraint and stop the room. It could not personally route
+every fix. Raw throughput is cheap to fake; the real question was whether local motion could rise
+while incidents fell, recovery improved, and ownership stayed attached.
 
-Then the failures fell. High-urgency incidents were cut in half. Resolution time fell from four days
-to less than one. Pager acknowledgements went from a coin flip to nearly automatic.
+Quality had to move first. We called a platform stability Code Red. That was central power doing its
+job: stopping the room, naming the cost, and making the problem impossible to route around. Then the
+facts changed. High-urgency incidents were cut in half. Resolution time fell from four days to less
+than one. Pager acknowledgements went from a coin flip to nearly automatic.
 
 Then shipping caught up. A year ago, roughly 30 engineering ICs merged about 700 PRs per quarter.
-Now a smaller team ships about 1,900, while incident pressure has fallen.
+Now a smaller team merges about 1,900, while incident pressure has fallen.
 
 PR count is easy to fake. Slice work smaller, ship cosmetic churn, stay safe. I only care here
 because the obvious failure mode did not show up: incidents fell, recovery sped up, ownership stayed
@@ -212,11 +216,12 @@ for bets the market could not yet price.
 
 ## The Company Learns
 
-AI will flood every company with local attempts. Weak companies will pipe them upward into
-dashboards, approvals, summaries, and prettier permission systems.
+AI is about to create more local attempts than any executive stack can absorb. If those attempts
+become summaries, dashboards, approvals, and cleaner permission queues, the company will know more
+and change less.
 
-Strong companies will make them compete: pain becomes a bid, the bid becomes an artifact, the
-artifact earns adoption, and adoption forces a decision.
+Do not route that work upward and call it intelligence. Make it compete: pain becomes a bid, the bid
+becomes an artifact, the artifact earns adoption, and adoption forces capital to move.
 
 The company that wins is not the one that sees more. It is the one where truth moves money, people,
 and power.
