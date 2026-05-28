@@ -27,7 +27,7 @@ and people data. A business that finally stops arguing back.
 
 Central planning feels like relief. That is the trap. Most AI management pitches are just CEO
 dashboards with better autocomplete. They promise a business that can be understood from one seat,
-which usually means a business that has to be changed from one seat too.
+which usually means it can only be changed from one seat too.
 
 Central planning fails at local knowledge, not effort or intelligence. The center can set direction,
 fund the commons, and enforce standards. It cannot know enough, soon enough, to make every useful
@@ -36,8 +36,10 @@ move from above.
 Use AI to strengthen central planning and the company will look modern while getting slower. Use it
 to make local work compete and the company compounds.
 
-A free market inside a company is not the absence of management. It is how local work faces demand,
-price, and consequence before politics can protect it.
+Inside a company, a free market is engineered. The center still chooses the game, funds the commons,
+sets standards, and protects the long-term bet. But useful work needs pressure before politics can
+protect it: pain becomes the bid, the artifact becomes supply, adoption proves demand, owner time
+and budget set the price, and review decides what gets funded, spread, or killed.
 
 A better company does not make headquarters omniscient. It turns local pain into work others can
 pull: a draft, a script, a path, a workflow. The useful work travels. The rest has to earn another
@@ -65,14 +67,14 @@ should fix this" into "here is the first version, here is what it proves, and he
 broke."
 
 AI can draft the move. It cannot stand behind it. Attempts get cheap; ownership keeps them real. In
-an AI company, the person who matters is the one willing to answer for what the work does.
+a company using AI well, the person who matters is the one willing to answer for what the work does.
 
-Before adding headcount, platform work, or another ritual, ask the hard question: did a sharp owner
-with AI hit a real boundary?
+Before adding headcount, platform work, or another ritual, ask the hard question: did someone close
+to the problem use AI and still hit a real boundary?
 
-People owe the company attempts, not just explanations. Leaders owe people access, time, authority,
-and real stakes. If they withhold those, they own the bottleneck. Both sides lose the right to hide
-inside ambiguity.
+People owe the company attempts, not just explanations, but only inside a real bargain. Leaders owe
+access, time, authority, and real stakes. If they ask for agency while withholding those, they are
+not building a market. They are laundering extra work through ambition.
 
 This makes central planning more expensive, not less. Managers who only route permission become
 delay. ICs who only diagnose run out of cover. Companies that cannot absorb local building turn AI
@@ -103,20 +105,15 @@ a customer workaround, a ritual made less stupid. First it saves one person's we
 else steals it, changes it, and makes it sturdier. That is when it becomes supply.
 
 Before Gaia, that support memory usually became a Slack tip or a document: useful once, hard to
-reuse, easy to lose. Gaia is our shared repo for that work: scripts, prompts, workflows, paths, and
-fixes other teams can pull instead of rediscovering. It turns the path into something a person can
-inspect, run, change, and improve. When that work showed up in demos, demand pulled it forward
-because the pain was already theirs.
+reuse, easy to lose. Slack is still where the bruise announces itself: loud, public, messy, and
+weirdly efficient. But a company cannot inherit a Slack thread.
 
-A bot helps, but it cannot be the only home for company memory. If that memory only lives behind a
-bot, people become petitioners: they ask the machine, get unstuck, and leave the path invisible for
-the next person. A bot can answer the question. Gaia makes the answer inheritable.
+Gaia is our shared repo for those runnable objects: scripts, prompts, workflows, paths, and fixes
+other teams can inspect, pull, change, and improve. A bot can answer in the moment. Gaia makes the
+path inheritable.
 
-Slack is still loud, public, messy, and weirdly efficient at discovery. Gaia matters because useful
-fixes need goods, not just conversation.
-
-Work has to travel before it is blessed. No owner, no adoption path, no evidence, no kill rule: just
-noise with better mythology.
+Work has to travel before it is blessed. If there is no owner, no adoption path, no proof, and no
+way to die, it is not a market. It is noise with better mythology.
 
 ## Free Markets Need Institutions
 
@@ -128,20 +125,24 @@ The currency is not enthusiasm. It is pulled usage, owner time, budget, reduced 
 behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves one team by
 pushing its cost onto three others has not cleared the market. It has exported pain.
 
+This is not free. Someone has to maintain the paths, kill duplicates, protect boring work, and
+notice when public evidence becomes public performance. The claim is not that markets remove
+management. It is that they make the cost visible early enough to manage.
+
 The company has to make truth-seeking cheaper than the political move: show receipts, name the
 owner, price the risk, and make polished theater too heavy to carry.
 
-At GrowthLoop, Gaia and Grimoire split the job. Gaia lets local work appear, spread, mutate, and
-become shared machinery. Grimoire makes that work visible, owned, reviewed, funded, killed, and
-remembered. Pain becomes a version others can use; use creates evidence.
+At GrowthLoop, Gaia and Grimoire split the job. Gaia turns local fixes into shared supply. Grimoire
+turns that supply into named bets: owner, review, funding, and a way to die.
 
 Every six weeks, Grimoire turns the portfolio into a docket: owners, movement, stalls, costs,
 evidence, and what changed. The owner has to stand in public with the facts while there is still
-time to change the bet. Grimoire does not just show reality. It makes the company touch it.
+time to change the bet. Grimoire does not just show reality. It forces the company to decide while
+the facts still matter.
 
-In one recent review, the room could not hide behind updates. The record showed which bets had gone
-cold, which owners were carrying work out of habit, and which leaders were treating fear and
-ambiguity as weather instead of work.
+In one recent review, the record made the evasions visible: cold bets wearing active names, owners
+carrying work because nobody had called it dead, and leaders treating fear and ambiguity as weather
+instead of work.
 
 So the company moved capital. We killed most of those bets, moved people to better ones, and made
 the standard explicit: a lead is not done when they report resistance. They are accountable for
@@ -149,6 +150,42 @@ turning resistance into a decision.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: build locally, face standards publicly,
 and let the institution decide what survives.
+
+## The Tradeoff Broke
+
+The test was not whether this made the company feel more entrepreneurial. A year ago, we were not
+moving fast enough for the bets we wanted to win. But raw throughput is cheap to fake and easy to
+distrust. What mattered was whether we could raise standards, lower incident pressure, hold
+ownership, and still move faster.
+
+Quality moved first. We called a platform stability Code Red because we were moving faster than our
+guardrails. That was central power doing its job: stopping the room, naming the cost, and making the
+problem impossible to route around.
+
+Then the operational measures moved the right way. High-urgency incidents were cut in half.
+Resolution time fell from four days to less than one. Pager acknowledgements went from a coin flip
+to nearly automatic.
+
+Work stayed attached to real projects instead of drifting into clever, ownerless churn. More output
+is not progress if nobody can explain what bet it serves.
+
+Throughput rose too. A year ago, roughly 30 engineering ICs shipped about 700 merged PRs per
+quarter. Now a smaller team ships about 1,900, while incident pressure has fallen.
+
+PR count is a dirty metric on its own. It is easy to game with smaller slices, cosmetic churn, and
+safer work. I only care here because the obvious failure mode did not show up: incidents fell,
+recovery sped up, ownership stayed attached, and stale work got harder to carry.
+
+More work arrived with the pain that caused it, the person carrying it, and the artifact others
+could reuse. A project could not stay alive just because it sounded important. A local fix could not
+stay invisible just because it started small.
+
+Most companies get slower when they raise standards. They get procedural, political, and
+approval-bound. The machine learns to call friction maturity.
+
+We got faster because AI made local work cheaper to package, ship, and reuse, and the company gave
+that work a path: Gaia for supply, Grimoire for ownership and consequence, the center for bets the
+market could not yet price.
 
 ## Founder Power Must Leave Artifacts
 
@@ -165,9 +202,9 @@ Those are war powers. Use them. The failure is when the emergency becomes the co
 The failure is not concentrated power. The failure is power that leaves no artifact.
 
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
-was one of those founder bets: too early for any local team to justify, important enough for the
-center to fund anyway. It gave the company a name and funding path for the category, then forced the
-bet back through standards, ownership, and consequence.
+was one of those founder bets. The category did not exist as a clean budget line, so no local team
+could prove demand yet. The center spent trust to name and fund it, then forced the bet back through
+standards, ownership, and consequence.
 
 That power earns its place only when it comes back with receipts: risk named, owner assigned, budget
 visible, kill criteria stated, review date set. Founder intervention becomes central planning when
@@ -178,43 +215,12 @@ Power does not get better by pretending it is harmless. It gets better when real
 [independent paths](https://blog.cosmos-institute.org/p/when-decentralization-fails) back into the
 room that power cannot quietly grade its own work.
 
-## The Tradeoff Broke
-
-A year ago, we were not moving fast enough for the bets we wanted to win. But raw throughput is
-cheap to fake and easy to distrust. The test was whether we could raise standards, lower incident
-pressure, hold ownership, and still move faster.
-
-Quality moved first. Early in this journey, we called a platform stability Code Red because we were
-moving faster than our guardrails. That was central power doing its job: stopping the room, naming
-the cost, and making the problem impossible to route around.
-
-Then the numbers moved the right way. High-urgency incidents were cut in half. Resolution time fell
-from four days to less than one. Pager acknowledgements went from a coin flip to nearly automatic.
-
-Ownership held. The extra work still attached to real projects instead of drifting into clever,
-ownerless churn. More output is not progress if nobody can explain what bet it serves.
-
-Throughput rose too. A year ago, roughly 30 engineering ICs shipped about 700 merged PRs per
-quarter. Now a smaller team ships about 1,900, while incident pressure has fallen.
-
-PR count only matters when the damage does not rise with it. Here, stale work got harder to carry.
-More work arrived with the pain that caused it, the owner carrying it, the artifact others could
-reuse, and the evidence it had to survive. A project could not stay alive just because it sounded
-important. A local fix could not stay invisible just because it started small.
-
-Most companies get slower when they raise standards. They get procedural, political, and
-approval-bound. The machine learns to call friction maturity.
-
-We got faster because AI made local work cheaper to package, ship, and reuse, and the company gave
-that work a path: Gaia for supply, Grimoire for ownership and consequence, the center for bets the
-market could not yet price.
-
 ## The Company Learns
 
-AI will flood companies with local attempts. Most organizations will absorb them into dashboards,
-approvals, executive synthesis, and prettier permission systems.
+AI will flood companies with local attempts. Most organizations will make the flood legible to
+executives: dashboards, approvals, summaries, and prettier permission systems.
 
-The companies that learn fastest will do the opposite. They will make local work survive contact
-with reality: who owns it, what it costs, what it changes, and when it dies.
+The companies that learn fastest will make those attempts accountable: who owns them, what they
+cost, who uses them, what changed, and when they die.
 
 The company that wins is not the one that sees more. It is the one that makes truth consequential.
