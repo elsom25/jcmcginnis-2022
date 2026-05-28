@@ -2,7 +2,7 @@
 feed: false
 published: true
 
-title: The AI Central Planning Trap
+title: AI Companies Must Be Free Markets
 permalink: /blog/company-os/
 
 categories: ["Leadership"]
@@ -10,8 +10,8 @@ description:
   The next great companies will not use AI to make central planning work. They will build free
   markets inside the company that turn local truth into bids, evidence, owners, and decisions.
 pull_quote: >
-  A company OS should not perfect central planning. It should build a free market inside the company
-  where local truth can compete, leave evidence, and force decisions.
+  Use AI to strengthen central planning and the company will look modern while getting slower. Use
+  it to make local work compete and the company compounds.
 
 image: "/assets/img/company-os.jpg"
 ---
