@@ -32,15 +32,11 @@ Central planning fails at local knowledge, not effort or intelligence. The cente
 fund the commons, and enforce standards. It cannot know enough, soon enough, to make every useful
 move from above.
 
-This is the bet: local knowledge should become action before it becomes status, and useful action
-should face evidence before it becomes politics.
-
 Use AI to strengthen central planning and the company will look modern while getting slower. Use it
 to make local work compete and the company compounds.
 
 A better company does not make headquarters omniscient. It turns local pain into work others can
 pull: a draft, a script, a path, a workflow. Demand finds what is useful. Evidence moves capital.
-Not a prettier permission system. A company that can be changed by the truth it already contains.
 
 ## AI Makes Agency Auditable
 
@@ -55,8 +51,8 @@ the evidence, write the first version, and make the boundary visible before the 
 meeting.
 
 The old alibi was coordination: missing tools, unclear mandate, no time, permission in another room.
-Real constraints still exist: access, time, incentives, authority. AI does not erase those
-constraints. It makes the alibi auditable: show the draft, show the attempt, show the boundary.
+Real constraints still exist: access, time, incentives, authority. AI does not erase them. It makes
+them auditable.
 
 Inside a company, a bid is not a complaint, a ticket, or a strategy doc. It is an attempt with
 evidence attached: the script, the workflow, the customer path, the boundary hit. AI turns "someone
@@ -64,8 +60,7 @@ should fix this" into "here is the first version, here is what it proves, and he
 broke."
 
 AI can draft the move. It cannot stand behind it. Attempts get cheap; ownership keeps them real. In
-an AI company, the person who matters is the one willing to answer for what the work does. If no one
-will own the consequence, the company should treat the bid as noise.
+an AI company, the person who matters is the one willing to answer for what the work does.
 
 Before adding headcount, meetings, platform work, or another ritual, the first question should be
 brutal: did a sharp owner with AI hit a real boundary, or did everyone just reach for an excuse?
@@ -77,10 +72,6 @@ inside ambiguity.
 This makes central planning more expensive, not less. Managers who only route permission become
 delay. ICs who only diagnose run out of cover. Companies that cannot absorb local building turn AI
 into theater.
-
-If AI gives everyone tools to build and the company still routes every useful move through the
-center, it teaches people to wait. It turns builders into factory workers with better equipment:
-faster with inputs, weaker at owning outcomes.
 
 ## Free Markets Find the Bruise
 
@@ -119,8 +110,7 @@ Slack is still loud, public, messy, and weirdly efficient at discovery. Gaia mat
 fixes need goods, not just conversation.
 
 Work has to travel before it is blessed. No owner, no adoption path, no evidence, no kill rule: just
-noise with better mythology. Markets do not stay honest on their own. They need a place to make
-bids, a public trail of who pulled them, an owner, a review cadence, a kill rule, and a budget path.
+noise with better mythology.
 
 ## Free Markets Need Institutions
 
@@ -128,10 +118,6 @@ Free markets inside companies are dangerous. Without institutions, they reward w
 around whom: charisma passing for demand, demos passing for products, Slack praise passing for
 adoption, motion passing for learning. Assume the market will be gamed. Build until gaming gets
 expensive.
-
-Not laissez-faire. Attention, ownership, and capital are scarce. Price them with evidence, or
-pretend the center can see every bruise first. Institutions price what theater avoids: who owns it,
-who uses it, what it costs, what got worse, and when it dies.
 
 The currency is not enthusiasm. It is pulled usage, owner time, budget, reduced pain, and changed
 behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves one team by
@@ -163,8 +149,7 @@ and let the institution decide what survives.
 
 The point is not to abolish the center. Some bets still belong there: strategy, taste, culture,
 standards, incentives, safety, budgets, existential risk, and the commons no local team would fund
-early enough. A market inside a company is not the absence of power. It is a way to make power
-answer to evidence.
+early enough.
 
 Founder power belongs here too. Some bets have no natural owner yet. Founders can absorb risk, spend
 trust, fund the commons, and say, "We are moving now," before the market has enough evidence to
@@ -188,9 +173,6 @@ Power does not get better by pretending it is harmless. It gets better when real
 [independent paths](https://blog.cosmos-institute.org/p/when-decentralization-fails) back into the
 room that power cannot quietly grade its own work.
 
-The market should discover. Leaders should intervene when they must. Both should have to answer to
-evidence.
-
 ## The Tradeoff Broke
 
 A year ago, we were not moving fast enough for the bets we wanted to win. But raw throughput is
@@ -211,14 +193,13 @@ ownerless churn. More output is not progress if nobody can explain what bet it s
 Throughput rose too. A year ago, roughly 30 engineering ICs shipped about 700 merged PRs per
 quarter. Now a smaller team ships about 1,900, while incident pressure has fallen.
 
-PR count only matters when the damage does not rise with it. Here, incidents fell, resolution got
-faster, ownership stayed attached, and stale work got harder to carry. The lazy explanation stops
-fitting.
+PR count only matters when the damage does not rise with it. Here, ownership stayed attached and
+stale work got harder to carry. The lazy explanation stops fitting.
 
-The important part was the trail. More work arrived with the pain that caused it, the owner carrying
-it, the artifact others could reuse, and the evidence it had to survive. That changed what the
-company could pretend not to know. A project could not stay alive just because it sounded important.
-A local fix could not stay invisible just because it started small.
+More work arrived with the pain that caused it, the owner carrying it, the artifact others could
+reuse, and the evidence it had to survive. That changed what the company could pretend not to know.
+A project could not stay alive just because it sounded important. A local fix could not stay
+invisible just because it started small.
 
 Most companies get slower when they raise standards. They get procedural, political, and
 approval-bound. The machine learns to call friction maturity.
@@ -235,9 +216,6 @@ permission systems.
 
 The companies that learn fastest do the opposite. They let local work compete, then discipline the
 market with institutions strong enough to kill what does not earn its place.
-
-When that works, reality leaves marks: owners, reused work, funded bets, dead projects, and
-standards the company had to rewrite. The company learns because truth can change it.
 
 That is the core bet. AI will make attempts cheap. Central planning will try to absorb them. The
 next great companies will make those attempts prove who owns them, what they cost, and what they
