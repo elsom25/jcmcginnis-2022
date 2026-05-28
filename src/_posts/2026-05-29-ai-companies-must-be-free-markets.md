@@ -1,9 +1,7 @@
 ---
-feed: false
-published: true
-
 title: AI Companies Must Be Free Markets
-permalink: /blog/company-os/
+permalink: /blog/ai-companies-must-be-free-markets/
+featured: true
 
 categories: ["Leadership"]
 description:
