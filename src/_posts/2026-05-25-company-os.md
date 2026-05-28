@@ -153,10 +153,10 @@ and let the institution decide what survives.
 
 ## The Tradeoff Broke
 
-The bet was exactly that markets inside the company would make us more entrepreneurial without
-making us sloppier. A year ago, we were not moving fast enough for the bets we wanted to win. But
-raw throughput is cheap to fake and easy to distrust. What mattered was whether we could raise
-standards, lower incident pressure, hold ownership, and still move faster.
+The bet was that the old tradeoff was fake: more local motion did not have to mean more damage. A
+year ago, we were not moving fast enough for the bets we wanted to win. But raw throughput is cheap
+to fake and easy to distrust. What mattered was whether we could raise standards, lower incident
+pressure, hold ownership, and still move faster.
 
 Quality moved first. We called a platform stability Code Red because we were moving faster than our
 guardrails. That was central power doing its job: stopping the room, naming the cost, and making the
