@@ -23,11 +23,10 @@ promises reality without the bruise.
 
 Vendors sell them the oldest executive fantasy with a new AI budget: central planning that finally
 works. One room, one map, one AI chief of staff stitched across Slack, docs, CRM, tickets, metrics,
-and people data. A business that finally stops arguing back.
-
-Central planning feels like relief. That is the trap. Most AI management pitches are just CEO
-dashboards with better autocomplete. They promise a business that can be understood from one seat,
-then quietly make it changeable only from that seat.
+and people data. A business that finally stops arguing back. That is why the pitch feels like
+relief, and why it is the trap. Most AI management pitches are CEO dashboards with better
+autocomplete. They promise a business that can be understood from one seat, then quietly make it
+changeable only from there.
 
 Central planning fails at local knowledge, not effort or intelligence. The center can set direction,
 fund the commons, and enforce standards. It cannot know enough, soon enough, to make every useful
@@ -36,14 +35,11 @@ move from above.
 Use AI to strengthen central planning and the company will look modern while getting slower. Use it
 to make local work compete and the company compounds.
 
-Inside a company, a free market has to be engineered. You have to build a market with a memory: one
-that remembers where the pain came from, who turned it into an artifact, who adopted it, what
-adoption cost, and whether the company changed.
+Inside a company, a free market has to be engineered. It needs memory: where the pain started, what
+someone built, who adopted it, and whether the company changed. Otherwise local work becomes another
+pile of demos and anecdotes.
 
-The center still chooses the game, funds the commons, sets standards, and protects the long-term
-bet. It does not price every move from above. It makes local work compete before politics can
-protect it. Pain becomes a bid. The bid becomes an artifact. Adoption proves demand. Owner time and
-budget set the price. Review forces the call: fund it, spread it, or leave it local.
+The center still chooses the game. It just stops pretending it can price every move from above.
 
 A better company does not make headquarters omniscient. It turns the thing someone built in
 frustration into work others can pull: a draft, a script, a path, a workflow. The useful work
@@ -57,29 +53,25 @@ AI does not just give the center better sight. It changes who gets to claim help
 The person closest to the problem used to have to gather the context, find the policy, write the
 pitch, wait for the meeting, and hope the idea survived translation.
 
-Now the first move is cheaper. A complaint can become a draft. A diagnosis can become a script. A
-recurring failure can become a workflow someone else can steal.
-
-Not perfectly. Not forever. Enough to expose the alibi.
+Now the first move is cheaper. A complaint can become a draft. A recurring failure can become a
+workflow someone else can steal.
 
 The old alibi was coordination: missing tools, unclear mandate, no time, permission in another room.
 Real constraints still exist: access, time, incentives, authority. AI does not erase them. It makes
-them auditable. Show the draft. Show the attempt. Show the boundary.
+the boundary auditable. Show the draft. Show the attempt. Show where it stopped.
 
-Inside a company, a bid is not a complaint, a ticket, or a strategy doc. It is an attempt with
-evidence attached: the script, the workflow, the customer path, the boundary it hit. AI turns
-"someone should fix this" into "here is the first version, here is what it proves, and here is where
-it broke."
+Not perfectly. Not forever. Enough to separate the alibi from the constraint.
 
-AI can draft the move. It cannot stand behind it. Attempts get cheap; ownership keeps them real. In
-a company using AI well, the person who matters is the one willing to answer for what the work does.
+Inside a company, a bid is not a complaint, a ticket, or a strategy doc. It is a first version with
+evidence attached: here is what changed, here is what broke, here is the decision I am forcing.
 
-People owe the company attempts, not just explanations. Leaders owe the conditions that make
-attempts honest: access, time, authority, and real stakes. Ask for agency while withholding those
-conditions, and you are not building a market. You are laundering extra work through ambition.
+A bid also needs an owner. AI can draft the move. It cannot stand behind it. Attempts get cheap;
+ownership keeps them real.
 
-That cuts both ways. If no attempt exists, do not start by blaming the org chart. Start with the
-missing artifact.
+That is the bargain. People owe the company more than explanations. Leaders owe the conditions that
+make agency honest: access, time, authority, and real stakes. Ask for agency while withholding those
+conditions, and you are laundering extra work through ambition. Show up empty-handed, and the org
+chart is not the first thing on trial.
 
 Auditable agency makes central planning more expensive, not less. Managers who only route permission
 become latency. ICs who only diagnose run out of cover. Companies that cannot absorb local building
@@ -93,7 +85,7 @@ Leadership sees across the system. People closest to the work feel the customer 
 handoff, the stupid weekly ritual, and the SQL query quietly holding the business hostage.
 
 If that truth has to climb the ladder before it can matter, the company has already chosen latency.
-By the time the center understands the bruise, the person who felt it has learned to route around
+By the time the center understands the problem, the person who felt it has learned to route around
 it, complain about it, or stop caring.
 
 Useful work usually starts there: selfish, specific, and irritated. Someone in support knows which
@@ -111,9 +103,9 @@ executable map of the company, where living systems, apps, agent tools, history,
 runnable knowledge sit close enough to co-evolve. Teams and agents can inspect the path, pull it,
 change it, and make the company more legible to itself.
 
-Work has to travel before it is blessed, and that movement has to leave marks. Who pulled it? What
-changed? Who owns it now? What budget or attention did it consume? What earns more investment?
-Without that memory, the market collapses back into Slack: visible heat, noisy demand, no price.
+Work has to travel before it is blessed, and that movement has to leave marks: who pulled it, what
+changed, who owns it now, and what budget or attention it consumed. Without that memory, the market
+collapses back into Slack: visible heat, noisy demand, no price.
 
 ## Free Markets Need Institutions
 
@@ -125,20 +117,19 @@ The currency is not enthusiasm. It is usage pulled into real work, owner time, b
 and changed behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves
 one team by pushing its cost onto three others has not cleared the market. It has exported pain.
 
-Make the tax explicit. Maintain the paths. Merge duplicates. Protect boring work. Notice when public
-evidence becomes public performance. Markets do not remove management; they expose the work
-management was already hiding.
+Do the unglamorous work. Maintain the paths. Merge duplicates. Protect boring work. Notice when
+public evidence becomes public performance. Markets do not replace management. They force management
+to do its real job in public.
 
 The company has to make truth-seeking cheaper than politics: show receipts, name the owner, price
 the risk, and make polished theater too heavy to carry.
 
 At GrowthLoop, Gaia and Grimoire split the job. Gaia creates supply. Grimoire prices consequence.
-Local fixes become shared machinery, then named bets: owner, review, funding, and a way to die.
+Local fixes become shared machinery, then named bets with owners and a way to die.
 
-Every six weeks, Grimoire turns the portfolio into a docket: owners, movement, stalls, costs,
-evidence, and what changed. The owner has to stand in public with the facts while there is still
-time to change the bet. Grimoire does not just show reality. It forces the company to decide while
-the facts still matter.
+Every six weeks, Grimoire turns the portfolio into a docket. The owner has to stand in public with
+the facts while there is still time to change the bet. Grimoire does not just show reality. It
+forces the company to decide while the facts still matter.
 
 In one recent review, the record made the evasions visible: cold bets wearing active names, owners
 carrying work because nobody had called it dead, and leaders treating fear and ambiguity as weather
