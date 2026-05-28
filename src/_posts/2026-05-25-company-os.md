@@ -36,19 +36,19 @@ move from above.
 Use AI to strengthen central planning and the company will look modern while getting slower. Use it
 to make local work compete and the company compounds.
 
-Inside a company, a free market has to be engineered. The company OS is that machinery: a market
-with a memory. It remembers where the pain came from, who turned it into an artifact, who adopted
-it, what adoption cost, and whether the company changed.
+Inside a company, a free market has to be engineered. You have to build a market with a memory: one
+that remembers where the pain came from, who turned it into an artifact, who adopted it, what
+adoption cost, and whether the company changed.
 
 The center still chooses the game, funds the commons, sets standards, and protects the long-term
 bet. It does not price every move from above. It makes local work compete before politics can
 protect it. Pain becomes a bid. The bid becomes an artifact. Adoption proves demand. Owner time and
 budget set the price. Review forces the call: fund it, spread it, or leave it local.
 
-A better company does not make headquarters omniscient. It turns local pain into work others can
-pull: a draft, a script, a path, a workflow. The useful work travels. The rest has to earn another
-day. That is the point of a company OS: not to make the company easier to command, but harder to
-fool.
+A better company does not make headquarters omniscient. It turns the thing someone built in
+frustration into work others can pull: a draft, a script, a path, a workflow. The useful work
+travels. The rest has to earn another day. That is the point: not to make the company easier to
+command, but harder to fool.
 
 ## AI Makes Agency Auditable
 
@@ -67,15 +67,12 @@ Real constraints still exist: access, time, incentives, authority. AI does not e
 them auditable. Show the draft. Show the attempt. Show the boundary.
 
 Inside a company, a bid is not a complaint, a ticket, or a strategy doc. It is an attempt with
-evidence attached: the script, the workflow, the customer path, the boundary hit. AI turns "someone
-should fix this" into "here is the first version, here is what it proves, and here is where it
-broke."
+evidence attached: the script, the workflow, the customer path, the boundary it hit. AI turns
+"someone should fix this" into "here is the first version, here is what it proves, and here is where
+it broke."
 
 AI can draft the move. It cannot stand behind it. Attempts get cheap; ownership keeps them real. In
 a company using AI well, the person who matters is the one willing to answer for what the work does.
-
-Before adding headcount, platform work, or another ritual, ask the hard question: did someone close
-to the problem use AI, show the attempt, and still hit a real boundary?
 
 People owe the company attempts, not just explanations. Leaders owe the conditions that make
 attempts honest: access, time, authority, and real stakes. Ask for agency while withholding those
@@ -109,10 +106,10 @@ Before Gaia, that support memory usually became a Slack tip or a document: usefu
 reuse, easy to lose. Slack is still where the bruise announces itself: loud, public, messy, and
 weirdly efficient. But a company cannot inherit a Slack thread.
 
-Gaia is our bet that company memory should be executable: not just a monorepo, a living substrate
-where systems, infrastructure, company facts, agent resources, owners, rationale, and runnable
-knowledge co-evolve. A bot can answer in the moment. Gaia makes the company legible to itself and
-turns the path into something other teams can inspect, pull, change, and improve.
+Gaia is our bet that company memory should run, not sit in docs. It is not just a monorepo; it is an
+executable map of the company, where living systems, apps, agent tools, history, rationale, and
+runnable knowledge sit close enough to co-evolve. Teams and agents can inspect the path, pull it,
+change it, and make the company more legible to itself.
 
 Work has to travel before it is blessed, and that movement has to leave marks. Who pulled it? What
 changed? Who owns it now? What budget or attention did it consume? What earns more investment?
@@ -170,8 +167,9 @@ The failure is not concentrated power. The failure is power that leaves no artif
 
 [Compound Marketing Engine](https://www.growthloop.com/press/growthloop-unveils-its-compound-marketing-engine)
 was one of those founder bets. The category did not exist as a clean budget line, so no local team
-could prove demand yet. The center spent trust to name and fund it, then forced the bet back through
-standards, ownership, and consequence.
+could prove demand yet. So the center made the call: we reorganized around it, moved people, killed
+a multi-month bet that no longer fit, and made hiring decisions for the initiative. Then the bet had
+to go back through standards, ownership, and consequence.
 
 That power earns its place when it comes back with receipts: risk named, owner assigned, budget
 visible, success criteria stated, review date set. Founder intervention becomes central planning
@@ -182,25 +180,24 @@ Power does not get better by pretending it is harmless. It gets better when real
 [independent paths](https://blog.cosmos-institute.org/p/when-decentralization-fails) back into the
 room that power cannot quietly grade its own work.
 
-## The Tradeoff Broke
+## Theory Tested Through Pressure
 
-That is the theory. The test was whether it could survive pressure.
+That was the model. The test was whether it could survive pressure.
 
 A year ago, the bets we made demanded a faster company. We were slow and cautious; moving carefully
 was not going to teach us enough. So we pushed speed first, knowing more motion would expose what
 the system could not handle.
 
-It did. More work surfaced real breakage: customer pain, platform instability, and drag that had
-been hiding inside the team's week. That is when central power had to act. We called a platform
-stability Code Red: stop the room, name the cost, and fix the spots creating customer issues and
-team drag.
+It did. More work surfaced real breakage: customer pain, platform instability, and drag hidden
+inside the team's week. That is when central power had to act. We called a platform stability Code
+Red: stop normal motion, name the cost, and fix the spots hurting customers and slowing the team.
 
 Within three months, the facts changed. High-urgency incidents were cut in half. Resolution time
 fell from four days to less than one. Pager acknowledgements went from a coin flip to nearly
 automatic.
 
-Shipping did not just recover. It kept compounding. A year ago ~30 engineers merged 700 PRs per
-quarter. The last quarter, a smaller team merged over 1,900 PRs (more than 3x PRs/person).
+Shipping did not just recover. It kept compounding. A year ago, about 30 engineers merged 700 PRs
+per quarter. Last quarter, a smaller team merged more than 1,900 PRs (more than 3x PRs/person)!
 
 PR count is easy to fake. Slice work smaller, ship cosmetic churn, stay safe. I only care here
 because the obvious failure mode did not show up: incidents fell, recovery sped up, more than 70% of
@@ -214,19 +211,18 @@ it started small.
 Most companies get slower when they raise standards. They get procedural, political, and
 approval-bound. The machine learns to call friction maturity.
 
-We got faster because AI made local work cheaper to package, ship, and reuse, and because we built
-the institutions to catch it: Gaia for supply, Grimoire for ownership and consequence, the center
-for bets the market could not yet price.
+We got faster because useful work stopped waiting to become official. AI made the first move
+cheaper. Gaia gave those moves a place to live. Grimoire forced owners and review. The center still
+made the bets no local team could justify early enough.
 
 ## The Company Learns
 
 AI has already removed enough barriers to building that companies are being flooded with drafts,
 scripts, workflows, fixes, and tools from the edge. People are building whether the company wants
-them to or not. If that work becomes summaries, dashboards, approvals, and cleaner permission
-queues, the company will know more and change less.
-
-Do not route it upward and call it intelligence. Make it compete: pain becomes a bid, the bid
-becomes an artifact, the artifact earns adoption, and adoption forces capital to move.
+them to or not. The choice is what the institution does when the work arrives. Turn it into
+summaries, dashboards, approvals, and cleaner permission queues, and the company will know more
+while changing less. Make the work bite instead: a draft changes a workflow, a script earns users, a
+fix exposes a standard, and a tool makes the next decision harder to dodge.
 
 The company that wins is not the one that sees more. It is the one where truth moves money, people,
 and power.
