@@ -1,9 +1,7 @@
 ---
-feed: false
-published: true
-
 title: AI Companies Must Be Free Markets
-permalink: /blog/company-os/
+permalink: /blog/company-markets/
+featured: true
 
 categories: ["Leadership"]
 description:
@@ -13,7 +11,7 @@ pull_quote: >
   Use AI to strengthen central planning and the company will look modern while getting slower. Use
   it to make local work compete and the company compounds.
 
-image: "/assets/img/company-os.jpg"
+image: "/assets/img/company-markets.jpg"
 ---
 
 Founders are not short on data. They are short on unedited reality.
