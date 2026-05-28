@@ -72,9 +72,9 @@ a company using AI well, the person who matters is the one willing to answer for
 Before adding headcount, platform work, or another ritual, ask the hard question: did someone close
 to the problem use AI and still hit a real boundary?
 
-People owe the company attempts, not just explanations, but only inside a real bargain. Leaders owe
-access, time, authority, and real stakes. If they ask for agency while withholding those, they are
-not building a market. They are laundering extra work through ambition.
+People owe the company attempts, not just explanations. Leaders owe the conditions that make
+attempts honest: access, time, authority, and real stakes. Ask for agency while withholding those
+and you are not building a market. You are laundering extra work through ambition.
 
 This makes central planning more expensive, not less. Managers who only route permission become
 delay. ICs who only diagnose run out of cover. Companies that cannot absorb local building turn AI
@@ -125,9 +125,9 @@ The currency is not enthusiasm. It is pulled usage, owner time, budget, reduced 
 behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves one team by
 pushing its cost onto three others has not cleared the market. It has exported pain.
 
-This is not free. Someone has to maintain the paths, kill duplicates, protect boring work, and
-notice when public evidence becomes public performance. The claim is not that markets remove
-management. It is that they make the cost visible early enough to manage.
+Make the tax explicit. Maintain the paths. Kill duplicates. Protect boring work. Notice when public
+evidence becomes public performance. Markets do not remove management; they expose the work
+management was already hiding.
 
 The company has to make truth-seeking cheaper than the political move: show receipts, name the
 owner, price the risk, and make polished theater too heavy to carry.
@@ -153,10 +153,10 @@ and let the institution decide what survives.
 
 ## The Tradeoff Broke
 
-The test was not whether this made the company feel more entrepreneurial. A year ago, we were not
-moving fast enough for the bets we wanted to win. But raw throughput is cheap to fake and easy to
-distrust. What mattered was whether we could raise standards, lower incident pressure, hold
-ownership, and still move faster.
+We did not do this to make the company feel more entrepreneurial. A year ago, we were not moving
+fast enough for the bets we wanted to win. But raw throughput is cheap to fake and easy to distrust.
+What mattered was whether we could raise standards, lower incident pressure, hold ownership, and
+still move faster.
 
 Quality moved first. We called a platform stability Code Red because we were moving faster than our
 guardrails. That was central power doing its job: stopping the room, naming the cost, and making the
@@ -172,9 +172,9 @@ is not progress if nobody can explain what bet it serves.
 Throughput rose too. A year ago, roughly 30 engineering ICs shipped about 700 merged PRs per
 quarter. Now a smaller team ships about 1,900, while incident pressure has fallen.
 
-PR count is a dirty metric on its own. It is easy to game with smaller slices, cosmetic churn, and
-safer work. I only care here because the obvious failure mode did not show up: incidents fell,
-recovery sped up, ownership stayed attached, and stale work got harder to carry.
+PR count is easy to fake. Slice work smaller, ship cosmetic churn, stay safe. I only care here
+because the obvious failure mode did not show up: incidents fell, recovery sped up, ownership stayed
+attached, and stale work got harder to carry.
 
 More work arrived with the pain that caused it, the person carrying it, and the artifact others
 could reuse. A project could not stay alive just because it sounded important. A local fix could not
@@ -220,7 +220,7 @@ room that power cannot quietly grade its own work.
 AI will flood companies with local attempts. Most organizations will make the flood legible to
 executives: dashboards, approvals, summaries, and prettier permission systems.
 
-The companies that learn fastest will make those attempts accountable: who owns them, what they
-cost, who uses them, what changed, and when they die.
+The companies that learn fastest will force those attempts to answer: who owns them, what they cost,
+who uses them, what changed, and when they die.
 
 The company that wins is not the one that sees more. It is the one that makes truth consequential.
