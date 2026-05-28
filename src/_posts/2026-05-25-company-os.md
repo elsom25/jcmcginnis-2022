@@ -43,7 +43,7 @@ it, what adoption cost, and whether the company changed.
 The center still chooses the game, funds the commons, sets standards, and protects the long-term
 bet. It does not price every move from above. It makes local work compete before politics can
 protect it. Pain becomes a bid. The bid becomes an artifact. Adoption proves demand. Owner time and
-budget set the price. Review forces the call: fund it, spread it, or kill it.
+budget set the price. Review forces the call: fund it, spread it, or leave it local.
 
 A better company does not make headquarters omniscient. It turns local pain into work others can
 pull: a draft, a script, a path, a workflow. The useful work travels. The rest has to earn another
@@ -109,13 +109,14 @@ Before Gaia, that support memory usually became a Slack tip or a document: usefu
 reuse, easy to lose. Slack is still where the bruise announces itself: loud, public, messy, and
 weirdly efficient. But a company cannot inherit a Slack thread.
 
-Gaia is our shared repo for those runnable objects: scripts, prompts, workflows, paths, and fixes
-other teams can inspect, pull, change, and improve. A bot can answer in the moment. Gaia makes the
-path inheritable.
+Gaia is our bet that company memory should be executable: not just a monorepo, a living substrate
+where systems, infrastructure, company facts, agent resources, owners, rationale, and runnable
+knowledge co-evolve. A bot can answer in the moment. Gaia makes the company legible to itself and
+turns the path into something other teams can inspect, pull, change, and improve.
 
 Work has to travel before it is blessed, and that movement has to leave marks. Who pulled it? What
-changed? Who owns it now? What budget or attention did it consume? When does it die? Without that
-memory, the market collapses back into Slack: visible heat, noisy demand, no price.
+changed? Who owns it now? What budget or attention did it consume? What earns more investment?
+Without that memory, the market collapses back into Slack: visible heat, noisy demand, no price.
 
 ## Free Markets Need Institutions
 
@@ -127,7 +128,7 @@ The currency is not enthusiasm. It is usage pulled into real work, owner time, b
 and changed behavior. Praise is not demand. A project with no owner is not a bet. A tool that saves
 one team by pushing its cost onto three others has not cleared the market. It has exported pain.
 
-Make the tax explicit. Maintain the paths. Kill duplicates. Protect boring work. Notice when public
+Make the tax explicit. Maintain the paths. Merge duplicates. Protect boring work. Notice when public
 evidence becomes public performance. Markets do not remove management; they expose the work
 management was already hiding.
 
@@ -146,9 +147,9 @@ In one recent review, the record made the evasions visible: cold bets wearing ac
 carrying work because nobody had called it dead, and leaders treating fear and ambiguity as weather
 instead of work.
 
-So we moved capital. We killed most of those bets, moved people to the few still worth funding, and
-made the standard explicit: a lead is not done when they report resistance. They own turning
-resistance into a decision.
+So we moved capital. We stopped funding most of those bets, moved people to the few still worth
+backing, and made the standard explicit: a lead is not done when they report resistance. They own
+turning resistance into a decision.
 
 That is the [directed chaos](/blog/directed-chaos/) bargain: build locally, face standards publicly,
 and let the institution decide what survives.
@@ -173,9 +174,9 @@ could prove demand yet. The center spent trust to name and fund it, then forced 
 standards, ownership, and consequence.
 
 That power earns its place when it comes back with receipts: risk named, owner assigned, budget
-visible, kill criteria stated, review date set. Founder intervention becomes central planning when
-it is constant, hidden, or detached from local evidence. Intervene loudly. Own the bet. Make the
-cost visible. The best use of concentrated power is to make more of the company powerful.
+visible, success criteria stated, review date set. Founder intervention becomes central planning
+when it is constant, hidden, or detached from local evidence. Intervene loudly. Own the bet. Make
+the cost visible. The best use of concentrated power is to make more of the company powerful.
 
 Power does not get better by pretending it is harmless. It gets better when reality has enough
 [independent paths](https://blog.cosmos-institute.org/p/when-decentralization-fails) back into the
@@ -185,22 +186,25 @@ room that power cannot quietly grade its own work.
 
 That is the theory. The test was whether it could survive pressure.
 
-A year ago, the bets we had made required a faster company, but speed had already outrun the
-guardrails. Founder power could name the constraint and stop the room. It could not personally route
-every fix. Raw throughput is cheap to fake; the real question was whether local motion could rise
-while incidents fell, recovery improved, and ownership stayed attached.
+A year ago, the bets we made demanded a faster company. We were slow and cautious; moving carefully
+was not going to teach us enough. So we pushed speed first, knowing more motion would expose what
+the system could not handle.
 
-Quality had to move first. We called a platform stability Code Red. That was central power doing its
-job: stopping the room, naming the cost, and making the problem impossible to route around. Then the
-facts changed. High-urgency incidents were cut in half. Resolution time fell from four days to less
-than one. Pager acknowledgements went from a coin flip to nearly automatic.
+It did. More work surfaced real breakage: customer pain, platform instability, and drag that had
+been hiding inside the team's week. That is when central power had to act. We called a platform
+stability Code Red: stop the room, name the cost, and fix the spots creating customer issues and
+team drag.
 
-Then shipping caught up. A year ago, roughly 30 engineering ICs merged about 700 PRs per quarter.
-Now a smaller team merges about 1,900, while incident pressure has fallen.
+Within three months, the facts changed. High-urgency incidents were cut in half. Resolution time
+fell from four days to less than one. Pager acknowledgements went from a coin flip to nearly
+automatic.
+
+Shipping did not just recover. It kept compounding. A year ago ~30 engineers merged 700 PRs per
+quarter. The last quarter, a smaller team merged over 1,900 PRs (more than 3x PRs/person).
 
 PR count is easy to fake. Slice work smaller, ship cosmetic churn, stay safe. I only care here
-because the obvious failure mode did not show up: incidents fell, recovery sped up, ownership stayed
-attached, and stale work got harder to carry.
+because the obvious failure mode did not show up: incidents fell, recovery sped up, more than 70% of
+the work still landed inside named bets, and stale work got harder to carry.
 
 The important change was not 1,900 PRs. It was the shape of the work. More of it arrived with the
 pain that caused it, the person carrying it, and the artifact others could reuse. A project could
@@ -216,11 +220,12 @@ for bets the market could not yet price.
 
 ## The Company Learns
 
-AI is about to create more local attempts than any executive stack can absorb. If those attempts
-become summaries, dashboards, approvals, and cleaner permission queues, the company will know more
-and change less.
+AI has already removed enough barriers to building that companies are being flooded with drafts,
+scripts, workflows, fixes, and tools from the edge. People are building whether the company wants
+them to or not. If that work becomes summaries, dashboards, approvals, and cleaner permission
+queues, the company will know more and change less.
 
-Do not route that work upward and call it intelligence. Make it compete: pain becomes a bid, the bid
+Do not route it upward and call it intelligence. Make it compete: pain becomes a bid, the bid
 becomes an artifact, the artifact earns adoption, and adoption forces capital to move.
 
 The company that wins is not the one that sees more. It is the one where truth moves money, people,
